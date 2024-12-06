@@ -32,7 +32,6 @@ extern int	*BondID, *BondType ;
 extern double	*kb, *ro; 
 extern double 	*BondEnergy, *BondLength;
 extern double 	TotalBondEnergy, BondEnergyPerAtom;
-extern double	*rz;
 extern double	gamman;
 extern double	*discDragx, *discDragy, *nodeDragx, *nodeDragy;
 extern double	strain, strainRate;

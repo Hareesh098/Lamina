@@ -69,7 +69,6 @@ void Init(){
 
   rx = (double*)malloc((nAtom + 1) * sizeof(double));
   ry = (double*)malloc((nAtom + 1) * sizeof(double));
-  rz = (double*)malloc((nAtom + 1) * sizeof(double)); //Remove after checks
   vx = (double*)malloc((nAtom + 1) * sizeof(double));
   vy = (double*)malloc((nAtom + 1) * sizeof(double));
   ax = (double*)malloc((nAtom + 1) * sizeof(double));

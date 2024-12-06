@@ -1,7 +1,7 @@
 readData	../STATE-Z5.48
 solver	Verlet
 boundary	p p
-freezeAtomType 0
+freezeAtomType 1
 rCut		2
 kappa		1.0
 deltaT	0.001

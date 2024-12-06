@@ -29,7 +29,6 @@ int	*BondID, *BondType ;
 double	*kb, *ro; 
 double 	*BondEnergy, *BondLength;
 double 	TotalBondEnergy, BondEnergyPerAtom;
-double	*rz;
 double	gamman;
 double	*discDragx, *discDragy, *nodeDragx, *nodeDragy;
 

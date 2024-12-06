@@ -118,6 +118,7 @@ int main(int argc, char **argv) {
 
   t2 = time(NULL);
   fprintf(fpresult, "#Execution time %lf secs\n", difftime(t2,t1));
+  fprintf(fpresult, "#Execution speed %lf steps per secs\n", stepLimit/difftime(t2,t1));
 
   fclose(fpresult);
   fclose(fpxyz);
