@@ -8,7 +8,8 @@ OBJECTS	= AccumProps.o AllocArrays.o ApplyBoundaryCond.o Close.o    \
 	  EvalSpacetimeCorr.o EvalVacf.o AccumVacf.o InitVacf.o     \
 	  ZeroVacf.o PrintVacf.o Integrate.o DumpState.o EvalRdf.o PrintVrms.o ComputeBondForce.o \
 	  DumpBonds.o VelocityVerletStep.o ApplyForce.o	ApplyDrivingForce.o\
-	  ApplyShear.o ApplyLeesEdwardsBoundaryCond.o PrintStress.o ComputePairForce.o PrintMomentum.o
+	  ApplyShear.o ApplyLeesEdwardsBoundaryCond.o PrintStress.o ComputePairForce.o PrintMomentum.o \
+	  
 
 
 main	: $(OBJECTS) 

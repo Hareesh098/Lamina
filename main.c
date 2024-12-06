@@ -84,16 +84,15 @@ int main(int argc, char **argv) {
   while(moreCycles){
    stepCount ++;
    timeNow += deltaT;
-
-
+   
    ComputePairForce();
    ComputeBondForce();
    VelocityVerletStep(1);
    ApplyBoundaryCond();
-   //ApplyForce();
-   //ApplyDrivingForce();
    ComputePairForce();
    ComputeBondForce();
+   ApplyForce();
+   //ApplyDrivingForce();
    VelocityVerletStep(2);
    ApplyBoundaryCond();
    EvalProps();
