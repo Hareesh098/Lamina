@@ -4,7 +4,6 @@
 #include"globalExtern.h"
 void PrintVrms(){
   int n;
-  double VSqr, VMeanSqr, VRootMeanSqr;
   VSqr = 0.0;
   VMeanSqr = 0.0;
   VRootMeanSqr = 0.0;

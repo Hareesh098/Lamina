@@ -34,6 +34,7 @@ void ComputePairForce();
 void PrintMomentum();
 void DisplaceAtoms();
 void DumpRestart(); 
+void HaltConditionCheck(double value, int stepCount);
 
 int main(int argc, char **argv) {
  time_t t1 = 0, t2;
@@ -86,7 +87,8 @@ int main(int argc, char **argv) {
 //Here starts the main loop of the program 
   while(moreCycles){
    stepCount ++;
-   timeNow += deltaT;
+   timeNow = stepCount * deltaT; //for adaptive step size: timeNow += deltaT
+   
    
    ComputePairForce();
    ComputeBondForce();
@@ -116,6 +118,7 @@ int main(int argc, char **argv) {
     DumpState();
     DumpRestart();
     }
+    HaltConditionCheck(VRootMeanSqr, stepCount);
     if(stepCount >= stepLimit)
      moreCycles = 0;
   }
