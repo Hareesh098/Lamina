@@ -36,6 +36,7 @@ extern double	gamman;
 extern double	*discDragx, *discDragy, *nodeDragx, *nodeDragy;
 extern double	strain, strainRate;
 extern double	shearDisplacement, shearVelocity;
+extern double	forceY, forceX;
 
 extern char	solver[128];
 extern char	xBoundary[10], yBoundary[10];

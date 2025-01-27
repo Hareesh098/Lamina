@@ -34,6 +34,7 @@ double	*discDragx, *discDragy, *nodeDragx, *nodeDragy;
 
 double strain, strainRate;
 double shearDisplacement, shearVelocity;
+double forceY, forceX;
 
 char	solver[128];
 char	xBoundary[10], yBoundary[10];

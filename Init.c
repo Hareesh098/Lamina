@@ -21,6 +21,8 @@ void Init(){
   fscanf(fp, "%s %lf", dummy, &kappa);
   fscanf(fp, "%s %lf", dummy, &deltaT);
   fscanf(fp, "%s %lf", dummy, &strain);
+  fscanf(fp, "%s %lf", dummy, &forceY);
+  fscanf(fp, "%s %lf", dummy, &forceX);
   fscanf(fp, "%s %d", dummy, &stepAvg);
   fscanf(fp, "%s %d", dummy, &stepEquil);
   fscanf(fp, "%s %d", dummy, &stepLimit);
@@ -129,6 +131,8 @@ void Init(){
     fprintf(fpresult, "nBond            %d\n",  nBond);
     fprintf(fpresult, "strain           %lf\n", strain);
     fprintf(fpresult, "strainRate       %lf\n", strainRate);
+    fprintf(fpresult, "forceY		%lf\n", forceY);
+    fprintf(fpresult, "forceX		%lf\n", forceX);
     fprintf(fpresult, "kappa            %lf\n", kappa);
     fprintf(fpresult, "density          %lf\n", density);
     fprintf(fpresult, "rCut             %lf\n", rCut);
