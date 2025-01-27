@@ -5,13 +5,13 @@
 void ApplyLeesEdwardsBoundaryCond() {
  int n;
  for (n = 1; n <= nAtom; n++) {
-//PBC
+//PBC along x-direction
  if(rx[n] >= regionH[1])
    rx[n] -= region[1];
  else if(rx[n] < -regionH[1])
    rx[n] += region[1];
    
-//LEBC
+//LEBC along y-direction
   if(ry[n] >= regionH[2]){
    rx[n] -= shearDisplacement;
    if(rx[n] < -regionH[1]) rx[n] += region[1];

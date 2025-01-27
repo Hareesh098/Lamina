@@ -89,8 +89,8 @@ void Init(){
   BondLength =(double*)malloc((nBond+1)*sizeof(double));
   discDragx = (double*)malloc((nAtom + 1) * sizeof(double)); 
   discDragy = (double*)malloc((nAtom + 1) * sizeof(double)); 
-  nodeDragx = (double*)malloc((nAtom + 1) * sizeof(double));
-  nodeDragy = (double*)malloc((nAtom + 1) * sizeof(double));
+  nodeDragx = (double*)malloc((nBond + 1) * sizeof(double));
+  nodeDragy = (double*)malloc((nBond + 1) * sizeof(double));
    
   int n;
   fscanf(fpSTATE, "%s\n", dummy);
@@ -102,7 +102,7 @@ void Init(){
   for(n=1; n<=nBond; n++)
    fscanf(fpSTATE, "%d %d %d %d\n", &BondID[n], &BondType[n], &atom1[n], &atom2[n]);
 
- //Calculate and save the intitial bond lenghts which are also equilibrium lenghts
+ //Calculate and save the initial bond lengths which are also equilibrium lengths
  double dx, dy, rr;
  for(n = 1; n <= nBond; n++){
   dx = rx[atom1[n]] - rx[atom2[n]];
@@ -114,8 +114,8 @@ void Init(){
     dy -= SignR(region[2], dy);
 
    rr = Sqr(dx) + Sqr(dy);
-   ro[n] = sqrt(rr);
-   kb[n] = 1.0; //Bond stiffness
+   ro[BondType[n]] = sqrt(rr);
+   kb[BondType[n]] = 1.0; //Bond stiffness
   }
 
 

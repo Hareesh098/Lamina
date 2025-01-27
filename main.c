@@ -32,6 +32,8 @@ void PrintStress();
 void Close();
 void ComputePairForce();
 void PrintMomentum();
+void DisplaceAtoms();
+void DumpRestart(); 
 
 int main(int argc, char **argv) {
  time_t t1 = 0, t2;
@@ -76,7 +78,8 @@ int main(int argc, char **argv) {
   moreCycles = 1;
   timeNow = 0.0;
   if(timeNow == 0.0) {
-   Trajectory();  
+   DisplaceAtoms();
+   //Trajectory();  
    ApplyBoundaryCond();
    }
 
@@ -103,13 +106,16 @@ int main(int argc, char **argv) {
     PrintStress();
     AccumProps(0);
     PrintMomentum();
+    PrintVrms();
     }
    if(stepCount % stepTraj == 0){
     Trajectory();
     DumpBonds();
     }
-    if(stepCount % stepDump == 0)
+    if(stepCount % stepDump == 0){
     DumpState();
+    DumpRestart();
+    }
     if(stepCount >= stepLimit)
      moreCycles = 0;
   }

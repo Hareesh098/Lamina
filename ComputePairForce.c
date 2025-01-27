@@ -13,7 +13,7 @@ for(n = 1 ; n <= nAtom ; n ++){
 }
 
 RadiusIJ = 0.0;
-gamman = 0.0;
+gamman = 1.0;
 double vr[NDIM+1], fd, fdVal, rrinv;
 rrinv = 0.0; fd = 0.0; fdVal = 0.0; 
 
