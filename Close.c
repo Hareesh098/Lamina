@@ -12,7 +12,7 @@ void Close(){
   free(fay);
   free(cellList);
 
-  free(atomID); free(atomType); free(atomRadius);
+  free(atomID); free(atomType); free(atomRadius); free(atomMass);
   free(speed);
   free(atom1); free(atom2); free(BondID);
   free(BondType); free(kb); free(ro);
