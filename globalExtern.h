@@ -25,6 +25,7 @@ extern int	nAtomType;
 extern int	*atomType;
 extern int	*atomID;
 extern double	*atomRadius; 
+extern double	*atomMass, TotalMass; 
 
 extern int	nBond, nBondType; 
 extern int	*atom1, *atom2; 
@@ -37,7 +38,9 @@ extern double	*discDragx, *discDragy, *nodeDragx, *nodeDragy;
 extern double	strain, strainRate;
 extern double	shearDisplacement, shearVelocity;
 extern double	forceY, forceX;
-extern double VSqr, VMeanSqr, VRootMeanSqr;
+extern double	VSqr, VMeanSqr, VRootMeanSqr;
+extern double	ComX, ComY;
+extern double   HaltCondition;
 
 extern char	solver[128];
 extern char	xBoundary[10], yBoundary[10];
@@ -99,5 +102,9 @@ extern FILE    *fpstress;
 
 extern char    momentum[256];
 extern FILE    *fpmomentum;
+
+extern char    com[256];
+extern FILE    *fpcom;
+
 
 #endif // GLOBALEXTERN_H
