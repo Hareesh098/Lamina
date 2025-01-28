@@ -38,17 +38,14 @@ void ComputeBondForce(){
    rr = Sqr(dr[1]) + Sqr(dr[2]);
    r = sqrt(rr);
    ri = 1.0/r;
-   strech = ((r - ro[BondType[n]])/ro[BondType[n]]);
-   uVal = 0.5*kb[BondType[n]]*Sqr(strech);
-   roi = 1.0/ro[BondType[n]];
+   strech = ((r - ro[BondID[n]])/ro[BondID[n]]);
+   uVal = 0.5*kb[BondID[n]]*Sqr(strech);
+   roi = 1.0/ro[BondID[n]];
    rrinv = 1.0/rr;
    vr[1] = vx[atom1[n]] - vx[atom2[n]];
    vr[2] = vy[atom1[n]] - vy[atom2[n]];
-   fcVal = -kb[BondType[n]] * strech * roi * ri; //F = -Grad U
+   fcVal = -kb[BondID[n]] * strech * roi * ri; //F = -Grad U
    fdVal = -gamman * (vr[1]*dr[1] + vr[2]*dr[2]) * rrinv; //node-node drag
-   
-   //f  = fcVal * dr[1];
-   //fd = fdVal * dr[1];
 
    nodeDragx[atom1[n]] +=  fdVal * dr[1];  //node-node drag
    nodeDragy[atom1[n]] +=  fdVal * dr[2];  //node-node drag
