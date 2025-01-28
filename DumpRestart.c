@@ -21,7 +21,7 @@ void DumpRestart() {
   int n; 
   fprintf(fpDUMP, "Atoms\n");
   for(n = 1; n <= nAtom; n ++)
-   fprintf(fpDUMP, "%d %d %0.2lf %lf %lf %lf %lf\n", atomID[n], atomType[n], atomRadius[n], rx[n], ry[n], vx[n], vy[n]);
+   fprintf(fpDUMP, "%d %d %0.2lf %0.16lf %0.16lf %0.16lf %0.16lf\n", atomID[n], atomType[n], atomRadius[n], rx[n], ry[n], vx[n], vy[n]);
   
 
   fprintf(fpDUMP, "Bonds\n"); 
