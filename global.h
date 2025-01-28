@@ -22,6 +22,7 @@ int	nAtomType;
 int	*atomType;
 int	*atomID;
 double	*atomRadius; 
+double	*atomMass, TotalMass;
 
 int	nBond, nBondType; 
 int	*atom1, *atom2; 
@@ -36,6 +37,8 @@ double strain, strainRate;
 double shearDisplacement, shearVelocity;
 double forceY, forceX;
 double VSqr, VMeanSqr, VRootMeanSqr;
+double ComX, ComY;
+double HaltCondition;
 
 char	solver[128];
 char	xBoundary[10], yBoundary[10];
@@ -97,5 +100,8 @@ FILE    *fpstress;
 
 char    momentum[256];
 FILE    *fpmomentum;
+
+char    com[256];
+FILE    *fpcom;
 
 
