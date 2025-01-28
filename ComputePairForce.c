@@ -2,7 +2,7 @@
 #include<math.h>
 #include"globalExtern.h"
 void ComputePairForce(){
-double dr[NDIM+1], f, fcVal, rr, ri, r, uVal;
+double dr[NDIM+1], fcVal, rr, ri, r, uVal;
 int n, i,j;
 uVal = 0.0;  uSumPair = 0.0 ; 
 virSumPair = 0.0; virSumPairxx = 0.; virSumPairyy = 0.; virSumPairxy = 0.;
@@ -14,8 +14,8 @@ for(n = 1 ; n <= nAtom ; n ++){
 
 RadiusIJ = 0.0;
 gamman = 1.0;
-double vr[NDIM+1], fd, fdVal, rrinv;
-rrinv = 0.0; fd = 0.0; fdVal = 0.0; 
+double vr[NDIM+1], fdVal, rrinv;
+rrinv = 0.0; fdVal = 0.0; 
 
 for(i=1;i<=nAtom;i++){
  for(j=i+1;j<=nAtom;j++){
@@ -51,21 +51,16 @@ for(i=1;i<=nAtom;i++){
    fcVal = 1.0 * RadiusIJInv * (1.0 - r * RadiusIJInv) *ri;
    fdVal = -gamman * (vr[1]*dr[1] + vr[2]*dr[2]) * rrinv; //disc-disc drag
 
-   f  = fcVal * dr[1];
-   fd = fdVal * dr[1];
-   ax[i] += (f + fd);
-   ax[j] += -(f + fd);
+   discDragx[i] +=  fdVal * dr[1]; //disc-disc drag
+   discDragy[i] +=  fdVal * dr[2]; //disc-disc drag
+   discDragx[j] += -fdVal * dr[1]; //disc-disc drag
+   discDragy[j] += -fdVal * dr[2]; //disc-disc drag
 
-   discDragx[i] += fd; //disc-disc drag
-   discDragx[j] += -fd; //disc-disc drag
+   ax[i] += (fcVal + fdVal) * dr[1];
+   ay[i] += (fcVal + fdVal) * dr[2];
+   ax[j] += -(fcVal + fdVal) * dr[1];
+   ay[j] += -(fcVal + fdVal) * dr[2];
 
-   f = fcVal * dr[2];
-   fd = fdVal * dr[2];
-   ay[i] += (f + fd);
-   ay[j] += -(f + fd);
-
-   discDragy[i] += fd; //disc-disc drag
-   discDragy[j] += -fd; //disc-disc drag
 
   //In the following, for stress/virial term (fcVal + fdVal) is used since the total pair force = Hookean Interaction + relative velocity drag
   uSumPair +=  0.5 * uVal;
