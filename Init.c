@@ -23,6 +23,7 @@ void Init(){
   fscanf(fp, "%s %lf", dummy, &strain);
   fscanf(fp, "%s %lf", dummy, &forceY);
   fscanf(fp, "%s %lf", dummy, &forceX);
+  fscanf(fp, "%s %lf", dummy, &HaltCondition);
   fscanf(fp, "%s %d", dummy, &stepAvg);
   fscanf(fp, "%s %d", dummy, &stepEquil);
   fscanf(fp, "%s %d", dummy, &stepLimit);
@@ -80,6 +81,7 @@ void Init(){
   atomID = (int*)malloc((nAtom+1) * sizeof(int));
   atomType = (int*)malloc((nAtom+1) * sizeof(int));
   atomRadius = (double*)malloc((nAtom + 1) * sizeof(double));
+  atomMass = (double*)malloc((nAtom + 1) * sizeof(double));
   speed = (double*)malloc((nAtom + 1) * sizeof(double));
   atom1 = (int*)malloc((nBond+1)*sizeof(int));
   atom2 = (int*)malloc((nBond+1)*sizeof(int)); 
@@ -95,11 +97,14 @@ void Init(){
   nodeDragy = (double*)malloc((nBond + 1) * sizeof(double));
    
   int n;
+  for(n = 1; n <= nAtom; n ++){
+   atomMass[n] = 1.0;
+  }
   fscanf(fpSTATE, "%s\n", dummy);
   for(n = 1; n <= nAtom; n ++){
    fscanf(fpSTATE, "%d %d %lf %lf %lf %lf %lf\n", &atomID[n], &atomType[n], &atomRadius[n], &rx[n], &ry[n], &vx[n], &vy[n]);
   }
-
+  
   fscanf(fpSTATE, "%s\n", dummy); 
   for(n=1; n<=nBond; n++)
    fscanf(fpSTATE, "%d %d %d %d\n", &BondID[n], &BondType[n], &atom1[n], &atom2[n]);
@@ -116,12 +121,12 @@ void Init(){
     dy -= SignR(region[2], dy);
 
    rr = Sqr(dx) + Sqr(dy);
-   ro[BondType[n]] = sqrt(rr);
-   kb[BondType[n]] = 1.0; //Bond stiffness
+   ro[BondID[n]] = sqrt(rr);
+   kb[BondID[n]] = 1.0; //Bond stiffness
   }
 
 
-  fclose(fpSTATE);
+    fclose(fpSTATE);
   
 
     fprintf(fpresult, "------------------------------------\n");
@@ -147,14 +152,14 @@ void Init(){
     fprintf(fpresult, "boundary         %s %s\n", xBoundary, yBoundary);
     fprintf(fpresult, "------------------------------------\n");
     fprintf(fpresult, "#timeNow Momentum PotEngy KinEngy TotEngy uSumPairPerAtom BondEnergyPerAtom  sPress VirialSum\n");
-    fprintf(fpstress, "nAtom            %d\n", nAtom);
-    fprintf(fpstress, "nBond            %d\n", nBond);
     fprintf(fpstress, "strain           %lf\n", strain);
     fprintf(fpstress, "region[1]        %lf\n", region[1]);
     fprintf(fpstress, "region[2]        %lf\n", region[2]);
     fprintf(fpstress, "#timeNow virSumxx virSumyy virSumxy pressure\n");
     fprintf(fpmomentum, "#timeNow Px Py\n");
-  
+    fprintf(fpvrms, "#timeNow\tVrms \n");
+    fprintf(fpcom, "#timeNow\tComX\tComY\n");
+
    if((strcmp(xBoundary, "p") != 0 && strcmp(xBoundary, "r") != 0) ||
     (strcmp(yBoundary, "p") != 0 && strcmp(yBoundary, "r") != 0)) {
     fprintf(fpresult, "Error: Invalid boundary value detected: '%s %s'. Only 'p' or 'r' are allowed.\n", xBoundary, yBoundary);
