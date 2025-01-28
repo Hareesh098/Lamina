@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<string.h>
 #include<stdlib.h>
+#include <stdbool.h>
 #include <time.h> 
 #include"global.h"
 #include"globalExtern.h"
@@ -34,7 +35,10 @@ void ComputePairForce();
 void PrintMomentum();
 void DisplaceAtoms();
 void DumpRestart(); 
-void HaltConditionCheck(double value, int stepCount);
+bool HaltConditionCheck(double value, int stepCount); 
+void EvalCom();
+void PrintCom();
+void EvalVrms();
 
 int main(int argc, char **argv) {
  time_t t1 = 0, t2;
@@ -71,7 +75,8 @@ int main(int argc, char **argv) {
   fpstress = fopen(stress, "w");
   sprintf(momentum, "%s.momentum", prefix);
   fpmomentum = fopen(momentum, "w");
-
+  sprintf(com, "%s.com", prefix);
+  fpcom = fopen(com, "w");
 
   Init();
   SetupJob();
@@ -80,7 +85,8 @@ int main(int argc, char **argv) {
   timeNow = 0.0;
   if(timeNow == 0.0) {
    DisplaceAtoms();
-   //Trajectory();  
+   DumpBonds();
+   Trajectory();  
    ApplyBoundaryCond();
    }
 
@@ -101,6 +107,8 @@ int main(int argc, char **argv) {
    VelocityVerletStep(2);
    ApplyBoundaryCond();
    EvalProps();
+   EvalVrms();
+   EvalCom();
    AccumProps(1);
    if(stepCount % stepAvg == 0){
     AccumProps(2);
@@ -109,16 +117,18 @@ int main(int argc, char **argv) {
     AccumProps(0);
     PrintMomentum();
     PrintVrms();
+    PrintCom();
     }
    if(stepCount % stepTraj == 0){
     Trajectory();
     DumpBonds();
     }
-    if(stepCount % stepDump == 0){
-    DumpState();
-    DumpRestart();
+   if(HaltConditionCheck(VRootMeanSqr, stepCount)) {
+    DumpRestart();     // Save the current state for input
+    DumpState();       // Save the current state with fx and fy. Remove it in final version
+    break;  // Exit the loop when the halt condition is met
     }
-    HaltConditionCheck(VRootMeanSqr, stepCount);
+    
     if(stepCount >= stepLimit)
      moreCycles = 0;
   }
@@ -137,6 +147,7 @@ int main(int argc, char **argv) {
   fclose(fpbond);
   fclose(fpstress);
   fclose(fpmomentum);
+  fclose(fpcom);
   free(prefix);
   Close();
   return 0;
