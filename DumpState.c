@@ -21,7 +21,7 @@ void DumpState() {
   fprintf(fpDUMP, "ITEM: ATOMS id type radius x y vx vy fx fy\n");
   int n;
   for (n = 1; n <= nAtom; n++) {
-   fprintf(fpDUMP, "%d\t %d\t %0.2lf\t %0.16lf\t %0.16lf\t %0.16lf\t %0.16lf\t %0.16lf\t %0.16lf\t\n",
+   fprintf(fpDUMP, "%d %d %0.2lf %0.16lf %0.16lf %0.16lf %0.16lf %0.16lf %0.16lf\n",
     atomID[n], atomType[n], atomRadius[n], rx[n], ry[n], vx[n], vy[n], ax[n], ay[n] );
   }
   fclose(fpDUMP);
