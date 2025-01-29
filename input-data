@@ -1,4 +1,4 @@
-readData	../STATE-Z5.934
+readData	Z5.934-fy-0.001-fx0.Restart
 solver		Verlet
 boundary	p p
 freezeAtomType	1
@@ -6,7 +6,7 @@ rCut		2
 kappa		1.0
 deltaT		0.001
 gammaDot	0.0
-forceY          -0.000
+forceY          -0.001
 forceX          0
 HaltCondition   1e-6
 stepAvg		10000
