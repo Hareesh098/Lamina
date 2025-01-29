@@ -101,32 +101,15 @@ void Init(){
    atomMass[n] = 1.0;
   }
   fscanf(fpSTATE, "%s\n", dummy);
-  for(n = 1; n <= nAtom; n ++){
+  for(n = 1; n <= nAtom; n ++)
    fscanf(fpSTATE, "%d %d %lf %lf %lf %lf %lf\n", &atomID[n], &atomType[n], &atomRadius[n], &rx[n], &ry[n], &vx[n], &vy[n]);
-  }
+  
   
   fscanf(fpSTATE, "%s\n", dummy); 
   for(n=1; n<=nBond; n++)
-   fscanf(fpSTATE, "%d %d %d %d\n", &BondID[n], &BondType[n], &atom1[n], &atom2[n]);
+   fscanf(fpSTATE, "%d %d %d %d %lf %lf\n", &BondID[n], &BondType[n], &atom1[n], &atom2[n], &kb[n], &ro[n]);
 
- //Calculate and save the initial bond lengths which are also equilibrium lengths
- double dx, dy, rr;
- for(n = 1; n <= nBond; n++){
-  dx = rx[atom1[n]] - rx[atom2[n]];
-  if(fabs(dx) > regionH[1])
-  dx -= SignR(region[1], dx);
-
-   dy = ry[atom1[n]] - ry[atom2[n]];
-   if(fabs(dy) > regionH[2])
-    dy -= SignR(region[2], dy);
-
-   rr = Sqr(dx) + Sqr(dy);
-   ro[BondID[n]] = sqrt(rr);
-   kb[BondID[n]] = 1.0; //Bond stiffness
-  }
-
-
-    fclose(fpSTATE);
+  fclose(fpSTATE);
   
 
     fprintf(fpresult, "------------------------------------\n");
