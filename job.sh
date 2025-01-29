@@ -8,6 +8,6 @@
 Np=1
 PREFIX=test
 ./main $PREFIX
-#mpirun -np $Np ./main $PREFIX < /dev/null
+gprof main gmon.out > Profile-Report.txt
 
 
