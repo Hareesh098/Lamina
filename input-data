@@ -1,4 +1,4 @@
-readData	Z5.934-fy-0.001-fx0.Restart
+readData	../STATE
 solver		Verlet
 boundary	p p
 freezeAtomType	1
