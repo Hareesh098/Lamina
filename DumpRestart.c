@@ -26,7 +26,7 @@ void DumpRestart() {
 
   fprintf(fpDUMP, "Bonds\n"); 
   for(n=1; n<=nBond; n++)
-  fprintf(fpDUMP,  "%d %d %d %d\n", BondID[n], BondType[n], atom1[n], atom2[n]);
+  fprintf(fpDUMP,  "%d %d %d %d %0.2lf %0.16lf\n", BondID[n], BondType[n], atom1[n], atom2[n], kb[n], ro[n]);
 
   fclose(fpDUMP);
 }
