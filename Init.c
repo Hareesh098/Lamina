@@ -23,6 +23,8 @@ void Init(){
   fscanf(fp, "%s %lf", dummy, &strain);
   fscanf(fp, "%s %lf", dummy, &forceY);
   fscanf(fp, "%s %lf", dummy, &forceX);
+  fscanf(fp, "%s %lf", dummy, &DeltaY);
+  fscanf(fp, "%s %lf", dummy, &DeltaX);
   fscanf(fp, "%s %lf", dummy, &HaltCondition);
   fscanf(fp, "%s %d", dummy, &stepAvg);
   fscanf(fp, "%s %d", dummy, &stepEquil);

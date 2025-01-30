@@ -39,6 +39,7 @@ double forceY, forceX;
 double VSqr, VMeanSqr, VRootMeanSqr;
 double ComX, ComY;
 double HaltCondition;
+double DeltaY, DeltaX;
 
 char	solver[128];
 char	xBoundary[10], yBoundary[10];
