@@ -39,6 +39,7 @@ bool HaltConditionCheck(double value, int stepCount);
 void EvalCom();
 void PrintCom();
 void EvalVrms();
+void EvalUnwrap();
 
 int main(int argc, char **argv) {
  time_t t1 = 0, t2;
@@ -99,6 +100,7 @@ int main(int argc, char **argv) {
    ComputePairForce();
    ComputeBondForce();
    VelocityVerletStep(1);
+   EvalUnwrap();
    ApplyBoundaryCond();
    ComputePairForce();
    ComputeBondForce();

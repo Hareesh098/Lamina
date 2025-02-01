@@ -42,6 +42,8 @@ extern double	VSqr, VMeanSqr, VRootMeanSqr;
 extern double	ComX, ComY;
 extern double   HaltCondition;
 extern double   DeltaY, DeltaX;
+extern int	*ImageX, *ImageY;
+extern double	*rxUnwrap, *ryUnwrap;
 
 extern char	solver[128];
 extern char	xBoundary[10], yBoundary[10];

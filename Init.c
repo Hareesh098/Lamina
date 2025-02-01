@@ -97,6 +97,10 @@ void Init(){
   discDragy = (double*)malloc((nAtom + 1) * sizeof(double)); 
   nodeDragx = (double*)malloc((nBond + 1) * sizeof(double));
   nodeDragy = (double*)malloc((nBond + 1) * sizeof(double));
+  ImageX = (int*)malloc((nAtom+1) * sizeof(int));
+  ImageY = (int*)malloc((nAtom+1) * sizeof(int));
+  rxUnwrap = (double*)malloc((nAtom + 1) * sizeof(double));
+  ryUnwrap = (double*)malloc((nAtom + 1) * sizeof(double));
    
   int n;
   for(n = 1; n <= nAtom; n ++){
