@@ -4,7 +4,7 @@
 #include"globalExtern.h"
 void EvalCom(){
  int n;
- ComX = 0.0; ComY = 0.0;
+ ComX = 0.0; ComY = 0.0; ComXRatio = 0.0; ComYRatio = 0.0;
  TotalMass = 0.0;
   
  for(n=1; n<=nAtom; n++){
@@ -16,6 +16,11 @@ void EvalCom(){
 
   ComX = ComX/TotalMass;
   ComY = ComY/TotalMass;
+
+  if(timeNow == 0.0){
+  ComX0 = ComX; ComY0 = ComY;
+  }
+  ComXRatio = ComX/ComX0;   ComYRatio = ComY/ComY0;
  }
   
   

@@ -39,11 +39,14 @@ extern double	strain, strainRate;
 extern double	shearDisplacement, shearVelocity;
 extern double	forceY, forceX;
 extern double	VSqr, VMeanSqr, VRootMeanSqr;
-extern double	ComX, ComY;
+extern double	ComX, ComY, ComX0, ComY0, ComXRatio, ComYRatio;
 extern double   HaltCondition;
 extern double   DeltaY, DeltaX;
 extern int	*ImageX, *ImageY;
 extern double	*rxUnwrap, *ryUnwrap;
+extern	int	nAtomInterface;
+extern	int	*atomIDInterface;
+extern	int	Kn;
 
 extern char	solver[128];
 extern char	xBoundary[10], yBoundary[10];

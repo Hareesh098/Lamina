@@ -33,16 +33,18 @@ double 	TotalBondEnergy, BondEnergyPerAtom;
 double	gamman;
 double	*discDragx, *discDragy, *nodeDragx, *nodeDragy;
 
-double strain, strainRate;
-double shearDisplacement, shearVelocity;
-double forceY, forceX;
-double VSqr, VMeanSqr, VRootMeanSqr;
-double ComX, ComY;
-double HaltCondition;
-double DeltaY, DeltaX;
+double	strain, strainRate;
+double	shearDisplacement, shearVelocity;
+double	forceY, forceX;
+double	VSqr, VMeanSqr, VRootMeanSqr;
+double	ComX, ComY, ComX0, ComY0, ComXRatio, ComYRatio;
+double	HaltCondition;
+double	DeltaY, DeltaX;
 int	*ImageX, *ImageY;
 double	*rxUnwrap, *ryUnwrap;
-
+int	nAtomInterface;
+int	*atomIDInterface;
+int	Kn;
 
 char	solver[128];
 char	xBoundary[10], yBoundary[10];

@@ -17,6 +17,7 @@ void Close(){
   free(atom1); free(atom2); free(BondID);
   free(BondType); free(kb); free(ro);
   free(ImageX); free(ImageY); free(rxUnwrap); free(ryUnwrap);
+  free(atomIDInterface);
 
   int n;
   for (n = 0; n <= nBuffCorr; n++){

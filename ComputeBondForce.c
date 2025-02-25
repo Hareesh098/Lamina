@@ -8,12 +8,12 @@ void ComputeBondForce(){
   double strech;
   double dr[NDIM+1], r, rr, ri, roi;
   double uVal,fcVal;
+
   uVal = 0.0; fcVal = 0.0; TotalBondEnergy = 0.0;
   virSumBond = 0.0; virSumBondxx = 0.; virSumBondyy = 0.; virSumBondxy = 0.;
   gamman = 1.0;
+
   double vr[NDIM+1], fdVal, rrinv;
-  //double f, fd;
-  //fd = 0.0;
   rrinv = 0.0;  fdVal = 0.0; 
 
   for(n=1; n<=nBond; n++){
@@ -37,14 +37,14 @@ void ComputeBondForce(){
 	
    rr = Sqr(dr[1]) + Sqr(dr[2]);
    r = sqrt(rr);
-   ri = 1.0/r;
-   strech = ((r - ro[BondID[n]])/ro[BondID[n]]);
-   uVal = 0.5*kb[BondID[n]]*Sqr(strech);
-   roi = 1.0/ro[BondID[n]];
    rrinv = 1.0/rr;
+   ri = 1.0/r;
+   roi = 1.0/ro[BondID[n]];
+   strech = 1.0 - r * roi;
+   uVal = 0.5 * kb[BondID[n]] * ro[BondID[n]] * Sqr(strech);
    vr[1] = vx[atom1[n]] - vx[atom2[n]];
    vr[2] = vy[atom1[n]] - vy[atom2[n]];
-   fcVal = -kb[BondID[n]] * strech * roi * ri; //F = -Grad U
+   fcVal = -kb[BondID[n]] * strech * ri; //F = -Grad U
    fdVal = -gamman * (vr[1]*dr[1] + vr[2]*dr[2]) * rrinv; //node-node drag
 
    nodeDragx[atom1[n]] +=  fdVal * dr[1];  //node-node drag

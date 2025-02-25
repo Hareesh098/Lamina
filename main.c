@@ -86,13 +86,21 @@ int main(int argc, char **argv) {
   timeNow = 0.0;
   if(timeNow == 0.0) {
    DisplaceAtoms();
+   ComputePairForce();
+   ComputeBondForce();
    DumpBonds();
    Trajectory();  
+   EvalUnwrap();
    ApplyBoundaryCond();
+   EvalCom();
    }
 
 //Here starts the main loop of the program 
   while(moreCycles){
+   if(stepLimit == 0){
+   exit(0);
+   }
+
    stepCount ++;
    timeNow = stepCount * deltaT; //for adaptive step size: timeNow += deltaT
    

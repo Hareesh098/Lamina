@@ -95,8 +95,8 @@ void Init(){
   BondLength =(double*)malloc((nBond+1)*sizeof(double));
   discDragx = (double*)malloc((nAtom + 1) * sizeof(double)); 
   discDragy = (double*)malloc((nAtom + 1) * sizeof(double)); 
-  nodeDragx = (double*)malloc((nBond + 1) * sizeof(double));
-  nodeDragy = (double*)malloc((nBond + 1) * sizeof(double));
+  nodeDragx = (double*)malloc((nAtom + 1) * sizeof(double));
+  nodeDragy = (double*)malloc((nAtom + 1) * sizeof(double));
   ImageX = (int*)malloc((nAtom+1) * sizeof(int));
   ImageY = (int*)malloc((nAtom+1) * sizeof(int));
   rxUnwrap = (double*)malloc((nAtom + 1) * sizeof(double));
@@ -105,7 +105,7 @@ void Init(){
   int n;
   for(n = 1; n <= nAtom; n ++){
    atomMass[n] = 1.0;
-  }
+  } 
   fscanf(fpSTATE, "%s\n", dummy);
   for(n = 1; n <= nAtom; n ++)
    fscanf(fpSTATE, "%d %d %lf %lf %lf %lf %lf\n", &atomID[n], &atomType[n], &atomRadius[n], &rx[n], &ry[n], &vx[n], &vy[n]);
@@ -116,13 +116,30 @@ void Init(){
    fscanf(fpSTATE, "%d %d %d %d %lf %lf\n", &BondID[n], &BondType[n], &atom1[n], &atom2[n], &kb[n], &ro[n]);
 
   fclose(fpSTATE);
+
+  //List the interface atoms
+  nAtomInterface = 0;
+  for(n=1; n<=nAtom; n++){
+   if(atomRadius[n] > 0.0){
+    nAtomInterface++; 
+   } }
+
+   atomIDInterface =  (int*)malloc((nAtomInterface+1)*sizeof(int));
   
+  int m;
+  m = 1;
+  for(n=1; n<=nAtom; n++){
+   if(atomRadius[n] > 0.0){
+   atomIDInterface[m] = atomID[n]; 
+   m++; 
+   } }
 
     fprintf(fpresult, "------------------------------------\n");
     fprintf(fpresult, "------------ PARAMETERS ------------\n");
     fprintf(fpresult, "------------------------------------\n");
     fprintf(fpresult, "nAtom            %d\n",  nAtom);
     fprintf(fpresult, "nBond            %d\n",  nBond);
+    fprintf(fpresult, "nAtomInterface   %d\n",  nAtomInterface);
     fprintf(fpresult, "strain           %lf\n", strain);
     fprintf(fpresult, "strainRate       %lf\n", strainRate);
     fprintf(fpresult, "forceY		%lf\n", forceY);
