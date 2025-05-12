@@ -36,7 +36,7 @@ void EvalProps() {
 
   kinEnergy = 0.5 * vvSum / nAtom ;
   uSumPairPerAtom = uSumPair / nAtom ;
-  BondEnergyPerAtom = TotalBondEnergy / nAtom  ;
+  BondEnergyPerAtom = TotalBondEnergy / (0.5*nAtom); //Factor of 0.5 since each atom has one half the bond energy
   potEnergy = uSumPairPerAtom +  BondEnergyPerAtom ;
   totEnergy = kinEnergy + potEnergy;
   virSumxx = virSumPairxx  + virSumBondxx ;
