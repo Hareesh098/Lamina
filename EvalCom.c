@@ -8,7 +8,7 @@ void EvalCom(){
  TotalMass = 0.0;
   
  for(n=1; n<=nAtom; n++){
- if(atomType[n] == 4 || atomType[n] == 5){
+ if(molID[n] == 2){
   ComX += atomMass[n] * rxUnwrap[n]; 
   ComY += atomMass[n] * ryUnwrap[n]; 
   TotalMass += atomMass[n];
