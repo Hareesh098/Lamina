@@ -3,8 +3,12 @@
 #include"globalExtern.h"
 void ApplyForce(){
  int n;
+ double lx;
+ lx = regionH[1];  
+ fy =  (FyBylx * lx)/nAtomBlock;
+ fx =  fxByfy * fy;
  for(n = 1; n <= nAtom; n ++){
- if(atomType[n] == 4 || atomType[n] == 5){
- ay[n] += forceY;
- ax[n] += forceX;
+ if(molID[n] == 2){
+  ax[n] += fx; 
+  ay[n] -= fy;
 } } }
