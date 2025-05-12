@@ -31,7 +31,7 @@ void ApplyShear();
 void ApplyLeesEdwardsBoundaryCond();
 void PrintStress();
 void Close();
-void ComputePairForce();
+void ComputePairForce(int normFlag);
 void PrintMomentum();
 void DisplaceAtoms();
 void DumpRestart(); 
@@ -40,6 +40,8 @@ void EvalCom();
 void PrintCom();
 void EvalVrms();
 void EvalUnwrap();
+void DumpPairs();
+void ApplyViscous();
 
 int main(int argc, char **argv) {
  time_t t1 = 0, t2;
@@ -60,24 +62,27 @@ int main(int argc, char **argv) {
   fpresult = fopen(result, "w");
   sprintf(xyz, "%s.xyz", prefix);
   fpxyz = fopen(xyz, "w");
-  sprintf(dump, "%s.STATE", prefix);
-  fpdump = fopen(dump, "w");
+  sprintf(vrms, "%s.vrms", prefix);
+  fpvrms = fopen(vrms, "w");
+  sprintf(bond, "%s.bond", prefix);
+  fpbond = fopen(bond, "w");
+  sprintf(com, "%s.com", prefix);
+  fpcom = fopen(com, "w");
+  sprintf(pair, "%s.pair", prefix);
+  fppair = fopen(pair, "w");
+  
+  /* //Uncomment the following as per your acquirement 
   sprintf(dnsty, "%s.curr-dnsty", prefix);
   fpdnsty = fopen(dnsty, "w");
   sprintf(visc, "%s.viscosity", prefix);
   fpvisc = fopen(visc, "w");
   sprintf(rdf, "%s.rdf", prefix);
   fprdf = fopen(rdf, "w");
-  sprintf(vrms, "%s.vrms", prefix);
-  fpvrms = fopen(vrms, "w");
-  sprintf(bond, "%s.bond", prefix);
-  fpbond = fopen(bond, "w");
   sprintf(stress, "%s.stress", prefix);
   fpstress = fopen(stress, "w");
   sprintf(momentum, "%s.momentum", prefix);
   fpmomentum = fopen(momentum, "w");
-  sprintf(com, "%s.com", prefix);
-  fpcom = fopen(com, "w");
+  */  
 
   Init();
   SetupJob();
@@ -86,13 +91,20 @@ int main(int argc, char **argv) {
   timeNow = 0.0;
   if(timeNow == 0.0) {
    DisplaceAtoms();
-   ComputePairForce();
+   ComputePairForce(1);
    ComputeBondForce();
+   ApplyForce();
    DumpBonds();
+   DumpPairs();
    Trajectory();  
    EvalUnwrap();
    ApplyBoundaryCond();
+   EvalProps();
+   EvalVrms();
    EvalCom();
+   PrintVrms();
+   PrintCom();
+   PrintSummary();
    }
 
 //Here starts the main loop of the program 
@@ -103,39 +115,35 @@ int main(int argc, char **argv) {
 
    stepCount ++;
    timeNow = stepCount * deltaT; //for adaptive step size: timeNow += deltaT
-   
-   
-   ComputePairForce();
-   ComputeBondForce();
+
    VelocityVerletStep(1);
    EvalUnwrap();
    ApplyBoundaryCond();
-   ComputePairForce();
+   ComputePairForce(1);
    ComputeBondForce();
    ApplyForce();
-   //ApplyDrivingForce();
    VelocityVerletStep(2);
    ApplyBoundaryCond();
    EvalProps();
    EvalVrms();
    EvalCom();
-   AccumProps(1);
    if(stepCount % stepAvg == 0){
-    AccumProps(2);
     PrintSummary();
-    PrintStress();
-    AccumProps(0);
-    PrintMomentum();
     PrintVrms();
     PrintCom();
     }
    if(stepCount % stepTraj == 0){
     Trajectory();
     DumpBonds();
+    DumpPairs();
     }
+   if(stepCount % stepDump == 0){
+    DumpRestart();     // Save the current state for input
+    DumpState();       // Save the current state for config
+   }
    if(HaltConditionCheck(VRootMeanSqr, stepCount)) {
     DumpRestart();     // Save the current state for input
-    DumpState();       // Save the current state with fx and fy. Remove it in final version
+    DumpState();       // Save the current state for config
     break;  // Exit the loop when the halt condition is met
     }
     
@@ -151,13 +159,18 @@ int main(int argc, char **argv) {
   fclose(fpresult);
   fclose(fpxyz);
   fclose(fpvrms);
+  fclose(fpbond);
+  fclose(fppair);
+  fclose(fpcom);
+
+/*//Uncomment the following as per your acquirement    
   fclose(fpdnsty);
   fclose(fpvisc);
   fclose(fprdf);
-  fclose(fpbond);
   fclose(fpstress);
   fclose(fpmomentum);
-  fclose(fpcom);
+*/
+
   free(prefix);
   Close();
   return 0;
