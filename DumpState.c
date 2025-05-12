@@ -16,13 +16,13 @@ void DumpState() {
   fprintf(fpDUMP, "%d\n",nAtom);
   fprintf(fpDUMP, "ITEM: BOX BOUNDS pp pp pp\n");
   fprintf(fpDUMP, "%lf %lf xlo xhi\n", -regionH[1], regionH[1]);
-  fprintf(fpDUMP, "%lf %lf ylo yhi\n", -regionH[1], regionH[1]);
-  fprintf(fpDUMP, "%lf %lf zlo zhi\n", -regionH[1], regionH[1]);
-  fprintf(fpDUMP, "ITEM: ATOMS id type radius x y vx vy fx fy\n");
+  fprintf(fpDUMP, "%lf %lf ylo yhi\n", -regionH[2], regionH[2]);
+  fprintf(fpDUMP, "%lf %lf zlo zhi\n",  -0.1, 0.1);
+  fprintf(fpDUMP, "ITEM: ATOMS id mol type radius x y vx vy fx fy\n");
   int n;
   for (n = 1; n <= nAtom; n++) {
-   fprintf(fpDUMP, "%d %d %0.2lf %0.16lf %0.16lf %0.16lf %0.16lf %0.16lf %0.16lf\n",
-    atomID[n], atomType[n], atomRadius[n], rx[n], ry[n], vx[n], vy[n], ax[n], ay[n] );
+   fprintf(fpDUMP, "%d\t %d\t %d\t %0.2lf\t %0.16lf\t %0.16lf\t %0.16lf\t %0.16lf\t %0.16lf\t %0.16lf\n", 
+   atomID[n], molID[n], atomType[n], atomRadius[n], rx[n], ry[n], vx[n], vy[n], ax[n], ay[n]);
   }
   fclose(fpDUMP);
 }
