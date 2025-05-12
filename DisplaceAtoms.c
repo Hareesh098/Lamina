@@ -4,7 +4,7 @@
 void DisplaceAtoms(){
  int n;
   for(n = 1; n <= nAtom; n ++){
-   if(atomType[n] == 4 || atomType[n] == 5){
+   if(molID[n] == 2){
     rx[n] += DeltaX; 
     ry[n] += DeltaY;
 } } }
