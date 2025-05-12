@@ -15,9 +15,9 @@ DeltaX		0.0
 HaltCondition	1e-9
 stepAvg		100
 stepEquil		0
-stepLimit		100000
-stepDump	100000
-stepTraj		10000
+stepLimit		10000
+stepDump	10000
+stepTraj		100
 limitCorrAv	200
 nBuffCorr		30
 nFunCorr		20
