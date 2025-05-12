@@ -11,10 +11,11 @@ void DumpBonds(){
   fprintf(fpbond, "%lf %lf xlo xhi\n", -regionH[1], regionH[1]);
   fprintf(fpbond, "%lf %lf ylo yhi\n", -regionH[2], regionH[2]);
   fprintf(fpbond, "%lf %lf zlo zhi\n", -0.1, 0.1);
-  fprintf(fpbond, "ITEM: ENTRIES BondID, BondType, atom1 atom2 kb ro\n");
+  fprintf(fpbond, "ITEM: ENTRIES BondID, BondType, atom1 atom2 BondLength BondLengthEqul nodeDragx1 nodeDragy1\n");
 
   for(n=1; n<=nBond; n++)
-   fprintf(fpbond, "%d %d %d %d %lf %lf\n", BondID[n], BondType[n], atom1[n], atom2[n], kb[BondID[n]], ro[BondID[n]]);
+   fprintf(fpbond, "%d %d %d %d %0.16lf %0.16lf %0.16lf %0.16lf\n", BondID[n], BondType[n], atom1[n], atom2[n], 
+   BondLength[n], ro[n], nodeDragx[atom1[n]], nodeDragy[atom1[n]]);
   }
 
 
