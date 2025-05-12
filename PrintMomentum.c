@@ -2,6 +2,6 @@
 #include"globalExtern.h"
 
 void PrintMomentum(){
-  fprintf(fpmomentum, "%0.10lf %0.10lf %0.10lf\n", timeNow, vSumX, vSumY);
+  fprintf(fpmomentum, "%0.4lf\t%0.16lf\t%0.16lf\n", timeNow, vSumX, vSumY);
   fflush(fpmomentum);
 }
