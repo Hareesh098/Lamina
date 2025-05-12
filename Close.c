@@ -2,6 +2,7 @@
 #include<stdlib.h>
 #include"globalExtern.h"
 void Close(){
+  int n;
   free(rx);
   free(ry);
   free(vx);
@@ -18,8 +19,28 @@ void Close(){
   free(BondType); free(kb); free(ro);
   free(ImageX); free(ImageY); free(rxUnwrap); free(ryUnwrap);
   free(atomIDInterface);
+  free(PairID); free(Pairatom1); free(Pairatom2); 
+  free(PairXij); free(PairYij);
 
-  int n;
+  free(DeltaXijOld);
+  free(DeltaYijOld);
+
+  free(molID);
+  
+  for (n = 0; n <= nAtom; n++) {
+   free(isBonded[n]);
+   }
+   free(isBonded);
+
+
+  
+  for(n = 0; n <= nAtom; n++) {
+   free(DeltaXijOldPair[n]);
+   free(DeltaYijOldPair[n]);
+   }
+    free(DeltaXijOldPair);
+    free(DeltaYijOldPair);
+
   for (n = 0; n <= nBuffCorr; n++){
     free(cfOrg[n]);
     free(spacetimeCorr[n]);
