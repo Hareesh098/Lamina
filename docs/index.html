@@ -109,23 +109,52 @@ Why "Lamina"?</h1>
 Key Features</h1>
 <h1><a class="anchor" id="autotoc_md3"></a>
 Interaction Potentials</h1>
-<p>Yukawa potential (screened Coulomb interactions), Lennard-Jones potential (standard 12-6), Harmonic bond potential (elastic network models), Hookean granular contact potential (for soft granular matter).</p>
+<ul>
+<li>Yukawa potential (screened Coulomb interactions)</li>
+<li>Lennard-Jones potential (standard 12-6)</li>
+<li>Harmonic bond potential (elastic network models)</li>
+<li>Hookean granular contact potential (for soft granular matter)</li>
+</ul>
 <h1><a class="anchor" id="autotoc_md4"></a>
 Thermostats and Temperature Control</h1>
-<p>Gaussian thermostat, Nose-Hoover thermostat, Langevin thermostat, Configurational temperature evaluation and control.</p>
+<ul>
+<li>Gaussian thermostat</li>
+<li>Nose-Hoover thermostat</li>
+<li>Langevin thermostat</li>
+<li>Configurational temperature evaluation and control</li>
+</ul>
 <h1><a class="anchor" id="autotoc_md5"></a>
 Time Integration</h1>
-<p>Velocity-Verlet integrator, Brownian (overdamped) dynamics,</p>
+<ul>
+<li>Leap-Frog integrator</li>
+<li>Velocity-Verlet integrator</li>
+<li>Langevin (stochastic) integrator</li>
+<li>Brownian (overdamped) interator</li>
+</ul>
 <h1><a class="anchor" id="autotoc_md6"></a>
 Physical Observables</h1>
-<p>-Radial Distribution Function (RDF) -Velocity Autocorrelation Function (VACF) -Root-Mean-Square Velocity (VRMS) -Stress tensor and momentum -Center-of-mass motion -Space-time correlation functions</p>
+<ul>
+<li>Radial Distribution Function (RDF)</li>
+<li>Velocity Autocorrelation Function (VACF)</li>
+<li>Root-Mean-Square Velocity (VRMS)</li>
+<li>Stress tensor and momentum</li>
+<li>Center-of-mass motion</li>
+<li>Space-time correlation functions</li>
+</ul>
 <h1><a class="anchor" id="autotoc_md7"></a>
 Output and Utilities</h1>
-<p>The output files are saved at the ../output folder. So you have a make a directory ../ location from where you ae running ./main prefix -Structured output files (<code>.xyz</code>, <code>.bond</code>, <code>.pair</code>, <code>.com</code>, <code>.result</code>) -Restart and resume capability (<code>.restart</code> and <code>.state</code> files) -Clean separation of source code, unit tests, and output -Support for Lees–Edwards boundary conditions (sheared systems) -Configurable halting conditions (based on VRMS or custom metric) -Modular design for easy extension of potentials and features</p>
+<ul>
+<li>The output files are saved at the ../output folder. So you have a make a directory ../ location from where you are running the code.</li>
+<li>Command to run ./main prefix</li>
+<li>Structured output files (<code>.xyz</code>, <code>.bond</code>, <code>.pair</code>, <code>.com</code>, <code>.result</code>)</li>
+<li>Restart and resume capability (<code>.restart</code> and <code>.state</code> files)</li>
+<li>Clean separation of source code, unit tests, and output</li>
+<li>Support for Lees–Edwards boundary conditions (sheared systems)</li>
+<li>Configurable halting conditions (based on VRMS or custom metric)</li>
+<li>Modular design for easy extension of potentials and features</li>
+</ul>
 <h1><a class="anchor" id="autotoc_md8"></a>
 Project Structure</h1>
-<h2><a class="anchor" id="autotoc_md9"></a>
-Project Structure</h2>
 <pre>
 Lamina/
   |- source/                # All C source files; avoid placing <a class="el" href="README_8md.html">README.md</a> here to prevent extra related pages
@@ -150,10 +179,11 @@ Lamina/
       |- refman.pdf         # Generated PDF documentation (from LaTeX)
   |- Makefile               # Build system
   |- <a class="el" href="README_8md.html">README.md</a>              # Main project documentation (used as main page in Doxygen)
-</pre><p>##Documentation</p><ul>
-<li><a href="docs/html/index.html">Browse full HTML documentation</a></li>
-<li>Download <a href="docs/latex/refman.pdf">Source code PDF manual</a></li>
-<li>User manual <a href="https://github.com/Hareesh098/Lamina/blob/main/docs/README.pdf">Physics PDF manual</a> This documentation was generated using <a href="https://www.doxygen.nl/">Doxygen 1.10.0</a> to ensure transparency and ease of review. </li>
+</pre><p># Documentation</p><ul>
+<li><a href="https://hareesh098.github.io/Lamina/">Browse full HTML documentation</a></li>
+<li>Download <a href="https://github.com/Hareesh098/Lamina/blob/main/docs/latex/refman.pdf">Source code PDF manual</a></li>
+<li>User manual <a href="https://github.com/Hareesh098/Lamina/blob/main/docs/README.pdf">Physics PDF manual</a></li>
+<li>This documentation was generated using <a href="https://www.doxygen.nl/">Doxygen 1.10.0</a> to ensure transparency and ease of review. </li>
 </ul>
 </div></div><!-- PageDoc -->
 <a href="doxygen_crawl.html"/>

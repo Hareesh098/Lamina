@@ -1,8 +1,0 @@
-<map id="source/PrintMomentum.c" name="source/PrintMomentum.c">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,190,33"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="65,157,130,184"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="97,34,88,81,88,108,93,141,88,142,83,109,83,81,92,33"/>
-<area shape="rect" id="Node000003" href="$global_8h.html" title=" " alt="" coords="98,81,172,109"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="107,32,124,66,119,68,102,35"/>
-<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="131,110,113,144,109,142,126,108"/>
-</map>

@@ -1,8 +1,0 @@
-<map id="source/PrintSummary.c" name="source/PrintSummary.c">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,176,33"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="58,157,123,184"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="90,34,81,81,81,108,86,141,81,142,76,109,76,81,85,33"/>
-<area shape="rect" id="Node000003" href="$global_8h.html" title=" " alt="" coords="91,81,165,109"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="100,32,117,66,112,68,95,35"/>
-<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="124,110,106,144,102,142,119,108"/>
-</map>

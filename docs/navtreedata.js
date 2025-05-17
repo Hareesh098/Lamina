@@ -42,7 +42,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "AccumProps_8c.html",
-"global_8h.html#a7f75910911c1659f8b012917539bcee2"
+"globalExtern_8h.html#a7fec425f50f8c2d24862faef8284b520",
+"global_8h.html#ab715ebf9f35659a111ee6c5eedc360af"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

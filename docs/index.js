@@ -8,7 +8,5 @@ var index =
     [ "Time Integration", "index.html#autotoc_md5", null ],
     [ "Physical Observables", "index.html#autotoc_md6", null ],
     [ "Output and Utilities", "index.html#autotoc_md7", null ],
-    [ "Project Structure", "index.html#autotoc_md8", [
-      [ "Project Structure", "index.html#autotoc_md9", null ]
-    ] ]
+    [ "Project Structure", "index.html#autotoc_md8", null ]
 ];

@@ -29,6 +29,7 @@ var dir_b2f33c71d4aa5e7af42a1ca61ff5af1b =
     [ "EvalVacf.c", "EvalVacf_8c.html", "EvalVacf_8c" ],
     [ "EvalVrms.c", "EvalVrms_8c.html", "EvalVrms_8c" ],
     [ "global.h", "global_8h.html", "global_8h" ],
+    [ "globalExtern.h", "globalExtern_8h.html", "globalExtern_8h" ],
     [ "Halt.c", "Halt_8c.html", "Halt_8c" ],
     [ "Init.c", "Init_8c.html", "Init_8c" ],
     [ "InitVacf.c", "InitVacf_8c.html", "InitVacf_8c" ],
