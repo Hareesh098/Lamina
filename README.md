@@ -29,7 +29,7 @@ Yukawa potential (screened Coulomb interactions)
 Lennard-Jones potential (standard 12-6)
 Harmonic bond potential (elastic network models)
 Hookean granular contact potential (for soft granular matter)
-<pre>
+</pre>
 
 # Thermostats and Temperature Control
 <pre>
@@ -37,7 +37,7 @@ Gaussian thermostat
 Nose-Hoover thermostat
 Langevin thermostat
 Configurational temperature evaluation and control
-<pre>
+</pre>
 
 # Time Integration
 <pre>
@@ -45,7 +45,7 @@ Leap-Frog integrator
 Velocity-Verlet integrator
 Langevin (stochastic) integrator
 Brownian (overdamped) interator
-<pre>
+</pre>
 
 # Physical Observables
 <pre>
@@ -55,7 +55,7 @@ Root-Mean-Square Velocity (VRMS)
 Stress tensor and momentum
 Center-of-mass motion
 Space-time correlation functions
-<pre>
+</pre>
 
 # Output and Utilities
 The output files are saved at the ../output folder. So you have a make a directory ../ location from where you are running the code.
@@ -68,7 +68,7 @@ Clean separation of source code, unit tests, and output
 Support for Lees–Edwards boundary conditions (sheared systems)
 Configurable halting conditions (based on VRMS or custom metric)
 Modular design for easy extension of potentials and features
-<pre>
+</pre>
 
 # Project Structure
 <pre>
