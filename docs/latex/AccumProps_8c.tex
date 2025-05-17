@@ -1,0 +1,77 @@
+\doxysection{source/\+Accum\+Props.c File Reference}
+\hypertarget{AccumProps_8c}{}\label{AccumProps_8c}\index{source/AccumProps.c@{source/AccumProps.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include "{}global.\+h"{}}\newline
+Include dependency graph for Accum\+Props.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{AccumProps_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{AccumProps_8c_a4b4560208657b98f0dea0ba6d4413c19}{Accum\+Props}} (int icode)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{AccumProps_8c_a4b4560208657b98f0dea0ba6d4413c19}\label{AccumProps_8c_a4b4560208657b98f0dea0ba6d4413c19} 
+\index{AccumProps.c@{AccumProps.c}!AccumProps@{AccumProps}}
+\index{AccumProps@{AccumProps}!AccumProps.c@{AccumProps.c}}
+\doxysubsubsection{\texorpdfstring{AccumProps()}{AccumProps()}}
+{\footnotesize\ttfamily void Accum\+Props (\begin{DoxyParamCaption}\item[{int}]{icode }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{AccumProps_8c_source_l00025}{25}} of file \mbox{\hyperlink{AccumProps_8c_source}{Accum\+Props.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00026\ \ \textcolor{keywordflow}{if}(icode\ ==\ 0)\{}
+\DoxyCodeLine{00027\ \ \mbox{\hyperlink{global_8h_ac0bceed989ef50bb3a4314feb0c828aa}{sPotEnergy}}\ =\ \mbox{\hyperlink{global_8h_a14dbdccf317ef9263542854ebf48a674}{ssPotEnergy}}\ =\ 0.;}
+\DoxyCodeLine{00028\ \ \mbox{\hyperlink{global_8h_aceb0bd33904075ea75ec5f5db7180674}{sKinEnergy}}\ =\ \mbox{\hyperlink{global_8h_a5c5dfe1f2edbb9b98971f0b85ecf4c17}{ssKinEnergy}}\ =\ 0.;}
+\DoxyCodeLine{00029\ \ \mbox{\hyperlink{global_8h_af5ce20c1e720aecc5d780bbd059f9bb2}{sPressure}}\ =\ \mbox{\hyperlink{global_8h_a5a69d6c5c0f48f99290220e47dfdba33}{ssPressure}}\ =\ 0.;}
+\DoxyCodeLine{00030\ \ \mbox{\hyperlink{global_8h_a5bd56b6f1a373ed4b8c548faa0b053cd}{sTotEnergy}}\ =\ \mbox{\hyperlink{global_8h_af6a00fa64b9ab22b3eb1ba906e0d3310}{ssTotEnergy}}\ =\ 0.;\ }
+\DoxyCodeLine{00031\ \ \mbox{\hyperlink{global_8h_aad2e8fd6b6b37dd84c64021c640422b9}{svirSum}}\ =\ 0.;}
+\DoxyCodeLine{00032\ \ \}\textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}(icode\ ==\ 1)\{}
+\DoxyCodeLine{00033\ \ \mbox{\hyperlink{global_8h_ac0bceed989ef50bb3a4314feb0c828aa}{sPotEnergy}}\ +=\ \mbox{\hyperlink{global_8h_abd758be497a95843d6cbb071a9f99581}{potEnergy}};}
+\DoxyCodeLine{00034\ \ \mbox{\hyperlink{global_8h_a14dbdccf317ef9263542854ebf48a674}{ssPotEnergy}}\ +=\ \mbox{\hyperlink{global_8h_a88aaaec93066182aaf8cf3e0f8a676e2}{Sqr}}(\mbox{\hyperlink{global_8h_abd758be497a95843d6cbb071a9f99581}{potEnergy}});}
+\DoxyCodeLine{00035\ \ \mbox{\hyperlink{global_8h_aceb0bd33904075ea75ec5f5db7180674}{sKinEnergy}}\ +=\ \mbox{\hyperlink{global_8h_a445d936de68f213385df5c284ea1d81d}{kinEnergy}};}
+\DoxyCodeLine{00036\ \ \mbox{\hyperlink{global_8h_a5c5dfe1f2edbb9b98971f0b85ecf4c17}{ssKinEnergy}}\ +=\ \mbox{\hyperlink{global_8h_a88aaaec93066182aaf8cf3e0f8a676e2}{Sqr}}(\mbox{\hyperlink{global_8h_a445d936de68f213385df5c284ea1d81d}{kinEnergy}});}
+\DoxyCodeLine{00037\ \ \mbox{\hyperlink{global_8h_a5bd56b6f1a373ed4b8c548faa0b053cd}{sTotEnergy}}\ +=\ \mbox{\hyperlink{global_8h_a025720826b3728fd77ab18384b7369bf}{totEnergy}};}
+\DoxyCodeLine{00038\ \ \mbox{\hyperlink{global_8h_af6a00fa64b9ab22b3eb1ba906e0d3310}{ssTotEnergy}}\ +=\ \mbox{\hyperlink{global_8h_a88aaaec93066182aaf8cf3e0f8a676e2}{Sqr}}(\mbox{\hyperlink{global_8h_a025720826b3728fd77ab18384b7369bf}{totEnergy}});}
+\DoxyCodeLine{00039\ \ \mbox{\hyperlink{global_8h_af5ce20c1e720aecc5d780bbd059f9bb2}{sPressure}}\ +=\ \mbox{\hyperlink{global_8h_aee1c5d07ac79c5c036195858afe33405}{pressure}};}
+\DoxyCodeLine{00040\ \ \mbox{\hyperlink{global_8h_a5a69d6c5c0f48f99290220e47dfdba33}{ssPressure}}\ +=\ \mbox{\hyperlink{global_8h_a88aaaec93066182aaf8cf3e0f8a676e2}{Sqr}}(\mbox{\hyperlink{global_8h_aee1c5d07ac79c5c036195858afe33405}{pressure}});}
+\DoxyCodeLine{00041\ \ \mbox{\hyperlink{global_8h_aad2e8fd6b6b37dd84c64021c640422b9}{svirSum}}\ +=\ \mbox{\hyperlink{global_8h_abdbf03f447f8b0adbae4c15974dac45f}{virSum}};}
+\DoxyCodeLine{00042\ \ \}\textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}(icode\ ==\ 2)\{}
+\DoxyCodeLine{00043\ \ \mbox{\hyperlink{global_8h_ac0bceed989ef50bb3a4314feb0c828aa}{sPotEnergy}}\ /=\ \mbox{\hyperlink{global_8h_a9652d009b4c8999144191b461014e063}{stepAvg}};}
+\DoxyCodeLine{00044\ \ \mbox{\hyperlink{global_8h_a14dbdccf317ef9263542854ebf48a674}{ssPotEnergy}}\ /=\ sqrt(\mbox{\hyperlink{global_8h_a14dbdccf317ef9263542854ebf48a674}{ssPotEnergy}}/\mbox{\hyperlink{global_8h_a9652d009b4c8999144191b461014e063}{stepAvg}}\ -\/\ \mbox{\hyperlink{global_8h_a88aaaec93066182aaf8cf3e0f8a676e2}{Sqr}}(\mbox{\hyperlink{global_8h_ac0bceed989ef50bb3a4314feb0c828aa}{sPotEnergy}}));}
+\DoxyCodeLine{00045\ \ \mbox{\hyperlink{global_8h_a5bd56b6f1a373ed4b8c548faa0b053cd}{sTotEnergy}}\ /=\ \mbox{\hyperlink{global_8h_a9652d009b4c8999144191b461014e063}{stepAvg}};}
+\DoxyCodeLine{00046\ \ \mbox{\hyperlink{global_8h_af6a00fa64b9ab22b3eb1ba906e0d3310}{ssTotEnergy}}\ =\ sqrt(\mbox{\hyperlink{global_8h_af6a00fa64b9ab22b3eb1ba906e0d3310}{ssTotEnergy}}/\mbox{\hyperlink{global_8h_a9652d009b4c8999144191b461014e063}{stepAvg}}\ -\/\ \mbox{\hyperlink{global_8h_a88aaaec93066182aaf8cf3e0f8a676e2}{Sqr}}(\mbox{\hyperlink{global_8h_a5bd56b6f1a373ed4b8c548faa0b053cd}{sTotEnergy}}));}
+\DoxyCodeLine{00047\ \ \mbox{\hyperlink{global_8h_aceb0bd33904075ea75ec5f5db7180674}{sKinEnergy}}\ /=\ \mbox{\hyperlink{global_8h_a9652d009b4c8999144191b461014e063}{stepAvg}};}
+\DoxyCodeLine{00048\ \ \mbox{\hyperlink{global_8h_a5c5dfe1f2edbb9b98971f0b85ecf4c17}{ssKinEnergy}}\ =\ sqrt(\mbox{\hyperlink{global_8h_a5c5dfe1f2edbb9b98971f0b85ecf4c17}{ssKinEnergy}}/\mbox{\hyperlink{global_8h_a9652d009b4c8999144191b461014e063}{stepAvg}}\ -\/\ \mbox{\hyperlink{global_8h_a88aaaec93066182aaf8cf3e0f8a676e2}{Sqr}}(\mbox{\hyperlink{global_8h_aceb0bd33904075ea75ec5f5db7180674}{sKinEnergy}}));}
+\DoxyCodeLine{00049\ \ \mbox{\hyperlink{global_8h_af5ce20c1e720aecc5d780bbd059f9bb2}{sPressure}}\ /=\ \mbox{\hyperlink{global_8h_a9652d009b4c8999144191b461014e063}{stepAvg}};}
+\DoxyCodeLine{00050\ \ \mbox{\hyperlink{global_8h_a5a69d6c5c0f48f99290220e47dfdba33}{ssPressure}}\ =\ sqrt(\mbox{\hyperlink{global_8h_a5a69d6c5c0f48f99290220e47dfdba33}{ssPressure}}/\mbox{\hyperlink{global_8h_a9652d009b4c8999144191b461014e063}{stepAvg}}\ -\/\ \mbox{\hyperlink{global_8h_a88aaaec93066182aaf8cf3e0f8a676e2}{Sqr}}(\mbox{\hyperlink{global_8h_af5ce20c1e720aecc5d780bbd059f9bb2}{sPressure}}));}
+\DoxyCodeLine{00051\ \ \mbox{\hyperlink{global_8h_aad2e8fd6b6b37dd84c64021c640422b9}{svirSum}}\ /=\ \mbox{\hyperlink{global_8h_a9652d009b4c8999144191b461014e063}{stepAvg}};}
+\DoxyCodeLine{00052\ \ \}\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{global_8h_source_l00020}{kin\+Energy}}, \mbox{\hyperlink{global_8h_source_l00020}{pot\+Energy}}, \mbox{\hyperlink{global_8h_source_l00021}{pressure}}, \mbox{\hyperlink{global_8h_source_l00021}{s\+Kin\+Energy}}, \mbox{\hyperlink{global_8h_source_l00021}{s\+Pot\+Energy}}, \mbox{\hyperlink{global_8h_source_l00022}{s\+Pressure}}, \mbox{\hyperlink{global_8h_source_l00014}{Sqr}}, \mbox{\hyperlink{global_8h_source_l00022}{ss\+Kin\+Energy}}, \mbox{\hyperlink{global_8h_source_l00022}{ss\+Pot\+Energy}}, \mbox{\hyperlink{global_8h_source_l00022}{ss\+Pressure}}, \mbox{\hyperlink{global_8h_source_l00022}{ss\+Tot\+Energy}}, \mbox{\hyperlink{global_8h_source_l00024}{step\+Avg}}, \mbox{\hyperlink{global_8h_source_l00022}{s\+Tot\+Energy}}, \mbox{\hyperlink{global_8h_source_l00021}{svir\+Sum}}, \mbox{\hyperlink{global_8h_source_l00020}{tot\+Energy}}, and \mbox{\hyperlink{global_8h_source_l00021}{vir\+Sum}}.
+
+
+
+Referenced by \mbox{\hyperlink{SetupJob_8c_source_l00027}{Setup\+Job()}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{AccumProps_8c_a4b4560208657b98f0dea0ba6d4413c19_icgraph}
+\end{center}
+\end{figure}

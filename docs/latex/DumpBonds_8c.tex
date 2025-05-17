@@ -1,0 +1,65 @@
+\doxysection{source/\+Dump\+Bonds.c File Reference}
+\hypertarget{DumpBonds_8c}{}\label{DumpBonds_8c}\index{source/DumpBonds.c@{source/DumpBonds.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include "{}global.\+h"{}}\newline
+Include dependency graph for Dump\+Bonds.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{DumpBonds_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{DumpBonds_8c_a918ba7fcfcb799caa0f61025cb71f187}{Dump\+Bonds}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{DumpBonds_8c_a918ba7fcfcb799caa0f61025cb71f187}\label{DumpBonds_8c_a918ba7fcfcb799caa0f61025cb71f187} 
+\index{DumpBonds.c@{DumpBonds.c}!DumpBonds@{DumpBonds}}
+\index{DumpBonds@{DumpBonds}!DumpBonds.c@{DumpBonds.c}}
+\doxysubsubsection{\texorpdfstring{DumpBonds()}{DumpBonds()}}
+{\footnotesize\ttfamily void Dump\+Bonds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{DumpBonds_8c_source_l00024}{24}} of file \mbox{\hyperlink{DumpBonds_8c_source}{Dump\+Bonds.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00025\ \ \ \textcolor{keywordtype}{int}\ n;}
+\DoxyCodeLine{00026\ \ \ \textcolor{comment}{//Trajectory\ file\ in\ LAMMPS\ dump\ format\ for\ OVITO\ visualization}}
+\DoxyCodeLine{00027\ \ \ fprintf(\mbox{\hyperlink{global_8h_a84ec84e6a4559d97490a21296cf7ca4b}{fpbond}},\ \textcolor{stringliteral}{"{}ITEM:\ TIMESTEP\(\backslash\)n"{}});}
+\DoxyCodeLine{00028\ \ \ fprintf(\mbox{\hyperlink{global_8h_a84ec84e6a4559d97490a21296cf7ca4b}{fpbond}},\ \textcolor{stringliteral}{"{}\%lf\(\backslash\)n"{}},\mbox{\hyperlink{global_8h_abb2aee8c6108dd86a8da33115d249d71}{timeNow}});}
+\DoxyCodeLine{00029\ \ \ fprintf(\mbox{\hyperlink{global_8h_a84ec84e6a4559d97490a21296cf7ca4b}{fpbond}},\ \textcolor{stringliteral}{"{}ITEM:\ NUMBER\ OF\ ENTRIES\(\backslash\)n"{}});}
+\DoxyCodeLine{00030\ \ \ fprintf(\mbox{\hyperlink{global_8h_a84ec84e6a4559d97490a21296cf7ca4b}{fpbond}},\ \textcolor{stringliteral}{"{}\%d\(\backslash\)n"{}},\mbox{\hyperlink{global_8h_a89d3bca785c9af9c4a154dc6642add4d}{nBond}});}
+\DoxyCodeLine{00031\ \ \ fprintf(\mbox{\hyperlink{global_8h_a84ec84e6a4559d97490a21296cf7ca4b}{fpbond}},\ \textcolor{stringliteral}{"{}ITEM:\ BOX\ BOUNDS\ pp\ ff\ pp\(\backslash\)n"{}});}
+\DoxyCodeLine{00032\ \ \ fprintf(\mbox{\hyperlink{global_8h_a84ec84e6a4559d97490a21296cf7ca4b}{fpbond}},\ \textcolor{stringliteral}{"{}\%lf\ \%lf\ xlo\ xhi\(\backslash\)n"{}},\ -\/\mbox{\hyperlink{global_8h_adc110418e2efa5f31a9aa7c137471a2f}{regionH}}[1],\ \mbox{\hyperlink{global_8h_adc110418e2efa5f31a9aa7c137471a2f}{regionH}}[1]);}
+\DoxyCodeLine{00033\ \ \ fprintf(\mbox{\hyperlink{global_8h_a84ec84e6a4559d97490a21296cf7ca4b}{fpbond}},\ \textcolor{stringliteral}{"{}\%lf\ \%lf\ ylo\ yhi\(\backslash\)n"{}},\ -\/\mbox{\hyperlink{global_8h_adc110418e2efa5f31a9aa7c137471a2f}{regionH}}[2],\ \mbox{\hyperlink{global_8h_adc110418e2efa5f31a9aa7c137471a2f}{regionH}}[2]);}
+\DoxyCodeLine{00034\ \ \ fprintf(\mbox{\hyperlink{global_8h_a84ec84e6a4559d97490a21296cf7ca4b}{fpbond}},\ \textcolor{stringliteral}{"{}\%lf\ \%lf\ zlo\ zhi\(\backslash\)n"{}},\ -\/0.1,\ 0.1);}
+\DoxyCodeLine{00035\ \ \ fprintf(\mbox{\hyperlink{global_8h_a84ec84e6a4559d97490a21296cf7ca4b}{fpbond}},\ \textcolor{stringliteral}{"{}ITEM:\ ENTRIES\ BondID,\ BondType,\ atom1\ atom2\ BondLength\ BondLengthEqul\ nodeDragx1\ nodeDragy1\(\backslash\)n"{}});}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \ \ \textcolor{keywordflow}{for}(n=1;\ n<=\mbox{\hyperlink{global_8h_a89d3bca785c9af9c4a154dc6642add4d}{nBond}};\ n++)}
+\DoxyCodeLine{00038\ \ \ \ fprintf(\mbox{\hyperlink{global_8h_a84ec84e6a4559d97490a21296cf7ca4b}{fpbond}},\ \textcolor{stringliteral}{"{}\%d\ \%d\ \%d\ \%d\ \%0.16lf\ \%0.16lf\ \%0.16lf\ \%0.16lf\(\backslash\)n"{}},\ \mbox{\hyperlink{global_8h_a15d105ee1521b15d76eeb63ac4351f6f}{BondID}}[n],\ \mbox{\hyperlink{global_8h_a389f660313ee3764aaaa6997121a5400}{BondType}}[n],\ \mbox{\hyperlink{global_8h_a7ef9937bc3aea03091e40e733df7353e}{atom1}}[n],\ \mbox{\hyperlink{global_8h_a28d9ba88ad3c8e8b5cc5608b2cc0b0b5}{atom2}}[n],\ }
+\DoxyCodeLine{00039\ \ \ \ \mbox{\hyperlink{global_8h_a78926ce24b541f8bdc741a75815eecf2}{BondLength}}[n],\ \mbox{\hyperlink{global_8h_a78581c34377eab92a44bc4d30fabed1c}{ro}}[n],\ \mbox{\hyperlink{global_8h_ae25566f54b864b50af8b06ce249b07bd}{nodeDragx}}[\mbox{\hyperlink{global_8h_a7ef9937bc3aea03091e40e733df7353e}{atom1}}[n]],\ \mbox{\hyperlink{global_8h_aae007ab0860d0d27bf49ce1e74831a71}{nodeDragy}}[\mbox{\hyperlink{global_8h_a7ef9937bc3aea03091e40e733df7353e}{atom1}}[n]]);}
+\DoxyCodeLine{00040\ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{global_8h_a7ef9937bc3aea03091e40e733df7353e}{atom1}}, \mbox{\hyperlink{global_8h_source_l00034}{atom2}}, \mbox{\hyperlink{global_8h_a15d105ee1521b15d76eeb63ac4351f6f}{Bond\+ID}}, \mbox{\hyperlink{global_8h_source_l00037}{Bond\+Length}}, \mbox{\hyperlink{global_8h_source_l00035}{Bond\+Type}}, \mbox{\hyperlink{global_8h_a84ec84e6a4559d97490a21296cf7ca4b}{fpbond}}, \mbox{\hyperlink{global_8h_a89d3bca785c9af9c4a154dc6642add4d}{n\+Bond}}, \mbox{\hyperlink{global_8h_source_l00040}{node\+Dragx}}, \mbox{\hyperlink{global_8h_source_l00040}{node\+Dragy}}, \mbox{\hyperlink{global_8h_source_l00020}{regionH}}, \mbox{\hyperlink{global_8h_source_l00036}{ro}}, and \mbox{\hyperlink{global_8h_source_l00020}{time\+Now}}.
+
+
+
+Referenced by \mbox{\hyperlink{main_8c_source_l00050}{main()}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{DumpBonds_8c_a918ba7fcfcb799caa0f61025cb71f187_icgraph}
+\end{center}
+\end{figure}

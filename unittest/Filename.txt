@@ -1,0 +1,45 @@
+ nAtom = 4;
+ nBond = 1;
+ gamman = 0.0;
+ DampFlag = 1;
+ region[1] = region[2] =   20.0;
+ regionH[1] = regionH[2] = 10.0;
+ shearDisplacement = 0.0;
+ 
+ rx[1] = 0.0; ry[1] = 0.0;
+ rx[2] = 2.0; ry[2] = 0.0;
+ rx[3] = 4.0; ry[3] = 1.0;
+ rx[4] = 4.0; ry[4] = 1.0;
+
+ vx[1] = 0.0; vy[1] = 0.0;
+ vx[2] = 0.0; vy[2] = 0.0;
+ vx[3] = 0.0; vy[3] = 0.0;
+ vx[4] = 0.0; vy[4] = 0.0;
+
+ molID[1] = 1;   
+ molID[2] = 1; 
+ molID[3] = 2;   
+ molID[4] = 2; 
+
+ atomType[1] = 1;   
+ atomType[2] = 1; 
+ atomType[3] = 2;   
+ atomType[4] = 2; 
+
+ atomRadius[1] = 0.0;   
+ atomRadius[2] = 0.0; 
+ atomRadius[3] = 1.0;   
+ atomRadius[4] = 1.0; 
+
+for(n = 1; n <= nAtom; n ++){
+atomMass[n] = 1.0;
+atomID[n] = n;
+}
+ 
+
+ bondID[1] = 1;
+ bondType[1] = 1;
+ atom1[1] = 1;
+ atom2[1] = 2;
+ kb[1] = 1.0;
+ ro[1] = 1.1;

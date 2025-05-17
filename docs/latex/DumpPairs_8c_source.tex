@@ -1,0 +1,51 @@
+\doxysection{Dump\+Pairs.\+c}
+\hypertarget{DumpPairs_8c_source}{}\label{DumpPairs_8c_source}\index{source/DumpPairs.c@{source/DumpPairs.c}}
+\mbox{\hyperlink{DumpPairs_8c}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{DumpPairs_8c_source_l00001}00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{DumpPairs_8c_source_l00002}00002\ \textcolor{comment}{\ *\ This\ file\ is\ part\ of\ Lamina.}}
+\DoxyCodeLine{\Hypertarget{DumpPairs_8c_source_l00003}00003\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{\Hypertarget{DumpPairs_8c_source_l00004}00004\ \textcolor{comment}{\ *\ Lamina\ is\ free\ software:\ you\ can\ redistribute\ it\ and/or\ modify}}
+\DoxyCodeLine{\Hypertarget{DumpPairs_8c_source_l00005}00005\ \textcolor{comment}{\ *\ it\ under\ the\ terms\ of\ the\ GNU\ General\ Public\ License\ as\ published\ by}}
+\DoxyCodeLine{\Hypertarget{DumpPairs_8c_source_l00006}00006\ \textcolor{comment}{\ *\ the\ Free\ Software\ Foundation,\ either\ version\ 3\ of\ the\ License,\ or}}
+\DoxyCodeLine{\Hypertarget{DumpPairs_8c_source_l00007}00007\ \textcolor{comment}{\ *\ (at\ your\ option)\ any\ later\ version.}}
+\DoxyCodeLine{\Hypertarget{DumpPairs_8c_source_l00008}00008\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{\Hypertarget{DumpPairs_8c_source_l00009}00009\ \textcolor{comment}{\ *\ Lamina\ is\ distributed\ in\ the\ hope\ that\ it\ will\ be\ useful,}}
+\DoxyCodeLine{\Hypertarget{DumpPairs_8c_source_l00010}00010\ \textcolor{comment}{\ *\ but\ WITHOUT\ ANY\ WARRANTY;\ without\ even\ the\ implied\ warranty\ of}}
+\DoxyCodeLine{\Hypertarget{DumpPairs_8c_source_l00011}00011\ \textcolor{comment}{\ *\ MERCHANTABILITY\ or\ FITNESS\ FOR\ A\ PARTICULAR\ PURPOSE.\ See\ the}}
+\DoxyCodeLine{\Hypertarget{DumpPairs_8c_source_l00012}00012\ \textcolor{comment}{\ *\ GNU\ General\ Public\ License\ for\ more\ details.}}
+\DoxyCodeLine{\Hypertarget{DumpPairs_8c_source_l00013}00013\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{\Hypertarget{DumpPairs_8c_source_l00014}00014\ \textcolor{comment}{\ *\ You\ should\ have\ received\ a\ copy\ of\ the\ GNU\ General\ Public\ License}}
+\DoxyCodeLine{\Hypertarget{DumpPairs_8c_source_l00015}00015\ \textcolor{comment}{\ *\ along\ with\ Lamina.\ If\ not,\ see\ <https://www.gnu.org/licenses/>.}}
+\DoxyCodeLine{\Hypertarget{DumpPairs_8c_source_l00016}00016\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{DumpPairs_8c_source_l00017}00017\ \textcolor{comment}{\ Copyright\ (C)\ 2025\ Harish\ Charan,\ University\ of\ Durham,\ UK}}
+\DoxyCodeLine{\Hypertarget{DumpPairs_8c_source_l00018}00018\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{DumpPairs_8c_source_l00019}00019\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{\Hypertarget{DumpPairs_8c_source_l00020}00020\ }
+\DoxyCodeLine{\Hypertarget{DumpPairs_8c_source_l00021}00021\ \ }
+\DoxyCodeLine{\Hypertarget{DumpPairs_8c_source_l00022}00022\ \textcolor{preprocessor}{\#include<stdio.h>}}
+\DoxyCodeLine{\Hypertarget{DumpPairs_8c_source_l00023}00023\ \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{global_8h}{global.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{DumpPairs_8c_source_l00024}00024\ }
+\DoxyCodeLine{\Hypertarget{DumpPairs_8c_source_l00025}\mbox{\hyperlink{DumpPairs_8c_a8645965b1cadcb70224588065e716c17}{00025}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{DumpPairs_8c_a8645965b1cadcb70224588065e716c17}{DumpPairs}}()\{}
+\DoxyCodeLine{\Hypertarget{DumpPairs_8c_source_l00026}00026\ \ \ \textcolor{keywordtype}{int}\ n;}
+\DoxyCodeLine{\Hypertarget{DumpPairs_8c_source_l00027}00027\ \ \ \textcolor{comment}{//Trajectory\ file\ in\ LAMMPS\ dump\ format\ for\ OVITO\ visualization}}
+\DoxyCodeLine{\Hypertarget{DumpPairs_8c_source_l00028}00028\ \ \ fprintf(\mbox{\hyperlink{global_8h_ab30ed54db09d0748b912c23a34a2a92a}{fppair}},\ \textcolor{stringliteral}{"{}ITEM:\ TIMESTEP\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{DumpPairs_8c_source_l00029}00029\ \ \ fprintf(\mbox{\hyperlink{global_8h_ab30ed54db09d0748b912c23a34a2a92a}{fppair}},\ \textcolor{stringliteral}{"{}\%lf\(\backslash\)n"{}},\mbox{\hyperlink{global_8h_abb2aee8c6108dd86a8da33115d249d71}{timeNow}});}
+\DoxyCodeLine{\Hypertarget{DumpPairs_8c_source_l00030}00030\ \ \ fprintf(\mbox{\hyperlink{global_8h_ab30ed54db09d0748b912c23a34a2a92a}{fppair}},\ \textcolor{stringliteral}{"{}ITEM:\ NUMBER\ OF\ ENTRIES\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{DumpPairs_8c_source_l00031}00031\ \ \ fprintf(\mbox{\hyperlink{global_8h_ab30ed54db09d0748b912c23a34a2a92a}{fppair}},\ \textcolor{stringliteral}{"{}\%d\(\backslash\)n"{}},\mbox{\hyperlink{global_8h_a4d261d7bf27ba6bb03927a2daa310746}{nPairActive}});}
+\DoxyCodeLine{\Hypertarget{DumpPairs_8c_source_l00032}00032\ \ \ fprintf(\mbox{\hyperlink{global_8h_ab30ed54db09d0748b912c23a34a2a92a}{fppair}},\ \textcolor{stringliteral}{"{}ITEM:\ BOX\ BOUNDS\ pp\ ff\ pp\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{DumpPairs_8c_source_l00033}00033\ \ \ fprintf(\mbox{\hyperlink{global_8h_ab30ed54db09d0748b912c23a34a2a92a}{fppair}},\ \textcolor{stringliteral}{"{}\%lf\ \%lf\ xlo\ xhi\(\backslash\)n"{}},\ -\/\mbox{\hyperlink{global_8h_adc110418e2efa5f31a9aa7c137471a2f}{regionH}}[1],\ \mbox{\hyperlink{global_8h_adc110418e2efa5f31a9aa7c137471a2f}{regionH}}[1]);}
+\DoxyCodeLine{\Hypertarget{DumpPairs_8c_source_l00034}00034\ \ \ fprintf(\mbox{\hyperlink{global_8h_ab30ed54db09d0748b912c23a34a2a92a}{fppair}},\ \textcolor{stringliteral}{"{}\%lf\ \%lf\ ylo\ yhi\(\backslash\)n"{}},\ -\/\mbox{\hyperlink{global_8h_adc110418e2efa5f31a9aa7c137471a2f}{regionH}}[2],\ \mbox{\hyperlink{global_8h_adc110418e2efa5f31a9aa7c137471a2f}{regionH}}[2]);}
+\DoxyCodeLine{\Hypertarget{DumpPairs_8c_source_l00035}00035\ \ \ fprintf(\mbox{\hyperlink{global_8h_ab30ed54db09d0748b912c23a34a2a92a}{fppair}},\ \textcolor{stringliteral}{"{}\%lf\ \%lf\ zlo\ zhi\(\backslash\)n"{}},\ -\/0.1,\ 0.1);}
+\DoxyCodeLine{\Hypertarget{DumpPairs_8c_source_l00036}00036\ \ \ fprintf(\mbox{\hyperlink{global_8h_ab30ed54db09d0748b912c23a34a2a92a}{fppair}},\ \textcolor{stringliteral}{"{}ITEM:\ ENTRIES\ index,\ atom1\ atom2\ xij\ yij\ discDragx1\ discDragy1\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{DumpPairs_8c_source_l00037}00037\ }
+\DoxyCodeLine{\Hypertarget{DumpPairs_8c_source_l00038}00038\ \ \ \textcolor{keywordflow}{for}(n=1;\ n<=\mbox{\hyperlink{global_8h_a4d261d7bf27ba6bb03927a2daa310746}{nPairActive}};\ n++)}
+\DoxyCodeLine{\Hypertarget{DumpPairs_8c_source_l00039}00039\ \ \ \ fprintf(\mbox{\hyperlink{global_8h_ab30ed54db09d0748b912c23a34a2a92a}{fppair}},\ \textcolor{stringliteral}{"{}\%d\ \%d\ \%d\ \%0.16lf\ \%0.16lf\ \%0.16lf\ \%0.16lf\(\backslash\)n"{}},\ \mbox{\hyperlink{global_8h_a9e5cacd45bb1c19404215981554b9e65}{PairID}}[n],\ \mbox{\hyperlink{global_8h_af8215c4cb752839765c6629bb7e808a3}{Pairatom1}}[n],\ \mbox{\hyperlink{global_8h_abd0063c6618301e17cc7ef9be8058081}{Pairatom2}}[n],\ }
+\DoxyCodeLine{\Hypertarget{DumpPairs_8c_source_l00040}00040\ \ \ \ \mbox{\hyperlink{global_8h_aa463dae6fdaca32114f15f2f670075c7}{PairXij}}[n],\ \mbox{\hyperlink{global_8h_ad17d42dcb59c5c4c54dec23afc5c8fcf}{PairYij}}[n],\ \mbox{\hyperlink{global_8h_ad1ad82db5042c5e6dcdf44dee00362fe}{discDragx}}[n],\ \mbox{\hyperlink{global_8h_a1a2663b70d9ea62a68fa250cc5e3e6c2}{discDragy}}[n]);}
+\DoxyCodeLine{\Hypertarget{DumpPairs_8c_source_l00041}00041\ }
+\DoxyCodeLine{\Hypertarget{DumpPairs_8c_source_l00042}00042\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{DumpPairs_8c_source_l00043}00043\ }
+\DoxyCodeLine{\Hypertarget{DumpPairs_8c_source_l00044}00044\ }
+\DoxyCodeLine{\Hypertarget{DumpPairs_8c_source_l00045}00045\ }
+
+\end{DoxyCode}

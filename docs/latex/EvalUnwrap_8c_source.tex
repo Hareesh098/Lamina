@@ -1,0 +1,40 @@
+\doxysection{Eval\+Unwrap.\+c}
+\hypertarget{EvalUnwrap_8c_source}{}\label{EvalUnwrap_8c_source}\index{source/EvalUnwrap.c@{source/EvalUnwrap.c}}
+\mbox{\hyperlink{EvalUnwrap_8c}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{EvalUnwrap_8c_source_l00001}00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{EvalUnwrap_8c_source_l00002}00002\ \textcolor{comment}{\ *\ This\ file\ is\ part\ of\ Lamina.}}
+\DoxyCodeLine{\Hypertarget{EvalUnwrap_8c_source_l00003}00003\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{\Hypertarget{EvalUnwrap_8c_source_l00004}00004\ \textcolor{comment}{\ *\ Lamina\ is\ free\ software:\ you\ can\ redistribute\ it\ and/or\ modify}}
+\DoxyCodeLine{\Hypertarget{EvalUnwrap_8c_source_l00005}00005\ \textcolor{comment}{\ *\ it\ under\ the\ terms\ of\ the\ GNU\ General\ Public\ License\ as\ published\ by}}
+\DoxyCodeLine{\Hypertarget{EvalUnwrap_8c_source_l00006}00006\ \textcolor{comment}{\ *\ the\ Free\ Software\ Foundation,\ either\ version\ 3\ of\ the\ License,\ or}}
+\DoxyCodeLine{\Hypertarget{EvalUnwrap_8c_source_l00007}00007\ \textcolor{comment}{\ *\ (at\ your\ option)\ any\ later\ version.}}
+\DoxyCodeLine{\Hypertarget{EvalUnwrap_8c_source_l00008}00008\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{\Hypertarget{EvalUnwrap_8c_source_l00009}00009\ \textcolor{comment}{\ *\ Lamina\ is\ distributed\ in\ the\ hope\ that\ it\ will\ be\ useful,}}
+\DoxyCodeLine{\Hypertarget{EvalUnwrap_8c_source_l00010}00010\ \textcolor{comment}{\ *\ but\ WITHOUT\ ANY\ WARRANTY;\ without\ even\ the\ implied\ warranty\ of}}
+\DoxyCodeLine{\Hypertarget{EvalUnwrap_8c_source_l00011}00011\ \textcolor{comment}{\ *\ MERCHANTABILITY\ or\ FITNESS\ FOR\ A\ PARTICULAR\ PURPOSE.\ See\ the}}
+\DoxyCodeLine{\Hypertarget{EvalUnwrap_8c_source_l00012}00012\ \textcolor{comment}{\ *\ GNU\ General\ Public\ License\ for\ more\ details.}}
+\DoxyCodeLine{\Hypertarget{EvalUnwrap_8c_source_l00013}00013\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{\Hypertarget{EvalUnwrap_8c_source_l00014}00014\ \textcolor{comment}{\ *\ You\ should\ have\ received\ a\ copy\ of\ the\ GNU\ General\ Public\ License}}
+\DoxyCodeLine{\Hypertarget{EvalUnwrap_8c_source_l00015}00015\ \textcolor{comment}{\ *\ along\ with\ Lamina.\ If\ not,\ see\ <https://www.gnu.org/licenses/>.}}
+\DoxyCodeLine{\Hypertarget{EvalUnwrap_8c_source_l00016}00016\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{EvalUnwrap_8c_source_l00017}00017\ \textcolor{comment}{\ Copyright\ (C)\ 2025\ Harish\ Charan,\ University\ of\ Durham,\ UK}}
+\DoxyCodeLine{\Hypertarget{EvalUnwrap_8c_source_l00018}00018\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{EvalUnwrap_8c_source_l00019}00019\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{\Hypertarget{EvalUnwrap_8c_source_l00020}00020\ }
+\DoxyCodeLine{\Hypertarget{EvalUnwrap_8c_source_l00021}00021\ }
+\DoxyCodeLine{\Hypertarget{EvalUnwrap_8c_source_l00022}00022\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{\Hypertarget{EvalUnwrap_8c_source_l00023}00023\ \textcolor{preprocessor}{\#include\ <stdlib.h>}}
+\DoxyCodeLine{\Hypertarget{EvalUnwrap_8c_source_l00024}00024\ \textcolor{preprocessor}{\#include\ <math.h>}}
+\DoxyCodeLine{\Hypertarget{EvalUnwrap_8c_source_l00025}00025\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{global_8h}{global.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{EvalUnwrap_8c_source_l00026}00026\ }
+\DoxyCodeLine{\Hypertarget{EvalUnwrap_8c_source_l00027}\mbox{\hyperlink{EvalUnwrap_8c_a1bd234e1132fb484a52ec59988006c08}{00027}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{EvalUnwrap_8c_a1bd234e1132fb484a52ec59988006c08}{EvalUnwrap}}()\ \{}
+\DoxyCodeLine{\Hypertarget{EvalUnwrap_8c_source_l00028}00028\ \ \textcolor{keywordtype}{int}\ n;}
+\DoxyCodeLine{\Hypertarget{EvalUnwrap_8c_source_l00029}00029\ \ \textcolor{keywordflow}{for}\ (n\ =\ 1;\ n\ <=\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}};\ n++)\ \{}
+\DoxyCodeLine{\Hypertarget{EvalUnwrap_8c_source_l00030}00030\ \ \ \mbox{\hyperlink{global_8h_ad81015466d6c894db2f9cad4faecae1c}{rxUnwrap}}[n]\ =\ \mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}[n]\ +\ \mbox{\hyperlink{global_8h_a6cd103d74f5d525b4cae3e7af552be20}{ImageX}}[n]\ *\ \mbox{\hyperlink{global_8h_a43c4f708b8d633b069355a121d6adbdc}{region}}[1];}
+\DoxyCodeLine{\Hypertarget{EvalUnwrap_8c_source_l00031}00031\ \ \ \mbox{\hyperlink{global_8h_aadd2df0c0919493607803cd89389b31a}{ryUnwrap}}[n]\ =\ \mbox{\hyperlink{global_8h_af88ff31a9ae85beb713bd0c42815f1de}{ry}}[n]\ +\ \mbox{\hyperlink{global_8h_a6d63f20edcbc2cb983c7267d9d0690a8}{ImageY}}[n]\ *\ \mbox{\hyperlink{global_8h_a43c4f708b8d633b069355a121d6adbdc}{region}}[2];}
+\DoxyCodeLine{\Hypertarget{EvalUnwrap_8c_source_l00032}00032\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{EvalUnwrap_8c_source_l00033}00033\ \}}
+\DoxyCodeLine{\Hypertarget{EvalUnwrap_8c_source_l00034}00034\ }
+
+\end{DoxyCode}

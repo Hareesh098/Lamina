@@ -1,0 +1,41 @@
+\doxysection{Halt.\+c}
+\hypertarget{Halt_8c_source}{}\label{Halt_8c_source}\index{source/Halt.c@{source/Halt.c}}
+\mbox{\hyperlink{Halt_8c}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{Halt_8c_source_l00001}00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{Halt_8c_source_l00002}00002\ \textcolor{comment}{\ *\ This\ file\ is\ part\ of\ Lamina.}}
+\DoxyCodeLine{\Hypertarget{Halt_8c_source_l00003}00003\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{\Hypertarget{Halt_8c_source_l00004}00004\ \textcolor{comment}{\ *\ Lamina\ is\ free\ software:\ you\ can\ redistribute\ it\ and/or\ modify}}
+\DoxyCodeLine{\Hypertarget{Halt_8c_source_l00005}00005\ \textcolor{comment}{\ *\ it\ under\ the\ terms\ of\ the\ GNU\ General\ Public\ License\ as\ published\ by}}
+\DoxyCodeLine{\Hypertarget{Halt_8c_source_l00006}00006\ \textcolor{comment}{\ *\ the\ Free\ Software\ Foundation,\ either\ version\ 3\ of\ the\ License,\ or}}
+\DoxyCodeLine{\Hypertarget{Halt_8c_source_l00007}00007\ \textcolor{comment}{\ *\ (at\ your\ option)\ any\ later\ version.}}
+\DoxyCodeLine{\Hypertarget{Halt_8c_source_l00008}00008\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{\Hypertarget{Halt_8c_source_l00009}00009\ \textcolor{comment}{\ *\ Lamina\ is\ distributed\ in\ the\ hope\ that\ it\ will\ be\ useful,}}
+\DoxyCodeLine{\Hypertarget{Halt_8c_source_l00010}00010\ \textcolor{comment}{\ *\ but\ WITHOUT\ ANY\ WARRANTY;\ without\ even\ the\ implied\ warranty\ of}}
+\DoxyCodeLine{\Hypertarget{Halt_8c_source_l00011}00011\ \textcolor{comment}{\ *\ MERCHANTABILITY\ or\ FITNESS\ FOR\ A\ PARTICULAR\ PURPOSE.\ See\ the}}
+\DoxyCodeLine{\Hypertarget{Halt_8c_source_l00012}00012\ \textcolor{comment}{\ *\ GNU\ General\ Public\ License\ for\ more\ details.}}
+\DoxyCodeLine{\Hypertarget{Halt_8c_source_l00013}00013\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{\Hypertarget{Halt_8c_source_l00014}00014\ \textcolor{comment}{\ *\ You\ should\ have\ received\ a\ copy\ of\ the\ GNU\ General\ Public\ License}}
+\DoxyCodeLine{\Hypertarget{Halt_8c_source_l00015}00015\ \textcolor{comment}{\ *\ along\ with\ Lamina.\ If\ not,\ see\ <https://www.gnu.org/licenses/>.}}
+\DoxyCodeLine{\Hypertarget{Halt_8c_source_l00016}00016\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{Halt_8c_source_l00017}00017\ \textcolor{comment}{\ Copyright\ (C)\ 2025\ Harish\ Charan,\ University\ of\ Durham,\ UK}}
+\DoxyCodeLine{\Hypertarget{Halt_8c_source_l00018}00018\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{Halt_8c_source_l00019}00019\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{\Hypertarget{Halt_8c_source_l00020}00020\ }
+\DoxyCodeLine{\Hypertarget{Halt_8c_source_l00021}00021\ }
+\DoxyCodeLine{\Hypertarget{Halt_8c_source_l00022}00022\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{\Hypertarget{Halt_8c_source_l00023}00023\ \textcolor{preprocessor}{\#include\ <stdlib.h>}}
+\DoxyCodeLine{\Hypertarget{Halt_8c_source_l00024}00024\ \textcolor{preprocessor}{\#include\ <stdbool.h>}}
+\DoxyCodeLine{\Hypertarget{Halt_8c_source_l00025}00025\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{global_8h}{global.h}}"{}}\ }
+\DoxyCodeLine{\Hypertarget{Halt_8c_source_l00026}00026\ }
+\DoxyCodeLine{\Hypertarget{Halt_8c_source_l00027}\mbox{\hyperlink{Halt_8c_a4f7624821cdea57301448e9fcc5f0144}{00027}}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{Halt_8c_a4f7624821cdea57301448e9fcc5f0144}{HaltConditionCheck}}(\textcolor{keywordtype}{double}\ value,\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{global_8h_ac208e38a6cf3eecfb9d1522e950ed956}{stepCount}})\ \{}
+\DoxyCodeLine{\Hypertarget{Halt_8c_source_l00028}00028\ \ \ }
+\DoxyCodeLine{\Hypertarget{Halt_8c_source_l00029}00029\ \ \ \textcolor{keywordflow}{if}(value\ <=\ \mbox{\hyperlink{global_8h_a7e88ba96b6e106ede84dde66931a3ffa}{HaltCondition}}\ \&\&\ value\ !=\ 0)\ \{}
+\DoxyCodeLine{\Hypertarget{Halt_8c_source_l00030}00030\ \ \ fprintf(\mbox{\hyperlink{global_8h_a7a7a3c24c505afb28c4eb95a627e3f5b}{fpresult}},\ \textcolor{stringliteral}{"{}Halt\ condition\ met\ at\ step\ =\ \%d\ with\ Vrms\ =\ \%.10f\(\backslash\)n"{}},\ \mbox{\hyperlink{global_8h_ac208e38a6cf3eecfb9d1522e950ed956}{stepCount}},\ value);}
+\DoxyCodeLine{\Hypertarget{Halt_8c_source_l00031}00031\ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};\ \ \ \ \ \ \ \textcolor{comment}{//\ Signal\ that\ the\ halt\ condition\ is\ met}}
+\DoxyCodeLine{\Hypertarget{Halt_8c_source_l00032}00032\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{Halt_8c_source_l00033}00033\ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};\ \textcolor{comment}{//\ Halt\ condition\ not\ met}}
+\DoxyCodeLine{\Hypertarget{Halt_8c_source_l00034}00034\ \}}
+\DoxyCodeLine{\Hypertarget{Halt_8c_source_l00035}00035\ }
+
+\end{DoxyCode}

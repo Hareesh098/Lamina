@@ -1,0 +1,135 @@
+\doxysection{source/\+Eval\+Spacetime\+Corr.c File Reference}
+\hypertarget{EvalSpacetimeCorr_8c}{}\label{EvalSpacetimeCorr_8c}\index{source/EvalSpacetimeCorr.c@{source/EvalSpacetimeCorr.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include "{}global.\+h"{}}\newline
+Include dependency graph for Eval\+Spacetime\+Corr.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=254pt]{EvalSpacetimeCorr_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{EvalSpacetimeCorr_8c_ad0a51959fa19e9f7a43213a3a562fb3d}{Eval\+Spacetime\+Corr}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{EvalSpacetimeCorr_8c_ad0a51959fa19e9f7a43213a3a562fb3d}\label{EvalSpacetimeCorr_8c_ad0a51959fa19e9f7a43213a3a562fb3d} 
+\index{EvalSpacetimeCorr.c@{EvalSpacetimeCorr.c}!EvalSpacetimeCorr@{EvalSpacetimeCorr}}
+\index{EvalSpacetimeCorr@{EvalSpacetimeCorr}!EvalSpacetimeCorr.c@{EvalSpacetimeCorr.c}}
+\doxysubsubsection{\texorpdfstring{EvalSpacetimeCorr()}{EvalSpacetimeCorr()}}
+{\footnotesize\ttfamily void Eval\+Spacetime\+Corr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{EvalSpacetimeCorr_8c_source_l00026}{26}} of file \mbox{\hyperlink{EvalSpacetimeCorr_8c_source}{Eval\+Spacetime\+Corr.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00027\ \ \ \mbox{\hyperlink{global_8h_a11d147c64891830c9e79b3315b1b2e21}{real}}\ cosV=0.,\ cosV0=0.,\ cosV1=0.,\ cosV2=0.,\ sinV=0.,\ sinV1=0.,\ sinV2=0.;}
+\DoxyCodeLine{00028\ \ \ \mbox{\hyperlink{global_8h_a11d147c64891830c9e79b3315b1b2e21}{real}}\ COSA,\ SINA,\ COSV,\ SINV;}
+\DoxyCodeLine{00029\ \ \ \textcolor{keywordtype}{int}\ j,\ m,\ n,\ nb,\ ni,\ nv;}
+\DoxyCodeLine{00030\ \ \ \mbox{\hyperlink{global_8h_a11d147c64891830c9e79b3315b1b2e21}{real}}\ kMin\ =\ 2.\ *\ M\_PI\ /\ \mbox{\hyperlink{global_8h_a43c4f708b8d633b069355a121d6adbdc}{region}}[1];}
+\DoxyCodeLine{00031\ \ \ \mbox{\hyperlink{global_8h_a11d147c64891830c9e79b3315b1b2e21}{real}}\ kMax\ =\ M\_PI;}
+\DoxyCodeLine{00032\ \ \ \mbox{\hyperlink{global_8h_a11d147c64891830c9e79b3315b1b2e21}{real}}\ deltaK\ =\ (kMax\ -\/\ kMin)\ /\ \mbox{\hyperlink{global_8h_ae6bb074a4f2d8b25747f5f1c3ed34e8e}{nFunCorr}};}
+\DoxyCodeLine{00033\ \ \ }
+\DoxyCodeLine{00034\ \ \ \textcolor{keywordflow}{for}\ (j\ =\ 1;\ j\ <=\ 2*\mbox{\hyperlink{global_8h_ae6bb074a4f2d8b25747f5f1c3ed34e8e}{nFunCorr}};\ j++)}
+\DoxyCodeLine{00035\ \ \ \ \ \mbox{\hyperlink{global_8h_ae34b3c3ecb0a71564a8d3a52d5bce50f}{cfVal}}[j]\ =\ 0.;}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \ \ \textcolor{keywordflow}{for}\ (n\ =\ 1;\ n\ <=\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}};\ n++)\{}
+\DoxyCodeLine{00038\ \ \ \ \ j\ =\ 1;}
+\DoxyCodeLine{00039\ \ \ \ \ COSA\ =\ cos(kMin*\mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}[n]);}
+\DoxyCodeLine{00040\ \ \ \ \ SINA\ =\ sin(kMin*\mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}[n]);}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordflow}{for}\ (m\ =\ 1;\ m\ <=\ \mbox{\hyperlink{global_8h_ae6bb074a4f2d8b25747f5f1c3ed34e8e}{nFunCorr}};\ m++)\{}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \textcolor{keywordflow}{if}(m\ ==\ 1)\{}
+\DoxyCodeLine{00043\ \ \ \ \ cosV\ =\ cos(deltaK*\mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}[n]);}
+\DoxyCodeLine{00044\ \ \ \ \ sinV\ =\ sin(deltaK*\mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}[n]);}
+\DoxyCodeLine{00045\ \ \ \ \ cosV0\ =\ cosV;}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \}\textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}(m\ ==\ 2)\{}
+\DoxyCodeLine{00047\ \ \ \ \ cosV1\ =\ cosV;}
+\DoxyCodeLine{00048\ \ \ \ \ sinV1\ =\ sinV;}
+\DoxyCodeLine{00049\ \ \ \ \ cosV\ =\ 2.*cosV0*cosV1-\/1;}
+\DoxyCodeLine{00050\ \ \ \ \ sinV\ =\ 2.*cosV0*sinV1;}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \}\textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{00052\ \ \ \ \ cosV2\ =\ cosV1;}
+\DoxyCodeLine{00053\ \ \ \ \ sinV2\ =\ sinV1;}
+\DoxyCodeLine{00054\ \ \ \ \ cosV1\ =\ cosV;}
+\DoxyCodeLine{00055\ \ \ \ \ sinV1\ =\ sinV;}
+\DoxyCodeLine{00056\ \ \ \ \ cosV\ =\ 2.*cosV0*cosV1-\/cosV2;}
+\DoxyCodeLine{00057\ \ \ \ \ sinV\ =\ 2.*cosV0*sinV1-\/sinV2;}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ COSV\ =\ COSA*cosV\ -\/\ SINA*sinV;}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ SINV\ =\ SINA*cosV\ +\ COSA*sinV;}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \mbox{\hyperlink{global_8h_ae34b3c3ecb0a71564a8d3a52d5bce50f}{cfVal}}[j]\ +=\ COSV;}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \mbox{\hyperlink{global_8h_ae34b3c3ecb0a71564a8d3a52d5bce50f}{cfVal}}[j+1]\ +=\ SINV;}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ j\ +=\ 2;}
+\DoxyCodeLine{00064\ \ \ \ \ \}}
+\DoxyCodeLine{00065\ \ \ \}}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ \ \ \textcolor{keywordflow}{for}\ (nb\ =\ 1;\ nb\ <=\ \mbox{\hyperlink{global_8h_ab638d9b8ea6ae6103ee7d3dcb0ca4106}{nBuffCorr}};\ nb++)\{}
+\DoxyCodeLine{00068\ \ \ \ \ \mbox{\hyperlink{global_8h_a69d30c3c1681890962f25dc4ab39b033}{indexCorr}}[nb]\ +=\ 1;}
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{global_8h_a69d30c3c1681890962f25dc4ab39b033}{indexCorr}}[nb]\ <=\ 0)\ \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{00070\ \ \ \ \ ni\ =\ \mbox{\hyperlink{global_8h_ae6bb074a4f2d8b25747f5f1c3ed34e8e}{nFunCorr}}\ *\ (\mbox{\hyperlink{global_8h_a69d30c3c1681890962f25dc4ab39b033}{indexCorr}}[nb]\ -\/\ 1);}
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{global_8h_a69d30c3c1681890962f25dc4ab39b033}{indexCorr}}[nb]\ ==\ 1)\{}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (j\ =\ 1;\ j\ <=\ 2*\mbox{\hyperlink{global_8h_ae6bb074a4f2d8b25747f5f1c3ed34e8e}{nFunCorr}};\ j++)}
+\DoxyCodeLine{00073\ \ \ \ \ \mbox{\hyperlink{global_8h_acf270e6113a4c04ff43832e3676c4073}{cfOrg}}[nb][j]\ =\ \mbox{\hyperlink{global_8h_ae34b3c3ecb0a71564a8d3a52d5bce50f}{cfVal}}[j];}
+\DoxyCodeLine{00074\ \ \ \ \ \}}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keywordflow}{for}\ (j\ =\ 1;\ j\ <=\ \mbox{\hyperlink{global_8h_ae6bb074a4f2d8b25747f5f1c3ed34e8e}{nFunCorr}};\ j++)}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \mbox{\hyperlink{global_8h_a65c8541613338d3885f454c7f762ef47}{spacetimeCorr}}[nb][ni\ +\ j]\ =\ 0.;}
+\DoxyCodeLine{00078\ \ \ \ \ }
+\DoxyCodeLine{00079\ \ \ \ \ j\ =\ 1;}
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keywordflow}{for}\ (m\ =\ 1;\ m\ <=\ \mbox{\hyperlink{global_8h_ae6bb074a4f2d8b25747f5f1c3ed34e8e}{nFunCorr}};\ m++)\{}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ nv\ =\ m\ +\ ni;}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \mbox{\hyperlink{global_8h_a65c8541613338d3885f454c7f762ef47}{spacetimeCorr}}[nb][nv]\ +=\ \mbox{\hyperlink{global_8h_ae34b3c3ecb0a71564a8d3a52d5bce50f}{cfVal}}[j]\ *\ \mbox{\hyperlink{global_8h_acf270e6113a4c04ff43832e3676c4073}{cfOrg}}[nb][j]\ +\ \mbox{\hyperlink{global_8h_ae34b3c3ecb0a71564a8d3a52d5bce50f}{cfVal}}[j\ +\ 1]\ *\ \mbox{\hyperlink{global_8h_acf270e6113a4c04ff43832e3676c4073}{cfOrg}}[nb][j\ +\ 1];}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ j\ +=\ 2;}
+\DoxyCodeLine{00084\ \ \ \ \ \}}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00086\ \ \ \}}
+\DoxyCodeLine{00087\ \ \ }
+\DoxyCodeLine{00088\ \ \ \textcolor{comment}{//\ ACCUMULATE\ SPACETIME\ CORRELATIONS}}
+\DoxyCodeLine{00089\ \ \ \textcolor{keywordflow}{for}\ (nb\ =\ 1;\ nb\ <=\ \mbox{\hyperlink{global_8h_ab638d9b8ea6ae6103ee7d3dcb0ca4106}{nBuffCorr}};\ nb++)\{}
+\DoxyCodeLine{00090\ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{global_8h_a69d30c3c1681890962f25dc4ab39b033}{indexCorr}}[nb]\ ==\ \mbox{\hyperlink{global_8h_a1bb15d20732c39669d141e769b97d8a0}{nValCorr}})\{}
+\DoxyCodeLine{00091\ \ \ \ \ \ \textcolor{keywordflow}{for}\ (j\ =\ 1;\ j\ <=\ \mbox{\hyperlink{global_8h_ae6bb074a4f2d8b25747f5f1c3ed34e8e}{nFunCorr}}*\mbox{\hyperlink{global_8h_a1bb15d20732c39669d141e769b97d8a0}{nValCorr}};\ j++)}
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \mbox{\hyperlink{global_8h_a26084125f8afb4f1f04ff8291b8bb6e4}{spacetimeCorrAv}}[j]\ +=\ \mbox{\hyperlink{global_8h_a65c8541613338d3885f454c7f762ef47}{spacetimeCorr}}[nb][j];}
+\DoxyCodeLine{00093\ \ \ \ \ \ \mbox{\hyperlink{global_8h_a69d30c3c1681890962f25dc4ab39b033}{indexCorr}}[nb]\ =\ 0.;}
+\DoxyCodeLine{00094\ \ \ \ \ \ \mbox{\hyperlink{global_8h_a126e05fd683450696e89337a44aa0943}{countCorrAv}}\ ++;}
+\DoxyCodeLine{00095\ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{global_8h_a126e05fd683450696e89337a44aa0943}{countCorrAv}}\ ==\ \mbox{\hyperlink{global_8h_a0b6b2b63776d19816bc4b546333d6146}{limitCorrAv}})\{}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (j\ =\ 1;\ j\ <=\ \mbox{\hyperlink{global_8h_ae6bb074a4f2d8b25747f5f1c3ed34e8e}{nFunCorr}}*\mbox{\hyperlink{global_8h_a1bb15d20732c39669d141e769b97d8a0}{nValCorr}};\ j++)}
+\DoxyCodeLine{00097\ \ \ \ \ \ \mbox{\hyperlink{global_8h_a26084125f8afb4f1f04ff8291b8bb6e4}{spacetimeCorrAv}}[j]\ /=\ (\mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}}*\mbox{\hyperlink{global_8h_a0b6b2b63776d19816bc4b546333d6146}{limitCorrAv}});}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ fprintf(\mbox{\hyperlink{global_8h_a3c14565d0262fd815906501678906831}{fpdnsty}},\textcolor{stringliteral}{"{}NDIM\ \%d\(\backslash\)n"{}},\ \mbox{\hyperlink{global_8h_a2b1fd2d28c6a7d4a3f7027cc1b6466f3}{NDIM}});}
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ fprintf(\mbox{\hyperlink{global_8h_a3c14565d0262fd815906501678906831}{fpdnsty}},\textcolor{stringliteral}{"{}nAtom\ \%d\(\backslash\)n"{}},\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}});}
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ fprintf(\mbox{\hyperlink{global_8h_a3c14565d0262fd815906501678906831}{fpdnsty}},\textcolor{stringliteral}{"{}region\ \%lf\(\backslash\)n"{}},\ \mbox{\hyperlink{global_8h_a43c4f708b8d633b069355a121d6adbdc}{region}}[1]);}
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ fprintf(\mbox{\hyperlink{global_8h_a3c14565d0262fd815906501678906831}{fpdnsty}},\textcolor{stringliteral}{"{}nFunCorr\ \%d\(\backslash\)n"{}},\ \mbox{\hyperlink{global_8h_ae6bb074a4f2d8b25747f5f1c3ed34e8e}{nFunCorr}});}
+\DoxyCodeLine{00102\ \ \ \ \ \ \ \ fprintf(\mbox{\hyperlink{global_8h_a3c14565d0262fd815906501678906831}{fpdnsty}},\textcolor{stringliteral}{"{}limitCorrAv\ \%d\(\backslash\)n"{}},\ \mbox{\hyperlink{global_8h_a0b6b2b63776d19816bc4b546333d6146}{limitCorrAv}});}
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ fprintf(\mbox{\hyperlink{global_8h_a3c14565d0262fd815906501678906831}{fpdnsty}},\textcolor{stringliteral}{"{}stepCorr\ \%d\(\backslash\)n"{}},\ \mbox{\hyperlink{global_8h_a4e088a34485e73c84b8929dc45d6f319}{stepCorr}});}
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ fprintf(\mbox{\hyperlink{global_8h_a3c14565d0262fd815906501678906831}{fpdnsty}},\textcolor{stringliteral}{"{}nValCorr\ \%d\(\backslash\)n"{}},\ \mbox{\hyperlink{global_8h_a1bb15d20732c39669d141e769b97d8a0}{nValCorr}});}
+\DoxyCodeLine{00105\ \ \ \ \ \ \ \ fprintf(\mbox{\hyperlink{global_8h_a3c14565d0262fd815906501678906831}{fpdnsty}},\textcolor{stringliteral}{"{}deltaT\ \%lf\(\backslash\)n"{}},\ \mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}});}
+\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \mbox{\hyperlink{global_8h_a11d147c64891830c9e79b3315b1b2e21}{real}}\ tVal;}
+\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (n\ =\ 1;\ n\ <=\ \mbox{\hyperlink{global_8h_a1bb15d20732c39669d141e769b97d8a0}{nValCorr}};\ n++)\{}
+\DoxyCodeLine{00108\ \ \ \ \ \ tVal\ =\ (n-\/1)*\mbox{\hyperlink{global_8h_a4e088a34485e73c84b8929dc45d6f319}{stepCorr}}*\mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}};}
+\DoxyCodeLine{00109\ \ \ \ \ \ fprintf\ (\mbox{\hyperlink{global_8h_a3c14565d0262fd815906501678906831}{fpdnsty}},\ \textcolor{stringliteral}{"{}\%e\(\backslash\)t"{}},\ tVal);}
+\DoxyCodeLine{00110\ \ \ \ \ \ \textcolor{keywordtype}{int}\ nn\ =\ \mbox{\hyperlink{global_8h_ae6bb074a4f2d8b25747f5f1c3ed34e8e}{nFunCorr}}*(n-\/1);}
+\DoxyCodeLine{00111\ \ \ \ \ \ \textcolor{keywordflow}{for}\ (j\ =\ 1;\ j\ <=\ \mbox{\hyperlink{global_8h_ae6bb074a4f2d8b25747f5f1c3ed34e8e}{nFunCorr}};\ j\ ++)}
+\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ \ \ \ fprintf\ (\mbox{\hyperlink{global_8h_a3c14565d0262fd815906501678906831}{fpdnsty}},\ \textcolor{stringliteral}{"{}\%e\(\backslash\)t"{}},\ \mbox{\hyperlink{global_8h_a26084125f8afb4f1f04ff8291b8bb6e4}{spacetimeCorrAv}}[nn\ +\ j]);}
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ \ fprintf\ (\mbox{\hyperlink{global_8h_a3c14565d0262fd815906501678906831}{fpdnsty}},\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}});}
+\DoxyCodeLine{00114\ \ \ \ \ \ \ \ \}\ \ \ \ }
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00116\ \ \ \ \ \ \ \ \mbox{\hyperlink{global_8h_a126e05fd683450696e89337a44aa0943}{countCorrAv}}\ =\ 0.;}
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (j\ =\ 1;\ j\ <=\ \mbox{\hyperlink{global_8h_ae6bb074a4f2d8b25747f5f1c3ed34e8e}{nFunCorr}}*\mbox{\hyperlink{global_8h_a1bb15d20732c39669d141e769b97d8a0}{nValCorr}};\ j++)}
+\DoxyCodeLine{00118\ \ \ \ \ \ \mbox{\hyperlink{global_8h_a26084125f8afb4f1f04ff8291b8bb6e4}{spacetimeCorrAv}}[j]\ =\ 0.;}
+\DoxyCodeLine{00119\ \ \ \ \ \ \}}
+\DoxyCodeLine{00120\ \ \ \ \}}
+\DoxyCodeLine{00121\ \ \ \}}
+\DoxyCodeLine{00122\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{global_8h_acf270e6113a4c04ff43832e3676c4073}{cf\+Org}}, \mbox{\hyperlink{global_8h_source_l00088}{cf\+Val}}, \mbox{\hyperlink{global_8h_source_l00089}{count\+Corr\+Av}}, \mbox{\hyperlink{global_8h_source_l00020}{deltaT}}, \mbox{\hyperlink{global_8h_a3c14565d0262fd815906501678906831}{fpdnsty}}, \mbox{\hyperlink{global_8h_a69d30c3c1681890962f25dc4ab39b033}{index\+Corr}}, \mbox{\hyperlink{global_8h_source_l00089}{limit\+Corr\+Av}}, \mbox{\hyperlink{global_8h_source_l00024}{n\+Atom}}, \mbox{\hyperlink{global_8h_source_l00089}{n\+Buff\+Corr}}, \mbox{\hyperlink{global_8h_source_l00013}{NDIM}}, \mbox{\hyperlink{global_8h_source_l00089}{n\+Fun\+Corr}}, \mbox{\hyperlink{global_8h_source_l00089}{n\+Val\+Corr}}, \mbox{\hyperlink{global_8h_a43c4f708b8d633b069355a121d6adbdc}{region}}, \mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}, \mbox{\hyperlink{global_8h_source_l00088}{spacetime\+Corr}}, \mbox{\hyperlink{global_8h_source_l00088}{spacetime\+Corr\+Av}}, and \mbox{\hyperlink{global_8h_source_l00089}{step\+Corr}}.
+

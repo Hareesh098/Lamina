@@ -1,0 +1,46 @@
+\doxysection{source/\+Apply\+Viscous.c File Reference}
+\hypertarget{ApplyViscous_8c}{}\label{ApplyViscous_8c}\index{source/ApplyViscous.c@{source/ApplyViscous.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include "{}global.\+h"{}}\newline
+Include dependency graph for Apply\+Viscous.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=242pt]{ApplyViscous_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{ApplyViscous_8c_a7c954b189d2cacd846b41c94219eb949}{Apply\+Viscous}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{ApplyViscous_8c_a7c954b189d2cacd846b41c94219eb949}\label{ApplyViscous_8c_a7c954b189d2cacd846b41c94219eb949} 
+\index{ApplyViscous.c@{ApplyViscous.c}!ApplyViscous@{ApplyViscous}}
+\index{ApplyViscous@{ApplyViscous}!ApplyViscous.c@{ApplyViscous.c}}
+\doxysubsubsection{\texorpdfstring{ApplyViscous()}{ApplyViscous()}}
+{\footnotesize\ttfamily void Apply\+Viscous (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{ApplyViscous_8c_source_l00025}{25}} of file \mbox{\hyperlink{ApplyViscous_8c_source}{Apply\+Viscous.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00026\ \ \textcolor{keywordtype}{int}\ n;}
+\DoxyCodeLine{00027\ \ \textcolor{keywordtype}{double}\ gammav;}
+\DoxyCodeLine{00028\ \ gammav\ =\ 1.0;\ }
+\DoxyCodeLine{00029\ \ \textcolor{keywordflow}{for}(n\ =\ 1\ ;\ n\ <=\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}};\ n\ ++)\{}
+\DoxyCodeLine{00030\ \ \ \mbox{\hyperlink{global_8h_a82d645cda6bea6506c7b5f4f7453986c}{ax}}[n]\ +=\ -\/gammav\ *\ \mbox{\hyperlink{global_8h_a6cbb00abd724a75be2c6424c84d18654}{vx}}[n];}
+\DoxyCodeLine{00031\ \ \ \mbox{\hyperlink{global_8h_a68c7afda02d0f26c1987a4eee13928f2}{ay}}[n]\ +=\ -\/gammav\ *\ \mbox{\hyperlink{global_8h_ad78254f6802793cc12b197889e6ea80d}{vy}}[n];}
+\DoxyCodeLine{00032\ \ \}\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{global_8h_source_l00017}{ax}}, \mbox{\hyperlink{global_8h_source_l00017}{ay}}, \mbox{\hyperlink{global_8h_source_l00024}{n\+Atom}}, \mbox{\hyperlink{global_8h_source_l00017}{vx}}, and \mbox{\hyperlink{global_8h_source_l00017}{vy}}.
+

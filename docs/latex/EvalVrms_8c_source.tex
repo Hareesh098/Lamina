@@ -1,0 +1,47 @@
+\doxysection{Eval\+Vrms.\+c}
+\hypertarget{EvalVrms_8c_source}{}\label{EvalVrms_8c_source}\index{source/EvalVrms.c@{source/EvalVrms.c}}
+\mbox{\hyperlink{EvalVrms_8c}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{EvalVrms_8c_source_l00001}00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{EvalVrms_8c_source_l00002}00002\ \textcolor{comment}{\ *\ This\ file\ is\ part\ of\ Lamina.}}
+\DoxyCodeLine{\Hypertarget{EvalVrms_8c_source_l00003}00003\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{\Hypertarget{EvalVrms_8c_source_l00004}00004\ \textcolor{comment}{\ *\ Lamina\ is\ free\ software:\ you\ can\ redistribute\ it\ and/or\ modify}}
+\DoxyCodeLine{\Hypertarget{EvalVrms_8c_source_l00005}00005\ \textcolor{comment}{\ *\ it\ under\ the\ terms\ of\ the\ GNU\ General\ Public\ License\ as\ published\ by}}
+\DoxyCodeLine{\Hypertarget{EvalVrms_8c_source_l00006}00006\ \textcolor{comment}{\ *\ the\ Free\ Software\ Foundation,\ either\ version\ 3\ of\ the\ License,\ or}}
+\DoxyCodeLine{\Hypertarget{EvalVrms_8c_source_l00007}00007\ \textcolor{comment}{\ *\ (at\ your\ option)\ any\ later\ version.}}
+\DoxyCodeLine{\Hypertarget{EvalVrms_8c_source_l00008}00008\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{\Hypertarget{EvalVrms_8c_source_l00009}00009\ \textcolor{comment}{\ *\ Lamina\ is\ distributed\ in\ the\ hope\ that\ it\ will\ be\ useful,}}
+\DoxyCodeLine{\Hypertarget{EvalVrms_8c_source_l00010}00010\ \textcolor{comment}{\ *\ but\ WITHOUT\ ANY\ WARRANTY;\ without\ even\ the\ implied\ warranty\ of}}
+\DoxyCodeLine{\Hypertarget{EvalVrms_8c_source_l00011}00011\ \textcolor{comment}{\ *\ MERCHANTABILITY\ or\ FITNESS\ FOR\ A\ PARTICULAR\ PURPOSE.\ See\ the}}
+\DoxyCodeLine{\Hypertarget{EvalVrms_8c_source_l00012}00012\ \textcolor{comment}{\ *\ GNU\ General\ Public\ License\ for\ more\ details.}}
+\DoxyCodeLine{\Hypertarget{EvalVrms_8c_source_l00013}00013\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{\Hypertarget{EvalVrms_8c_source_l00014}00014\ \textcolor{comment}{\ *\ You\ should\ have\ received\ a\ copy\ of\ the\ GNU\ General\ Public\ License}}
+\DoxyCodeLine{\Hypertarget{EvalVrms_8c_source_l00015}00015\ \textcolor{comment}{\ *\ along\ with\ Lamina.\ If\ not,\ see\ <https://www.gnu.org/licenses/>.}}
+\DoxyCodeLine{\Hypertarget{EvalVrms_8c_source_l00016}00016\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{EvalVrms_8c_source_l00017}00017\ \textcolor{comment}{\ Copyright\ (C)\ 2025\ Harish\ Charan,\ University\ of\ Durham,\ UK}}
+\DoxyCodeLine{\Hypertarget{EvalVrms_8c_source_l00018}00018\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{EvalVrms_8c_source_l00019}00019\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{\Hypertarget{EvalVrms_8c_source_l00020}00020\ }
+\DoxyCodeLine{\Hypertarget{EvalVrms_8c_source_l00021}00021\ }
+\DoxyCodeLine{\Hypertarget{EvalVrms_8c_source_l00022}00022\ \textcolor{preprocessor}{\#include<stdio.h>}}
+\DoxyCodeLine{\Hypertarget{EvalVrms_8c_source_l00023}00023\ \textcolor{preprocessor}{\#include<stdlib.h>}}
+\DoxyCodeLine{\Hypertarget{EvalVrms_8c_source_l00024}00024\ \textcolor{preprocessor}{\#include<math.h>}}
+\DoxyCodeLine{\Hypertarget{EvalVrms_8c_source_l00025}00025\ \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{global_8h}{global.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{EvalVrms_8c_source_l00026}00026\ }
+\DoxyCodeLine{\Hypertarget{EvalVrms_8c_source_l00027}\mbox{\hyperlink{EvalVrms_8c_a3275d07fd445af2ae869b604eee31afb}{00027}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{EvalVrms_8c_a3275d07fd445af2ae869b604eee31afb}{EvalVrms}}()\{}
+\DoxyCodeLine{\Hypertarget{EvalVrms_8c_source_l00028}00028\ \ \ \textcolor{keywordtype}{int}\ n;}
+\DoxyCodeLine{\Hypertarget{EvalVrms_8c_source_l00029}00029\ \ \ \mbox{\hyperlink{global_8h_a7f75910911c1659f8b012917539bcee2}{VSqr}}\ =\ 0.0;}
+\DoxyCodeLine{\Hypertarget{EvalVrms_8c_source_l00030}00030\ \ \ \mbox{\hyperlink{global_8h_a19e4a064bc256b4dc93cc670e209764b}{VMeanSqr}}\ =\ 0.0;}
+\DoxyCodeLine{\Hypertarget{EvalVrms_8c_source_l00031}00031\ \ \ \mbox{\hyperlink{global_8h_a30d906a0cd864fe43f75ca8ca92ccf77}{VRootMeanSqr}}\ =\ 0.0;}
+\DoxyCodeLine{\Hypertarget{EvalVrms_8c_source_l00032}00032\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{EvalVrms_8c_source_l00033}00033\ \ \ \textcolor{keywordflow}{for}(n\ =\ 1\ ;\ n\ <=\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}}\ ;\ n\ ++)\{}
+\DoxyCodeLine{\Hypertarget{EvalVrms_8c_source_l00034}00034\ \ \ \mbox{\hyperlink{global_8h_a7f75910911c1659f8b012917539bcee2}{VSqr}}\ +=\ \mbox{\hyperlink{global_8h_a88aaaec93066182aaf8cf3e0f8a676e2}{Sqr}}(\mbox{\hyperlink{global_8h_a6cbb00abd724a75be2c6424c84d18654}{vx}}[n])\ +\ \mbox{\hyperlink{global_8h_a88aaaec93066182aaf8cf3e0f8a676e2}{Sqr}}(\mbox{\hyperlink{global_8h_ad78254f6802793cc12b197889e6ea80d}{vy}}[n]);\ }
+\DoxyCodeLine{\Hypertarget{EvalVrms_8c_source_l00035}00035\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{EvalVrms_8c_source_l00036}00036\ \ \ \mbox{\hyperlink{global_8h_a19e4a064bc256b4dc93cc670e209764b}{VMeanSqr}}\ =\ \mbox{\hyperlink{global_8h_a7f75910911c1659f8b012917539bcee2}{VSqr}}/\mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}};}
+\DoxyCodeLine{\Hypertarget{EvalVrms_8c_source_l00037}00037\ \ \ \mbox{\hyperlink{global_8h_a30d906a0cd864fe43f75ca8ca92ccf77}{VRootMeanSqr}}\ =\ sqrt(\mbox{\hyperlink{global_8h_a19e4a064bc256b4dc93cc670e209764b}{VMeanSqr}});}
+\DoxyCodeLine{\Hypertarget{EvalVrms_8c_source_l00038}00038\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{EvalVrms_8c_source_l00039}00039\ \ \ }
+\DoxyCodeLine{\Hypertarget{EvalVrms_8c_source_l00040}00040\ \ \ }
+\DoxyCodeLine{\Hypertarget{EvalVrms_8c_source_l00041}00041\ \ \ }
+
+\end{DoxyCode}

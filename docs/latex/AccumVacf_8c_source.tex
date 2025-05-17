@@ -1,0 +1,49 @@
+\doxysection{Accum\+Vacf.\+c}
+\hypertarget{AccumVacf_8c_source}{}\label{AccumVacf_8c_source}\index{source/AccumVacf.c@{source/AccumVacf.c}}
+\mbox{\hyperlink{AccumVacf_8c}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{AccumVacf_8c_source_l00001}00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{AccumVacf_8c_source_l00002}00002\ \textcolor{comment}{\ *\ This\ file\ is\ part\ of\ Lamina.}}
+\DoxyCodeLine{\Hypertarget{AccumVacf_8c_source_l00003}00003\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{\Hypertarget{AccumVacf_8c_source_l00004}00004\ \textcolor{comment}{\ *\ Lamina\ is\ free\ software:\ you\ can\ redistribute\ it\ and/or\ modify}}
+\DoxyCodeLine{\Hypertarget{AccumVacf_8c_source_l00005}00005\ \textcolor{comment}{\ *\ it\ under\ the\ terms\ of\ the\ GNU\ General\ Public\ License\ as\ published\ by}}
+\DoxyCodeLine{\Hypertarget{AccumVacf_8c_source_l00006}00006\ \textcolor{comment}{\ *\ the\ Free\ Software\ Foundation,\ either\ version\ 3\ of\ the\ License,\ or}}
+\DoxyCodeLine{\Hypertarget{AccumVacf_8c_source_l00007}00007\ \textcolor{comment}{\ *\ (at\ your\ option)\ any\ later\ version.}}
+\DoxyCodeLine{\Hypertarget{AccumVacf_8c_source_l00008}00008\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{\Hypertarget{AccumVacf_8c_source_l00009}00009\ \textcolor{comment}{\ *\ Lamina\ is\ distributed\ in\ the\ hope\ that\ it\ will\ be\ useful,}}
+\DoxyCodeLine{\Hypertarget{AccumVacf_8c_source_l00010}00010\ \textcolor{comment}{\ *\ but\ WITHOUT\ ANY\ WARRANTY;\ without\ even\ the\ implied\ warranty\ of}}
+\DoxyCodeLine{\Hypertarget{AccumVacf_8c_source_l00011}00011\ \textcolor{comment}{\ *\ MERCHANTABILITY\ or\ FITNESS\ FOR\ A\ PARTICULAR\ PURPOSE.\ See\ the}}
+\DoxyCodeLine{\Hypertarget{AccumVacf_8c_source_l00012}00012\ \textcolor{comment}{\ *\ GNU\ General\ Public\ License\ for\ more\ details.}}
+\DoxyCodeLine{\Hypertarget{AccumVacf_8c_source_l00013}00013\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{\Hypertarget{AccumVacf_8c_source_l00014}00014\ \textcolor{comment}{\ *\ You\ should\ have\ received\ a\ copy\ of\ the\ GNU\ General\ Public\ License}}
+\DoxyCodeLine{\Hypertarget{AccumVacf_8c_source_l00015}00015\ \textcolor{comment}{\ *\ along\ with\ Lamina.\ If\ not,\ see\ <https://www.gnu.org/licenses/>.}}
+\DoxyCodeLine{\Hypertarget{AccumVacf_8c_source_l00016}00016\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{AccumVacf_8c_source_l00017}00017\ \textcolor{comment}{\ Copyright\ (C)\ 2025\ Harish\ Charan,\ University\ of\ Durham,\ UK}}
+\DoxyCodeLine{\Hypertarget{AccumVacf_8c_source_l00018}00018\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{AccumVacf_8c_source_l00019}00019\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{\Hypertarget{AccumVacf_8c_source_l00020}00020\ }
+\DoxyCodeLine{\Hypertarget{AccumVacf_8c_source_l00021}00021\ \textcolor{preprocessor}{\#include<stdio.h>}}
+\DoxyCodeLine{\Hypertarget{AccumVacf_8c_source_l00022}00022\ \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{global_8h}{global.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{AccumVacf_8c_source_l00023}00023\ }
+\DoxyCodeLine{\Hypertarget{AccumVacf_8c_source_l00024}00024\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{AccumVacf_8c_acdda65121bd9cf7a35cb4d2e0fdb7cd9}{Integrate}}(\textcolor{keywordtype}{double}\ *,\ \textcolor{keywordtype}{int});}
+\DoxyCodeLine{\Hypertarget{AccumVacf_8c_source_l00025}00025\ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{AccumVacf_8c_a9be1b8f0429ee69e28f6fb3850e8acdb}{PrintVacf}}();}
+\DoxyCodeLine{\Hypertarget{AccumVacf_8c_source_l00026}00026\ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{AccumVacf_8c_af60963b0cbbf0bed9d310797a6f9a59d}{ZeroVacf}}();}
+\DoxyCodeLine{\Hypertarget{AccumVacf_8c_source_l00027}\mbox{\hyperlink{AccumVacf_8c_ad6608c7fca41e40ae23fe93c00dc5e2c}{00027}}\ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{AccumVacf_8c_ad6608c7fca41e40ae23fe93c00dc5e2c}{AccumVacf}}()\{}
+\DoxyCodeLine{\Hypertarget{AccumVacf_8c_source_l00028}00028\ \ \textcolor{keywordtype}{double}\ fac;}
+\DoxyCodeLine{\Hypertarget{AccumVacf_8c_source_l00029}00029\ \ \textcolor{keywordtype}{int}\ j,\ nb;}
+\DoxyCodeLine{\Hypertarget{AccumVacf_8c_source_l00030}00030\ \ \textcolor{keywordflow}{for}(nb\ =\ 1\ ;\ nb\ <=\ \mbox{\hyperlink{global_8h_a62bb5169e87a77023d99fa51468bf126}{nBuffAcf}}\ ;\ nb\ ++)\{}
+\DoxyCodeLine{\Hypertarget{AccumVacf_8c_source_l00031}00031\ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{global_8h_a74f01c700b5540bed3184604a0cd6c17}{indexAcf}}[nb]\ ==\ \mbox{\hyperlink{global_8h_a48094c7b6092e1a21fcc91a371f230b6}{nValAcf}})\{}
+\DoxyCodeLine{\Hypertarget{AccumVacf_8c_source_l00032}00032\ \ \ \ \textcolor{keywordflow}{for}(j\ =\ 1\ ;\ j\ <=\ \mbox{\hyperlink{global_8h_a48094c7b6092e1a21fcc91a371f230b6}{nValAcf}};\ j\ ++)\{}
+\DoxyCodeLine{\Hypertarget{AccumVacf_8c_source_l00033}00033\ \ \ \ \ \mbox{\hyperlink{global_8h_a0eb9c034706ff9eeacb32ac2f0327e10}{viscAcfAv}}[j]\ +=\ \ \mbox{\hyperlink{global_8h_a9d680c9ee759157faecbb75ad8d91d63}{viscAcf}}[nb][j];}
+\DoxyCodeLine{\Hypertarget{AccumVacf_8c_source_l00034}00034\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{AccumVacf_8c_source_l00035}00035\ \ \ \mbox{\hyperlink{global_8h_a74f01c700b5540bed3184604a0cd6c17}{indexAcf}}[nb]\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{AccumVacf_8c_source_l00036}00036\ \ \ \mbox{\hyperlink{global_8h_ab4d8c90fd1e7351e4792aba91063c20e}{countAcfAv}}\ ++;}
+\DoxyCodeLine{\Hypertarget{AccumVacf_8c_source_l00037}00037\ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{global_8h_ab4d8c90fd1e7351e4792aba91063c20e}{countAcfAv}}\ ==\ \mbox{\hyperlink{global_8h_a9ee217916f83b1a9545e5c8563d4ae98}{limitAcfAv}})\{}
+\DoxyCodeLine{\Hypertarget{AccumVacf_8c_source_l00038}00038\ \ \ \ fac\ =\ 1./(\mbox{\hyperlink{global_8h_a445d936de68f213385df5c284ea1d81d}{kinEnergy}}*\mbox{\hyperlink{global_8h_a43c4f708b8d633b069355a121d6adbdc}{region}}[1]*\mbox{\hyperlink{global_8h_a43c4f708b8d633b069355a121d6adbdc}{region}}[2]*\mbox{\hyperlink{global_8h_a9ee217916f83b1a9545e5c8563d4ae98}{limitAcfAv}});}
+\DoxyCodeLine{\Hypertarget{AccumVacf_8c_source_l00039}00039\ \ \ \ \mbox{\hyperlink{global_8h_a38b081058be3f7f6594654b9890b0943}{viscAcfInt}}\ =\ fac*\mbox{\hyperlink{global_8h_a7187cdbfc7b7c8acd127dffed24c6f64}{stepAcf}}*\mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}}*\mbox{\hyperlink{AccumVacf_8c_acdda65121bd9cf7a35cb4d2e0fdb7cd9}{Integrate}}(\mbox{\hyperlink{global_8h_a0eb9c034706ff9eeacb32ac2f0327e10}{viscAcfAv}},\ \mbox{\hyperlink{global_8h_a48094c7b6092e1a21fcc91a371f230b6}{nValAcf}});}
+\DoxyCodeLine{\Hypertarget{AccumVacf_8c_source_l00040}00040\ \ \ \ \mbox{\hyperlink{AccumVacf_8c_a9be1b8f0429ee69e28f6fb3850e8acdb}{PrintVacf}}();}
+\DoxyCodeLine{\Hypertarget{AccumVacf_8c_source_l00041}00041\ \ \ \ \mbox{\hyperlink{AccumVacf_8c_af60963b0cbbf0bed9d310797a6f9a59d}{ZeroVacf}}();}
+\DoxyCodeLine{\Hypertarget{AccumVacf_8c_source_l00042}00042\ \}\ \}\ \}\ \}}
+\DoxyCodeLine{\Hypertarget{AccumVacf_8c_source_l00043}00043\ }
+
+\end{DoxyCode}

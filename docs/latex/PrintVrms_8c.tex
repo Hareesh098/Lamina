@@ -1,0 +1,54 @@
+\doxysection{source/\+Print\+Vrms.c File Reference}
+\hypertarget{PrintVrms_8c}{}\label{PrintVrms_8c}\index{source/PrintVrms.c@{source/PrintVrms.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include "{}global.\+h"{}}\newline
+Include dependency graph for Print\+Vrms.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=286pt]{PrintVrms_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{PrintVrms_8c_ae8c08b7a0eaa4515cfb245baebdf4751}{Print\+Vrms}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{PrintVrms_8c_ae8c08b7a0eaa4515cfb245baebdf4751}\label{PrintVrms_8c_ae8c08b7a0eaa4515cfb245baebdf4751} 
+\index{PrintVrms.c@{PrintVrms.c}!PrintVrms@{PrintVrms}}
+\index{PrintVrms@{PrintVrms}!PrintVrms.c@{PrintVrms.c}}
+\doxysubsubsection{\texorpdfstring{PrintVrms()}{PrintVrms()}}
+{\footnotesize\ttfamily void Print\+Vrms (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{PrintVrms_8c_source_l00027}{27}} of file \mbox{\hyperlink{PrintVrms_8c_source}{Print\+Vrms.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00028\ \ fprintf(\mbox{\hyperlink{global_8h_a97bafb66bb002e44290e629c6b7643c2}{fpvrms}},\ \textcolor{stringliteral}{"{}\%0.4lf\(\backslash\)t\%0.16lf\(\backslash\)n"{}},\ \mbox{\hyperlink{global_8h_abb2aee8c6108dd86a8da33115d249d71}{timeNow}},\ \mbox{\hyperlink{global_8h_a30d906a0cd864fe43f75ca8ca92ccf77}{VRootMeanSqr}});}
+\DoxyCodeLine{00029\ \ fflush(\mbox{\hyperlink{global_8h_a97bafb66bb002e44290e629c6b7643c2}{fpvrms}});}
+\DoxyCodeLine{00030\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{global_8h_a97bafb66bb002e44290e629c6b7643c2}{fpvrms}}, \mbox{\hyperlink{global_8h_source_l00020}{time\+Now}}, and \mbox{\hyperlink{global_8h_source_l00043}{VRoot\+Mean\+Sqr}}.
+
+
+
+Referenced by \mbox{\hyperlink{main_8c_source_l00050}{main()}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=221pt]{PrintVrms_8c_ae8c08b7a0eaa4515cfb245baebdf4751_icgraph}
+\end{center}
+\end{figure}

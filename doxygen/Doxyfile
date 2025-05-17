@@ -1,0 +1,70 @@
+# Input / Output Configuration
+DOXYFILE_ENCODING      = UTF-8
+PROJECT_NAME           = Lemina
+OUTPUT_DIRECTORY       = ../docs
+INPUT 				= ../source ../README.md
+IMAGE_PATH             = ../figures
+RECURSIVE              = YES
+FILE_PATTERNS          = *.c *.h *.md
+EXCLUDE_PATTERNS       = */tests/*
+GENERATE_HTML          = YES
+GENERATE_LATEX         = YES
+PROJECT_NUMBER         =
+PROJECT_BRIEF          = "A molecular dynamics package for network, granular material and point particles with a range of interaction potential."
+
+#Make It Easy to Navigate
+FULL_PATH_NAMES        = YES
+STRIP_FROM_PATH        = ../
+SHOW_INCLUDE_FILES     = YES
+INLINE_SOURCES         = YES
+SOURCE_BROWSER         = YES
+REFERENCED_BY_RELATION = YES
+REFERENCES_RELATION    = YES
+HAVE_DOT               = YES
+CALL_GRAPH             = YES
+CALLER_GRAPH           = YES
+DOT_GRAPH_MAX_NODES    = 50
+UML_LOOK               = YES
+DOT_PATH               = /usr/bin/dot   # or wherever Graphviz is installed
+
+#Useful Documentation Features
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
+EXTRACT_STATIC         = YES
+EXTRACT_LOCAL_METHODS  = YES
+EXTRACT_ANON_NSPACES   = YES
+SHOW_USED_FILES        = YES
+SOURCE_BROWSER         = YES
+VERBATIM_HEADERS       = YES
+
+#Styling / Branding
+PROJECT_LOGO           = "../figures/LogoLaminaHTML.png"
+PROJECT_ICON           = "../figures/LogoLaminaHTML.png"
+HTML_COLORSTYLE_HUE    = 220   # Optional theme tweak
+HTML_DYNAMIC_SECTIONS  = YES
+GENERATE_TREEVIEW      = YES
+
+# LaTeX and PDF Docs (optional but useful)
+GENERATE_LATEX         = YES
+PDF_HYPERLINKS         = YES
+USE_PDFLATEX           = YES
+LATEX_BATCHMODE        = NO
+LATEX_HIDE_INDICES     = NO
+LATEX_HEADER              = ../doxygen/header.tex
+
+#Optional Advanced Tags (for further control)
+ENABLE_PREPROCESSING   = YES
+MACRO_EXPANSION        = YES
+EXPAND_ONLY_PREDEF     = NO
+SEARCHENGINE           = YES
+QUIET                  = NO
+WARNINGS               = YES
+WARN_IF_UNDOCUMENTED   = YES
+
+#To add the README.md file to the html and latex
+#Comment Style Compatibility
+MARKDOWN_SUPPORT       = YES
+AUTOLINK_SUPPORT       = YES
+USE_MDFILE_AS_MAINPAGE = ../README.md   # Optional
+EXTENSION_MAPPING      = md=markdown
+

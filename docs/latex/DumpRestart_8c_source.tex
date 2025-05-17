@@ -1,0 +1,61 @@
+\doxysection{Dump\+Restart.\+c}
+\hypertarget{DumpRestart_8c_source}{}\label{DumpRestart_8c_source}\index{source/DumpRestart.c@{source/DumpRestart.c}}
+\mbox{\hyperlink{DumpRestart_8c}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{DumpRestart_8c_source_l00001}00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{DumpRestart_8c_source_l00002}00002\ \textcolor{comment}{\ *\ This\ file\ is\ part\ of\ Lamina.}}
+\DoxyCodeLine{\Hypertarget{DumpRestart_8c_source_l00003}00003\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{\Hypertarget{DumpRestart_8c_source_l00004}00004\ \textcolor{comment}{\ *\ Lamina\ is\ free\ software:\ you\ can\ redistribute\ it\ and/or\ modify}}
+\DoxyCodeLine{\Hypertarget{DumpRestart_8c_source_l00005}00005\ \textcolor{comment}{\ *\ it\ under\ the\ terms\ of\ the\ GNU\ General\ Public\ License\ as\ published\ by}}
+\DoxyCodeLine{\Hypertarget{DumpRestart_8c_source_l00006}00006\ \textcolor{comment}{\ *\ the\ Free\ Software\ Foundation,\ either\ version\ 3\ of\ the\ License,\ or}}
+\DoxyCodeLine{\Hypertarget{DumpRestart_8c_source_l00007}00007\ \textcolor{comment}{\ *\ (at\ your\ option)\ any\ later\ version.}}
+\DoxyCodeLine{\Hypertarget{DumpRestart_8c_source_l00008}00008\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{\Hypertarget{DumpRestart_8c_source_l00009}00009\ \textcolor{comment}{\ *\ Lamina\ is\ distributed\ in\ the\ hope\ that\ it\ will\ be\ useful,}}
+\DoxyCodeLine{\Hypertarget{DumpRestart_8c_source_l00010}00010\ \textcolor{comment}{\ *\ but\ WITHOUT\ ANY\ WARRANTY;\ without\ even\ the\ implied\ warranty\ of}}
+\DoxyCodeLine{\Hypertarget{DumpRestart_8c_source_l00011}00011\ \textcolor{comment}{\ *\ MERCHANTABILITY\ or\ FITNESS\ FOR\ A\ PARTICULAR\ PURPOSE.\ See\ the}}
+\DoxyCodeLine{\Hypertarget{DumpRestart_8c_source_l00012}00012\ \textcolor{comment}{\ *\ GNU\ General\ Public\ License\ for\ more\ details.}}
+\DoxyCodeLine{\Hypertarget{DumpRestart_8c_source_l00013}00013\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{\Hypertarget{DumpRestart_8c_source_l00014}00014\ \textcolor{comment}{\ *\ You\ should\ have\ received\ a\ copy\ of\ the\ GNU\ General\ Public\ License}}
+\DoxyCodeLine{\Hypertarget{DumpRestart_8c_source_l00015}00015\ \textcolor{comment}{\ *\ along\ with\ Lamina.\ If\ not,\ see\ <https://www.gnu.org/licenses/>.}}
+\DoxyCodeLine{\Hypertarget{DumpRestart_8c_source_l00016}00016\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{DumpRestart_8c_source_l00017}00017\ \textcolor{comment}{\ Copyright\ (C)\ 2025\ Harish\ Charan,\ University\ of\ Durham,\ UK}}
+\DoxyCodeLine{\Hypertarget{DumpRestart_8c_source_l00018}00018\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{DumpRestart_8c_source_l00019}00019\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{\Hypertarget{DumpRestart_8c_source_l00020}00020\ }
+\DoxyCodeLine{\Hypertarget{DumpRestart_8c_source_l00021}00021\ }
+\DoxyCodeLine{\Hypertarget{DumpRestart_8c_source_l00022}00022\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{\Hypertarget{DumpRestart_8c_source_l00023}00023\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{global_8h}{global.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{DumpRestart_8c_source_l00024}00024\ }
+\DoxyCodeLine{\Hypertarget{DumpRestart_8c_source_l00025}\mbox{\hyperlink{DumpRestart_8c_ab0202998bd4c6de904803b310d95b2d8}{00025}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{DumpRestart_8c_ab0202998bd4c6de904803b310d95b2d8}{DumpRestart}}()\ \{}
+\DoxyCodeLine{\Hypertarget{DumpRestart_8c_source_l00026}00026\ \ \textcolor{keywordtype}{char}\ DUMP[256];}
+\DoxyCodeLine{\Hypertarget{DumpRestart_8c_source_l00027}00027\ \ FILE\ *fpDUMP;}
+\DoxyCodeLine{\Hypertarget{DumpRestart_8c_source_l00028}00028\ \ sprintf(DUMP,\ \textcolor{stringliteral}{"{}\%s.Restart"{}},\ \mbox{\hyperlink{global_8h_ad2849cf781a4db22cc1b31eaaee50a4f}{prefix}});}
+\DoxyCodeLine{\Hypertarget{DumpRestart_8c_source_l00029}00029\ \ fpDUMP\ =\ fopen(DUMP,\ \textcolor{stringliteral}{"{}w"{}});}
+\DoxyCodeLine{\Hypertarget{DumpRestart_8c_source_l00030}00030\ \ \textcolor{keywordflow}{if}(fpDUMP\ ==\ NULL)\ \{}
+\DoxyCodeLine{\Hypertarget{DumpRestart_8c_source_l00031}00031\ \ \ fprintf(stderr,\ \textcolor{stringliteral}{"{}Error\ opening\ file\ \%s\ for\ writing\(\backslash\)n"{}},\ DUMP);}
+\DoxyCodeLine{\Hypertarget{DumpRestart_8c_source_l00032}00032\ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{DumpRestart_8c_source_l00033}00033\ \ \}}
+\DoxyCodeLine{\Hypertarget{DumpRestart_8c_source_l00034}00034\ }
+\DoxyCodeLine{\Hypertarget{DumpRestart_8c_source_l00035}00035\ \ \ fprintf(fpDUMP,\ \textcolor{stringliteral}{"{}timeNow\ \%lf\(\backslash\)n"{}},\ \mbox{\hyperlink{global_8h_abb2aee8c6108dd86a8da33115d249d71}{timeNow}});}
+\DoxyCodeLine{\Hypertarget{DumpRestart_8c_source_l00036}00036\ \ \ fprintf(fpDUMP,\ \textcolor{stringliteral}{"{}nAtom\ \%d\(\backslash\)n"{}},\ \ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}});}
+\DoxyCodeLine{\Hypertarget{DumpRestart_8c_source_l00037}00037\ \ \ fprintf(fpDUMP,\ \textcolor{stringliteral}{"{}nBond\ \%d\(\backslash\)n"{}},\ \mbox{\hyperlink{global_8h_a89d3bca785c9af9c4a154dc6642add4d}{nBond}});}
+\DoxyCodeLine{\Hypertarget{DumpRestart_8c_source_l00038}00038\ \ \ fprintf(fpDUMP,\ \textcolor{stringliteral}{"{}nAtomType\ \%d\(\backslash\)n"{}},\ \mbox{\hyperlink{global_8h_a43448c32d3aae360f080f3805a73f08f}{nAtomType}});}
+\DoxyCodeLine{\Hypertarget{DumpRestart_8c_source_l00039}00039\ \ \ fprintf(fpDUMP,\ \textcolor{stringliteral}{"{}nBondType\ \%d\(\backslash\)n"{}},\ \mbox{\hyperlink{global_8h_a3afc68b43647936871af06d6b5d1d5db}{nBondType}});}
+\DoxyCodeLine{\Hypertarget{DumpRestart_8c_source_l00040}00040\ \ \ fprintf(fpDUMP,\ \textcolor{stringliteral}{"{}region[1]\ \%0.14lf\(\backslash\)n"{}},\ \mbox{\hyperlink{global_8h_a43c4f708b8d633b069355a121d6adbdc}{region}}[1]);}
+\DoxyCodeLine{\Hypertarget{DumpRestart_8c_source_l00041}00041\ \ \ fprintf(fpDUMP,\ \textcolor{stringliteral}{"{}region[2]\ \%0.14lf\(\backslash\)n"{}},\ \mbox{\hyperlink{global_8h_a43c4f708b8d633b069355a121d6adbdc}{region}}[2]);}
+\DoxyCodeLine{\Hypertarget{DumpRestart_8c_source_l00042}00042\ }
+\DoxyCodeLine{\Hypertarget{DumpRestart_8c_source_l00043}00043\ \ \ \textcolor{keywordtype}{int}\ n;\ }
+\DoxyCodeLine{\Hypertarget{DumpRestart_8c_source_l00044}00044\ \ \ fprintf(fpDUMP,\ \textcolor{stringliteral}{"{}Atoms\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{DumpRestart_8c_source_l00045}00045\ \ \ \textcolor{keywordflow}{for}(n\ =\ 1;\ n\ <=\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}};\ n\ ++)}
+\DoxyCodeLine{\Hypertarget{DumpRestart_8c_source_l00046}00046\ \ \ \ fprintf(fpDUMP,\ \textcolor{stringliteral}{"{}\%d\ \%d\ \%d\ \%0.2lf\ \%0.16lf\ \%0.16lf\ \%0.16lf\ \%0.16lf\(\backslash\)n"{}},\ \mbox{\hyperlink{global_8h_af2e16c834f37dce5699222281ce6e302}{atomID}}[n],\ \mbox{\hyperlink{global_8h_a65f3cbf0ee8813aae06be044d6c568ad}{molID}}[n],\ \mbox{\hyperlink{global_8h_ad2f384e523b15b13c82e3d6db95b402e}{atomType}}[n],\ \mbox{\hyperlink{global_8h_ab715ebf9f35659a111ee6c5eedc360af}{atomRadius}}[n],\ \mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}[n],\ \mbox{\hyperlink{global_8h_af88ff31a9ae85beb713bd0c42815f1de}{ry}}[n],\ \mbox{\hyperlink{global_8h_a6cbb00abd724a75be2c6424c84d18654}{vx}}[n],\ \mbox{\hyperlink{global_8h_ad78254f6802793cc12b197889e6ea80d}{vy}}[n]);}
+\DoxyCodeLine{\Hypertarget{DumpRestart_8c_source_l00047}00047\ \ \ }
+\DoxyCodeLine{\Hypertarget{DumpRestart_8c_source_l00048}00048\ }
+\DoxyCodeLine{\Hypertarget{DumpRestart_8c_source_l00049}00049\ \ \ fprintf(fpDUMP,\ \textcolor{stringliteral}{"{}Bonds\(\backslash\)n"{}});\ }
+\DoxyCodeLine{\Hypertarget{DumpRestart_8c_source_l00050}00050\ \ \ \textcolor{keywordflow}{for}(n=1;\ n<=\mbox{\hyperlink{global_8h_a89d3bca785c9af9c4a154dc6642add4d}{nBond}};\ n++)}
+\DoxyCodeLine{\Hypertarget{DumpRestart_8c_source_l00051}00051\ \ \ fprintf(fpDUMP,\ \ \textcolor{stringliteral}{"{}\%d\ \%d\ \%d\ \%d\ \%0.2lf\ \%0.16lf\(\backslash\)n"{}},\ \mbox{\hyperlink{global_8h_a15d105ee1521b15d76eeb63ac4351f6f}{BondID}}[n],\ \mbox{\hyperlink{global_8h_a389f660313ee3764aaaa6997121a5400}{BondType}}[n],\ \mbox{\hyperlink{global_8h_a7ef9937bc3aea03091e40e733df7353e}{atom1}}[n],\ \mbox{\hyperlink{global_8h_a28d9ba88ad3c8e8b5cc5608b2cc0b0b5}{atom2}}[n],\ \mbox{\hyperlink{global_8h_a8e6dc750ca456d701cdae21325c99048}{kb}}[n],\ \mbox{\hyperlink{global_8h_a78581c34377eab92a44bc4d30fabed1c}{ro}}[n]);}
+\DoxyCodeLine{\Hypertarget{DumpRestart_8c_source_l00052}00052\ }
+\DoxyCodeLine{\Hypertarget{DumpRestart_8c_source_l00053}00053\ \ \ fclose(fpDUMP);}
+\DoxyCodeLine{\Hypertarget{DumpRestart_8c_source_l00054}00054\ \}}
+\DoxyCodeLine{\Hypertarget{DumpRestart_8c_source_l00055}00055\ }
+
+\end{DoxyCode}

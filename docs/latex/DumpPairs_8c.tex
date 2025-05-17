@@ -1,0 +1,66 @@
+\doxysection{source/\+Dump\+Pairs.c File Reference}
+\hypertarget{DumpPairs_8c}{}\label{DumpPairs_8c}\index{source/DumpPairs.c@{source/DumpPairs.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include "{}global.\+h"{}}\newline
+Include dependency graph for Dump\+Pairs.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{DumpPairs_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{DumpPairs_8c_a8645965b1cadcb70224588065e716c17}{Dump\+Pairs}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{DumpPairs_8c_a8645965b1cadcb70224588065e716c17}\label{DumpPairs_8c_a8645965b1cadcb70224588065e716c17} 
+\index{DumpPairs.c@{DumpPairs.c}!DumpPairs@{DumpPairs}}
+\index{DumpPairs@{DumpPairs}!DumpPairs.c@{DumpPairs.c}}
+\doxysubsubsection{\texorpdfstring{DumpPairs()}{DumpPairs()}}
+{\footnotesize\ttfamily void Dump\+Pairs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{DumpPairs_8c_source_l00025}{25}} of file \mbox{\hyperlink{DumpPairs_8c_source}{Dump\+Pairs.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00026\ \ \ \textcolor{keywordtype}{int}\ n;}
+\DoxyCodeLine{00027\ \ \ \textcolor{comment}{//Trajectory\ file\ in\ LAMMPS\ dump\ format\ for\ OVITO\ visualization}}
+\DoxyCodeLine{00028\ \ \ fprintf(\mbox{\hyperlink{global_8h_ab30ed54db09d0748b912c23a34a2a92a}{fppair}},\ \textcolor{stringliteral}{"{}ITEM:\ TIMESTEP\(\backslash\)n"{}});}
+\DoxyCodeLine{00029\ \ \ fprintf(\mbox{\hyperlink{global_8h_ab30ed54db09d0748b912c23a34a2a92a}{fppair}},\ \textcolor{stringliteral}{"{}\%lf\(\backslash\)n"{}},\mbox{\hyperlink{global_8h_abb2aee8c6108dd86a8da33115d249d71}{timeNow}});}
+\DoxyCodeLine{00030\ \ \ fprintf(\mbox{\hyperlink{global_8h_ab30ed54db09d0748b912c23a34a2a92a}{fppair}},\ \textcolor{stringliteral}{"{}ITEM:\ NUMBER\ OF\ ENTRIES\(\backslash\)n"{}});}
+\DoxyCodeLine{00031\ \ \ fprintf(\mbox{\hyperlink{global_8h_ab30ed54db09d0748b912c23a34a2a92a}{fppair}},\ \textcolor{stringliteral}{"{}\%d\(\backslash\)n"{}},\mbox{\hyperlink{global_8h_a4d261d7bf27ba6bb03927a2daa310746}{nPairActive}});}
+\DoxyCodeLine{00032\ \ \ fprintf(\mbox{\hyperlink{global_8h_ab30ed54db09d0748b912c23a34a2a92a}{fppair}},\ \textcolor{stringliteral}{"{}ITEM:\ BOX\ BOUNDS\ pp\ ff\ pp\(\backslash\)n"{}});}
+\DoxyCodeLine{00033\ \ \ fprintf(\mbox{\hyperlink{global_8h_ab30ed54db09d0748b912c23a34a2a92a}{fppair}},\ \textcolor{stringliteral}{"{}\%lf\ \%lf\ xlo\ xhi\(\backslash\)n"{}},\ -\/\mbox{\hyperlink{global_8h_adc110418e2efa5f31a9aa7c137471a2f}{regionH}}[1],\ \mbox{\hyperlink{global_8h_adc110418e2efa5f31a9aa7c137471a2f}{regionH}}[1]);}
+\DoxyCodeLine{00034\ \ \ fprintf(\mbox{\hyperlink{global_8h_ab30ed54db09d0748b912c23a34a2a92a}{fppair}},\ \textcolor{stringliteral}{"{}\%lf\ \%lf\ ylo\ yhi\(\backslash\)n"{}},\ -\/\mbox{\hyperlink{global_8h_adc110418e2efa5f31a9aa7c137471a2f}{regionH}}[2],\ \mbox{\hyperlink{global_8h_adc110418e2efa5f31a9aa7c137471a2f}{regionH}}[2]);}
+\DoxyCodeLine{00035\ \ \ fprintf(\mbox{\hyperlink{global_8h_ab30ed54db09d0748b912c23a34a2a92a}{fppair}},\ \textcolor{stringliteral}{"{}\%lf\ \%lf\ zlo\ zhi\(\backslash\)n"{}},\ -\/0.1,\ 0.1);}
+\DoxyCodeLine{00036\ \ \ fprintf(\mbox{\hyperlink{global_8h_ab30ed54db09d0748b912c23a34a2a92a}{fppair}},\ \textcolor{stringliteral}{"{}ITEM:\ ENTRIES\ index,\ atom1\ atom2\ xij\ yij\ discDragx1\ discDragy1\(\backslash\)n"{}});}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \ \ \textcolor{keywordflow}{for}(n=1;\ n<=\mbox{\hyperlink{global_8h_a4d261d7bf27ba6bb03927a2daa310746}{nPairActive}};\ n++)}
+\DoxyCodeLine{00039\ \ \ \ fprintf(\mbox{\hyperlink{global_8h_ab30ed54db09d0748b912c23a34a2a92a}{fppair}},\ \textcolor{stringliteral}{"{}\%d\ \%d\ \%d\ \%0.16lf\ \%0.16lf\ \%0.16lf\ \%0.16lf\(\backslash\)n"{}},\ \mbox{\hyperlink{global_8h_a9e5cacd45bb1c19404215981554b9e65}{PairID}}[n],\ \mbox{\hyperlink{global_8h_af8215c4cb752839765c6629bb7e808a3}{Pairatom1}}[n],\ \mbox{\hyperlink{global_8h_abd0063c6618301e17cc7ef9be8058081}{Pairatom2}}[n],\ }
+\DoxyCodeLine{00040\ \ \ \ \mbox{\hyperlink{global_8h_aa463dae6fdaca32114f15f2f670075c7}{PairXij}}[n],\ \mbox{\hyperlink{global_8h_ad17d42dcb59c5c4c54dec23afc5c8fcf}{PairYij}}[n],\ \mbox{\hyperlink{global_8h_ad1ad82db5042c5e6dcdf44dee00362fe}{discDragx}}[n],\ \mbox{\hyperlink{global_8h_a1a2663b70d9ea62a68fa250cc5e3e6c2}{discDragy}}[n]);}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{global_8h_ad1ad82db5042c5e6dcdf44dee00362fe}{disc\+Dragx}}, \mbox{\hyperlink{global_8h_source_l00040}{disc\+Dragy}}, \mbox{\hyperlink{global_8h_ab30ed54db09d0748b912c23a34a2a92a}{fppair}}, \mbox{\hyperlink{global_8h_source_l00058}{n\+Pair\+Active}}, \mbox{\hyperlink{global_8h_source_l00059}{Pairatom1}}, \mbox{\hyperlink{global_8h_source_l00059}{Pairatom2}}, \mbox{\hyperlink{global_8h_a9e5cacd45bb1c19404215981554b9e65}{Pair\+ID}}, \mbox{\hyperlink{global_8h_aa463dae6fdaca32114f15f2f670075c7}{Pair\+Xij}}, \mbox{\hyperlink{global_8h_source_l00060}{Pair\+Yij}}, \mbox{\hyperlink{global_8h_source_l00020}{regionH}}, and \mbox{\hyperlink{global_8h_source_l00020}{time\+Now}}.
+
+
+
+Referenced by \mbox{\hyperlink{main_8c_source_l00050}{main()}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=225pt]{DumpPairs_8c_a8645965b1cadcb70224588065e716c17_icgraph}
+\end{center}
+\end{figure}

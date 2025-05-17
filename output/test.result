@@ -1,0 +1,34 @@
+------------------------------------
+-------PARAMETERS-----------
+------------------------------------
+nAtom			4
+nBond			2
+nAtomBlock		2
+nAtomInterface	4
+nDiscInterface		2
+gamman			1
+strain			0
+strainRate		0
+FyBylx			0.001
+fxByfy			1
+DeltaY			0
+DeltaX			0
+HaltCondition		1e-09
+kappa			1
+density			0.0133333
+rCut				2
+deltaT			0.1
+stepEquil			0
+stepLimit			1
+region[1]			20.0000000000000000
+region[2]			15.0000000000000000
+cells[1]			10
+cells[2]			7
+solver			Verlet
+boundary			p p
+DampFlag		2
+------------------------------------
+#TimeNow TotalMomentum PotEngyPerAtom KinEngyPerAtom TotEngyPerAtom PairEnergyPerAtom BondEnergyPerAtom  Press VirialSum
+0.0000	0.0000000000000000	0.0029491341991342	0.0000000000000000	0.0029491341991342	0.0005681818181818	0.0023809523809524	0.0002344877344877	0.1406926406926408
+#Execution time 0.000000 secs
+#Execution speed inf steps per secs

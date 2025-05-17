@@ -1,0 +1,57 @@
+\doxysection{Dump\+State.\+c}
+\hypertarget{DumpState_8c_source}{}\label{DumpState_8c_source}\index{source/DumpState.c@{source/DumpState.c}}
+\mbox{\hyperlink{DumpState_8c}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{DumpState_8c_source_l00001}00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{DumpState_8c_source_l00002}00002\ \textcolor{comment}{\ *\ This\ file\ is\ part\ of\ Lamina.}}
+\DoxyCodeLine{\Hypertarget{DumpState_8c_source_l00003}00003\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{\Hypertarget{DumpState_8c_source_l00004}00004\ \textcolor{comment}{\ *\ Lamina\ is\ free\ software:\ you\ can\ redistribute\ it\ and/or\ modify}}
+\DoxyCodeLine{\Hypertarget{DumpState_8c_source_l00005}00005\ \textcolor{comment}{\ *\ it\ under\ the\ terms\ of\ the\ GNU\ General\ Public\ License\ as\ published\ by}}
+\DoxyCodeLine{\Hypertarget{DumpState_8c_source_l00006}00006\ \textcolor{comment}{\ *\ the\ Free\ Software\ Foundation,\ either\ version\ 3\ of\ the\ License,\ or}}
+\DoxyCodeLine{\Hypertarget{DumpState_8c_source_l00007}00007\ \textcolor{comment}{\ *\ (at\ your\ option)\ any\ later\ version.}}
+\DoxyCodeLine{\Hypertarget{DumpState_8c_source_l00008}00008\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{\Hypertarget{DumpState_8c_source_l00009}00009\ \textcolor{comment}{\ *\ Lamina\ is\ distributed\ in\ the\ hope\ that\ it\ will\ be\ useful,}}
+\DoxyCodeLine{\Hypertarget{DumpState_8c_source_l00010}00010\ \textcolor{comment}{\ *\ but\ WITHOUT\ ANY\ WARRANTY;\ without\ even\ the\ implied\ warranty\ of}}
+\DoxyCodeLine{\Hypertarget{DumpState_8c_source_l00011}00011\ \textcolor{comment}{\ *\ MERCHANTABILITY\ or\ FITNESS\ FOR\ A\ PARTICULAR\ PURPOSE.\ See\ the}}
+\DoxyCodeLine{\Hypertarget{DumpState_8c_source_l00012}00012\ \textcolor{comment}{\ *\ GNU\ General\ Public\ License\ for\ more\ details.}}
+\DoxyCodeLine{\Hypertarget{DumpState_8c_source_l00013}00013\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{\Hypertarget{DumpState_8c_source_l00014}00014\ \textcolor{comment}{\ *\ You\ should\ have\ received\ a\ copy\ of\ the\ GNU\ General\ Public\ License}}
+\DoxyCodeLine{\Hypertarget{DumpState_8c_source_l00015}00015\ \textcolor{comment}{\ *\ along\ with\ Lamina.\ If\ not,\ see\ <https://www.gnu.org/licenses/>.}}
+\DoxyCodeLine{\Hypertarget{DumpState_8c_source_l00016}00016\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{DumpState_8c_source_l00017}00017\ \textcolor{comment}{\ Copyright\ (C)\ 2025\ Harish\ Charan,\ University\ of\ Durham,\ UK}}
+\DoxyCodeLine{\Hypertarget{DumpState_8c_source_l00018}00018\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{DumpState_8c_source_l00019}00019\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{\Hypertarget{DumpState_8c_source_l00020}00020\ }
+\DoxyCodeLine{\Hypertarget{DumpState_8c_source_l00021}00021\ }
+\DoxyCodeLine{\Hypertarget{DumpState_8c_source_l00022}00022\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{\Hypertarget{DumpState_8c_source_l00023}00023\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{global_8h}{global.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{DumpState_8c_source_l00024}00024\ }
+\DoxyCodeLine{\Hypertarget{DumpState_8c_source_l00025}\mbox{\hyperlink{DumpState_8c_a65b923e31a875dd1a266c835d7187a87}{00025}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{DumpState_8c_a65b923e31a875dd1a266c835d7187a87}{DumpState}}()\ \{}
+\DoxyCodeLine{\Hypertarget{DumpState_8c_source_l00026}00026\ \ \textcolor{keywordtype}{char}\ DUMP[256];}
+\DoxyCodeLine{\Hypertarget{DumpState_8c_source_l00027}00027\ \ FILE\ *fpDUMP;}
+\DoxyCodeLine{\Hypertarget{DumpState_8c_source_l00028}00028\ \ sprintf(DUMP,\ \textcolor{stringliteral}{"{}\%s.STATE"{}},\ \mbox{\hyperlink{global_8h_ad2849cf781a4db22cc1b31eaaee50a4f}{prefix}});}
+\DoxyCodeLine{\Hypertarget{DumpState_8c_source_l00029}00029\ \ fpDUMP\ =\ fopen(DUMP,\ \textcolor{stringliteral}{"{}w"{}});}
+\DoxyCodeLine{\Hypertarget{DumpState_8c_source_l00030}00030\ \ \textcolor{keywordflow}{if}(fpDUMP\ ==\ NULL)\ \{}
+\DoxyCodeLine{\Hypertarget{DumpState_8c_source_l00031}00031\ \ \ fprintf(stderr,\ \textcolor{stringliteral}{"{}Error\ opening\ file\ \%s\ for\ writing\(\backslash\)n"{}},\ DUMP);}
+\DoxyCodeLine{\Hypertarget{DumpState_8c_source_l00032}00032\ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{DumpState_8c_source_l00033}00033\ \ \}}
+\DoxyCodeLine{\Hypertarget{DumpState_8c_source_l00034}00034\ }
+\DoxyCodeLine{\Hypertarget{DumpState_8c_source_l00035}00035\ \ \ fprintf(fpDUMP,\ \textcolor{stringliteral}{"{}ITEM:\ TIMESTEP\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{DumpState_8c_source_l00036}00036\ \ \ fprintf(fpDUMP,\ \textcolor{stringliteral}{"{}\%lf\(\backslash\)n"{}},\mbox{\hyperlink{global_8h_abb2aee8c6108dd86a8da33115d249d71}{timeNow}});}
+\DoxyCodeLine{\Hypertarget{DumpState_8c_source_l00037}00037\ \ \ fprintf(fpDUMP,\ \textcolor{stringliteral}{"{}ITEM:\ NUMBER\ OF\ ATOMS\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{DumpState_8c_source_l00038}00038\ \ \ fprintf(fpDUMP,\ \textcolor{stringliteral}{"{}\%d\(\backslash\)n"{}},\mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}});}
+\DoxyCodeLine{\Hypertarget{DumpState_8c_source_l00039}00039\ \ \ fprintf(fpDUMP,\ \textcolor{stringliteral}{"{}ITEM:\ BOX\ BOUNDS\ pp\ pp\ pp\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{DumpState_8c_source_l00040}00040\ \ \ fprintf(fpDUMP,\ \textcolor{stringliteral}{"{}\%lf\ \%lf\ xlo\ xhi\(\backslash\)n"{}},\ -\/\mbox{\hyperlink{global_8h_adc110418e2efa5f31a9aa7c137471a2f}{regionH}}[1],\ \mbox{\hyperlink{global_8h_adc110418e2efa5f31a9aa7c137471a2f}{regionH}}[1]);}
+\DoxyCodeLine{\Hypertarget{DumpState_8c_source_l00041}00041\ \ \ fprintf(fpDUMP,\ \textcolor{stringliteral}{"{}\%lf\ \%lf\ ylo\ yhi\(\backslash\)n"{}},\ -\/\mbox{\hyperlink{global_8h_adc110418e2efa5f31a9aa7c137471a2f}{regionH}}[2],\ \mbox{\hyperlink{global_8h_adc110418e2efa5f31a9aa7c137471a2f}{regionH}}[2]);}
+\DoxyCodeLine{\Hypertarget{DumpState_8c_source_l00042}00042\ \ \ fprintf(fpDUMP,\ \textcolor{stringliteral}{"{}\%lf\ \%lf\ zlo\ zhi\(\backslash\)n"{}},\ \ -\/0.1,\ 0.1);}
+\DoxyCodeLine{\Hypertarget{DumpState_8c_source_l00043}00043\ \ \ fprintf(fpDUMP,\ \textcolor{stringliteral}{"{}ITEM:\ ATOMS\ id\ mol\ type\ radius\ x\ y\ vx\ vy\ fx\ fy\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{DumpState_8c_source_l00044}00044\ \ \ \textcolor{keywordtype}{int}\ n;}
+\DoxyCodeLine{\Hypertarget{DumpState_8c_source_l00045}00045\ \ \ \textcolor{keywordflow}{for}\ (n\ =\ 1;\ n\ <=\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}};\ n++)\ \{}
+\DoxyCodeLine{\Hypertarget{DumpState_8c_source_l00046}00046\ \ \ \ fprintf(fpDUMP,\ \textcolor{stringliteral}{"{}\%d\(\backslash\)t\ \%d\(\backslash\)t\ \%d\(\backslash\)t\ \%0.2lf\(\backslash\)t\ \%0.16lf\(\backslash\)t\ \%0.16lf\(\backslash\)t\ \%0.16lf\(\backslash\)t\ \%0.16lf\(\backslash\)t\ \%0.16lf\(\backslash\)t\ \%0.16lf\(\backslash\)n"{}},\ }
+\DoxyCodeLine{\Hypertarget{DumpState_8c_source_l00047}00047\ \ \ \ \mbox{\hyperlink{global_8h_af2e16c834f37dce5699222281ce6e302}{atomID}}[n],\ \mbox{\hyperlink{global_8h_a65f3cbf0ee8813aae06be044d6c568ad}{molID}}[n],\ \mbox{\hyperlink{global_8h_ad2f384e523b15b13c82e3d6db95b402e}{atomType}}[n],\ \mbox{\hyperlink{global_8h_ab715ebf9f35659a111ee6c5eedc360af}{atomRadius}}[n],\ \mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}[n],\ \mbox{\hyperlink{global_8h_af88ff31a9ae85beb713bd0c42815f1de}{ry}}[n],\ \mbox{\hyperlink{global_8h_a6cbb00abd724a75be2c6424c84d18654}{vx}}[n],\ \mbox{\hyperlink{global_8h_ad78254f6802793cc12b197889e6ea80d}{vy}}[n],\ \mbox{\hyperlink{global_8h_a82d645cda6bea6506c7b5f4f7453986c}{ax}}[n],\ \mbox{\hyperlink{global_8h_a68c7afda02d0f26c1987a4eee13928f2}{ay}}[n]);}
+\DoxyCodeLine{\Hypertarget{DumpState_8c_source_l00048}00048\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{DumpState_8c_source_l00049}00049\ \ \ fclose(fpDUMP);}
+\DoxyCodeLine{\Hypertarget{DumpState_8c_source_l00050}00050\ \}}
+\DoxyCodeLine{\Hypertarget{DumpState_8c_source_l00051}00051\ }
+
+\end{DoxyCode}

@@ -1,0 +1,119 @@
+\doxysection{source/\+Eval\+Vacf.c File Reference}
+\hypertarget{EvalVacf_8c}{}\label{EvalVacf_8c}\index{source/EvalVacf.c@{source/EvalVacf.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include "{}global.\+h"{}}\newline
+Include dependency graph for Eval\+Vacf.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=186pt]{EvalVacf_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{EvalVacf_8c_ad6608c7fca41e40ae23fe93c00dc5e2c}{Accum\+Vacf}} ()
+\item 
+void \mbox{\hyperlink{EvalVacf_8c_a3c5fb8e107a2ba5ac5b27a1f67558883}{Eval\+Vacf}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{EvalVacf_8c_ad6608c7fca41e40ae23fe93c00dc5e2c}\label{EvalVacf_8c_ad6608c7fca41e40ae23fe93c00dc5e2c} 
+\index{EvalVacf.c@{EvalVacf.c}!AccumVacf@{AccumVacf}}
+\index{AccumVacf@{AccumVacf}!EvalVacf.c@{EvalVacf.c}}
+\doxysubsubsection{\texorpdfstring{AccumVacf()}{AccumVacf()}}
+{\footnotesize\ttfamily void Accum\+Vacf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{AccumVacf_8c_source_l00027}{27}} of file \mbox{\hyperlink{AccumVacf_8c_source}{Accum\+Vacf.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00028\ \ \textcolor{keywordtype}{double}\ fac;}
+\DoxyCodeLine{00029\ \ \textcolor{keywordtype}{int}\ j,\ nb;}
+\DoxyCodeLine{00030\ \ \textcolor{keywordflow}{for}(nb\ =\ 1\ ;\ nb\ <=\ \mbox{\hyperlink{global_8h_a62bb5169e87a77023d99fa51468bf126}{nBuffAcf}}\ ;\ nb\ ++)\{}
+\DoxyCodeLine{00031\ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{global_8h_a74f01c700b5540bed3184604a0cd6c17}{indexAcf}}[nb]\ ==\ \mbox{\hyperlink{global_8h_a48094c7b6092e1a21fcc91a371f230b6}{nValAcf}})\{}
+\DoxyCodeLine{00032\ \ \ \ \textcolor{keywordflow}{for}(j\ =\ 1\ ;\ j\ <=\ \mbox{\hyperlink{global_8h_a48094c7b6092e1a21fcc91a371f230b6}{nValAcf}};\ j\ ++)\{}
+\DoxyCodeLine{00033\ \ \ \ \ \mbox{\hyperlink{global_8h_a0eb9c034706ff9eeacb32ac2f0327e10}{viscAcfAv}}[j]\ +=\ \ \mbox{\hyperlink{global_8h_a9d680c9ee759157faecbb75ad8d91d63}{viscAcf}}[nb][j];}
+\DoxyCodeLine{00034\ \ \ \ \ \}}
+\DoxyCodeLine{00035\ \ \ \mbox{\hyperlink{global_8h_a74f01c700b5540bed3184604a0cd6c17}{indexAcf}}[nb]\ =\ 0;}
+\DoxyCodeLine{00036\ \ \ \mbox{\hyperlink{global_8h_ab4d8c90fd1e7351e4792aba91063c20e}{countAcfAv}}\ ++;}
+\DoxyCodeLine{00037\ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{global_8h_ab4d8c90fd1e7351e4792aba91063c20e}{countAcfAv}}\ ==\ \mbox{\hyperlink{global_8h_a9ee217916f83b1a9545e5c8563d4ae98}{limitAcfAv}})\{}
+\DoxyCodeLine{00038\ \ \ \ fac\ =\ 1./(\mbox{\hyperlink{global_8h_a445d936de68f213385df5c284ea1d81d}{kinEnergy}}*\mbox{\hyperlink{global_8h_a43c4f708b8d633b069355a121d6adbdc}{region}}[1]*\mbox{\hyperlink{global_8h_a43c4f708b8d633b069355a121d6adbdc}{region}}[2]*\mbox{\hyperlink{global_8h_a9ee217916f83b1a9545e5c8563d4ae98}{limitAcfAv}});}
+\DoxyCodeLine{00039\ \ \ \ \mbox{\hyperlink{global_8h_a38b081058be3f7f6594654b9890b0943}{viscAcfInt}}\ =\ fac*\mbox{\hyperlink{global_8h_a7187cdbfc7b7c8acd127dffed24c6f64}{stepAcf}}*\mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}}*\mbox{\hyperlink{AccumVacf_8c_acdda65121bd9cf7a35cb4d2e0fdb7cd9}{Integrate}}(\mbox{\hyperlink{global_8h_a0eb9c034706ff9eeacb32ac2f0327e10}{viscAcfAv}},\ \mbox{\hyperlink{global_8h_a48094c7b6092e1a21fcc91a371f230b6}{nValAcf}});}
+\DoxyCodeLine{00040\ \ \ \ \mbox{\hyperlink{AccumVacf_8c_a9be1b8f0429ee69e28f6fb3850e8acdb}{PrintVacf}}();}
+\DoxyCodeLine{00041\ \ \ \ \mbox{\hyperlink{AccumVacf_8c_af60963b0cbbf0bed9d310797a6f9a59d}{ZeroVacf}}();}
+\DoxyCodeLine{00042\ \}\ \}\ \}\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{global_8h_source_l00094}{count\+Acf\+Av}}, \mbox{\hyperlink{global_8h_source_l00020}{deltaT}}, \mbox{\hyperlink{global_8h_a74f01c700b5540bed3184604a0cd6c17}{index\+Acf}}, \mbox{\hyperlink{Integrate_8c_source_l00025}{Integrate()}}, \mbox{\hyperlink{global_8h_source_l00020}{kin\+Energy}}, \mbox{\hyperlink{global_8h_source_l00094}{limit\+Acf\+Av}}, \mbox{\hyperlink{global_8h_source_l00094}{n\+Buff\+Acf}}, \mbox{\hyperlink{global_8h_a48094c7b6092e1a21fcc91a371f230b6}{n\+Val\+Acf}}, \mbox{\hyperlink{PrintVacf_8c_source_l00025}{Print\+Vacf()}}, \mbox{\hyperlink{global_8h_a43c4f708b8d633b069355a121d6adbdc}{region}}, \mbox{\hyperlink{global_8h_source_l00094}{step\+Acf}}, \mbox{\hyperlink{global_8h_source_l00093}{visc\+Acf}}, \mbox{\hyperlink{global_8h_source_l00093}{visc\+Acf\+Av}}, \mbox{\hyperlink{global_8h_source_l00093}{visc\+Acf\+Int}}, and \mbox{\hyperlink{ZeroVacf_8c_source_l00025}{Zero\+Vacf()}}.
+
+
+
+Referenced by \mbox{\hyperlink{EvalVacf_8c_source_l00026}{Eval\+Vacf()}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{EvalVacf_8c_ad6608c7fca41e40ae23fe93c00dc5e2c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{EvalVacf_8c_ad6608c7fca41e40ae23fe93c00dc5e2c_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{EvalVacf_8c_a3c5fb8e107a2ba5ac5b27a1f67558883}\label{EvalVacf_8c_a3c5fb8e107a2ba5ac5b27a1f67558883} 
+\index{EvalVacf.c@{EvalVacf.c}!EvalVacf@{EvalVacf}}
+\index{EvalVacf@{EvalVacf}!EvalVacf.c@{EvalVacf.c}}
+\doxysubsubsection{\texorpdfstring{EvalVacf()}{EvalVacf()}}
+{\footnotesize\ttfamily void Eval\+Vacf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{EvalVacf_8c_source_l00026}{26}} of file \mbox{\hyperlink{EvalVacf_8c_source}{Eval\+Vacf.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00027\ \ \ \textcolor{keywordtype}{int}\ n,\ nb,\ ni;}
+\DoxyCodeLine{00028\ \ \ \textcolor{keywordtype}{double}\ viscVec\ =\ 0.;}
+\DoxyCodeLine{00029\ \ \ \textcolor{keywordtype}{double}\ v[3];}
+\DoxyCodeLine{00030\ \ \ \textcolor{keywordflow}{for}(n\ =\ 1\ ;\ n\ <=\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}}\ ;\ n\ ++)\{}
+\DoxyCodeLine{00031\ \ \ \ \ v[1]\ =\ \mbox{\hyperlink{global_8h_a6cbb00abd724a75be2c6424c84d18654}{vx}}[n]\ -\/\ 0.5*\mbox{\hyperlink{global_8h_a82d645cda6bea6506c7b5f4f7453986c}{ax}}[n]*\mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}};}
+\DoxyCodeLine{00032\ \ \ \ \ v[2]\ =\ \mbox{\hyperlink{global_8h_ad78254f6802793cc12b197889e6ea80d}{vy}}[n]\ -\/\ 0.5*\mbox{\hyperlink{global_8h_a68c7afda02d0f26c1987a4eee13928f2}{ay}}[n]*\mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}};}
+\DoxyCodeLine{00033\ \ \ \ \ viscVec\ +=\ v[1]*v[2];}
+\DoxyCodeLine{00034\ \ \ \}}
+\DoxyCodeLine{00035\ \ \ viscVec\ +=\ \mbox{\hyperlink{global_8h_a409ac219990f0cf85a946b0f32a0cea0}{rfAtom}};}
+\DoxyCodeLine{00036\ \ \ \textcolor{keywordflow}{for}(nb\ =\ 1\ ;\ nb\ <=\ \mbox{\hyperlink{global_8h_a62bb5169e87a77023d99fa51468bf126}{nBuffAcf}}\ ;\ nb\ ++)\{}
+\DoxyCodeLine{00037\ \ \ \ \ \mbox{\hyperlink{global_8h_a74f01c700b5540bed3184604a0cd6c17}{indexAcf}}[nb]\ ++;}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{global_8h_a74f01c700b5540bed3184604a0cd6c17}{indexAcf}}[nb]\ <=\ 0)\textcolor{keywordflow}{continue};}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{global_8h_a74f01c700b5540bed3184604a0cd6c17}{indexAcf}}[nb]\ ==\ 1)\{}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \mbox{\hyperlink{global_8h_aa14d3f1be7cb8fc0a8f4b26eac3b4ebb}{viscAcfOrg}}[nb]\ =\ viscVec;}
+\DoxyCodeLine{00041\ \ \ \ \ \}}
+\DoxyCodeLine{00042\ \ \ \ \ ni\ =\ \mbox{\hyperlink{global_8h_a74f01c700b5540bed3184604a0cd6c17}{indexAcf}}[nb];}
+\DoxyCodeLine{00043\ \ \ \ \ \mbox{\hyperlink{global_8h_a9d680c9ee759157faecbb75ad8d91d63}{viscAcf}}[nb][ni]\ =\ \mbox{\hyperlink{global_8h_aa14d3f1be7cb8fc0a8f4b26eac3b4ebb}{viscAcfOrg}}[nb]*viscVec;}
+\DoxyCodeLine{00044\ \ \ \}}
+\DoxyCodeLine{00045\ \ \ \mbox{\hyperlink{EvalVacf_8c_ad6608c7fca41e40ae23fe93c00dc5e2c}{AccumVacf}}();}
+\DoxyCodeLine{00046\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{AccumVacf_8c_source_l00027}{Accum\+Vacf()}}, \mbox{\hyperlink{global_8h_source_l00017}{ax}}, \mbox{\hyperlink{global_8h_source_l00017}{ay}}, \mbox{\hyperlink{global_8h_source_l00020}{deltaT}}, \mbox{\hyperlink{global_8h_a74f01c700b5540bed3184604a0cd6c17}{index\+Acf}}, \mbox{\hyperlink{global_8h_source_l00024}{n\+Atom}}, \mbox{\hyperlink{global_8h_source_l00094}{n\+Buff\+Acf}}, \mbox{\hyperlink{global_8h_a409ac219990f0cf85a946b0f32a0cea0}{rf\+Atom}}, \mbox{\hyperlink{global_8h_source_l00093}{visc\+Acf}}, \mbox{\hyperlink{global_8h_source_l00093}{visc\+Acf\+Org}}, \mbox{\hyperlink{global_8h_source_l00017}{vx}}, and \mbox{\hyperlink{global_8h_source_l00017}{vy}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{EvalVacf_8c_a3c5fb8e107a2ba5ac5b27a1f67558883_cgraph}
+\end{center}
+\end{figure}

@@ -1,0 +1,70 @@
+\doxysection{source/\+Eval\+Com.c File Reference}
+\hypertarget{EvalCom_8c}{}\label{EvalCom_8c}\index{source/EvalCom.c@{source/EvalCom.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include "{}global.\+h"{}}\newline
+Include dependency graph for Eval\+Com.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=286pt]{EvalCom_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{EvalCom_8c_a695ff3302f614ca0a896945f4a3dc709}{Eval\+Com}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{EvalCom_8c_a695ff3302f614ca0a896945f4a3dc709}\label{EvalCom_8c_a695ff3302f614ca0a896945f4a3dc709} 
+\index{EvalCom.c@{EvalCom.c}!EvalCom@{EvalCom}}
+\index{EvalCom@{EvalCom}!EvalCom.c@{EvalCom.c}}
+\doxysubsubsection{\texorpdfstring{EvalCom()}{EvalCom()}}
+{\footnotesize\ttfamily void Eval\+Com (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{EvalCom_8c_source_l00027}{27}} of file \mbox{\hyperlink{EvalCom_8c_source}{Eval\+Com.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00028\ \ \textcolor{keywordtype}{int}\ n;}
+\DoxyCodeLine{00029\ \ \mbox{\hyperlink{global_8h_ada9cdbb5cb81a471301bdf2cb5a07309}{ComX}}\ =\ 0.0;\ \mbox{\hyperlink{global_8h_a2c4c8baa906e18471ad04f24ae6a7134}{ComY}}\ =\ 0.0;\ \mbox{\hyperlink{global_8h_a73e0501e577e426f4f07748c31c94d8f}{ComXRatio}}\ =\ 0.0;\ \mbox{\hyperlink{global_8h_a109231792e1a97d0cfc4a1d77a525f9c}{ComYRatio}}\ =\ 0.0;}
+\DoxyCodeLine{00030\ \ \mbox{\hyperlink{global_8h_ad8c0e4d46c6c1b263dd8b02c211be355}{TotalMass}}\ =\ 0.0;}
+\DoxyCodeLine{00031\ \ \ }
+\DoxyCodeLine{00032\ \ \textcolor{keywordflow}{for}(n=1;\ n<=\mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}};\ n++)\{}
+\DoxyCodeLine{00033\ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{global_8h_a65f3cbf0ee8813aae06be044d6c568ad}{molID}}[n]\ ==\ 2)\{}
+\DoxyCodeLine{00034\ \ \ \mbox{\hyperlink{global_8h_ada9cdbb5cb81a471301bdf2cb5a07309}{ComX}}\ +=\ \mbox{\hyperlink{global_8h_a1b28db247f294d5c24571ca1a942c4a4}{atomMass}}[n]\ *\ \mbox{\hyperlink{global_8h_ad81015466d6c894db2f9cad4faecae1c}{rxUnwrap}}[n];\ }
+\DoxyCodeLine{00035\ \ \ \mbox{\hyperlink{global_8h_a2c4c8baa906e18471ad04f24ae6a7134}{ComY}}\ +=\ \mbox{\hyperlink{global_8h_a1b28db247f294d5c24571ca1a942c4a4}{atomMass}}[n]\ *\ \mbox{\hyperlink{global_8h_aadd2df0c0919493607803cd89389b31a}{ryUnwrap}}[n];\ }
+\DoxyCodeLine{00036\ \ \ \mbox{\hyperlink{global_8h_ad8c0e4d46c6c1b263dd8b02c211be355}{TotalMass}}\ +=\ \mbox{\hyperlink{global_8h_a1b28db247f294d5c24571ca1a942c4a4}{atomMass}}[n];}
+\DoxyCodeLine{00037\ \ \ \}\ \}}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \ \ \mbox{\hyperlink{global_8h_ada9cdbb5cb81a471301bdf2cb5a07309}{ComX}}\ =\ \mbox{\hyperlink{global_8h_ada9cdbb5cb81a471301bdf2cb5a07309}{ComX}}/\mbox{\hyperlink{global_8h_ad8c0e4d46c6c1b263dd8b02c211be355}{TotalMass}};}
+\DoxyCodeLine{00040\ \ \ \mbox{\hyperlink{global_8h_a2c4c8baa906e18471ad04f24ae6a7134}{ComY}}\ =\ \mbox{\hyperlink{global_8h_a2c4c8baa906e18471ad04f24ae6a7134}{ComY}}/\mbox{\hyperlink{global_8h_ad8c0e4d46c6c1b263dd8b02c211be355}{TotalMass}};}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{global_8h_abb2aee8c6108dd86a8da33115d249d71}{timeNow}}\ ==\ 0.0)\{}
+\DoxyCodeLine{00043\ \ \ \mbox{\hyperlink{global_8h_aa36ae33a64f6fcecea03e11c79da6d57}{ComX0}}\ =\ \mbox{\hyperlink{global_8h_ada9cdbb5cb81a471301bdf2cb5a07309}{ComX}};\ \mbox{\hyperlink{global_8h_aa8f87142a53bdf396c36a1382ba527eb}{ComY0}}\ =\ \mbox{\hyperlink{global_8h_a2c4c8baa906e18471ad04f24ae6a7134}{ComY}};}
+\DoxyCodeLine{00044\ \ \ \}}
+\DoxyCodeLine{00045\ \ \ \mbox{\hyperlink{global_8h_a73e0501e577e426f4f07748c31c94d8f}{ComXRatio}}\ =\ \mbox{\hyperlink{global_8h_ada9cdbb5cb81a471301bdf2cb5a07309}{ComX}}/\mbox{\hyperlink{global_8h_aa36ae33a64f6fcecea03e11c79da6d57}{ComX0}};\ \ \ \mbox{\hyperlink{global_8h_a109231792e1a97d0cfc4a1d77a525f9c}{ComYRatio}}\ =\ \mbox{\hyperlink{global_8h_a2c4c8baa906e18471ad04f24ae6a7134}{ComY}}/\mbox{\hyperlink{global_8h_aa8f87142a53bdf396c36a1382ba527eb}{ComY0}};}
+\DoxyCodeLine{00046\ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{global_8h_a1b28db247f294d5c24571ca1a942c4a4}{atom\+Mass}}, \mbox{\hyperlink{global_8h_ada9cdbb5cb81a471301bdf2cb5a07309}{ComX}}, \mbox{\hyperlink{global_8h_source_l00044}{Com\+X0}}, \mbox{\hyperlink{global_8h_source_l00044}{Com\+XRatio}}, \mbox{\hyperlink{global_8h_source_l00044}{ComY}}, \mbox{\hyperlink{global_8h_source_l00044}{Com\+Y0}}, \mbox{\hyperlink{global_8h_source_l00044}{Com\+YRatio}}, \mbox{\hyperlink{global_8h_a65f3cbf0ee8813aae06be044d6c568ad}{mol\+ID}}, \mbox{\hyperlink{global_8h_source_l00024}{n\+Atom}}, \mbox{\hyperlink{global_8h_ad81015466d6c894db2f9cad4faecae1c}{rx\+Unwrap}}, \mbox{\hyperlink{global_8h_source_l00048}{ry\+Unwrap}}, \mbox{\hyperlink{global_8h_source_l00020}{time\+Now}}, and \mbox{\hyperlink{global_8h_source_l00031}{Total\+Mass}}.
+
+
+
+Referenced by \mbox{\hyperlink{main_8c_source_l00050}{main()}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{EvalCom_8c_a695ff3302f614ca0a896945f4a3dc709_icgraph}
+\end{center}
+\end{figure}

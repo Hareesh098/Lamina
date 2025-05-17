@@ -1,0 +1,77 @@
+\doxysection{Eval\+Rdf.\+c}
+\hypertarget{EvalRdf_8c_source}{}\label{EvalRdf_8c_source}\index{source/EvalRdf.c@{source/EvalRdf.c}}
+\mbox{\hyperlink{EvalRdf_8c}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{EvalRdf_8c_source_l00001}00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{EvalRdf_8c_source_l00002}00002\ \textcolor{comment}{\ *\ This\ file\ is\ part\ of\ Lamina.}}
+\DoxyCodeLine{\Hypertarget{EvalRdf_8c_source_l00003}00003\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{\Hypertarget{EvalRdf_8c_source_l00004}00004\ \textcolor{comment}{\ *\ Lamina\ is\ free\ software:\ you\ can\ redistribute\ it\ and/or\ modify}}
+\DoxyCodeLine{\Hypertarget{EvalRdf_8c_source_l00005}00005\ \textcolor{comment}{\ *\ it\ under\ the\ terms\ of\ the\ GNU\ General\ Public\ License\ as\ published\ by}}
+\DoxyCodeLine{\Hypertarget{EvalRdf_8c_source_l00006}00006\ \textcolor{comment}{\ *\ the\ Free\ Software\ Foundation,\ either\ version\ 3\ of\ the\ License,\ or}}
+\DoxyCodeLine{\Hypertarget{EvalRdf_8c_source_l00007}00007\ \textcolor{comment}{\ *\ (at\ your\ option)\ any\ later\ version.}}
+\DoxyCodeLine{\Hypertarget{EvalRdf_8c_source_l00008}00008\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{\Hypertarget{EvalRdf_8c_source_l00009}00009\ \textcolor{comment}{\ *\ Lamina\ is\ distributed\ in\ the\ hope\ that\ it\ will\ be\ useful,}}
+\DoxyCodeLine{\Hypertarget{EvalRdf_8c_source_l00010}00010\ \textcolor{comment}{\ *\ but\ WITHOUT\ ANY\ WARRANTY;\ without\ even\ the\ implied\ warranty\ of}}
+\DoxyCodeLine{\Hypertarget{EvalRdf_8c_source_l00011}00011\ \textcolor{comment}{\ *\ MERCHANTABILITY\ or\ FITNESS\ FOR\ A\ PARTICULAR\ PURPOSE.\ See\ the}}
+\DoxyCodeLine{\Hypertarget{EvalRdf_8c_source_l00012}00012\ \textcolor{comment}{\ *\ GNU\ General\ Public\ License\ for\ more\ details.}}
+\DoxyCodeLine{\Hypertarget{EvalRdf_8c_source_l00013}00013\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{\Hypertarget{EvalRdf_8c_source_l00014}00014\ \textcolor{comment}{\ *\ You\ should\ have\ received\ a\ copy\ of\ the\ GNU\ General\ Public\ License}}
+\DoxyCodeLine{\Hypertarget{EvalRdf_8c_source_l00015}00015\ \textcolor{comment}{\ *\ along\ with\ Lamina.\ If\ not,\ see\ <https://www.gnu.org/licenses/>.}}
+\DoxyCodeLine{\Hypertarget{EvalRdf_8c_source_l00016}00016\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{EvalRdf_8c_source_l00017}00017\ \textcolor{comment}{\ Copyright\ (C)\ 2025\ Harish\ Charan,\ University\ of\ Durham,\ UK}}
+\DoxyCodeLine{\Hypertarget{EvalRdf_8c_source_l00018}00018\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{EvalRdf_8c_source_l00019}00019\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{\Hypertarget{EvalRdf_8c_source_l00020}00020\ }
+\DoxyCodeLine{\Hypertarget{EvalRdf_8c_source_l00021}00021\ }
+\DoxyCodeLine{\Hypertarget{EvalRdf_8c_source_l00022}00022\ \textcolor{preprocessor}{\#include<stdio.h>}}
+\DoxyCodeLine{\Hypertarget{EvalRdf_8c_source_l00023}00023\ \textcolor{preprocessor}{\#include<math.h>}}
+\DoxyCodeLine{\Hypertarget{EvalRdf_8c_source_l00024}00024\ \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{global_8h}{global.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{EvalRdf_8c_source_l00025}00025\ }
+\DoxyCodeLine{\Hypertarget{EvalRdf_8c_source_l00026}\mbox{\hyperlink{EvalRdf_8c_a0f6a37eae25af2ac2cea4396f44555f5}{00026}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{EvalRdf_8c_a0f6a37eae25af2ac2cea4396f44555f5}{EvalRdf}}()\{\ \ \ \ }
+\DoxyCodeLine{\Hypertarget{EvalRdf_8c_source_l00027}00027\ \ \ \mbox{\hyperlink{global_8h_a11d147c64891830c9e79b3315b1b2e21}{real}}\ dr[\mbox{\hyperlink{global_8h_a2b1fd2d28c6a7d4a3f7027cc1b6466f3}{NDIM}}+1],\ deltaR,\ normFac,\ rr,\ rrRange;}
+\DoxyCodeLine{\Hypertarget{EvalRdf_8c_source_l00028}00028\ \ \ \textcolor{keywordtype}{int}\ j1,\ j2,\ n;}
+\DoxyCodeLine{\Hypertarget{EvalRdf_8c_source_l00029}00029\ \ \ \mbox{\hyperlink{global_8h_a2ffa882c939ed143f77d2d23a389145a}{countRdf}}\ ++;}
+\DoxyCodeLine{\Hypertarget{EvalRdf_8c_source_l00030}00030\ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{global_8h_a2ffa882c939ed143f77d2d23a389145a}{countRdf}}\ ==\ 1)\{}
+\DoxyCodeLine{\Hypertarget{EvalRdf_8c_source_l00031}00031\ \ \ \ \ \textcolor{keywordflow}{for}(n\ =\ 1\ ;\ n\ <=\ \mbox{\hyperlink{global_8h_abe8258aaf81de052c6452b8b739c5c73}{sizeHistRdf}}\ ;\ n\ ++)}
+\DoxyCodeLine{\Hypertarget{EvalRdf_8c_source_l00032}00032\ \ \ \ \ \ \ \mbox{\hyperlink{global_8h_a8b70419767ded4d857709915fdbd0fc7}{histRdf}}[n]\ =\ 0.;}
+\DoxyCodeLine{\Hypertarget{EvalRdf_8c_source_l00033}00033\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{EvalRdf_8c_source_l00034}00034\ \ \ rrRange\ =\ \mbox{\hyperlink{global_8h_a88aaaec93066182aaf8cf3e0f8a676e2}{Sqr}}(\mbox{\hyperlink{global_8h_acdf103f0d5ee27e3fd16ce65e5704490}{rangeRdf}});}
+\DoxyCodeLine{\Hypertarget{EvalRdf_8c_source_l00035}00035\ \ \ deltaR\ =\ \mbox{\hyperlink{global_8h_acdf103f0d5ee27e3fd16ce65e5704490}{rangeRdf}}\ /\ \mbox{\hyperlink{global_8h_abe8258aaf81de052c6452b8b739c5c73}{sizeHistRdf}};}
+\DoxyCodeLine{\Hypertarget{EvalRdf_8c_source_l00036}00036\ \ \ \textcolor{keywordflow}{for}(j1\ =\ 1\ ;\ j1\ <=\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}}\ -\/\ 1\ ;\ j1\ ++)\{}
+\DoxyCodeLine{\Hypertarget{EvalRdf_8c_source_l00037}00037\ \ \ \ \ \textcolor{keywordflow}{for}(j2\ =\ j1\ +\ 1\ ;\ j2\ <=\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}}\ ;\ j2\ ++)\{}
+\DoxyCodeLine{\Hypertarget{EvalRdf_8c_source_l00038}00038\ }
+\DoxyCodeLine{\Hypertarget{EvalRdf_8c_source_l00039}00039\ \ \ \ \ \ \ dr[1]\ =\ \mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}[j1]\ -\/\ \mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}[j2];}
+\DoxyCodeLine{\Hypertarget{EvalRdf_8c_source_l00040}00040\ \ \ \ \ \ \ \textcolor{keywordflow}{if}(fabs(dr[1])\ >\ \mbox{\hyperlink{global_8h_adc110418e2efa5f31a9aa7c137471a2f}{regionH}}[1])}
+\DoxyCodeLine{\Hypertarget{EvalRdf_8c_source_l00041}00041\ \ \ \ \ dr[1]\ -\/=\ \mbox{\hyperlink{global_8h_af1c0594341f38649c6f2e9d25bff072f}{SignR}}(\mbox{\hyperlink{global_8h_a43c4f708b8d633b069355a121d6adbdc}{region}}[1],\ dr[1]);}
+\DoxyCodeLine{\Hypertarget{EvalRdf_8c_source_l00042}00042\ }
+\DoxyCodeLine{\Hypertarget{EvalRdf_8c_source_l00043}00043\ \ \ \ \ \ \ dr[2]\ =\ \mbox{\hyperlink{global_8h_af88ff31a9ae85beb713bd0c42815f1de}{ry}}[j1]\ -\/\ \mbox{\hyperlink{global_8h_af88ff31a9ae85beb713bd0c42815f1de}{ry}}[j2];}
+\DoxyCodeLine{\Hypertarget{EvalRdf_8c_source_l00044}00044\ \ \ \ \ \ \ \textcolor{keywordflow}{if}(fabs(dr[2])\ >\ \mbox{\hyperlink{global_8h_adc110418e2efa5f31a9aa7c137471a2f}{regionH}}[2])}
+\DoxyCodeLine{\Hypertarget{EvalRdf_8c_source_l00045}00045\ \ \ \ \ dr[2]\ -\/=\ \mbox{\hyperlink{global_8h_af1c0594341f38649c6f2e9d25bff072f}{SignR}}(\mbox{\hyperlink{global_8h_a43c4f708b8d633b069355a121d6adbdc}{region}}[2],\ dr[2]);}
+\DoxyCodeLine{\Hypertarget{EvalRdf_8c_source_l00046}00046\ }
+\DoxyCodeLine{\Hypertarget{EvalRdf_8c_source_l00047}00047\ \ \ \ \ \ \ rr\ =\ \mbox{\hyperlink{global_8h_a88aaaec93066182aaf8cf3e0f8a676e2}{Sqr}}(dr[1])\ +\ \mbox{\hyperlink{global_8h_a88aaaec93066182aaf8cf3e0f8a676e2}{Sqr}}(dr[2]);}
+\DoxyCodeLine{\Hypertarget{EvalRdf_8c_source_l00048}00048\ }
+\DoxyCodeLine{\Hypertarget{EvalRdf_8c_source_l00049}00049\ \ \ \ \ \ \ \textcolor{keywordflow}{if}(rr\ <\ rrRange)\{}
+\DoxyCodeLine{\Hypertarget{EvalRdf_8c_source_l00050}00050\ \ \ \ \ n\ =\ (int)(sqrt(rr)/deltaR)\ +\ 1;}
+\DoxyCodeLine{\Hypertarget{EvalRdf_8c_source_l00051}00051\ \ \ \ \ \mbox{\hyperlink{global_8h_a8b70419767ded4d857709915fdbd0fc7}{histRdf}}[n]\ ++;}
+\DoxyCodeLine{\Hypertarget{EvalRdf_8c_source_l00052}00052\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{EvalRdf_8c_source_l00053}00053\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{EvalRdf_8c_source_l00054}00054\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{EvalRdf_8c_source_l00055}00055\ }
+\DoxyCodeLine{\Hypertarget{EvalRdf_8c_source_l00056}00056\ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{global_8h_a2ffa882c939ed143f77d2d23a389145a}{countRdf}}\ ==\ \mbox{\hyperlink{global_8h_a40004b8e01bc3e357d48d7d9675ceea0}{limitRdf}})\{}
+\DoxyCodeLine{\Hypertarget{EvalRdf_8c_source_l00057}00057\ \ \ \ \ normFac\ =\ \mbox{\hyperlink{global_8h_a43c4f708b8d633b069355a121d6adbdc}{region}}[1]*\mbox{\hyperlink{global_8h_a43c4f708b8d633b069355a121d6adbdc}{region}}[2]\ /\ (M\_PI*\mbox{\hyperlink{global_8h_a88aaaec93066182aaf8cf3e0f8a676e2}{Sqr}}(deltaR)*\mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}}*\mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}}*\mbox{\hyperlink{global_8h_a2ffa882c939ed143f77d2d23a389145a}{countRdf}}\ );}
+\DoxyCodeLine{\Hypertarget{EvalRdf_8c_source_l00058}00058\ \ \ \ \ \textcolor{keywordflow}{for}(n\ =\ 1\ ;\ n\ <=\ \mbox{\hyperlink{global_8h_abe8258aaf81de052c6452b8b739c5c73}{sizeHistRdf}}\ ;\ n\ ++)}
+\DoxyCodeLine{\Hypertarget{EvalRdf_8c_source_l00059}00059\ \ \ \ \ \ \ \mbox{\hyperlink{global_8h_a8b70419767ded4d857709915fdbd0fc7}{histRdf}}[n]\ *=\ normFac/(n-\/0.5);}
+\DoxyCodeLine{\Hypertarget{EvalRdf_8c_source_l00060}00060\ \ \ \ \ \textcolor{comment}{//\ PRINT\ THE\ RADIAL\ DISTRIBUTION\ DATA\ ON\ TO\ DISK\ FILE}}
+\DoxyCodeLine{\Hypertarget{EvalRdf_8c_source_l00061}00061\ \ \ \ \ \mbox{\hyperlink{global_8h_a11d147c64891830c9e79b3315b1b2e21}{real}}\ rBin;}
+\DoxyCodeLine{\Hypertarget{EvalRdf_8c_source_l00062}00062\ \ \ \ \ \textcolor{keywordtype}{int}\ n;}
+\DoxyCodeLine{\Hypertarget{EvalRdf_8c_source_l00063}00063\ \ \ \ \ fprintf(\mbox{\hyperlink{global_8h_a9b0f0d7032e5e928e03460aef4b3a508}{fprdf}},\textcolor{stringliteral}{"{}rdf\ @\ timeNow\ \%lf\(\backslash\)n"{}},\ \mbox{\hyperlink{global_8h_abb2aee8c6108dd86a8da33115d249d71}{timeNow}});}
+\DoxyCodeLine{\Hypertarget{EvalRdf_8c_source_l00064}00064\ \ \ \ \ \textcolor{keywordflow}{for}(n\ =\ 1\ ;\ n\ <=\ \mbox{\hyperlink{global_8h_abe8258aaf81de052c6452b8b739c5c73}{sizeHistRdf}}\ ;\ n\ ++)\{}
+\DoxyCodeLine{\Hypertarget{EvalRdf_8c_source_l00065}00065\ \ \ \ \ \ \ rBin\ =\ (n\ -\/\ 0.5)*\mbox{\hyperlink{global_8h_acdf103f0d5ee27e3fd16ce65e5704490}{rangeRdf}}/\mbox{\hyperlink{global_8h_abe8258aaf81de052c6452b8b739c5c73}{sizeHistRdf}};}
+\DoxyCodeLine{\Hypertarget{EvalRdf_8c_source_l00066}00066\ \ \ \ \ \ \ fprintf(\mbox{\hyperlink{global_8h_a9b0f0d7032e5e928e03460aef4b3a508}{fprdf}},\ \textcolor{stringliteral}{"{}\%lf\ \%lf\(\backslash\)n"{}},\ rBin,\ \mbox{\hyperlink{global_8h_a8b70419767ded4d857709915fdbd0fc7}{histRdf}}[n]);}
+\DoxyCodeLine{\Hypertarget{EvalRdf_8c_source_l00067}00067\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{EvalRdf_8c_source_l00068}00068\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{EvalRdf_8c_source_l00069}00069\ }
+\DoxyCodeLine{\Hypertarget{EvalRdf_8c_source_l00070}00070\ \}}
+\DoxyCodeLine{\Hypertarget{EvalRdf_8c_source_l00071}00071\ }
+
+\end{DoxyCode}

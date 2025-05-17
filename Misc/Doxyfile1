@@ -1,0 +1,97 @@
+# Doxyfile 1.10.1
+
+# This file describes the settings to be used by the documentation system
+# doxygen (www.doxygen.org) for a project.
+#
+# All text after a double hash (##) is considered a comment and is placed in
+# front of the TAG it is preceding.
+#
+# All text after a single hash (#) is considered a comment and will be ignored.
+# The format is:
+# TAG = value [value, ...]
+# For lists, items can also be appended using:
+# TAG += value [value, ...]
+# Values that contain spaces should be placed between quotes (\" \").
+
+#---------------------------------------------------------------------------
+# Project related configuration options
+#---------------------------------------------------------------------------
+
+# This tag specifies the encoding used for all characters in the configuration
+# file that follow. The default is UTF-8 which is also the encoding used for all
+# text before the first occurrence of this tag. Doxygen uses libiconv (or the
+# iconv built into libc) for the transcoding. See
+# https://www.gnu.org/software/libiconv/ for the list of possible encodings.
+# The default value is: UTF-8.
+
+# Input / Output Configuration
+DOXYFILE_ENCODING      = UTF-8
+PROJECT_NAME           = Lemina
+OUTPUT_DIRECTORY       = ../docs
+INPUT                  = ../source
+IMAGE_PATH             = ../figures
+RECURSIVE              = YES
+FILE_PATTERNS          = *.c *.h *.md
+EXCLUDE_PATTERNS       = */tests/*
+GENERATE_HTML          = YES
+GENERATE_LATEX         = YES
+PROJECT_NUMBER         =
+PROJECT_BRIEF          = "A molecular dynamics package for network, granular material and point particles with a range of interaction potential."
+
+#Make It Easy to Navigate
+FULL_PATH_NAMES        = YES
+STRIP_FROM_PATH        = ../
+SHOW_INCLUDE_FILES     = YES
+INLINE_SOURCES         = YES
+SOURCE_BROWSER         = YES
+REFERENCED_BY_RELATION = YES
+REFERENCES_RELATION    = YES
+CALL_GRAPH             = YES
+CALLER_GRAPH           = YES
+HAVE_DOT               = YES
+DOT_MULTI_TARGETS      = YES
+CLASS_DIAGRAMS         = YES
+DOT_PATH               = /usr/bin/dot    # Only if `dot` isn't in PATH
+
+#Useful Documentation Features
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
+EXTRACT_STATIC         = YES
+EXTRACT_LOCAL_METHODS  = YES
+EXTRACT_ANON_NSPACES   = YES
+SHOW_USED_FILES        = YES
+SOURCE_BROWSER         = YES
+VERBATIM_HEADERS       = YES
+
+#Comment Style Compatibility
+MARKDOWN_SUPPORT       = YES
+AUTOLINK_SUPPORT       = YES
+USE_MDFILE_AS_MAINPAGE = ../README.md   # Optional
+
+#Styling / Branding
+PROJECT_LOGO           = "../figures/LogoLaminaHTML.png"
+PROJECT_ICON           = "./figures/LogoLaminaHTML.png"
+HTML_COLORSTYLE_HUE    = 220   # Optional theme tweak
+HTML_DYNAMIC_SECTIONS  = YES
+GENERATE_TREEVIEW      = YES
+
+# LaTeX and PDF Docs (optional but useful)
+GENERATE_LATEX         = YES
+PDF_HYPERLINKS         = YES
+USE_PDFLATEX           = YES
+LATEX_BATCHMODE        = NO
+LATEX_HIDE_INDICES     = NO
+
+#Optional Advanced Tags (for further control)
+ENABLE_PREPROCESSING   = YES
+MACRO_EXPANSION        = YES
+EXPAND_ONLY_PREDEF     = NO
+SEARCHENGINE           = YES
+QUIET                  = NO
+WARNINGS               = YES
+WARN_IF_UNDOCUMENTED   = YES
+
+
+
+
+

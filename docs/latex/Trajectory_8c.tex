@@ -1,0 +1,64 @@
+\doxysection{source/\+Trajectory.c File Reference}
+\hypertarget{Trajectory_8c}{}\label{Trajectory_8c}\index{source/Trajectory.c@{source/Trajectory.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include "{}global.\+h"{}}\newline
+Include dependency graph for Trajectory.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=189pt]{Trajectory_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{Trajectory_8c_a0d23960762e61f857c04368fa85438af}{Trajectory}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{Trajectory_8c_a0d23960762e61f857c04368fa85438af}\label{Trajectory_8c_a0d23960762e61f857c04368fa85438af} 
+\index{Trajectory.c@{Trajectory.c}!Trajectory@{Trajectory}}
+\index{Trajectory@{Trajectory}!Trajectory.c@{Trajectory.c}}
+\doxysubsubsection{\texorpdfstring{Trajectory()}{Trajectory()}}
+{\footnotesize\ttfamily void Trajectory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{Trajectory_8c_source_l00025}{25}} of file \mbox{\hyperlink{Trajectory_8c_source}{Trajectory.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00026\ \ \textcolor{keywordtype}{int}\ n;}
+\DoxyCodeLine{00027\ \ \textcolor{comment}{//Trajectory\ file\ in\ LAMMPS\ dump\ format\ for\ OVITO\ visualization}}
+\DoxyCodeLine{00028\ \ fprintf(\mbox{\hyperlink{global_8h_a29de37c95c54c8fc5da3c768d0f0423a}{fpxyz}},\ \textcolor{stringliteral}{"{}ITEM:\ TIMESTEP\(\backslash\)n"{}});}
+\DoxyCodeLine{00029\ \ fprintf(\mbox{\hyperlink{global_8h_a29de37c95c54c8fc5da3c768d0f0423a}{fpxyz}},\ \textcolor{stringliteral}{"{}\%lf\(\backslash\)n"{}},\mbox{\hyperlink{global_8h_abb2aee8c6108dd86a8da33115d249d71}{timeNow}});}
+\DoxyCodeLine{00030\ \ fprintf(\mbox{\hyperlink{global_8h_a29de37c95c54c8fc5da3c768d0f0423a}{fpxyz}},\ \textcolor{stringliteral}{"{}ITEM:\ NUMBER\ OF\ ATOMS\(\backslash\)n"{}});}
+\DoxyCodeLine{00031\ \ fprintf(\mbox{\hyperlink{global_8h_a29de37c95c54c8fc5da3c768d0f0423a}{fpxyz}},\ \textcolor{stringliteral}{"{}\%d\(\backslash\)n"{}},\mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}});}
+\DoxyCodeLine{00032\ \ fprintf(\mbox{\hyperlink{global_8h_a29de37c95c54c8fc5da3c768d0f0423a}{fpxyz}},\ \textcolor{stringliteral}{"{}ITEM:\ BOX\ BOUNDS\ pp\ ff\ pp\(\backslash\)n"{}});}
+\DoxyCodeLine{00033\ \ fprintf(\mbox{\hyperlink{global_8h_a29de37c95c54c8fc5da3c768d0f0423a}{fpxyz}},\ \textcolor{stringliteral}{"{}\%lf\ \%lf\ xlo\ xhi\(\backslash\)n"{}},\ -\/\mbox{\hyperlink{global_8h_adc110418e2efa5f31a9aa7c137471a2f}{regionH}}[1],\ \mbox{\hyperlink{global_8h_adc110418e2efa5f31a9aa7c137471a2f}{regionH}}[1]);}
+\DoxyCodeLine{00034\ \ fprintf(\mbox{\hyperlink{global_8h_a29de37c95c54c8fc5da3c768d0f0423a}{fpxyz}},\ \textcolor{stringliteral}{"{}\%lf\ \%lf\ ylo\ yhi\(\backslash\)n"{}},\ -\/\mbox{\hyperlink{global_8h_adc110418e2efa5f31a9aa7c137471a2f}{regionH}}[2],\ \mbox{\hyperlink{global_8h_adc110418e2efa5f31a9aa7c137471a2f}{regionH}}[2]);}
+\DoxyCodeLine{00035\ \ fprintf(\mbox{\hyperlink{global_8h_a29de37c95c54c8fc5da3c768d0f0423a}{fpxyz}},\ \textcolor{stringliteral}{"{}\%lf\ \%lf\ zlo\ zhi\(\backslash\)n"{}},\ -\/0.1,\ 0.1);}
+\DoxyCodeLine{00036\ \ fprintf(\mbox{\hyperlink{global_8h_a29de37c95c54c8fc5da3c768d0f0423a}{fpxyz}},\ \textcolor{stringliteral}{"{}ITEM:\ ATOMS\ id\ mol\ type\ radius\ x\ y\ vx\ vy\ fx\ fy\(\backslash\)n"{}});}
+\DoxyCodeLine{00037\ \ \textcolor{keywordflow}{for}(n=1;\ n<=\mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}};\ n++)}
+\DoxyCodeLine{00038\ \ \ fprintf(\mbox{\hyperlink{global_8h_a29de37c95c54c8fc5da3c768d0f0423a}{fpxyz}},\ \textcolor{stringliteral}{"{}\%d\(\backslash\)t\ \%d\(\backslash\)t\ \%d\(\backslash\)t\ \%0.2lf\(\backslash\)t\ \%0.16lf\(\backslash\)t\ \%0.16lf\(\backslash\)t\ \%0.16lf\(\backslash\)t\ \%0.16lf\(\backslash\)t\ \%0.16lf\(\backslash\)t\ \%0.16lf\(\backslash\)n"{}},\ }
+\DoxyCodeLine{00039\ \ \ \mbox{\hyperlink{global_8h_af2e16c834f37dce5699222281ce6e302}{atomID}}[n],\ \mbox{\hyperlink{global_8h_a65f3cbf0ee8813aae06be044d6c568ad}{molID}}[n],\ \mbox{\hyperlink{global_8h_ad2f384e523b15b13c82e3d6db95b402e}{atomType}}[n],\ \mbox{\hyperlink{global_8h_ab715ebf9f35659a111ee6c5eedc360af}{atomRadius}}[n],\ \mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}[n],\ \mbox{\hyperlink{global_8h_af88ff31a9ae85beb713bd0c42815f1de}{ry}}[n],\ \mbox{\hyperlink{global_8h_a6cbb00abd724a75be2c6424c84d18654}{vx}}[n],\ \mbox{\hyperlink{global_8h_ad78254f6802793cc12b197889e6ea80d}{vy}}[n],\ \mbox{\hyperlink{global_8h_a82d645cda6bea6506c7b5f4f7453986c}{ax}}[n],\ \mbox{\hyperlink{global_8h_a68c7afda02d0f26c1987a4eee13928f2}{ay}}[n]);}
+\DoxyCodeLine{00040\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{global_8h_af2e16c834f37dce5699222281ce6e302}{atom\+ID}}, \mbox{\hyperlink{global_8h_ab715ebf9f35659a111ee6c5eedc360af}{atom\+Radius}}, \mbox{\hyperlink{global_8h_ad2f384e523b15b13c82e3d6db95b402e}{atom\+Type}}, \mbox{\hyperlink{global_8h_source_l00017}{ax}}, \mbox{\hyperlink{global_8h_source_l00017}{ay}}, \mbox{\hyperlink{global_8h_a29de37c95c54c8fc5da3c768d0f0423a}{fpxyz}}, \mbox{\hyperlink{global_8h_a65f3cbf0ee8813aae06be044d6c568ad}{mol\+ID}}, \mbox{\hyperlink{global_8h_source_l00024}{n\+Atom}}, \mbox{\hyperlink{global_8h_source_l00020}{regionH}}, \mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}, \mbox{\hyperlink{global_8h_source_l00017}{ry}}, \mbox{\hyperlink{global_8h_source_l00020}{time\+Now}}, \mbox{\hyperlink{global_8h_source_l00017}{vx}}, and \mbox{\hyperlink{global_8h_source_l00017}{vy}}.
+
+
+
+Referenced by \mbox{\hyperlink{main_8c_source_l00050}{main()}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=221pt]{Trajectory_8c_a0d23960762e61f857c04368fa85438af_icgraph}
+\end{center}
+\end{figure}

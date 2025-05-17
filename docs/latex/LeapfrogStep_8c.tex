@@ -1,0 +1,72 @@
+\doxysection{source/\+Leapfrog\+Step.c File Reference}
+\hypertarget{LeapfrogStep_8c}{}\label{LeapfrogStep_8c}\index{source/LeapfrogStep.c@{source/LeapfrogStep.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include "{}global.\+h"{}}\newline
+Include dependency graph for Leapfrog\+Step.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{LeapfrogStep_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{LeapfrogStep_8c_a5aab7d0a5afb229cad229dce91c2527c}{Leapfrog\+Step}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{LeapfrogStep_8c_a5aab7d0a5afb229cad229dce91c2527c}\label{LeapfrogStep_8c_a5aab7d0a5afb229cad229dce91c2527c} 
+\index{LeapfrogStep.c@{LeapfrogStep.c}!LeapfrogStep@{LeapfrogStep}}
+\index{LeapfrogStep@{LeapfrogStep}!LeapfrogStep.c@{LeapfrogStep.c}}
+\doxysubsubsection{\texorpdfstring{LeapfrogStep()}{LeapfrogStep()}}
+{\footnotesize\ttfamily void Leapfrog\+Step (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{LeapfrogStep_8c_source_l00025}{25}} of file \mbox{\hyperlink{LeapfrogStep_8c_source}{Leapfrog\+Step.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00026\ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{global_8h_ac208e38a6cf3eecfb9d1522e950ed956}{stepCount}}\ <=\ \mbox{\hyperlink{global_8h_a93ce7b5ddaa822299367884866723f03}{stepEquil}})\{\ \textcolor{comment}{//NVT\ with\ Gaussian\ thermostate}}
+\DoxyCodeLine{00027\ \ \textcolor{keywordtype}{double}\ A,\ S1,\ S2,\ T;}
+\DoxyCodeLine{00028\ \ \textcolor{keywordtype}{int}\ n;}
+\DoxyCodeLine{00029\ \ S1\ =\ 0.;\ S2\ =\ 0;}
+\DoxyCodeLine{00030\ \ \textcolor{keywordtype}{double}\ halfdt\ =\ 0.5*\mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}};}
+\DoxyCodeLine{00031\ \ \textcolor{keywordflow}{for}\ (n\ =\ 1;\ n\ <=\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}};\ n++)\{}
+\DoxyCodeLine{00032\ \ \ T\ =\ \mbox{\hyperlink{global_8h_a6cbb00abd724a75be2c6424c84d18654}{vx}}[n]\ +\ halfdt\ *\ \mbox{\hyperlink{global_8h_a82d645cda6bea6506c7b5f4f7453986c}{ax}}[n];}
+\DoxyCodeLine{00033\ \ \ S1\ +=\ T\ *\ \mbox{\hyperlink{global_8h_a82d645cda6bea6506c7b5f4f7453986c}{ax}}[n];}
+\DoxyCodeLine{00034\ \ \ S2\ +=\ \mbox{\hyperlink{global_8h_a88aaaec93066182aaf8cf3e0f8a676e2}{Sqr}}(T);}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ }
+\DoxyCodeLine{00036\ \ \ T\ =\ \mbox{\hyperlink{global_8h_ad78254f6802793cc12b197889e6ea80d}{vy}}[n]\ +\ halfdt\ *\ \mbox{\hyperlink{global_8h_a68c7afda02d0f26c1987a4eee13928f2}{ay}}[n];}
+\DoxyCodeLine{00037\ \ \ S1\ +=\ T\ *\ \mbox{\hyperlink{global_8h_a68c7afda02d0f26c1987a4eee13928f2}{ay}}[n];}
+\DoxyCodeLine{00038\ \ \ S2\ +=\ \mbox{\hyperlink{global_8h_a88aaaec93066182aaf8cf3e0f8a676e2}{Sqr}}(T);}
+\DoxyCodeLine{00039\ \ \}}
+\DoxyCodeLine{00040\ \ }
+\DoxyCodeLine{00041\ \ A\ =\ -\/S1\ /\ S2;}
+\DoxyCodeLine{00042\ \ \textcolor{keywordtype}{double}\ C\ =\ 1\ +\ A*\mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}}\ ;}
+\DoxyCodeLine{00043\ \ \textcolor{keywordtype}{double}\ D\ =\ \mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}}\ *\ (1\ +\ 0.5\ *\ A\ *\ \mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}});}
+\DoxyCodeLine{00044\ \ \textcolor{keywordflow}{for}\ (n\ =\ 1;\ n\ <=\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}};\ n++)\{}
+\DoxyCodeLine{00045\ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{global_8h_ad2f384e523b15b13c82e3d6db95b402e}{atomType}}[n]\ ==\ 1\ ||\ \mbox{\hyperlink{global_8h_ad2f384e523b15b13c82e3d6db95b402e}{atomType}}[n]\ ==\ 3)\{}
+\DoxyCodeLine{00046\ \ \ \ \mbox{\hyperlink{global_8h_a6cbb00abd724a75be2c6424c84d18654}{vx}}[n]\ =\ C\ *\ \mbox{\hyperlink{global_8h_a6cbb00abd724a75be2c6424c84d18654}{vx}}[n]\ +\ D\ *\ \mbox{\hyperlink{global_8h_a82d645cda6bea6506c7b5f4f7453986c}{ax}}[n];}
+\DoxyCodeLine{00047\ \ \ \ \mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}[n]\ +=\ \mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}}\ *\ \mbox{\hyperlink{global_8h_a6cbb00abd724a75be2c6424c84d18654}{vx}}[n];}
+\DoxyCodeLine{00048\ \ \ \ \mbox{\hyperlink{global_8h_ad78254f6802793cc12b197889e6ea80d}{vy}}[n]\ =\ C\ *\ \mbox{\hyperlink{global_8h_ad78254f6802793cc12b197889e6ea80d}{vy}}[n]\ +\ D\ *\ \mbox{\hyperlink{global_8h_a68c7afda02d0f26c1987a4eee13928f2}{ay}}[n];}
+\DoxyCodeLine{00049\ \ \ \ \mbox{\hyperlink{global_8h_af88ff31a9ae85beb713bd0c42815f1de}{ry}}[n]\ +=\ \mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}}\ *\ \mbox{\hyperlink{global_8h_ad78254f6802793cc12b197889e6ea80d}{vy}}[n];}
+\DoxyCodeLine{00050\ \ \ \ \}\ \}\ \}}
+\DoxyCodeLine{00051\ \ }
+\DoxyCodeLine{00052\ \ \ \ \textcolor{keywordflow}{else}\{\ \textcolor{comment}{//NVE\ }}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{int}\ n;}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordflow}{for}(n\ =\ 1\ ;\ n\ <=\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}}\ ;\ n\ ++)\{}
+\DoxyCodeLine{00055\ \ \ \ \ \ \mbox{\hyperlink{global_8h_a6cbb00abd724a75be2c6424c84d18654}{vx}}[n]\ +=\ \mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}}\ *\ \mbox{\hyperlink{global_8h_a82d645cda6bea6506c7b5f4f7453986c}{ax}}[n];}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}[n]\ +=\ \mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}}\ *\ \mbox{\hyperlink{global_8h_a6cbb00abd724a75be2c6424c84d18654}{vx}}[n];}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \mbox{\hyperlink{global_8h_ad78254f6802793cc12b197889e6ea80d}{vy}}[n]\ +=\ \mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}}\ *\ \mbox{\hyperlink{global_8h_a68c7afda02d0f26c1987a4eee13928f2}{ay}}[n];}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \mbox{\hyperlink{global_8h_af88ff31a9ae85beb713bd0c42815f1de}{ry}}[n]\ +=\ \mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}}\ *\ \mbox{\hyperlink{global_8h_ad78254f6802793cc12b197889e6ea80d}{vy}}[n];}
+\DoxyCodeLine{00059\ \}\ \}\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{global_8h_ad2f384e523b15b13c82e3d6db95b402e}{atom\+Type}}, \mbox{\hyperlink{global_8h_source_l00017}{ax}}, \mbox{\hyperlink{global_8h_source_l00017}{ay}}, \mbox{\hyperlink{global_8h_source_l00020}{deltaT}}, \mbox{\hyperlink{global_8h_source_l00024}{n\+Atom}}, \mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}, \mbox{\hyperlink{global_8h_source_l00017}{ry}}, \mbox{\hyperlink{global_8h_source_l00014}{Sqr}}, \mbox{\hyperlink{global_8h_source_l00024}{step\+Count}}, \mbox{\hyperlink{global_8h_source_l00024}{step\+Equil}}, \mbox{\hyperlink{global_8h_source_l00017}{vx}}, and \mbox{\hyperlink{global_8h_source_l00017}{vy}}.
+

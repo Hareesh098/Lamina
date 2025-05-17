@@ -1,0 +1,40 @@
+\doxysection{Apply\+Viscous.\+c}
+\hypertarget{ApplyViscous_8c_source}{}\label{ApplyViscous_8c_source}\index{source/ApplyViscous.c@{source/ApplyViscous.c}}
+\mbox{\hyperlink{ApplyViscous_8c}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{ApplyViscous_8c_source_l00001}00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{ApplyViscous_8c_source_l00002}00002\ \textcolor{comment}{\ *\ This\ file\ is\ part\ of\ Lamina.}}
+\DoxyCodeLine{\Hypertarget{ApplyViscous_8c_source_l00003}00003\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{\Hypertarget{ApplyViscous_8c_source_l00004}00004\ \textcolor{comment}{\ *\ Lamina\ is\ free\ software:\ you\ can\ redistribute\ it\ and/or\ modify}}
+\DoxyCodeLine{\Hypertarget{ApplyViscous_8c_source_l00005}00005\ \textcolor{comment}{\ *\ it\ under\ the\ terms\ of\ the\ GNU\ General\ Public\ License\ as\ published\ by}}
+\DoxyCodeLine{\Hypertarget{ApplyViscous_8c_source_l00006}00006\ \textcolor{comment}{\ *\ the\ Free\ Software\ Foundation,\ either\ version\ 3\ of\ the\ License,\ or}}
+\DoxyCodeLine{\Hypertarget{ApplyViscous_8c_source_l00007}00007\ \textcolor{comment}{\ *\ (at\ your\ option)\ any\ later\ version.}}
+\DoxyCodeLine{\Hypertarget{ApplyViscous_8c_source_l00008}00008\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{\Hypertarget{ApplyViscous_8c_source_l00009}00009\ \textcolor{comment}{\ *\ Lamina\ is\ distributed\ in\ the\ hope\ that\ it\ will\ be\ useful,}}
+\DoxyCodeLine{\Hypertarget{ApplyViscous_8c_source_l00010}00010\ \textcolor{comment}{\ *\ but\ WITHOUT\ ANY\ WARRANTY;\ without\ even\ the\ implied\ warranty\ of}}
+\DoxyCodeLine{\Hypertarget{ApplyViscous_8c_source_l00011}00011\ \textcolor{comment}{\ *\ MERCHANTABILITY\ or\ FITNESS\ FOR\ A\ PARTICULAR\ PURPOSE.\ See\ the}}
+\DoxyCodeLine{\Hypertarget{ApplyViscous_8c_source_l00012}00012\ \textcolor{comment}{\ *\ GNU\ General\ Public\ License\ for\ more\ details.}}
+\DoxyCodeLine{\Hypertarget{ApplyViscous_8c_source_l00013}00013\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{\Hypertarget{ApplyViscous_8c_source_l00014}00014\ \textcolor{comment}{\ *\ You\ should\ have\ received\ a\ copy\ of\ the\ GNU\ General\ Public\ License}}
+\DoxyCodeLine{\Hypertarget{ApplyViscous_8c_source_l00015}00015\ \textcolor{comment}{\ *\ along\ with\ Lamina.\ If\ not,\ see\ <https://www.gnu.org/licenses/>.}}
+\DoxyCodeLine{\Hypertarget{ApplyViscous_8c_source_l00016}00016\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{ApplyViscous_8c_source_l00017}00017\ \textcolor{comment}{\ Copyright\ (C)\ 2025\ Harish\ Charan,\ University\ of\ Durham,\ UK}}
+\DoxyCodeLine{\Hypertarget{ApplyViscous_8c_source_l00018}00018\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{ApplyViscous_8c_source_l00019}00019\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{\Hypertarget{ApplyViscous_8c_source_l00020}00020\ }
+\DoxyCodeLine{\Hypertarget{ApplyViscous_8c_source_l00021}00021\ \textcolor{preprocessor}{\#include<stdio.h>}}
+\DoxyCodeLine{\Hypertarget{ApplyViscous_8c_source_l00022}00022\ \textcolor{preprocessor}{\#include<stdlib.h>}}
+\DoxyCodeLine{\Hypertarget{ApplyViscous_8c_source_l00023}00023\ \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{global_8h}{global.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{ApplyViscous_8c_source_l00024}00024\ }
+\DoxyCodeLine{\Hypertarget{ApplyViscous_8c_source_l00025}\mbox{\hyperlink{ApplyViscous_8c_a7c954b189d2cacd846b41c94219eb949}{00025}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{ApplyViscous_8c_a7c954b189d2cacd846b41c94219eb949}{ApplyViscous}}()\{}
+\DoxyCodeLine{\Hypertarget{ApplyViscous_8c_source_l00026}00026\ \ \textcolor{keywordtype}{int}\ n;}
+\DoxyCodeLine{\Hypertarget{ApplyViscous_8c_source_l00027}00027\ \ \textcolor{keywordtype}{double}\ gammav;}
+\DoxyCodeLine{\Hypertarget{ApplyViscous_8c_source_l00028}00028\ \ gammav\ =\ 1.0;\ }
+\DoxyCodeLine{\Hypertarget{ApplyViscous_8c_source_l00029}00029\ \ \textcolor{keywordflow}{for}(n\ =\ 1\ ;\ n\ <=\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}};\ n\ ++)\{}
+\DoxyCodeLine{\Hypertarget{ApplyViscous_8c_source_l00030}00030\ \ \ \mbox{\hyperlink{global_8h_a82d645cda6bea6506c7b5f4f7453986c}{ax}}[n]\ +=\ -\/gammav\ *\ \mbox{\hyperlink{global_8h_a6cbb00abd724a75be2c6424c84d18654}{vx}}[n];}
+\DoxyCodeLine{\Hypertarget{ApplyViscous_8c_source_l00031}00031\ \ \ \mbox{\hyperlink{global_8h_a68c7afda02d0f26c1987a4eee13928f2}{ay}}[n]\ +=\ -\/gammav\ *\ \mbox{\hyperlink{global_8h_ad78254f6802793cc12b197889e6ea80d}{vy}}[n];}
+\DoxyCodeLine{\Hypertarget{ApplyViscous_8c_source_l00032}00032\ \ \}\ \}}
+\DoxyCodeLine{\Hypertarget{ApplyViscous_8c_source_l00033}00033\ }
+\DoxyCodeLine{\Hypertarget{ApplyViscous_8c_source_l00034}00034\ }
+
+\end{DoxyCode}

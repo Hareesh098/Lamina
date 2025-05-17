@@ -1,0 +1,54 @@
+\doxysection{Apply\+Lees\+Edwards\+Boundary\+Cond.\+c}
+\hypertarget{ApplyLeesEdwardsBoundaryCond_8c_source}{}\label{ApplyLeesEdwardsBoundaryCond_8c_source}\index{source/ApplyLeesEdwardsBoundaryCond.c@{source/ApplyLeesEdwardsBoundaryCond.c}}
+\mbox{\hyperlink{ApplyLeesEdwardsBoundaryCond_8c}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{ApplyLeesEdwardsBoundaryCond_8c_source_l00001}00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{ApplyLeesEdwardsBoundaryCond_8c_source_l00002}00002\ \textcolor{comment}{\ *\ This\ file\ is\ part\ of\ Lamina.}}
+\DoxyCodeLine{\Hypertarget{ApplyLeesEdwardsBoundaryCond_8c_source_l00003}00003\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{\Hypertarget{ApplyLeesEdwardsBoundaryCond_8c_source_l00004}00004\ \textcolor{comment}{\ *\ Lamina\ is\ free\ software:\ you\ can\ redistribute\ it\ and/or\ modify}}
+\DoxyCodeLine{\Hypertarget{ApplyLeesEdwardsBoundaryCond_8c_source_l00005}00005\ \textcolor{comment}{\ *\ it\ under\ the\ terms\ of\ the\ GNU\ General\ Public\ License\ as\ published\ by}}
+\DoxyCodeLine{\Hypertarget{ApplyLeesEdwardsBoundaryCond_8c_source_l00006}00006\ \textcolor{comment}{\ *\ the\ Free\ Software\ Foundation,\ either\ version\ 3\ of\ the\ License,\ or}}
+\DoxyCodeLine{\Hypertarget{ApplyLeesEdwardsBoundaryCond_8c_source_l00007}00007\ \textcolor{comment}{\ *\ (at\ your\ option)\ any\ later\ version.}}
+\DoxyCodeLine{\Hypertarget{ApplyLeesEdwardsBoundaryCond_8c_source_l00008}00008\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{\Hypertarget{ApplyLeesEdwardsBoundaryCond_8c_source_l00009}00009\ \textcolor{comment}{\ *\ Lamina\ is\ distributed\ in\ the\ hope\ that\ it\ will\ be\ useful,}}
+\DoxyCodeLine{\Hypertarget{ApplyLeesEdwardsBoundaryCond_8c_source_l00010}00010\ \textcolor{comment}{\ *\ but\ WITHOUT\ ANY\ WARRANTY;\ without\ even\ the\ implied\ warranty\ of}}
+\DoxyCodeLine{\Hypertarget{ApplyLeesEdwardsBoundaryCond_8c_source_l00011}00011\ \textcolor{comment}{\ *\ MERCHANTABILITY\ or\ FITNESS\ FOR\ A\ PARTICULAR\ PURPOSE.\ See\ the}}
+\DoxyCodeLine{\Hypertarget{ApplyLeesEdwardsBoundaryCond_8c_source_l00012}00012\ \textcolor{comment}{\ *\ GNU\ General\ Public\ License\ for\ more\ details.}}
+\DoxyCodeLine{\Hypertarget{ApplyLeesEdwardsBoundaryCond_8c_source_l00013}00013\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{\Hypertarget{ApplyLeesEdwardsBoundaryCond_8c_source_l00014}00014\ \textcolor{comment}{\ *\ You\ should\ have\ received\ a\ copy\ of\ the\ GNU\ General\ Public\ License}}
+\DoxyCodeLine{\Hypertarget{ApplyLeesEdwardsBoundaryCond_8c_source_l00015}00015\ \textcolor{comment}{\ *\ along\ with\ Lamina.\ If\ not,\ see\ <https://www.gnu.org/licenses/>.}}
+\DoxyCodeLine{\Hypertarget{ApplyLeesEdwardsBoundaryCond_8c_source_l00016}00016\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{ApplyLeesEdwardsBoundaryCond_8c_source_l00017}00017\ \textcolor{comment}{\ Copyright\ (C)\ 2025\ Harish\ Charan,\ University\ of\ Durham,\ UK}}
+\DoxyCodeLine{\Hypertarget{ApplyLeesEdwardsBoundaryCond_8c_source_l00018}00018\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{ApplyLeesEdwardsBoundaryCond_8c_source_l00019}00019\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{\Hypertarget{ApplyLeesEdwardsBoundaryCond_8c_source_l00020}00020\ }
+\DoxyCodeLine{\Hypertarget{ApplyLeesEdwardsBoundaryCond_8c_source_l00021}00021\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{\Hypertarget{ApplyLeesEdwardsBoundaryCond_8c_source_l00022}00022\ \textcolor{preprocessor}{\#include\ <math.h>}}
+\DoxyCodeLine{\Hypertarget{ApplyLeesEdwardsBoundaryCond_8c_source_l00023}00023\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{global_8h}{global.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{ApplyLeesEdwardsBoundaryCond_8c_source_l00024}00024\ }
+\DoxyCodeLine{\Hypertarget{ApplyLeesEdwardsBoundaryCond_8c_source_l00025}\mbox{\hyperlink{ApplyLeesEdwardsBoundaryCond_8c_af8acc877de45fdafa9c28276cd12be48}{00025}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{ApplyLeesEdwardsBoundaryCond_8c_af8acc877de45fdafa9c28276cd12be48}{ApplyLeesEdwardsBoundaryCond}}()\ \{}
+\DoxyCodeLine{\Hypertarget{ApplyLeesEdwardsBoundaryCond_8c_source_l00026}00026\ \ \textcolor{keywordtype}{int}\ n;}
+\DoxyCodeLine{\Hypertarget{ApplyLeesEdwardsBoundaryCond_8c_source_l00027}00027\ \ \textcolor{keywordflow}{for}\ (n\ =\ 1;\ n\ <=\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}};\ n++)\ \{}
+\DoxyCodeLine{\Hypertarget{ApplyLeesEdwardsBoundaryCond_8c_source_l00028}00028\ \textcolor{comment}{//PBC\ along\ x-\/direction}}
+\DoxyCodeLine{\Hypertarget{ApplyLeesEdwardsBoundaryCond_8c_source_l00029}00029\ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}[n]\ >=\ \mbox{\hyperlink{global_8h_adc110418e2efa5f31a9aa7c137471a2f}{regionH}}[1])}
+\DoxyCodeLine{\Hypertarget{ApplyLeesEdwardsBoundaryCond_8c_source_l00030}00030\ \ \ \ \mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}[n]\ -\/=\ \mbox{\hyperlink{global_8h_a43c4f708b8d633b069355a121d6adbdc}{region}}[1];}
+\DoxyCodeLine{\Hypertarget{ApplyLeesEdwardsBoundaryCond_8c_source_l00031}00031\ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}(\mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}[n]\ <\ -\/\mbox{\hyperlink{global_8h_adc110418e2efa5f31a9aa7c137471a2f}{regionH}}[1])}
+\DoxyCodeLine{\Hypertarget{ApplyLeesEdwardsBoundaryCond_8c_source_l00032}00032\ \ \ \ \mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}[n]\ +=\ \mbox{\hyperlink{global_8h_a43c4f708b8d633b069355a121d6adbdc}{region}}[1];}
+\DoxyCodeLine{\Hypertarget{ApplyLeesEdwardsBoundaryCond_8c_source_l00033}00033\ \ \ \ }
+\DoxyCodeLine{\Hypertarget{ApplyLeesEdwardsBoundaryCond_8c_source_l00034}00034\ \textcolor{comment}{//LEBC\ along\ y-\/direction}}
+\DoxyCodeLine{\Hypertarget{ApplyLeesEdwardsBoundaryCond_8c_source_l00035}00035\ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{global_8h_af88ff31a9ae85beb713bd0c42815f1de}{ry}}[n]\ >=\ \mbox{\hyperlink{global_8h_adc110418e2efa5f31a9aa7c137471a2f}{regionH}}[2])\{}
+\DoxyCodeLine{\Hypertarget{ApplyLeesEdwardsBoundaryCond_8c_source_l00036}00036\ \ \ \ \mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}[n]\ -\/=\ \mbox{\hyperlink{global_8h_a8f3c39c55c230405a75c81f4ec221616}{shearDisplacement}};}
+\DoxyCodeLine{\Hypertarget{ApplyLeesEdwardsBoundaryCond_8c_source_l00037}00037\ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}[n]\ <\ -\/\mbox{\hyperlink{global_8h_adc110418e2efa5f31a9aa7c137471a2f}{regionH}}[1])\ \mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}[n]\ +=\ \mbox{\hyperlink{global_8h_a43c4f708b8d633b069355a121d6adbdc}{region}}[1];}
+\DoxyCodeLine{\Hypertarget{ApplyLeesEdwardsBoundaryCond_8c_source_l00038}00038\ \ \ \ \textcolor{comment}{//vx[n]\ -\/=\ shearVelocity;\ }}
+\DoxyCodeLine{\Hypertarget{ApplyLeesEdwardsBoundaryCond_8c_source_l00039}00039\ \ \ \ \mbox{\hyperlink{global_8h_af88ff31a9ae85beb713bd0c42815f1de}{ry}}[n]\ -\/=\ \mbox{\hyperlink{global_8h_a43c4f708b8d633b069355a121d6adbdc}{region}}[2];}
+\DoxyCodeLine{\Hypertarget{ApplyLeesEdwardsBoundaryCond_8c_source_l00040}00040\ \ \ \}\textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}(\mbox{\hyperlink{global_8h_af88ff31a9ae85beb713bd0c42815f1de}{ry}}[n]\ <\ -\/\mbox{\hyperlink{global_8h_adc110418e2efa5f31a9aa7c137471a2f}{regionH}}[2])\{}
+\DoxyCodeLine{\Hypertarget{ApplyLeesEdwardsBoundaryCond_8c_source_l00041}00041\ \ \ \ \mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}[n]\ +=\ \mbox{\hyperlink{global_8h_a8f3c39c55c230405a75c81f4ec221616}{shearDisplacement}};}
+\DoxyCodeLine{\Hypertarget{ApplyLeesEdwardsBoundaryCond_8c_source_l00042}00042\ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}[n]\ >=\ \mbox{\hyperlink{global_8h_adc110418e2efa5f31a9aa7c137471a2f}{regionH}}[1])\ \mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}[n]\ -\/=\ \mbox{\hyperlink{global_8h_a43c4f708b8d633b069355a121d6adbdc}{region}}[1];}
+\DoxyCodeLine{\Hypertarget{ApplyLeesEdwardsBoundaryCond_8c_source_l00043}00043\ \ \ \ \textcolor{comment}{//vx[n]\ +=\ shearVelocity;\ }}
+\DoxyCodeLine{\Hypertarget{ApplyLeesEdwardsBoundaryCond_8c_source_l00044}00044\ \ \ \ \mbox{\hyperlink{global_8h_af88ff31a9ae85beb713bd0c42815f1de}{ry}}[n]\ +=\ \mbox{\hyperlink{global_8h_a43c4f708b8d633b069355a121d6adbdc}{region}}[2];}
+\DoxyCodeLine{\Hypertarget{ApplyLeesEdwardsBoundaryCond_8c_source_l00045}00045\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{ApplyLeesEdwardsBoundaryCond_8c_source_l00046}00046\ \ \}\ }
+\DoxyCodeLine{\Hypertarget{ApplyLeesEdwardsBoundaryCond_8c_source_l00047}00047\ \}}
+\DoxyCodeLine{\Hypertarget{ApplyLeesEdwardsBoundaryCond_8c_source_l00048}00048\ }
+
+\end{DoxyCode}

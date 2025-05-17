@@ -1,0 +1,107 @@
+\doxysection{source/\+Close.c File Reference}
+\hypertarget{Close_8c}{}\label{Close_8c}\index{source/Close.c@{source/Close.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include "{}global.\+h"{}}\newline
+Include dependency graph for Close.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{Close_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{Close_8c_a7f7a3199c392465d0767c6506c1af5b4}{Close}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{Close_8c_a7f7a3199c392465d0767c6506c1af5b4}\label{Close_8c_a7f7a3199c392465d0767c6506c1af5b4} 
+\index{Close.c@{Close.c}!Close@{Close}}
+\index{Close@{Close}!Close.c@{Close.c}}
+\doxysubsubsection{\texorpdfstring{Close()}{Close()}}
+{\footnotesize\ttfamily void Close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{Close_8c_source_l00024}{24}} of file \mbox{\hyperlink{Close_8c_source}{Close.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00025\ \ \ \textcolor{keywordtype}{int}\ n;}
+\DoxyCodeLine{00026\ \ \ free(\mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}});}
+\DoxyCodeLine{00027\ \ \ free(\mbox{\hyperlink{global_8h_af88ff31a9ae85beb713bd0c42815f1de}{ry}});}
+\DoxyCodeLine{00028\ \ \ free(\mbox{\hyperlink{global_8h_a6cbb00abd724a75be2c6424c84d18654}{vx}});}
+\DoxyCodeLine{00029\ \ \ free(\mbox{\hyperlink{global_8h_ad78254f6802793cc12b197889e6ea80d}{vy}});}
+\DoxyCodeLine{00030\ \ \ free(\mbox{\hyperlink{global_8h_a82d645cda6bea6506c7b5f4f7453986c}{ax}});}
+\DoxyCodeLine{00031\ \ \ free(\mbox{\hyperlink{global_8h_a68c7afda02d0f26c1987a4eee13928f2}{ay}});}
+\DoxyCodeLine{00032\ \ \ free(\mbox{\hyperlink{global_8h_affb3c293e707ea3b440e35e7581cbaae}{fax}});}
+\DoxyCodeLine{00033\ \ \ free(\mbox{\hyperlink{global_8h_a3151dcce91f6a9cfdd5593da0718648b}{fay}});}
+\DoxyCodeLine{00034\ \ \ free(\mbox{\hyperlink{global_8h_a679d8d045f353a6544e2a03b3942bc5a}{cellList}});}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ free(\mbox{\hyperlink{global_8h_af2e16c834f37dce5699222281ce6e302}{atomID}});\ free(\mbox{\hyperlink{global_8h_ad2f384e523b15b13c82e3d6db95b402e}{atomType}});\ free(\mbox{\hyperlink{global_8h_ab715ebf9f35659a111ee6c5eedc360af}{atomRadius}});\ free(\mbox{\hyperlink{global_8h_a1b28db247f294d5c24571ca1a942c4a4}{atomMass}});}
+\DoxyCodeLine{00037\ \ \ free(\mbox{\hyperlink{global_8h_a425e987095ed5ab13d90f04c5c40572e}{speed}});}
+\DoxyCodeLine{00038\ \ \ free(\mbox{\hyperlink{global_8h_a7ef9937bc3aea03091e40e733df7353e}{atom1}});\ free(\mbox{\hyperlink{global_8h_a28d9ba88ad3c8e8b5cc5608b2cc0b0b5}{atom2}});\ free(\mbox{\hyperlink{global_8h_a15d105ee1521b15d76eeb63ac4351f6f}{BondID}});}
+\DoxyCodeLine{00039\ \ \ free(\mbox{\hyperlink{global_8h_a389f660313ee3764aaaa6997121a5400}{BondType}});\ free(\mbox{\hyperlink{global_8h_a8e6dc750ca456d701cdae21325c99048}{kb}});\ free(\mbox{\hyperlink{global_8h_a78581c34377eab92a44bc4d30fabed1c}{ro}});}
+\DoxyCodeLine{00040\ \ \ free(\mbox{\hyperlink{global_8h_a6cd103d74f5d525b4cae3e7af552be20}{ImageX}});\ free(\mbox{\hyperlink{global_8h_a6d63f20edcbc2cb983c7267d9d0690a8}{ImageY}});\ free(\mbox{\hyperlink{global_8h_ad81015466d6c894db2f9cad4faecae1c}{rxUnwrap}});\ free(\mbox{\hyperlink{global_8h_aadd2df0c0919493607803cd89389b31a}{ryUnwrap}});}
+\DoxyCodeLine{00041\ \ \ free(\mbox{\hyperlink{global_8h_a7bc962983a9db9deeab76d600db384c7}{atomIDInterface}});}
+\DoxyCodeLine{00042\ \ \ free(\mbox{\hyperlink{global_8h_a9e5cacd45bb1c19404215981554b9e65}{PairID}});\ free(\mbox{\hyperlink{global_8h_af8215c4cb752839765c6629bb7e808a3}{Pairatom1}});\ free(\mbox{\hyperlink{global_8h_abd0063c6618301e17cc7ef9be8058081}{Pairatom2}});\ }
+\DoxyCodeLine{00043\ \ \ free(\mbox{\hyperlink{global_8h_aa463dae6fdaca32114f15f2f670075c7}{PairXij}});\ free(\mbox{\hyperlink{global_8h_ad17d42dcb59c5c4c54dec23afc5c8fcf}{PairYij}});}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \ \ free(\mbox{\hyperlink{global_8h_a3e518d20c70a4d8bdfef3d5c3fd23d66}{DeltaXijOld}});}
+\DoxyCodeLine{00046\ \ \ free(\mbox{\hyperlink{global_8h_a334598bd0223e5efe70f8feda0da36d1}{DeltaYijOld}});}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \ \ free(\mbox{\hyperlink{global_8h_a65f3cbf0ee8813aae06be044d6c568ad}{molID}});}
+\DoxyCodeLine{00049\ \ \ }
+\DoxyCodeLine{00050\ \ \ \textcolor{keywordflow}{for}\ (n\ =\ 0;\ n\ <=\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}};\ n++)\ \{}
+\DoxyCodeLine{00051\ \ \ \ free(\mbox{\hyperlink{global_8h_a5b5269315eb08e6cec78e54252171ef0}{isBonded}}[n]);}
+\DoxyCodeLine{00052\ \ \ \ \}}
+\DoxyCodeLine{00053\ \ \ \ free(\mbox{\hyperlink{global_8h_a5b5269315eb08e6cec78e54252171ef0}{isBonded}});}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \ \ }
+\DoxyCodeLine{00057\ \ \ \textcolor{keywordflow}{for}(n\ =\ 0;\ n\ <=\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}};\ n++)\ \{}
+\DoxyCodeLine{00058\ \ \ \ free(\mbox{\hyperlink{global_8h_a17b70df357a0ed6e248f61a1219ed9a7}{DeltaXijOldPair}}[n]);}
+\DoxyCodeLine{00059\ \ \ \ free(\mbox{\hyperlink{global_8h_aaa4ef3f6f09ccb1e7a1bb4c6908e82a3}{DeltaYijOldPair}}[n]);}
+\DoxyCodeLine{00060\ \ \ \ \}}
+\DoxyCodeLine{00061\ \ \ \ \ free(\mbox{\hyperlink{global_8h_a17b70df357a0ed6e248f61a1219ed9a7}{DeltaXijOldPair}});}
+\DoxyCodeLine{00062\ \ \ \ \ free(\mbox{\hyperlink{global_8h_aaa4ef3f6f09ccb1e7a1bb4c6908e82a3}{DeltaYijOldPair}});}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00064\ \ \ \textcolor{keywordflow}{for}\ (n\ =\ 0;\ n\ <=\ \mbox{\hyperlink{global_8h_ab638d9b8ea6ae6103ee7d3dcb0ca4106}{nBuffCorr}};\ n++)\{}
+\DoxyCodeLine{00065\ \ \ \ \ free(\mbox{\hyperlink{global_8h_acf270e6113a4c04ff43832e3676c4073}{cfOrg}}[n]);}
+\DoxyCodeLine{00066\ \ \ \ \ free(\mbox{\hyperlink{global_8h_a65c8541613338d3885f454c7f762ef47}{spacetimeCorr}}[n]);}
+\DoxyCodeLine{00067\ \ \ \}}
+\DoxyCodeLine{00068\ \ \ free(\mbox{\hyperlink{global_8h_acf270e6113a4c04ff43832e3676c4073}{cfOrg}});}
+\DoxyCodeLine{00069\ \ \ free(\mbox{\hyperlink{global_8h_a65c8541613338d3885f454c7f762ef47}{spacetimeCorr}});}
+\DoxyCodeLine{00070\ \ \ free(\mbox{\hyperlink{global_8h_ae34b3c3ecb0a71564a8d3a52d5bce50f}{cfVal}});}
+\DoxyCodeLine{00071\ \ \ free(\mbox{\hyperlink{global_8h_a69d30c3c1681890962f25dc4ab39b033}{indexCorr}});}
+\DoxyCodeLine{00072\ \ \ free(\mbox{\hyperlink{global_8h_a26084125f8afb4f1f04ff8291b8bb6e4}{spacetimeCorrAv}});}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00074\ \ \ free(\mbox{\hyperlink{global_8h_a74f01c700b5540bed3184604a0cd6c17}{indexAcf}});}
+\DoxyCodeLine{00075\ \ \ free(\mbox{\hyperlink{global_8h_aa14d3f1be7cb8fc0a8f4b26eac3b4ebb}{viscAcfOrg}});}
+\DoxyCodeLine{00076\ \ \ free(\mbox{\hyperlink{global_8h_a0eb9c034706ff9eeacb32ac2f0327e10}{viscAcfAv}});}
+\DoxyCodeLine{00077\ \ \ \textcolor{keywordflow}{for}(n\ =\ 0\ ;\ n\ <=\ \mbox{\hyperlink{global_8h_a62bb5169e87a77023d99fa51468bf126}{nBuffAcf}}\ ;\ n\ ++)}
+\DoxyCodeLine{00078\ \ \ \ \ free(\mbox{\hyperlink{global_8h_a9d680c9ee759157faecbb75ad8d91d63}{viscAcf}}[n]);}
+\DoxyCodeLine{00079\ \ \ free(\mbox{\hyperlink{global_8h_a9d680c9ee759157faecbb75ad8d91d63}{viscAcf}});}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00081\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{global_8h_a7ef9937bc3aea03091e40e733df7353e}{atom1}}, \mbox{\hyperlink{global_8h_source_l00034}{atom2}}, \mbox{\hyperlink{global_8h_af2e16c834f37dce5699222281ce6e302}{atom\+ID}}, \mbox{\hyperlink{global_8h_a7bc962983a9db9deeab76d600db384c7}{atom\+IDInterface}}, \mbox{\hyperlink{global_8h_a1b28db247f294d5c24571ca1a942c4a4}{atom\+Mass}}, \mbox{\hyperlink{global_8h_ab715ebf9f35659a111ee6c5eedc360af}{atom\+Radius}}, \mbox{\hyperlink{global_8h_ad2f384e523b15b13c82e3d6db95b402e}{atom\+Type}}, \mbox{\hyperlink{global_8h_source_l00017}{ax}}, \mbox{\hyperlink{global_8h_source_l00017}{ay}}, \mbox{\hyperlink{global_8h_a15d105ee1521b15d76eeb63ac4351f6f}{Bond\+ID}}, \mbox{\hyperlink{global_8h_source_l00035}{Bond\+Type}}, \mbox{\hyperlink{global_8h_a679d8d045f353a6544e2a03b3942bc5a}{cell\+List}}, \mbox{\hyperlink{global_8h_acf270e6113a4c04ff43832e3676c4073}{cf\+Org}}, \mbox{\hyperlink{global_8h_source_l00088}{cf\+Val}}, \mbox{\hyperlink{global_8h_a3e518d20c70a4d8bdfef3d5c3fd23d66}{Delta\+Xij\+Old}}, \mbox{\hyperlink{global_8h_a17b70df357a0ed6e248f61a1219ed9a7}{Delta\+Xij\+Old\+Pair}}, \mbox{\hyperlink{global_8h_source_l00067}{Delta\+Yij\+Old}}, \mbox{\hyperlink{global_8h_source_l00070}{Delta\+Yij\+Old\+Pair}}, \mbox{\hyperlink{global_8h_affb3c293e707ea3b440e35e7581cbaae}{fax}}, \mbox{\hyperlink{global_8h_source_l00079}{fay}}, \mbox{\hyperlink{global_8h_a6cd103d74f5d525b4cae3e7af552be20}{ImageX}}, \mbox{\hyperlink{global_8h_source_l00047}{ImageY}}, \mbox{\hyperlink{global_8h_a74f01c700b5540bed3184604a0cd6c17}{index\+Acf}}, \mbox{\hyperlink{global_8h_a69d30c3c1681890962f25dc4ab39b033}{index\+Corr}}, \mbox{\hyperlink{global_8h_a5b5269315eb08e6cec78e54252171ef0}{is\+Bonded}}, \mbox{\hyperlink{global_8h_a8e6dc750ca456d701cdae21325c99048}{kb}}, \mbox{\hyperlink{global_8h_a65f3cbf0ee8813aae06be044d6c568ad}{mol\+ID}}, \mbox{\hyperlink{global_8h_source_l00024}{n\+Atom}}, \mbox{\hyperlink{global_8h_source_l00094}{n\+Buff\+Acf}}, \mbox{\hyperlink{global_8h_source_l00089}{n\+Buff\+Corr}}, \mbox{\hyperlink{global_8h_source_l00059}{Pairatom1}}, \mbox{\hyperlink{global_8h_source_l00059}{Pairatom2}}, \mbox{\hyperlink{global_8h_a9e5cacd45bb1c19404215981554b9e65}{Pair\+ID}}, \mbox{\hyperlink{global_8h_aa463dae6fdaca32114f15f2f670075c7}{Pair\+Xij}}, \mbox{\hyperlink{global_8h_source_l00060}{Pair\+Yij}}, \mbox{\hyperlink{global_8h_source_l00036}{ro}}, \mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}, \mbox{\hyperlink{global_8h_ad81015466d6c894db2f9cad4faecae1c}{rx\+Unwrap}}, \mbox{\hyperlink{global_8h_source_l00017}{ry}}, \mbox{\hyperlink{global_8h_source_l00048}{ry\+Unwrap}}, \mbox{\hyperlink{global_8h_source_l00088}{spacetime\+Corr}}, \mbox{\hyperlink{global_8h_source_l00088}{spacetime\+Corr\+Av}}, \mbox{\hyperlink{global_8h_a425e987095ed5ab13d90f04c5c40572e}{speed}}, \mbox{\hyperlink{global_8h_source_l00093}{visc\+Acf}}, \mbox{\hyperlink{global_8h_source_l00093}{visc\+Acf\+Av}}, \mbox{\hyperlink{global_8h_source_l00093}{visc\+Acf\+Org}}, \mbox{\hyperlink{global_8h_source_l00017}{vx}}, and \mbox{\hyperlink{global_8h_source_l00017}{vy}}.
+
+
+
+Referenced by \mbox{\hyperlink{main_8c_source_l00050}{main()}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=200pt]{Close_8c_a7f7a3199c392465d0767c6506c1af5b4_icgraph}
+\end{center}
+\end{figure}

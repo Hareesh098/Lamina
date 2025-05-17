@@ -1,0 +1,74 @@
+\doxysection{source/\+Dump\+State.c File Reference}
+\hypertarget{DumpState_8c}{}\label{DumpState_8c}\index{source/DumpState.c@{source/DumpState.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include "{}global.\+h"{}}\newline
+Include dependency graph for Dump\+State.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{DumpState_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{DumpState_8c_a65b923e31a875dd1a266c835d7187a87}{Dump\+State}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{DumpState_8c_a65b923e31a875dd1a266c835d7187a87}\label{DumpState_8c_a65b923e31a875dd1a266c835d7187a87} 
+\index{DumpState.c@{DumpState.c}!DumpState@{DumpState}}
+\index{DumpState@{DumpState}!DumpState.c@{DumpState.c}}
+\doxysubsubsection{\texorpdfstring{DumpState()}{DumpState()}}
+{\footnotesize\ttfamily void Dump\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{DumpState_8c_source_l00025}{25}} of file \mbox{\hyperlink{DumpState_8c_source}{Dump\+State.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00026\ \ \textcolor{keywordtype}{char}\ DUMP[256];}
+\DoxyCodeLine{00027\ \ FILE\ *fpDUMP;}
+\DoxyCodeLine{00028\ \ sprintf(DUMP,\ \textcolor{stringliteral}{"{}\%s.STATE"{}},\ \mbox{\hyperlink{global_8h_ad2849cf781a4db22cc1b31eaaee50a4f}{prefix}});}
+\DoxyCodeLine{00029\ \ fpDUMP\ =\ fopen(DUMP,\ \textcolor{stringliteral}{"{}w"{}});}
+\DoxyCodeLine{00030\ \ \textcolor{keywordflow}{if}(fpDUMP\ ==\ NULL)\ \{}
+\DoxyCodeLine{00031\ \ \ fprintf(stderr,\ \textcolor{stringliteral}{"{}Error\ opening\ file\ \%s\ for\ writing\(\backslash\)n"{}},\ DUMP);}
+\DoxyCodeLine{00032\ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00033\ \ \}}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \ \ fprintf(fpDUMP,\ \textcolor{stringliteral}{"{}ITEM:\ TIMESTEP\(\backslash\)n"{}});}
+\DoxyCodeLine{00036\ \ \ fprintf(fpDUMP,\ \textcolor{stringliteral}{"{}\%lf\(\backslash\)n"{}},\mbox{\hyperlink{global_8h_abb2aee8c6108dd86a8da33115d249d71}{timeNow}});}
+\DoxyCodeLine{00037\ \ \ fprintf(fpDUMP,\ \textcolor{stringliteral}{"{}ITEM:\ NUMBER\ OF\ ATOMS\(\backslash\)n"{}});}
+\DoxyCodeLine{00038\ \ \ fprintf(fpDUMP,\ \textcolor{stringliteral}{"{}\%d\(\backslash\)n"{}},\mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}});}
+\DoxyCodeLine{00039\ \ \ fprintf(fpDUMP,\ \textcolor{stringliteral}{"{}ITEM:\ BOX\ BOUNDS\ pp\ pp\ pp\(\backslash\)n"{}});}
+\DoxyCodeLine{00040\ \ \ fprintf(fpDUMP,\ \textcolor{stringliteral}{"{}\%lf\ \%lf\ xlo\ xhi\(\backslash\)n"{}},\ -\/\mbox{\hyperlink{global_8h_adc110418e2efa5f31a9aa7c137471a2f}{regionH}}[1],\ \mbox{\hyperlink{global_8h_adc110418e2efa5f31a9aa7c137471a2f}{regionH}}[1]);}
+\DoxyCodeLine{00041\ \ \ fprintf(fpDUMP,\ \textcolor{stringliteral}{"{}\%lf\ \%lf\ ylo\ yhi\(\backslash\)n"{}},\ -\/\mbox{\hyperlink{global_8h_adc110418e2efa5f31a9aa7c137471a2f}{regionH}}[2],\ \mbox{\hyperlink{global_8h_adc110418e2efa5f31a9aa7c137471a2f}{regionH}}[2]);}
+\DoxyCodeLine{00042\ \ \ fprintf(fpDUMP,\ \textcolor{stringliteral}{"{}\%lf\ \%lf\ zlo\ zhi\(\backslash\)n"{}},\ \ -\/0.1,\ 0.1);}
+\DoxyCodeLine{00043\ \ \ fprintf(fpDUMP,\ \textcolor{stringliteral}{"{}ITEM:\ ATOMS\ id\ mol\ type\ radius\ x\ y\ vx\ vy\ fx\ fy\(\backslash\)n"{}});}
+\DoxyCodeLine{00044\ \ \ \textcolor{keywordtype}{int}\ n;}
+\DoxyCodeLine{00045\ \ \ \textcolor{keywordflow}{for}\ (n\ =\ 1;\ n\ <=\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}};\ n++)\ \{}
+\DoxyCodeLine{00046\ \ \ \ fprintf(fpDUMP,\ \textcolor{stringliteral}{"{}\%d\(\backslash\)t\ \%d\(\backslash\)t\ \%d\(\backslash\)t\ \%0.2lf\(\backslash\)t\ \%0.16lf\(\backslash\)t\ \%0.16lf\(\backslash\)t\ \%0.16lf\(\backslash\)t\ \%0.16lf\(\backslash\)t\ \%0.16lf\(\backslash\)t\ \%0.16lf\(\backslash\)n"{}},\ }
+\DoxyCodeLine{00047\ \ \ \ \mbox{\hyperlink{global_8h_af2e16c834f37dce5699222281ce6e302}{atomID}}[n],\ \mbox{\hyperlink{global_8h_a65f3cbf0ee8813aae06be044d6c568ad}{molID}}[n],\ \mbox{\hyperlink{global_8h_ad2f384e523b15b13c82e3d6db95b402e}{atomType}}[n],\ \mbox{\hyperlink{global_8h_ab715ebf9f35659a111ee6c5eedc360af}{atomRadius}}[n],\ \mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}[n],\ \mbox{\hyperlink{global_8h_af88ff31a9ae85beb713bd0c42815f1de}{ry}}[n],\ \mbox{\hyperlink{global_8h_a6cbb00abd724a75be2c6424c84d18654}{vx}}[n],\ \mbox{\hyperlink{global_8h_ad78254f6802793cc12b197889e6ea80d}{vy}}[n],\ \mbox{\hyperlink{global_8h_a82d645cda6bea6506c7b5f4f7453986c}{ax}}[n],\ \mbox{\hyperlink{global_8h_a68c7afda02d0f26c1987a4eee13928f2}{ay}}[n]);}
+\DoxyCodeLine{00048\ \ \ \}}
+\DoxyCodeLine{00049\ \ \ fclose(fpDUMP);}
+\DoxyCodeLine{00050\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{global_8h_af2e16c834f37dce5699222281ce6e302}{atom\+ID}}, \mbox{\hyperlink{global_8h_ab715ebf9f35659a111ee6c5eedc360af}{atom\+Radius}}, \mbox{\hyperlink{global_8h_ad2f384e523b15b13c82e3d6db95b402e}{atom\+Type}}, \mbox{\hyperlink{global_8h_source_l00017}{ax}}, \mbox{\hyperlink{global_8h_source_l00017}{ay}}, \mbox{\hyperlink{global_8h_a65f3cbf0ee8813aae06be044d6c568ad}{mol\+ID}}, \mbox{\hyperlink{global_8h_source_l00024}{n\+Atom}}, \mbox{\hyperlink{main_8c_source_l00012}{prefix}}, \mbox{\hyperlink{global_8h_source_l00020}{regionH}}, \mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}, \mbox{\hyperlink{global_8h_source_l00017}{ry}}, \mbox{\hyperlink{global_8h_source_l00020}{time\+Now}}, \mbox{\hyperlink{global_8h_source_l00017}{vx}}, and \mbox{\hyperlink{global_8h_source_l00017}{vy}}.
+
+
+
+Referenced by \mbox{\hyperlink{main_8c_source_l00050}{main()}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{DumpState_8c_a65b923e31a875dd1a266c835d7187a87_icgraph}
+\end{center}
+\end{figure}

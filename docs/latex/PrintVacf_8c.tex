@@ -1,0 +1,58 @@
+\doxysection{source/\+Print\+Vacf.c File Reference}
+\hypertarget{PrintVacf_8c}{}\label{PrintVacf_8c}\index{source/PrintVacf.c@{source/PrintVacf.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include "{}global.\+h"{}}\newline
+Include dependency graph for Print\+Vacf.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=187pt]{PrintVacf_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{PrintVacf_8c_a9be1b8f0429ee69e28f6fb3850e8acdb}{Print\+Vacf}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{PrintVacf_8c_a9be1b8f0429ee69e28f6fb3850e8acdb}\label{PrintVacf_8c_a9be1b8f0429ee69e28f6fb3850e8acdb} 
+\index{PrintVacf.c@{PrintVacf.c}!PrintVacf@{PrintVacf}}
+\index{PrintVacf@{PrintVacf}!PrintVacf.c@{PrintVacf.c}}
+\doxysubsubsection{\texorpdfstring{PrintVacf()}{PrintVacf()}}
+{\footnotesize\ttfamily void Print\+Vacf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{PrintVacf_8c_source_l00025}{25}} of file \mbox{\hyperlink{PrintVacf_8c_source}{Print\+Vacf.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00026\ \ \textcolor{keywordtype}{double}\ tVal;}
+\DoxyCodeLine{00027\ \ \textcolor{keywordtype}{int}\ j;}
+\DoxyCodeLine{00028\ \ fprintf(\mbox{\hyperlink{global_8h_ab0e60da5ef9ad175bfd82f75856dadca}{fpvisc}},\textcolor{stringliteral}{"{}viscosity\ acf\(\backslash\)n"{}});}
+\DoxyCodeLine{00029\ \ \textcolor{keywordflow}{for}(j\ =\ 1\ ;\ j\ <=\ \mbox{\hyperlink{global_8h_a48094c7b6092e1a21fcc91a371f230b6}{nValAcf}}\ ;\ j\ ++)\{}
+\DoxyCodeLine{00030\ \ \ tVal\ =\ (j-\/1)*\mbox{\hyperlink{global_8h_a7187cdbfc7b7c8acd127dffed24c6f64}{stepAcf}}*\mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}};}
+\DoxyCodeLine{00031\ \ \ fprintf(\mbox{\hyperlink{global_8h_ab0e60da5ef9ad175bfd82f75856dadca}{fpvisc}},\ \textcolor{stringliteral}{"{}\%lf\(\backslash\)t\ \%lf\(\backslash\)t\ \%lf\(\backslash\)n"{}},\ tVal,\ \mbox{\hyperlink{global_8h_a0eb9c034706ff9eeacb32ac2f0327e10}{viscAcfAv}}[j],\ \mbox{\hyperlink{global_8h_a0eb9c034706ff9eeacb32ac2f0327e10}{viscAcfAv}}[j]/\mbox{\hyperlink{global_8h_a0eb9c034706ff9eeacb32ac2f0327e10}{viscAcfAv}}[1]);}
+\DoxyCodeLine{00032\ \ \ \}}
+\DoxyCodeLine{00033\ \ fprintf(\mbox{\hyperlink{global_8h_ab0e60da5ef9ad175bfd82f75856dadca}{fpvisc}},\ \textcolor{stringliteral}{"{}viscosity\ acf\ integral\ :\ \%lf\(\backslash\)n"{}},\ \mbox{\hyperlink{global_8h_a38b081058be3f7f6594654b9890b0943}{viscAcfInt}});}
+\DoxyCodeLine{00034\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{global_8h_source_l00020}{deltaT}}, \mbox{\hyperlink{global_8h_ab0e60da5ef9ad175bfd82f75856dadca}{fpvisc}}, \mbox{\hyperlink{global_8h_a48094c7b6092e1a21fcc91a371f230b6}{n\+Val\+Acf}}, \mbox{\hyperlink{global_8h_source_l00094}{step\+Acf}}, \mbox{\hyperlink{global_8h_source_l00093}{visc\+Acf\+Av}}, and \mbox{\hyperlink{global_8h_source_l00093}{visc\+Acf\+Int}}.
+
+
+
+Referenced by \mbox{\hyperlink{AccumVacf_8c_source_l00027}{Accum\+Vacf()}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{PrintVacf_8c_a9be1b8f0429ee69e28f6fb3850e8acdb_icgraph}
+\end{center}
+\end{figure}

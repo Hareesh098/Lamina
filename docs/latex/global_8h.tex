@@ -1,0 +1,2911 @@
+\doxysection{source/global.h File Reference}
+\hypertarget{global_8h}{}\label{global_8h}\index{source/global.h@{source/global.h}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+Include dependency graph for global.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=170pt]{global_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{global_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{global_8h_a77366c1bd428629dc898e188bfd182a3}{EXTERN}}~extern
+\item 
+\#define \mbox{\hyperlink{global_8h_a2b1fd2d28c6a7d4a3f7027cc1b6466f3}{NDIM}}~2
+\item 
+\#define \mbox{\hyperlink{global_8h_a88aaaec93066182aaf8cf3e0f8a676e2}{Sqr}}(x)~((x) \texorpdfstring{$\ast$}{*} (x))
+\item 
+\#define \mbox{\hyperlink{global_8h_af1c0594341f38649c6f2e9d25bff072f}{SignR}}(x,  y)~(((y) $>$= 0) ? (x) \+: (-\/ (x)))
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef double \mbox{\hyperlink{global_8h_a11d147c64891830c9e79b3315b1b2e21}{real}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+double \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}
+\item 
+double \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{global_8h_af88ff31a9ae85beb713bd0c42815f1de}{ry}}
+\item 
+double \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{global_8h_a6cbb00abd724a75be2c6424c84d18654}{vx}}
+\item 
+double \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{global_8h_ad78254f6802793cc12b197889e6ea80d}{vy}}
+\item 
+double \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{global_8h_a82d645cda6bea6506c7b5f4f7453986c}{ax}}
+\item 
+double \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{global_8h_a68c7afda02d0f26c1987a4eee13928f2}{ay}}
+\item 
+double \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{global_8h_a425e987095ed5ab13d90f04c5c40572e}{speed}}
+\item 
+double \mbox{\hyperlink{global_8h_a43c4f708b8d633b069355a121d6adbdc}{region}} \mbox{[}2+1\mbox{]}
+\item 
+double \mbox{\hyperlink{global_8h_adc110418e2efa5f31a9aa7c137471a2f}{regionH}} \mbox{[}2+1\mbox{]}
+\item 
+double \mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}}
+\item 
+double \mbox{\hyperlink{global_8h_abb2aee8c6108dd86a8da33115d249d71}{time\+Now}}
+\item 
+double \mbox{\hyperlink{global_8h_abd758be497a95843d6cbb071a9f99581}{pot\+Energy}}
+\item 
+double \mbox{\hyperlink{global_8h_a445d936de68f213385df5c284ea1d81d}{kin\+Energy}}
+\item 
+double \mbox{\hyperlink{global_8h_a025720826b3728fd77ab18384b7369bf}{tot\+Energy}}
+\item 
+double \mbox{\hyperlink{global_8h_a6f8c052f8417728038991f7f2826d38d}{density}}
+\item 
+double \mbox{\hyperlink{global_8h_aee1c5d07ac79c5c036195858afe33405}{pressure}}
+\item 
+double \mbox{\hyperlink{global_8h_a1774b76f586901fb408042c37597ca70}{r\+Cut}}
+\item 
+double \mbox{\hyperlink{global_8h_a05ac5235b52a827a368e74ed228dd485}{kappa}}
+\item 
+double \mbox{\hyperlink{global_8h_a927379bdfda5eedb0267990043b572f6}{u\+Sum}}
+\item 
+double \mbox{\hyperlink{global_8h_abdbf03f447f8b0adbae4c15974dac45f}{vir\+Sum}}
+\item 
+double \mbox{\hyperlink{global_8h_aad2e8fd6b6b37dd84c64021c640422b9}{svir\+Sum}}
+\item 
+double \mbox{\hyperlink{global_8h_a68c26a0c6b002f1da36c4be599ca5149}{v\+Sum}}
+\item 
+double \mbox{\hyperlink{global_8h_adccf176eee31c1ae7a4521f8a42e19ae}{v\+SumX}}
+\item 
+double \mbox{\hyperlink{global_8h_a74f7573f7c599b600da92918019291a5}{v\+SumY}}
+\item 
+double \mbox{\hyperlink{global_8h_a5a69ba53b920022cc82acded08812d9c}{vv\+Sum}}
+\item 
+double \mbox{\hyperlink{global_8h_ac0bceed989ef50bb3a4314feb0c828aa}{s\+Pot\+Energy}}
+\item 
+double \mbox{\hyperlink{global_8h_aceb0bd33904075ea75ec5f5db7180674}{s\+Kin\+Energy}}
+\item 
+double \mbox{\hyperlink{global_8h_a5bd56b6f1a373ed4b8c548faa0b053cd}{s\+Tot\+Energy}}
+\item 
+double \mbox{\hyperlink{global_8h_af5ce20c1e720aecc5d780bbd059f9bb2}{s\+Pressure}}
+\item 
+double \mbox{\hyperlink{global_8h_a14dbdccf317ef9263542854ebf48a674}{ss\+Pot\+Energy}}
+\item 
+double \mbox{\hyperlink{global_8h_a5c5dfe1f2edbb9b98971f0b85ecf4c17}{ss\+Kin\+Energy}}
+\item 
+double \mbox{\hyperlink{global_8h_af6a00fa64b9ab22b3eb1ba906e0d3310}{ss\+Tot\+Energy}}
+\item 
+double \mbox{\hyperlink{global_8h_a5a69d6c5c0f48f99290220e47dfdba33}{ss\+Pressure}}
+\item 
+int \mbox{\hyperlink{global_8h_a4e22d05d6f5e517ce5b32c05dee192cf}{init\+Ucell}} \mbox{[}2+1\mbox{]}
+\item 
+int \mbox{\hyperlink{global_8h_a05497065a104f77a2f2bd395165c19f9}{more\+Cycles}}
+\item 
+int \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{n\+Atom}}
+\item 
+int \mbox{\hyperlink{global_8h_a9652d009b4c8999144191b461014e063}{step\+Avg}}
+\item 
+int \mbox{\hyperlink{global_8h_ac208e38a6cf3eecfb9d1522e950ed956}{step\+Count}}
+\item 
+int \mbox{\hyperlink{global_8h_a93ce7b5ddaa822299367884866723f03}{step\+Equil}}
+\item 
+int \mbox{\hyperlink{global_8h_a6997819607eb8c411787524aa23e918f}{step\+Limit}}
+\item 
+int \mbox{\hyperlink{global_8h_a2d64b21fac4565b6b9d33295b1eca832}{step\+Traj}}
+\item 
+int \mbox{\hyperlink{global_8h_ad8853a52cc7f26e32641543d8030bd87}{step\+Dump}}
+\item 
+double \mbox{\hyperlink{global_8h_a6a4e820cfd6dbd49709a350e38260c18}{Radius\+IJ}}
+\item 
+double \mbox{\hyperlink{global_8h_a6a05feadcd798474382d444168bb3d5d}{Sqr\+Radius\+IJ}}
+\item 
+double \mbox{\hyperlink{global_8h_a47571b44e617f4a6d6ef4ab227337093}{Radius\+IJInv}}
+\item 
+int \mbox{\hyperlink{global_8h_a43448c32d3aae360f080f3805a73f08f}{n\+Atom\+Type}}
+\item 
+int \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{global_8h_ad2f384e523b15b13c82e3d6db95b402e}{atom\+Type}}
+\item 
+int \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{global_8h_af2e16c834f37dce5699222281ce6e302}{atom\+ID}}
+\item 
+double \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{global_8h_ab715ebf9f35659a111ee6c5eedc360af}{atom\+Radius}}
+\item 
+double \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{global_8h_a1b28db247f294d5c24571ca1a942c4a4}{atom\+Mass}}
+\item 
+double \mbox{\hyperlink{global_8h_ad8c0e4d46c6c1b263dd8b02c211be355}{Total\+Mass}}
+\item 
+int \mbox{\hyperlink{global_8h_a89d3bca785c9af9c4a154dc6642add4d}{n\+Bond}}
+\item 
+int \mbox{\hyperlink{global_8h_a3afc68b43647936871af06d6b5d1d5db}{n\+Bond\+Type}}
+\item 
+int \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{global_8h_a7ef9937bc3aea03091e40e733df7353e}{atom1}}
+\item 
+int \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{global_8h_a28d9ba88ad3c8e8b5cc5608b2cc0b0b5}{atom2}}
+\item 
+int \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{global_8h_a15d105ee1521b15d76eeb63ac4351f6f}{Bond\+ID}}
+\item 
+int \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{global_8h_a389f660313ee3764aaaa6997121a5400}{Bond\+Type}}
+\item 
+double \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{global_8h_a8e6dc750ca456d701cdae21325c99048}{kb}}
+\item 
+double \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{global_8h_a78581c34377eab92a44bc4d30fabed1c}{ro}}
+\item 
+double \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{global_8h_a8d2c058f09cdaa1bc8c848a33e0fd745}{Bond\+Energy}}
+\item 
+double \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{global_8h_a78926ce24b541f8bdc741a75815eecf2}{Bond\+Length}}
+\item 
+double \mbox{\hyperlink{global_8h_ace1b0540bf5b0561f14c46f5aa8d3d17}{Total\+Bond\+Energy}}
+\item 
+double \mbox{\hyperlink{global_8h_aa53f052764d0986e9691ee3e941682d9}{Bond\+Energy\+Per\+Atom}}
+\item 
+double \mbox{\hyperlink{global_8h_a51f4f35562e6b66ea8bd3dfd6d710fcb}{gamman}}
+\item 
+double \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{global_8h_ad1ad82db5042c5e6dcdf44dee00362fe}{disc\+Dragx}}
+\item 
+double \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{global_8h_a1a2663b70d9ea62a68fa250cc5e3e6c2}{disc\+Dragy}}
+\item 
+double \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{global_8h_ae25566f54b864b50af8b06ce249b07bd}{node\+Dragx}}
+\item 
+double \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{global_8h_aae007ab0860d0d27bf49ce1e74831a71}{node\+Dragy}}
+\item 
+double \mbox{\hyperlink{global_8h_a46e07cb3e28676cde590ccbeb2a9ad14}{strain}}
+\item 
+double \mbox{\hyperlink{global_8h_ad5481186802f3197474df7651eb4d009}{strain\+Rate}}
+\item 
+double \mbox{\hyperlink{global_8h_a8f3c39c55c230405a75c81f4ec221616}{shear\+Displacement}}
+\item 
+double \mbox{\hyperlink{global_8h_a8ac41cda466d1d95f5ad78f0a3d6ab18}{shear\+Velocity}}
+\item 
+double \mbox{\hyperlink{global_8h_a7f75910911c1659f8b012917539bcee2}{VSqr}}
+\item 
+double \mbox{\hyperlink{global_8h_a19e4a064bc256b4dc93cc670e209764b}{VMean\+Sqr}}
+\item 
+double \mbox{\hyperlink{global_8h_a30d906a0cd864fe43f75ca8ca92ccf77}{VRoot\+Mean\+Sqr}}
+\item 
+double \mbox{\hyperlink{global_8h_ada9cdbb5cb81a471301bdf2cb5a07309}{ComX}}
+\item 
+double \mbox{\hyperlink{global_8h_a2c4c8baa906e18471ad04f24ae6a7134}{ComY}}
+\item 
+double \mbox{\hyperlink{global_8h_aa36ae33a64f6fcecea03e11c79da6d57}{Com\+X0}}
+\item 
+double \mbox{\hyperlink{global_8h_aa8f87142a53bdf396c36a1382ba527eb}{Com\+Y0}}
+\item 
+double \mbox{\hyperlink{global_8h_a73e0501e577e426f4f07748c31c94d8f}{Com\+XRatio}}
+\item 
+double \mbox{\hyperlink{global_8h_a109231792e1a97d0cfc4a1d77a525f9c}{Com\+YRatio}}
+\item 
+double \mbox{\hyperlink{global_8h_a7e88ba96b6e106ede84dde66931a3ffa}{Halt\+Condition}}
+\item 
+double \mbox{\hyperlink{global_8h_a38f5e3e34b48c3b6e72609b7d2a5ad2a}{DeltaY}}
+\item 
+double \mbox{\hyperlink{global_8h_af4ab0506048ab0512eb4f1e963c2a238}{DeltaX}}
+\item 
+int \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{global_8h_a6cd103d74f5d525b4cae3e7af552be20}{ImageX}}
+\item 
+int \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{global_8h_a6d63f20edcbc2cb983c7267d9d0690a8}{ImageY}}
+\item 
+double \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{global_8h_ad81015466d6c894db2f9cad4faecae1c}{rx\+Unwrap}}
+\item 
+double \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{global_8h_aadd2df0c0919493607803cd89389b31a}{ry\+Unwrap}}
+\item 
+int \mbox{\hyperlink{global_8h_a7360a2db25507a0148bcee894745b855}{n\+Atom\+Interface}}
+\item 
+int \mbox{\hyperlink{global_8h_a1a9704697a32d001f71d2a212562bd79}{n\+Disc\+Interface}}
+\item 
+int \mbox{\hyperlink{global_8h_a1fc19b1274901ec0290f04ae9900f8b4}{n\+Atom\+Block}}
+\item 
+int \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{global_8h_a7bc962983a9db9deeab76d600db384c7}{atom\+IDInterface}}
+\item 
+double \mbox{\hyperlink{global_8h_a3ff2760258776138428edc622325f221}{Kn}}
+\item 
+double \mbox{\hyperlink{global_8h_aa7e88347476ef454086e7c3cd9865460}{fx}}
+\item 
+double \mbox{\hyperlink{global_8h_a03c4ce20c7e4b8c6d60a20b833be69fe}{fy}}
+\item 
+double \mbox{\hyperlink{global_8h_a1c9da98c7c3b53aded35c3be14fb2aee}{Fy\+Bylx}}
+\item 
+double \mbox{\hyperlink{global_8h_adac56247d9cc80325fa1045fdf18ce33}{fx\+Byfy}}
+\item 
+int \mbox{\hyperlink{global_8h_a9a92b6a568b5731eafbca7a35ba6a5af}{Damp\+Flag}}
+\item 
+double \mbox{\hyperlink{global_8h_ab13bb637cb4ef7ef1f7aafad19bb8558}{strech}}
+\item 
+int \mbox{\hyperlink{global_8h_a3bcdebf0fa1a6b9c773860b93de9bd90}{dump\+Pair\+Flag}}
+\item 
+int \mbox{\hyperlink{global_8h_a23366336aec87861b8d8423b619cd5fe}{n\+Pair\+Total}}
+\item 
+int \mbox{\hyperlink{global_8h_a4d261d7bf27ba6bb03927a2daa310746}{n\+Pair\+Active}}
+\item 
+int \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{global_8h_a9e5cacd45bb1c19404215981554b9e65}{Pair\+ID}}
+\item 
+int \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{global_8h_af8215c4cb752839765c6629bb7e808a3}{Pairatom1}}
+\item 
+int \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{global_8h_abd0063c6618301e17cc7ef9be8058081}{Pairatom2}}
+\item 
+double \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{global_8h_aa463dae6fdaca32114f15f2f670075c7}{Pair\+Xij}}
+\item 
+double \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{global_8h_ad17d42dcb59c5c4c54dec23afc5c8fcf}{Pair\+Yij}}
+\item 
+char \mbox{\hyperlink{global_8h_ab8efd087a2de9e165fa9330d99beecc5}{solver}} \mbox{[}128\mbox{]}
+\item 
+char \mbox{\hyperlink{global_8h_abe15117421a36ea636b2f0f00ff02c4e}{x\+Boundary}} \mbox{[}10\mbox{]}
+\item 
+char \mbox{\hyperlink{global_8h_a67ceb9a00a4ff8dfc0f1277eb52669e4}{y\+Boundary}} \mbox{[}10\mbox{]}
+\item 
+double \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{global_8h_a3e518d20c70a4d8bdfef3d5c3fd23d66}{Delta\+Xij\+Old}}
+\item 
+double \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{global_8h_a334598bd0223e5efe70f8feda0da36d1}{Delta\+Yij\+Old}}
+\item 
+double \mbox{\hyperlink{global_8h_ac4c6c1f393acf5acc5e6ee10f6ccdebd}{Delta\+Xij\+New}}
+\item 
+double \mbox{\hyperlink{global_8h_a1032bfee85174813d449cc4228640ceb}{Delta\+Yij\+New}}
+\item 
+double \mbox{\hyperlink{global_8h_ade840f3e8a16814d98ce1ee084509132}{Delta\+Xij}}
+\item 
+double \mbox{\hyperlink{global_8h_a9d2167980f32999a2bb47164a7b4c262}{Delta\+Yij}}
+\item 
+double \mbox{\hyperlink{global_8h_aa6a5fa6a69a47d82e8fe8bd08479ece2}{Delta\+VXij}}
+\item 
+double \mbox{\hyperlink{global_8h_ae556efd449ff8e37c1c54fb1ae561a14}{Delta\+VYij}}
+\item 
+double \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{global_8h_a17b70df357a0ed6e248f61a1219ed9a7}{Delta\+Xij\+Old\+Pair}}
+\item 
+double \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{global_8h_aaa4ef3f6f09ccb1e7a1bb4c6908e82a3}{Delta\+Yij\+Old\+Pair}}
+\item 
+int \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{global_8h_a65f3cbf0ee8813aae06be044d6c568ad}{mol\+ID}}
+\item 
+int \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{global_8h_a5b5269315eb08e6cec78e54252171ef0}{is\+Bonded}}
+\item 
+int \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{global_8h_a679d8d045f353a6544e2a03b3942bc5a}{cell\+List}}
+\item 
+int \mbox{\hyperlink{global_8h_a1be4ee12e5806fc7d12c86f58b938b4c}{cells}} \mbox{[}2+1\mbox{]}
+\item 
+int \mbox{\hyperlink{global_8h_a6cfd95afd0afebd625b889fb6e58371c}{rank}}
+\item 
+int \mbox{\hyperlink{global_8h_a439227feff9d7f55384e8780cfc2eb82}{size}}
+\item 
+int \mbox{\hyperlink{global_8h_a12828bf492e2410c9efe0f15ad2205ee}{master}}
+\item 
+double \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{global_8h_affb3c293e707ea3b440e35e7581cbaae}{fax}}
+\item 
+double \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{global_8h_a3151dcce91f6a9cfdd5593da0718648b}{fay}}
+\item 
+double \mbox{\hyperlink{global_8h_ab7880191c3c89274561d406831eca92a}{fu\+Sum}}
+\item 
+double \mbox{\hyperlink{global_8h_a2c8713450232d0b76fb6fdc7a49346ba}{fvir\+Sum}}
+\item 
+double \mbox{\hyperlink{global_8h_af85ccedcb3832ece58dc6458e9858b04}{frf\+Atom}}
+\item 
+double \mbox{\hyperlink{global_8h_a9b7d6fb2c7936c1e648c8af3260beb25}{u\+Sum\+Pair}}
+\item 
+double \mbox{\hyperlink{global_8h_a35bf08d49aa04729a9f7dd23a464a826}{u\+Sum\+Pair\+Per\+Atom}}
+\item 
+double \mbox{\hyperlink{global_8h_a217147ba7e53c5aa91861295fd29acab}{vir\+Sum\+Pair}}
+\item 
+double \mbox{\hyperlink{global_8h_a4ca279a3a01228351fec03dd3c051389}{vir\+Sum\+Pairxx}}
+\item 
+double \mbox{\hyperlink{global_8h_a1e26755e037e321d30f5a5a128140e2d}{vir\+Sum\+Pairyy}}
+\item 
+double \mbox{\hyperlink{global_8h_af5252e908f208e8efbc603a117c51cb7}{vir\+Sum\+Pairxy}}
+\item 
+double \mbox{\hyperlink{global_8h_a08413ab34f5604e910f1dbdc021a3c5f}{vir\+Sum\+Bond}}
+\item 
+double \mbox{\hyperlink{global_8h_ab86ba14519d191322a45fa6f760b16f8}{vir\+Sum\+Bondxx}}
+\item 
+double \mbox{\hyperlink{global_8h_aee51ff7fe82a7228ea1348855cf89915}{vir\+Sum\+Bondyy}}
+\item 
+double \mbox{\hyperlink{global_8h_a6669a78293d832c3b0c074886e6ecd19}{vir\+Sum\+Bondxy}}
+\item 
+double \mbox{\hyperlink{global_8h_ad41df8a242cc872c157a7328617f4957}{vir\+Sumxx}}
+\item 
+double \mbox{\hyperlink{global_8h_a1fc6778eedb1b18ef5b97d198eee67e9}{vir\+Sumyy}}
+\item 
+double \mbox{\hyperlink{global_8h_a486d537e9ff9b9bc9b3a538768d282b0}{vir\+Sumxy}}
+\item 
+int \mbox{\hyperlink{global_8h_a79490e320593cb02fb16b7add1213072}{freeze\+Atom\+Type}}
+\item 
+double \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{global_8h_acf270e6113a4c04ff43832e3676c4073}{cf\+Org}}
+\item 
+double \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{global_8h_a65c8541613338d3885f454c7f762ef47}{spacetime\+Corr}}
+\item 
+double \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{global_8h_ae34b3c3ecb0a71564a8d3a52d5bce50f}{cf\+Val}}
+\item 
+double \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{global_8h_a26084125f8afb4f1f04ff8291b8bb6e4}{spacetime\+Corr\+Av}}
+\item 
+int \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{global_8h_a69d30c3c1681890962f25dc4ab39b033}{index\+Corr}}
+\item 
+int \mbox{\hyperlink{global_8h_a126e05fd683450696e89337a44aa0943}{count\+Corr\+Av}}
+\item 
+int \mbox{\hyperlink{global_8h_a0b6b2b63776d19816bc4b546333d6146}{limit\+Corr\+Av}}
+\item 
+int \mbox{\hyperlink{global_8h_ab638d9b8ea6ae6103ee7d3dcb0ca4106}{n\+Buff\+Corr}}
+\item 
+int \mbox{\hyperlink{global_8h_ae6bb074a4f2d8b25747f5f1c3ed34e8e}{n\+Fun\+Corr}}
+\item 
+int \mbox{\hyperlink{global_8h_a1bb15d20732c39669d141e769b97d8a0}{n\+Val\+Corr}}
+\item 
+int \mbox{\hyperlink{global_8h_a4e088a34485e73c84b8929dc45d6f319}{step\+Corr}}
+\item 
+double \mbox{\hyperlink{global_8h_a409ac219990f0cf85a946b0f32a0cea0}{rf\+Atom}}
+\item 
+double \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{global_8h_a74f01c700b5540bed3184604a0cd6c17}{index\+Acf}}
+\item 
+double \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{global_8h_a9d680c9ee759157faecbb75ad8d91d63}{visc\+Acf}}
+\item 
+double \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{global_8h_aa14d3f1be7cb8fc0a8f4b26eac3b4ebb}{visc\+Acf\+Org}}
+\item 
+double \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{global_8h_a0eb9c034706ff9eeacb32ac2f0327e10}{visc\+Acf\+Av}}
+\item 
+double \mbox{\hyperlink{global_8h_a38b081058be3f7f6594654b9890b0943}{visc\+Acf\+Int}}
+\item 
+int \mbox{\hyperlink{global_8h_a48094c7b6092e1a21fcc91a371f230b6}{n\+Val\+Acf}}
+\item 
+int \mbox{\hyperlink{global_8h_a62bb5169e87a77023d99fa51468bf126}{n\+Buff\+Acf}}
+\item 
+int \mbox{\hyperlink{global_8h_a7187cdbfc7b7c8acd127dffed24c6f64}{step\+Acf}}
+\item 
+int \mbox{\hyperlink{global_8h_ab4d8c90fd1e7351e4792aba91063c20e}{count\+Acf\+Av}}
+\item 
+int \mbox{\hyperlink{global_8h_a9ee217916f83b1a9545e5c8563d4ae98}{limit\+Acf\+Av}}
+\item 
+double \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{global_8h_a8b70419767ded4d857709915fdbd0fc7}{hist\+Rdf}}
+\item 
+double \mbox{\hyperlink{global_8h_acdf103f0d5ee27e3fd16ce65e5704490}{range\+Rdf}}
+\item 
+int \mbox{\hyperlink{global_8h_a2ffa882c939ed143f77d2d23a389145a}{count\+Rdf}}
+\item 
+int \mbox{\hyperlink{global_8h_a40004b8e01bc3e357d48d7d9675ceea0}{limit\+Rdf}}
+\item 
+int \mbox{\hyperlink{global_8h_abe8258aaf81de052c6452b8b739c5c73}{size\+Hist\+Rdf}}
+\item 
+int \mbox{\hyperlink{global_8h_a4c0045ae072bc857abe3b38909bd2d08}{step\+Rdf}}
+\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{global_8h_ad2849cf781a4db22cc1b31eaaee50a4f}{prefix}}
+\item 
+char \mbox{\hyperlink{global_8h_aaec14fae1ae07d7dffd660f65cbe0ec5}{result}} \mbox{[}250\mbox{]}
+\item 
+FILE \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{global_8h_a7a7a3c24c505afb28c4eb95a627e3f5b}{fpresult}}
+\item 
+char \mbox{\hyperlink{global_8h_a77f601f8012d95c5599ea1e778993b25}{xyz}} \mbox{[}256\mbox{]}
+\item 
+FILE \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{global_8h_a29de37c95c54c8fc5da3c768d0f0423a}{fpxyz}}
+\item 
+char \mbox{\hyperlink{global_8h_ac6bc531f1174700eeac66cbd7def632b}{bond}} \mbox{[}256\mbox{]}
+\item 
+FILE \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{global_8h_a84ec84e6a4559d97490a21296cf7ca4b}{fpbond}}
+\item 
+char \mbox{\hyperlink{global_8h_a27eb2d25819ce62e81ca3bd79024f863}{dump}} \mbox{[}256\mbox{]}
+\item 
+FILE \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{global_8h_ad50dd3dd9a12417ee78580de61d2cc74}{fpdump}}
+\item 
+char \mbox{\hyperlink{global_8h_a3321d3bf7f1411a2e4da9641ba2f6e90}{dnsty}} \mbox{[}256\mbox{]}
+\item 
+FILE \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{global_8h_a3c14565d0262fd815906501678906831}{fpdnsty}}
+\item 
+char \mbox{\hyperlink{global_8h_a8ea6a64d519c74ea82fa4c90cc6b9777}{visc}} \mbox{[}256\mbox{]}
+\item 
+FILE \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{global_8h_ab0e60da5ef9ad175bfd82f75856dadca}{fpvisc}}
+\item 
+char \mbox{\hyperlink{global_8h_a521d9bd86ff85d0a6ff7c052ad854dab}{rdf}} \mbox{[}256\mbox{]}
+\item 
+FILE \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{global_8h_a9b0f0d7032e5e928e03460aef4b3a508}{fprdf}}
+\item 
+char \mbox{\hyperlink{global_8h_a32ac1f5d451862c2cf8a66465a5ec087}{vrms}} \mbox{[}256\mbox{]}
+\item 
+FILE \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{global_8h_a97bafb66bb002e44290e629c6b7643c2}{fpvrms}}
+\item 
+char \mbox{\hyperlink{global_8h_a8a50faf68db5dbea70c683ffce3e8045}{stress}} \mbox{[}256\mbox{]}
+\item 
+FILE \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{global_8h_a5872726620f3d28a6453c696342fa0f9}{fpstress}}
+\item 
+char \mbox{\hyperlink{global_8h_a8803ada867470467948dd0e8370e6bbd}{momentum}} \mbox{[}256\mbox{]}
+\item 
+FILE \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{global_8h_a68000886d456fb57d5ed97fd01b39d2e}{fpmomentum}}
+\item 
+char \mbox{\hyperlink{global_8h_a82b24c920b9892ac81bc87c6f5304a99}{com}} \mbox{[}256\mbox{]}
+\item 
+FILE \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{global_8h_aa75a4d5b0dbb420e1605eb7378d4046e}{fpcom}}
+\item 
+char \mbox{\hyperlink{global_8h_a56237778263404bd41225f4aa5a1d158}{pair}} \mbox{[}256\mbox{]}
+\item 
+FILE \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{global_8h_ab30ed54db09d0748b912c23a34a2a92a}{fppair}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{global_8h_a77366c1bd428629dc898e188bfd182a3}\label{global_8h_a77366c1bd428629dc898e188bfd182a3} 
+\index{global.h@{global.h}!EXTERN@{EXTERN}}
+\index{EXTERN@{EXTERN}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{EXTERN}{EXTERN}}
+{\footnotesize\ttfamily \#define EXTERN~extern}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00008}{8}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+\Hypertarget{global_8h_a2b1fd2d28c6a7d4a3f7027cc1b6466f3}\label{global_8h_a2b1fd2d28c6a7d4a3f7027cc1b6466f3} 
+\index{global.h@{global.h}!NDIM@{NDIM}}
+\index{NDIM@{NDIM}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{NDIM}{NDIM}}
+{\footnotesize\ttfamily \#define NDIM~2}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00013}{13}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{ComputeBondForce_8c_source_l00028}{Compute\+Bond\+Force()}}, \mbox{\hyperlink{ComputeForcesCells_8c_source_l00025}{Compute\+Forces\+Cells()}}, \mbox{\hyperlink{ComputePairForce_8c_source_l00027}{Compute\+Pair\+Force()}}, \mbox{\hyperlink{EvalProps_8c_source_l00026}{Eval\+Props()}}, \mbox{\hyperlink{EvalRdf_8c_source_l00026}{Eval\+Rdf()}}, and \mbox{\hyperlink{EvalSpacetimeCorr_8c_source_l00026}{Eval\+Spacetime\+Corr()}}.
+
+\Hypertarget{global_8h_af1c0594341f38649c6f2e9d25bff072f}\label{global_8h_af1c0594341f38649c6f2e9d25bff072f} 
+\index{global.h@{global.h}!SignR@{SignR}}
+\index{SignR@{SignR}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{SignR}{SignR}}
+{\footnotesize\ttfamily \#define SignR(\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{y }\end{DoxyParamCaption})~(((y) $>$= 0) ? (x) \+: (-\/ (x)))}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00015}{15}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{EvalRdf_8c_source_l00026}{Eval\+Rdf()}}.
+
+\Hypertarget{global_8h_a88aaaec93066182aaf8cf3e0f8a676e2}\label{global_8h_a88aaaec93066182aaf8cf3e0f8a676e2} 
+\index{global.h@{global.h}!Sqr@{Sqr}}
+\index{Sqr@{Sqr}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{Sqr}{Sqr}}
+{\footnotesize\ttfamily \#define Sqr(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~((x) \texorpdfstring{$\ast$}{*} (x))}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00014}{14}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{AccumProps_8c_source_l00025}{Accum\+Props()}}, \mbox{\hyperlink{BrownianStep_8c_source_l00026}{Brownian\+Step()}}, \mbox{\hyperlink{ComputeBondForce_8c_source_l00028}{Compute\+Bond\+Force()}}, \mbox{\hyperlink{ComputeForcesCells_8c_source_l00025}{Compute\+Forces\+Cells()}}, \mbox{\hyperlink{ComputePairForce_8c_source_l00027}{Compute\+Pair\+Force()}}, \mbox{\hyperlink{EvalProps_8c_source_l00026}{Eval\+Props()}}, \mbox{\hyperlink{EvalRdf_8c_source_l00026}{Eval\+Rdf()}}, \mbox{\hyperlink{EvalVrms_8c_source_l00027}{Eval\+Vrms()}}, and \mbox{\hyperlink{LeapfrogStep_8c_source_l00025}{Leapfrog\+Step()}}.
+
+
+
+\doxysubsection{Typedef Documentation}
+\Hypertarget{global_8h_a11d147c64891830c9e79b3315b1b2e21}\label{global_8h_a11d147c64891830c9e79b3315b1b2e21} 
+\index{global.h@{global.h}!real@{real}}
+\index{real@{real}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{real}{real}}
+{\footnotesize\ttfamily typedef double \mbox{\hyperlink{global_8h_a11d147c64891830c9e79b3315b1b2e21}{real}}}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00011}{11}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{global_8h_a7ef9937bc3aea03091e40e733df7353e}\label{global_8h_a7ef9937bc3aea03091e40e733df7353e} 
+\index{global.h@{global.h}!atom1@{atom1}}
+\index{atom1@{atom1}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{atom1}{atom1}}
+{\footnotesize\ttfamily int\texorpdfstring{$\ast$}{*} atom1\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Referenced by \mbox{\hyperlink{Close_8c_source_l00024}{Close()}}, \mbox{\hyperlink{ComputeBondForce_8c_source_l00028}{Compute\+Bond\+Force()}}, \mbox{\hyperlink{DumpBonds_8c_source_l00024}{Dump\+Bonds()}}, \mbox{\hyperlink{DumpRestart_8c_source_l00025}{Dump\+Restart()}}, and \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}.
+
+\Hypertarget{global_8h_a28d9ba88ad3c8e8b5cc5608b2cc0b0b5}\label{global_8h_a28d9ba88ad3c8e8b5cc5608b2cc0b0b5} 
+\index{global.h@{global.h}!atom2@{atom2}}
+\index{atom2@{atom2}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{atom2}{atom2}}
+{\footnotesize\ttfamily int \texorpdfstring{$\ast$}{*} atom2}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00034}{34}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{Close_8c_source_l00024}{Close()}}, \mbox{\hyperlink{ComputeBondForce_8c_source_l00028}{Compute\+Bond\+Force()}}, \mbox{\hyperlink{DumpBonds_8c_source_l00024}{Dump\+Bonds()}}, \mbox{\hyperlink{DumpRestart_8c_source_l00025}{Dump\+Restart()}}, and \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}.
+
+\Hypertarget{global_8h_af2e16c834f37dce5699222281ce6e302}\label{global_8h_af2e16c834f37dce5699222281ce6e302} 
+\index{global.h@{global.h}!atomID@{atomID}}
+\index{atomID@{atomID}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{atomID}{atomID}}
+{\footnotesize\ttfamily int\texorpdfstring{$\ast$}{*} atom\+ID\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Referenced by \mbox{\hyperlink{Close_8c_source_l00024}{Close()}}, \mbox{\hyperlink{DumpRestart_8c_source_l00025}{Dump\+Restart()}}, \mbox{\hyperlink{DumpState_8c_source_l00025}{Dump\+State()}}, \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}, and \mbox{\hyperlink{Trajectory_8c_source_l00025}{Trajectory()}}.
+
+\Hypertarget{global_8h_a7bc962983a9db9deeab76d600db384c7}\label{global_8h_a7bc962983a9db9deeab76d600db384c7} 
+\index{global.h@{global.h}!atomIDInterface@{atomIDInterface}}
+\index{atomIDInterface@{atomIDInterface}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{atomIDInterface}{atomIDInterface}}
+{\footnotesize\ttfamily int\texorpdfstring{$\ast$}{*} atom\+IDInterface\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Referenced by \mbox{\hyperlink{Close_8c_source_l00024}{Close()}}, \mbox{\hyperlink{ComputePairForce_8c_source_l00027}{Compute\+Pair\+Force()}}, and \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}.
+
+\Hypertarget{global_8h_a1b28db247f294d5c24571ca1a942c4a4}\label{global_8h_a1b28db247f294d5c24571ca1a942c4a4} 
+\index{global.h@{global.h}!atomMass@{atomMass}}
+\index{atomMass@{atomMass}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{atomMass}{atomMass}}
+{\footnotesize\ttfamily double\texorpdfstring{$\ast$}{*} atom\+Mass\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Referenced by \mbox{\hyperlink{Close_8c_source_l00024}{Close()}}, \mbox{\hyperlink{ComputePairForce_8c_source_l00027}{Compute\+Pair\+Force()}}, \mbox{\hyperlink{EvalCom_8c_source_l00027}{Eval\+Com()}}, and \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}.
+
+\Hypertarget{global_8h_ab715ebf9f35659a111ee6c5eedc360af}\label{global_8h_ab715ebf9f35659a111ee6c5eedc360af} 
+\index{global.h@{global.h}!atomRadius@{atomRadius}}
+\index{atomRadius@{atomRadius}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{atomRadius}{atomRadius}}
+{\footnotesize\ttfamily double\texorpdfstring{$\ast$}{*} atom\+Radius\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Referenced by \mbox{\hyperlink{ApplyBoundaryCond_8c_source_l00027}{Apply\+Boundary\+Cond()}}, \mbox{\hyperlink{Close_8c_source_l00024}{Close()}}, \mbox{\hyperlink{ComputeForcesCells_8c_source_l00025}{Compute\+Forces\+Cells()}}, \mbox{\hyperlink{ComputePairForce_8c_source_l00027}{Compute\+Pair\+Force()}}, \mbox{\hyperlink{DumpRestart_8c_source_l00025}{Dump\+Restart()}}, \mbox{\hyperlink{DumpState_8c_source_l00025}{Dump\+State()}}, \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}, and \mbox{\hyperlink{Trajectory_8c_source_l00025}{Trajectory()}}.
+
+\Hypertarget{global_8h_ad2f384e523b15b13c82e3d6db95b402e}\label{global_8h_ad2f384e523b15b13c82e3d6db95b402e} 
+\index{global.h@{global.h}!atomType@{atomType}}
+\index{atomType@{atomType}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{atomType}{atomType}}
+{\footnotesize\ttfamily int\texorpdfstring{$\ast$}{*} atom\+Type\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Referenced by \mbox{\hyperlink{ApplyDrivingForce_8c_source_l00025}{Apply\+Driving\+Force()}}, \mbox{\hyperlink{Close_8c_source_l00024}{Close()}}, \mbox{\hyperlink{DumpRestart_8c_source_l00025}{Dump\+Restart()}}, \mbox{\hyperlink{DumpState_8c_source_l00025}{Dump\+State()}}, \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}, \mbox{\hyperlink{LeapfrogStep_8c_source_l00025}{Leapfrog\+Step()}}, \mbox{\hyperlink{Trajectory_8c_source_l00025}{Trajectory()}}, and \mbox{\hyperlink{VelocityVerletStep_8c_source_l00026}{Velocity\+Verlet\+Step()}}.
+
+\Hypertarget{global_8h_a82d645cda6bea6506c7b5f4f7453986c}\label{global_8h_a82d645cda6bea6506c7b5f4f7453986c} 
+\index{global.h@{global.h}!ax@{ax}}
+\index{ax@{ax}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{ax}{ax}}
+{\footnotesize\ttfamily double \texorpdfstring{$\ast$}{*} ax}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00017}{17}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{ApplyDrivingForce_8c_source_l00025}{Apply\+Driving\+Force()}}, \mbox{\hyperlink{ApplyForce_8c_source_l00025}{Apply\+Force()}}, \mbox{\hyperlink{ApplyViscous_8c_source_l00025}{Apply\+Viscous()}}, \mbox{\hyperlink{BrownianStep_8c_source_l00026}{Brownian\+Step()}}, \mbox{\hyperlink{Close_8c_source_l00024}{Close()}}, \mbox{\hyperlink{ComputeBondForce_8c_source_l00028}{Compute\+Bond\+Force()}}, \mbox{\hyperlink{ComputeForcesCells_8c_source_l00025}{Compute\+Forces\+Cells()}}, \mbox{\hyperlink{ComputePairForce_8c_source_l00027}{Compute\+Pair\+Force()}}, \mbox{\hyperlink{DumpState_8c_source_l00025}{Dump\+State()}}, \mbox{\hyperlink{EvalProps_8c_source_l00026}{Eval\+Props()}}, \mbox{\hyperlink{EvalVacf_8c_source_l00026}{Eval\+Vacf()}}, \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}, \mbox{\hyperlink{LeapfrogStep_8c_source_l00025}{Leapfrog\+Step()}}, \mbox{\hyperlink{Trajectory_8c_source_l00025}{Trajectory()}}, and \mbox{\hyperlink{VelocityVerletStep_8c_source_l00026}{Velocity\+Verlet\+Step()}}.
+
+\Hypertarget{global_8h_a68c7afda02d0f26c1987a4eee13928f2}\label{global_8h_a68c7afda02d0f26c1987a4eee13928f2} 
+\index{global.h@{global.h}!ay@{ay}}
+\index{ay@{ay}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{ay}{ay}}
+{\footnotesize\ttfamily double \texorpdfstring{$\ast$}{*} ay}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00017}{17}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{ApplyDrivingForce_8c_source_l00025}{Apply\+Driving\+Force()}}, \mbox{\hyperlink{ApplyForce_8c_source_l00025}{Apply\+Force()}}, \mbox{\hyperlink{ApplyViscous_8c_source_l00025}{Apply\+Viscous()}}, \mbox{\hyperlink{BrownianStep_8c_source_l00026}{Brownian\+Step()}}, \mbox{\hyperlink{Close_8c_source_l00024}{Close()}}, \mbox{\hyperlink{ComputeBondForce_8c_source_l00028}{Compute\+Bond\+Force()}}, \mbox{\hyperlink{ComputeForcesCells_8c_source_l00025}{Compute\+Forces\+Cells()}}, \mbox{\hyperlink{ComputePairForce_8c_source_l00027}{Compute\+Pair\+Force()}}, \mbox{\hyperlink{DumpState_8c_source_l00025}{Dump\+State()}}, \mbox{\hyperlink{EvalProps_8c_source_l00026}{Eval\+Props()}}, \mbox{\hyperlink{EvalVacf_8c_source_l00026}{Eval\+Vacf()}}, \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}, \mbox{\hyperlink{LeapfrogStep_8c_source_l00025}{Leapfrog\+Step()}}, \mbox{\hyperlink{Trajectory_8c_source_l00025}{Trajectory()}}, and \mbox{\hyperlink{VelocityVerletStep_8c_source_l00026}{Velocity\+Verlet\+Step()}}.
+
+\Hypertarget{global_8h_ac6bc531f1174700eeac66cbd7def632b}\label{global_8h_ac6bc531f1174700eeac66cbd7def632b} 
+\index{global.h@{global.h}!bond@{bond}}
+\index{bond@{bond}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{bond}{bond}}
+{\footnotesize\ttfamily char bond\mbox{[}256\mbox{]}\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Referenced by \mbox{\hyperlink{main_8c_source_l00050}{main()}}.
+
+\Hypertarget{global_8h_a8d2c058f09cdaa1bc8c848a33e0fd745}\label{global_8h_a8d2c058f09cdaa1bc8c848a33e0fd745} 
+\index{global.h@{global.h}!BondEnergy@{BondEnergy}}
+\index{BondEnergy@{BondEnergy}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{BondEnergy}{BondEnergy}}
+{\footnotesize\ttfamily double\texorpdfstring{$\ast$}{*} Bond\+Energy\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Referenced by \mbox{\hyperlink{ComputeBondForce_8c_source_l00028}{Compute\+Bond\+Force()}}, and \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}.
+
+\Hypertarget{global_8h_aa53f052764d0986e9691ee3e941682d9}\label{global_8h_aa53f052764d0986e9691ee3e941682d9} 
+\index{global.h@{global.h}!BondEnergyPerAtom@{BondEnergyPerAtom}}
+\index{BondEnergyPerAtom@{BondEnergyPerAtom}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{BondEnergyPerAtom}{BondEnergyPerAtom}}
+{\footnotesize\ttfamily double Bond\+Energy\+Per\+Atom}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00038}{38}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{EvalProps_8c_source_l00026}{Eval\+Props()}}, and \mbox{\hyperlink{PrintSummary_8c_source_l00004}{Print\+Summary()}}.
+
+\Hypertarget{global_8h_a15d105ee1521b15d76eeb63ac4351f6f}\label{global_8h_a15d105ee1521b15d76eeb63ac4351f6f} 
+\index{global.h@{global.h}!BondID@{BondID}}
+\index{BondID@{BondID}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{BondID}{BondID}}
+{\footnotesize\ttfamily int\texorpdfstring{$\ast$}{*} Bond\+ID\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Referenced by \mbox{\hyperlink{Close_8c_source_l00024}{Close()}}, \mbox{\hyperlink{DumpBonds_8c_source_l00024}{Dump\+Bonds()}}, \mbox{\hyperlink{DumpRestart_8c_source_l00025}{Dump\+Restart()}}, and \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}.
+
+\Hypertarget{global_8h_a78926ce24b541f8bdc741a75815eecf2}\label{global_8h_a78926ce24b541f8bdc741a75815eecf2} 
+\index{global.h@{global.h}!BondLength@{BondLength}}
+\index{BondLength@{BondLength}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{BondLength}{BondLength}}
+{\footnotesize\ttfamily double \texorpdfstring{$\ast$}{*} Bond\+Length}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00037}{37}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{ComputeBondForce_8c_source_l00028}{Compute\+Bond\+Force()}}, \mbox{\hyperlink{DumpBonds_8c_source_l00024}{Dump\+Bonds()}}, and \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}.
+
+\Hypertarget{global_8h_a389f660313ee3764aaaa6997121a5400}\label{global_8h_a389f660313ee3764aaaa6997121a5400} 
+\index{global.h@{global.h}!BondType@{BondType}}
+\index{BondType@{BondType}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{BondType}{BondType}}
+{\footnotesize\ttfamily int \texorpdfstring{$\ast$}{*} Bond\+Type}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00035}{35}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{Close_8c_source_l00024}{Close()}}, \mbox{\hyperlink{DumpBonds_8c_source_l00024}{Dump\+Bonds()}}, \mbox{\hyperlink{DumpRestart_8c_source_l00025}{Dump\+Restart()}}, and \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}.
+
+\Hypertarget{global_8h_a679d8d045f353a6544e2a03b3942bc5a}\label{global_8h_a679d8d045f353a6544e2a03b3942bc5a} 
+\index{global.h@{global.h}!cellList@{cellList}}
+\index{cellList@{cellList}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{cellList}{cellList}}
+{\footnotesize\ttfamily int\texorpdfstring{$\ast$}{*} cell\+List\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Referenced by \mbox{\hyperlink{Close_8c_source_l00024}{Close()}}, \mbox{\hyperlink{ComputeForcesCells_8c_source_l00025}{Compute\+Forces\+Cells()}}, and \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}.
+
+\Hypertarget{global_8h_a1be4ee12e5806fc7d12c86f58b938b4c}\label{global_8h_a1be4ee12e5806fc7d12c86f58b938b4c} 
+\index{global.h@{global.h}!cells@{cells}}
+\index{cells@{cells}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{cells}{cells}}
+{\footnotesize\ttfamily int cells\mbox{[}2+1\mbox{]}}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00077}{77}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{ComputeForcesCells_8c_source_l00025}{Compute\+Forces\+Cells()}}, and \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}.
+
+\Hypertarget{global_8h_acf270e6113a4c04ff43832e3676c4073}\label{global_8h_acf270e6113a4c04ff43832e3676c4073} 
+\index{global.h@{global.h}!cfOrg@{cfOrg}}
+\index{cfOrg@{cfOrg}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{cfOrg}{cfOrg}}
+{\footnotesize\ttfamily double\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} cf\+Org\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Referenced by \mbox{\hyperlink{AllocArrays_8c_source_l00025}{Alloc\+Arrays()}}, \mbox{\hyperlink{Close_8c_source_l00024}{Close()}}, and \mbox{\hyperlink{EvalSpacetimeCorr_8c_source_l00026}{Eval\+Spacetime\+Corr()}}.
+
+\Hypertarget{global_8h_ae34b3c3ecb0a71564a8d3a52d5bce50f}\label{global_8h_ae34b3c3ecb0a71564a8d3a52d5bce50f} 
+\index{global.h@{global.h}!cfVal@{cfVal}}
+\index{cfVal@{cfVal}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{cfVal}{cfVal}}
+{\footnotesize\ttfamily double \texorpdfstring{$\ast$}{*} cf\+Val}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00088}{88}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{AllocArrays_8c_source_l00025}{Alloc\+Arrays()}}, \mbox{\hyperlink{Close_8c_source_l00024}{Close()}}, and \mbox{\hyperlink{EvalSpacetimeCorr_8c_source_l00026}{Eval\+Spacetime\+Corr()}}.
+
+\Hypertarget{global_8h_a82b24c920b9892ac81bc87c6f5304a99}\label{global_8h_a82b24c920b9892ac81bc87c6f5304a99} 
+\index{global.h@{global.h}!com@{com}}
+\index{com@{com}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{com}{com}}
+{\footnotesize\ttfamily char com\mbox{[}256\mbox{]}\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Referenced by \mbox{\hyperlink{main_8c_source_l00050}{main()}}.
+
+\Hypertarget{global_8h_ada9cdbb5cb81a471301bdf2cb5a07309}\label{global_8h_ada9cdbb5cb81a471301bdf2cb5a07309} 
+\index{global.h@{global.h}!ComX@{ComX}}
+\index{ComX@{ComX}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{ComX}{ComX}}
+{\footnotesize\ttfamily double ComX\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Referenced by \mbox{\hyperlink{EvalCom_8c_source_l00027}{Eval\+Com()}}, and \mbox{\hyperlink{PrintCom_8c_source_l00028}{Print\+Com()}}.
+
+\Hypertarget{global_8h_aa36ae33a64f6fcecea03e11c79da6d57}\label{global_8h_aa36ae33a64f6fcecea03e11c79da6d57} 
+\index{global.h@{global.h}!ComX0@{ComX0}}
+\index{ComX0@{ComX0}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{ComX0}{ComX0}}
+{\footnotesize\ttfamily double Com\+X0}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00044}{44}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{EvalCom_8c_source_l00027}{Eval\+Com()}}.
+
+\Hypertarget{global_8h_a73e0501e577e426f4f07748c31c94d8f}\label{global_8h_a73e0501e577e426f4f07748c31c94d8f} 
+\index{global.h@{global.h}!ComXRatio@{ComXRatio}}
+\index{ComXRatio@{ComXRatio}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{ComXRatio}{ComXRatio}}
+{\footnotesize\ttfamily double Com\+XRatio}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00044}{44}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{EvalCom_8c_source_l00027}{Eval\+Com()}}.
+
+\Hypertarget{global_8h_a2c4c8baa906e18471ad04f24ae6a7134}\label{global_8h_a2c4c8baa906e18471ad04f24ae6a7134} 
+\index{global.h@{global.h}!ComY@{ComY}}
+\index{ComY@{ComY}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{ComY}{ComY}}
+{\footnotesize\ttfamily double ComY}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00044}{44}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{EvalCom_8c_source_l00027}{Eval\+Com()}}, and \mbox{\hyperlink{PrintCom_8c_source_l00028}{Print\+Com()}}.
+
+\Hypertarget{global_8h_aa8f87142a53bdf396c36a1382ba527eb}\label{global_8h_aa8f87142a53bdf396c36a1382ba527eb} 
+\index{global.h@{global.h}!ComY0@{ComY0}}
+\index{ComY0@{ComY0}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{ComY0}{ComY0}}
+{\footnotesize\ttfamily double Com\+Y0}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00044}{44}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{EvalCom_8c_source_l00027}{Eval\+Com()}}.
+
+\Hypertarget{global_8h_a109231792e1a97d0cfc4a1d77a525f9c}\label{global_8h_a109231792e1a97d0cfc4a1d77a525f9c} 
+\index{global.h@{global.h}!ComYRatio@{ComYRatio}}
+\index{ComYRatio@{ComYRatio}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{ComYRatio}{ComYRatio}}
+{\footnotesize\ttfamily double Com\+YRatio}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00044}{44}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{EvalCom_8c_source_l00027}{Eval\+Com()}}.
+
+\Hypertarget{global_8h_ab4d8c90fd1e7351e4792aba91063c20e}\label{global_8h_ab4d8c90fd1e7351e4792aba91063c20e} 
+\index{global.h@{global.h}!countAcfAv@{countAcfAv}}
+\index{countAcfAv@{countAcfAv}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{countAcfAv}{countAcfAv}}
+{\footnotesize\ttfamily int count\+Acf\+Av}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00094}{94}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{AccumVacf_8c_source_l00027}{Accum\+Vacf()}}, and \mbox{\hyperlink{ZeroVacf_8c_source_l00025}{Zero\+Vacf()}}.
+
+\Hypertarget{global_8h_a126e05fd683450696e89337a44aa0943}\label{global_8h_a126e05fd683450696e89337a44aa0943} 
+\index{global.h@{global.h}!countCorrAv@{countCorrAv}}
+\index{countCorrAv@{countCorrAv}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{countCorrAv}{countCorrAv}}
+{\footnotesize\ttfamily int count\+Corr\+Av}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00089}{89}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{EvalSpacetimeCorr_8c_source_l00026}{Eval\+Spacetime\+Corr()}}, and \mbox{\hyperlink{SetupJob_8c_source_l00027}{Setup\+Job()}}.
+
+\Hypertarget{global_8h_a2ffa882c939ed143f77d2d23a389145a}\label{global_8h_a2ffa882c939ed143f77d2d23a389145a} 
+\index{global.h@{global.h}!countRdf@{countRdf}}
+\index{countRdf@{countRdf}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{countRdf}{countRdf}}
+{\footnotesize\ttfamily int count\+Rdf\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Referenced by \mbox{\hyperlink{EvalRdf_8c_source_l00026}{Eval\+Rdf()}}, and \mbox{\hyperlink{SetupJob_8c_source_l00027}{Setup\+Job()}}.
+
+\Hypertarget{global_8h_a9a92b6a568b5731eafbca7a35ba6a5af}\label{global_8h_a9a92b6a568b5731eafbca7a35ba6a5af} 
+\index{global.h@{global.h}!DampFlag@{DampFlag}}
+\index{DampFlag@{DampFlag}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{DampFlag}{DampFlag}}
+{\footnotesize\ttfamily int Damp\+Flag\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Referenced by \mbox{\hyperlink{ComputeBondForce_8c_source_l00028}{Compute\+Bond\+Force()}}, \mbox{\hyperlink{ComputePairForce_8c_source_l00027}{Compute\+Pair\+Force()}}, and \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}.
+
+\Hypertarget{global_8h_a7c0541254dac7a3f117d27b2122e9378}\label{global_8h_a7c0541254dac7a3f117d27b2122e9378} 
+\index{global.h@{global.h}!deltaT@{deltaT}}
+\index{deltaT@{deltaT}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{deltaT}{deltaT}}
+{\footnotesize\ttfamily double deltaT}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00020}{20}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{AccumVacf_8c_source_l00027}{Accum\+Vacf()}}, \mbox{\hyperlink{BrownianStep_8c_source_l00026}{Brownian\+Step()}}, \mbox{\hyperlink{ComputeBondForce_8c_source_l00028}{Compute\+Bond\+Force()}}, \mbox{\hyperlink{ComputePairForce_8c_source_l00027}{Compute\+Pair\+Force()}}, \mbox{\hyperlink{EvalProps_8c_source_l00026}{Eval\+Props()}}, \mbox{\hyperlink{EvalSpacetimeCorr_8c_source_l00026}{Eval\+Spacetime\+Corr()}}, \mbox{\hyperlink{EvalVacf_8c_source_l00026}{Eval\+Vacf()}}, \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}, \mbox{\hyperlink{LeapfrogStep_8c_source_l00025}{Leapfrog\+Step()}}, \mbox{\hyperlink{main_8c_source_l00050}{main()}}, \mbox{\hyperlink{PrintVacf_8c_source_l00025}{Print\+Vacf()}}, and \mbox{\hyperlink{VelocityVerletStep_8c_source_l00026}{Velocity\+Verlet\+Step()}}.
+
+\Hypertarget{global_8h_aa6a5fa6a69a47d82e8fe8bd08479ece2}\label{global_8h_aa6a5fa6a69a47d82e8fe8bd08479ece2} 
+\index{global.h@{global.h}!DeltaVXij@{DeltaVXij}}
+\index{DeltaVXij@{DeltaVXij}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{DeltaVXij}{DeltaVXij}}
+{\footnotesize\ttfamily double Delta\+VXij}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00069}{69}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{ComputeBondForce_8c_source_l00028}{Compute\+Bond\+Force()}}, and \mbox{\hyperlink{ComputePairForce_8c_source_l00027}{Compute\+Pair\+Force()}}.
+
+\Hypertarget{global_8h_ae556efd449ff8e37c1c54fb1ae561a14}\label{global_8h_ae556efd449ff8e37c1c54fb1ae561a14} 
+\index{global.h@{global.h}!DeltaVYij@{DeltaVYij}}
+\index{DeltaVYij@{DeltaVYij}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{DeltaVYij}{DeltaVYij}}
+{\footnotesize\ttfamily double Delta\+VYij}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00069}{69}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{ComputeBondForce_8c_source_l00028}{Compute\+Bond\+Force()}}, and \mbox{\hyperlink{ComputePairForce_8c_source_l00027}{Compute\+Pair\+Force()}}.
+
+\Hypertarget{global_8h_af4ab0506048ab0512eb4f1e963c2a238}\label{global_8h_af4ab0506048ab0512eb4f1e963c2a238} 
+\index{global.h@{global.h}!DeltaX@{DeltaX}}
+\index{DeltaX@{DeltaX}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{DeltaX}{DeltaX}}
+{\footnotesize\ttfamily double DeltaX}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00046}{46}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{DisplaceAtoms_8c_source_l00025}{Displace\+Atoms()}}, and \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}.
+
+\Hypertarget{global_8h_ade840f3e8a16814d98ce1ee084509132}\label{global_8h_ade840f3e8a16814d98ce1ee084509132} 
+\index{global.h@{global.h}!DeltaXij@{DeltaXij}}
+\index{DeltaXij@{DeltaXij}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{DeltaXij}{DeltaXij}}
+{\footnotesize\ttfamily double Delta\+Xij\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Referenced by \mbox{\hyperlink{ComputeBondForce_8c_source_l00028}{Compute\+Bond\+Force()}}, and \mbox{\hyperlink{ComputePairForce_8c_source_l00027}{Compute\+Pair\+Force()}}.
+
+\Hypertarget{global_8h_ac4c6c1f393acf5acc5e6ee10f6ccdebd}\label{global_8h_ac4c6c1f393acf5acc5e6ee10f6ccdebd} 
+\index{global.h@{global.h}!DeltaXijNew@{DeltaXijNew}}
+\index{DeltaXijNew@{DeltaXijNew}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{DeltaXijNew}{DeltaXijNew}}
+{\footnotesize\ttfamily double Delta\+Xij\+New\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Referenced by \mbox{\hyperlink{ComputeBondForce_8c_source_l00028}{Compute\+Bond\+Force()}}, and \mbox{\hyperlink{ComputePairForce_8c_source_l00027}{Compute\+Pair\+Force()}}.
+
+\Hypertarget{global_8h_a3e518d20c70a4d8bdfef3d5c3fd23d66}\label{global_8h_a3e518d20c70a4d8bdfef3d5c3fd23d66} 
+\index{global.h@{global.h}!DeltaXijOld@{DeltaXijOld}}
+\index{DeltaXijOld@{DeltaXijOld}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{DeltaXijOld}{DeltaXijOld}}
+{\footnotesize\ttfamily double\texorpdfstring{$\ast$}{*} Delta\+Xij\+Old\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Referenced by \mbox{\hyperlink{Close_8c_source_l00024}{Close()}}, \mbox{\hyperlink{ComputeBondForce_8c_source_l00028}{Compute\+Bond\+Force()}}, and \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}.
+
+\Hypertarget{global_8h_a17b70df357a0ed6e248f61a1219ed9a7}\label{global_8h_a17b70df357a0ed6e248f61a1219ed9a7} 
+\index{global.h@{global.h}!DeltaXijOldPair@{DeltaXijOldPair}}
+\index{DeltaXijOldPair@{DeltaXijOldPair}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{DeltaXijOldPair}{DeltaXijOldPair}}
+{\footnotesize\ttfamily double\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} Delta\+Xij\+Old\+Pair\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Referenced by \mbox{\hyperlink{Close_8c_source_l00024}{Close()}}, \mbox{\hyperlink{ComputePairForce_8c_source_l00027}{Compute\+Pair\+Force()}}, and \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}.
+
+\Hypertarget{global_8h_a38f5e3e34b48c3b6e72609b7d2a5ad2a}\label{global_8h_a38f5e3e34b48c3b6e72609b7d2a5ad2a} 
+\index{global.h@{global.h}!DeltaY@{DeltaY}}
+\index{DeltaY@{DeltaY}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{DeltaY}{DeltaY}}
+{\footnotesize\ttfamily double DeltaY\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Referenced by \mbox{\hyperlink{DisplaceAtoms_8c_source_l00025}{Displace\+Atoms()}}, and \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}.
+
+\Hypertarget{global_8h_a9d2167980f32999a2bb47164a7b4c262}\label{global_8h_a9d2167980f32999a2bb47164a7b4c262} 
+\index{global.h@{global.h}!DeltaYij@{DeltaYij}}
+\index{DeltaYij@{DeltaYij}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{DeltaYij}{DeltaYij}}
+{\footnotesize\ttfamily double Delta\+Yij}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00069}{69}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{ComputeBondForce_8c_source_l00028}{Compute\+Bond\+Force()}}, and \mbox{\hyperlink{ComputePairForce_8c_source_l00027}{Compute\+Pair\+Force()}}.
+
+\Hypertarget{global_8h_a1032bfee85174813d449cc4228640ceb}\label{global_8h_a1032bfee85174813d449cc4228640ceb} 
+\index{global.h@{global.h}!DeltaYijNew@{DeltaYijNew}}
+\index{DeltaYijNew@{DeltaYijNew}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{DeltaYijNew}{DeltaYijNew}}
+{\footnotesize\ttfamily double Delta\+Yij\+New}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00068}{68}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{ComputeBondForce_8c_source_l00028}{Compute\+Bond\+Force()}}, and \mbox{\hyperlink{ComputePairForce_8c_source_l00027}{Compute\+Pair\+Force()}}.
+
+\Hypertarget{global_8h_a334598bd0223e5efe70f8feda0da36d1}\label{global_8h_a334598bd0223e5efe70f8feda0da36d1} 
+\index{global.h@{global.h}!DeltaYijOld@{DeltaYijOld}}
+\index{DeltaYijOld@{DeltaYijOld}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{DeltaYijOld}{DeltaYijOld}}
+{\footnotesize\ttfamily double \texorpdfstring{$\ast$}{*} Delta\+Yij\+Old}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00067}{67}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{Close_8c_source_l00024}{Close()}}, \mbox{\hyperlink{ComputeBondForce_8c_source_l00028}{Compute\+Bond\+Force()}}, and \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}.
+
+\Hypertarget{global_8h_aaa4ef3f6f09ccb1e7a1bb4c6908e82a3}\label{global_8h_aaa4ef3f6f09ccb1e7a1bb4c6908e82a3} 
+\index{global.h@{global.h}!DeltaYijOldPair@{DeltaYijOldPair}}
+\index{DeltaYijOldPair@{DeltaYijOldPair}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{DeltaYijOldPair}{DeltaYijOldPair}}
+{\footnotesize\ttfamily double \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} Delta\+Yij\+Old\+Pair}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00070}{70}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{Close_8c_source_l00024}{Close()}}, \mbox{\hyperlink{ComputePairForce_8c_source_l00027}{Compute\+Pair\+Force()}}, and \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}.
+
+\Hypertarget{global_8h_a6f8c052f8417728038991f7f2826d38d}\label{global_8h_a6f8c052f8417728038991f7f2826d38d} 
+\index{global.h@{global.h}!density@{density}}
+\index{density@{density}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{density}{density}}
+{\footnotesize\ttfamily double density}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00021}{21}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{EvalProps_8c_source_l00026}{Eval\+Props()}}, and \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}.
+
+\Hypertarget{global_8h_ad1ad82db5042c5e6dcdf44dee00362fe}\label{global_8h_ad1ad82db5042c5e6dcdf44dee00362fe} 
+\index{global.h@{global.h}!discDragx@{discDragx}}
+\index{discDragx@{discDragx}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{discDragx}{discDragx}}
+{\footnotesize\ttfamily double\texorpdfstring{$\ast$}{*} disc\+Dragx\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Referenced by \mbox{\hyperlink{ComputeForcesCells_8c_source_l00025}{Compute\+Forces\+Cells()}}, \mbox{\hyperlink{ComputePairForce_8c_source_l00027}{Compute\+Pair\+Force()}}, \mbox{\hyperlink{DumpPairs_8c_source_l00025}{Dump\+Pairs()}}, and \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}.
+
+\Hypertarget{global_8h_a1a2663b70d9ea62a68fa250cc5e3e6c2}\label{global_8h_a1a2663b70d9ea62a68fa250cc5e3e6c2} 
+\index{global.h@{global.h}!discDragy@{discDragy}}
+\index{discDragy@{discDragy}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{discDragy}{discDragy}}
+{\footnotesize\ttfamily double \texorpdfstring{$\ast$}{*} disc\+Dragy}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00040}{40}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{ComputeForcesCells_8c_source_l00025}{Compute\+Forces\+Cells()}}, \mbox{\hyperlink{ComputePairForce_8c_source_l00027}{Compute\+Pair\+Force()}}, \mbox{\hyperlink{DumpPairs_8c_source_l00025}{Dump\+Pairs()}}, and \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}.
+
+\Hypertarget{global_8h_a3321d3bf7f1411a2e4da9641ba2f6e90}\label{global_8h_a3321d3bf7f1411a2e4da9641ba2f6e90} 
+\index{global.h@{global.h}!dnsty@{dnsty}}
+\index{dnsty@{dnsty}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{dnsty}{dnsty}}
+{\footnotesize\ttfamily char dnsty\mbox{[}256\mbox{]}\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{global_8h_a27eb2d25819ce62e81ca3bd79024f863}\label{global_8h_a27eb2d25819ce62e81ca3bd79024f863} 
+\index{global.h@{global.h}!dump@{dump}}
+\index{dump@{dump}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{dump}{dump}}
+{\footnotesize\ttfamily char dump\mbox{[}256\mbox{]}\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{global_8h_a3bcdebf0fa1a6b9c773860b93de9bd90}\label{global_8h_a3bcdebf0fa1a6b9c773860b93de9bd90} 
+\index{global.h@{global.h}!dumpPairFlag@{dumpPairFlag}}
+\index{dumpPairFlag@{dumpPairFlag}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{dumpPairFlag}{dumpPairFlag}}
+{\footnotesize\ttfamily int dump\+Pair\+Flag\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{global_8h_affb3c293e707ea3b440e35e7581cbaae}\label{global_8h_affb3c293e707ea3b440e35e7581cbaae} 
+\index{global.h@{global.h}!fax@{fax}}
+\index{fax@{fax}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{fax}{fax}}
+{\footnotesize\ttfamily double\texorpdfstring{$\ast$}{*} fax\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Referenced by \mbox{\hyperlink{Close_8c_source_l00024}{Close()}}, and \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}.
+
+\Hypertarget{global_8h_a3151dcce91f6a9cfdd5593da0718648b}\label{global_8h_a3151dcce91f6a9cfdd5593da0718648b} 
+\index{global.h@{global.h}!fay@{fay}}
+\index{fay@{fay}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{fay}{fay}}
+{\footnotesize\ttfamily double \texorpdfstring{$\ast$}{*} fay}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00079}{79}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{Close_8c_source_l00024}{Close()}}, and \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}.
+
+\Hypertarget{global_8h_a84ec84e6a4559d97490a21296cf7ca4b}\label{global_8h_a84ec84e6a4559d97490a21296cf7ca4b} 
+\index{global.h@{global.h}!fpbond@{fpbond}}
+\index{fpbond@{fpbond}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{fpbond}{fpbond}}
+{\footnotesize\ttfamily FILE\texorpdfstring{$\ast$}{*} fpbond\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Referenced by \mbox{\hyperlink{DumpBonds_8c_source_l00024}{Dump\+Bonds()}}, and \mbox{\hyperlink{main_8c_source_l00050}{main()}}.
+
+\Hypertarget{global_8h_aa75a4d5b0dbb420e1605eb7378d4046e}\label{global_8h_aa75a4d5b0dbb420e1605eb7378d4046e} 
+\index{global.h@{global.h}!fpcom@{fpcom}}
+\index{fpcom@{fpcom}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{fpcom}{fpcom}}
+{\footnotesize\ttfamily FILE\texorpdfstring{$\ast$}{*} fpcom\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Referenced by \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}, \mbox{\hyperlink{main_8c_source_l00050}{main()}}, and \mbox{\hyperlink{PrintCom_8c_source_l00028}{Print\+Com()}}.
+
+\Hypertarget{global_8h_a3c14565d0262fd815906501678906831}\label{global_8h_a3c14565d0262fd815906501678906831} 
+\index{global.h@{global.h}!fpdnsty@{fpdnsty}}
+\index{fpdnsty@{fpdnsty}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{fpdnsty}{fpdnsty}}
+{\footnotesize\ttfamily FILE\texorpdfstring{$\ast$}{*} fpdnsty\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Referenced by \mbox{\hyperlink{EvalSpacetimeCorr_8c_source_l00026}{Eval\+Spacetime\+Corr()}}.
+
+\Hypertarget{global_8h_ad50dd3dd9a12417ee78580de61d2cc74}\label{global_8h_ad50dd3dd9a12417ee78580de61d2cc74} 
+\index{global.h@{global.h}!fpdump@{fpdump}}
+\index{fpdump@{fpdump}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{fpdump}{fpdump}}
+{\footnotesize\ttfamily FILE\texorpdfstring{$\ast$}{*} fpdump\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{global_8h_a68000886d456fb57d5ed97fd01b39d2e}\label{global_8h_a68000886d456fb57d5ed97fd01b39d2e} 
+\index{global.h@{global.h}!fpmomentum@{fpmomentum}}
+\index{fpmomentum@{fpmomentum}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{fpmomentum}{fpmomentum}}
+{\footnotesize\ttfamily FILE\texorpdfstring{$\ast$}{*} fpmomentum\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Referenced by \mbox{\hyperlink{PrintMomentum_8c_source_l00025}{Print\+Momentum()}}.
+
+\Hypertarget{global_8h_ab30ed54db09d0748b912c23a34a2a92a}\label{global_8h_ab30ed54db09d0748b912c23a34a2a92a} 
+\index{global.h@{global.h}!fppair@{fppair}}
+\index{fppair@{fppair}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{fppair}{fppair}}
+{\footnotesize\ttfamily FILE\texorpdfstring{$\ast$}{*} fppair\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Referenced by \mbox{\hyperlink{DumpPairs_8c_source_l00025}{Dump\+Pairs()}}, and \mbox{\hyperlink{main_8c_source_l00050}{main()}}.
+
+\Hypertarget{global_8h_a9b0f0d7032e5e928e03460aef4b3a508}\label{global_8h_a9b0f0d7032e5e928e03460aef4b3a508} 
+\index{global.h@{global.h}!fprdf@{fprdf}}
+\index{fprdf@{fprdf}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{fprdf}{fprdf}}
+{\footnotesize\ttfamily FILE\texorpdfstring{$\ast$}{*} fprdf\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Referenced by \mbox{\hyperlink{EvalRdf_8c_source_l00026}{Eval\+Rdf()}}.
+
+\Hypertarget{global_8h_a7a7a3c24c505afb28c4eb95a627e3f5b}\label{global_8h_a7a7a3c24c505afb28c4eb95a627e3f5b} 
+\index{global.h@{global.h}!fpresult@{fpresult}}
+\index{fpresult@{fpresult}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{fpresult}{fpresult}}
+{\footnotesize\ttfamily FILE\texorpdfstring{$\ast$}{*} fpresult\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Referenced by \mbox{\hyperlink{ApplyBoundaryCond_8c_source_l00027}{Apply\+Boundary\+Cond()}}, \mbox{\hyperlink{Halt_8c_source_l00027}{Halt\+Condition\+Check()}}, \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}, \mbox{\hyperlink{main_8c_source_l00050}{main()}}, and \mbox{\hyperlink{PrintSummary_8c_source_l00004}{Print\+Summary()}}.
+
+\Hypertarget{global_8h_a5872726620f3d28a6453c696342fa0f9}\label{global_8h_a5872726620f3d28a6453c696342fa0f9} 
+\index{global.h@{global.h}!fpstress@{fpstress}}
+\index{fpstress@{fpstress}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{fpstress}{fpstress}}
+{\footnotesize\ttfamily FILE\texorpdfstring{$\ast$}{*} fpstress\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Referenced by \mbox{\hyperlink{PrintStress_8c_source_l00025}{Print\+Stress()}}.
+
+\Hypertarget{global_8h_ab0e60da5ef9ad175bfd82f75856dadca}\label{global_8h_ab0e60da5ef9ad175bfd82f75856dadca} 
+\index{global.h@{global.h}!fpvisc@{fpvisc}}
+\index{fpvisc@{fpvisc}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{fpvisc}{fpvisc}}
+{\footnotesize\ttfamily FILE\texorpdfstring{$\ast$}{*} fpvisc\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Referenced by \mbox{\hyperlink{PrintVacf_8c_source_l00025}{Print\+Vacf()}}.
+
+\Hypertarget{global_8h_a97bafb66bb002e44290e629c6b7643c2}\label{global_8h_a97bafb66bb002e44290e629c6b7643c2} 
+\index{global.h@{global.h}!fpvrms@{fpvrms}}
+\index{fpvrms@{fpvrms}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{fpvrms}{fpvrms}}
+{\footnotesize\ttfamily FILE\texorpdfstring{$\ast$}{*} fpvrms\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Referenced by \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}, \mbox{\hyperlink{main_8c_source_l00050}{main()}}, and \mbox{\hyperlink{PrintVrms_8c_source_l00027}{Print\+Vrms()}}.
+
+\Hypertarget{global_8h_a29de37c95c54c8fc5da3c768d0f0423a}\label{global_8h_a29de37c95c54c8fc5da3c768d0f0423a} 
+\index{global.h@{global.h}!fpxyz@{fpxyz}}
+\index{fpxyz@{fpxyz}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{fpxyz}{fpxyz}}
+{\footnotesize\ttfamily FILE\texorpdfstring{$\ast$}{*} fpxyz\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Referenced by \mbox{\hyperlink{main_8c_source_l00050}{main()}}, and \mbox{\hyperlink{Trajectory_8c_source_l00025}{Trajectory()}}.
+
+\Hypertarget{global_8h_a79490e320593cb02fb16b7add1213072}\label{global_8h_a79490e320593cb02fb16b7add1213072} 
+\index{global.h@{global.h}!freezeAtomType@{freezeAtomType}}
+\index{freezeAtomType@{freezeAtomType}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{freezeAtomType}{freezeAtomType}}
+{\footnotesize\ttfamily int freeze\+Atom\+Type\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Referenced by \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}, and \mbox{\hyperlink{VelocityVerletStep_8c_source_l00026}{Velocity\+Verlet\+Step()}}.
+
+\Hypertarget{global_8h_af85ccedcb3832ece58dc6458e9858b04}\label{global_8h_af85ccedcb3832ece58dc6458e9858b04} 
+\index{global.h@{global.h}!frfAtom@{frfAtom}}
+\index{frfAtom@{frfAtom}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{frfAtom}{frfAtom}}
+{\footnotesize\ttfamily double frf\+Atom}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00079}{79}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+\Hypertarget{global_8h_ab7880191c3c89274561d406831eca92a}\label{global_8h_ab7880191c3c89274561d406831eca92a} 
+\index{global.h@{global.h}!fuSum@{fuSum}}
+\index{fuSum@{fuSum}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{fuSum}{fuSum}}
+{\footnotesize\ttfamily double fu\+Sum}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00079}{79}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+\Hypertarget{global_8h_a2c8713450232d0b76fb6fdc7a49346ba}\label{global_8h_a2c8713450232d0b76fb6fdc7a49346ba} 
+\index{global.h@{global.h}!fvirSum@{fvirSum}}
+\index{fvirSum@{fvirSum}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{fvirSum}{fvirSum}}
+{\footnotesize\ttfamily double fvir\+Sum}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00079}{79}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+\Hypertarget{global_8h_aa7e88347476ef454086e7c3cd9865460}\label{global_8h_aa7e88347476ef454086e7c3cd9865460} 
+\index{global.h@{global.h}!fx@{fx}}
+\index{fx@{fx}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{fx}{fx}}
+{\footnotesize\ttfamily double fx\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Referenced by \mbox{\hyperlink{ApplyForce_8c_source_l00025}{Apply\+Force()}}.
+
+\Hypertarget{global_8h_adac56247d9cc80325fa1045fdf18ce33}\label{global_8h_adac56247d9cc80325fa1045fdf18ce33} 
+\index{global.h@{global.h}!fxByfy@{fxByfy}}
+\index{fxByfy@{fxByfy}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{fxByfy}{fxByfy}}
+{\footnotesize\ttfamily double fx\+Byfy}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00052}{52}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{ApplyForce_8c_source_l00025}{Apply\+Force()}}, and \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}.
+
+\Hypertarget{global_8h_a03c4ce20c7e4b8c6d60a20b833be69fe}\label{global_8h_a03c4ce20c7e4b8c6d60a20b833be69fe} 
+\index{global.h@{global.h}!fy@{fy}}
+\index{fy@{fy}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{fy}{fy}}
+{\footnotesize\ttfamily double fy}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00052}{52}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{ApplyForce_8c_source_l00025}{Apply\+Force()}}.
+
+\Hypertarget{global_8h_a1c9da98c7c3b53aded35c3be14fb2aee}\label{global_8h_a1c9da98c7c3b53aded35c3be14fb2aee} 
+\index{global.h@{global.h}!FyBylx@{FyBylx}}
+\index{FyBylx@{FyBylx}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{FyBylx}{FyBylx}}
+{\footnotesize\ttfamily double Fy\+Bylx}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00052}{52}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{ApplyForce_8c_source_l00025}{Apply\+Force()}}, and \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}.
+
+\Hypertarget{global_8h_a51f4f35562e6b66ea8bd3dfd6d710fcb}\label{global_8h_a51f4f35562e6b66ea8bd3dfd6d710fcb} 
+\index{global.h@{global.h}!gamman@{gamman}}
+\index{gamman@{gamman}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{gamman}{gamman}}
+{\footnotesize\ttfamily double gamman\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Referenced by \mbox{\hyperlink{ComputeBondForce_8c_source_l00028}{Compute\+Bond\+Force()}}, \mbox{\hyperlink{ComputeForcesCells_8c_source_l00025}{Compute\+Forces\+Cells()}}, \mbox{\hyperlink{ComputePairForce_8c_source_l00027}{Compute\+Pair\+Force()}}, and \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}.
+
+\Hypertarget{global_8h_a7e88ba96b6e106ede84dde66931a3ffa}\label{global_8h_a7e88ba96b6e106ede84dde66931a3ffa} 
+\index{global.h@{global.h}!HaltCondition@{HaltCondition}}
+\index{HaltCondition@{HaltCondition}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{HaltCondition}{HaltCondition}}
+{\footnotesize\ttfamily double Halt\+Condition\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Referenced by \mbox{\hyperlink{Halt_8c_source_l00027}{Halt\+Condition\+Check()}}, and \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}.
+
+\Hypertarget{global_8h_a8b70419767ded4d857709915fdbd0fc7}\label{global_8h_a8b70419767ded4d857709915fdbd0fc7} 
+\index{global.h@{global.h}!histRdf@{histRdf}}
+\index{histRdf@{histRdf}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{histRdf}{histRdf}}
+{\footnotesize\ttfamily double\texorpdfstring{$\ast$}{*} hist\+Rdf\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Referenced by \mbox{\hyperlink{AllocArrays_8c_source_l00025}{Alloc\+Arrays()}}, and \mbox{\hyperlink{EvalRdf_8c_source_l00026}{Eval\+Rdf()}}.
+
+\Hypertarget{global_8h_a6cd103d74f5d525b4cae3e7af552be20}\label{global_8h_a6cd103d74f5d525b4cae3e7af552be20} 
+\index{global.h@{global.h}!ImageX@{ImageX}}
+\index{ImageX@{ImageX}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{ImageX}{ImageX}}
+{\footnotesize\ttfamily int\texorpdfstring{$\ast$}{*} ImageX\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Referenced by \mbox{\hyperlink{Close_8c_source_l00024}{Close()}}, \mbox{\hyperlink{EvalUnwrap_8c_source_l00027}{Eval\+Unwrap()}}, \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}, and \mbox{\hyperlink{VelocityVerletStep_8c_source_l00026}{Velocity\+Verlet\+Step()}}.
+
+\Hypertarget{global_8h_a6d63f20edcbc2cb983c7267d9d0690a8}\label{global_8h_a6d63f20edcbc2cb983c7267d9d0690a8} 
+\index{global.h@{global.h}!ImageY@{ImageY}}
+\index{ImageY@{ImageY}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{ImageY}{ImageY}}
+{\footnotesize\ttfamily int \texorpdfstring{$\ast$}{*} ImageY}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00047}{47}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{Close_8c_source_l00024}{Close()}}, \mbox{\hyperlink{EvalUnwrap_8c_source_l00027}{Eval\+Unwrap()}}, \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}, and \mbox{\hyperlink{VelocityVerletStep_8c_source_l00026}{Velocity\+Verlet\+Step()}}.
+
+\Hypertarget{global_8h_a74f01c700b5540bed3184604a0cd6c17}\label{global_8h_a74f01c700b5540bed3184604a0cd6c17} 
+\index{global.h@{global.h}!indexAcf@{indexAcf}}
+\index{indexAcf@{indexAcf}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{indexAcf}{indexAcf}}
+{\footnotesize\ttfamily double\texorpdfstring{$\ast$}{*} index\+Acf\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Referenced by \mbox{\hyperlink{AccumVacf_8c_source_l00027}{Accum\+Vacf()}}, \mbox{\hyperlink{AllocArrays_8c_source_l00025}{Alloc\+Arrays()}}, \mbox{\hyperlink{Close_8c_source_l00024}{Close()}}, \mbox{\hyperlink{EvalVacf_8c_source_l00026}{Eval\+Vacf()}}, and \mbox{\hyperlink{InitVacf_8c_source_l00026}{Init\+Vacf()}}.
+
+\Hypertarget{global_8h_a69d30c3c1681890962f25dc4ab39b033}\label{global_8h_a69d30c3c1681890962f25dc4ab39b033} 
+\index{global.h@{global.h}!indexCorr@{indexCorr}}
+\index{indexCorr@{indexCorr}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{indexCorr}{indexCorr}}
+{\footnotesize\ttfamily int\texorpdfstring{$\ast$}{*} index\+Corr\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Referenced by \mbox{\hyperlink{AllocArrays_8c_source_l00025}{Alloc\+Arrays()}}, \mbox{\hyperlink{Close_8c_source_l00024}{Close()}}, \mbox{\hyperlink{EvalSpacetimeCorr_8c_source_l00026}{Eval\+Spacetime\+Corr()}}, and \mbox{\hyperlink{SetupJob_8c_source_l00027}{Setup\+Job()}}.
+
+\Hypertarget{global_8h_a4e22d05d6f5e517ce5b32c05dee192cf}\label{global_8h_a4e22d05d6f5e517ce5b32c05dee192cf} 
+\index{global.h@{global.h}!initUcell@{initUcell}}
+\index{initUcell@{initUcell}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{initUcell}{initUcell}}
+{\footnotesize\ttfamily int init\+Ucell\mbox{[}2+1\mbox{]}\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{global_8h_a5b5269315eb08e6cec78e54252171ef0}\label{global_8h_a5b5269315eb08e6cec78e54252171ef0} 
+\index{global.h@{global.h}!isBonded@{isBonded}}
+\index{isBonded@{isBonded}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{isBonded}{isBonded}}
+{\footnotesize\ttfamily int\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} is\+Bonded\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Referenced by \mbox{\hyperlink{Close_8c_source_l00024}{Close()}}, \mbox{\hyperlink{ComputePairForce_8c_source_l00027}{Compute\+Pair\+Force()}}, and \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}.
+
+\Hypertarget{global_8h_a05ac5235b52a827a368e74ed228dd485}\label{global_8h_a05ac5235b52a827a368e74ed228dd485} 
+\index{global.h@{global.h}!kappa@{kappa}}
+\index{kappa@{kappa}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{kappa}{kappa}}
+{\footnotesize\ttfamily double kappa}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00021}{21}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}.
+
+\Hypertarget{global_8h_a8e6dc750ca456d701cdae21325c99048}\label{global_8h_a8e6dc750ca456d701cdae21325c99048} 
+\index{global.h@{global.h}!kb@{kb}}
+\index{kb@{kb}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{kb}{kb}}
+{\footnotesize\ttfamily double\texorpdfstring{$\ast$}{*} kb\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Referenced by \mbox{\hyperlink{Close_8c_source_l00024}{Close()}}, \mbox{\hyperlink{ComputeBondForce_8c_source_l00028}{Compute\+Bond\+Force()}}, \mbox{\hyperlink{DumpRestart_8c_source_l00025}{Dump\+Restart()}}, and \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}.
+
+\Hypertarget{global_8h_a445d936de68f213385df5c284ea1d81d}\label{global_8h_a445d936de68f213385df5c284ea1d81d} 
+\index{global.h@{global.h}!kinEnergy@{kinEnergy}}
+\index{kinEnergy@{kinEnergy}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{kinEnergy}{kinEnergy}}
+{\footnotesize\ttfamily double kin\+Energy}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00020}{20}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{AccumProps_8c_source_l00025}{Accum\+Props()}}, \mbox{\hyperlink{AccumVacf_8c_source_l00027}{Accum\+Vacf()}}, \mbox{\hyperlink{EvalProps_8c_source_l00026}{Eval\+Props()}}, and \mbox{\hyperlink{PrintSummary_8c_source_l00004}{Print\+Summary()}}.
+
+\Hypertarget{global_8h_a3ff2760258776138428edc622325f221}\label{global_8h_a3ff2760258776138428edc622325f221} 
+\index{global.h@{global.h}!Kn@{Kn}}
+\index{Kn@{Kn}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{Kn}{Kn}}
+{\footnotesize\ttfamily double Kn\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Referenced by \mbox{\hyperlink{ComputePairForce_8c_source_l00027}{Compute\+Pair\+Force()}}.
+
+\Hypertarget{global_8h_a9ee217916f83b1a9545e5c8563d4ae98}\label{global_8h_a9ee217916f83b1a9545e5c8563d4ae98} 
+\index{global.h@{global.h}!limitAcfAv@{limitAcfAv}}
+\index{limitAcfAv@{limitAcfAv}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{limitAcfAv}{limitAcfAv}}
+{\footnotesize\ttfamily int limit\+Acf\+Av}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00094}{94}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{AccumVacf_8c_source_l00027}{Accum\+Vacf()}}, and \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}.
+
+\Hypertarget{global_8h_a0b6b2b63776d19816bc4b546333d6146}\label{global_8h_a0b6b2b63776d19816bc4b546333d6146} 
+\index{global.h@{global.h}!limitCorrAv@{limitCorrAv}}
+\index{limitCorrAv@{limitCorrAv}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{limitCorrAv}{limitCorrAv}}
+{\footnotesize\ttfamily int limit\+Corr\+Av}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00089}{89}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{EvalSpacetimeCorr_8c_source_l00026}{Eval\+Spacetime\+Corr()}}, and \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}.
+
+\Hypertarget{global_8h_a40004b8e01bc3e357d48d7d9675ceea0}\label{global_8h_a40004b8e01bc3e357d48d7d9675ceea0} 
+\index{global.h@{global.h}!limitRdf@{limitRdf}}
+\index{limitRdf@{limitRdf}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{limitRdf}{limitRdf}}
+{\footnotesize\ttfamily int limit\+Rdf}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00098}{98}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{EvalRdf_8c_source_l00026}{Eval\+Rdf()}}, and \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}.
+
+\Hypertarget{global_8h_a12828bf492e2410c9efe0f15ad2205ee}\label{global_8h_a12828bf492e2410c9efe0f15ad2205ee} 
+\index{global.h@{global.h}!master@{master}}
+\index{master@{master}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{master}{master}}
+{\footnotesize\ttfamily int master}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00078}{78}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+\Hypertarget{global_8h_a65f3cbf0ee8813aae06be044d6c568ad}\label{global_8h_a65f3cbf0ee8813aae06be044d6c568ad} 
+\index{global.h@{global.h}!molID@{molID}}
+\index{molID@{molID}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{molID}{molID}}
+{\footnotesize\ttfamily int\texorpdfstring{$\ast$}{*} mol\+ID\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Referenced by \mbox{\hyperlink{ApplyForce_8c_source_l00025}{Apply\+Force()}}, \mbox{\hyperlink{Close_8c_source_l00024}{Close()}}, \mbox{\hyperlink{DisplaceAtoms_8c_source_l00025}{Displace\+Atoms()}}, \mbox{\hyperlink{DumpRestart_8c_source_l00025}{Dump\+Restart()}}, \mbox{\hyperlink{DumpState_8c_source_l00025}{Dump\+State()}}, \mbox{\hyperlink{EvalCom_8c_source_l00027}{Eval\+Com()}}, \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}, and \mbox{\hyperlink{Trajectory_8c_source_l00025}{Trajectory()}}.
+
+\Hypertarget{global_8h_a8803ada867470467948dd0e8370e6bbd}\label{global_8h_a8803ada867470467948dd0e8370e6bbd} 
+\index{global.h@{global.h}!momentum@{momentum}}
+\index{momentum@{momentum}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{momentum}{momentum}}
+{\footnotesize\ttfamily char momentum\mbox{[}256\mbox{]}\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{global_8h_a05497065a104f77a2f2bd395165c19f9}\label{global_8h_a05497065a104f77a2f2bd395165c19f9} 
+\index{global.h@{global.h}!moreCycles@{moreCycles}}
+\index{moreCycles@{moreCycles}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{moreCycles}{moreCycles}}
+{\footnotesize\ttfamily int more\+Cycles}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00024}{24}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{main_8c_source_l00050}{main()}}.
+
+\Hypertarget{global_8h_a0da8aaf36196f726e7d87c2883adc00d}\label{global_8h_a0da8aaf36196f726e7d87c2883adc00d} 
+\index{global.h@{global.h}!nAtom@{nAtom}}
+\index{nAtom@{nAtom}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{nAtom}{nAtom}}
+{\footnotesize\ttfamily int n\+Atom}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00024}{24}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{ApplyBoundaryCond_8c_source_l00027}{Apply\+Boundary\+Cond()}}, \mbox{\hyperlink{ApplyDrivingForce_8c_source_l00025}{Apply\+Driving\+Force()}}, \mbox{\hyperlink{ApplyForce_8c_source_l00025}{Apply\+Force()}}, \mbox{\hyperlink{ApplyLeesEdwardsBoundaryCond_8c_source_l00025}{Apply\+Lees\+Edwards\+Boundary\+Cond()}}, \mbox{\hyperlink{ApplyShear_8c_source_l00025}{Apply\+Shear()}}, \mbox{\hyperlink{ApplyViscous_8c_source_l00025}{Apply\+Viscous()}}, \mbox{\hyperlink{BrownianStep_8c_source_l00026}{Brownian\+Step()}}, \mbox{\hyperlink{Close_8c_source_l00024}{Close()}}, \mbox{\hyperlink{ComputeBondForce_8c_source_l00028}{Compute\+Bond\+Force()}}, \mbox{\hyperlink{ComputeForcesCells_8c_source_l00025}{Compute\+Forces\+Cells()}}, \mbox{\hyperlink{ComputePairForce_8c_source_l00027}{Compute\+Pair\+Force()}}, \mbox{\hyperlink{DisplaceAtoms_8c_source_l00025}{Displace\+Atoms()}}, \mbox{\hyperlink{DumpRestart_8c_source_l00025}{Dump\+Restart()}}, \mbox{\hyperlink{DumpState_8c_source_l00025}{Dump\+State()}}, \mbox{\hyperlink{EvalCom_8c_source_l00027}{Eval\+Com()}}, \mbox{\hyperlink{EvalProps_8c_source_l00026}{Eval\+Props()}}, \mbox{\hyperlink{EvalRdf_8c_source_l00026}{Eval\+Rdf()}}, \mbox{\hyperlink{EvalSpacetimeCorr_8c_source_l00026}{Eval\+Spacetime\+Corr()}}, \mbox{\hyperlink{EvalUnwrap_8c_source_l00027}{Eval\+Unwrap()}}, \mbox{\hyperlink{EvalVacf_8c_source_l00026}{Eval\+Vacf()}}, \mbox{\hyperlink{EvalVrms_8c_source_l00027}{Eval\+Vrms()}}, \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}, \mbox{\hyperlink{LeapfrogStep_8c_source_l00025}{Leapfrog\+Step()}}, \mbox{\hyperlink{Trajectory_8c_source_l00025}{Trajectory()}}, and \mbox{\hyperlink{VelocityVerletStep_8c_source_l00026}{Velocity\+Verlet\+Step()}}.
+
+\Hypertarget{global_8h_a1fc19b1274901ec0290f04ae9900f8b4}\label{global_8h_a1fc19b1274901ec0290f04ae9900f8b4} 
+\index{global.h@{global.h}!nAtomBlock@{nAtomBlock}}
+\index{nAtomBlock@{nAtomBlock}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{nAtomBlock}{nAtomBlock}}
+{\footnotesize\ttfamily int n\+Atom\+Block}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00049}{49}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{ApplyForce_8c_source_l00025}{Apply\+Force()}}, and \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}.
+
+\Hypertarget{global_8h_a7360a2db25507a0148bcee894745b855}\label{global_8h_a7360a2db25507a0148bcee894745b855} 
+\index{global.h@{global.h}!nAtomInterface@{nAtomInterface}}
+\index{nAtomInterface@{nAtomInterface}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{nAtomInterface}{nAtomInterface}}
+{\footnotesize\ttfamily int n\+Atom\+Interface\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Referenced by \mbox{\hyperlink{ComputePairForce_8c_source_l00027}{Compute\+Pair\+Force()}}, and \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}.
+
+\Hypertarget{global_8h_a43448c32d3aae360f080f3805a73f08f}\label{global_8h_a43448c32d3aae360f080f3805a73f08f} 
+\index{global.h@{global.h}!nAtomType@{nAtomType}}
+\index{nAtomType@{nAtomType}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{nAtomType}{nAtomType}}
+{\footnotesize\ttfamily int n\+Atom\+Type\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Referenced by \mbox{\hyperlink{DumpRestart_8c_source_l00025}{Dump\+Restart()}}, and \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}.
+
+\Hypertarget{global_8h_a89d3bca785c9af9c4a154dc6642add4d}\label{global_8h_a89d3bca785c9af9c4a154dc6642add4d} 
+\index{global.h@{global.h}!nBond@{nBond}}
+\index{nBond@{nBond}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{nBond}{nBond}}
+{\footnotesize\ttfamily int n\+Bond\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Referenced by \mbox{\hyperlink{ComputeBondForce_8c_source_l00028}{Compute\+Bond\+Force()}}, \mbox{\hyperlink{DumpBonds_8c_source_l00024}{Dump\+Bonds()}}, \mbox{\hyperlink{DumpRestart_8c_source_l00025}{Dump\+Restart()}}, and \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}.
+
+\Hypertarget{global_8h_a3afc68b43647936871af06d6b5d1d5db}\label{global_8h_a3afc68b43647936871af06d6b5d1d5db} 
+\index{global.h@{global.h}!nBondType@{nBondType}}
+\index{nBondType@{nBondType}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{nBondType}{nBondType}}
+{\footnotesize\ttfamily int n\+Bond\+Type}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00033}{33}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{DumpRestart_8c_source_l00025}{Dump\+Restart()}}, and \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}.
+
+\Hypertarget{global_8h_a62bb5169e87a77023d99fa51468bf126}\label{global_8h_a62bb5169e87a77023d99fa51468bf126} 
+\index{global.h@{global.h}!nBuffAcf@{nBuffAcf}}
+\index{nBuffAcf@{nBuffAcf}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{nBuffAcf}{nBuffAcf}}
+{\footnotesize\ttfamily int n\+Buff\+Acf}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00094}{94}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{AccumVacf_8c_source_l00027}{Accum\+Vacf()}}, \mbox{\hyperlink{AllocArrays_8c_source_l00025}{Alloc\+Arrays()}}, \mbox{\hyperlink{Close_8c_source_l00024}{Close()}}, \mbox{\hyperlink{EvalVacf_8c_source_l00026}{Eval\+Vacf()}}, \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}, and \mbox{\hyperlink{InitVacf_8c_source_l00026}{Init\+Vacf()}}.
+
+\Hypertarget{global_8h_ab638d9b8ea6ae6103ee7d3dcb0ca4106}\label{global_8h_ab638d9b8ea6ae6103ee7d3dcb0ca4106} 
+\index{global.h@{global.h}!nBuffCorr@{nBuffCorr}}
+\index{nBuffCorr@{nBuffCorr}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{nBuffCorr}{nBuffCorr}}
+{\footnotesize\ttfamily int n\+Buff\+Corr}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00089}{89}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{AllocArrays_8c_source_l00025}{Alloc\+Arrays()}}, \mbox{\hyperlink{Close_8c_source_l00024}{Close()}}, \mbox{\hyperlink{EvalSpacetimeCorr_8c_source_l00026}{Eval\+Spacetime\+Corr()}}, \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}, and \mbox{\hyperlink{SetupJob_8c_source_l00027}{Setup\+Job()}}.
+
+\Hypertarget{global_8h_a1a9704697a32d001f71d2a212562bd79}\label{global_8h_a1a9704697a32d001f71d2a212562bd79} 
+\index{global.h@{global.h}!nDiscInterface@{nDiscInterface}}
+\index{nDiscInterface@{nDiscInterface}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{nDiscInterface}{nDiscInterface}}
+{\footnotesize\ttfamily int n\+Disc\+Interface}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00049}{49}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}.
+
+\Hypertarget{global_8h_ae6bb074a4f2d8b25747f5f1c3ed34e8e}\label{global_8h_ae6bb074a4f2d8b25747f5f1c3ed34e8e} 
+\index{global.h@{global.h}!nFunCorr@{nFunCorr}}
+\index{nFunCorr@{nFunCorr}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{nFunCorr}{nFunCorr}}
+{\footnotesize\ttfamily int n\+Fun\+Corr}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00089}{89}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{AllocArrays_8c_source_l00025}{Alloc\+Arrays()}}, \mbox{\hyperlink{EvalSpacetimeCorr_8c_source_l00026}{Eval\+Spacetime\+Corr()}}, \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}, and \mbox{\hyperlink{SetupJob_8c_source_l00027}{Setup\+Job()}}.
+
+\Hypertarget{global_8h_ae25566f54b864b50af8b06ce249b07bd}\label{global_8h_ae25566f54b864b50af8b06ce249b07bd} 
+\index{global.h@{global.h}!nodeDragx@{nodeDragx}}
+\index{nodeDragx@{nodeDragx}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{nodeDragx}{nodeDragx}}
+{\footnotesize\ttfamily double \texorpdfstring{$\ast$}{*} node\+Dragx}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00040}{40}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{ComputeBondForce_8c_source_l00028}{Compute\+Bond\+Force()}}, \mbox{\hyperlink{DumpBonds_8c_source_l00024}{Dump\+Bonds()}}, and \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}.
+
+\Hypertarget{global_8h_aae007ab0860d0d27bf49ce1e74831a71}\label{global_8h_aae007ab0860d0d27bf49ce1e74831a71} 
+\index{global.h@{global.h}!nodeDragy@{nodeDragy}}
+\index{nodeDragy@{nodeDragy}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{nodeDragy}{nodeDragy}}
+{\footnotesize\ttfamily double \texorpdfstring{$\ast$}{*} node\+Dragy}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00040}{40}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{ComputeBondForce_8c_source_l00028}{Compute\+Bond\+Force()}}, \mbox{\hyperlink{DumpBonds_8c_source_l00024}{Dump\+Bonds()}}, and \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}.
+
+\Hypertarget{global_8h_a4d261d7bf27ba6bb03927a2daa310746}\label{global_8h_a4d261d7bf27ba6bb03927a2daa310746} 
+\index{global.h@{global.h}!nPairActive@{nPairActive}}
+\index{nPairActive@{nPairActive}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{nPairActive}{nPairActive}}
+{\footnotesize\ttfamily int n\+Pair\+Active}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00058}{58}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{ComputePairForce_8c_source_l00027}{Compute\+Pair\+Force()}}, and \mbox{\hyperlink{DumpPairs_8c_source_l00025}{Dump\+Pairs()}}.
+
+\Hypertarget{global_8h_a23366336aec87861b8d8423b619cd5fe}\label{global_8h_a23366336aec87861b8d8423b619cd5fe} 
+\index{global.h@{global.h}!nPairTotal@{nPairTotal}}
+\index{nPairTotal@{nPairTotal}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{nPairTotal}{nPairTotal}}
+{\footnotesize\ttfamily int n\+Pair\+Total\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Referenced by \mbox{\hyperlink{ComputePairForce_8c_source_l00027}{Compute\+Pair\+Force()}}, and \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}.
+
+\Hypertarget{global_8h_a48094c7b6092e1a21fcc91a371f230b6}\label{global_8h_a48094c7b6092e1a21fcc91a371f230b6} 
+\index{global.h@{global.h}!nValAcf@{nValAcf}}
+\index{nValAcf@{nValAcf}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{nValAcf}{nValAcf}}
+{\footnotesize\ttfamily int n\+Val\+Acf\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Referenced by \mbox{\hyperlink{AccumVacf_8c_source_l00027}{Accum\+Vacf()}}, \mbox{\hyperlink{AllocArrays_8c_source_l00025}{Alloc\+Arrays()}}, \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}, \mbox{\hyperlink{InitVacf_8c_source_l00026}{Init\+Vacf()}}, \mbox{\hyperlink{PrintVacf_8c_source_l00025}{Print\+Vacf()}}, and \mbox{\hyperlink{ZeroVacf_8c_source_l00025}{Zero\+Vacf()}}.
+
+\Hypertarget{global_8h_a1bb15d20732c39669d141e769b97d8a0}\label{global_8h_a1bb15d20732c39669d141e769b97d8a0} 
+\index{global.h@{global.h}!nValCorr@{nValCorr}}
+\index{nValCorr@{nValCorr}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{nValCorr}{nValCorr}}
+{\footnotesize\ttfamily int n\+Val\+Corr}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00089}{89}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{AllocArrays_8c_source_l00025}{Alloc\+Arrays()}}, \mbox{\hyperlink{EvalSpacetimeCorr_8c_source_l00026}{Eval\+Spacetime\+Corr()}}, \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}, and \mbox{\hyperlink{SetupJob_8c_source_l00027}{Setup\+Job()}}.
+
+\Hypertarget{global_8h_a56237778263404bd41225f4aa5a1d158}\label{global_8h_a56237778263404bd41225f4aa5a1d158} 
+\index{global.h@{global.h}!pair@{pair}}
+\index{pair@{pair}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{pair}{pair}}
+{\footnotesize\ttfamily char pair\mbox{[}256\mbox{]}\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Referenced by \mbox{\hyperlink{main_8c_source_l00050}{main()}}.
+
+\Hypertarget{global_8h_af8215c4cb752839765c6629bb7e808a3}\label{global_8h_af8215c4cb752839765c6629bb7e808a3} 
+\index{global.h@{global.h}!Pairatom1@{Pairatom1}}
+\index{Pairatom1@{Pairatom1}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{Pairatom1}{Pairatom1}}
+{\footnotesize\ttfamily int \texorpdfstring{$\ast$}{*} Pairatom1}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00059}{59}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{Close_8c_source_l00024}{Close()}}, \mbox{\hyperlink{ComputePairForce_8c_source_l00027}{Compute\+Pair\+Force()}}, \mbox{\hyperlink{DumpPairs_8c_source_l00025}{Dump\+Pairs()}}, and \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}.
+
+\Hypertarget{global_8h_abd0063c6618301e17cc7ef9be8058081}\label{global_8h_abd0063c6618301e17cc7ef9be8058081} 
+\index{global.h@{global.h}!Pairatom2@{Pairatom2}}
+\index{Pairatom2@{Pairatom2}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{Pairatom2}{Pairatom2}}
+{\footnotesize\ttfamily int \texorpdfstring{$\ast$}{*} Pairatom2}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00059}{59}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{Close_8c_source_l00024}{Close()}}, \mbox{\hyperlink{ComputePairForce_8c_source_l00027}{Compute\+Pair\+Force()}}, \mbox{\hyperlink{DumpPairs_8c_source_l00025}{Dump\+Pairs()}}, and \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}.
+
+\Hypertarget{global_8h_a9e5cacd45bb1c19404215981554b9e65}\label{global_8h_a9e5cacd45bb1c19404215981554b9e65} 
+\index{global.h@{global.h}!PairID@{PairID}}
+\index{PairID@{PairID}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{PairID}{PairID}}
+{\footnotesize\ttfamily int\texorpdfstring{$\ast$}{*} Pair\+ID\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Referenced by \mbox{\hyperlink{Close_8c_source_l00024}{Close()}}, \mbox{\hyperlink{ComputePairForce_8c_source_l00027}{Compute\+Pair\+Force()}}, \mbox{\hyperlink{DumpPairs_8c_source_l00025}{Dump\+Pairs()}}, and \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}.
+
+\Hypertarget{global_8h_aa463dae6fdaca32114f15f2f670075c7}\label{global_8h_aa463dae6fdaca32114f15f2f670075c7} 
+\index{global.h@{global.h}!PairXij@{PairXij}}
+\index{PairXij@{PairXij}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{PairXij}{PairXij}}
+{\footnotesize\ttfamily double\texorpdfstring{$\ast$}{*} Pair\+Xij\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Referenced by \mbox{\hyperlink{Close_8c_source_l00024}{Close()}}, \mbox{\hyperlink{ComputePairForce_8c_source_l00027}{Compute\+Pair\+Force()}}, \mbox{\hyperlink{DumpPairs_8c_source_l00025}{Dump\+Pairs()}}, and \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}.
+
+\Hypertarget{global_8h_ad17d42dcb59c5c4c54dec23afc5c8fcf}\label{global_8h_ad17d42dcb59c5c4c54dec23afc5c8fcf} 
+\index{global.h@{global.h}!PairYij@{PairYij}}
+\index{PairYij@{PairYij}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{PairYij}{PairYij}}
+{\footnotesize\ttfamily double \texorpdfstring{$\ast$}{*} Pair\+Yij}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00060}{60}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{Close_8c_source_l00024}{Close()}}, \mbox{\hyperlink{ComputePairForce_8c_source_l00027}{Compute\+Pair\+Force()}}, \mbox{\hyperlink{DumpPairs_8c_source_l00025}{Dump\+Pairs()}}, and \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}.
+
+\Hypertarget{global_8h_abd758be497a95843d6cbb071a9f99581}\label{global_8h_abd758be497a95843d6cbb071a9f99581} 
+\index{global.h@{global.h}!potEnergy@{potEnergy}}
+\index{potEnergy@{potEnergy}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{potEnergy}{potEnergy}}
+{\footnotesize\ttfamily double pot\+Energy}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00020}{20}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{AccumProps_8c_source_l00025}{Accum\+Props()}}, \mbox{\hyperlink{EvalProps_8c_source_l00026}{Eval\+Props()}}, and \mbox{\hyperlink{PrintSummary_8c_source_l00004}{Print\+Summary()}}.
+
+\Hypertarget{global_8h_ad2849cf781a4db22cc1b31eaaee50a4f}\label{global_8h_ad2849cf781a4db22cc1b31eaaee50a4f} 
+\index{global.h@{global.h}!prefix@{prefix}}
+\index{prefix@{prefix}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{prefix}{prefix}}
+{\footnotesize\ttfamily char\texorpdfstring{$\ast$}{*} prefix\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Definition at line \mbox{\hyperlink{main_8c_source_l00012}{12}} of file \mbox{\hyperlink{main_8c_source}{main.\+c}}.
+
+
+
+Referenced by \mbox{\hyperlink{DumpRestart_8c_source_l00025}{Dump\+Restart()}}, \mbox{\hyperlink{DumpState_8c_source_l00025}{Dump\+State()}}, and \mbox{\hyperlink{main_8c_source_l00050}{main()}}.
+
+\Hypertarget{global_8h_aee1c5d07ac79c5c036195858afe33405}\label{global_8h_aee1c5d07ac79c5c036195858afe33405} 
+\index{global.h@{global.h}!pressure@{pressure}}
+\index{pressure@{pressure}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{pressure}{pressure}}
+{\footnotesize\ttfamily double pressure}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00021}{21}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{AccumProps_8c_source_l00025}{Accum\+Props()}}, \mbox{\hyperlink{EvalProps_8c_source_l00026}{Eval\+Props()}}, \mbox{\hyperlink{PrintStress_8c_source_l00025}{Print\+Stress()}}, and \mbox{\hyperlink{PrintSummary_8c_source_l00004}{Print\+Summary()}}.
+
+\Hypertarget{global_8h_a6a4e820cfd6dbd49709a350e38260c18}\label{global_8h_a6a4e820cfd6dbd49709a350e38260c18} 
+\index{global.h@{global.h}!RadiusIJ@{RadiusIJ}}
+\index{RadiusIJ@{RadiusIJ}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{RadiusIJ}{RadiusIJ}}
+{\footnotesize\ttfamily double Radius\+IJ\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Referenced by \mbox{\hyperlink{ComputeForcesCells_8c_source_l00025}{Compute\+Forces\+Cells()}}, and \mbox{\hyperlink{ComputePairForce_8c_source_l00027}{Compute\+Pair\+Force()}}.
+
+\Hypertarget{global_8h_a47571b44e617f4a6d6ef4ab227337093}\label{global_8h_a47571b44e617f4a6d6ef4ab227337093} 
+\index{global.h@{global.h}!RadiusIJInv@{RadiusIJInv}}
+\index{RadiusIJInv@{RadiusIJInv}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{RadiusIJInv}{RadiusIJInv}}
+{\footnotesize\ttfamily double Radius\+IJInv}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00026}{26}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{ComputeForcesCells_8c_source_l00025}{Compute\+Forces\+Cells()}}, and \mbox{\hyperlink{ComputePairForce_8c_source_l00027}{Compute\+Pair\+Force()}}.
+
+\Hypertarget{global_8h_acdf103f0d5ee27e3fd16ce65e5704490}\label{global_8h_acdf103f0d5ee27e3fd16ce65e5704490} 
+\index{global.h@{global.h}!rangeRdf@{rangeRdf}}
+\index{rangeRdf@{rangeRdf}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{rangeRdf}{rangeRdf}}
+{\footnotesize\ttfamily double range\+Rdf}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00097}{97}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{EvalRdf_8c_source_l00026}{Eval\+Rdf()}}, and \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}.
+
+\Hypertarget{global_8h_a6cfd95afd0afebd625b889fb6e58371c}\label{global_8h_a6cfd95afd0afebd625b889fb6e58371c} 
+\index{global.h@{global.h}!rank@{rank}}
+\index{rank@{rank}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{rank}{rank}}
+{\footnotesize\ttfamily int rank\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Referenced by \mbox{\hyperlink{ComputeForcesCells_8c_source_l00025}{Compute\+Forces\+Cells()}}.
+
+\Hypertarget{global_8h_a1774b76f586901fb408042c37597ca70}\label{global_8h_a1774b76f586901fb408042c37597ca70} 
+\index{global.h@{global.h}!rCut@{rCut}}
+\index{rCut@{rCut}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{rCut}{rCut}}
+{\footnotesize\ttfamily double r\+Cut}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00021}{21}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}.
+
+\Hypertarget{global_8h_a521d9bd86ff85d0a6ff7c052ad854dab}\label{global_8h_a521d9bd86ff85d0a6ff7c052ad854dab} 
+\index{global.h@{global.h}!rdf@{rdf}}
+\index{rdf@{rdf}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{rdf}{rdf}}
+{\footnotesize\ttfamily char rdf\mbox{[}256\mbox{]}\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{global_8h_a43c4f708b8d633b069355a121d6adbdc}\label{global_8h_a43c4f708b8d633b069355a121d6adbdc} 
+\index{global.h@{global.h}!region@{region}}
+\index{region@{region}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{region}{region}}
+{\footnotesize\ttfamily double region\mbox{[}2+1\mbox{]}\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Referenced by \mbox{\hyperlink{AccumVacf_8c_source_l00027}{Accum\+Vacf()}}, \mbox{\hyperlink{ApplyBoundaryCond_8c_source_l00027}{Apply\+Boundary\+Cond()}}, \mbox{\hyperlink{ApplyLeesEdwardsBoundaryCond_8c_source_l00025}{Apply\+Lees\+Edwards\+Boundary\+Cond()}}, \mbox{\hyperlink{ComputeBondForce_8c_source_l00028}{Compute\+Bond\+Force()}}, \mbox{\hyperlink{ComputeForcesCells_8c_source_l00025}{Compute\+Forces\+Cells()}}, \mbox{\hyperlink{ComputePairForce_8c_source_l00027}{Compute\+Pair\+Force()}}, \mbox{\hyperlink{DumpRestart_8c_source_l00025}{Dump\+Restart()}}, \mbox{\hyperlink{EvalRdf_8c_source_l00026}{Eval\+Rdf()}}, \mbox{\hyperlink{EvalSpacetimeCorr_8c_source_l00026}{Eval\+Spacetime\+Corr()}}, \mbox{\hyperlink{EvalUnwrap_8c_source_l00027}{Eval\+Unwrap()}}, \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}, and \mbox{\hyperlink{VelocityVerletStep_8c_source_l00026}{Velocity\+Verlet\+Step()}}.
+
+\Hypertarget{global_8h_adc110418e2efa5f31a9aa7c137471a2f}\label{global_8h_adc110418e2efa5f31a9aa7c137471a2f} 
+\index{global.h@{global.h}!regionH@{regionH}}
+\index{regionH@{regionH}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{regionH}{regionH}}
+{\footnotesize\ttfamily double regionH\mbox{[}2+1\mbox{]}}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00020}{20}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{ApplyBoundaryCond_8c_source_l00027}{Apply\+Boundary\+Cond()}}, \mbox{\hyperlink{ApplyForce_8c_source_l00025}{Apply\+Force()}}, \mbox{\hyperlink{ApplyLeesEdwardsBoundaryCond_8c_source_l00025}{Apply\+Lees\+Edwards\+Boundary\+Cond()}}, \mbox{\hyperlink{ComputeBondForce_8c_source_l00028}{Compute\+Bond\+Force()}}, \mbox{\hyperlink{ComputeForcesCells_8c_source_l00025}{Compute\+Forces\+Cells()}}, \mbox{\hyperlink{ComputePairForce_8c_source_l00027}{Compute\+Pair\+Force()}}, \mbox{\hyperlink{DumpBonds_8c_source_l00024}{Dump\+Bonds()}}, \mbox{\hyperlink{DumpPairs_8c_source_l00025}{Dump\+Pairs()}}, \mbox{\hyperlink{DumpState_8c_source_l00025}{Dump\+State()}}, \mbox{\hyperlink{EvalRdf_8c_source_l00026}{Eval\+Rdf()}}, \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}, \mbox{\hyperlink{Trajectory_8c_source_l00025}{Trajectory()}}, and \mbox{\hyperlink{VelocityVerletStep_8c_source_l00026}{Velocity\+Verlet\+Step()}}.
+
+\Hypertarget{global_8h_aaec14fae1ae07d7dffd660f65cbe0ec5}\label{global_8h_aaec14fae1ae07d7dffd660f65cbe0ec5} 
+\index{global.h@{global.h}!result@{result}}
+\index{result@{result}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{result}{result}}
+{\footnotesize\ttfamily char result\mbox{[}250\mbox{]}\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Referenced by \mbox{\hyperlink{main_8c_source_l00050}{main()}}.
+
+\Hypertarget{global_8h_a409ac219990f0cf85a946b0f32a0cea0}\label{global_8h_a409ac219990f0cf85a946b0f32a0cea0} 
+\index{global.h@{global.h}!rfAtom@{rfAtom}}
+\index{rfAtom@{rfAtom}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{rfAtom}{rfAtom}}
+{\footnotesize\ttfamily double rf\+Atom\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Referenced by \mbox{\hyperlink{ComputeForcesCells_8c_source_l00025}{Compute\+Forces\+Cells()}}, and \mbox{\hyperlink{EvalVacf_8c_source_l00026}{Eval\+Vacf()}}.
+
+\Hypertarget{global_8h_a78581c34377eab92a44bc4d30fabed1c}\label{global_8h_a78581c34377eab92a44bc4d30fabed1c} 
+\index{global.h@{global.h}!ro@{ro}}
+\index{ro@{ro}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{ro}{ro}}
+{\footnotesize\ttfamily double \texorpdfstring{$\ast$}{*} ro}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00036}{36}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{Close_8c_source_l00024}{Close()}}, \mbox{\hyperlink{ComputeBondForce_8c_source_l00028}{Compute\+Bond\+Force()}}, \mbox{\hyperlink{DumpBonds_8c_source_l00024}{Dump\+Bonds()}}, \mbox{\hyperlink{DumpRestart_8c_source_l00025}{Dump\+Restart()}}, and \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}.
+
+\Hypertarget{global_8h_a7fec425f50f8c2d24862faef8284b520}\label{global_8h_a7fec425f50f8c2d24862faef8284b520} 
+\index{global.h@{global.h}!rx@{rx}}
+\index{rx@{rx}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{rx}{rx}}
+{\footnotesize\ttfamily double\texorpdfstring{$\ast$}{*} rx\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Referenced by \mbox{\hyperlink{ApplyBoundaryCond_8c_source_l00027}{Apply\+Boundary\+Cond()}}, \mbox{\hyperlink{ApplyLeesEdwardsBoundaryCond_8c_source_l00025}{Apply\+Lees\+Edwards\+Boundary\+Cond()}}, \mbox{\hyperlink{ApplyShear_8c_source_l00025}{Apply\+Shear()}}, \mbox{\hyperlink{BrownianStep_8c_source_l00026}{Brownian\+Step()}}, \mbox{\hyperlink{Close_8c_source_l00024}{Close()}}, \mbox{\hyperlink{ComputeBondForce_8c_source_l00028}{Compute\+Bond\+Force()}}, \mbox{\hyperlink{ComputeForcesCells_8c_source_l00025}{Compute\+Forces\+Cells()}}, \mbox{\hyperlink{ComputePairForce_8c_source_l00027}{Compute\+Pair\+Force()}}, \mbox{\hyperlink{DisplaceAtoms_8c_source_l00025}{Displace\+Atoms()}}, \mbox{\hyperlink{DumpRestart_8c_source_l00025}{Dump\+Restart()}}, \mbox{\hyperlink{DumpState_8c_source_l00025}{Dump\+State()}}, \mbox{\hyperlink{EvalRdf_8c_source_l00026}{Eval\+Rdf()}}, \mbox{\hyperlink{EvalSpacetimeCorr_8c_source_l00026}{Eval\+Spacetime\+Corr()}}, \mbox{\hyperlink{EvalUnwrap_8c_source_l00027}{Eval\+Unwrap()}}, \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}, \mbox{\hyperlink{LeapfrogStep_8c_source_l00025}{Leapfrog\+Step()}}, \mbox{\hyperlink{Trajectory_8c_source_l00025}{Trajectory()}}, and \mbox{\hyperlink{VelocityVerletStep_8c_source_l00026}{Velocity\+Verlet\+Step()}}.
+
+\Hypertarget{global_8h_ad81015466d6c894db2f9cad4faecae1c}\label{global_8h_ad81015466d6c894db2f9cad4faecae1c} 
+\index{global.h@{global.h}!rxUnwrap@{rxUnwrap}}
+\index{rxUnwrap@{rxUnwrap}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{rxUnwrap}{rxUnwrap}}
+{\footnotesize\ttfamily double\texorpdfstring{$\ast$}{*} rx\+Unwrap\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Referenced by \mbox{\hyperlink{Close_8c_source_l00024}{Close()}}, \mbox{\hyperlink{EvalCom_8c_source_l00027}{Eval\+Com()}}, \mbox{\hyperlink{EvalUnwrap_8c_source_l00027}{Eval\+Unwrap()}}, and \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}.
+
+\Hypertarget{global_8h_af88ff31a9ae85beb713bd0c42815f1de}\label{global_8h_af88ff31a9ae85beb713bd0c42815f1de} 
+\index{global.h@{global.h}!ry@{ry}}
+\index{ry@{ry}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{ry}{ry}}
+{\footnotesize\ttfamily double \texorpdfstring{$\ast$}{*} ry}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00017}{17}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{ApplyBoundaryCond_8c_source_l00027}{Apply\+Boundary\+Cond()}}, \mbox{\hyperlink{ApplyLeesEdwardsBoundaryCond_8c_source_l00025}{Apply\+Lees\+Edwards\+Boundary\+Cond()}}, \mbox{\hyperlink{ApplyShear_8c_source_l00025}{Apply\+Shear()}}, \mbox{\hyperlink{BrownianStep_8c_source_l00026}{Brownian\+Step()}}, \mbox{\hyperlink{Close_8c_source_l00024}{Close()}}, \mbox{\hyperlink{ComputeBondForce_8c_source_l00028}{Compute\+Bond\+Force()}}, \mbox{\hyperlink{ComputeForcesCells_8c_source_l00025}{Compute\+Forces\+Cells()}}, \mbox{\hyperlink{ComputePairForce_8c_source_l00027}{Compute\+Pair\+Force()}}, \mbox{\hyperlink{DisplaceAtoms_8c_source_l00025}{Displace\+Atoms()}}, \mbox{\hyperlink{DumpRestart_8c_source_l00025}{Dump\+Restart()}}, \mbox{\hyperlink{DumpState_8c_source_l00025}{Dump\+State()}}, \mbox{\hyperlink{EvalRdf_8c_source_l00026}{Eval\+Rdf()}}, \mbox{\hyperlink{EvalUnwrap_8c_source_l00027}{Eval\+Unwrap()}}, \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}, \mbox{\hyperlink{LeapfrogStep_8c_source_l00025}{Leapfrog\+Step()}}, \mbox{\hyperlink{Trajectory_8c_source_l00025}{Trajectory()}}, and \mbox{\hyperlink{VelocityVerletStep_8c_source_l00026}{Velocity\+Verlet\+Step()}}.
+
+\Hypertarget{global_8h_aadd2df0c0919493607803cd89389b31a}\label{global_8h_aadd2df0c0919493607803cd89389b31a} 
+\index{global.h@{global.h}!ryUnwrap@{ryUnwrap}}
+\index{ryUnwrap@{ryUnwrap}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{ryUnwrap}{ryUnwrap}}
+{\footnotesize\ttfamily double \texorpdfstring{$\ast$}{*} ry\+Unwrap}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00048}{48}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{Close_8c_source_l00024}{Close()}}, \mbox{\hyperlink{EvalCom_8c_source_l00027}{Eval\+Com()}}, \mbox{\hyperlink{EvalUnwrap_8c_source_l00027}{Eval\+Unwrap()}}, and \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}.
+
+\Hypertarget{global_8h_a8f3c39c55c230405a75c81f4ec221616}\label{global_8h_a8f3c39c55c230405a75c81f4ec221616} 
+\index{global.h@{global.h}!shearDisplacement@{shearDisplacement}}
+\index{shearDisplacement@{shearDisplacement}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{shearDisplacement}{shearDisplacement}}
+{\footnotesize\ttfamily double shear\+Displacement\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Referenced by \mbox{\hyperlink{ApplyLeesEdwardsBoundaryCond_8c_source_l00025}{Apply\+Lees\+Edwards\+Boundary\+Cond()}}, \mbox{\hyperlink{ComputeBondForce_8c_source_l00028}{Compute\+Bond\+Force()}}, \mbox{\hyperlink{ComputePairForce_8c_source_l00027}{Compute\+Pair\+Force()}}, and \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}.
+
+\Hypertarget{global_8h_a8ac41cda466d1d95f5ad78f0a3d6ab18}\label{global_8h_a8ac41cda466d1d95f5ad78f0a3d6ab18} 
+\index{global.h@{global.h}!shearVelocity@{shearVelocity}}
+\index{shearVelocity@{shearVelocity}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{shearVelocity}{shearVelocity}}
+{\footnotesize\ttfamily double shear\+Velocity}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00042}{42}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}.
+
+\Hypertarget{global_8h_a439227feff9d7f55384e8780cfc2eb82}\label{global_8h_a439227feff9d7f55384e8780cfc2eb82} 
+\index{global.h@{global.h}!size@{size}}
+\index{size@{size}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{size}{size}}
+{\footnotesize\ttfamily int size}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00078}{78}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{ComputeForcesCells_8c_source_l00025}{Compute\+Forces\+Cells()}}.
+
+\Hypertarget{global_8h_abe8258aaf81de052c6452b8b739c5c73}\label{global_8h_abe8258aaf81de052c6452b8b739c5c73} 
+\index{global.h@{global.h}!sizeHistRdf@{sizeHistRdf}}
+\index{sizeHistRdf@{sizeHistRdf}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{sizeHistRdf}{sizeHistRdf}}
+{\footnotesize\ttfamily int size\+Hist\+Rdf}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00098}{98}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{AllocArrays_8c_source_l00025}{Alloc\+Arrays()}}, \mbox{\hyperlink{EvalRdf_8c_source_l00026}{Eval\+Rdf()}}, and \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}.
+
+\Hypertarget{global_8h_aceb0bd33904075ea75ec5f5db7180674}\label{global_8h_aceb0bd33904075ea75ec5f5db7180674} 
+\index{global.h@{global.h}!sKinEnergy@{sKinEnergy}}
+\index{sKinEnergy@{sKinEnergy}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{sKinEnergy}{sKinEnergy}}
+{\footnotesize\ttfamily double s\+Kin\+Energy}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00021}{21}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{AccumProps_8c_source_l00025}{Accum\+Props()}}.
+
+\Hypertarget{global_8h_ab8efd087a2de9e165fa9330d99beecc5}\label{global_8h_ab8efd087a2de9e165fa9330d99beecc5} 
+\index{global.h@{global.h}!solver@{solver}}
+\index{solver@{solver}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{solver}{solver}}
+{\footnotesize\ttfamily char solver\mbox{[}128\mbox{]}\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Referenced by \mbox{\hyperlink{EvalProps_8c_source_l00026}{Eval\+Props()}}, and \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}.
+
+\Hypertarget{global_8h_a65c8541613338d3885f454c7f762ef47}\label{global_8h_a65c8541613338d3885f454c7f762ef47} 
+\index{global.h@{global.h}!spacetimeCorr@{spacetimeCorr}}
+\index{spacetimeCorr@{spacetimeCorr}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{spacetimeCorr}{spacetimeCorr}}
+{\footnotesize\ttfamily double \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} spacetime\+Corr}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00088}{88}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{AllocArrays_8c_source_l00025}{Alloc\+Arrays()}}, \mbox{\hyperlink{Close_8c_source_l00024}{Close()}}, and \mbox{\hyperlink{EvalSpacetimeCorr_8c_source_l00026}{Eval\+Spacetime\+Corr()}}.
+
+\Hypertarget{global_8h_a26084125f8afb4f1f04ff8291b8bb6e4}\label{global_8h_a26084125f8afb4f1f04ff8291b8bb6e4} 
+\index{global.h@{global.h}!spacetimeCorrAv@{spacetimeCorrAv}}
+\index{spacetimeCorrAv@{spacetimeCorrAv}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{spacetimeCorrAv}{spacetimeCorrAv}}
+{\footnotesize\ttfamily double \texorpdfstring{$\ast$}{*} spacetime\+Corr\+Av}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00088}{88}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{AllocArrays_8c_source_l00025}{Alloc\+Arrays()}}, \mbox{\hyperlink{Close_8c_source_l00024}{Close()}}, \mbox{\hyperlink{EvalSpacetimeCorr_8c_source_l00026}{Eval\+Spacetime\+Corr()}}, and \mbox{\hyperlink{SetupJob_8c_source_l00027}{Setup\+Job()}}.
+
+\Hypertarget{global_8h_a425e987095ed5ab13d90f04c5c40572e}\label{global_8h_a425e987095ed5ab13d90f04c5c40572e} 
+\index{global.h@{global.h}!speed@{speed}}
+\index{speed@{speed}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{speed}{speed}}
+{\footnotesize\ttfamily double\texorpdfstring{$\ast$}{*} speed\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Referenced by \mbox{\hyperlink{Close_8c_source_l00024}{Close()}}, and \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}.
+
+\Hypertarget{global_8h_ac0bceed989ef50bb3a4314feb0c828aa}\label{global_8h_ac0bceed989ef50bb3a4314feb0c828aa} 
+\index{global.h@{global.h}!sPotEnergy@{sPotEnergy}}
+\index{sPotEnergy@{sPotEnergy}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{sPotEnergy}{sPotEnergy}}
+{\footnotesize\ttfamily double s\+Pot\+Energy}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00021}{21}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{AccumProps_8c_source_l00025}{Accum\+Props()}}.
+
+\Hypertarget{global_8h_af5ce20c1e720aecc5d780bbd059f9bb2}\label{global_8h_af5ce20c1e720aecc5d780bbd059f9bb2} 
+\index{global.h@{global.h}!sPressure@{sPressure}}
+\index{sPressure@{sPressure}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{sPressure}{sPressure}}
+{\footnotesize\ttfamily double s\+Pressure}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00022}{22}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{AccumProps_8c_source_l00025}{Accum\+Props()}}.
+
+\Hypertarget{global_8h_a6a05feadcd798474382d444168bb3d5d}\label{global_8h_a6a05feadcd798474382d444168bb3d5d} 
+\index{global.h@{global.h}!SqrRadiusIJ@{SqrRadiusIJ}}
+\index{SqrRadiusIJ@{SqrRadiusIJ}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{SqrRadiusIJ}{SqrRadiusIJ}}
+{\footnotesize\ttfamily double Sqr\+Radius\+IJ}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00026}{26}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{ComputeForcesCells_8c_source_l00025}{Compute\+Forces\+Cells()}}, and \mbox{\hyperlink{ComputePairForce_8c_source_l00027}{Compute\+Pair\+Force()}}.
+
+\Hypertarget{global_8h_a5c5dfe1f2edbb9b98971f0b85ecf4c17}\label{global_8h_a5c5dfe1f2edbb9b98971f0b85ecf4c17} 
+\index{global.h@{global.h}!ssKinEnergy@{ssKinEnergy}}
+\index{ssKinEnergy@{ssKinEnergy}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{ssKinEnergy}{ssKinEnergy}}
+{\footnotesize\ttfamily double ss\+Kin\+Energy}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00022}{22}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{AccumProps_8c_source_l00025}{Accum\+Props()}}.
+
+\Hypertarget{global_8h_a14dbdccf317ef9263542854ebf48a674}\label{global_8h_a14dbdccf317ef9263542854ebf48a674} 
+\index{global.h@{global.h}!ssPotEnergy@{ssPotEnergy}}
+\index{ssPotEnergy@{ssPotEnergy}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{ssPotEnergy}{ssPotEnergy}}
+{\footnotesize\ttfamily double ss\+Pot\+Energy}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00022}{22}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{AccumProps_8c_source_l00025}{Accum\+Props()}}.
+
+\Hypertarget{global_8h_a5a69d6c5c0f48f99290220e47dfdba33}\label{global_8h_a5a69d6c5c0f48f99290220e47dfdba33} 
+\index{global.h@{global.h}!ssPressure@{ssPressure}}
+\index{ssPressure@{ssPressure}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{ssPressure}{ssPressure}}
+{\footnotesize\ttfamily double ss\+Pressure}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00022}{22}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{AccumProps_8c_source_l00025}{Accum\+Props()}}.
+
+\Hypertarget{global_8h_af6a00fa64b9ab22b3eb1ba906e0d3310}\label{global_8h_af6a00fa64b9ab22b3eb1ba906e0d3310} 
+\index{global.h@{global.h}!ssTotEnergy@{ssTotEnergy}}
+\index{ssTotEnergy@{ssTotEnergy}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{ssTotEnergy}{ssTotEnergy}}
+{\footnotesize\ttfamily double ss\+Tot\+Energy}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00022}{22}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{AccumProps_8c_source_l00025}{Accum\+Props()}}.
+
+\Hypertarget{global_8h_a7187cdbfc7b7c8acd127dffed24c6f64}\label{global_8h_a7187cdbfc7b7c8acd127dffed24c6f64} 
+\index{global.h@{global.h}!stepAcf@{stepAcf}}
+\index{stepAcf@{stepAcf}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{stepAcf}{stepAcf}}
+{\footnotesize\ttfamily int step\+Acf}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00094}{94}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{AccumVacf_8c_source_l00027}{Accum\+Vacf()}}, \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}, and \mbox{\hyperlink{PrintVacf_8c_source_l00025}{Print\+Vacf()}}.
+
+\Hypertarget{global_8h_a9652d009b4c8999144191b461014e063}\label{global_8h_a9652d009b4c8999144191b461014e063} 
+\index{global.h@{global.h}!stepAvg@{stepAvg}}
+\index{stepAvg@{stepAvg}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{stepAvg}{stepAvg}}
+{\footnotesize\ttfamily int step\+Avg}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00024}{24}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{AccumProps_8c_source_l00025}{Accum\+Props()}}, \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}, and \mbox{\hyperlink{main_8c_source_l00050}{main()}}.
+
+\Hypertarget{global_8h_a4e088a34485e73c84b8929dc45d6f319}\label{global_8h_a4e088a34485e73c84b8929dc45d6f319} 
+\index{global.h@{global.h}!stepCorr@{stepCorr}}
+\index{stepCorr@{stepCorr}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{stepCorr}{stepCorr}}
+{\footnotesize\ttfamily int step\+Corr}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00089}{89}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{EvalSpacetimeCorr_8c_source_l00026}{Eval\+Spacetime\+Corr()}}, and \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}.
+
+\Hypertarget{global_8h_ac208e38a6cf3eecfb9d1522e950ed956}\label{global_8h_ac208e38a6cf3eecfb9d1522e950ed956} 
+\index{global.h@{global.h}!stepCount@{stepCount}}
+\index{stepCount@{stepCount}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{stepCount}{stepCount}}
+{\footnotesize\ttfamily int step\+Count}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00024}{24}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{BrownianStep_8c_source_l00026}{Brownian\+Step()}}, \mbox{\hyperlink{ComputeBondForce_8c_source_l00028}{Compute\+Bond\+Force()}}, \mbox{\hyperlink{ComputePairForce_8c_source_l00027}{Compute\+Pair\+Force()}}, \mbox{\hyperlink{Halt_8c_source_l00027}{Halt\+Condition\+Check()}}, \mbox{\hyperlink{LeapfrogStep_8c_source_l00025}{Leapfrog\+Step()}}, \mbox{\hyperlink{main_8c_source_l00050}{main()}}, and \mbox{\hyperlink{SetupJob_8c_source_l00027}{Setup\+Job()}}.
+
+\Hypertarget{global_8h_ad8853a52cc7f26e32641543d8030bd87}\label{global_8h_ad8853a52cc7f26e32641543d8030bd87} 
+\index{global.h@{global.h}!stepDump@{stepDump}}
+\index{stepDump@{stepDump}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{stepDump}{stepDump}}
+{\footnotesize\ttfamily int step\+Dump}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00024}{24}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}, and \mbox{\hyperlink{main_8c_source_l00050}{main()}}.
+
+\Hypertarget{global_8h_a93ce7b5ddaa822299367884866723f03}\label{global_8h_a93ce7b5ddaa822299367884866723f03} 
+\index{global.h@{global.h}!stepEquil@{stepEquil}}
+\index{stepEquil@{stepEquil}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{stepEquil}{stepEquil}}
+{\footnotesize\ttfamily int step\+Equil}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00024}{24}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{BrownianStep_8c_source_l00026}{Brownian\+Step()}}, \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}, and \mbox{\hyperlink{LeapfrogStep_8c_source_l00025}{Leapfrog\+Step()}}.
+
+\Hypertarget{global_8h_a6997819607eb8c411787524aa23e918f}\label{global_8h_a6997819607eb8c411787524aa23e918f} 
+\index{global.h@{global.h}!stepLimit@{stepLimit}}
+\index{stepLimit@{stepLimit}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{stepLimit}{stepLimit}}
+{\footnotesize\ttfamily int step\+Limit}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00024}{24}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}, and \mbox{\hyperlink{main_8c_source_l00050}{main()}}.
+
+\Hypertarget{global_8h_a4c0045ae072bc857abe3b38909bd2d08}\label{global_8h_a4c0045ae072bc857abe3b38909bd2d08} 
+\index{global.h@{global.h}!stepRdf@{stepRdf}}
+\index{stepRdf@{stepRdf}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{stepRdf}{stepRdf}}
+{\footnotesize\ttfamily int step\+Rdf}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00098}{98}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}.
+
+\Hypertarget{global_8h_a2d64b21fac4565b6b9d33295b1eca832}\label{global_8h_a2d64b21fac4565b6b9d33295b1eca832} 
+\index{global.h@{global.h}!stepTraj@{stepTraj}}
+\index{stepTraj@{stepTraj}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{stepTraj}{stepTraj}}
+{\footnotesize\ttfamily int step\+Traj}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00024}{24}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}, and \mbox{\hyperlink{main_8c_source_l00050}{main()}}.
+
+\Hypertarget{global_8h_a5bd56b6f1a373ed4b8c548faa0b053cd}\label{global_8h_a5bd56b6f1a373ed4b8c548faa0b053cd} 
+\index{global.h@{global.h}!sTotEnergy@{sTotEnergy}}
+\index{sTotEnergy@{sTotEnergy}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{sTotEnergy}{sTotEnergy}}
+{\footnotesize\ttfamily double s\+Tot\+Energy}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00022}{22}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{AccumProps_8c_source_l00025}{Accum\+Props()}}.
+
+\Hypertarget{global_8h_a46e07cb3e28676cde590ccbeb2a9ad14}\label{global_8h_a46e07cb3e28676cde590ccbeb2a9ad14} 
+\index{global.h@{global.h}!strain@{strain}}
+\index{strain@{strain}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{strain}{strain}}
+{\footnotesize\ttfamily double strain\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Referenced by \mbox{\hyperlink{ApplyShear_8c_source_l00025}{Apply\+Shear()}}, and \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}.
+
+\Hypertarget{global_8h_ad5481186802f3197474df7651eb4d009}\label{global_8h_ad5481186802f3197474df7651eb4d009} 
+\index{global.h@{global.h}!strainRate@{strainRate}}
+\index{strainRate@{strainRate}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{strainRate}{strainRate}}
+{\footnotesize\ttfamily double strain\+Rate}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00041}{41}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}.
+
+\Hypertarget{global_8h_ab13bb637cb4ef7ef1f7aafad19bb8558}\label{global_8h_ab13bb637cb4ef7ef1f7aafad19bb8558} 
+\index{global.h@{global.h}!strech@{strech}}
+\index{strech@{strech}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{strech}{strech}}
+{\footnotesize\ttfamily double strech\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Referenced by \mbox{\hyperlink{ComputeBondForce_8c_source_l00028}{Compute\+Bond\+Force()}}, and \mbox{\hyperlink{ComputePairForce_8c_source_l00027}{Compute\+Pair\+Force()}}.
+
+\Hypertarget{global_8h_a8a50faf68db5dbea70c683ffce3e8045}\label{global_8h_a8a50faf68db5dbea70c683ffce3e8045} 
+\index{global.h@{global.h}!stress@{stress}}
+\index{stress@{stress}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{stress}{stress}}
+{\footnotesize\ttfamily char stress\mbox{[}256\mbox{]}\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{global_8h_aad2e8fd6b6b37dd84c64021c640422b9}\label{global_8h_aad2e8fd6b6b37dd84c64021c640422b9} 
+\index{global.h@{global.h}!svirSum@{svirSum}}
+\index{svirSum@{svirSum}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{svirSum}{svirSum}}
+{\footnotesize\ttfamily double svir\+Sum}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00021}{21}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{AccumProps_8c_source_l00025}{Accum\+Props()}}.
+
+\Hypertarget{global_8h_abb2aee8c6108dd86a8da33115d249d71}\label{global_8h_abb2aee8c6108dd86a8da33115d249d71} 
+\index{global.h@{global.h}!timeNow@{timeNow}}
+\index{timeNow@{timeNow}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{timeNow}{timeNow}}
+{\footnotesize\ttfamily double time\+Now}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00020}{20}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{DumpBonds_8c_source_l00024}{Dump\+Bonds()}}, \mbox{\hyperlink{DumpPairs_8c_source_l00025}{Dump\+Pairs()}}, \mbox{\hyperlink{DumpRestart_8c_source_l00025}{Dump\+Restart()}}, \mbox{\hyperlink{DumpState_8c_source_l00025}{Dump\+State()}}, \mbox{\hyperlink{EvalCom_8c_source_l00027}{Eval\+Com()}}, \mbox{\hyperlink{EvalRdf_8c_source_l00026}{Eval\+Rdf()}}, \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}, \mbox{\hyperlink{main_8c_source_l00050}{main()}}, \mbox{\hyperlink{PrintCom_8c_source_l00028}{Print\+Com()}}, \mbox{\hyperlink{PrintMomentum_8c_source_l00025}{Print\+Momentum()}}, \mbox{\hyperlink{PrintStress_8c_source_l00025}{Print\+Stress()}}, \mbox{\hyperlink{PrintSummary_8c_source_l00004}{Print\+Summary()}}, \mbox{\hyperlink{PrintVrms_8c_source_l00027}{Print\+Vrms()}}, and \mbox{\hyperlink{Trajectory_8c_source_l00025}{Trajectory()}}.
+
+\Hypertarget{global_8h_ace1b0540bf5b0561f14c46f5aa8d3d17}\label{global_8h_ace1b0540bf5b0561f14c46f5aa8d3d17} 
+\index{global.h@{global.h}!TotalBondEnergy@{TotalBondEnergy}}
+\index{TotalBondEnergy@{TotalBondEnergy}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{TotalBondEnergy}{TotalBondEnergy}}
+{\footnotesize\ttfamily double Total\+Bond\+Energy\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Referenced by \mbox{\hyperlink{ComputeBondForce_8c_source_l00028}{Compute\+Bond\+Force()}}, and \mbox{\hyperlink{EvalProps_8c_source_l00026}{Eval\+Props()}}.
+
+\Hypertarget{global_8h_ad8c0e4d46c6c1b263dd8b02c211be355}\label{global_8h_ad8c0e4d46c6c1b263dd8b02c211be355} 
+\index{global.h@{global.h}!TotalMass@{TotalMass}}
+\index{TotalMass@{TotalMass}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{TotalMass}{TotalMass}}
+{\footnotesize\ttfamily double Total\+Mass}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00031}{31}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{EvalCom_8c_source_l00027}{Eval\+Com()}}.
+
+\Hypertarget{global_8h_a025720826b3728fd77ab18384b7369bf}\label{global_8h_a025720826b3728fd77ab18384b7369bf} 
+\index{global.h@{global.h}!totEnergy@{totEnergy}}
+\index{totEnergy@{totEnergy}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{totEnergy}{totEnergy}}
+{\footnotesize\ttfamily double tot\+Energy}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00020}{20}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{AccumProps_8c_source_l00025}{Accum\+Props()}}, \mbox{\hyperlink{EvalProps_8c_source_l00026}{Eval\+Props()}}, and \mbox{\hyperlink{PrintSummary_8c_source_l00004}{Print\+Summary()}}.
+
+\Hypertarget{global_8h_a927379bdfda5eedb0267990043b572f6}\label{global_8h_a927379bdfda5eedb0267990043b572f6} 
+\index{global.h@{global.h}!uSum@{uSum}}
+\index{uSum@{uSum}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{uSum}{uSum}}
+{\footnotesize\ttfamily double u\+Sum}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00021}{21}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{ComputeForcesCells_8c_source_l00025}{Compute\+Forces\+Cells()}}.
+
+\Hypertarget{global_8h_a9b7d6fb2c7936c1e648c8af3260beb25}\label{global_8h_a9b7d6fb2c7936c1e648c8af3260beb25} 
+\index{global.h@{global.h}!uSumPair@{uSumPair}}
+\index{uSumPair@{uSumPair}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{uSumPair}{uSumPair}}
+{\footnotesize\ttfamily double u\+Sum\+Pair\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Referenced by \mbox{\hyperlink{ComputePairForce_8c_source_l00027}{Compute\+Pair\+Force()}}, and \mbox{\hyperlink{EvalProps_8c_source_l00026}{Eval\+Props()}}.
+
+\Hypertarget{global_8h_a35bf08d49aa04729a9f7dd23a464a826}\label{global_8h_a35bf08d49aa04729a9f7dd23a464a826} 
+\index{global.h@{global.h}!uSumPairPerAtom@{uSumPairPerAtom}}
+\index{uSumPairPerAtom@{uSumPairPerAtom}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{uSumPairPerAtom}{uSumPairPerAtom}}
+{\footnotesize\ttfamily double u\+Sum\+Pair\+Per\+Atom}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00082}{82}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{EvalProps_8c_source_l00026}{Eval\+Props()}}, and \mbox{\hyperlink{PrintSummary_8c_source_l00004}{Print\+Summary()}}.
+
+\Hypertarget{global_8h_abdbf03f447f8b0adbae4c15974dac45f}\label{global_8h_abdbf03f447f8b0adbae4c15974dac45f} 
+\index{global.h@{global.h}!virSum@{virSum}}
+\index{virSum@{virSum}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{virSum}{virSum}}
+{\footnotesize\ttfamily double vir\+Sum}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00021}{21}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{AccumProps_8c_source_l00025}{Accum\+Props()}}, \mbox{\hyperlink{ComputeForcesCells_8c_source_l00025}{Compute\+Forces\+Cells()}}, \mbox{\hyperlink{EvalProps_8c_source_l00026}{Eval\+Props()}}, and \mbox{\hyperlink{PrintSummary_8c_source_l00004}{Print\+Summary()}}.
+
+\Hypertarget{global_8h_a08413ab34f5604e910f1dbdc021a3c5f}\label{global_8h_a08413ab34f5604e910f1dbdc021a3c5f} 
+\index{global.h@{global.h}!virSumBond@{virSumBond}}
+\index{virSumBond@{virSumBond}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{virSumBond}{virSumBond}}
+{\footnotesize\ttfamily double vir\+Sum\+Bond\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Referenced by \mbox{\hyperlink{ComputeBondForce_8c_source_l00028}{Compute\+Bond\+Force()}}, and \mbox{\hyperlink{EvalProps_8c_source_l00026}{Eval\+Props()}}.
+
+\Hypertarget{global_8h_ab86ba14519d191322a45fa6f760b16f8}\label{global_8h_ab86ba14519d191322a45fa6f760b16f8} 
+\index{global.h@{global.h}!virSumBondxx@{virSumBondxx}}
+\index{virSumBondxx@{virSumBondxx}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{virSumBondxx}{virSumBondxx}}
+{\footnotesize\ttfamily double vir\+Sum\+Bondxx}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00083}{83}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{ComputeBondForce_8c_source_l00028}{Compute\+Bond\+Force()}}, and \mbox{\hyperlink{EvalProps_8c_source_l00026}{Eval\+Props()}}.
+
+\Hypertarget{global_8h_a6669a78293d832c3b0c074886e6ecd19}\label{global_8h_a6669a78293d832c3b0c074886e6ecd19} 
+\index{global.h@{global.h}!virSumBondxy@{virSumBondxy}}
+\index{virSumBondxy@{virSumBondxy}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{virSumBondxy}{virSumBondxy}}
+{\footnotesize\ttfamily double vir\+Sum\+Bondxy}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00083}{83}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{ComputeBondForce_8c_source_l00028}{Compute\+Bond\+Force()}}, and \mbox{\hyperlink{EvalProps_8c_source_l00026}{Eval\+Props()}}.
+
+\Hypertarget{global_8h_aee51ff7fe82a7228ea1348855cf89915}\label{global_8h_aee51ff7fe82a7228ea1348855cf89915} 
+\index{global.h@{global.h}!virSumBondyy@{virSumBondyy}}
+\index{virSumBondyy@{virSumBondyy}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{virSumBondyy}{virSumBondyy}}
+{\footnotesize\ttfamily double vir\+Sum\+Bondyy}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00083}{83}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{ComputeBondForce_8c_source_l00028}{Compute\+Bond\+Force()}}, and \mbox{\hyperlink{EvalProps_8c_source_l00026}{Eval\+Props()}}.
+
+\Hypertarget{global_8h_a217147ba7e53c5aa91861295fd29acab}\label{global_8h_a217147ba7e53c5aa91861295fd29acab} 
+\index{global.h@{global.h}!virSumPair@{virSumPair}}
+\index{virSumPair@{virSumPair}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{virSumPair}{virSumPair}}
+{\footnotesize\ttfamily double vir\+Sum\+Pair}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00082}{82}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{ComputePairForce_8c_source_l00027}{Compute\+Pair\+Force()}}, and \mbox{\hyperlink{EvalProps_8c_source_l00026}{Eval\+Props()}}.
+
+\Hypertarget{global_8h_a4ca279a3a01228351fec03dd3c051389}\label{global_8h_a4ca279a3a01228351fec03dd3c051389} 
+\index{global.h@{global.h}!virSumPairxx@{virSumPairxx}}
+\index{virSumPairxx@{virSumPairxx}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{virSumPairxx}{virSumPairxx}}
+{\footnotesize\ttfamily double vir\+Sum\+Pairxx}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00082}{82}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{ComputePairForce_8c_source_l00027}{Compute\+Pair\+Force()}}, and \mbox{\hyperlink{EvalProps_8c_source_l00026}{Eval\+Props()}}.
+
+\Hypertarget{global_8h_af5252e908f208e8efbc603a117c51cb7}\label{global_8h_af5252e908f208e8efbc603a117c51cb7} 
+\index{global.h@{global.h}!virSumPairxy@{virSumPairxy}}
+\index{virSumPairxy@{virSumPairxy}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{virSumPairxy}{virSumPairxy}}
+{\footnotesize\ttfamily double vir\+Sum\+Pairxy}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00082}{82}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{ComputePairForce_8c_source_l00027}{Compute\+Pair\+Force()}}, and \mbox{\hyperlink{EvalProps_8c_source_l00026}{Eval\+Props()}}.
+
+\Hypertarget{global_8h_a1e26755e037e321d30f5a5a128140e2d}\label{global_8h_a1e26755e037e321d30f5a5a128140e2d} 
+\index{global.h@{global.h}!virSumPairyy@{virSumPairyy}}
+\index{virSumPairyy@{virSumPairyy}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{virSumPairyy}{virSumPairyy}}
+{\footnotesize\ttfamily double vir\+Sum\+Pairyy}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00082}{82}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{ComputePairForce_8c_source_l00027}{Compute\+Pair\+Force()}}, and \mbox{\hyperlink{EvalProps_8c_source_l00026}{Eval\+Props()}}.
+
+\Hypertarget{global_8h_ad41df8a242cc872c157a7328617f4957}\label{global_8h_ad41df8a242cc872c157a7328617f4957} 
+\index{global.h@{global.h}!virSumxx@{virSumxx}}
+\index{virSumxx@{virSumxx}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{virSumxx}{virSumxx}}
+{\footnotesize\ttfamily double vir\+Sumxx\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Referenced by \mbox{\hyperlink{EvalProps_8c_source_l00026}{Eval\+Props()}}, and \mbox{\hyperlink{PrintStress_8c_source_l00025}{Print\+Stress()}}.
+
+\Hypertarget{global_8h_a486d537e9ff9b9bc9b3a538768d282b0}\label{global_8h_a486d537e9ff9b9bc9b3a538768d282b0} 
+\index{global.h@{global.h}!virSumxy@{virSumxy}}
+\index{virSumxy@{virSumxy}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{virSumxy}{virSumxy}}
+{\footnotesize\ttfamily double vir\+Sumxy}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00084}{84}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{EvalProps_8c_source_l00026}{Eval\+Props()}}, and \mbox{\hyperlink{PrintStress_8c_source_l00025}{Print\+Stress()}}.
+
+\Hypertarget{global_8h_a1fc6778eedb1b18ef5b97d198eee67e9}\label{global_8h_a1fc6778eedb1b18ef5b97d198eee67e9} 
+\index{global.h@{global.h}!virSumyy@{virSumyy}}
+\index{virSumyy@{virSumyy}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{virSumyy}{virSumyy}}
+{\footnotesize\ttfamily double vir\+Sumyy}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00084}{84}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{EvalProps_8c_source_l00026}{Eval\+Props()}}, and \mbox{\hyperlink{PrintStress_8c_source_l00025}{Print\+Stress()}}.
+
+\Hypertarget{global_8h_a8ea6a64d519c74ea82fa4c90cc6b9777}\label{global_8h_a8ea6a64d519c74ea82fa4c90cc6b9777} 
+\index{global.h@{global.h}!visc@{visc}}
+\index{visc@{visc}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{visc}{visc}}
+{\footnotesize\ttfamily char visc\mbox{[}256\mbox{]}\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{global_8h_a9d680c9ee759157faecbb75ad8d91d63}\label{global_8h_a9d680c9ee759157faecbb75ad8d91d63} 
+\index{global.h@{global.h}!viscAcf@{viscAcf}}
+\index{viscAcf@{viscAcf}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{viscAcf}{viscAcf}}
+{\footnotesize\ttfamily double \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} visc\+Acf}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00093}{93}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{AccumVacf_8c_source_l00027}{Accum\+Vacf()}}, \mbox{\hyperlink{AllocArrays_8c_source_l00025}{Alloc\+Arrays()}}, \mbox{\hyperlink{Close_8c_source_l00024}{Close()}}, and \mbox{\hyperlink{EvalVacf_8c_source_l00026}{Eval\+Vacf()}}.
+
+\Hypertarget{global_8h_a0eb9c034706ff9eeacb32ac2f0327e10}\label{global_8h_a0eb9c034706ff9eeacb32ac2f0327e10} 
+\index{global.h@{global.h}!viscAcfAv@{viscAcfAv}}
+\index{viscAcfAv@{viscAcfAv}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{viscAcfAv}{viscAcfAv}}
+{\footnotesize\ttfamily double \texorpdfstring{$\ast$}{*} visc\+Acf\+Av}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00093}{93}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{AccumVacf_8c_source_l00027}{Accum\+Vacf()}}, \mbox{\hyperlink{AllocArrays_8c_source_l00025}{Alloc\+Arrays()}}, \mbox{\hyperlink{Close_8c_source_l00024}{Close()}}, \mbox{\hyperlink{PrintVacf_8c_source_l00025}{Print\+Vacf()}}, and \mbox{\hyperlink{ZeroVacf_8c_source_l00025}{Zero\+Vacf()}}.
+
+\Hypertarget{global_8h_a38b081058be3f7f6594654b9890b0943}\label{global_8h_a38b081058be3f7f6594654b9890b0943} 
+\index{global.h@{global.h}!viscAcfInt@{viscAcfInt}}
+\index{viscAcfInt@{viscAcfInt}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{viscAcfInt}{viscAcfInt}}
+{\footnotesize\ttfamily double visc\+Acf\+Int}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00093}{93}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{AccumVacf_8c_source_l00027}{Accum\+Vacf()}}, and \mbox{\hyperlink{PrintVacf_8c_source_l00025}{Print\+Vacf()}}.
+
+\Hypertarget{global_8h_aa14d3f1be7cb8fc0a8f4b26eac3b4ebb}\label{global_8h_aa14d3f1be7cb8fc0a8f4b26eac3b4ebb} 
+\index{global.h@{global.h}!viscAcfOrg@{viscAcfOrg}}
+\index{viscAcfOrg@{viscAcfOrg}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{viscAcfOrg}{viscAcfOrg}}
+{\footnotesize\ttfamily double \texorpdfstring{$\ast$}{*} visc\+Acf\+Org}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00093}{93}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{AllocArrays_8c_source_l00025}{Alloc\+Arrays()}}, \mbox{\hyperlink{Close_8c_source_l00024}{Close()}}, and \mbox{\hyperlink{EvalVacf_8c_source_l00026}{Eval\+Vacf()}}.
+
+\Hypertarget{global_8h_a19e4a064bc256b4dc93cc670e209764b}\label{global_8h_a19e4a064bc256b4dc93cc670e209764b} 
+\index{global.h@{global.h}!VMeanSqr@{VMeanSqr}}
+\index{VMeanSqr@{VMeanSqr}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{VMeanSqr}{VMeanSqr}}
+{\footnotesize\ttfamily double VMean\+Sqr}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00043}{43}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{EvalVrms_8c_source_l00027}{Eval\+Vrms()}}.
+
+\Hypertarget{global_8h_a32ac1f5d451862c2cf8a66465a5ec087}\label{global_8h_a32ac1f5d451862c2cf8a66465a5ec087} 
+\index{global.h@{global.h}!vrms@{vrms}}
+\index{vrms@{vrms}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{vrms}{vrms}}
+{\footnotesize\ttfamily char vrms\mbox{[}256\mbox{]}\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Referenced by \mbox{\hyperlink{main_8c_source_l00050}{main()}}.
+
+\Hypertarget{global_8h_a30d906a0cd864fe43f75ca8ca92ccf77}\label{global_8h_a30d906a0cd864fe43f75ca8ca92ccf77} 
+\index{global.h@{global.h}!VRootMeanSqr@{VRootMeanSqr}}
+\index{VRootMeanSqr@{VRootMeanSqr}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{VRootMeanSqr}{VRootMeanSqr}}
+{\footnotesize\ttfamily double VRoot\+Mean\+Sqr}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00043}{43}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{EvalVrms_8c_source_l00027}{Eval\+Vrms()}}, \mbox{\hyperlink{main_8c_source_l00050}{main()}}, and \mbox{\hyperlink{PrintVrms_8c_source_l00027}{Print\+Vrms()}}.
+
+\Hypertarget{global_8h_a7f75910911c1659f8b012917539bcee2}\label{global_8h_a7f75910911c1659f8b012917539bcee2} 
+\index{global.h@{global.h}!VSqr@{VSqr}}
+\index{VSqr@{VSqr}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{VSqr}{VSqr}}
+{\footnotesize\ttfamily double VSqr\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Referenced by \mbox{\hyperlink{EvalVrms_8c_source_l00027}{Eval\+Vrms()}}.
+
+\Hypertarget{global_8h_a68c26a0c6b002f1da36c4be599ca5149}\label{global_8h_a68c26a0c6b002f1da36c4be599ca5149} 
+\index{global.h@{global.h}!vSum@{vSum}}
+\index{vSum@{vSum}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{vSum}{vSum}}
+{\footnotesize\ttfamily double v\+Sum}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00021}{21}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{EvalProps_8c_source_l00026}{Eval\+Props()}}, and \mbox{\hyperlink{PrintSummary_8c_source_l00004}{Print\+Summary()}}.
+
+\Hypertarget{global_8h_adccf176eee31c1ae7a4521f8a42e19ae}\label{global_8h_adccf176eee31c1ae7a4521f8a42e19ae} 
+\index{global.h@{global.h}!vSumX@{vSumX}}
+\index{vSumX@{vSumX}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{vSumX}{vSumX}}
+{\footnotesize\ttfamily double v\+SumX}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00021}{21}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{EvalProps_8c_source_l00026}{Eval\+Props()}}, and \mbox{\hyperlink{PrintMomentum_8c_source_l00025}{Print\+Momentum()}}.
+
+\Hypertarget{global_8h_a74f7573f7c599b600da92918019291a5}\label{global_8h_a74f7573f7c599b600da92918019291a5} 
+\index{global.h@{global.h}!vSumY@{vSumY}}
+\index{vSumY@{vSumY}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{vSumY}{vSumY}}
+{\footnotesize\ttfamily double v\+SumY}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00021}{21}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{EvalProps_8c_source_l00026}{Eval\+Props()}}, and \mbox{\hyperlink{PrintMomentum_8c_source_l00025}{Print\+Momentum()}}.
+
+\Hypertarget{global_8h_a5a69ba53b920022cc82acded08812d9c}\label{global_8h_a5a69ba53b920022cc82acded08812d9c} 
+\index{global.h@{global.h}!vvSum@{vvSum}}
+\index{vvSum@{vvSum}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{vvSum}{vvSum}}
+{\footnotesize\ttfamily double vv\+Sum}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00021}{21}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{EvalProps_8c_source_l00026}{Eval\+Props()}}.
+
+\Hypertarget{global_8h_a6cbb00abd724a75be2c6424c84d18654}\label{global_8h_a6cbb00abd724a75be2c6424c84d18654} 
+\index{global.h@{global.h}!vx@{vx}}
+\index{vx@{vx}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{vx}{vx}}
+{\footnotesize\ttfamily double \texorpdfstring{$\ast$}{*} vx}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00017}{17}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{ApplyBoundaryCond_8c_source_l00027}{Apply\+Boundary\+Cond()}}, \mbox{\hyperlink{ApplyDrivingForce_8c_source_l00025}{Apply\+Driving\+Force()}}, \mbox{\hyperlink{ApplyViscous_8c_source_l00025}{Apply\+Viscous()}}, \mbox{\hyperlink{BrownianStep_8c_source_l00026}{Brownian\+Step()}}, \mbox{\hyperlink{Close_8c_source_l00024}{Close()}}, \mbox{\hyperlink{ComputeBondForce_8c_source_l00028}{Compute\+Bond\+Force()}}, \mbox{\hyperlink{ComputeForcesCells_8c_source_l00025}{Compute\+Forces\+Cells()}}, \mbox{\hyperlink{ComputePairForce_8c_source_l00027}{Compute\+Pair\+Force()}}, \mbox{\hyperlink{DumpRestart_8c_source_l00025}{Dump\+Restart()}}, \mbox{\hyperlink{DumpState_8c_source_l00025}{Dump\+State()}}, \mbox{\hyperlink{EvalProps_8c_source_l00026}{Eval\+Props()}}, \mbox{\hyperlink{EvalVacf_8c_source_l00026}{Eval\+Vacf()}}, \mbox{\hyperlink{EvalVrms_8c_source_l00027}{Eval\+Vrms()}}, \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}, \mbox{\hyperlink{LeapfrogStep_8c_source_l00025}{Leapfrog\+Step()}}, \mbox{\hyperlink{Trajectory_8c_source_l00025}{Trajectory()}}, and \mbox{\hyperlink{VelocityVerletStep_8c_source_l00026}{Velocity\+Verlet\+Step()}}.
+
+\Hypertarget{global_8h_ad78254f6802793cc12b197889e6ea80d}\label{global_8h_ad78254f6802793cc12b197889e6ea80d} 
+\index{global.h@{global.h}!vy@{vy}}
+\index{vy@{vy}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{vy}{vy}}
+{\footnotesize\ttfamily double \texorpdfstring{$\ast$}{*} vy}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00017}{17}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{ApplyBoundaryCond_8c_source_l00027}{Apply\+Boundary\+Cond()}}, \mbox{\hyperlink{ApplyDrivingForce_8c_source_l00025}{Apply\+Driving\+Force()}}, \mbox{\hyperlink{ApplyViscous_8c_source_l00025}{Apply\+Viscous()}}, \mbox{\hyperlink{BrownianStep_8c_source_l00026}{Brownian\+Step()}}, \mbox{\hyperlink{Close_8c_source_l00024}{Close()}}, \mbox{\hyperlink{ComputeBondForce_8c_source_l00028}{Compute\+Bond\+Force()}}, \mbox{\hyperlink{ComputeForcesCells_8c_source_l00025}{Compute\+Forces\+Cells()}}, \mbox{\hyperlink{ComputePairForce_8c_source_l00027}{Compute\+Pair\+Force()}}, \mbox{\hyperlink{DumpRestart_8c_source_l00025}{Dump\+Restart()}}, \mbox{\hyperlink{DumpState_8c_source_l00025}{Dump\+State()}}, \mbox{\hyperlink{EvalProps_8c_source_l00026}{Eval\+Props()}}, \mbox{\hyperlink{EvalVacf_8c_source_l00026}{Eval\+Vacf()}}, \mbox{\hyperlink{EvalVrms_8c_source_l00027}{Eval\+Vrms()}}, \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}, \mbox{\hyperlink{LeapfrogStep_8c_source_l00025}{Leapfrog\+Step()}}, \mbox{\hyperlink{Trajectory_8c_source_l00025}{Trajectory()}}, and \mbox{\hyperlink{VelocityVerletStep_8c_source_l00026}{Velocity\+Verlet\+Step()}}.
+
+\Hypertarget{global_8h_abe15117421a36ea636b2f0f00ff02c4e}\label{global_8h_abe15117421a36ea636b2f0f00ff02c4e} 
+\index{global.h@{global.h}!xBoundary@{xBoundary}}
+\index{xBoundary@{xBoundary}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{xBoundary}{xBoundary}}
+{\footnotesize\ttfamily char x\+Boundary\mbox{[}10\mbox{]}\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Referenced by \mbox{\hyperlink{ApplyBoundaryCond_8c_source_l00027}{Apply\+Boundary\+Cond()}}, and \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}.
+
+\Hypertarget{global_8h_a77f601f8012d95c5599ea1e778993b25}\label{global_8h_a77f601f8012d95c5599ea1e778993b25} 
+\index{global.h@{global.h}!xyz@{xyz}}
+\index{xyz@{xyz}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{xyz}{xyz}}
+{\footnotesize\ttfamily char xyz\mbox{[}256\mbox{]}\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Referenced by \mbox{\hyperlink{main_8c_source_l00050}{main()}}.
+
+\Hypertarget{global_8h_a67ceb9a00a4ff8dfc0f1277eb52669e4}\label{global_8h_a67ceb9a00a4ff8dfc0f1277eb52669e4} 
+\index{global.h@{global.h}!yBoundary@{yBoundary}}
+\index{yBoundary@{yBoundary}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{yBoundary}{yBoundary}}
+{\footnotesize\ttfamily char y\+Boundary\mbox{[}10\mbox{]}}
+
+
+
+Definition at line \mbox{\hyperlink{global_8h_source_l00064}{64}} of file \mbox{\hyperlink{global_8h_source}{global.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{ApplyBoundaryCond_8c_source_l00027}{Apply\+Boundary\+Cond()}}, and \mbox{\hyperlink{Init_8c_source_l00029}{Init()}}.
+

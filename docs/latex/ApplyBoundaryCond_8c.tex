@@ -1,0 +1,89 @@
+\doxysection{source/\+Apply\+Boundary\+Cond.c File Reference}
+\hypertarget{ApplyBoundaryCond_8c}{}\label{ApplyBoundaryCond_8c}\index{source/ApplyBoundaryCond.c@{source/ApplyBoundaryCond.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include "{}global.\+h"{}}\newline
+Include dependency graph for Apply\+Boundary\+Cond.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ApplyBoundaryCond_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{ApplyBoundaryCond_8c_a5e0b9ccb6d4aee203a4de8438fc9f590}{Apply\+Boundary\+Cond}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{ApplyBoundaryCond_8c_a5e0b9ccb6d4aee203a4de8438fc9f590}\label{ApplyBoundaryCond_8c_a5e0b9ccb6d4aee203a4de8438fc9f590} 
+\index{ApplyBoundaryCond.c@{ApplyBoundaryCond.c}!ApplyBoundaryCond@{ApplyBoundaryCond}}
+\index{ApplyBoundaryCond@{ApplyBoundaryCond}!ApplyBoundaryCond.c@{ApplyBoundaryCond.c}}
+\doxysubsubsection{\texorpdfstring{ApplyBoundaryCond()}{ApplyBoundaryCond()}}
+{\footnotesize\ttfamily void Apply\+Boundary\+Cond (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{ApplyBoundaryCond_8c_source_l00027}{27}} of file \mbox{\hyperlink{ApplyBoundaryCond_8c_source}{Apply\+Boundary\+Cond.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00028\ \ \ \textcolor{keywordtype}{int}\ n;}
+\DoxyCodeLine{00029\ \ \ \textcolor{keywordflow}{for}(n\ =\ 1\ ;\ n\ <=\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}}\ ;\ n\ ++)\{}
+\DoxyCodeLine{00030\ \ \ \ \textcolor{keywordflow}{if}(strcmp(\mbox{\hyperlink{global_8h_abe15117421a36ea636b2f0f00ff02c4e}{xBoundary}},\ \textcolor{stringliteral}{"{}p"{}})\ ==\ 0\ \&\&\ strcmp(\mbox{\hyperlink{global_8h_a67ceb9a00a4ff8dfc0f1277eb52669e4}{yBoundary}},\ \textcolor{stringliteral}{"{}p"{}})\ ==\ 0)\{\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ P.B.C\ along\ x\ and\ y\ axis}}
+\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}[n]\ -\/=\ \mbox{\hyperlink{global_8h_a43c4f708b8d633b069355a121d6adbdc}{region}}[1]*rint(\mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}[n]/\mbox{\hyperlink{global_8h_a43c4f708b8d633b069355a121d6adbdc}{region}}[1]);}
+\DoxyCodeLine{00032\ \ \ \ \ \mbox{\hyperlink{global_8h_af88ff31a9ae85beb713bd0c42815f1de}{ry}}[n]\ -\/=\ \mbox{\hyperlink{global_8h_a43c4f708b8d633b069355a121d6adbdc}{region}}[2]*rint(\mbox{\hyperlink{global_8h_af88ff31a9ae85beb713bd0c42815f1de}{ry}}[n]/\mbox{\hyperlink{global_8h_a43c4f708b8d633b069355a121d6adbdc}{region}}[2]);}
+\DoxyCodeLine{00033\ \ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (strcmp(\mbox{\hyperlink{global_8h_abe15117421a36ea636b2f0f00ff02c4e}{xBoundary}},\ \textcolor{stringliteral}{"{}r"{}})\ ==\ 0\ \&\&\ strcmp(\mbox{\hyperlink{global_8h_a67ceb9a00a4ff8dfc0f1277eb52669e4}{yBoundary}},\ \textcolor{stringliteral}{"{}r"{}})\ ==\ 0)\{\ \ \ \textcolor{comment}{//R.B.C.\ along\ x\ and\ y\ axis}}
+\DoxyCodeLine{00034\ \ \ \ \ \ \textcolor{keywordflow}{if}((\mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}[n]\ +\ \mbox{\hyperlink{global_8h_ab715ebf9f35659a111ee6c5eedc360af}{atomRadius}}[n])\ >=\ \mbox{\hyperlink{global_8h_adc110418e2efa5f31a9aa7c137471a2f}{regionH}}[1])\{}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}[n]\ =\ 0.999999*\mbox{\hyperlink{global_8h_adc110418e2efa5f31a9aa7c137471a2f}{regionH}}[1]\ -\/\ \mbox{\hyperlink{global_8h_ab715ebf9f35659a111ee6c5eedc360af}{atomRadius}}[n];\ \mbox{\hyperlink{global_8h_a6cbb00abd724a75be2c6424c84d18654}{vx}}[n]\ =\ -\/\mbox{\hyperlink{global_8h_a6cbb00abd724a75be2c6424c84d18654}{vx}}[n]\ ;}
+\DoxyCodeLine{00036\ \ \ \ \ \ \}\textcolor{keywordflow}{if}((\mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}[n]-\/\mbox{\hyperlink{global_8h_ab715ebf9f35659a111ee6c5eedc360af}{atomRadius}}[n])\ <\ -\/\mbox{\hyperlink{global_8h_adc110418e2efa5f31a9aa7c137471a2f}{regionH}}[1])\{}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}[n]\ =\ -\/0.999999*\mbox{\hyperlink{global_8h_adc110418e2efa5f31a9aa7c137471a2f}{regionH}}[1]\ +\ \mbox{\hyperlink{global_8h_ab715ebf9f35659a111ee6c5eedc360af}{atomRadius}}[n];\ \mbox{\hyperlink{global_8h_a6cbb00abd724a75be2c6424c84d18654}{vx}}[n]\ =\ -\/\mbox{\hyperlink{global_8h_a6cbb00abd724a75be2c6424c84d18654}{vx}}[n]\ ;}
+\DoxyCodeLine{00038\ \ \ \ \ \}}
+\DoxyCodeLine{00039\ \ \ \ \ \ \textcolor{keywordflow}{if}((\mbox{\hyperlink{global_8h_af88ff31a9ae85beb713bd0c42815f1de}{ry}}[n]\ +\ \mbox{\hyperlink{global_8h_ab715ebf9f35659a111ee6c5eedc360af}{atomRadius}}[n])>=\ \mbox{\hyperlink{global_8h_adc110418e2efa5f31a9aa7c137471a2f}{regionH}}[2])\{}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{global_8h_af88ff31a9ae85beb713bd0c42815f1de}{ry}}[n]\ =\ 0.999999*\mbox{\hyperlink{global_8h_adc110418e2efa5f31a9aa7c137471a2f}{regionH}}[2]\ -\/\ \mbox{\hyperlink{global_8h_ab715ebf9f35659a111ee6c5eedc360af}{atomRadius}}[n];\ \mbox{\hyperlink{global_8h_ad78254f6802793cc12b197889e6ea80d}{vy}}[n]\ =\ -\/\mbox{\hyperlink{global_8h_ad78254f6802793cc12b197889e6ea80d}{vy}}[n]\ ;}
+\DoxyCodeLine{00041\ \ \ \ \ \ \}\textcolor{keywordflow}{if}((\mbox{\hyperlink{global_8h_af88ff31a9ae85beb713bd0c42815f1de}{ry}}[n]-\/\mbox{\hyperlink{global_8h_ab715ebf9f35659a111ee6c5eedc360af}{atomRadius}}[n])\ <\ -\/\mbox{\hyperlink{global_8h_adc110418e2efa5f31a9aa7c137471a2f}{regionH}}[2])\{}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{global_8h_af88ff31a9ae85beb713bd0c42815f1de}{ry}}[n]\ =\ -\/0.999999*\mbox{\hyperlink{global_8h_adc110418e2efa5f31a9aa7c137471a2f}{regionH}}[2]\ +\ \mbox{\hyperlink{global_8h_ab715ebf9f35659a111ee6c5eedc360af}{atomRadius}}[n];\ \mbox{\hyperlink{global_8h_ad78254f6802793cc12b197889e6ea80d}{vy}}[n]\ =\ -\/\mbox{\hyperlink{global_8h_ad78254f6802793cc12b197889e6ea80d}{vy}}[n]\ ;}
+\DoxyCodeLine{00043\ \ \ \ \ \}\}\ }
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (strcmp(\mbox{\hyperlink{global_8h_abe15117421a36ea636b2f0f00ff02c4e}{xBoundary}},\ \textcolor{stringliteral}{"{}p"{}})\ ==\ 0\ \&\&\ strcmp(\mbox{\hyperlink{global_8h_a67ceb9a00a4ff8dfc0f1277eb52669e4}{yBoundary}},\ \textcolor{stringliteral}{"{}r"{}})\ ==\ 0)\{\ \ \ \textcolor{comment}{//P.B.C.\ along\ x\ and\ R.B.C\ along\ y\ axis}}
+\DoxyCodeLine{00045\ \ \ \ \ \mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}[n]\ -\/=\ \mbox{\hyperlink{global_8h_a43c4f708b8d633b069355a121d6adbdc}{region}}[1]*rint(\mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}[n]/\mbox{\hyperlink{global_8h_a43c4f708b8d633b069355a121d6adbdc}{region}}[1]);\ }
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordflow}{if}((\mbox{\hyperlink{global_8h_af88ff31a9ae85beb713bd0c42815f1de}{ry}}[n]\ +\ \mbox{\hyperlink{global_8h_ab715ebf9f35659a111ee6c5eedc360af}{atomRadius}}[n])\ >=\ \mbox{\hyperlink{global_8h_adc110418e2efa5f31a9aa7c137471a2f}{regionH}}[2])\{}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \mbox{\hyperlink{global_8h_af88ff31a9ae85beb713bd0c42815f1de}{ry}}[n]\ =\ 0.999999*\mbox{\hyperlink{global_8h_adc110418e2efa5f31a9aa7c137471a2f}{regionH}}[2]\ -\/\ \mbox{\hyperlink{global_8h_ab715ebf9f35659a111ee6c5eedc360af}{atomRadius}}[n];\ \mbox{\hyperlink{global_8h_ad78254f6802793cc12b197889e6ea80d}{vy}}[n]\ =\ -\/\mbox{\hyperlink{global_8h_ad78254f6802793cc12b197889e6ea80d}{vy}}[n]\ ;}
+\DoxyCodeLine{00048\ \ \ \ \ \ \}\textcolor{keywordflow}{if}((\mbox{\hyperlink{global_8h_af88ff31a9ae85beb713bd0c42815f1de}{ry}}[n]\ -\/\ \mbox{\hyperlink{global_8h_ab715ebf9f35659a111ee6c5eedc360af}{atomRadius}}[n])\ <\ -\/\mbox{\hyperlink{global_8h_adc110418e2efa5f31a9aa7c137471a2f}{regionH}}[2])\{}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{global_8h_af88ff31a9ae85beb713bd0c42815f1de}{ry}}[n]\ =\ -\/0.999999*\mbox{\hyperlink{global_8h_adc110418e2efa5f31a9aa7c137471a2f}{regionH}}[2]\ +\ \mbox{\hyperlink{global_8h_ab715ebf9f35659a111ee6c5eedc360af}{atomRadius}}[n];\ \mbox{\hyperlink{global_8h_ad78254f6802793cc12b197889e6ea80d}{vy}}[n]\ =\ -\/\mbox{\hyperlink{global_8h_ad78254f6802793cc12b197889e6ea80d}{vy}}[n]\ ;}
+\DoxyCodeLine{00050\ \ \ \}\}\ }
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}(strcmp(\mbox{\hyperlink{global_8h_abe15117421a36ea636b2f0f00ff02c4e}{xBoundary}},\ \textcolor{stringliteral}{"{}r"{}})\ ==\ 0\ \&\&\ strcmp(\mbox{\hyperlink{global_8h_a67ceb9a00a4ff8dfc0f1277eb52669e4}{yBoundary}},\ \textcolor{stringliteral}{"{}p"{}})\ ==\ 0)\{\ \ \ \textcolor{comment}{//R.B.C.\ along\ x\ and\ P.B.C\ along\ y\ axis}}
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordflow}{if}((\mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}[n]\ +\ \mbox{\hyperlink{global_8h_ab715ebf9f35659a111ee6c5eedc360af}{atomRadius}}[n])\ >=\ \mbox{\hyperlink{global_8h_adc110418e2efa5f31a9aa7c137471a2f}{regionH}}[1])\{}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}[n]\ =\ 0.999999*\mbox{\hyperlink{global_8h_adc110418e2efa5f31a9aa7c137471a2f}{regionH}}[1]\ -\/\ \mbox{\hyperlink{global_8h_ab715ebf9f35659a111ee6c5eedc360af}{atomRadius}}[n];\ \mbox{\hyperlink{global_8h_a6cbb00abd724a75be2c6424c84d18654}{vx}}[n]\ =\ -\/\mbox{\hyperlink{global_8h_a6cbb00abd724a75be2c6424c84d18654}{vx}}[n]\ ;}
+\DoxyCodeLine{00054\ \ \ \ \ \ \}\textcolor{keywordflow}{if}((\mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}[n]\ -\/\ \mbox{\hyperlink{global_8h_ab715ebf9f35659a111ee6c5eedc360af}{atomRadius}}[n])\ <\ -\/\mbox{\hyperlink{global_8h_adc110418e2efa5f31a9aa7c137471a2f}{regionH}}[1])\{}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}[n]\ =\ -\/0.999999*\mbox{\hyperlink{global_8h_adc110418e2efa5f31a9aa7c137471a2f}{regionH}}[1]\ +\ \mbox{\hyperlink{global_8h_ab715ebf9f35659a111ee6c5eedc360af}{atomRadius}}[n];\ \mbox{\hyperlink{global_8h_a6cbb00abd724a75be2c6424c84d18654}{vx}}[n]\ =\ -\/\mbox{\hyperlink{global_8h_a6cbb00abd724a75be2c6424c84d18654}{vx}}[n]\ ;}
+\DoxyCodeLine{00056\ \ \ \ \ \ \}\ }
+\DoxyCodeLine{00057\ \ \ \ \ \ \mbox{\hyperlink{global_8h_af88ff31a9ae85beb713bd0c42815f1de}{ry}}[n]\ -\/=\ \mbox{\hyperlink{global_8h_a43c4f708b8d633b069355a121d6adbdc}{region}}[2]*rint(\mbox{\hyperlink{global_8h_af88ff31a9ae85beb713bd0c42815f1de}{ry}}[n]/\mbox{\hyperlink{global_8h_a43c4f708b8d633b069355a121d6adbdc}{region}}[2]);\ \ }
+\DoxyCodeLine{00058\ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{comment}{//\ Print\ error\ message\ and\ exit\ the\ program}}
+\DoxyCodeLine{00060\ \ \ \ \ fprintf(\mbox{\hyperlink{global_8h_a7a7a3c24c505afb28c4eb95a627e3f5b}{fpresult}},\ \textcolor{stringliteral}{"{}Error:\ Invalid\ boundary\ configuration:\ '\%s\ \%s'\(\backslash\)n"{}},\ \mbox{\hyperlink{global_8h_abe15117421a36ea636b2f0f00ff02c4e}{xBoundary}},\ \mbox{\hyperlink{global_8h_a67ceb9a00a4ff8dfc0f1277eb52669e4}{yBoundary}});}
+\DoxyCodeLine{00061\ \ \ \ \ exit(EXIT\_FAILURE);\ \textcolor{comment}{//\ Exit\ with\ failure\ status\ }}
+\DoxyCodeLine{00062\ \ \ \}}
+\DoxyCodeLine{00063\ \ \}}
+\DoxyCodeLine{00064\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{global_8h_ab715ebf9f35659a111ee6c5eedc360af}{atom\+Radius}}, \mbox{\hyperlink{global_8h_a7a7a3c24c505afb28c4eb95a627e3f5b}{fpresult}}, \mbox{\hyperlink{global_8h_source_l00024}{n\+Atom}}, \mbox{\hyperlink{global_8h_a43c4f708b8d633b069355a121d6adbdc}{region}}, \mbox{\hyperlink{global_8h_source_l00020}{regionH}}, \mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}, \mbox{\hyperlink{global_8h_source_l00017}{ry}}, \mbox{\hyperlink{global_8h_source_l00017}{vx}}, \mbox{\hyperlink{global_8h_source_l00017}{vy}}, \mbox{\hyperlink{global_8h_abe15117421a36ea636b2f0f00ff02c4e}{x\+Boundary}}, and \mbox{\hyperlink{global_8h_source_l00064}{y\+Boundary}}.
+
+
+
+Referenced by \mbox{\hyperlink{main_8c_source_l00050}{main()}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=272pt]{ApplyBoundaryCond_8c_a5e0b9ccb6d4aee203a4de8438fc9f590_icgraph}
+\end{center}
+\end{figure}

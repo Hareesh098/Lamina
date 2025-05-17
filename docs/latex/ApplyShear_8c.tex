@@ -1,0 +1,44 @@
+\doxysection{source/\+Apply\+Shear.c File Reference}
+\hypertarget{ApplyShear_8c}{}\label{ApplyShear_8c}\index{source/ApplyShear.c@{source/ApplyShear.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include "{}global.\+h"{}}\newline
+Include dependency graph for Apply\+Shear.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{ApplyShear_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{ApplyShear_8c_ae7d54d041749b1daa6b7742813385567}{Apply\+Shear}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{ApplyShear_8c_ae7d54d041749b1daa6b7742813385567}\label{ApplyShear_8c_ae7d54d041749b1daa6b7742813385567} 
+\index{ApplyShear.c@{ApplyShear.c}!ApplyShear@{ApplyShear}}
+\index{ApplyShear@{ApplyShear}!ApplyShear.c@{ApplyShear.c}}
+\doxysubsubsection{\texorpdfstring{ApplyShear()}{ApplyShear()}}
+{\footnotesize\ttfamily void Apply\+Shear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{ApplyShear_8c_source_l00025}{25}} of file \mbox{\hyperlink{ApplyShear_8c_source}{Apply\+Shear.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00026\ \ \textcolor{keywordtype}{int}\ n;}
+\DoxyCodeLine{00027\ \ \textcolor{keywordflow}{for}(n\ =\ 1\ ;\ n\ <=\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}}\ ;\ n\ ++)\{}
+\DoxyCodeLine{00028\ \ \ \mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}[n]\ +=\ \mbox{\hyperlink{global_8h_a46e07cb3e28676cde590ccbeb2a9ad14}{strain}}\ *\ \mbox{\hyperlink{global_8h_af88ff31a9ae85beb713bd0c42815f1de}{ry}}[n];}
+\DoxyCodeLine{00029\ \ \ \textcolor{comment}{//vx[n]\ +=\ stranRate\ *\ ry[n];}}
+\DoxyCodeLine{00030\ \ \}\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{global_8h_source_l00024}{n\+Atom}}, \mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}, \mbox{\hyperlink{global_8h_source_l00017}{ry}}, and \mbox{\hyperlink{global_8h_a46e07cb3e28676cde590ccbeb2a9ad14}{strain}}.
+

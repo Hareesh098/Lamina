@@ -1,0 +1,58 @@
+\doxysection{source/\+Halt.c File Reference}
+\hypertarget{Halt_8c}{}\label{Halt_8c}\index{source/Halt.c@{source/Halt.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include "{}global.\+h"{}}\newline
+Include dependency graph for Halt.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=297pt]{Halt_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{Halt_8c_a4f7624821cdea57301448e9fcc5f0144}{Halt\+Condition\+Check}} (double value, int \mbox{\hyperlink{global_8h_ac208e38a6cf3eecfb9d1522e950ed956}{step\+Count}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{Halt_8c_a4f7624821cdea57301448e9fcc5f0144}\label{Halt_8c_a4f7624821cdea57301448e9fcc5f0144} 
+\index{Halt.c@{Halt.c}!HaltConditionCheck@{HaltConditionCheck}}
+\index{HaltConditionCheck@{HaltConditionCheck}!Halt.c@{Halt.c}}
+\doxysubsubsection{\texorpdfstring{HaltConditionCheck()}{HaltConditionCheck()}}
+{\footnotesize\ttfamily bool Halt\+Condition\+Check (\begin{DoxyParamCaption}\item[{double}]{value,  }\item[{int}]{step\+Count }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{Halt_8c_source_l00027}{27}} of file \mbox{\hyperlink{Halt_8c_source}{Halt.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00028\ \ \ }
+\DoxyCodeLine{00029\ \ \ \textcolor{keywordflow}{if}(value\ <=\ \mbox{\hyperlink{global_8h_a7e88ba96b6e106ede84dde66931a3ffa}{HaltCondition}}\ \&\&\ value\ !=\ 0)\ \{}
+\DoxyCodeLine{00030\ \ \ fprintf(\mbox{\hyperlink{global_8h_a7a7a3c24c505afb28c4eb95a627e3f5b}{fpresult}},\ \textcolor{stringliteral}{"{}Halt\ condition\ met\ at\ step\ =\ \%d\ with\ Vrms\ =\ \%.10f\(\backslash\)n"{}},\ \mbox{\hyperlink{global_8h_ac208e38a6cf3eecfb9d1522e950ed956}{stepCount}},\ value);}
+\DoxyCodeLine{00031\ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};\ \ \ \ \ \ \ \textcolor{comment}{//\ Signal\ that\ the\ halt\ condition\ is\ met}}
+\DoxyCodeLine{00032\ \ \ \}}
+\DoxyCodeLine{00033\ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};\ \textcolor{comment}{//\ Halt\ condition\ not\ met}}
+\DoxyCodeLine{00034\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{global_8h_a7a7a3c24c505afb28c4eb95a627e3f5b}{fpresult}}, \mbox{\hyperlink{global_8h_a7e88ba96b6e106ede84dde66931a3ffa}{Halt\+Condition}}, and \mbox{\hyperlink{global_8h_source_l00024}{step\+Count}}.
+
+
+
+Referenced by \mbox{\hyperlink{main_8c_source_l00050}{main()}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{Halt_8c_a4f7624821cdea57301448e9fcc5f0144_icgraph}
+\end{center}
+\end{figure}

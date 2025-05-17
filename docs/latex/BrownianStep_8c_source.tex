@@ -1,0 +1,78 @@
+\doxysection{Brownian\+Step.\+c}
+\hypertarget{BrownianStep_8c_source}{}\label{BrownianStep_8c_source}\index{source/BrownianStep.c@{source/BrownianStep.c}}
+\mbox{\hyperlink{BrownianStep_8c}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{BrownianStep_8c_source_l00001}00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{BrownianStep_8c_source_l00002}00002\ \textcolor{comment}{\ *\ This\ file\ is\ part\ of\ Lamina.}}
+\DoxyCodeLine{\Hypertarget{BrownianStep_8c_source_l00003}00003\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{\Hypertarget{BrownianStep_8c_source_l00004}00004\ \textcolor{comment}{\ *\ Lamina\ is\ free\ software:\ you\ can\ redistribute\ it\ and/or\ modify}}
+\DoxyCodeLine{\Hypertarget{BrownianStep_8c_source_l00005}00005\ \textcolor{comment}{\ *\ it\ under\ the\ terms\ of\ the\ GNU\ General\ Public\ License\ as\ published\ by}}
+\DoxyCodeLine{\Hypertarget{BrownianStep_8c_source_l00006}00006\ \textcolor{comment}{\ *\ the\ Free\ Software\ Foundation,\ either\ version\ 3\ of\ the\ License,\ or}}
+\DoxyCodeLine{\Hypertarget{BrownianStep_8c_source_l00007}00007\ \textcolor{comment}{\ *\ (at\ your\ option)\ any\ later\ version.}}
+\DoxyCodeLine{\Hypertarget{BrownianStep_8c_source_l00008}00008\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{\Hypertarget{BrownianStep_8c_source_l00009}00009\ \textcolor{comment}{\ *\ Lamina\ is\ distributed\ in\ the\ hope\ that\ it\ will\ be\ useful,}}
+\DoxyCodeLine{\Hypertarget{BrownianStep_8c_source_l00010}00010\ \textcolor{comment}{\ *\ but\ WITHOUT\ ANY\ WARRANTY;\ without\ even\ the\ implied\ warranty\ of}}
+\DoxyCodeLine{\Hypertarget{BrownianStep_8c_source_l00011}00011\ \textcolor{comment}{\ *\ MERCHANTABILITY\ or\ FITNESS\ FOR\ A\ PARTICULAR\ PURPOSE.\ See\ the}}
+\DoxyCodeLine{\Hypertarget{BrownianStep_8c_source_l00012}00012\ \textcolor{comment}{\ *\ GNU\ General\ Public\ License\ for\ more\ details.}}
+\DoxyCodeLine{\Hypertarget{BrownianStep_8c_source_l00013}00013\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{\Hypertarget{BrownianStep_8c_source_l00014}00014\ \textcolor{comment}{\ *\ You\ should\ have\ received\ a\ copy\ of\ the\ GNU\ General\ Public\ License}}
+\DoxyCodeLine{\Hypertarget{BrownianStep_8c_source_l00015}00015\ \textcolor{comment}{\ *\ along\ with\ Lamina.\ If\ not,\ see\ <https://www.gnu.org/licenses/>.}}
+\DoxyCodeLine{\Hypertarget{BrownianStep_8c_source_l00016}00016\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{BrownianStep_8c_source_l00017}00017\ \textcolor{comment}{\ Copyright\ (C)\ 2025\ Harish\ Charan,\ University\ of\ Durham,\ UK}}
+\DoxyCodeLine{\Hypertarget{BrownianStep_8c_source_l00018}00018\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{BrownianStep_8c_source_l00019}00019\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{\Hypertarget{BrownianStep_8c_source_l00020}00020\ }
+\DoxyCodeLine{\Hypertarget{BrownianStep_8c_source_l00021}00021\ \textcolor{preprocessor}{\#include<stdio.h>}}
+\DoxyCodeLine{\Hypertarget{BrownianStep_8c_source_l00022}00022\ \textcolor{preprocessor}{\#include<stdlib.h>}}
+\DoxyCodeLine{\Hypertarget{BrownianStep_8c_source_l00023}00023\ \textcolor{preprocessor}{\#include<math.h>}}
+\DoxyCodeLine{\Hypertarget{BrownianStep_8c_source_l00024}00024\ \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{global_8h}{global.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{BrownianStep_8c_source_l00025}00025\ }
+\DoxyCodeLine{\Hypertarget{BrownianStep_8c_source_l00026}\mbox{\hyperlink{BrownianStep_8c_a4cd54120b21212ff67690ec8fcc96161}{00026}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{BrownianStep_8c_a4cd54120b21212ff67690ec8fcc96161}{BrownianStep}}()\{}
+\DoxyCodeLine{\Hypertarget{BrownianStep_8c_source_l00027}00027\ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{global_8h_ac208e38a6cf3eecfb9d1522e950ed956}{stepCount}}\ <=\ \mbox{\hyperlink{global_8h_a93ce7b5ddaa822299367884866723f03}{stepEquil}})\{}
+\DoxyCodeLine{\Hypertarget{BrownianStep_8c_source_l00028}00028\ \ \ \ \ \textcolor{keywordtype}{double}\ A,\ S1,\ S2,\ T;}
+\DoxyCodeLine{\Hypertarget{BrownianStep_8c_source_l00029}00029\ \ \ \ \ \textcolor{keywordtype}{int}\ n;}
+\DoxyCodeLine{\Hypertarget{BrownianStep_8c_source_l00030}00030\ \ \ \ \ S1\ =\ 0.;\ S2\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{BrownianStep_8c_source_l00031}00031\ \ \ \ \ \textcolor{keywordtype}{double}\ halfdt\ =\ 0.5*\mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}};}
+\DoxyCodeLine{\Hypertarget{BrownianStep_8c_source_l00032}00032\ \ \ \ \ \textcolor{keywordflow}{for}\ (n\ =\ 1;\ n\ <=\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}};\ n++)\{}
+\DoxyCodeLine{\Hypertarget{BrownianStep_8c_source_l00033}00033\ \ \ \ \ \ \ T\ =\ \mbox{\hyperlink{global_8h_a6cbb00abd724a75be2c6424c84d18654}{vx}}[n]\ +\ halfdt\ *\ \mbox{\hyperlink{global_8h_a82d645cda6bea6506c7b5f4f7453986c}{ax}}[n];}
+\DoxyCodeLine{\Hypertarget{BrownianStep_8c_source_l00034}00034\ \ \ \ \ \ \ S1\ +=\ T\ *\ \mbox{\hyperlink{global_8h_a82d645cda6bea6506c7b5f4f7453986c}{ax}}[n];}
+\DoxyCodeLine{\Hypertarget{BrownianStep_8c_source_l00035}00035\ \ \ \ \ \ \ S2\ +=\ \mbox{\hyperlink{global_8h_a88aaaec93066182aaf8cf3e0f8a676e2}{Sqr}}(T);}
+\DoxyCodeLine{\Hypertarget{BrownianStep_8c_source_l00036}00036\ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{BrownianStep_8c_source_l00037}00037\ \ \ \ \ \ \ T\ =\ \mbox{\hyperlink{global_8h_ad78254f6802793cc12b197889e6ea80d}{vy}}[n]\ +\ halfdt\ *\ \mbox{\hyperlink{global_8h_a68c7afda02d0f26c1987a4eee13928f2}{ay}}[n];}
+\DoxyCodeLine{\Hypertarget{BrownianStep_8c_source_l00038}00038\ \ \ \ \ \ \ S1\ +=\ T\ *\ \mbox{\hyperlink{global_8h_a68c7afda02d0f26c1987a4eee13928f2}{ay}}[n];}
+\DoxyCodeLine{\Hypertarget{BrownianStep_8c_source_l00039}00039\ \ \ \ \ \ \ S2\ +=\ \mbox{\hyperlink{global_8h_a88aaaec93066182aaf8cf3e0f8a676e2}{Sqr}}(T);}
+\DoxyCodeLine{\Hypertarget{BrownianStep_8c_source_l00040}00040\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{BrownianStep_8c_source_l00041}00041\ \ \ \ \ A\ =\ -\/S1\ /\ S2;}
+\DoxyCodeLine{\Hypertarget{BrownianStep_8c_source_l00042}00042\ \ \ \ \ \textcolor{keywordtype}{double}\ C\ =\ 1\ +\ A*\mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}}\ ;}
+\DoxyCodeLine{\Hypertarget{BrownianStep_8c_source_l00043}00043\ \ \ \ \ \textcolor{keywordtype}{double}\ D\ =\ \mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}}\ *\ (1\ +\ 0.5\ *\ A\ *\ \mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}});}
+\DoxyCodeLine{\Hypertarget{BrownianStep_8c_source_l00044}00044\ \ \ \ \ \textcolor{keywordflow}{for}\ (n\ =\ 1;\ n\ <=\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}};\ n++)\{}
+\DoxyCodeLine{\Hypertarget{BrownianStep_8c_source_l00045}00045\ \ \ \ \ \ \ \mbox{\hyperlink{global_8h_a6cbb00abd724a75be2c6424c84d18654}{vx}}[n]\ =\ C\ *\ \mbox{\hyperlink{global_8h_a6cbb00abd724a75be2c6424c84d18654}{vx}}[n]\ +\ D\ *\ \mbox{\hyperlink{global_8h_a82d645cda6bea6506c7b5f4f7453986c}{ax}}[n];}
+\DoxyCodeLine{\Hypertarget{BrownianStep_8c_source_l00046}00046\ \ \ \ \ \ \ \mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}[n]\ +=\ \mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}}\ *\ \mbox{\hyperlink{global_8h_a6cbb00abd724a75be2c6424c84d18654}{vx}}[n];}
+\DoxyCodeLine{\Hypertarget{BrownianStep_8c_source_l00047}00047\ \ \ \ \ \ \ \mbox{\hyperlink{global_8h_ad78254f6802793cc12b197889e6ea80d}{vy}}[n]\ =\ C\ *\ \mbox{\hyperlink{global_8h_ad78254f6802793cc12b197889e6ea80d}{vy}}[n]\ +\ D\ *\ \mbox{\hyperlink{global_8h_a68c7afda02d0f26c1987a4eee13928f2}{ay}}[n];}
+\DoxyCodeLine{\Hypertarget{BrownianStep_8c_source_l00048}00048\ \ \ \ \ \ \ \mbox{\hyperlink{global_8h_af88ff31a9ae85beb713bd0c42815f1de}{ry}}[n]\ +=\ \mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}}\ *\ \mbox{\hyperlink{global_8h_ad78254f6802793cc12b197889e6ea80d}{vy}}[n];}
+\DoxyCodeLine{\Hypertarget{BrownianStep_8c_source_l00049}00049\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{BrownianStep_8c_source_l00050}00050\ \ \ \}\textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{\Hypertarget{BrownianStep_8c_source_l00051}00051\ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ n;}
+\DoxyCodeLine{\Hypertarget{BrownianStep_8c_source_l00052}00052\ \ \ \ \ \ \ \textcolor{comment}{//SETTING\ TEMP\ =\ 0.0}}
+\DoxyCodeLine{\Hypertarget{BrownianStep_8c_source_l00053}00053\ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{global_8h_ac208e38a6cf3eecfb9d1522e950ed956}{stepCount}}\ ==\ \mbox{\hyperlink{global_8h_a93ce7b5ddaa822299367884866723f03}{stepEquil}}+1)\{}
+\DoxyCodeLine{\Hypertarget{BrownianStep_8c_source_l00054}00054\ \ \ \ \ \ \textcolor{keywordflow}{for}(n\ =\ 1\ ;\ n\ <=\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}}\ ;\ n\ ++)\{}
+\DoxyCodeLine{\Hypertarget{BrownianStep_8c_source_l00055}00055\ \ \ \ \ \ \mbox{\hyperlink{global_8h_a6cbb00abd724a75be2c6424c84d18654}{vx}}[n]\ =\ 0.0;}
+\DoxyCodeLine{\Hypertarget{BrownianStep_8c_source_l00056}00056\ \ \ \ \ \ \mbox{\hyperlink{global_8h_ad78254f6802793cc12b197889e6ea80d}{vy}}[n]\ =\ 0.0;}
+\DoxyCodeLine{\Hypertarget{BrownianStep_8c_source_l00057}00057\ \ \ \ \ \ \}\}}
+\DoxyCodeLine{\Hypertarget{BrownianStep_8c_source_l00058}00058\ \ \ \ \ \ \textcolor{keywordtype}{double}\ zeta\ =\ 1.0;}
+\DoxyCodeLine{\Hypertarget{BrownianStep_8c_source_l00059}00059\ \ \ \ \ \ \textcolor{keywordtype}{double}\ dx,\ dy;}
+\DoxyCodeLine{\Hypertarget{BrownianStep_8c_source_l00060}00060\ \ \ \ \ \ \textcolor{keywordflow}{for}(n\ =\ 1\ ;\ n\ <=\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}}\ ;\ n\ ++)\{}
+\DoxyCodeLine{\Hypertarget{BrownianStep_8c_source_l00061}00061\ \ \ \ \ \ \ dx\ =\ \mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}[n];\ }
+\DoxyCodeLine{\Hypertarget{BrownianStep_8c_source_l00062}00062\ \ \ \ \ \ \ \mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}[n]\ +=\ zeta\ *\ \mbox{\hyperlink{global_8h_a82d645cda6bea6506c7b5f4f7453986c}{ax}}[n]\ *\ \mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}};}
+\DoxyCodeLine{\Hypertarget{BrownianStep_8c_source_l00063}00063\ \ \ \ \ \ \ dx\ =\ \mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}[n]\ -\/\ dx;\ }
+\DoxyCodeLine{\Hypertarget{BrownianStep_8c_source_l00064}00064\ \ \ \ \ \ \ \mbox{\hyperlink{global_8h_a6cbb00abd724a75be2c6424c84d18654}{vx}}[n]\ =\ dx/\mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}};\ }
+\DoxyCodeLine{\Hypertarget{BrownianStep_8c_source_l00065}00065\ \ \ \ \ \ \ dy\ =\ \mbox{\hyperlink{global_8h_af88ff31a9ae85beb713bd0c42815f1de}{ry}}[n];}
+\DoxyCodeLine{\Hypertarget{BrownianStep_8c_source_l00066}00066\ \ \ \ \ \ \ \mbox{\hyperlink{global_8h_af88ff31a9ae85beb713bd0c42815f1de}{ry}}[n]\ +=\ zeta\ *\ \mbox{\hyperlink{global_8h_a68c7afda02d0f26c1987a4eee13928f2}{ay}}[n]\ *\ \mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}};}
+\DoxyCodeLine{\Hypertarget{BrownianStep_8c_source_l00067}00067\ \ \ \ \ \ \ dy\ =\ \mbox{\hyperlink{global_8h_af88ff31a9ae85beb713bd0c42815f1de}{ry}}[n]\ -\/\ dy;}
+\DoxyCodeLine{\Hypertarget{BrownianStep_8c_source_l00068}00068\ \ \ \ \ \ \ \mbox{\hyperlink{global_8h_ad78254f6802793cc12b197889e6ea80d}{vy}}[n]\ =\ dy/\mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}};}
+\DoxyCodeLine{\Hypertarget{BrownianStep_8c_source_l00069}00069\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{BrownianStep_8c_source_l00070}00070\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{BrownianStep_8c_source_l00071}00071\ \}}
+\DoxyCodeLine{\Hypertarget{BrownianStep_8c_source_l00072}00072\ \ \ }
+
+\end{DoxyCode}

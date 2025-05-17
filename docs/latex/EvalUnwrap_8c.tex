@@ -1,0 +1,57 @@
+\doxysection{source/\+Eval\+Unwrap.c File Reference}
+\hypertarget{EvalUnwrap_8c}{}\label{EvalUnwrap_8c}\index{source/EvalUnwrap.c@{source/EvalUnwrap.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include "{}global.\+h"{}}\newline
+Include dependency graph for Eval\+Unwrap.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=286pt]{EvalUnwrap_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{EvalUnwrap_8c_a1bd234e1132fb484a52ec59988006c08}{Eval\+Unwrap}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{EvalUnwrap_8c_a1bd234e1132fb484a52ec59988006c08}\label{EvalUnwrap_8c_a1bd234e1132fb484a52ec59988006c08} 
+\index{EvalUnwrap.c@{EvalUnwrap.c}!EvalUnwrap@{EvalUnwrap}}
+\index{EvalUnwrap@{EvalUnwrap}!EvalUnwrap.c@{EvalUnwrap.c}}
+\doxysubsubsection{\texorpdfstring{EvalUnwrap()}{EvalUnwrap()}}
+{\footnotesize\ttfamily void Eval\+Unwrap (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{EvalUnwrap_8c_source_l00027}{27}} of file \mbox{\hyperlink{EvalUnwrap_8c_source}{Eval\+Unwrap.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00028\ \ \textcolor{keywordtype}{int}\ n;}
+\DoxyCodeLine{00029\ \ \textcolor{keywordflow}{for}\ (n\ =\ 1;\ n\ <=\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}};\ n++)\ \{}
+\DoxyCodeLine{00030\ \ \ \mbox{\hyperlink{global_8h_ad81015466d6c894db2f9cad4faecae1c}{rxUnwrap}}[n]\ =\ \mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}[n]\ +\ \mbox{\hyperlink{global_8h_a6cd103d74f5d525b4cae3e7af552be20}{ImageX}}[n]\ *\ \mbox{\hyperlink{global_8h_a43c4f708b8d633b069355a121d6adbdc}{region}}[1];}
+\DoxyCodeLine{00031\ \ \ \mbox{\hyperlink{global_8h_aadd2df0c0919493607803cd89389b31a}{ryUnwrap}}[n]\ =\ \mbox{\hyperlink{global_8h_af88ff31a9ae85beb713bd0c42815f1de}{ry}}[n]\ +\ \mbox{\hyperlink{global_8h_a6d63f20edcbc2cb983c7267d9d0690a8}{ImageY}}[n]\ *\ \mbox{\hyperlink{global_8h_a43c4f708b8d633b069355a121d6adbdc}{region}}[2];}
+\DoxyCodeLine{00032\ \ \ \}}
+\DoxyCodeLine{00033\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{global_8h_a6cd103d74f5d525b4cae3e7af552be20}{ImageX}}, \mbox{\hyperlink{global_8h_source_l00047}{ImageY}}, \mbox{\hyperlink{global_8h_source_l00024}{n\+Atom}}, \mbox{\hyperlink{global_8h_a43c4f708b8d633b069355a121d6adbdc}{region}}, \mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}, \mbox{\hyperlink{global_8h_ad81015466d6c894db2f9cad4faecae1c}{rx\+Unwrap}}, \mbox{\hyperlink{global_8h_source_l00017}{ry}}, and \mbox{\hyperlink{global_8h_source_l00048}{ry\+Unwrap}}.
+
+
+
+Referenced by \mbox{\hyperlink{main_8c_source_l00050}{main()}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=231pt]{EvalUnwrap_8c_a1bd234e1132fb484a52ec59988006c08_icgraph}
+\end{center}
+\end{figure}

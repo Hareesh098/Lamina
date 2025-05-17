@@ -1,0 +1,159 @@
+\doxysection{Compute\+Forces\+Cells.\+c}
+\hypertarget{ComputeForcesCells_8c_source}{}\label{ComputeForcesCells_8c_source}\index{source/ComputeForcesCells.c@{source/ComputeForcesCells.c}}
+\mbox{\hyperlink{ComputeForcesCells_8c}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00001}00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00002}00002\ \textcolor{comment}{\ *\ This\ file\ is\ part\ of\ Lamina.}}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00003}00003\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00004}00004\ \textcolor{comment}{\ *\ Lamina\ is\ free\ software:\ you\ can\ redistribute\ it\ and/or\ modify}}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00005}00005\ \textcolor{comment}{\ *\ it\ under\ the\ terms\ of\ the\ GNU\ General\ Public\ License\ as\ published\ by}}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00006}00006\ \textcolor{comment}{\ *\ the\ Free\ Software\ Foundation,\ either\ version\ 3\ of\ the\ License,\ or}}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00007}00007\ \textcolor{comment}{\ *\ (at\ your\ option)\ any\ later\ version.}}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00008}00008\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00009}00009\ \textcolor{comment}{\ *\ Lamina\ is\ distributed\ in\ the\ hope\ that\ it\ will\ be\ useful,}}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00010}00010\ \textcolor{comment}{\ *\ but\ WITHOUT\ ANY\ WARRANTY;\ without\ even\ the\ implied\ warranty\ of}}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00011}00011\ \textcolor{comment}{\ *\ MERCHANTABILITY\ or\ FITNESS\ FOR\ A\ PARTICULAR\ PURPOSE.\ See\ the}}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00012}00012\ \textcolor{comment}{\ *\ GNU\ General\ Public\ License\ for\ more\ details.}}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00013}00013\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00014}00014\ \textcolor{comment}{\ *\ You\ should\ have\ received\ a\ copy\ of\ the\ GNU\ General\ Public\ License}}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00015}00015\ \textcolor{comment}{\ *\ along\ with\ Lamina.\ If\ not,\ see\ <https://www.gnu.org/licenses/>.}}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00016}00016\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00017}00017\ \textcolor{comment}{\ Copyright\ (C)\ 2025\ Harish\ Charan,\ University\ of\ Durham,\ UK}}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00018}00018\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00019}00019\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00020}00020\ }
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00021}00021\ \textcolor{preprocessor}{\#include<stdio.h>}}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00022}00022\ \textcolor{preprocessor}{\#include<math.h>}}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00023}00023\ \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{global_8h}{global.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00024}00024\ }
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00025}\mbox{\hyperlink{ComputeForcesCells_8c_a522ee4f0c116b7ebe98fda3f03228dae}{00025}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{ComputeForcesCells_8c_a522ee4f0c116b7ebe98fda3f03228dae}{ComputeForcesCells}}()\{}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00026}00026\ \ \ \textcolor{keywordtype}{double}\ dr[\mbox{\hyperlink{global_8h_a2b1fd2d28c6a7d4a3f7027cc1b6466f3}{NDIM}}+1],\ invWid[\mbox{\hyperlink{global_8h_a2b1fd2d28c6a7d4a3f7027cc1b6466f3}{NDIM}}+1],\ shift[\mbox{\hyperlink{global_8h_a2b1fd2d28c6a7d4a3f7027cc1b6466f3}{NDIM}}+1],\ f,\ fcVal,\ rr,\ ri,\ r,\ uVal;}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00027}00027\ \ \ \textcolor{keywordtype}{int}\ c,\ I,\ J,\ m1,\ m1X,\ m1Y,\ m2,\ m2X,\ m2Y,\ n,\ offset;}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00028}00028\ \ \ \textcolor{keywordtype}{int}\ iofX[]\ =\ \{0,\ 0,\ 1,\ 1,\ 0,\ -\/1,\ -\/1,\ -\/1,\ 0,\ 1\},}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00029}00029\ \ \ \ \ \ \ iofY[]\ =\ \{0,\ 0,\ 0,\ 1\ ,1,\ 1,\ 0,\ -\/1,\ -\/1,\ -\/1\};}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00030}00030\ }
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00031}00031\ \ \ invWid[1]\ =\ \mbox{\hyperlink{global_8h_a1be4ee12e5806fc7d12c86f58b938b4c}{cells}}[1]/\mbox{\hyperlink{global_8h_a43c4f708b8d633b069355a121d6adbdc}{region}}[1];}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00032}00032\ \ \ invWid[2]\ =\ \mbox{\hyperlink{global_8h_a1be4ee12e5806fc7d12c86f58b938b4c}{cells}}[2]/\mbox{\hyperlink{global_8h_a43c4f708b8d633b069355a121d6adbdc}{region}}[2];}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00033}00033\ }
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00034}00034\ \ \ \textcolor{keywordflow}{for}(n\ =\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}}+1;\ n\ <=\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}}+\mbox{\hyperlink{global_8h_a1be4ee12e5806fc7d12c86f58b938b4c}{cells}}[1]*\mbox{\hyperlink{global_8h_a1be4ee12e5806fc7d12c86f58b938b4c}{cells}}[2]\ ;\ n++)}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00035}00035\ \ \ \ \ \mbox{\hyperlink{global_8h_a679d8d045f353a6544e2a03b3942bc5a}{cellList}}[n]\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00036}00036\ \ \ }
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00037}00037\ \ \ \textcolor{keywordflow}{for}(n\ =\ 1\ ;\ n\ <=\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}}\ ;\ n\ ++)\{}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00038}00038\ \ \ \ \ c\ =\ ((int)((\mbox{\hyperlink{global_8h_af88ff31a9ae85beb713bd0c42815f1de}{ry}}[n]\ +\ \mbox{\hyperlink{global_8h_adc110418e2efa5f31a9aa7c137471a2f}{regionH}}[2])*invWid[2]))*\mbox{\hyperlink{global_8h_a1be4ee12e5806fc7d12c86f58b938b4c}{cells}}[1]\ +\ (int)((\mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}[n]+\mbox{\hyperlink{global_8h_adc110418e2efa5f31a9aa7c137471a2f}{regionH}}[1])*invWid[1])\ +\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}}+\ 1;}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00039}00039\ \ \ \ \ \mbox{\hyperlink{global_8h_a679d8d045f353a6544e2a03b3942bc5a}{cellList}}[n]\ =\ \mbox{\hyperlink{global_8h_a679d8d045f353a6544e2a03b3942bc5a}{cellList}}[c];}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00040}00040\ \ \ \ \ \mbox{\hyperlink{global_8h_a679d8d045f353a6544e2a03b3942bc5a}{cellList}}[c]\ =\ n;}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00041}00041\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00042}00042\ \ \ }
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00043}00043\ \ \ \textcolor{keywordflow}{for}(n\ =\ 1\ ;\ n\ <=\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}}\ ;\ n\ ++)\{}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00044}00044\ \ \ \ \ \mbox{\hyperlink{global_8h_a82d645cda6bea6506c7b5f4f7453986c}{ax}}[n]\ =\ 0.;}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00045}00045\ \ \ \ \ \mbox{\hyperlink{global_8h_a68c7afda02d0f26c1987a4eee13928f2}{ay}}[n]\ =\ 0.;}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00046}00046\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00047}00047\ \ \ }
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00048}00048\ \ \ \mbox{\hyperlink{global_8h_a927379bdfda5eedb0267990043b572f6}{uSum}}\ =\ 0.0\ ;}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00049}00049\ \ \ \mbox{\hyperlink{global_8h_abdbf03f447f8b0adbae4c15974dac45f}{virSum}}\ =\ 0.0;}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00050}00050\ \ \ \mbox{\hyperlink{global_8h_a409ac219990f0cf85a946b0f32a0cea0}{rfAtom}}\ =\ 0.0;}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00051}00051\ \ \ \mbox{\hyperlink{global_8h_a6a4e820cfd6dbd49709a350e38260c18}{RadiusIJ}}\ =\ 0.0;}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00052}00052\ }
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00053}00053\ \ \ \mbox{\hyperlink{global_8h_a51f4f35562e6b66ea8bd3dfd6d710fcb}{gamman}}\ =\ 1.0;}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00054}00054\ \ \ \textcolor{keywordtype}{double}\ vr[\mbox{\hyperlink{global_8h_a2b1fd2d28c6a7d4a3f7027cc1b6466f3}{NDIM}}+1],\ fd,\ fdVal,\ rrinv;}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00055}00055\ \ \ rrinv\ =\ 0.0;}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00056}00056\ \ \ fd\ =\ 0.0;}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00057}00057\ \ \ fdVal\ =\ 0.0;\ }
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00058}00058\ \ \ }
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00059}00059\ \ \ \textcolor{keywordtype}{int}\ start\ =\ 1\ +\ \mbox{\hyperlink{global_8h_a6cfd95afd0afebd625b889fb6e58371c}{rank}}*(\mbox{\hyperlink{global_8h_a1be4ee12e5806fc7d12c86f58b938b4c}{cells}}[2]/\mbox{\hyperlink{global_8h_a439227feff9d7f55384e8780cfc2eb82}{size}});}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00060}00060\ \ \ \textcolor{keywordtype}{int}\ end\ =\ (\mbox{\hyperlink{global_8h_a6cfd95afd0afebd625b889fb6e58371c}{rank}}+1)*(\mbox{\hyperlink{global_8h_a1be4ee12e5806fc7d12c86f58b938b4c}{cells}}[2]/\mbox{\hyperlink{global_8h_a439227feff9d7f55384e8780cfc2eb82}{size}});}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00061}00061\ }
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00062}00062\ \ \ \textcolor{keywordflow}{for}(m1Y\ =\ start\ ;\ m1Y\ <=\ end\ ;\ m1Y\ ++)\{}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00063}00063\ \ \ \ \ \textcolor{keywordflow}{for}(m1X\ =\ 1\ ;\ m1X\ <=\ \mbox{\hyperlink{global_8h_a1be4ee12e5806fc7d12c86f58b938b4c}{cells}}[1]\ ;\ m1X\ ++)\{}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00064}00064\ \ \ \ \ \ \ m1\ =\ (m1Y-\/1)\ *\ \mbox{\hyperlink{global_8h_a1be4ee12e5806fc7d12c86f58b938b4c}{cells}}[1]\ +\ m1X\ +\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}};}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00065}00065\ \ \ \ \ \ \ \textcolor{keywordflow}{for}(offset\ =\ 1\ ;\ offset\ <=\ 9\ ;\ offset\ ++)\{}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00066}00066\ \ \ \ \ m2X\ =\ m1X\ +\ iofX[offset];\ shift[1]\ =\ 0.;}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00067}00067\ \ \ \ \ \textcolor{keywordflow}{if}(m2X\ >\ \mbox{\hyperlink{global_8h_a1be4ee12e5806fc7d12c86f58b938b4c}{cells}}[1])\{}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00068}00068\ \ \ \ \ \ \ m2X\ =\ 1;\ shift[1]\ =\ \mbox{\hyperlink{global_8h_a43c4f708b8d633b069355a121d6adbdc}{region}}[1];}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00069}00069\ \ \ \ \ \}\textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}(m2X\ ==\ 0)\{}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00070}00070\ \ \ \ \ \ \ m2X\ =\ \mbox{\hyperlink{global_8h_a1be4ee12e5806fc7d12c86f58b938b4c}{cells}}[1];\ shift[1]\ =\ -\/\mbox{\hyperlink{global_8h_a43c4f708b8d633b069355a121d6adbdc}{region}}[1];}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00071}00071\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00072}00072\ \ \ \ \ m2Y\ =\ m1Y\ +\ iofY[offset];\ shift[2]\ =\ 0.;}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00073}00073\ \ \ \ \ \textcolor{keywordflow}{if}(m2Y\ >\ \mbox{\hyperlink{global_8h_a1be4ee12e5806fc7d12c86f58b938b4c}{cells}}[2])\{}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00074}00074\ \ \ \ \ \ \ m2Y\ =\ 1;\ shift[2]\ =\ \mbox{\hyperlink{global_8h_a43c4f708b8d633b069355a121d6adbdc}{region}}[2];}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00075}00075\ \ \ \ \ \}\textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}(m2Y\ ==\ 0)\{}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00076}00076\ \ \ \ \ \ \ m2Y\ =\ \mbox{\hyperlink{global_8h_a1be4ee12e5806fc7d12c86f58b938b4c}{cells}}[2];\ shift[2]\ =\ -\/\mbox{\hyperlink{global_8h_a43c4f708b8d633b069355a121d6adbdc}{region}}[2];}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00077}00077\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00078}00078\ \ \ \ \ m2\ =\ (m2Y-\/1)*\mbox{\hyperlink{global_8h_a1be4ee12e5806fc7d12c86f58b938b4c}{cells}}[1]\ +\ m2X\ +\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}};}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00079}00079\ \ \ \ \ I\ =\ \mbox{\hyperlink{global_8h_a679d8d045f353a6544e2a03b3942bc5a}{cellList}}[m1];}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00080}00080\ \ \ \ \ \textcolor{keywordflow}{while}(I\ >\ 0)\{}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00081}00081\ \ \ \ \ \ \ J\ =\ \mbox{\hyperlink{global_8h_a679d8d045f353a6544e2a03b3942bc5a}{cellList}}[m2];}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00082}00082\ \ \ \ \ \ \ \textcolor{keywordflow}{while}(J\ >\ 0)\{}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00083}00083\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(m1\ ==\ m2\ \&\&\ J\ !=\ I\ \&\&\ (\mbox{\hyperlink{global_8h_ab715ebf9f35659a111ee6c5eedc360af}{atomRadius}}[I]\ >\ 0.\ \&\&\ \mbox{\hyperlink{global_8h_ab715ebf9f35659a111ee6c5eedc360af}{atomRadius}}[J]\ >\ 0.))\{}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00084}00084\ \ \ \ \ \ \ \ \ \ \ dr[1]\ =\ \mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}[I]\ -\/\ \mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}[J]\ -\/\ shift[1];}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00085}00085\ \ \ \ \ \ \ \ \ \ \ dr[2]\ =\ \mbox{\hyperlink{global_8h_af88ff31a9ae85beb713bd0c42815f1de}{ry}}[I]\ -\/\ \mbox{\hyperlink{global_8h_af88ff31a9ae85beb713bd0c42815f1de}{ry}}[J]\ -\/\ shift[2];}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00086}00086\ \ \ \ \ \ \ \ \ \ \ rr\ =\ \mbox{\hyperlink{global_8h_a88aaaec93066182aaf8cf3e0f8a676e2}{Sqr}}(dr[1])\ +\ \mbox{\hyperlink{global_8h_a88aaaec93066182aaf8cf3e0f8a676e2}{Sqr}}(dr[2]);}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00087}00087\ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{global_8h_a6a4e820cfd6dbd49709a350e38260c18}{RadiusIJ}}\ =\ \mbox{\hyperlink{global_8h_ab715ebf9f35659a111ee6c5eedc360af}{atomRadius}}[I]\ +\ \mbox{\hyperlink{global_8h_ab715ebf9f35659a111ee6c5eedc360af}{atomRadius}}[J];}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00088}00088\ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{global_8h_a6a05feadcd798474382d444168bb3d5d}{SqrRadiusIJ}}\ =\ \mbox{\hyperlink{global_8h_a88aaaec93066182aaf8cf3e0f8a676e2}{Sqr}}(\mbox{\hyperlink{global_8h_a6a4e820cfd6dbd49709a350e38260c18}{RadiusIJ}});}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00089}00089\ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(rr\ <\ \mbox{\hyperlink{global_8h_a6a05feadcd798474382d444168bb3d5d}{SqrRadiusIJ}})\{}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00090}00090\ \ \ \ \ \ \ \ \ r\ =\ sqrt(rr);}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00091}00091\ \ \ \ \ \ \ \ \ ri\ =\ 1.0/r;}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00092}00092\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ rrinv\ =\ 1.0/rr;}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00093}00093\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ vr[1]\ =\ \mbox{\hyperlink{global_8h_a6cbb00abd724a75be2c6424c84d18654}{vx}}[I]\ -\/\ \mbox{\hyperlink{global_8h_a6cbb00abd724a75be2c6424c84d18654}{vx}}[J];}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00094}00094\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ vr[2]\ =\ \mbox{\hyperlink{global_8h_ad78254f6802793cc12b197889e6ea80d}{vy}}[I]\ -\/\ \mbox{\hyperlink{global_8h_ad78254f6802793cc12b197889e6ea80d}{vy}}[J];}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00095}00095\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{global_8h_a47571b44e617f4a6d6ef4ab227337093}{RadiusIJInv}}\ =\ 1.0/\mbox{\hyperlink{global_8h_a6a4e820cfd6dbd49709a350e38260c18}{RadiusIJ}};}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00096}00096\ \ \ \ \ \ \ \ \ uVal\ =\ \mbox{\hyperlink{global_8h_a88aaaec93066182aaf8cf3e0f8a676e2}{Sqr}}(1.0\ -\/\ r\ *\ \mbox{\hyperlink{global_8h_a47571b44e617f4a6d6ef4ab227337093}{RadiusIJInv}});}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00097}00097\ \ \ \ \ \ \ \ \ fcVal\ =\ 2.0\ *\ \mbox{\hyperlink{global_8h_a47571b44e617f4a6d6ef4ab227337093}{RadiusIJInv}}\ *\ (1.0\ -\/\ r\ *\ \mbox{\hyperlink{global_8h_a47571b44e617f4a6d6ef4ab227337093}{RadiusIJInv}})\ *ri;}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00098}00098\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ fdVal\ =\ -\/\mbox{\hyperlink{global_8h_a51f4f35562e6b66ea8bd3dfd6d710fcb}{gamman}}\ *\ (vr[1]*dr[1]\ +\ vr[2]*dr[2])\ *\ rrinv;\ \textcolor{comment}{//disc-\/disc\ drag}}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00099}00099\ }
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00100}00100\ \ \ \ \ \ \ \ \ f\ \ =\ fcVal\ *\ dr[1];}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00101}00101\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ fd\ =\ fdVal\ *\ dr[1];}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00102}00102\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{global_8h_a82d645cda6bea6506c7b5f4f7453986c}{ax}}[I]\ +=\ (f\ +\ fd);}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00103}00103\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{global_8h_ad1ad82db5042c5e6dcdf44dee00362fe}{discDragx}}[I]\ +=\ fd;\ \textcolor{comment}{//disc-\/disc\ drag}}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00104}00104\ }
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00105}00105\ \ \ \ \ \ \ \ \ f\ =\ fcVal\ *\ dr[2];}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00106}00106\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ fd\ =\ fdVal\ *\ dr[2];}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00107}00107\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{global_8h_a68c7afda02d0f26c1987a4eee13928f2}{ay}}[I]\ +=\ (f\ +\ fd);}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00108}00108\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{global_8h_a1a2663b70d9ea62a68fa250cc5e3e6c2}{discDragy}}[I]\ +=\ fd;\ \textcolor{comment}{//disc-\/disc\ drag}}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00109}00109\ }
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00110}00110\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{global_8h_a927379bdfda5eedb0267990043b572f6}{uSum}}\ +=\ \ 0.5\ *\ uVal;}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00111}00111\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{global_8h_abdbf03f447f8b0adbae4c15974dac45f}{virSum}}\ +=\ 0.5\ *\ fcVal\ *\ rr;}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00112}00112\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{global_8h_a409ac219990f0cf85a946b0f32a0cea0}{rfAtom}}\ +=\ 0.5\ *\ dr[1]\ *\ fcVal\ *\ dr[2];}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00113}00113\ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00114}00114\ \ \ \ \ \ \ \ \ \}\textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}(m1\ !=\ m2\ \&\&\ (\mbox{\hyperlink{global_8h_ab715ebf9f35659a111ee6c5eedc360af}{atomRadius}}[I]\ >\ 0.\ \&\&\ \mbox{\hyperlink{global_8h_ab715ebf9f35659a111ee6c5eedc360af}{atomRadius}}[J]\ >\ 0.))\{}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00115}00115\ \ \ \ \ \ \ \ \ \ \ dr[1]\ =\ \mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}[I]\ -\/\ \mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}[J]\ -\/\ shift[1];}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00116}00116\ \ \ \ \ \ \ \ \ \ \ dr[2]\ =\ \mbox{\hyperlink{global_8h_af88ff31a9ae85beb713bd0c42815f1de}{ry}}[I]\ -\/\ \mbox{\hyperlink{global_8h_af88ff31a9ae85beb713bd0c42815f1de}{ry}}[J]\ -\/\ shift[2];}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00117}00117\ \ \ \ \ \ \ \ \ \ \ rr\ =\ \mbox{\hyperlink{global_8h_a88aaaec93066182aaf8cf3e0f8a676e2}{Sqr}}(dr[1])\ +\ \mbox{\hyperlink{global_8h_a88aaaec93066182aaf8cf3e0f8a676e2}{Sqr}}(dr[2]);}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00118}00118\ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{global_8h_a6a4e820cfd6dbd49709a350e38260c18}{RadiusIJ}}\ =\ \mbox{\hyperlink{global_8h_ab715ebf9f35659a111ee6c5eedc360af}{atomRadius}}[I]\ +\ \mbox{\hyperlink{global_8h_ab715ebf9f35659a111ee6c5eedc360af}{atomRadius}}[J];}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00119}00119\ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{global_8h_a6a05feadcd798474382d444168bb3d5d}{SqrRadiusIJ}}\ =\ \mbox{\hyperlink{global_8h_a88aaaec93066182aaf8cf3e0f8a676e2}{Sqr}}(\mbox{\hyperlink{global_8h_a6a4e820cfd6dbd49709a350e38260c18}{RadiusIJ}});}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00120}00120\ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(rr\ <\ \mbox{\hyperlink{global_8h_a6a05feadcd798474382d444168bb3d5d}{SqrRadiusIJ}})\{}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00121}00121\ \ \ \ \ \ \ \ \ r\ =\ sqrt(rr);}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00122}00122\ \ \ \ \ \ \ \ \ ri\ =\ 1.0/r;}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00123}00123\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ rrinv\ =\ 1.0/r;}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00124}00124\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ vr[1]\ =\ \mbox{\hyperlink{global_8h_a6cbb00abd724a75be2c6424c84d18654}{vx}}[I]\ -\/\ \mbox{\hyperlink{global_8h_a6cbb00abd724a75be2c6424c84d18654}{vx}}[J];}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00125}00125\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ vr[2]\ =\ \mbox{\hyperlink{global_8h_ad78254f6802793cc12b197889e6ea80d}{vy}}[I]\ -\/\ \mbox{\hyperlink{global_8h_ad78254f6802793cc12b197889e6ea80d}{vy}}[J];}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00126}00126\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{global_8h_a47571b44e617f4a6d6ef4ab227337093}{RadiusIJInv}}\ =\ 1.0/\mbox{\hyperlink{global_8h_a6a4e820cfd6dbd49709a350e38260c18}{RadiusIJ}};}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00127}00127\ \ \ \ \ \ \ \ \ uVal\ =\ \mbox{\hyperlink{global_8h_a88aaaec93066182aaf8cf3e0f8a676e2}{Sqr}}(1.0\ -\/\ r\ *\ \mbox{\hyperlink{global_8h_a47571b44e617f4a6d6ef4ab227337093}{RadiusIJInv}});}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00128}00128\ \ \ \ \ \ \ \ \ fcVal\ =\ 2.0\ *\ \mbox{\hyperlink{global_8h_a47571b44e617f4a6d6ef4ab227337093}{RadiusIJInv}}\ *\ (1.0\ -\/\ r\ *\ \mbox{\hyperlink{global_8h_a47571b44e617f4a6d6ef4ab227337093}{RadiusIJInv}})\ *ri;}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00129}00129\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ fdVal\ =\ -\/\mbox{\hyperlink{global_8h_a51f4f35562e6b66ea8bd3dfd6d710fcb}{gamman}}\ *\ (vr[1]*dr[1]\ +\ vr[2]*dr[2])\ *\ rrinv;\ \textcolor{comment}{//disc-\/disc\ drag}}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00130}00130\ }
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00131}00131\ \ \ \ \ \ \ \ \ f\ \ =\ fcVal\ *\ dr[1];}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00132}00132\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ fd\ =\ \ fdVal\ *\ dr[1];}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00133}00133\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{global_8h_a82d645cda6bea6506c7b5f4f7453986c}{ax}}[I]\ +=\ (f\ +\ fd);}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00134}00134\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{global_8h_ad1ad82db5042c5e6dcdf44dee00362fe}{discDragx}}[I]\ +=\ fd;\ \textcolor{comment}{//disc-\/disc\ drag}}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00135}00135\ }
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00136}00136\ \ \ \ \ \ \ \ \ f\ \ =\ fcVal\ *\ dr[2];}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00137}00137\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ fd\ =\ fdVal\ *\ dr[2];}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00138}00138\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{global_8h_a68c7afda02d0f26c1987a4eee13928f2}{ay}}[I]\ +=\ (f\ +\ fd);}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00139}00139\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{global_8h_a1a2663b70d9ea62a68fa250cc5e3e6c2}{discDragy}}[I]\ +=\ fd;\ \textcolor{comment}{//disc-\/disc\ drag}}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00140}00140\ }
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00141}00141\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{global_8h_a927379bdfda5eedb0267990043b572f6}{uSum}}\ +=\ \ 0.5\ *\ uVal;}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00142}00142\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{global_8h_abdbf03f447f8b0adbae4c15974dac45f}{virSum}}\ +=\ 0.5\ *\ fcVal\ *\ rr;}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00143}00143\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{global_8h_a409ac219990f0cf85a946b0f32a0cea0}{rfAtom}}\ +=\ 0.5\ *\ dr[1]\ *\ fcVal\ *\ dr[2];}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00144}00144\ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00145}00145\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00146}00146\ \ \ \ \ \ \ \ \ \ \ \ \ J\ =\ \mbox{\hyperlink{global_8h_a679d8d045f353a6544e2a03b3942bc5a}{cellList}}[J];}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00147}00147\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00148}00148\ \ \ \ \ \ \ I\ =\ \mbox{\hyperlink{global_8h_a679d8d045f353a6544e2a03b3942bc5a}{cellList}}[I];}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00149}00149\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00150}00150\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00151}00151\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00152}00152\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{ComputeForcesCells_8c_source_l00153}00153\ \}}
+
+\end{DoxyCode}

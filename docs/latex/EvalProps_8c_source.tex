@@ -1,0 +1,76 @@
+\doxysection{Eval\+Props.\+c}
+\hypertarget{EvalProps_8c_source}{}\label{EvalProps_8c_source}\index{source/EvalProps.c@{source/EvalProps.c}}
+\mbox{\hyperlink{EvalProps_8c}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{EvalProps_8c_source_l00001}00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{EvalProps_8c_source_l00002}00002\ \textcolor{comment}{\ *\ This\ file\ is\ part\ of\ Lamina.}}
+\DoxyCodeLine{\Hypertarget{EvalProps_8c_source_l00003}00003\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{\Hypertarget{EvalProps_8c_source_l00004}00004\ \textcolor{comment}{\ *\ Lamina\ is\ free\ software:\ you\ can\ redistribute\ it\ and/or\ modify}}
+\DoxyCodeLine{\Hypertarget{EvalProps_8c_source_l00005}00005\ \textcolor{comment}{\ *\ it\ under\ the\ terms\ of\ the\ GNU\ General\ Public\ License\ as\ published\ by}}
+\DoxyCodeLine{\Hypertarget{EvalProps_8c_source_l00006}00006\ \textcolor{comment}{\ *\ the\ Free\ Software\ Foundation,\ either\ version\ 3\ of\ the\ License,\ or}}
+\DoxyCodeLine{\Hypertarget{EvalProps_8c_source_l00007}00007\ \textcolor{comment}{\ *\ (at\ your\ option)\ any\ later\ version.}}
+\DoxyCodeLine{\Hypertarget{EvalProps_8c_source_l00008}00008\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{\Hypertarget{EvalProps_8c_source_l00009}00009\ \textcolor{comment}{\ *\ Lamina\ is\ distributed\ in\ the\ hope\ that\ it\ will\ be\ useful,}}
+\DoxyCodeLine{\Hypertarget{EvalProps_8c_source_l00010}00010\ \textcolor{comment}{\ *\ but\ WITHOUT\ ANY\ WARRANTY;\ without\ even\ the\ implied\ warranty\ of}}
+\DoxyCodeLine{\Hypertarget{EvalProps_8c_source_l00011}00011\ \textcolor{comment}{\ *\ MERCHANTABILITY\ or\ FITNESS\ FOR\ A\ PARTICULAR\ PURPOSE.\ See\ the}}
+\DoxyCodeLine{\Hypertarget{EvalProps_8c_source_l00012}00012\ \textcolor{comment}{\ *\ GNU\ General\ Public\ License\ for\ more\ details.}}
+\DoxyCodeLine{\Hypertarget{EvalProps_8c_source_l00013}00013\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{\Hypertarget{EvalProps_8c_source_l00014}00014\ \textcolor{comment}{\ *\ You\ should\ have\ received\ a\ copy\ of\ the\ GNU\ General\ Public\ License}}
+\DoxyCodeLine{\Hypertarget{EvalProps_8c_source_l00015}00015\ \textcolor{comment}{\ *\ along\ with\ Lamina.\ If\ not,\ see\ <https://www.gnu.org/licenses/>.}}
+\DoxyCodeLine{\Hypertarget{EvalProps_8c_source_l00016}00016\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{EvalProps_8c_source_l00017}00017\ \textcolor{comment}{\ Copyright\ (C)\ 2025\ Harish\ Charan,\ University\ of\ Durham,\ UK}}
+\DoxyCodeLine{\Hypertarget{EvalProps_8c_source_l00018}00018\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{EvalProps_8c_source_l00019}00019\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{\Hypertarget{EvalProps_8c_source_l00020}00020\ }
+\DoxyCodeLine{\Hypertarget{EvalProps_8c_source_l00021}00021\ }
+\DoxyCodeLine{\Hypertarget{EvalProps_8c_source_l00022}00022\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{\Hypertarget{EvalProps_8c_source_l00023}00023\ \textcolor{preprocessor}{\#include\ <string.h>}}
+\DoxyCodeLine{\Hypertarget{EvalProps_8c_source_l00024}00024\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{global_8h}{global.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{EvalProps_8c_source_l00025}00025\ }
+\DoxyCodeLine{\Hypertarget{EvalProps_8c_source_l00026}\mbox{\hyperlink{EvalProps_8c_a2d0358bac91b7e98e7a5a83a69325eed}{00026}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{EvalProps_8c_a2d0358bac91b7e98e7a5a83a69325eed}{EvalProps}}()\ \{}
+\DoxyCodeLine{\Hypertarget{EvalProps_8c_source_l00027}00027\ \ \mbox{\hyperlink{global_8h_a11d147c64891830c9e79b3315b1b2e21}{real}}\ v,\ vv;}
+\DoxyCodeLine{\Hypertarget{EvalProps_8c_source_l00028}00028\ \ \mbox{\hyperlink{global_8h_abdbf03f447f8b0adbae4c15974dac45f}{virSum}}\ =\ 0.0;}
+\DoxyCodeLine{\Hypertarget{EvalProps_8c_source_l00029}00029\ \ \mbox{\hyperlink{global_8h_adccf176eee31c1ae7a4521f8a42e19ae}{vSumX}}\ =\ 0.0;\ \mbox{\hyperlink{global_8h_a74f7573f7c599b600da92918019291a5}{vSumY}}\ =\ 0.0;\ \mbox{\hyperlink{global_8h_a68c26a0c6b002f1da36c4be599ca5149}{vSum}}\ =\ 0.0;\ }
+\DoxyCodeLine{\Hypertarget{EvalProps_8c_source_l00030}00030\ \ \mbox{\hyperlink{global_8h_a5a69ba53b920022cc82acded08812d9c}{vvSum}}\ =\ 0.;}
+\DoxyCodeLine{\Hypertarget{EvalProps_8c_source_l00031}00031\ \ \textcolor{keywordtype}{int}\ n;}
+\DoxyCodeLine{\Hypertarget{EvalProps_8c_source_l00032}00032\ }
+\DoxyCodeLine{\Hypertarget{EvalProps_8c_source_l00033}00033\ \ \textcolor{keywordflow}{for}\ (n\ =\ 1;\ n\ <=\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}};\ n++)\ \{}
+\DoxyCodeLine{\Hypertarget{EvalProps_8c_source_l00034}00034\ \ \ vv\ =\ 0.;}
+\DoxyCodeLine{\Hypertarget{EvalProps_8c_source_l00035}00035\ \ \ \textcolor{comment}{//\ Initialize\ v\ with\ a\ default\ value\ to\ avoid\ "{}uninitialized"{}\ warning.}}
+\DoxyCodeLine{\Hypertarget{EvalProps_8c_source_l00036}00036\ \ \ v\ =\ 0.0;}
+\DoxyCodeLine{\Hypertarget{EvalProps_8c_source_l00037}00037\ \ \ \textcolor{comment}{//\ X\ direction\ velocity}}
+\DoxyCodeLine{\Hypertarget{EvalProps_8c_source_l00038}00038\ \ \ \textcolor{keywordflow}{if}\ (strcmp(\mbox{\hyperlink{global_8h_ab8efd087a2de9e165fa9330d99beecc5}{solver}},\ \textcolor{stringliteral}{"{}Verlet"{}})\ ==\ 0)\ \{}
+\DoxyCodeLine{\Hypertarget{EvalProps_8c_source_l00039}00039\ \ \ \ \ v\ =\ \mbox{\hyperlink{global_8h_a6cbb00abd724a75be2c6424c84d18654}{vx}}[n];}
+\DoxyCodeLine{\Hypertarget{EvalProps_8c_source_l00040}00040\ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (strcmp(\mbox{\hyperlink{global_8h_ab8efd087a2de9e165fa9330d99beecc5}{solver}},\ \textcolor{stringliteral}{"{}LeapFrog"{}})\ ==\ 0)\ \{}
+\DoxyCodeLine{\Hypertarget{EvalProps_8c_source_l00041}00041\ \ \ \ \ v\ =\ \mbox{\hyperlink{global_8h_a6cbb00abd724a75be2c6424c84d18654}{vx}}[n]\ -\/\ 0.5\ *\ \mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}}\ *\ \mbox{\hyperlink{global_8h_a82d645cda6bea6506c7b5f4f7453986c}{ax}}[n];}
+\DoxyCodeLine{\Hypertarget{EvalProps_8c_source_l00042}00042\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{EvalProps_8c_source_l00043}00043\ \ \ \ \mbox{\hyperlink{global_8h_a68c26a0c6b002f1da36c4be599ca5149}{vSum}}\ +=\ v;}
+\DoxyCodeLine{\Hypertarget{EvalProps_8c_source_l00044}00044\ \ \ \ vv\ +=\ \mbox{\hyperlink{global_8h_a88aaaec93066182aaf8cf3e0f8a676e2}{Sqr}}(v);}
+\DoxyCodeLine{\Hypertarget{EvalProps_8c_source_l00045}00045\ \ \ \ \mbox{\hyperlink{global_8h_adccf176eee31c1ae7a4521f8a42e19ae}{vSumX}}\ +=\ v;\ }
+\DoxyCodeLine{\Hypertarget{EvalProps_8c_source_l00046}00046\ \ \ \ \textcolor{comment}{//\ Y\ direction\ velocity}}
+\DoxyCodeLine{\Hypertarget{EvalProps_8c_source_l00047}00047\ \ \ \ \textcolor{keywordflow}{if}\ (strcmp(\mbox{\hyperlink{global_8h_ab8efd087a2de9e165fa9330d99beecc5}{solver}},\ \textcolor{stringliteral}{"{}Verlet"{}})\ ==\ 0)\ \{}
+\DoxyCodeLine{\Hypertarget{EvalProps_8c_source_l00048}00048\ \ \ \ v\ =\ \mbox{\hyperlink{global_8h_ad78254f6802793cc12b197889e6ea80d}{vy}}[n];}
+\DoxyCodeLine{\Hypertarget{EvalProps_8c_source_l00049}00049\ \ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (strcmp(\mbox{\hyperlink{global_8h_ab8efd087a2de9e165fa9330d99beecc5}{solver}},\ \textcolor{stringliteral}{"{}LeapFrog"{}})\ ==\ 0)\ \{}
+\DoxyCodeLine{\Hypertarget{EvalProps_8c_source_l00050}00050\ \ \ \ v\ =\ \mbox{\hyperlink{global_8h_ad78254f6802793cc12b197889e6ea80d}{vy}}[n]\ -\/\ 0.5\ *\ \mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}}\ *\ \mbox{\hyperlink{global_8h_a68c7afda02d0f26c1987a4eee13928f2}{ay}}[n];}
+\DoxyCodeLine{\Hypertarget{EvalProps_8c_source_l00051}00051\ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{EvalProps_8c_source_l00052}00052\ \ \ \ \mbox{\hyperlink{global_8h_a68c26a0c6b002f1da36c4be599ca5149}{vSum}}\ +=\ v;}
+\DoxyCodeLine{\Hypertarget{EvalProps_8c_source_l00053}00053\ \ \ \ \mbox{\hyperlink{global_8h_a74f7573f7c599b600da92918019291a5}{vSumY}}\ +=\ v;}
+\DoxyCodeLine{\Hypertarget{EvalProps_8c_source_l00054}00054\ \ \ \ vv\ +=\ \mbox{\hyperlink{global_8h_a88aaaec93066182aaf8cf3e0f8a676e2}{Sqr}}(v);}
+\DoxyCodeLine{\Hypertarget{EvalProps_8c_source_l00055}00055\ \ \ \ \mbox{\hyperlink{global_8h_a5a69ba53b920022cc82acded08812d9c}{vvSum}}\ +=\ vv;}
+\DoxyCodeLine{\Hypertarget{EvalProps_8c_source_l00056}00056\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{EvalProps_8c_source_l00057}00057\ }
+\DoxyCodeLine{\Hypertarget{EvalProps_8c_source_l00058}00058\ \ \ \mbox{\hyperlink{global_8h_a445d936de68f213385df5c284ea1d81d}{kinEnergy}}\ =\ 0.5\ *\ \mbox{\hyperlink{global_8h_a5a69ba53b920022cc82acded08812d9c}{vvSum}}\ /\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}}\ ;}
+\DoxyCodeLine{\Hypertarget{EvalProps_8c_source_l00059}00059\ \ \ \mbox{\hyperlink{global_8h_a35bf08d49aa04729a9f7dd23a464a826}{uSumPairPerAtom}}\ =\ \mbox{\hyperlink{global_8h_a9b7d6fb2c7936c1e648c8af3260beb25}{uSumPair}}\ /\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}}\ ;}
+\DoxyCodeLine{\Hypertarget{EvalProps_8c_source_l00060}00060\ \ \ \mbox{\hyperlink{global_8h_aa53f052764d0986e9691ee3e941682d9}{BondEnergyPerAtom}}\ =\ \mbox{\hyperlink{global_8h_ace1b0540bf5b0561f14c46f5aa8d3d17}{TotalBondEnergy}}\ /\ (0.5*\mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}});\ \textcolor{comment}{//Factor\ of\ 0.5\ since\ each\ atom\ has\ one\ half\ the\ bond\ energy}}
+\DoxyCodeLine{\Hypertarget{EvalProps_8c_source_l00061}00061\ \ \ \mbox{\hyperlink{global_8h_abd758be497a95843d6cbb071a9f99581}{potEnergy}}\ =\ \mbox{\hyperlink{global_8h_a35bf08d49aa04729a9f7dd23a464a826}{uSumPairPerAtom}}\ +\ \ \mbox{\hyperlink{global_8h_aa53f052764d0986e9691ee3e941682d9}{BondEnergyPerAtom}}\ ;}
+\DoxyCodeLine{\Hypertarget{EvalProps_8c_source_l00062}00062\ \ \ \mbox{\hyperlink{global_8h_a025720826b3728fd77ab18384b7369bf}{totEnergy}}\ =\ \mbox{\hyperlink{global_8h_a445d936de68f213385df5c284ea1d81d}{kinEnergy}}\ +\ \mbox{\hyperlink{global_8h_abd758be497a95843d6cbb071a9f99581}{potEnergy}};}
+\DoxyCodeLine{\Hypertarget{EvalProps_8c_source_l00063}00063\ \ \ \mbox{\hyperlink{global_8h_ad41df8a242cc872c157a7328617f4957}{virSumxx}}\ =\ \mbox{\hyperlink{global_8h_a4ca279a3a01228351fec03dd3c051389}{virSumPairxx}}\ \ +\ \mbox{\hyperlink{global_8h_ab86ba14519d191322a45fa6f760b16f8}{virSumBondxx}}\ ;}
+\DoxyCodeLine{\Hypertarget{EvalProps_8c_source_l00064}00064\ \ \ \mbox{\hyperlink{global_8h_a1fc6778eedb1b18ef5b97d198eee67e9}{virSumyy}}\ =\ \mbox{\hyperlink{global_8h_a1e26755e037e321d30f5a5a128140e2d}{virSumPairyy}}\ \ +\ \mbox{\hyperlink{global_8h_aee51ff7fe82a7228ea1348855cf89915}{virSumBondyy}}\ ;}
+\DoxyCodeLine{\Hypertarget{EvalProps_8c_source_l00065}00065\ \ \ \mbox{\hyperlink{global_8h_a486d537e9ff9b9bc9b3a538768d282b0}{virSumxy}}\ =\ \mbox{\hyperlink{global_8h_af5252e908f208e8efbc603a117c51cb7}{virSumPairxy}}\ \ +\ \mbox{\hyperlink{global_8h_a6669a78293d832c3b0c074886e6ecd19}{virSumBondxy}}\ ;}
+\DoxyCodeLine{\Hypertarget{EvalProps_8c_source_l00066}00066\ \ \ \mbox{\hyperlink{global_8h_abdbf03f447f8b0adbae4c15974dac45f}{virSum}}\ =\ \mbox{\hyperlink{global_8h_a217147ba7e53c5aa91861295fd29acab}{virSumPair}}\ +\ \mbox{\hyperlink{global_8h_a08413ab34f5604e910f1dbdc021a3c5f}{virSumBond}};}
+\DoxyCodeLine{\Hypertarget{EvalProps_8c_source_l00067}00067\ \ \ \mbox{\hyperlink{global_8h_aee1c5d07ac79c5c036195858afe33405}{pressure}}\ =\ \mbox{\hyperlink{global_8h_a6f8c052f8417728038991f7f2826d38d}{density}}\ *\ (\mbox{\hyperlink{global_8h_a5a69ba53b920022cc82acded08812d9c}{vvSum}}\ +\ \mbox{\hyperlink{global_8h_abdbf03f447f8b0adbae4c15974dac45f}{virSum}})\ /\ (\mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}}\ *\ \mbox{\hyperlink{global_8h_a2b1fd2d28c6a7d4a3f7027cc1b6466f3}{NDIM}});}
+\DoxyCodeLine{\Hypertarget{EvalProps_8c_source_l00068}00068\ }
+\DoxyCodeLine{\Hypertarget{EvalProps_8c_source_l00069}00069\ \}}
+\DoxyCodeLine{\Hypertarget{EvalProps_8c_source_l00070}00070\ }
+
+\end{DoxyCode}

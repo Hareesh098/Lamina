@@ -1,0 +1,56 @@
+\doxysection{source/\+Displace\+Atoms.c File Reference}
+\hypertarget{DisplaceAtoms_8c}{}\label{DisplaceAtoms_8c}\index{source/DisplaceAtoms.c@{source/DisplaceAtoms.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include "{}global.\+h"{}}\newline
+Include dependency graph for Displace\+Atoms.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{DisplaceAtoms_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{DisplaceAtoms_8c_a3d24280446b0ed41ab873e8325636373}{Displace\+Atoms}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{DisplaceAtoms_8c_a3d24280446b0ed41ab873e8325636373}\label{DisplaceAtoms_8c_a3d24280446b0ed41ab873e8325636373} 
+\index{DisplaceAtoms.c@{DisplaceAtoms.c}!DisplaceAtoms@{DisplaceAtoms}}
+\index{DisplaceAtoms@{DisplaceAtoms}!DisplaceAtoms.c@{DisplaceAtoms.c}}
+\doxysubsubsection{\texorpdfstring{DisplaceAtoms()}{DisplaceAtoms()}}
+{\footnotesize\ttfamily void Displace\+Atoms (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{DisplaceAtoms_8c_source_l00025}{25}} of file \mbox{\hyperlink{DisplaceAtoms_8c_source}{Displace\+Atoms.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00026\ \ \textcolor{keywordtype}{int}\ n;}
+\DoxyCodeLine{00027\ \ \ \textcolor{keywordflow}{for}(n\ =\ 1;\ n\ <=\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}};\ n\ ++)\{}
+\DoxyCodeLine{00028\ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{global_8h_a65f3cbf0ee8813aae06be044d6c568ad}{molID}}[n]\ ==\ 2)\{}
+\DoxyCodeLine{00029\ \ \ \ \ \mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}[n]\ +=\ \mbox{\hyperlink{global_8h_af4ab0506048ab0512eb4f1e963c2a238}{DeltaX}};\ }
+\DoxyCodeLine{00030\ \ \ \ \ \mbox{\hyperlink{global_8h_af88ff31a9ae85beb713bd0c42815f1de}{ry}}[n]\ +=\ \mbox{\hyperlink{global_8h_a38f5e3e34b48c3b6e72609b7d2a5ad2a}{DeltaY}};}
+\DoxyCodeLine{00031\ \}\ \}\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{global_8h_source_l00046}{DeltaX}}, \mbox{\hyperlink{global_8h_a38f5e3e34b48c3b6e72609b7d2a5ad2a}{DeltaY}}, \mbox{\hyperlink{global_8h_a65f3cbf0ee8813aae06be044d6c568ad}{mol\+ID}}, \mbox{\hyperlink{global_8h_source_l00024}{n\+Atom}}, \mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}, and \mbox{\hyperlink{global_8h_source_l00017}{ry}}.
+
+
+
+Referenced by \mbox{\hyperlink{main_8c_source_l00050}{main()}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{DisplaceAtoms_8c_a3d24280446b0ed41ab873e8325636373_icgraph}
+\end{center}
+\end{figure}

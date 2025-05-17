@@ -1,0 +1,52 @@
+\doxysection{source/\+Integrate.c File Reference}
+\hypertarget{Integrate_8c}{}\label{Integrate_8c}\index{source/Integrate.c@{source/Integrate.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include "{}global.\+h"{}}\newline
+Include dependency graph for Integrate.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=187pt]{Integrate_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{Integrate_8c_a8d31c83bd377974025524c86b20425b2}{Integrate}} (double \texorpdfstring{$\ast$}{*}f, int nf)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{Integrate_8c_a8d31c83bd377974025524c86b20425b2}\label{Integrate_8c_a8d31c83bd377974025524c86b20425b2} 
+\index{Integrate.c@{Integrate.c}!Integrate@{Integrate}}
+\index{Integrate@{Integrate}!Integrate.c@{Integrate.c}}
+\doxysubsubsection{\texorpdfstring{Integrate()}{Integrate()}}
+{\footnotesize\ttfamily double Integrate (\begin{DoxyParamCaption}\item[{double \texorpdfstring{$\ast$}{*}}]{f,  }\item[{int}]{nf }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{Integrate_8c_source_l00025}{25}} of file \mbox{\hyperlink{Integrate_8c_source}{Integrate.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00026\ \ \textcolor{keywordtype}{double}\ s;}
+\DoxyCodeLine{00027\ \ \textcolor{keywordtype}{int}\ i;}
+\DoxyCodeLine{00028\ \ s\ =\ 0.5*(f[1]\ +\ f[nf]);}
+\DoxyCodeLine{00029\ \ \textcolor{keywordflow}{for}(i\ =\ 2\ ;\ i\ <=\ nf\ -\/\ 1\ ;\ i\ ++)}
+\DoxyCodeLine{00030\ \ \ s\ +=\ f[i];}
+\DoxyCodeLine{00031\ \ \textcolor{keywordflow}{return}(s);}
+\DoxyCodeLine{00032\ \}}
+
+\end{DoxyCode}
+
+
+Referenced by \mbox{\hyperlink{AccumVacf_8c_source_l00027}{Accum\+Vacf()}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{Integrate_8c_a8d31c83bd377974025524c86b20425b2_icgraph}
+\end{center}
+\end{figure}

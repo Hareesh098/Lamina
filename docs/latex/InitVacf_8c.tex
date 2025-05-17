@@ -1,0 +1,94 @@
+\doxysection{source/\+Init\+Vacf.c File Reference}
+\hypertarget{InitVacf_8c}{}\label{InitVacf_8c}\index{source/InitVacf.c@{source/InitVacf.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include "{}global.\+h"{}}\newline
+Include dependency graph for Init\+Vacf.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=183pt]{InitVacf_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{InitVacf_8c_af60963b0cbbf0bed9d310797a6f9a59d}{Zero\+Vacf}} ()
+\item 
+void \mbox{\hyperlink{InitVacf_8c_a7c5f7c4e917de0e2ff97777973da01ee}{Init\+Vacf}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{InitVacf_8c_a7c5f7c4e917de0e2ff97777973da01ee}\label{InitVacf_8c_a7c5f7c4e917de0e2ff97777973da01ee} 
+\index{InitVacf.c@{InitVacf.c}!InitVacf@{InitVacf}}
+\index{InitVacf@{InitVacf}!InitVacf.c@{InitVacf.c}}
+\doxysubsubsection{\texorpdfstring{InitVacf()}{InitVacf()}}
+{\footnotesize\ttfamily void Init\+Vacf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{InitVacf_8c_source_l00026}{26}} of file \mbox{\hyperlink{InitVacf_8c_source}{Init\+Vacf.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00027\ \ \ \textcolor{keywordtype}{int}\ nb;}
+\DoxyCodeLine{00028\ \ \ \textcolor{keywordflow}{for}(nb\ =\ 1\ ;\ nb\ <=\ \mbox{\hyperlink{global_8h_a62bb5169e87a77023d99fa51468bf126}{nBuffAcf}}\ ;\ nb\ ++)}
+\DoxyCodeLine{00029\ \ \ \ \ \mbox{\hyperlink{global_8h_a74f01c700b5540bed3184604a0cd6c17}{indexAcf}}[nb]\ =\ -\/(nb-\/1)*\mbox{\hyperlink{global_8h_a48094c7b6092e1a21fcc91a371f230b6}{nValAcf}}/\mbox{\hyperlink{global_8h_a62bb5169e87a77023d99fa51468bf126}{nBuffAcf}};}
+\DoxyCodeLine{00030\ \ \ \mbox{\hyperlink{InitVacf_8c_af60963b0cbbf0bed9d310797a6f9a59d}{ZeroVacf}}();}
+\DoxyCodeLine{00031\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{global_8h_a74f01c700b5540bed3184604a0cd6c17}{index\+Acf}}, \mbox{\hyperlink{global_8h_source_l00094}{n\+Buff\+Acf}}, \mbox{\hyperlink{global_8h_a48094c7b6092e1a21fcc91a371f230b6}{n\+Val\+Acf}}, and \mbox{\hyperlink{ZeroVacf_8c_source_l00025}{Zero\+Vacf()}}.
+
+
+
+Referenced by \mbox{\hyperlink{SetupJob_8c_source_l00027}{Setup\+Job()}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{InitVacf_8c_a7c5f7c4e917de0e2ff97777973da01ee_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{InitVacf_8c_a7c5f7c4e917de0e2ff97777973da01ee_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{InitVacf_8c_af60963b0cbbf0bed9d310797a6f9a59d}\label{InitVacf_8c_af60963b0cbbf0bed9d310797a6f9a59d} 
+\index{InitVacf.c@{InitVacf.c}!ZeroVacf@{ZeroVacf}}
+\index{ZeroVacf@{ZeroVacf}!InitVacf.c@{InitVacf.c}}
+\doxysubsubsection{\texorpdfstring{ZeroVacf()}{ZeroVacf()}}
+{\footnotesize\ttfamily void Zero\+Vacf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{ZeroVacf_8c_source_l00025}{25}} of file \mbox{\hyperlink{ZeroVacf_8c_source}{Zero\+Vacf.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00026\ \ \textcolor{keywordtype}{int}\ j;}
+\DoxyCodeLine{00027\ \ \mbox{\hyperlink{global_8h_ab4d8c90fd1e7351e4792aba91063c20e}{countAcfAv}}=\ 0\ ;}
+\DoxyCodeLine{00028\ \ \textcolor{keywordflow}{for}(j\ =\ 1\ ;\ j\ <=\ \mbox{\hyperlink{global_8h_a48094c7b6092e1a21fcc91a371f230b6}{nValAcf}}\ ;\ j\ ++)}
+\DoxyCodeLine{00029\ \ \ \mbox{\hyperlink{global_8h_a0eb9c034706ff9eeacb32ac2f0327e10}{viscAcfAv}}[j]\ =\ 0.;}
+\DoxyCodeLine{00030\ \}}
+
+\end{DoxyCode}
+
+
+Referenced by \mbox{\hyperlink{InitVacf_8c_source_l00026}{Init\+Vacf()}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{InitVacf_8c_af60963b0cbbf0bed9d310797a6f9a59d_icgraph}
+\end{center}
+\end{figure}

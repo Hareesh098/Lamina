@@ -1,0 +1,58 @@
+\doxysection{Accum\+Props.\+c}
+\hypertarget{AccumProps_8c_source}{}\label{AccumProps_8c_source}\index{source/AccumProps.c@{source/AccumProps.c}}
+\mbox{\hyperlink{AccumProps_8c}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{AccumProps_8c_source_l00001}00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{AccumProps_8c_source_l00002}00002\ \textcolor{comment}{\ *\ This\ file\ is\ part\ of\ Lamina.}}
+\DoxyCodeLine{\Hypertarget{AccumProps_8c_source_l00003}00003\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{\Hypertarget{AccumProps_8c_source_l00004}00004\ \textcolor{comment}{\ *\ Lamina\ is\ free\ software:\ you\ can\ redistribute\ it\ and/or\ modify}}
+\DoxyCodeLine{\Hypertarget{AccumProps_8c_source_l00005}00005\ \textcolor{comment}{\ *\ it\ under\ the\ terms\ of\ the\ GNU\ General\ Public\ License\ as\ published\ by}}
+\DoxyCodeLine{\Hypertarget{AccumProps_8c_source_l00006}00006\ \textcolor{comment}{\ *\ the\ Free\ Software\ Foundation,\ either\ version\ 3\ of\ the\ License,\ or}}
+\DoxyCodeLine{\Hypertarget{AccumProps_8c_source_l00007}00007\ \textcolor{comment}{\ *\ (at\ your\ option)\ any\ later\ version.}}
+\DoxyCodeLine{\Hypertarget{AccumProps_8c_source_l00008}00008\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{\Hypertarget{AccumProps_8c_source_l00009}00009\ \textcolor{comment}{\ *\ Lamina\ is\ distributed\ in\ the\ hope\ that\ it\ will\ be\ useful,}}
+\DoxyCodeLine{\Hypertarget{AccumProps_8c_source_l00010}00010\ \textcolor{comment}{\ *\ but\ WITHOUT\ ANY\ WARRANTY;\ without\ even\ the\ implied\ warranty\ of}}
+\DoxyCodeLine{\Hypertarget{AccumProps_8c_source_l00011}00011\ \textcolor{comment}{\ *\ MERCHANTABILITY\ or\ FITNESS\ FOR\ A\ PARTICULAR\ PURPOSE.\ See\ the}}
+\DoxyCodeLine{\Hypertarget{AccumProps_8c_source_l00012}00012\ \textcolor{comment}{\ *\ GNU\ General\ Public\ License\ for\ more\ details.}}
+\DoxyCodeLine{\Hypertarget{AccumProps_8c_source_l00013}00013\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{\Hypertarget{AccumProps_8c_source_l00014}00014\ \textcolor{comment}{\ *\ You\ should\ have\ received\ a\ copy\ of\ the\ GNU\ General\ Public\ License}}
+\DoxyCodeLine{\Hypertarget{AccumProps_8c_source_l00015}00015\ \textcolor{comment}{\ *\ along\ with\ Lamina.\ If\ not,\ see\ <https://www.gnu.org/licenses/>.}}
+\DoxyCodeLine{\Hypertarget{AccumProps_8c_source_l00016}00016\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{AccumProps_8c_source_l00017}00017\ \textcolor{comment}{\ Copyright\ (C)\ 2025\ Harish\ Charan,\ University\ of\ Durham,\ UK}}
+\DoxyCodeLine{\Hypertarget{AccumProps_8c_source_l00018}00018\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{AccumProps_8c_source_l00019}00019\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{\Hypertarget{AccumProps_8c_source_l00020}00020\ }
+\DoxyCodeLine{\Hypertarget{AccumProps_8c_source_l00021}00021\ \textcolor{preprocessor}{\#include<stdio.h>}}
+\DoxyCodeLine{\Hypertarget{AccumProps_8c_source_l00022}00022\ \textcolor{preprocessor}{\#include<math.h>}}
+\DoxyCodeLine{\Hypertarget{AccumProps_8c_source_l00023}00023\ \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{global_8h}{global.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{AccumProps_8c_source_l00024}00024\ }
+\DoxyCodeLine{\Hypertarget{AccumProps_8c_source_l00025}\mbox{\hyperlink{AccumProps_8c_a4b4560208657b98f0dea0ba6d4413c19}{00025}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{AccumProps_8c_a4b4560208657b98f0dea0ba6d4413c19}{AccumProps}}(\textcolor{keywordtype}{int}\ icode)\{}
+\DoxyCodeLine{\Hypertarget{AccumProps_8c_source_l00026}00026\ \ \textcolor{keywordflow}{if}(icode\ ==\ 0)\{}
+\DoxyCodeLine{\Hypertarget{AccumProps_8c_source_l00027}00027\ \ \mbox{\hyperlink{global_8h_ac0bceed989ef50bb3a4314feb0c828aa}{sPotEnergy}}\ =\ \mbox{\hyperlink{global_8h_a14dbdccf317ef9263542854ebf48a674}{ssPotEnergy}}\ =\ 0.;}
+\DoxyCodeLine{\Hypertarget{AccumProps_8c_source_l00028}00028\ \ \mbox{\hyperlink{global_8h_aceb0bd33904075ea75ec5f5db7180674}{sKinEnergy}}\ =\ \mbox{\hyperlink{global_8h_a5c5dfe1f2edbb9b98971f0b85ecf4c17}{ssKinEnergy}}\ =\ 0.;}
+\DoxyCodeLine{\Hypertarget{AccumProps_8c_source_l00029}00029\ \ \mbox{\hyperlink{global_8h_af5ce20c1e720aecc5d780bbd059f9bb2}{sPressure}}\ =\ \mbox{\hyperlink{global_8h_a5a69d6c5c0f48f99290220e47dfdba33}{ssPressure}}\ =\ 0.;}
+\DoxyCodeLine{\Hypertarget{AccumProps_8c_source_l00030}00030\ \ \mbox{\hyperlink{global_8h_a5bd56b6f1a373ed4b8c548faa0b053cd}{sTotEnergy}}\ =\ \mbox{\hyperlink{global_8h_af6a00fa64b9ab22b3eb1ba906e0d3310}{ssTotEnergy}}\ =\ 0.;\ }
+\DoxyCodeLine{\Hypertarget{AccumProps_8c_source_l00031}00031\ \ \mbox{\hyperlink{global_8h_aad2e8fd6b6b37dd84c64021c640422b9}{svirSum}}\ =\ 0.;}
+\DoxyCodeLine{\Hypertarget{AccumProps_8c_source_l00032}00032\ \ \}\textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}(icode\ ==\ 1)\{}
+\DoxyCodeLine{\Hypertarget{AccumProps_8c_source_l00033}00033\ \ \mbox{\hyperlink{global_8h_ac0bceed989ef50bb3a4314feb0c828aa}{sPotEnergy}}\ +=\ \mbox{\hyperlink{global_8h_abd758be497a95843d6cbb071a9f99581}{potEnergy}};}
+\DoxyCodeLine{\Hypertarget{AccumProps_8c_source_l00034}00034\ \ \mbox{\hyperlink{global_8h_a14dbdccf317ef9263542854ebf48a674}{ssPotEnergy}}\ +=\ \mbox{\hyperlink{global_8h_a88aaaec93066182aaf8cf3e0f8a676e2}{Sqr}}(\mbox{\hyperlink{global_8h_abd758be497a95843d6cbb071a9f99581}{potEnergy}});}
+\DoxyCodeLine{\Hypertarget{AccumProps_8c_source_l00035}00035\ \ \mbox{\hyperlink{global_8h_aceb0bd33904075ea75ec5f5db7180674}{sKinEnergy}}\ +=\ \mbox{\hyperlink{global_8h_a445d936de68f213385df5c284ea1d81d}{kinEnergy}};}
+\DoxyCodeLine{\Hypertarget{AccumProps_8c_source_l00036}00036\ \ \mbox{\hyperlink{global_8h_a5c5dfe1f2edbb9b98971f0b85ecf4c17}{ssKinEnergy}}\ +=\ \mbox{\hyperlink{global_8h_a88aaaec93066182aaf8cf3e0f8a676e2}{Sqr}}(\mbox{\hyperlink{global_8h_a445d936de68f213385df5c284ea1d81d}{kinEnergy}});}
+\DoxyCodeLine{\Hypertarget{AccumProps_8c_source_l00037}00037\ \ \mbox{\hyperlink{global_8h_a5bd56b6f1a373ed4b8c548faa0b053cd}{sTotEnergy}}\ +=\ \mbox{\hyperlink{global_8h_a025720826b3728fd77ab18384b7369bf}{totEnergy}};}
+\DoxyCodeLine{\Hypertarget{AccumProps_8c_source_l00038}00038\ \ \mbox{\hyperlink{global_8h_af6a00fa64b9ab22b3eb1ba906e0d3310}{ssTotEnergy}}\ +=\ \mbox{\hyperlink{global_8h_a88aaaec93066182aaf8cf3e0f8a676e2}{Sqr}}(\mbox{\hyperlink{global_8h_a025720826b3728fd77ab18384b7369bf}{totEnergy}});}
+\DoxyCodeLine{\Hypertarget{AccumProps_8c_source_l00039}00039\ \ \mbox{\hyperlink{global_8h_af5ce20c1e720aecc5d780bbd059f9bb2}{sPressure}}\ +=\ \mbox{\hyperlink{global_8h_aee1c5d07ac79c5c036195858afe33405}{pressure}};}
+\DoxyCodeLine{\Hypertarget{AccumProps_8c_source_l00040}00040\ \ \mbox{\hyperlink{global_8h_a5a69d6c5c0f48f99290220e47dfdba33}{ssPressure}}\ +=\ \mbox{\hyperlink{global_8h_a88aaaec93066182aaf8cf3e0f8a676e2}{Sqr}}(\mbox{\hyperlink{global_8h_aee1c5d07ac79c5c036195858afe33405}{pressure}});}
+\DoxyCodeLine{\Hypertarget{AccumProps_8c_source_l00041}00041\ \ \mbox{\hyperlink{global_8h_aad2e8fd6b6b37dd84c64021c640422b9}{svirSum}}\ +=\ \mbox{\hyperlink{global_8h_abdbf03f447f8b0adbae4c15974dac45f}{virSum}};}
+\DoxyCodeLine{\Hypertarget{AccumProps_8c_source_l00042}00042\ \ \}\textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}(icode\ ==\ 2)\{}
+\DoxyCodeLine{\Hypertarget{AccumProps_8c_source_l00043}00043\ \ \mbox{\hyperlink{global_8h_ac0bceed989ef50bb3a4314feb0c828aa}{sPotEnergy}}\ /=\ \mbox{\hyperlink{global_8h_a9652d009b4c8999144191b461014e063}{stepAvg}};}
+\DoxyCodeLine{\Hypertarget{AccumProps_8c_source_l00044}00044\ \ \mbox{\hyperlink{global_8h_a14dbdccf317ef9263542854ebf48a674}{ssPotEnergy}}\ /=\ sqrt(\mbox{\hyperlink{global_8h_a14dbdccf317ef9263542854ebf48a674}{ssPotEnergy}}/\mbox{\hyperlink{global_8h_a9652d009b4c8999144191b461014e063}{stepAvg}}\ -\/\ \mbox{\hyperlink{global_8h_a88aaaec93066182aaf8cf3e0f8a676e2}{Sqr}}(\mbox{\hyperlink{global_8h_ac0bceed989ef50bb3a4314feb0c828aa}{sPotEnergy}}));}
+\DoxyCodeLine{\Hypertarget{AccumProps_8c_source_l00045}00045\ \ \mbox{\hyperlink{global_8h_a5bd56b6f1a373ed4b8c548faa0b053cd}{sTotEnergy}}\ /=\ \mbox{\hyperlink{global_8h_a9652d009b4c8999144191b461014e063}{stepAvg}};}
+\DoxyCodeLine{\Hypertarget{AccumProps_8c_source_l00046}00046\ \ \mbox{\hyperlink{global_8h_af6a00fa64b9ab22b3eb1ba906e0d3310}{ssTotEnergy}}\ =\ sqrt(\mbox{\hyperlink{global_8h_af6a00fa64b9ab22b3eb1ba906e0d3310}{ssTotEnergy}}/\mbox{\hyperlink{global_8h_a9652d009b4c8999144191b461014e063}{stepAvg}}\ -\/\ \mbox{\hyperlink{global_8h_a88aaaec93066182aaf8cf3e0f8a676e2}{Sqr}}(\mbox{\hyperlink{global_8h_a5bd56b6f1a373ed4b8c548faa0b053cd}{sTotEnergy}}));}
+\DoxyCodeLine{\Hypertarget{AccumProps_8c_source_l00047}00047\ \ \mbox{\hyperlink{global_8h_aceb0bd33904075ea75ec5f5db7180674}{sKinEnergy}}\ /=\ \mbox{\hyperlink{global_8h_a9652d009b4c8999144191b461014e063}{stepAvg}};}
+\DoxyCodeLine{\Hypertarget{AccumProps_8c_source_l00048}00048\ \ \mbox{\hyperlink{global_8h_a5c5dfe1f2edbb9b98971f0b85ecf4c17}{ssKinEnergy}}\ =\ sqrt(\mbox{\hyperlink{global_8h_a5c5dfe1f2edbb9b98971f0b85ecf4c17}{ssKinEnergy}}/\mbox{\hyperlink{global_8h_a9652d009b4c8999144191b461014e063}{stepAvg}}\ -\/\ \mbox{\hyperlink{global_8h_a88aaaec93066182aaf8cf3e0f8a676e2}{Sqr}}(\mbox{\hyperlink{global_8h_aceb0bd33904075ea75ec5f5db7180674}{sKinEnergy}}));}
+\DoxyCodeLine{\Hypertarget{AccumProps_8c_source_l00049}00049\ \ \mbox{\hyperlink{global_8h_af5ce20c1e720aecc5d780bbd059f9bb2}{sPressure}}\ /=\ \mbox{\hyperlink{global_8h_a9652d009b4c8999144191b461014e063}{stepAvg}};}
+\DoxyCodeLine{\Hypertarget{AccumProps_8c_source_l00050}00050\ \ \mbox{\hyperlink{global_8h_a5a69d6c5c0f48f99290220e47dfdba33}{ssPressure}}\ =\ sqrt(\mbox{\hyperlink{global_8h_a5a69d6c5c0f48f99290220e47dfdba33}{ssPressure}}/\mbox{\hyperlink{global_8h_a9652d009b4c8999144191b461014e063}{stepAvg}}\ -\/\ \mbox{\hyperlink{global_8h_a88aaaec93066182aaf8cf3e0f8a676e2}{Sqr}}(\mbox{\hyperlink{global_8h_af5ce20c1e720aecc5d780bbd059f9bb2}{sPressure}}));}
+\DoxyCodeLine{\Hypertarget{AccumProps_8c_source_l00051}00051\ \ \mbox{\hyperlink{global_8h_aad2e8fd6b6b37dd84c64021c640422b9}{svirSum}}\ /=\ \mbox{\hyperlink{global_8h_a9652d009b4c8999144191b461014e063}{stepAvg}};}
+\DoxyCodeLine{\Hypertarget{AccumProps_8c_source_l00052}00052\ \ \}\ \}}
+
+\end{DoxyCode}

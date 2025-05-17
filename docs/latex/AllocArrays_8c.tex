@@ -1,0 +1,76 @@
+\doxysection{source/\+Alloc\+Arrays.c File Reference}
+\hypertarget{AllocArrays_8c}{}\label{AllocArrays_8c}\index{source/AllocArrays.c@{source/AllocArrays.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include "{}global.\+h"{}}\newline
+Include dependency graph for Alloc\+Arrays.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=237pt]{AllocArrays_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{AllocArrays_8c_a0de7521b891c869e61da0348ea08f8f1}{Alloc\+Arrays}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{AllocArrays_8c_a0de7521b891c869e61da0348ea08f8f1}\label{AllocArrays_8c_a0de7521b891c869e61da0348ea08f8f1} 
+\index{AllocArrays.c@{AllocArrays.c}!AllocArrays@{AllocArrays}}
+\index{AllocArrays@{AllocArrays}!AllocArrays.c@{AllocArrays.c}}
+\doxysubsubsection{\texorpdfstring{AllocArrays()}{AllocArrays()}}
+{\footnotesize\ttfamily void Alloc\+Arrays (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{AllocArrays_8c_source_l00025}{25}} of file \mbox{\hyperlink{AllocArrays_8c_source}{Alloc\+Arrays.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00026\ \ \textcolor{keywordtype}{int}\ n;}
+\DoxyCodeLine{00027\ \ \textcolor{comment}{//\ SPACETIME\ CORRELATIONS}}
+\DoxyCodeLine{00028\ \ \mbox{\hyperlink{global_8h_acf270e6113a4c04ff43832e3676c4073}{cfOrg}}\ =\ (\textcolor{keywordtype}{double}\ **)\ malloc\ ((\mbox{\hyperlink{global_8h_ab638d9b8ea6ae6103ee7d3dcb0ca4106}{nBuffCorr}}+1)*\textcolor{keyword}{sizeof}(\textcolor{keywordtype}{double}\ *));}
+\DoxyCodeLine{00029\ \ \textcolor{keywordflow}{for}\ (n\ =\ 0;\ n\ <=\ \mbox{\hyperlink{global_8h_ab638d9b8ea6ae6103ee7d3dcb0ca4106}{nBuffCorr}};\ n++)}
+\DoxyCodeLine{00030\ \ \ \mbox{\hyperlink{global_8h_acf270e6113a4c04ff43832e3676c4073}{cfOrg}}[n]\ =\ (\textcolor{keywordtype}{double}\ *)\ malloc\ ((2*\mbox{\hyperlink{global_8h_ae6bb074a4f2d8b25747f5f1c3ed34e8e}{nFunCorr}}+1)*\textcolor{keyword}{sizeof}(\textcolor{keywordtype}{double}));}
+\DoxyCodeLine{00031\ \ \ }
+\DoxyCodeLine{00032\ \ \mbox{\hyperlink{global_8h_ae34b3c3ecb0a71564a8d3a52d5bce50f}{cfVal}}\ =\ (\textcolor{keywordtype}{double}\ *)\ malloc\ ((2*\mbox{\hyperlink{global_8h_ae6bb074a4f2d8b25747f5f1c3ed34e8e}{nFunCorr}}+1)*\textcolor{keyword}{sizeof}(double));}
+\DoxyCodeLine{00033\ \ \mbox{\hyperlink{global_8h_a69d30c3c1681890962f25dc4ab39b033}{indexCorr}}\ =\ (\textcolor{keywordtype}{int}\ *)\ malloc\ ((\mbox{\hyperlink{global_8h_ab638d9b8ea6ae6103ee7d3dcb0ca4106}{nBuffCorr}}+1)*\textcolor{keyword}{sizeof}(int));}
+\DoxyCodeLine{00034\ \ }
+\DoxyCodeLine{00035\ \ \mbox{\hyperlink{global_8h_a65c8541613338d3885f454c7f762ef47}{spacetimeCorr}}\ =\ (\textcolor{keywordtype}{double}\ **)\ malloc\ ((\mbox{\hyperlink{global_8h_ab638d9b8ea6ae6103ee7d3dcb0ca4106}{nBuffCorr}}+1)*\textcolor{keyword}{sizeof}(double));}
+\DoxyCodeLine{00036\ \ \textcolor{keywordflow}{for}\ (n\ =\ 0;\ n\ <=\ \mbox{\hyperlink{global_8h_ab638d9b8ea6ae6103ee7d3dcb0ca4106}{nBuffCorr}};\ n++)}
+\DoxyCodeLine{00037\ \ \mbox{\hyperlink{global_8h_a65c8541613338d3885f454c7f762ef47}{spacetimeCorr}}[n]\ =\ (\textcolor{keywordtype}{double}\ *)\ malloc\ ((\mbox{\hyperlink{global_8h_ae6bb074a4f2d8b25747f5f1c3ed34e8e}{nFunCorr}}*\mbox{\hyperlink{global_8h_a1bb15d20732c39669d141e769b97d8a0}{nValCorr}}+1)*\textcolor{keyword}{sizeof}(\textcolor{keywordtype}{double}));}
+\DoxyCodeLine{00038\ \ }
+\DoxyCodeLine{00039\ \ \mbox{\hyperlink{global_8h_a26084125f8afb4f1f04ff8291b8bb6e4}{spacetimeCorrAv}}\ =\ (\textcolor{keywordtype}{double}\ *)\ malloc\ ((\mbox{\hyperlink{global_8h_ae6bb074a4f2d8b25747f5f1c3ed34e8e}{nFunCorr}}*\mbox{\hyperlink{global_8h_a1bb15d20732c39669d141e769b97d8a0}{nValCorr}}+1)*\textcolor{keyword}{sizeof}(double));}
+\DoxyCodeLine{00040\ \ \textcolor{comment}{//\ VISCOSITY}}
+\DoxyCodeLine{00041\ \ \mbox{\hyperlink{global_8h_a74f01c700b5540bed3184604a0cd6c17}{indexAcf}}\ =\ (\textcolor{keywordtype}{double}\ *)malloc((\mbox{\hyperlink{global_8h_a62bb5169e87a77023d99fa51468bf126}{nBuffAcf}}+1)*\textcolor{keyword}{sizeof}(double));}
+\DoxyCodeLine{00042\ \ \mbox{\hyperlink{global_8h_a9d680c9ee759157faecbb75ad8d91d63}{viscAcf}}\ =\ (\textcolor{keywordtype}{double}\ **)malloc((\mbox{\hyperlink{global_8h_a62bb5169e87a77023d99fa51468bf126}{nBuffAcf}}+1)*\textcolor{keyword}{sizeof}(\textcolor{keywordtype}{double}\ *));}
+\DoxyCodeLine{00043\ \ \textcolor{keywordflow}{for}(n\ =\ 0\ ;\ n\ <=\ \mbox{\hyperlink{global_8h_a62bb5169e87a77023d99fa51468bf126}{nBuffAcf}}\ ;\ n\ ++)}
+\DoxyCodeLine{00044\ \ \ \mbox{\hyperlink{global_8h_a9d680c9ee759157faecbb75ad8d91d63}{viscAcf}}[n]\ =\ (\textcolor{keywordtype}{double}\ *)malloc((\mbox{\hyperlink{global_8h_a48094c7b6092e1a21fcc91a371f230b6}{nValAcf}}+1)*\textcolor{keyword}{sizeof}(\textcolor{keywordtype}{double}\ ));}
+\DoxyCodeLine{00045\ \ }
+\DoxyCodeLine{00046\ \ \mbox{\hyperlink{global_8h_aa14d3f1be7cb8fc0a8f4b26eac3b4ebb}{viscAcfOrg}}\ =\ (\textcolor{keywordtype}{double}\ *)malloc((\mbox{\hyperlink{global_8h_a62bb5169e87a77023d99fa51468bf126}{nBuffAcf}}+1)*\textcolor{keyword}{sizeof}(double));}
+\DoxyCodeLine{00047\ \ \mbox{\hyperlink{global_8h_a0eb9c034706ff9eeacb32ac2f0327e10}{viscAcfAv}}\ =\ (\textcolor{keywordtype}{double}\ *)malloc((\mbox{\hyperlink{global_8h_a48094c7b6092e1a21fcc91a371f230b6}{nValAcf}}+1)*\textcolor{keyword}{sizeof}(double));}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \ \ \textcolor{comment}{//\ RDF}}
+\DoxyCodeLine{00050\ \ \ \mbox{\hyperlink{global_8h_a8b70419767ded4d857709915fdbd0fc7}{histRdf}}\ =\ (\textcolor{keywordtype}{double}\ *)malloc((\mbox{\hyperlink{global_8h_abe8258aaf81de052c6452b8b739c5c73}{sizeHistRdf}}+1)*\textcolor{keyword}{sizeof}(double));\ }
+\DoxyCodeLine{00051\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{global_8h_acf270e6113a4c04ff43832e3676c4073}{cf\+Org}}, \mbox{\hyperlink{global_8h_source_l00088}{cf\+Val}}, \mbox{\hyperlink{global_8h_a8b70419767ded4d857709915fdbd0fc7}{hist\+Rdf}}, \mbox{\hyperlink{global_8h_a74f01c700b5540bed3184604a0cd6c17}{index\+Acf}}, \mbox{\hyperlink{global_8h_a69d30c3c1681890962f25dc4ab39b033}{index\+Corr}}, \mbox{\hyperlink{global_8h_source_l00094}{n\+Buff\+Acf}}, \mbox{\hyperlink{global_8h_source_l00089}{n\+Buff\+Corr}}, \mbox{\hyperlink{global_8h_source_l00089}{n\+Fun\+Corr}}, \mbox{\hyperlink{global_8h_a48094c7b6092e1a21fcc91a371f230b6}{n\+Val\+Acf}}, \mbox{\hyperlink{global_8h_source_l00089}{n\+Val\+Corr}}, \mbox{\hyperlink{global_8h_source_l00098}{size\+Hist\+Rdf}}, \mbox{\hyperlink{global_8h_source_l00088}{spacetime\+Corr}}, \mbox{\hyperlink{global_8h_source_l00088}{spacetime\+Corr\+Av}}, \mbox{\hyperlink{global_8h_source_l00093}{visc\+Acf}}, \mbox{\hyperlink{global_8h_source_l00093}{visc\+Acf\+Av}}, and \mbox{\hyperlink{global_8h_source_l00093}{visc\+Acf\+Org}}.
+
+
+
+Referenced by \mbox{\hyperlink{SetupJob_8c_source_l00027}{Setup\+Job()}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=323pt]{AllocArrays_8c_a0de7521b891c869e61da0348ea08f8f1_icgraph}
+\end{center}
+\end{figure}

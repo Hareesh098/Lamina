@@ -1,0 +1,39 @@
+\doxysection{Integrate.\+c}
+\hypertarget{Integrate_8c_source}{}\label{Integrate_8c_source}\index{source/Integrate.c@{source/Integrate.c}}
+\mbox{\hyperlink{Integrate_8c}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{Integrate_8c_source_l00001}00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{Integrate_8c_source_l00002}00002\ \textcolor{comment}{\ *\ This\ file\ is\ part\ of\ Lamina.}}
+\DoxyCodeLine{\Hypertarget{Integrate_8c_source_l00003}00003\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{\Hypertarget{Integrate_8c_source_l00004}00004\ \textcolor{comment}{\ *\ Lamina\ is\ free\ software:\ you\ can\ redistribute\ it\ and/or\ modify}}
+\DoxyCodeLine{\Hypertarget{Integrate_8c_source_l00005}00005\ \textcolor{comment}{\ *\ it\ under\ the\ terms\ of\ the\ GNU\ General\ Public\ License\ as\ published\ by}}
+\DoxyCodeLine{\Hypertarget{Integrate_8c_source_l00006}00006\ \textcolor{comment}{\ *\ the\ Free\ Software\ Foundation,\ either\ version\ 3\ of\ the\ License,\ or}}
+\DoxyCodeLine{\Hypertarget{Integrate_8c_source_l00007}00007\ \textcolor{comment}{\ *\ (at\ your\ option)\ any\ later\ version.}}
+\DoxyCodeLine{\Hypertarget{Integrate_8c_source_l00008}00008\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{\Hypertarget{Integrate_8c_source_l00009}00009\ \textcolor{comment}{\ *\ Lamina\ is\ distributed\ in\ the\ hope\ that\ it\ will\ be\ useful,}}
+\DoxyCodeLine{\Hypertarget{Integrate_8c_source_l00010}00010\ \textcolor{comment}{\ *\ but\ WITHOUT\ ANY\ WARRANTY;\ without\ even\ the\ implied\ warranty\ of}}
+\DoxyCodeLine{\Hypertarget{Integrate_8c_source_l00011}00011\ \textcolor{comment}{\ *\ MERCHANTABILITY\ or\ FITNESS\ FOR\ A\ PARTICULAR\ PURPOSE.\ See\ the}}
+\DoxyCodeLine{\Hypertarget{Integrate_8c_source_l00012}00012\ \textcolor{comment}{\ *\ GNU\ General\ Public\ License\ for\ more\ details.}}
+\DoxyCodeLine{\Hypertarget{Integrate_8c_source_l00013}00013\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{\Hypertarget{Integrate_8c_source_l00014}00014\ \textcolor{comment}{\ *\ You\ should\ have\ received\ a\ copy\ of\ the\ GNU\ General\ Public\ License}}
+\DoxyCodeLine{\Hypertarget{Integrate_8c_source_l00015}00015\ \textcolor{comment}{\ *\ along\ with\ Lamina.\ If\ not,\ see\ <https://www.gnu.org/licenses/>.}}
+\DoxyCodeLine{\Hypertarget{Integrate_8c_source_l00016}00016\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{Integrate_8c_source_l00017}00017\ \textcolor{comment}{\ Copyright\ (C)\ 2025\ Harish\ Charan,\ University\ of\ Durham,\ UK}}
+\DoxyCodeLine{\Hypertarget{Integrate_8c_source_l00018}00018\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{Integrate_8c_source_l00019}00019\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{\Hypertarget{Integrate_8c_source_l00020}00020\ }
+\DoxyCodeLine{\Hypertarget{Integrate_8c_source_l00021}00021\ }
+\DoxyCodeLine{\Hypertarget{Integrate_8c_source_l00022}00022\ \textcolor{preprocessor}{\#include<stdio.h>}}
+\DoxyCodeLine{\Hypertarget{Integrate_8c_source_l00023}00023\ \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{global_8h}{global.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{Integrate_8c_source_l00024}00024\ }
+\DoxyCodeLine{\Hypertarget{Integrate_8c_source_l00025}\mbox{\hyperlink{AccumVacf_8c_acdda65121bd9cf7a35cb4d2e0fdb7cd9}{00025}}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{Integrate_8c_a8d31c83bd377974025524c86b20425b2}{Integrate}}(\textcolor{keywordtype}{double}\ *f,\ \textcolor{keywordtype}{int}\ nf)\{}
+\DoxyCodeLine{\Hypertarget{Integrate_8c_source_l00026}00026\ \ \textcolor{keywordtype}{double}\ s;}
+\DoxyCodeLine{\Hypertarget{Integrate_8c_source_l00027}00027\ \ \textcolor{keywordtype}{int}\ i;}
+\DoxyCodeLine{\Hypertarget{Integrate_8c_source_l00028}00028\ \ s\ =\ 0.5*(f[1]\ +\ f[nf]);}
+\DoxyCodeLine{\Hypertarget{Integrate_8c_source_l00029}00029\ \ \textcolor{keywordflow}{for}(i\ =\ 2\ ;\ i\ <=\ nf\ -\/\ 1\ ;\ i\ ++)}
+\DoxyCodeLine{\Hypertarget{Integrate_8c_source_l00030}00030\ \ \ s\ +=\ f[i];}
+\DoxyCodeLine{\Hypertarget{Integrate_8c_source_l00031}00031\ \ \textcolor{keywordflow}{return}(s);}
+\DoxyCodeLine{\Hypertarget{Integrate_8c_source_l00032}00032\ \}}
+\DoxyCodeLine{\Hypertarget{Integrate_8c_source_l00033}00033\ }
+
+\end{DoxyCode}

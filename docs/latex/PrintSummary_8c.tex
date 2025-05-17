@@ -1,0 +1,53 @@
+\doxysection{source/\+Print\+Summary.c File Reference}
+\hypertarget{PrintSummary_8c}{}\label{PrintSummary_8c}\index{source/PrintSummary.c@{source/PrintSummary.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include "{}global.\+h"{}}\newline
+Include dependency graph for Print\+Summary.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{PrintSummary_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{PrintSummary_8c_a88e586d610cefdd8d3b676b9a35ceebd}{Print\+Summary}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{PrintSummary_8c_a88e586d610cefdd8d3b676b9a35ceebd}\label{PrintSummary_8c_a88e586d610cefdd8d3b676b9a35ceebd} 
+\index{PrintSummary.c@{PrintSummary.c}!PrintSummary@{PrintSummary}}
+\index{PrintSummary@{PrintSummary}!PrintSummary.c@{PrintSummary.c}}
+\doxysubsubsection{\texorpdfstring{PrintSummary()}{PrintSummary()}}
+{\footnotesize\ttfamily void Print\+Summary (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{PrintSummary_8c_source_l00004}{4}} of file \mbox{\hyperlink{PrintSummary_8c_source}{Print\+Summary.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00004\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00005\ \ fprintf(\mbox{\hyperlink{global_8h_a7a7a3c24c505afb28c4eb95a627e3f5b}{fpresult}},\ \textcolor{stringliteral}{"{}\%0.4lf\(\backslash\)t\%0.16lf\(\backslash\)t\%0.16lf\(\backslash\)t\%0.16lf\(\backslash\)t\%0.16lf\(\backslash\)t\%0.16lf\(\backslash\)t\%0.16lf\(\backslash\)t\%0.16lf\(\backslash\)t\%0.16lf\(\backslash\)n"{}},\ }
+\DoxyCodeLine{00006\ \ \ \mbox{\hyperlink{global_8h_abb2aee8c6108dd86a8da33115d249d71}{timeNow}},\ \mbox{\hyperlink{global_8h_a68c26a0c6b002f1da36c4be599ca5149}{vSum}},\ \mbox{\hyperlink{global_8h_abd758be497a95843d6cbb071a9f99581}{potEnergy}},\ \mbox{\hyperlink{global_8h_a445d936de68f213385df5c284ea1d81d}{kinEnergy}},\ \mbox{\hyperlink{global_8h_a025720826b3728fd77ab18384b7369bf}{totEnergy}},\ \mbox{\hyperlink{global_8h_a35bf08d49aa04729a9f7dd23a464a826}{uSumPairPerAtom}},\ \mbox{\hyperlink{global_8h_aa53f052764d0986e9691ee3e941682d9}{BondEnergyPerAtom}},\ \mbox{\hyperlink{global_8h_aee1c5d07ac79c5c036195858afe33405}{pressure}},\ \mbox{\hyperlink{global_8h_abdbf03f447f8b0adbae4c15974dac45f}{virSum}});}
+\DoxyCodeLine{00007\ \ \ fflush(\mbox{\hyperlink{global_8h_a7a7a3c24c505afb28c4eb95a627e3f5b}{fpresult}});}
+\DoxyCodeLine{00008\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{global_8h_source_l00038}{Bond\+Energy\+Per\+Atom}}, \mbox{\hyperlink{global_8h_a7a7a3c24c505afb28c4eb95a627e3f5b}{fpresult}}, \mbox{\hyperlink{global_8h_source_l00020}{kin\+Energy}}, \mbox{\hyperlink{global_8h_source_l00020}{pot\+Energy}}, \mbox{\hyperlink{global_8h_source_l00021}{pressure}}, \mbox{\hyperlink{global_8h_source_l00020}{time\+Now}}, \mbox{\hyperlink{global_8h_source_l00020}{tot\+Energy}}, \mbox{\hyperlink{global_8h_source_l00082}{u\+Sum\+Pair\+Per\+Atom}}, \mbox{\hyperlink{global_8h_source_l00021}{vir\+Sum}}, and \mbox{\hyperlink{global_8h_source_l00021}{v\+Sum}}.
+
+
+
+Referenced by \mbox{\hyperlink{main_8c_source_l00050}{main()}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=243pt]{PrintSummary_8c_a88e586d610cefdd8d3b676b9a35ceebd_icgraph}
+\end{center}
+\end{figure}

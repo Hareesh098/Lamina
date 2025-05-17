@@ -1,0 +1,79 @@
+\doxysection{source/\+Apply\+Driving\+Force.c File Reference}
+\hypertarget{ApplyDrivingForce_8c}{}\label{ApplyDrivingForce_8c}\index{source/ApplyDrivingForce.c@{source/ApplyDrivingForce.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include "{}global.\+h"{}}\newline
+Include dependency graph for Apply\+Driving\+Force.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=254pt]{ApplyDrivingForce_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{ApplyDrivingForce_8c_ac6dfc5819ac1b2865f4d6502fb5547a4}{Apply\+Driving\+Force}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{ApplyDrivingForce_8c_ac6dfc5819ac1b2865f4d6502fb5547a4}\label{ApplyDrivingForce_8c_ac6dfc5819ac1b2865f4d6502fb5547a4} 
+\index{ApplyDrivingForce.c@{ApplyDrivingForce.c}!ApplyDrivingForce@{ApplyDrivingForce}}
+\index{ApplyDrivingForce@{ApplyDrivingForce}!ApplyDrivingForce.c@{ApplyDrivingForce.c}}
+\doxysubsubsection{\texorpdfstring{ApplyDrivingForce()}{ApplyDrivingForce()}}
+{\footnotesize\ttfamily void Apply\+Driving\+Force (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{ApplyDrivingForce_8c_source_l00025}{25}} of file \mbox{\hyperlink{ApplyDrivingForce_8c_source}{Apply\+Driving\+Force.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00026\ \ \textcolor{keywordtype}{int}\ n;}
+\DoxyCodeLine{00027\ \ \textcolor{keywordtype}{double}\ Vxblock,\ Vyblock;}
+\DoxyCodeLine{00028\ \ \textcolor{keywordtype}{double}\ Vxsubstrate,\ Vysubstrate;}
+\DoxyCodeLine{00029\ \ Vxblock\ =\ 0.0;\ \ Vyblock\ =\ 0.0;\ }
+\DoxyCodeLine{00030\ \ Vxsubstrate\ =\ 0.0;\ Vysubstrate\ =\ 0.0;}
+\DoxyCodeLine{00031\ \ \textcolor{keywordtype}{double}\ gammav;}
+\DoxyCodeLine{00032\ \ gammav\ =\ 0.0;}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \textcolor{keywordtype}{double}\ count\_substrate\ =\ 0;}
+\DoxyCodeLine{00035\ \ \textcolor{keywordtype}{double}\ count\_block\ =\ 0;}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \ \textcolor{keywordflow}{for}(n\ =\ 1\ ;\ n\ <=\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}};\ n\ ++)\{}
+\DoxyCodeLine{00038\ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{global_8h_ad2f384e523b15b13c82e3d6db95b402e}{atomType}}[n]\ ==\ 1\ ||\ \mbox{\hyperlink{global_8h_ad2f384e523b15b13c82e3d6db95b402e}{atomType}}[n]\ ==\ 2)\{}
+\DoxyCodeLine{00039\ \ \ Vxsubstrate\ +=\ \mbox{\hyperlink{global_8h_a6cbb00abd724a75be2c6424c84d18654}{vx}}[n];\ Vysubstrate\ +=\ \mbox{\hyperlink{global_8h_ad78254f6802793cc12b197889e6ea80d}{vy}}[n];\ }
+\DoxyCodeLine{00040\ \ \ count\_substrate++;}
+\DoxyCodeLine{00041\ \ \ \}}
+\DoxyCodeLine{00042\ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{global_8h_ad2f384e523b15b13c82e3d6db95b402e}{atomType}}[n]\ ==\ 3\ ||\ \mbox{\hyperlink{global_8h_ad2f384e523b15b13c82e3d6db95b402e}{atomType}}[n]\ ==\ 4)\{}
+\DoxyCodeLine{00043\ \ \ Vxblock\ +=\ \mbox{\hyperlink{global_8h_a6cbb00abd724a75be2c6424c84d18654}{vx}}[n];\ Vyblock\ +=\ \mbox{\hyperlink{global_8h_ad78254f6802793cc12b197889e6ea80d}{vy}}[n];\ }
+\DoxyCodeLine{00044\ \ \ count\_block++;}
+\DoxyCodeLine{00045\ \ \ \}\ \}}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \ \ \textcolor{keywordflow}{if}(count\_substrate\ >\ 0)\ \{}
+\DoxyCodeLine{00048\ \ \ \ \ Vxsubstrate\ /=\ count\_substrate;}
+\DoxyCodeLine{00049\ \ \ \ \ Vysubstrate\ /=\ count\_substrate;}
+\DoxyCodeLine{00050\ \ \ \}}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \ \ \textcolor{keywordflow}{if}(count\_block\ >\ 0)\ \{}
+\DoxyCodeLine{00053\ \ \ \ Vxblock\ /=\ count\_block;}
+\DoxyCodeLine{00054\ \ \ \ Vyblock\ /=\ count\_block;}
+\DoxyCodeLine{00055\ \ \ \}}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \ \textcolor{keywordflow}{for}(n\ =\ 1\ ;\ n\ <=\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}};\ n\ ++)\{}
+\DoxyCodeLine{00058\ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{global_8h_ad2f384e523b15b13c82e3d6db95b402e}{atomType}}[n]\ ==\ 1\ ||\ \mbox{\hyperlink{global_8h_ad2f384e523b15b13c82e3d6db95b402e}{atomType}}[n]\ ==\ 2)\{}
+\DoxyCodeLine{00059\ \ \ \mbox{\hyperlink{global_8h_a82d645cda6bea6506c7b5f4f7453986c}{ax}}[n]\ +=\ -\/gammav\ *\ (\mbox{\hyperlink{global_8h_a6cbb00abd724a75be2c6424c84d18654}{vx}}[n]\ -\/\ Vxsubstrate);}
+\DoxyCodeLine{00060\ \ \ \mbox{\hyperlink{global_8h_a68c7afda02d0f26c1987a4eee13928f2}{ay}}[n]\ +=\ -\/gammav\ *\ (\mbox{\hyperlink{global_8h_ad78254f6802793cc12b197889e6ea80d}{vy}}[n]\ -\/\ Vysubstrate);}
+\DoxyCodeLine{00061\ \ \ \}}
+\DoxyCodeLine{00062\ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{global_8h_ad2f384e523b15b13c82e3d6db95b402e}{atomType}}[n]\ ==\ 3\ ||\ \mbox{\hyperlink{global_8h_ad2f384e523b15b13c82e3d6db95b402e}{atomType}}[n]\ ==\ 4)\{}
+\DoxyCodeLine{00063\ \ \ \mbox{\hyperlink{global_8h_a82d645cda6bea6506c7b5f4f7453986c}{ax}}[n]\ +=\ -\/gammav\ *\ (\mbox{\hyperlink{global_8h_a6cbb00abd724a75be2c6424c84d18654}{vx}}[n]\ -\/\ Vxblock);}
+\DoxyCodeLine{00064\ \ \ \mbox{\hyperlink{global_8h_a68c7afda02d0f26c1987a4eee13928f2}{ay}}[n]\ +=\ -\/gammav\ *\ (\mbox{\hyperlink{global_8h_ad78254f6802793cc12b197889e6ea80d}{vy}}[n]\ -\/\ Vyblock);}
+\DoxyCodeLine{00065\ \ \}\ \}\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{global_8h_ad2f384e523b15b13c82e3d6db95b402e}{atom\+Type}}, \mbox{\hyperlink{global_8h_source_l00017}{ax}}, \mbox{\hyperlink{global_8h_source_l00017}{ay}}, \mbox{\hyperlink{global_8h_source_l00024}{n\+Atom}}, \mbox{\hyperlink{global_8h_source_l00017}{vx}}, and \mbox{\hyperlink{global_8h_source_l00017}{vy}}.
+
