@@ -21,46 +21,153 @@
 \DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00017}00017\ \textcolor{comment}{\ Copyright\ (C)\ 2025\ Harish\ Charan,\ University\ of\ Durham,\ UK}}
 \DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00018}00018\ \textcolor{comment}{}}
 \DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00019}00019\ \textcolor{comment}{\ */}}
-\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00020}00020\ }
-\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00021}00021\ }
-\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00022}00022\ \textcolor{preprocessor}{\#include<stdio.h>}}
-\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00023}00023\ \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{global_8h}{global.h}}"{}}}
-\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00024}00024\ }
-\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00025}\mbox{\hyperlink{LeapfrogStep_8c_a5aab7d0a5afb229cad229dce91c2527c}{00025}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{LeapfrogStep_8c_a5aab7d0a5afb229cad229dce91c2527c}{LeapfrogStep}}()\{}
-\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00026}00026\ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{global_8h_ac208e38a6cf3eecfb9d1522e950ed956}{stepCount}}\ <=\ \mbox{\hyperlink{global_8h_a93ce7b5ddaa822299367884866723f03}{stepEquil}})\{\ \textcolor{comment}{//NVT\ with\ Gaussian\ thermostate}}
-\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00027}00027\ \ \textcolor{keywordtype}{double}\ A,\ S1,\ S2,\ T;}
-\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00028}00028\ \ \textcolor{keywordtype}{int}\ n;}
-\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00029}00029\ \ S1\ =\ 0.;\ S2\ =\ 0;}
-\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00030}00030\ \ \textcolor{keywordtype}{double}\ halfdt\ =\ 0.5*\mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}};}
-\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00031}00031\ \ \textcolor{keywordflow}{for}\ (n\ =\ 1;\ n\ <=\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}};\ n++)\{}
-\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00032}00032\ \ \ T\ =\ \mbox{\hyperlink{global_8h_a6cbb00abd724a75be2c6424c84d18654}{vx}}[n]\ +\ halfdt\ *\ \mbox{\hyperlink{global_8h_a82d645cda6bea6506c7b5f4f7453986c}{ax}}[n];}
-\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00033}00033\ \ \ S1\ +=\ T\ *\ \mbox{\hyperlink{global_8h_a82d645cda6bea6506c7b5f4f7453986c}{ax}}[n];}
-\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00034}00034\ \ \ S2\ +=\ \mbox{\hyperlink{global_8h_a88aaaec93066182aaf8cf3e0f8a676e2}{Sqr}}(T);}
-\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00035}00035\ \ \ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00036}00036\ \ \ T\ =\ \mbox{\hyperlink{global_8h_ad78254f6802793cc12b197889e6ea80d}{vy}}[n]\ +\ halfdt\ *\ \mbox{\hyperlink{global_8h_a68c7afda02d0f26c1987a4eee13928f2}{ay}}[n];}
-\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00037}00037\ \ \ S1\ +=\ T\ *\ \mbox{\hyperlink{global_8h_a68c7afda02d0f26c1987a4eee13928f2}{ay}}[n];}
-\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00038}00038\ \ \ S2\ +=\ \mbox{\hyperlink{global_8h_a88aaaec93066182aaf8cf3e0f8a676e2}{Sqr}}(T);}
-\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00039}00039\ \ \}}
-\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00040}00040\ \ }
-\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00041}00041\ \ A\ =\ -\/S1\ /\ S2;}
-\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00042}00042\ \ \textcolor{keywordtype}{double}\ C\ =\ 1\ +\ A*\mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}}\ ;}
-\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00043}00043\ \ \textcolor{keywordtype}{double}\ D\ =\ \mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}}\ *\ (1\ +\ 0.5\ *\ A\ *\ \mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}});}
-\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00044}00044\ \ \textcolor{keywordflow}{for}\ (n\ =\ 1;\ n\ <=\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}};\ n++)\{}
-\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00045}00045\ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{global_8h_ad2f384e523b15b13c82e3d6db95b402e}{atomType}}[n]\ ==\ 1\ ||\ \mbox{\hyperlink{global_8h_ad2f384e523b15b13c82e3d6db95b402e}{atomType}}[n]\ ==\ 3)\{}
-\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00046}00046\ \ \ \ \mbox{\hyperlink{global_8h_a6cbb00abd724a75be2c6424c84d18654}{vx}}[n]\ =\ C\ *\ \mbox{\hyperlink{global_8h_a6cbb00abd724a75be2c6424c84d18654}{vx}}[n]\ +\ D\ *\ \mbox{\hyperlink{global_8h_a82d645cda6bea6506c7b5f4f7453986c}{ax}}[n];}
-\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00047}00047\ \ \ \ \mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}[n]\ +=\ \mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}}\ *\ \mbox{\hyperlink{global_8h_a6cbb00abd724a75be2c6424c84d18654}{vx}}[n];}
-\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00048}00048\ \ \ \ \mbox{\hyperlink{global_8h_ad78254f6802793cc12b197889e6ea80d}{vy}}[n]\ =\ C\ *\ \mbox{\hyperlink{global_8h_ad78254f6802793cc12b197889e6ea80d}{vy}}[n]\ +\ D\ *\ \mbox{\hyperlink{global_8h_a68c7afda02d0f26c1987a4eee13928f2}{ay}}[n];}
-\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00049}00049\ \ \ \ \mbox{\hyperlink{global_8h_af88ff31a9ae85beb713bd0c42815f1de}{ry}}[n]\ +=\ \mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}}\ *\ \mbox{\hyperlink{global_8h_ad78254f6802793cc12b197889e6ea80d}{vy}}[n];}
-\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00050}00050\ \ \ \ \}\ \}\ \}}
-\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00051}00051\ \ }
-\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00052}00052\ \ \ \ \textcolor{keywordflow}{else}\{\ \textcolor{comment}{//NVE\ }}
-\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00053}00053\ \ \ \ \ \textcolor{keywordtype}{int}\ n;}
-\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00054}00054\ \ \ \ \ \textcolor{keywordflow}{for}(n\ =\ 1\ ;\ n\ <=\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}}\ ;\ n\ ++)\{}
-\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00055}00055\ \ \ \ \ \ \mbox{\hyperlink{global_8h_a6cbb00abd724a75be2c6424c84d18654}{vx}}[n]\ +=\ \mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}}\ *\ \mbox{\hyperlink{global_8h_a82d645cda6bea6506c7b5f4f7453986c}{ax}}[n];}
-\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00056}00056\ \ \ \ \ \ \ \mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}[n]\ +=\ \mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}}\ *\ \mbox{\hyperlink{global_8h_a6cbb00abd724a75be2c6424c84d18654}{vx}}[n];}
-\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00057}00057\ \ \ \ \ \ \ \mbox{\hyperlink{global_8h_ad78254f6802793cc12b197889e6ea80d}{vy}}[n]\ +=\ \mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}}\ *\ \mbox{\hyperlink{global_8h_a68c7afda02d0f26c1987a4eee13928f2}{ay}}[n];}
-\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00058}00058\ \ \ \ \ \ \ \mbox{\hyperlink{global_8h_af88ff31a9ae85beb713bd0c42815f1de}{ry}}[n]\ +=\ \mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}}\ *\ \mbox{\hyperlink{global_8h_ad78254f6802793cc12b197889e6ea80d}{vy}}[n];}
-\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00059}00059\ \}\ \}\ \}}
-\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00060}00060\ \ \ }
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00020}00020\ \textcolor{preprocessor}{\#include<stdio.h>}}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00021}00021\ \textcolor{preprocessor}{\#include<math.h>}}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00022}00022\ \textcolor{preprocessor}{\#include<stdlib.h>}}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00023}00023\ \textcolor{preprocessor}{\#include\ <gsl/gsl\_rng.h>}}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00024}00024\ \textcolor{preprocessor}{\#include\ <gsl/gsl\_randist.h>}}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00025}00025\ \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{global_8h}{global.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00026}00026\ }
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00027}00027\ }
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00028}\mbox{\hyperlink{LeapfrogStep_8c_a4f8d02aeafce215efb316985384ac094}{00028}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{main_8c_a5aab7d0a5afb229cad229dce91c2527c}{LeapfrogStep}}(\textcolor{keywordtype}{char}\ \mbox{\hyperlink{global_8h_a9d6f642d0cdc77cccf6789f1304f8bf9}{thermo}},\ gsl\_rng\ *\ rnd)\{}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00029}00029\ \textcolor{keywordtype}{double}\ temperature,\ GAMMA;}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00030}00030\ GAMMA\ =\ 100;}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00031}00031\ }
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00032}00032\ \textcolor{keywordtype}{double}\ *TValSum;}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00033}00033\ TValSum\ =\ (\textcolor{keywordtype}{double}*)malloc((\mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}}\ +\ 1)\ *\ \textcolor{keyword}{sizeof}(double));}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00034}00034\ }
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00035}00035\ }
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00036}00036\ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{global_8h_ac208e38a6cf3eecfb9d1522e950ed956}{stepCount}}\ <=\ \mbox{\hyperlink{global_8h_a93ce7b5ddaa822299367884866723f03}{stepEquil}})\{}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00037}00037\ \ \ \ \ \textcolor{keywordtype}{double}\ gSum,\ varS,\ massS;}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00038}00038\ \ \ \ \ temperature\ =\ 1./GAMMA;}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00039}00039\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00040}00040\ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{global_8h_ac208e38a6cf3eecfb9d1522e950ed956}{stepCount}}\ ==\ 1)\ varS\ =\ 0.;}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00041}00041\ \ \ \ \ \textcolor{keywordtype}{double}\ A,\ S1,\ S2,\ T;}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00042}00042\ \ \ \ \ \textcolor{keywordtype}{int}\ n;}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00043}00043\ \ \ \ \ S1\ =\ 0.;\ S2\ =\ 0.;\ gSum\ =\ 0.;\ massS\ =\ 0.1;\ }
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00044}00044\ }
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00045}00045\ \ \ \ \ \mbox{\hyperlink{global_8h_a5a69ba53b920022cc82acded08812d9c}{vvSum}}\ =\ 0.;}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00046}00046\ \ \ \ \ \textcolor{keywordtype}{double}\ halfdt\ =\ 0.5*\mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}};}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00047}00047\ \ \ \ \ \textcolor{keywordflow}{for}\ (n\ =\ 1;\ n\ <=\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}};\ n++)\{}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00048}00048\ \ \ \ \ \ \ T\ =\ \mbox{\hyperlink{global_8h_a6cbb00abd724a75be2c6424c84d18654}{vx}}[n]\ +\ halfdt\ *\ \mbox{\hyperlink{global_8h_a82d645cda6bea6506c7b5f4f7453986c}{ax}}[n];}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00049}00049\ \ \ \ \ \ \ S1\ +=\ T\ *\ \mbox{\hyperlink{global_8h_a82d645cda6bea6506c7b5f4f7453986c}{ax}}[n];}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00050}00050\ \ \ \ \ \ \ S2\ +=\ \mbox{\hyperlink{global_8h_a88aaaec93066182aaf8cf3e0f8a676e2}{Sqr}}(T);}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00051}00051\ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00052}00052\ \ \ \ \ \ \ T\ =\ \mbox{\hyperlink{global_8h_ad78254f6802793cc12b197889e6ea80d}{vy}}[n]\ +\ halfdt\ *\ \mbox{\hyperlink{global_8h_a68c7afda02d0f26c1987a4eee13928f2}{ay}}[n];}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00053}00053\ \ \ \ \ \ \ S1\ +=\ T\ *\ \mbox{\hyperlink{global_8h_a68c7afda02d0f26c1987a4eee13928f2}{ay}}[n];}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00054}00054\ \ \ \ \ \ \ S2\ +=\ \mbox{\hyperlink{global_8h_a88aaaec93066182aaf8cf3e0f8a676e2}{Sqr}}(T);}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00055}00055\ \ \ \ \ \ \mbox{\hyperlink{global_8h_a5a69ba53b920022cc82acded08812d9c}{vvSum}}\ +=\ (\mbox{\hyperlink{global_8h_a88aaaec93066182aaf8cf3e0f8a676e2}{Sqr}}(\mbox{\hyperlink{global_8h_a6cbb00abd724a75be2c6424c84d18654}{vx}}[n])\ +\ \ \mbox{\hyperlink{global_8h_a88aaaec93066182aaf8cf3e0f8a676e2}{Sqr}}(\mbox{\hyperlink{global_8h_ad78254f6802793cc12b197889e6ea80d}{vy}}[n]));}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00056}00056\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00057}00057\ }
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00058}00058\ \ \ \ \ A\ =\ -\/S1\ /\ S2;}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00059}00059\ \ \ \ \ S2\ =\ \mbox{\hyperlink{global_8h_a5a69ba53b920022cc82acded08812d9c}{vvSum}};}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00060}00060\ \ \ \ }
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00061}00061\ \ \ \ \ \textcolor{keywordtype}{double}\ C\ =\ 1\ +\ A*\mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}}\ ;}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00062}00062\ \ \ \ \ \textcolor{keywordtype}{double}\ D\ =\ \mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}}\ *\ (1\ +\ 0.5\ *\ A\ *\ \mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}});}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00063}00063\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00064}00064\ \ \ \ \ \textcolor{keywordtype}{int}\ i,j;}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00065}00065\ \ \ \ \ \mbox{\hyperlink{global_8h_a11d147c64891830c9e79b3315b1b2e21}{real}}\ dr[\mbox{\hyperlink{global_8h_a2b1fd2d28c6a7d4a3f7027cc1b6466f3}{NDIM}}+1],\ r,\ rr,\ ri,\ rrCut;}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00066}00066\ \ \ \ \ \textcolor{keywordtype}{double}\ vv;}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00067}00067\ }
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00068}00068\ \ \ \ \ \textcolor{keywordtype}{double}\ uVal,\ AA,\ AASum;}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00069}00069\ \ \ \ \ \textcolor{keywordtype}{double}\ TVal;\ }
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00070}00070\ }
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00071}00071\ \ \ \ \ \textcolor{keywordtype}{double}\ deno,\ VVSum;\ \ }
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00072}00072\ \ \ \ \ deno\ =\ 0.;}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00073}00073\ \ \ \ \ VVSum\ =\ 0.;}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00074}00074\ \ \ \ \ AASum\ =\ 0.;}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00075}00075\ \ \ \ }
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00076}00076\ \ \ \textcolor{keywordflow}{for}(n=1;n<=\mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}};\ n++)}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00077}00077\ \ \ \ \ \ TValSum[n]\ =\ 0.;}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00078}00078\ }
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00079}00079\ \ \ rrCut\ =\ \mbox{\hyperlink{global_8h_a88aaaec93066182aaf8cf3e0f8a676e2}{Sqr}}(\mbox{\hyperlink{global_8h_a1774b76f586901fb408042c37597ca70}{rCut}});}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00080}00080\ }
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00081}00081\ \textcolor{comment}{/*****Calculating\ Configarational\ temperature*****/}}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00082}00082\ \textcolor{comment}{//Solving\ the\ equation\ of\ motion\ here}}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00083}00083\ \textcolor{keywordflow}{if}(\mbox{\hyperlink{global_8h_a9d6f642d0cdc77cccf6789f1304f8bf9}{thermo}}\ ==\ \textcolor{charliteral}{'C'})\{}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00084}00084\ \textcolor{keywordflow}{for}(i\ =\ 1\ ;\ i\ <=\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}};\ i\ ++)\{}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00085}00085\ \ \ \ \ \textcolor{keywordflow}{for}(j\ =\ i+1\ ;\ j\ <=\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}}\ ;\ j\ ++)\{}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00086}00086\ \ \ \ \ \ \ dr[1]\ =\ \mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}[i]\ -\/\ \mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}[j];}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00087}00087\ \ \ \ \ \ \ \textcolor{keywordflow}{if}(fabs(dr[1])\ >\ \mbox{\hyperlink{global_8h_adc110418e2efa5f31a9aa7c137471a2f}{regionH}}[1])}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00088}00088\ \ \ \ \ dr[1]\ -\/=\ \mbox{\hyperlink{global_8h_af1c0594341f38649c6f2e9d25bff072f}{SignR}}(\mbox{\hyperlink{global_8h_a43c4f708b8d633b069355a121d6adbdc}{region}}[1],\ dr[1]);}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00089}00089\ }
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00090}00090\ \ \ \ \ \ dr[2]\ =\ \mbox{\hyperlink{global_8h_af88ff31a9ae85beb713bd0c42815f1de}{ry}}[i]\ -\/\ \mbox{\hyperlink{global_8h_af88ff31a9ae85beb713bd0c42815f1de}{ry}}[j];}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00091}00091\ \ \ \ \ \ \ \textcolor{keywordflow}{if}(fabs(dr[2])\ >\ \mbox{\hyperlink{global_8h_adc110418e2efa5f31a9aa7c137471a2f}{regionH}}[2])}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00092}00092\ \ \ \ \ dr[2]\ -\/=\ \mbox{\hyperlink{global_8h_af1c0594341f38649c6f2e9d25bff072f}{SignR}}(\mbox{\hyperlink{global_8h_a43c4f708b8d633b069355a121d6adbdc}{region}}[2],\ dr[2]);}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00093}00093\ \ \ }
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00094}00094\ \ \ \ \ \ rr\ =\ \mbox{\hyperlink{global_8h_a88aaaec93066182aaf8cf3e0f8a676e2}{Sqr}}(dr[1])\ +\ \mbox{\hyperlink{global_8h_a88aaaec93066182aaf8cf3e0f8a676e2}{Sqr}}(dr[2]);}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00095}00095\ \ \ \ \ \ \textcolor{keywordflow}{if}(rr\ <\ rrCut\ )\{}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00096}00096\ \ \ \ \ \ r\ =\ sqrt(rr);}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00097}00097\ \ \ \ \ \ ri\ =\ 1/r;}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00098}00098\ \ \ \ \ \ uVal\ =\ ri*exp(-\/\mbox{\hyperlink{global_8h_a05ac5235b52a827a368e74ed228dd485}{kappa}}*r);}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00099}00099\ }
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00100}00100\ \ \ \ \ \ TVal\ =\ (1./rr\ +\ \mbox{\hyperlink{global_8h_a88aaaec93066182aaf8cf3e0f8a676e2}{Sqr}}(\mbox{\hyperlink{global_8h_a05ac5235b52a827a368e74ed228dd485}{kappa}})\ +\ \mbox{\hyperlink{global_8h_a05ac5235b52a827a368e74ed228dd485}{kappa}}/r)*uVal;}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00101}00101\ \ \ \ \ \ TValSum[i]\ +=\ TVal;}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00102}00102\ \ \ \ \ \ TValSum[j]\ +=\ TVal;}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00103}00103\ \ \ \ \}\ \}}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00104}00104\ \ \ \ \ \ AA\ =\ \mbox{\hyperlink{global_8h_a88aaaec93066182aaf8cf3e0f8a676e2}{Sqr}}(\mbox{\hyperlink{global_8h_a82d645cda6bea6506c7b5f4f7453986c}{ax}}[i])\ +\ \mbox{\hyperlink{global_8h_a88aaaec93066182aaf8cf3e0f8a676e2}{Sqr}}(\mbox{\hyperlink{global_8h_a68c7afda02d0f26c1987a4eee13928f2}{ay}}[i]);}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00105}00105\ \ \ \ \ \ AASum\ +=\ AA;}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00106}00106\ \ \ \ \ \ vv\ =\ \mbox{\hyperlink{global_8h_a88aaaec93066182aaf8cf3e0f8a676e2}{Sqr}}(\mbox{\hyperlink{global_8h_a6cbb00abd724a75be2c6424c84d18654}{vx}}[i])\ +\ \mbox{\hyperlink{global_8h_a88aaaec93066182aaf8cf3e0f8a676e2}{Sqr}}(\mbox{\hyperlink{global_8h_ad78254f6802793cc12b197889e6ea80d}{vy}}[i]);}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00107}00107\ \ \ \ \ \ VVSum\ +=\ vv;\ }
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00108}00108\ \ \ \ \ \ deno\ +=\ TValSum[i];\ \ \ \ }
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00109}00109\ \}\ }
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00110}00110\ }
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00111}00111\ \ \ \ \ \ \textcolor{keywordtype}{double}\ gSumconfig,\ varSconfig,\ massSconfig;}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00112}00112\ \ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{global_8h_ac208e38a6cf3eecfb9d1522e950ed956}{stepCount}}\ ==\ 1)\ varSconfig\ =\ 0.;}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00113}00113\ \ \ \ \ \ gSumconfig\ =\ 0.;\ massSconfig\ =\ 2.0;\ }
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00114}00114\ \ \ \ }
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00115}00115\ \ \ \ \ \ gSumconfig\ =\ (AASum/temperature\ -\/\ deno)/massSconfig;}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00116}00116\ \ \ \ \ \ varSconfig\ +=\ \mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}}*gSumconfig;\ }
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00117}00117\ }
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00118}00118\ \textcolor{comment}{\ \ \ \ \ \ /*****Configarational\ Nose-\/Hoover\ thermostat*****/}}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00119}00119\ \ \ \ \textcolor{keywordflow}{for}\ (n\ =\ 1;\ n\ <=\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}};\ n++)\{}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00120}00120\ \ \ \ \ \ \ \mbox{\hyperlink{global_8h_a6cbb00abd724a75be2c6424c84d18654}{vx}}[n]\ +=\ \mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}}\ *\ \mbox{\hyperlink{global_8h_a82d645cda6bea6506c7b5f4f7453986c}{ax}}[n];}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00121}00121\ \ \ \ \ \ \ \mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}[n]\ +=\ \mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}}\ *\ (\mbox{\hyperlink{global_8h_a6cbb00abd724a75be2c6424c84d18654}{vx}}[n]\ +\ varSconfig\ *\ \mbox{\hyperlink{global_8h_a82d645cda6bea6506c7b5f4f7453986c}{ax}}[n]);}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00122}00122\ \ \ \ \ \ \ \mbox{\hyperlink{global_8h_ad78254f6802793cc12b197889e6ea80d}{vy}}[n]\ +=\ \mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}}\ *\ \mbox{\hyperlink{global_8h_a68c7afda02d0f26c1987a4eee13928f2}{ay}}[n];}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00123}00123\ \ \ \ \ \ \ \mbox{\hyperlink{global_8h_af88ff31a9ae85beb713bd0c42815f1de}{ry}}[n]\ +=\ \mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}}\ *\ (\mbox{\hyperlink{global_8h_ad78254f6802793cc12b197889e6ea80d}{vy}}[n]\ +\ varSconfig\ *\ \mbox{\hyperlink{global_8h_a68c7afda02d0f26c1987a4eee13928f2}{ay}}[n]);}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00124}00124\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00125}00125\ \textcolor{comment}{\ \ \ \ \ \ /*****Kinetic\ Nose-\/Hoover\ thermostat*****/}}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00126}00126\ \ \ \}\textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}(\mbox{\hyperlink{global_8h_a9d6f642d0cdc77cccf6789f1304f8bf9}{thermo}}\ ==\ \textcolor{charliteral}{'N'})\{\ \ }
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00127}00127\ \ \ \ \ gSum\ =\ (0.5*S2\ -\/\ (\mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}}\ +\ 1)*temperature)/massS;}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00128}00128\ \ \ \ \ varS\ +=\ \mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}}*gSum;\ }
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00129}00129\ \ \ \ \textcolor{keywordflow}{for}\ (n\ =\ 1;\ n\ <=\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}};\ n++)\{}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00130}00130\ \ \ \ \ \ \ \mbox{\hyperlink{global_8h_a6cbb00abd724a75be2c6424c84d18654}{vx}}[n]\ +=\ \mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}}\ *\ (\mbox{\hyperlink{global_8h_a82d645cda6bea6506c7b5f4f7453986c}{ax}}[n]\ -\/\ varS\ *\mbox{\hyperlink{global_8h_a6cbb00abd724a75be2c6424c84d18654}{vx}}[n]);}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00131}00131\ \ \ \ \ \ \ \mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}[n]\ +=\ \mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}}\ *\ \mbox{\hyperlink{global_8h_a6cbb00abd724a75be2c6424c84d18654}{vx}}[n];}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00132}00132\ \ \ \ \ \ \ \mbox{\hyperlink{global_8h_ad78254f6802793cc12b197889e6ea80d}{vy}}[n]\ +=\ \mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}}\ *\ (\mbox{\hyperlink{global_8h_a68c7afda02d0f26c1987a4eee13928f2}{ay}}[n]\ -\/\ varS\ *\mbox{\hyperlink{global_8h_ad78254f6802793cc12b197889e6ea80d}{vy}}[n]);}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00133}00133\ \ \ \ \ \ \ \mbox{\hyperlink{global_8h_af88ff31a9ae85beb713bd0c42815f1de}{ry}}[n]\ +=\ \mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}}\ *\ \mbox{\hyperlink{global_8h_ad78254f6802793cc12b197889e6ea80d}{vy}}[n];}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00134}00134\ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00135}00135\ \textcolor{comment}{\ \ \ \ \ \ /*****for\ Gaussian\ thermostat*****/}}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00136}00136\ \ \}\textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}(\mbox{\hyperlink{global_8h_a9d6f642d0cdc77cccf6789f1304f8bf9}{thermo}}\ ==\ \textcolor{charliteral}{'G'})\{\ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00137}00137\ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (n\ =\ 1;\ n\ <=\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}};\ n++)\{}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00138}00138\ \ \ \ \ \ \ \mbox{\hyperlink{global_8h_a6cbb00abd724a75be2c6424c84d18654}{vx}}[n]\ =\ C\ *\ \mbox{\hyperlink{global_8h_a6cbb00abd724a75be2c6424c84d18654}{vx}}[n]\ +\ D\ *\ \mbox{\hyperlink{global_8h_a82d645cda6bea6506c7b5f4f7453986c}{ax}}[n];}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00139}00139\ \ \ \ \ \ \ \mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}[n]\ +=\ \mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}}\ *\ \mbox{\hyperlink{global_8h_a6cbb00abd724a75be2c6424c84d18654}{vx}}[n];}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00140}00140\ \ \ \ \ \ \ \mbox{\hyperlink{global_8h_ad78254f6802793cc12b197889e6ea80d}{vy}}[n]\ =\ C\ *\ \mbox{\hyperlink{global_8h_ad78254f6802793cc12b197889e6ea80d}{vy}}[n]\ +\ D\ *\ \mbox{\hyperlink{global_8h_a68c7afda02d0f26c1987a4eee13928f2}{ay}}[n];}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00141}00141\ \ \ \ \ \ \ \mbox{\hyperlink{global_8h_af88ff31a9ae85beb713bd0c42815f1de}{ry}}[n]\ +=\ \mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}}\ *\ \mbox{\hyperlink{global_8h_ad78254f6802793cc12b197889e6ea80d}{vy}}[n];}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00142}00142\ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00143}00143\ \ \ \ \}\textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{global_8h_a9d6f642d0cdc77cccf6789f1304f8bf9}{thermo}}\ ==\ \textcolor{charliteral}{'L'})\{}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00144}00144\ \ \ \textcolor{keywordtype}{double}\ nu\ =\ 0.03066;}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00145}00145\ \ \ \textcolor{keywordtype}{double}\ var\ =\ sqrt(2*nu/(GAMMA*\mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}}));}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00146}00146\ \ \ \textcolor{keywordtype}{double}\ scale\ =\ 1.\ +\ nu*\mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}}/2.;}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00147}00147\ \ \ \textcolor{keywordtype}{double}\ scale\_v\ =\ 2./scale\ -\/\ 1.;}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00148}00148\ \ \ \textcolor{keywordtype}{double}\ scale\_f\ =\ \mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}}/scale;}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00149}00149\ \ \ \textcolor{keywordtype}{int}\ n;}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00150}00150\ \ \ \textcolor{keywordflow}{for}(n\ =\ 1\ ;\ n\ <=\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}}\ ;\ n\ ++)\{}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00151}00151\ \ \ \ \ \ \ \mbox{\hyperlink{global_8h_a6cbb00abd724a75be2c6424c84d18654}{vx}}[n]\ =\ scale\_v*\mbox{\hyperlink{global_8h_a6cbb00abd724a75be2c6424c84d18654}{vx}}[n]\ +\ scale\_f*(\mbox{\hyperlink{global_8h_a82d645cda6bea6506c7b5f4f7453986c}{ax}}[n]\ +\ var*gsl\_ran\_gaussian(rnd,1));}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00152}00152\ \ \ \ \ \ \ \mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}[n]\ +=\ \mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}}\ *\ \mbox{\hyperlink{global_8h_a6cbb00abd724a75be2c6424c84d18654}{vx}}[n];}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00153}00153\ \ \ \ \ \ \ \mbox{\hyperlink{global_8h_ad78254f6802793cc12b197889e6ea80d}{vy}}[n]\ =\ scale\_v*\mbox{\hyperlink{global_8h_ad78254f6802793cc12b197889e6ea80d}{vy}}[n]\ +\ scale\_f*(\mbox{\hyperlink{global_8h_a68c7afda02d0f26c1987a4eee13928f2}{ay}}[n]\ +\ var*gsl\_ran\_gaussian(rnd,1));}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00154}00154\ \ \ \ \ \ \ \mbox{\hyperlink{global_8h_af88ff31a9ae85beb713bd0c42815f1de}{ry}}[n]\ +=\ \mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}}\ *\ \mbox{\hyperlink{global_8h_ad78254f6802793cc12b197889e6ea80d}{vy}}[n];}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00155}00155\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00156}00156\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00157}00157\ \ \}\textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00158}00158\ \ \ \ \ \textcolor{keywordtype}{int}\ n;}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00159}00159\ \ \ \ \ \textcolor{keywordflow}{for}(n\ =\ 1\ ;\ n\ <=\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}}\ ;\ n\ ++)\{}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00160}00160\ \ \ \ \ \ \ \mbox{\hyperlink{global_8h_a6cbb00abd724a75be2c6424c84d18654}{vx}}[n]\ +=\ \mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}}\ *\ \mbox{\hyperlink{global_8h_a82d645cda6bea6506c7b5f4f7453986c}{ax}}[n];}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00161}00161\ \ \ \ \ \ \ \mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}[n]\ +=\ \mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}}\ *\ \mbox{\hyperlink{global_8h_a6cbb00abd724a75be2c6424c84d18654}{vx}}[n];}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00162}00162\ \ \ \ \ \ \ \mbox{\hyperlink{global_8h_ad78254f6802793cc12b197889e6ea80d}{vy}}[n]\ +=\ \mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}}\ *\ \mbox{\hyperlink{global_8h_a68c7afda02d0f26c1987a4eee13928f2}{ay}}[n];}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00163}00163\ \ \ \ \ \ \ \mbox{\hyperlink{global_8h_af88ff31a9ae85beb713bd0c42815f1de}{ry}}[n]\ +=\ \mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}}\ *\ \mbox{\hyperlink{global_8h_ad78254f6802793cc12b197889e6ea80d}{vy}}[n];}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00164}00164\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00165}00165\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00166}00166\ \}}
+\DoxyCodeLine{\Hypertarget{LeapfrogStep_8c_source_l00167}00167\ \ \ }
 
 \end{DoxyCode}

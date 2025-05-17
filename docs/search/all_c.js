@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['natom_0',['nAtom',['../global_8h.html#a0da8aaf36196f726e7d87c2883adc00d',1,'global.h']]],
+  ['natomblock_1',['nAtomBlock',['../global_8h.html#a1fc19b1274901ec0290f04ae9900f8b4',1,'global.h']]],
+  ['natominterface_2',['nAtomInterface',['../global_8h.html#a7360a2db25507a0148bcee894745b855',1,'global.h']]],
+  ['natomtype_3',['nAtomType',['../global_8h.html#a43448c32d3aae360f080f3805a73f08f',1,'global.h']]],
+  ['nbond_4',['nBond',['../global_8h.html#a89d3bca785c9af9c4a154dc6642add4d',1,'global.h']]],
+  ['nbondtype_5',['nBondType',['../global_8h.html#a3afc68b43647936871af06d6b5d1d5db',1,'global.h']]],
+  ['nbuffacf_6',['nBuffAcf',['../global_8h.html#a62bb5169e87a77023d99fa51468bf126',1,'global.h']]],
+  ['nbuffcorr_7',['nBuffCorr',['../global_8h.html#ab638d9b8ea6ae6103ee7d3dcb0ca4106',1,'global.h']]],
+  ['ndim_8',['NDIM',['../global_8h.html#a2b1fd2d28c6a7d4a3f7027cc1b6466f3',1,'global.h']]],
+  ['ndiscinterface_9',['nDiscInterface',['../global_8h.html#a1a9704697a32d001f71d2a212562bd79',1,'global.h']]],
+  ['nfuncorr_10',['nFunCorr',['../global_8h.html#ae6bb074a4f2d8b25747f5f1c3ed34e8e',1,'global.h']]],
+  ['nodedragx_11',['nodeDragx',['../global_8h.html#ae25566f54b864b50af8b06ce249b07bd',1,'global.h']]],
+  ['nodedragy_12',['nodeDragy',['../global_8h.html#aae007ab0860d0d27bf49ce1e74831a71',1,'global.h']]],
+  ['npairactive_13',['nPairActive',['../global_8h.html#a4d261d7bf27ba6bb03927a2daa310746',1,'global.h']]],
+  ['npairtotal_14',['nPairTotal',['../global_8h.html#a23366336aec87861b8d8423b619cd5fe',1,'global.h']]],
+  ['nvalacf_15',['nValAcf',['../global_8h.html#a48094c7b6092e1a21fcc91a371f230b6',1,'global.h']]],
+  ['nvalcorr_16',['nValCorr',['../global_8h.html#a1bb15d20732c39669d141e769b97d8a0',1,'global.h']]]
+];
