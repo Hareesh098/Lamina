@@ -100,5 +100,5 @@ Lamina/
 - [Browse full HTML documentation](https://hareesh098.github.io/Lamina/)
 - Download [Source code PDF manual](https://github.com/Hareesh098/Lamina/blob/main/docs/latex/refman.pdf)
 - User manual [Physics PDF manual](https://github.com/Hareesh098/Lamina/blob/main/docs/README.pdf)
-This documentation was generated using [Doxygen 1.10.0](https://www.doxygen.nl/) to ensure transparency and ease of review.
+- This documentation was generated using [Doxygen 1.10.0](https://www.doxygen.nl/) to ensure transparency and ease of review.
 
