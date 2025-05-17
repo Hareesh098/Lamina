@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Fedora 40) (preloaded format=pdflatex 2025.3.10)  18 MAY 2025 00:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Fedora 40) (preloaded format=pdflatex 2025.3.10)  18 MAY 2025 00:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -880,26 +880,26 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 22.39185pt on input line 1.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 12.9599pt on input line 3.
+(Font)              scaled to size 12.9599pt on input line 7.
 LaTeX Font Info:    Trying to load font information for TS1+phv on input line 1
-1.
+5.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1phv.fd
 File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
 )
 LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 11.
+(Font)              scaled to size 8.99994pt on input line 15.
  [1
 
 
 ]
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 43
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 47
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 ) [2]
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 10.79993pt on input line 78.
+(Font)              scaled to size 10.79993pt on input line 82.
  [3]) [4]
 Chapter 2.
 (./files.tex [5
