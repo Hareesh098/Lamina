@@ -50,6 +50,7 @@ explore the complexity of emergent phenomena in 2D materials and soft matter sys
 - Space-time correlation functions
 
 # Output and Utilities
+
 - The output files are saved at the ../output folder. So you have a make a directory ../ location from where you are running the code.
 - Command to run ./main prefix
 - Structured output files (`.xyz`, `.bond`, `.pair`, `.com`, `.result`)
