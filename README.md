@@ -2,7 +2,6 @@
 
 Welcome to the Lamina documentation!
 # Lamina
-========================================================================================================================
 **Lamina** is a modular 2D molecular dynamics simulation package designed for simulating hybrid soft solids, including 
 spring networks and finite-size discs. **Lamina** is a modular and extensible molecular dynamics (MD) simulation package 
 written in C, designed to model a wide variety of soft and condensed matter systems. It supports time evolution using 
@@ -60,7 +59,7 @@ explore the complexity of emergent phenomena in 2D materials and soft matter sys
 - Modular design for easy extension of potentials and features
 
 # Project Structure
-<pre>
+```
 Lamina/
   |- source/                # All C source files; avoid placing README.md here to prevent extra related pages
       |- main.c             # Main driver
@@ -84,11 +83,44 @@ Lamina/
       |- refman.pdf         # Generated PDF documentation (from LaTeX)
   |- Makefile               # Build system
   |- README.md              # Main project documentation (used as main page in Doxygen)
-</pre>
+```
+
+# Installation Instructions
+
+## Prerequisites
+
+1. **GCC compiler**  
+   Ensure that `gcc` is installed for compiling C code. You can install it using:
+
+   - **Ubuntu/Debian**:  
+     `sudo apt-get install build-essential`
+   - **Fedora/CentOS**:  
+     `sudo dnf install gcc`
+   - **macOS** (via Homebrew):  
+     `brew install gcc`
+
+2. **MPICH**  
+   Ensure you have the **MPICH** library installed for MPI-based operations. This is required for parallel computation.
+
+   - **Ubuntu/Debian**:  
+   `sudo apt-get install libmpich-dev`
+   - **Fedora/CentOS**:  
+     `sudo dnf install mpich`
+   - **macOS**:  
+     `brew install mpich`
+
+## Building Lamina
+
+1. **Clone the Repository**
+
+   If you haven't cloned the repository yet, use the following command to clone it from GitHub:
+
+  `git clone git@github.com:Hareesh098/Lamina.git`
 
 # Documentation
-- [Browse full HTML documentation](https://hareesh098.github.io/Lamina/)
+
+- Browse full [HTML documentation](https://hareesh098.github.io/Lamina/)
 - Download [Source code PDF manual](https://github.com/Hareesh098/Lamina/blob/main/docs/latex/refman.pdf)
 - User manual [Physics PDF manual](https://github.com/Hareesh098/Lamina/blob/main/docs/README.pdf)
-- This documentation was generated using [Doxygen 1.10.0](https://www.doxygen.nl/) to ensure transparency and ease of review.
+- This documentation was generated using [Doxygen 1.10.0](https://www.doxygen.nl/) to ensure transparency and ease of review
 

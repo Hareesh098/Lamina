@@ -99,7 +99,7 @@ $(function(){initNavTree('index.html',''); initResizable(); });
 <div class="contents">
 <div class="textblock"><p>Welcome to the Lamina documentation! </p>
 <h1><a class="anchor" id="autotoc_md0"></a>
-# Lamina</h1>
+Lamina</h1>
 <p><b>Lamina</b> is a modular 2D molecular dynamics simulation package designed for simulating hybrid soft solids, including spring networks and finite-size discs. <b>Lamina</b> is a modular and extensible molecular dynamics (MD) simulation package written in C, designed to model a wide variety of soft and condensed matter systems. It supports time evolution using robust integrators and a range of thermostats, with accurate force evaluations for bonded and non-bonded interactions. Originally built for 2D simulations of bonded systems, <b>Lamina</b> has grown to support broader research goals including active matter, granular solids, and complex fluids.</p>
 <h1><a class="anchor" id="autotoc_md1"></a>
 Why "Lamina"?</h1>
@@ -155,35 +155,70 @@ Output and Utilities</h1>
 </ul>
 <h1><a class="anchor" id="autotoc_md8"></a>
 Project Structure</h1>
-<pre>
-Lamina/
-  |- source/                # All C source files; avoid placing <a class="el" href="README_8md.html">README.md</a> here to prevent extra related pages
-      |- <a class="el" href="main_8c.html">main.c</a>             # Main driver
-      |- *.c, *.h           # Modular source files
-  |- unittest/              # Unit test suite (planned or implemented)
-      |- test_*.c           # Individual test cases
-  |- output/                # All runtime output files will be saved here
-  |- prepros/               # Preprocessing scripts or tools
-      |- *.sh, *.py         # Example preprocessing scripts (shell, python, etc.)
-  |- postpros/              # Postprocessing scripts or tools
-      |- *.sh, *.py         # Example postprocessing scripts (shell, python, etc.)
-  |- doxygen/               # Doxygen configuration and auxiliary files
-      |- Doxyfile           # Doxygen config file
-      |- header.tex         # Custom LaTeX header for documentation
-      |- extra_stylesheet.css # Optional CSS to customize HTML output (e.g., hide Related Pages tab)
-  |- figures/               # All figures, logos, icons used in docs and code
-      |- LogoLaminaHTML.png # Project logo used in HTML and LaTeX docs
-  |- docs/                  # Generated documentation output (HTML, LaTeX, PDFs)
-      |- html/              # Doxygen-generated HTML documentation
-      |- latex/             # Doxygen-generated LaTeX source files
-      |- refman.pdf         # Generated PDF documentation (from LaTeX)
-  |- Makefile               # Build system
-  |- <a class="el" href="README_8md.html">README.md</a>              # Main project documentation (used as main page in Doxygen)
-</pre><p># Documentation</p><ul>
-<li><a href="https://hareesh098.github.io/Lamina/">Browse full HTML documentation</a></li>
+<div class="fragment"><div class="line">Lamina/</div>
+<div class="line">  |- source/                # All C source files; avoid placing README.md here to prevent extra related pages</div>
+<div class="line">      |- main.c             # Main driver</div>
+<div class="line">      |- *.c, *.h           # Modular source files</div>
+<div class="line">  |- unittest/              # Unit test suite (planned or implemented)</div>
+<div class="line">      |- test_*.c           # Individual test cases</div>
+<div class="line">  |- output/                # All runtime output files will be saved here</div>
+<div class="line">  |- prepros/               # Preprocessing scripts or tools</div>
+<div class="line">      |- *.sh, *.py         # Example preprocessing scripts (shell, python, etc.)</div>
+<div class="line">  |- postpros/              # Postprocessing scripts or tools</div>
+<div class="line">      |- *.sh, *.py         # Example postprocessing scripts (shell, python, etc.)</div>
+<div class="line">  |- doxygen/               # Doxygen configuration and auxiliary files</div>
+<div class="line">      |- Doxyfile           # Doxygen config file</div>
+<div class="line">      |- header.tex         # Custom LaTeX header for documentation</div>
+<div class="line">      |- extra_stylesheet.css # Optional CSS to customize HTML output (e.g., hide Related Pages tab)</div>
+<div class="line">  |- figures/               # All figures, logos, icons used in docs and code</div>
+<div class="line">      |- LogoLaminaHTML.png # Project logo used in HTML and LaTeX docs</div>
+<div class="line">  |- docs/                  # Generated documentation output (HTML, LaTeX, PDFs)</div>
+<div class="line">      |- html/              # Doxygen-generated HTML documentation</div>
+<div class="line">      |- latex/             # Doxygen-generated LaTeX source files</div>
+<div class="line">      |- refman.pdf         # Generated PDF documentation (from LaTeX)</div>
+<div class="line">  |- Makefile               # Build system</div>
+<div class="line">  |- README.md              # Main project documentation (used as main page in Doxygen)</div>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md9"></a>
+Installation Instructions</h1>
+<h2><a class="anchor" id="autotoc_md10"></a>
+Prerequisites</h2>
+<ol type="1">
+<li><b>GCC compiler</b> <br  />
+ Ensure that <code>gcc</code> is installed for compiling C code. You can install it using:<ul>
+<li><b>Ubuntu/Debian</b>: <br  />
+ <code>sudo apt-get install build-essential</code></li>
+<li><b>Fedora/CentOS</b>: <br  />
+ <code>sudo dnf install gcc</code></li>
+<li><b>macOS</b> (via Homebrew): <br  />
+ <code>brew install gcc</code></li>
+</ul>
+</li>
+<li><b>MPICH</b> <br  />
+ Ensure you have the <b>MPICH</b> library installed for MPI-based operations. This is required for parallel computation.<ul>
+<li><b>Ubuntu/Debian</b>: <br  />
+ <code>sudo apt-get install libmpich-dev</code></li>
+<li><b>Fedora/CentOS</b>: <br  />
+ <code>sudo dnf install mpich</code></li>
+<li><b>macOS</b>: <br  />
+ <code>brew install mpich</code></li>
+</ul>
+</li>
+</ol>
+<h2><a class="anchor" id="autotoc_md11"></a>
+Building Lamina</h2>
+<ol type="1">
+<li><p class="startli"><b>Clone the Repository</b></p>
+<p class="startli">If you haven't cloned the repository yet, use the following command to clone it from GitHub:</p>
+<p class="startli"><code>git clone git@github.com:Hareesh098/Lamina.git</code></p>
+</li>
+</ol>
+<h1><a class="anchor" id="autotoc_md12"></a>
+Documentation</h1>
+<ul>
+<li>Browse full <a href="https://hareesh098.github.io/Lamina/">HTML documentation</a></li>
 <li>Download <a href="https://github.com/Hareesh098/Lamina/blob/main/docs/latex/refman.pdf">Source code PDF manual</a></li>
 <li>User manual <a href="https://github.com/Hareesh098/Lamina/blob/main/docs/README.pdf">Physics PDF manual</a></li>
-<li>This documentation was generated using <a href="https://www.doxygen.nl/">Doxygen 1.10.0</a> to ensure transparency and ease of review. </li>
+<li>This documentation was generated using <a href="https://www.doxygen.nl/">Doxygen 1.10.0</a> to ensure transparency and ease of review </li>
 </ul>
 </div></div><!-- PageDoc -->
 <a href="doxygen_crawl.html"/>
