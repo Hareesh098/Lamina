@@ -24,43 +24,53 @@ explore the complexity of emergent phenomena in 2D materials and soft matter sys
 
 # Key Features
 # Interaction Potentials
-Yukawa potential (screened Coulomb interactions),
-Lennard-Jones potential (standard 12-6),
-Harmonic bond potential (elastic network models),
-Hookean granular contact potential (for soft granular matter).
+<pre>
+Yukawa potential (screened Coulomb interactions)
+Lennard-Jones potential (standard 12-6)
+Harmonic bond potential (elastic network models)
+Hookean granular contact potential (for soft granular matter)
+<pre>
 
 # Thermostats and Temperature Control
-Gaussian thermostat,
-Nose-Hoover thermostat,
-Langevin thermostat,
-Configurational temperature evaluation and control.
+<pre>
+Gaussian thermostat
+Nose-Hoover thermostat
+Langevin thermostat
+Configurational temperature evaluation and control
+<pre>
 
 # Time Integration
-Velocity-Verlet integrator,
-Brownian (overdamped) dynamics,
+<pre>
+Leap-Frog integrator
+Velocity-Verlet integrator
+Langevin (stochastic) integrator
+Brownian (overdamped) interator
+<pre>
 
 # Physical Observables
--Radial Distribution Function (RDF)
--Velocity Autocorrelation Function (VACF)
--Root-Mean-Square Velocity (VRMS)
--Stress tensor and momentum
--Center-of-mass motion
--Space-time correlation functions
+<pre>
+Radial Distribution Function (RDF)
+Velocity Autocorrelation Function (VACF)
+Root-Mean-Square Velocity (VRMS)
+Stress tensor and momentum
+Center-of-mass motion
+Space-time correlation functions
+<pre>
 
 # Output and Utilities
-The output files are saved at the ../output folder. So you have a make a directory ../ location from where you ae running
+The output files are saved at the ../output folder. So you have a make a directory ../ location from where you are running the code.
+**Command to run**
+<pre>
 ./main prefix
--Structured output files (`.xyz`, `.bond`, `.pair`, `.com`, `.result`)
--Restart and resume capability (`.restart` and `.state` files)
--Clean separation of source code, unit tests, and output
--Support for Lees–Edwards boundary conditions (sheared systems)
--Configurable halting conditions (based on VRMS or custom metric)
--Modular design for easy extension of potentials and features
+Structured output files (`.xyz`, `.bond`, `.pair`, `.com`, `.result`)
+Restart and resume capability (`.restart` and `.state` files)
+Clean separation of source code, unit tests, and output
+Support for Lees–Edwards boundary conditions (sheared systems)
+Configurable halting conditions (based on VRMS or custom metric)
+Modular design for easy extension of potentials and features
+<pre>
 
 # Project Structure
-
-## Project Structure
-
 <pre>
 Lamina/
   |- source/                # All C source files; avoid placing README.md here to prevent extra related pages
