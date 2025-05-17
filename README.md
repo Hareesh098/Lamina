@@ -24,20 +24,16 @@ explore the complexity of emergent phenomena in 2D materials and soft matter sys
 
 # Key Features
 # Interaction Potentials
-<pre>
-Yukawa potential (screened Coulomb interactions)
-Lennard-Jones potential (standard 12-6)
-Harmonic bond potential (elastic network models)
-Hookean granular contact potential (for soft granular matter)
-</pre>
+- Yukawa potential (screened Coulomb interactions)
+- Lennard-Jones potential (standard 12-6)
+- Harmonic bond potential (elastic network models)
+- Hookean granular contact potential (for soft granular matter)
 
 # Thermostats and Temperature Control
-<pre>
-Gaussian thermostat
-Nose-Hoover thermostat
-Langevin thermostat
-Configurational temperature evaluation and control
-</pre>
+- Gaussian thermostat
+- Nose-Hoover thermostat
+- Langevin thermostat
+- Configurational temperature evaluation and control
 
 # Time Integration
 <pre>
