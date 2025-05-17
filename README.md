@@ -59,9 +59,8 @@ Space-time correlation functions
 
 # Output and Utilities
 The output files are saved at the ../output folder. So you have a make a directory ../ location from where you are running the code.
-**Command to run**
 <pre>
-./main prefix
+Command to run ./main prefix
 Structured output files (`.xyz`, `.bond`, `.pair`, `.com`, `.result`)
 Restart and resume capability (`.restart` and `.state` files)
 Clean separation of source code, unit tests, and output
