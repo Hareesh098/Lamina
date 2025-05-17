@@ -1,646 +1,659 @@
 \@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
-\contentsline {chapter}{\numberline {1}Lemina}{1}{chapter.1}%
-\contentsline {chapter}{\numberline {2}File Index}{3}{chapter.2}%
-\contentsline {section}{\numberline {2.1}File List}{3}{section.2.1}%
-\contentsline {chapter}{\numberline {3}File Documentation}{5}{chapter.3}%
-\contentsline {section}{\numberline {3.1}README.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}md File Reference}{5}{section.3.1}%
-\contentsline {section}{\numberline {3.2}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Accum\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Props.c File Reference}{5}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Function Documentation}{6}{subsection.3.2.1}%
-\contentsline {subsubsection}{\numberline {3.2.1.1}AccumProps()}{6}{subsubsection.3.2.1.1}%
-\contentsline {section}{\numberline {3.3}Accum\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Props.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{6}{section.3.3}%
-\contentsline {section}{\numberline {3.4}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Accum\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Vacf.c File Reference}{7}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Function Documentation}{8}{subsection.3.4.1}%
-\contentsline {subsubsection}{\numberline {3.4.1.1}AccumVacf()}{8}{subsubsection.3.4.1.1}%
-\contentsline {subsubsection}{\numberline {3.4.1.2}Integrate()}{9}{subsubsection.3.4.1.2}%
-\contentsline {subsubsection}{\numberline {3.4.1.3}PrintVacf()}{9}{subsubsection.3.4.1.3}%
-\contentsline {subsubsection}{\numberline {3.4.1.4}ZeroVacf()}{10}{subsubsection.3.4.1.4}%
-\contentsline {section}{\numberline {3.5}Accum\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Vacf.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{10}{section.3.5}%
-\contentsline {section}{\numberline {3.6}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Alloc\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Arrays.c File Reference}{11}{section.3.6}%
-\contentsline {subsection}{\numberline {3.6.1}Function Documentation}{12}{subsection.3.6.1}%
-\contentsline {subsubsection}{\numberline {3.6.1.1}AllocArrays()}{12}{subsubsection.3.6.1.1}%
-\contentsline {section}{\numberline {3.7}Alloc\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Arrays.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{12}{section.3.7}%
-\contentsline {section}{\numberline {3.8}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Apply\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Boundary\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Cond.c File Reference}{13}{section.3.8}%
-\contentsline {subsection}{\numberline {3.8.1}Function Documentation}{14}{subsection.3.8.1}%
-\contentsline {subsubsection}{\numberline {3.8.1.1}ApplyBoundaryCond()}{14}{subsubsection.3.8.1.1}%
-\contentsline {section}{\numberline {3.9}Apply\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Boundary\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Cond.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{15}{section.3.9}%
-\contentsline {section}{\numberline {3.10}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Apply\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Driving\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Force.c File Reference}{15}{section.3.10}%
-\contentsline {subsection}{\numberline {3.10.1}Function Documentation}{16}{subsection.3.10.1}%
-\contentsline {subsubsection}{\numberline {3.10.1.1}ApplyDrivingForce()}{16}{subsubsection.3.10.1.1}%
-\contentsline {section}{\numberline {3.11}Apply\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Driving\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Force.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{17}{section.3.11}%
-\contentsline {section}{\numberline {3.12}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Apply\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Force.c File Reference}{18}{section.3.12}%
-\contentsline {subsection}{\numberline {3.12.1}Function Documentation}{18}{subsection.3.12.1}%
-\contentsline {subsubsection}{\numberline {3.12.1.1}ApplyForce()}{18}{subsubsection.3.12.1.1}%
-\contentsline {section}{\numberline {3.13}Apply\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Force.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{19}{section.3.13}%
-\contentsline {section}{\numberline {3.14}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Apply\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Lees\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Edwards\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Boundary\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Cond.c File Reference}{19}{section.3.14}%
-\contentsline {subsection}{\numberline {3.14.1}Function Documentation}{20}{subsection.3.14.1}%
-\contentsline {subsubsection}{\numberline {3.14.1.1}ApplyLeesEdwardsBoundaryCond()}{20}{subsubsection.3.14.1.1}%
-\contentsline {section}{\numberline {3.15}Apply\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Lees\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Edwards\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Boundary\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Cond.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{21}{section.3.15}%
-\contentsline {section}{\numberline {3.16}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Apply\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Shear.c File Reference}{21}{section.3.16}%
-\contentsline {subsection}{\numberline {3.16.1}Function Documentation}{22}{subsection.3.16.1}%
-\contentsline {subsubsection}{\numberline {3.16.1.1}ApplyShear()}{22}{subsubsection.3.16.1.1}%
-\contentsline {section}{\numberline {3.17}Apply\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Shear.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{22}{section.3.17}%
-\contentsline {section}{\numberline {3.18}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Apply\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Viscous.c File Reference}{23}{section.3.18}%
-\contentsline {subsection}{\numberline {3.18.1}Function Documentation}{23}{subsection.3.18.1}%
-\contentsline {subsubsection}{\numberline {3.18.1.1}ApplyViscous()}{23}{subsubsection.3.18.1.1}%
-\contentsline {section}{\numberline {3.19}Apply\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Viscous.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{24}{section.3.19}%
-\contentsline {section}{\numberline {3.20}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Brownian\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Step.c File Reference}{24}{section.3.20}%
-\contentsline {subsection}{\numberline {3.20.1}Function Documentation}{25}{subsection.3.20.1}%
-\contentsline {subsubsection}{\numberline {3.20.1.1}BrownianStep()}{25}{subsubsection.3.20.1.1}%
-\contentsline {section}{\numberline {3.21}Brownian\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Step.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{25}{section.3.21}%
-\contentsline {section}{\numberline {3.22}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Close.c File Reference}{26}{section.3.22}%
-\contentsline {subsection}{\numberline {3.22.1}Function Documentation}{27}{subsection.3.22.1}%
-\contentsline {subsubsection}{\numberline {3.22.1.1}Close()}{27}{subsubsection.3.22.1.1}%
-\contentsline {section}{\numberline {3.23}Close.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{28}{section.3.23}%
-\contentsline {section}{\numberline {3.24}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Compute\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Bond\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Force.c File Reference}{29}{section.3.24}%
-\contentsline {subsection}{\numberline {3.24.1}Function Documentation}{30}{subsection.3.24.1}%
-\contentsline {subsubsection}{\numberline {3.24.1.1}ComputeBondForce()}{30}{subsubsection.3.24.1.1}%
-\contentsline {section}{\numberline {3.25}Compute\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Bond\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Force.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{32}{section.3.25}%
-\contentsline {section}{\numberline {3.26}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Compute\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Bond\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Force.h File Reference}{34}{section.3.26}%
-\contentsline {subsection}{\numberline {3.26.1}Function Documentation}{34}{subsection.3.26.1}%
-\contentsline {subsubsection}{\numberline {3.26.1.1}ComputeBondForce()}{34}{subsubsection.3.26.1.1}%
-\contentsline {section}{\numberline {3.27}Compute\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Bond\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Force.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{36}{section.3.27}%
-\contentsline {section}{\numberline {3.28}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Compute\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Forces\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Cells.c File Reference}{36}{section.3.28}%
-\contentsline {subsection}{\numberline {3.28.1}Function Documentation}{37}{subsection.3.28.1}%
-\contentsline {subsubsection}{\numberline {3.28.1.1}ComputeForcesCells()}{37}{subsubsection.3.28.1.1}%
-\contentsline {section}{\numberline {3.29}Compute\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Forces\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Cells.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{39}{section.3.29}%
-\contentsline {section}{\numberline {3.30}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Compute\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pair\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Force.c File Reference}{41}{section.3.30}%
-\contentsline {subsection}{\numberline {3.30.1}Function Documentation}{41}{subsection.3.30.1}%
-\contentsline {subsubsection}{\numberline {3.30.1.1}ComputePairForce()}{41}{subsubsection.3.30.1.1}%
-\contentsline {section}{\numberline {3.31}Compute\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pair\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Force.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{44}{section.3.31}%
-\contentsline {section}{\numberline {3.32}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Compute\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pair\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Force.h File Reference}{46}{section.3.32}%
-\contentsline {subsection}{\numberline {3.32.1}Function Documentation}{47}{subsection.3.32.1}%
-\contentsline {subsubsection}{\numberline {3.32.1.1}ComputePairForce()}{47}{subsubsection.3.32.1.1}%
-\contentsline {section}{\numberline {3.33}Compute\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pair\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Force.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{49}{section.3.33}%
-\contentsline {section}{\numberline {3.34}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Displace\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Atoms.c File Reference}{49}{section.3.34}%
-\contentsline {subsection}{\numberline {3.34.1}Function Documentation}{50}{subsection.3.34.1}%
-\contentsline {subsubsection}{\numberline {3.34.1.1}DisplaceAtoms()}{50}{subsubsection.3.34.1.1}%
-\contentsline {section}{\numberline {3.35}Displace\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Atoms.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{51}{section.3.35}%
-\contentsline {section}{\numberline {3.36}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dump\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Bonds.c File Reference}{51}{section.3.36}%
-\contentsline {subsection}{\numberline {3.36.1}Function Documentation}{52}{subsection.3.36.1}%
-\contentsline {subsubsection}{\numberline {3.36.1.1}DumpBonds()}{52}{subsubsection.3.36.1.1}%
-\contentsline {section}{\numberline {3.37}Dump\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Bonds.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{52}{section.3.37}%
-\contentsline {section}{\numberline {3.38}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dump\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pairs.c File Reference}{53}{section.3.38}%
-\contentsline {subsection}{\numberline {3.38.1}Function Documentation}{53}{subsection.3.38.1}%
-\contentsline {subsubsection}{\numberline {3.38.1.1}DumpPairs()}{53}{subsubsection.3.38.1.1}%
-\contentsline {section}{\numberline {3.39}Dump\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pairs.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{54}{section.3.39}%
-\contentsline {section}{\numberline {3.40}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dump\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Restart.c File Reference}{55}{section.3.40}%
-\contentsline {subsection}{\numberline {3.40.1}Function Documentation}{55}{subsection.3.40.1}%
-\contentsline {subsubsection}{\numberline {3.40.1.1}DumpRestart()}{55}{subsubsection.3.40.1.1}%
-\contentsline {section}{\numberline {3.41}Dump\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Restart.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{56}{section.3.41}%
-\contentsline {section}{\numberline {3.42}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dump\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}State.c File Reference}{57}{section.3.42}%
-\contentsline {subsection}{\numberline {3.42.1}Function Documentation}{58}{subsection.3.42.1}%
-\contentsline {subsubsection}{\numberline {3.42.1.1}DumpState()}{58}{subsubsection.3.42.1.1}%
-\contentsline {section}{\numberline {3.43}Dump\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}State.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{58}{section.3.43}%
-\contentsline {section}{\numberline {3.44}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Eval\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Com.c File Reference}{59}{section.3.44}%
-\contentsline {subsection}{\numberline {3.44.1}Function Documentation}{60}{subsection.3.44.1}%
-\contentsline {subsubsection}{\numberline {3.44.1.1}EvalCom()}{60}{subsubsection.3.44.1.1}%
-\contentsline {section}{\numberline {3.45}Eval\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Com.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{60}{section.3.45}%
-\contentsline {section}{\numberline {3.46}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Eval\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Props.c File Reference}{61}{section.3.46}%
-\contentsline {subsection}{\numberline {3.46.1}Function Documentation}{62}{subsection.3.46.1}%
-\contentsline {subsubsection}{\numberline {3.46.1.1}EvalProps()}{62}{subsubsection.3.46.1.1}%
-\contentsline {section}{\numberline {3.47}Eval\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Props.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{63}{section.3.47}%
-\contentsline {section}{\numberline {3.48}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Eval\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Rdf.c File Reference}{63}{section.3.48}%
-\contentsline {subsection}{\numberline {3.48.1}Function Documentation}{64}{subsection.3.48.1}%
-\contentsline {subsubsection}{\numberline {3.48.1.1}EvalRdf()}{64}{subsubsection.3.48.1.1}%
-\contentsline {section}{\numberline {3.49}Eval\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Rdf.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{65}{section.3.49}%
-\contentsline {section}{\numberline {3.50}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Eval\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Spacetime\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Corr.c File Reference}{66}{section.3.50}%
-\contentsline {subsection}{\numberline {3.50.1}Function Documentation}{66}{subsection.3.50.1}%
-\contentsline {subsubsection}{\numberline {3.50.1.1}EvalSpacetimeCorr()}{66}{subsubsection.3.50.1.1}%
-\contentsline {section}{\numberline {3.51}Eval\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Spacetime\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Corr.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{68}{section.3.51}%
-\contentsline {section}{\numberline {3.52}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Eval\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Unwrap.c File Reference}{69}{section.3.52}%
-\contentsline {subsection}{\numberline {3.52.1}Function Documentation}{70}{subsection.3.52.1}%
-\contentsline {subsubsection}{\numberline {3.52.1.1}EvalUnwrap()}{70}{subsubsection.3.52.1.1}%
-\contentsline {section}{\numberline {3.53}Eval\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Unwrap.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{71}{section.3.53}%
-\contentsline {section}{\numberline {3.54}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Eval\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Vacf.c File Reference}{71}{section.3.54}%
-\contentsline {subsection}{\numberline {3.54.1}Function Documentation}{72}{subsection.3.54.1}%
-\contentsline {subsubsection}{\numberline {3.54.1.1}AccumVacf()}{72}{subsubsection.3.54.1.1}%
-\contentsline {subsubsection}{\numberline {3.54.1.2}EvalVacf()}{73}{subsubsection.3.54.1.2}%
-\contentsline {section}{\numberline {3.55}Eval\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Vacf.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{73}{section.3.55}%
-\contentsline {section}{\numberline {3.56}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Eval\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Vrms.c File Reference}{74}{section.3.56}%
-\contentsline {subsection}{\numberline {3.56.1}Function Documentation}{75}{subsection.3.56.1}%
-\contentsline {subsubsection}{\numberline {3.56.1.1}EvalVrms()}{75}{subsubsection.3.56.1.1}%
-\contentsline {section}{\numberline {3.57}Eval\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Vrms.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{75}{section.3.57}%
-\contentsline {section}{\numberline {3.58}source/global.h File Reference}{76}{section.3.58}%
-\contentsline {subsection}{\numberline {3.58.1}Macro Definition Documentation}{80}{subsection.3.58.1}%
-\contentsline {subsubsection}{\numberline {3.58.1.1}EXTERN}{80}{subsubsection.3.58.1.1}%
-\contentsline {subsubsection}{\numberline {3.58.1.2}NDIM}{80}{subsubsection.3.58.1.2}%
-\contentsline {subsubsection}{\numberline {3.58.1.3}SignR}{81}{subsubsection.3.58.1.3}%
-\contentsline {subsubsection}{\numberline {3.58.1.4}Sqr}{81}{subsubsection.3.58.1.4}%
-\contentsline {subsection}{\numberline {3.58.2}Typedef Documentation}{81}{subsection.3.58.2}%
-\contentsline {subsubsection}{\numberline {3.58.2.1}real}{81}{subsubsection.3.58.2.1}%
-\contentsline {subsection}{\numberline {3.58.3}Variable Documentation}{81}{subsection.3.58.3}%
-\contentsline {subsubsection}{\numberline {3.58.3.1}atom1}{81}{subsubsection.3.58.3.1}%
-\contentsline {subsubsection}{\numberline {3.58.3.2}atom2}{81}{subsubsection.3.58.3.2}%
-\contentsline {subsubsection}{\numberline {3.58.3.3}atomID}{81}{subsubsection.3.58.3.3}%
-\contentsline {subsubsection}{\numberline {3.58.3.4}atomIDInterface}{82}{subsubsection.3.58.3.4}%
-\contentsline {subsubsection}{\numberline {3.58.3.5}atomMass}{82}{subsubsection.3.58.3.5}%
-\contentsline {subsubsection}{\numberline {3.58.3.6}atomRadius}{82}{subsubsection.3.58.3.6}%
-\contentsline {subsubsection}{\numberline {3.58.3.7}atomType}{82}{subsubsection.3.58.3.7}%
-\contentsline {subsubsection}{\numberline {3.58.3.8}ax}{82}{subsubsection.3.58.3.8}%
-\contentsline {subsubsection}{\numberline {3.58.3.9}ay}{82}{subsubsection.3.58.3.9}%
-\contentsline {subsubsection}{\numberline {3.58.3.10}bond}{83}{subsubsection.3.58.3.10}%
-\contentsline {subsubsection}{\numberline {3.58.3.11}BondEnergy}{83}{subsubsection.3.58.3.11}%
-\contentsline {subsubsection}{\numberline {3.58.3.12}BondEnergyPerAtom}{83}{subsubsection.3.58.3.12}%
-\contentsline {subsubsection}{\numberline {3.58.3.13}BondID}{83}{subsubsection.3.58.3.13}%
-\contentsline {subsubsection}{\numberline {3.58.3.14}BondLength}{83}{subsubsection.3.58.3.14}%
-\contentsline {subsubsection}{\numberline {3.58.3.15}BondType}{83}{subsubsection.3.58.3.15}%
-\contentsline {subsubsection}{\numberline {3.58.3.16}cellList}{83}{subsubsection.3.58.3.16}%
-\contentsline {subsubsection}{\numberline {3.58.3.17}cells}{84}{subsubsection.3.58.3.17}%
-\contentsline {subsubsection}{\numberline {3.58.3.18}cfOrg}{84}{subsubsection.3.58.3.18}%
-\contentsline {subsubsection}{\numberline {3.58.3.19}cfVal}{84}{subsubsection.3.58.3.19}%
-\contentsline {subsubsection}{\numberline {3.58.3.20}com}{84}{subsubsection.3.58.3.20}%
-\contentsline {subsubsection}{\numberline {3.58.3.21}ComX}{84}{subsubsection.3.58.3.21}%
-\contentsline {subsubsection}{\numberline {3.58.3.22}ComX0}{84}{subsubsection.3.58.3.22}%
-\contentsline {subsubsection}{\numberline {3.58.3.23}ComXRatio}{84}{subsubsection.3.58.3.23}%
-\contentsline {subsubsection}{\numberline {3.58.3.24}ComY}{85}{subsubsection.3.58.3.24}%
-\contentsline {subsubsection}{\numberline {3.58.3.25}ComY0}{85}{subsubsection.3.58.3.25}%
-\contentsline {subsubsection}{\numberline {3.58.3.26}ComYRatio}{85}{subsubsection.3.58.3.26}%
-\contentsline {subsubsection}{\numberline {3.58.3.27}countAcfAv}{85}{subsubsection.3.58.3.27}%
-\contentsline {subsubsection}{\numberline {3.58.3.28}countCorrAv}{85}{subsubsection.3.58.3.28}%
-\contentsline {subsubsection}{\numberline {3.58.3.29}countRdf}{85}{subsubsection.3.58.3.29}%
-\contentsline {subsubsection}{\numberline {3.58.3.30}DampFlag}{86}{subsubsection.3.58.3.30}%
-\contentsline {subsubsection}{\numberline {3.58.3.31}deltaT}{86}{subsubsection.3.58.3.31}%
-\contentsline {subsubsection}{\numberline {3.58.3.32}DeltaVXij}{86}{subsubsection.3.58.3.32}%
-\contentsline {subsubsection}{\numberline {3.58.3.33}DeltaVYij}{86}{subsubsection.3.58.3.33}%
-\contentsline {subsubsection}{\numberline {3.58.3.34}DeltaX}{86}{subsubsection.3.58.3.34}%
-\contentsline {subsubsection}{\numberline {3.58.3.35}DeltaXij}{86}{subsubsection.3.58.3.35}%
-\contentsline {subsubsection}{\numberline {3.58.3.36}DeltaXijNew}{87}{subsubsection.3.58.3.36}%
-\contentsline {subsubsection}{\numberline {3.58.3.37}DeltaXijOld}{87}{subsubsection.3.58.3.37}%
-\contentsline {subsubsection}{\numberline {3.58.3.38}DeltaXijOldPair}{87}{subsubsection.3.58.3.38}%
-\contentsline {subsubsection}{\numberline {3.58.3.39}DeltaY}{87}{subsubsection.3.58.3.39}%
-\contentsline {subsubsection}{\numberline {3.58.3.40}DeltaYij}{87}{subsubsection.3.58.3.40}%
-\contentsline {subsubsection}{\numberline {3.58.3.41}DeltaYijNew}{87}{subsubsection.3.58.3.41}%
-\contentsline {subsubsection}{\numberline {3.58.3.42}DeltaYijOld}{87}{subsubsection.3.58.3.42}%
-\contentsline {subsubsection}{\numberline {3.58.3.43}DeltaYijOldPair}{88}{subsubsection.3.58.3.43}%
-\contentsline {subsubsection}{\numberline {3.58.3.44}density}{88}{subsubsection.3.58.3.44}%
-\contentsline {subsubsection}{\numberline {3.58.3.45}discDragx}{88}{subsubsection.3.58.3.45}%
-\contentsline {subsubsection}{\numberline {3.58.3.46}discDragy}{88}{subsubsection.3.58.3.46}%
-\contentsline {subsubsection}{\numberline {3.58.3.47}dnsty}{88}{subsubsection.3.58.3.47}%
-\contentsline {subsubsection}{\numberline {3.58.3.48}dump}{88}{subsubsection.3.58.3.48}%
-\contentsline {subsubsection}{\numberline {3.58.3.49}dumpPairFlag}{88}{subsubsection.3.58.3.49}%
-\contentsline {subsubsection}{\numberline {3.58.3.50}fax}{88}{subsubsection.3.58.3.50}%
-\contentsline {subsubsection}{\numberline {3.58.3.51}fay}{89}{subsubsection.3.58.3.51}%
-\contentsline {subsubsection}{\numberline {3.58.3.52}fpbond}{89}{subsubsection.3.58.3.52}%
-\contentsline {subsubsection}{\numberline {3.58.3.53}fpcom}{89}{subsubsection.3.58.3.53}%
-\contentsline {subsubsection}{\numberline {3.58.3.54}fpdnsty}{89}{subsubsection.3.58.3.54}%
-\contentsline {subsubsection}{\numberline {3.58.3.55}fpdump}{89}{subsubsection.3.58.3.55}%
-\contentsline {subsubsection}{\numberline {3.58.3.56}fpmomentum}{89}{subsubsection.3.58.3.56}%
-\contentsline {subsubsection}{\numberline {3.58.3.57}fppair}{89}{subsubsection.3.58.3.57}%
-\contentsline {subsubsection}{\numberline {3.58.3.58}fprdf}{89}{subsubsection.3.58.3.58}%
-\contentsline {subsubsection}{\numberline {3.58.3.59}fpresult}{90}{subsubsection.3.58.3.59}%
-\contentsline {subsubsection}{\numberline {3.58.3.60}fpstress}{90}{subsubsection.3.58.3.60}%
-\contentsline {subsubsection}{\numberline {3.58.3.61}fpvisc}{90}{subsubsection.3.58.3.61}%
-\contentsline {subsubsection}{\numberline {3.58.3.62}fpvrms}{90}{subsubsection.3.58.3.62}%
-\contentsline {subsubsection}{\numberline {3.58.3.63}fpxyz}{90}{subsubsection.3.58.3.63}%
-\contentsline {subsubsection}{\numberline {3.58.3.64}freezeAtomType}{90}{subsubsection.3.58.3.64}%
-\contentsline {subsubsection}{\numberline {3.58.3.65}frfAtom}{90}{subsubsection.3.58.3.65}%
-\contentsline {subsubsection}{\numberline {3.58.3.66}fuSum}{90}{subsubsection.3.58.3.66}%
-\contentsline {subsubsection}{\numberline {3.58.3.67}fvirSum}{91}{subsubsection.3.58.3.67}%
-\contentsline {subsubsection}{\numberline {3.58.3.68}fx}{91}{subsubsection.3.58.3.68}%
-\contentsline {subsubsection}{\numberline {3.58.3.69}fxByfy}{91}{subsubsection.3.58.3.69}%
-\contentsline {subsubsection}{\numberline {3.58.3.70}fy}{91}{subsubsection.3.58.3.70}%
-\contentsline {subsubsection}{\numberline {3.58.3.71}FyBylx}{91}{subsubsection.3.58.3.71}%
-\contentsline {subsubsection}{\numberline {3.58.3.72}gamman}{91}{subsubsection.3.58.3.72}%
-\contentsline {subsubsection}{\numberline {3.58.3.73}HaltCondition}{91}{subsubsection.3.58.3.73}%
-\contentsline {subsubsection}{\numberline {3.58.3.74}histRdf}{92}{subsubsection.3.58.3.74}%
-\contentsline {subsubsection}{\numberline {3.58.3.75}ImageX}{92}{subsubsection.3.58.3.75}%
-\contentsline {subsubsection}{\numberline {3.58.3.76}ImageY}{92}{subsubsection.3.58.3.76}%
-\contentsline {subsubsection}{\numberline {3.58.3.77}indexAcf}{92}{subsubsection.3.58.3.77}%
-\contentsline {subsubsection}{\numberline {3.58.3.78}indexCorr}{92}{subsubsection.3.58.3.78}%
-\contentsline {subsubsection}{\numberline {3.58.3.79}initUcell}{92}{subsubsection.3.58.3.79}%
-\contentsline {subsubsection}{\numberline {3.58.3.80}isBonded}{92}{subsubsection.3.58.3.80}%
-\contentsline {subsubsection}{\numberline {3.58.3.81}kappa}{93}{subsubsection.3.58.3.81}%
-\contentsline {subsubsection}{\numberline {3.58.3.82}kb}{93}{subsubsection.3.58.3.82}%
-\contentsline {subsubsection}{\numberline {3.58.3.83}kinEnergy}{93}{subsubsection.3.58.3.83}%
-\contentsline {subsubsection}{\numberline {3.58.3.84}Kn}{93}{subsubsection.3.58.3.84}%
-\contentsline {subsubsection}{\numberline {3.58.3.85}limitAcfAv}{93}{subsubsection.3.58.3.85}%
-\contentsline {subsubsection}{\numberline {3.58.3.86}limitCorrAv}{93}{subsubsection.3.58.3.86}%
-\contentsline {subsubsection}{\numberline {3.58.3.87}limitRdf}{94}{subsubsection.3.58.3.87}%
-\contentsline {subsubsection}{\numberline {3.58.3.88}master}{94}{subsubsection.3.58.3.88}%
-\contentsline {subsubsection}{\numberline {3.58.3.89}molID}{94}{subsubsection.3.58.3.89}%
-\contentsline {subsubsection}{\numberline {3.58.3.90}momentum}{94}{subsubsection.3.58.3.90}%
-\contentsline {subsubsection}{\numberline {3.58.3.91}moreCycles}{94}{subsubsection.3.58.3.91}%
-\contentsline {subsubsection}{\numberline {3.58.3.92}nAtom}{94}{subsubsection.3.58.3.92}%
-\contentsline {subsubsection}{\numberline {3.58.3.93}nAtomBlock}{95}{subsubsection.3.58.3.93}%
-\contentsline {subsubsection}{\numberline {3.58.3.94}nAtomInterface}{95}{subsubsection.3.58.3.94}%
-\contentsline {subsubsection}{\numberline {3.58.3.95}nAtomType}{95}{subsubsection.3.58.3.95}%
-\contentsline {subsubsection}{\numberline {3.58.3.96}nBond}{95}{subsubsection.3.58.3.96}%
-\contentsline {subsubsection}{\numberline {3.58.3.97}nBondType}{95}{subsubsection.3.58.3.97}%
-\contentsline {subsubsection}{\numberline {3.58.3.98}nBuffAcf}{95}{subsubsection.3.58.3.98}%
-\contentsline {subsubsection}{\numberline {3.58.3.99}nBuffCorr}{95}{subsubsection.3.58.3.99}%
-\contentsline {subsubsection}{\numberline {3.58.3.100}nDiscInterface}{96}{subsubsection.3.58.3.100}%
-\contentsline {subsubsection}{\numberline {3.58.3.101}nFunCorr}{96}{subsubsection.3.58.3.101}%
-\contentsline {subsubsection}{\numberline {3.58.3.102}nodeDragx}{96}{subsubsection.3.58.3.102}%
-\contentsline {subsubsection}{\numberline {3.58.3.103}nodeDragy}{96}{subsubsection.3.58.3.103}%
-\contentsline {subsubsection}{\numberline {3.58.3.104}nPairActive}{96}{subsubsection.3.58.3.104}%
-\contentsline {subsubsection}{\numberline {3.58.3.105}nPairTotal}{96}{subsubsection.3.58.3.105}%
-\contentsline {subsubsection}{\numberline {3.58.3.106}nValAcf}{97}{subsubsection.3.58.3.106}%
-\contentsline {subsubsection}{\numberline {3.58.3.107}nValCorr}{97}{subsubsection.3.58.3.107}%
-\contentsline {subsubsection}{\numberline {3.58.3.108}pair}{97}{subsubsection.3.58.3.108}%
-\contentsline {subsubsection}{\numberline {3.58.3.109}Pairatom1}{97}{subsubsection.3.58.3.109}%
-\contentsline {subsubsection}{\numberline {3.58.3.110}Pairatom2}{97}{subsubsection.3.58.3.110}%
-\contentsline {subsubsection}{\numberline {3.58.3.111}PairID}{97}{subsubsection.3.58.3.111}%
-\contentsline {subsubsection}{\numberline {3.58.3.112}PairXij}{97}{subsubsection.3.58.3.112}%
-\contentsline {subsubsection}{\numberline {3.58.3.113}PairYij}{98}{subsubsection.3.58.3.113}%
-\contentsline {subsubsection}{\numberline {3.58.3.114}potEnergy}{98}{subsubsection.3.58.3.114}%
-\contentsline {subsubsection}{\numberline {3.58.3.115}prefix}{98}{subsubsection.3.58.3.115}%
-\contentsline {subsubsection}{\numberline {3.58.3.116}pressure}{98}{subsubsection.3.58.3.116}%
-\contentsline {subsubsection}{\numberline {3.58.3.117}RadiusIJ}{98}{subsubsection.3.58.3.117}%
-\contentsline {subsubsection}{\numberline {3.58.3.118}RadiusIJInv}{98}{subsubsection.3.58.3.118}%
-\contentsline {subsubsection}{\numberline {3.58.3.119}rangeRdf}{99}{subsubsection.3.58.3.119}%
-\contentsline {subsubsection}{\numberline {3.58.3.120}rank}{99}{subsubsection.3.58.3.120}%
-\contentsline {subsubsection}{\numberline {3.58.3.121}rCut}{99}{subsubsection.3.58.3.121}%
-\contentsline {subsubsection}{\numberline {3.58.3.122}rdf}{99}{subsubsection.3.58.3.122}%
-\contentsline {subsubsection}{\numberline {3.58.3.123}region}{99}{subsubsection.3.58.3.123}%
-\contentsline {subsubsection}{\numberline {3.58.3.124}regionH}{99}{subsubsection.3.58.3.124}%
-\contentsline {subsubsection}{\numberline {3.58.3.125}result}{99}{subsubsection.3.58.3.125}%
-\contentsline {subsubsection}{\numberline {3.58.3.126}rfAtom}{100}{subsubsection.3.58.3.126}%
-\contentsline {subsubsection}{\numberline {3.58.3.127}ro}{100}{subsubsection.3.58.3.127}%
-\contentsline {subsubsection}{\numberline {3.58.3.128}rx}{100}{subsubsection.3.58.3.128}%
-\contentsline {subsubsection}{\numberline {3.58.3.129}rxUnwrap}{100}{subsubsection.3.58.3.129}%
-\contentsline {subsubsection}{\numberline {3.58.3.130}ry}{100}{subsubsection.3.58.3.130}%
-\contentsline {subsubsection}{\numberline {3.58.3.131}ryUnwrap}{100}{subsubsection.3.58.3.131}%
-\contentsline {subsubsection}{\numberline {3.58.3.132}shearDisplacement}{101}{subsubsection.3.58.3.132}%
-\contentsline {subsubsection}{\numberline {3.58.3.133}shearVelocity}{101}{subsubsection.3.58.3.133}%
-\contentsline {subsubsection}{\numberline {3.58.3.134}size}{101}{subsubsection.3.58.3.134}%
-\contentsline {subsubsection}{\numberline {3.58.3.135}sizeHistRdf}{101}{subsubsection.3.58.3.135}%
-\contentsline {subsubsection}{\numberline {3.58.3.136}sKinEnergy}{101}{subsubsection.3.58.3.136}%
-\contentsline {subsubsection}{\numberline {3.58.3.137}solver}{101}{subsubsection.3.58.3.137}%
-\contentsline {subsubsection}{\numberline {3.58.3.138}spacetimeCorr}{102}{subsubsection.3.58.3.138}%
-\contentsline {subsubsection}{\numberline {3.58.3.139}spacetimeCorrAv}{102}{subsubsection.3.58.3.139}%
-\contentsline {subsubsection}{\numberline {3.58.3.140}speed}{102}{subsubsection.3.58.3.140}%
-\contentsline {subsubsection}{\numberline {3.58.3.141}sPotEnergy}{102}{subsubsection.3.58.3.141}%
-\contentsline {subsubsection}{\numberline {3.58.3.142}sPressure}{102}{subsubsection.3.58.3.142}%
-\contentsline {subsubsection}{\numberline {3.58.3.143}SqrRadiusIJ}{102}{subsubsection.3.58.3.143}%
-\contentsline {subsubsection}{\numberline {3.58.3.144}ssKinEnergy}{103}{subsubsection.3.58.3.144}%
-\contentsline {subsubsection}{\numberline {3.58.3.145}ssPotEnergy}{103}{subsubsection.3.58.3.145}%
-\contentsline {subsubsection}{\numberline {3.58.3.146}ssPressure}{103}{subsubsection.3.58.3.146}%
-\contentsline {subsubsection}{\numberline {3.58.3.147}ssTotEnergy}{103}{subsubsection.3.58.3.147}%
-\contentsline {subsubsection}{\numberline {3.58.3.148}stepAcf}{103}{subsubsection.3.58.3.148}%
-\contentsline {subsubsection}{\numberline {3.58.3.149}stepAvg}{103}{subsubsection.3.58.3.149}%
-\contentsline {subsubsection}{\numberline {3.58.3.150}stepCorr}{104}{subsubsection.3.58.3.150}%
-\contentsline {subsubsection}{\numberline {3.58.3.151}stepCount}{104}{subsubsection.3.58.3.151}%
-\contentsline {subsubsection}{\numberline {3.58.3.152}stepDump}{104}{subsubsection.3.58.3.152}%
-\contentsline {subsubsection}{\numberline {3.58.3.153}stepEquil}{104}{subsubsection.3.58.3.153}%
-\contentsline {subsubsection}{\numberline {3.58.3.154}stepLimit}{104}{subsubsection.3.58.3.154}%
-\contentsline {subsubsection}{\numberline {3.58.3.155}stepRdf}{104}{subsubsection.3.58.3.155}%
-\contentsline {subsubsection}{\numberline {3.58.3.156}stepTraj}{105}{subsubsection.3.58.3.156}%
-\contentsline {subsubsection}{\numberline {3.58.3.157}sTotEnergy}{105}{subsubsection.3.58.3.157}%
-\contentsline {subsubsection}{\numberline {3.58.3.158}strain}{105}{subsubsection.3.58.3.158}%
-\contentsline {subsubsection}{\numberline {3.58.3.159}strainRate}{105}{subsubsection.3.58.3.159}%
-\contentsline {subsubsection}{\numberline {3.58.3.160}strech}{105}{subsubsection.3.58.3.160}%
-\contentsline {subsubsection}{\numberline {3.58.3.161}stress}{105}{subsubsection.3.58.3.161}%
-\contentsline {subsubsection}{\numberline {3.58.3.162}svirSum}{105}{subsubsection.3.58.3.162}%
-\contentsline {subsubsection}{\numberline {3.58.3.163}thermo}{106}{subsubsection.3.58.3.163}%
-\contentsline {subsubsection}{\numberline {3.58.3.164}timeNow}{106}{subsubsection.3.58.3.164}%
-\contentsline {subsubsection}{\numberline {3.58.3.165}TotalBondEnergy}{106}{subsubsection.3.58.3.165}%
-\contentsline {subsubsection}{\numberline {3.58.3.166}TotalMass}{106}{subsubsection.3.58.3.166}%
-\contentsline {subsubsection}{\numberline {3.58.3.167}totEnergy}{106}{subsubsection.3.58.3.167}%
-\contentsline {subsubsection}{\numberline {3.58.3.168}uSum}{106}{subsubsection.3.58.3.168}%
-\contentsline {subsubsection}{\numberline {3.58.3.169}uSumPair}{107}{subsubsection.3.58.3.169}%
-\contentsline {subsubsection}{\numberline {3.58.3.170}uSumPairPerAtom}{107}{subsubsection.3.58.3.170}%
-\contentsline {subsubsection}{\numberline {3.58.3.171}virSum}{107}{subsubsection.3.58.3.171}%
-\contentsline {subsubsection}{\numberline {3.58.3.172}virSumBond}{107}{subsubsection.3.58.3.172}%
-\contentsline {subsubsection}{\numberline {3.58.3.173}virSumBondxx}{107}{subsubsection.3.58.3.173}%
-\contentsline {subsubsection}{\numberline {3.58.3.174}virSumBondxy}{107}{subsubsection.3.58.3.174}%
-\contentsline {subsubsection}{\numberline {3.58.3.175}virSumBondyy}{108}{subsubsection.3.58.3.175}%
-\contentsline {subsubsection}{\numberline {3.58.3.176}virSumPair}{108}{subsubsection.3.58.3.176}%
-\contentsline {subsubsection}{\numberline {3.58.3.177}virSumPairxx}{108}{subsubsection.3.58.3.177}%
-\contentsline {subsubsection}{\numberline {3.58.3.178}virSumPairxy}{108}{subsubsection.3.58.3.178}%
-\contentsline {subsubsection}{\numberline {3.58.3.179}virSumPairyy}{108}{subsubsection.3.58.3.179}%
-\contentsline {subsubsection}{\numberline {3.58.3.180}virSumxx}{108}{subsubsection.3.58.3.180}%
-\contentsline {subsubsection}{\numberline {3.58.3.181}virSumxy}{109}{subsubsection.3.58.3.181}%
-\contentsline {subsubsection}{\numberline {3.58.3.182}virSumyy}{109}{subsubsection.3.58.3.182}%
-\contentsline {subsubsection}{\numberline {3.58.3.183}visc}{109}{subsubsection.3.58.3.183}%
-\contentsline {subsubsection}{\numberline {3.58.3.184}viscAcf}{109}{subsubsection.3.58.3.184}%
-\contentsline {subsubsection}{\numberline {3.58.3.185}viscAcfAv}{109}{subsubsection.3.58.3.185}%
-\contentsline {subsubsection}{\numberline {3.58.3.186}viscAcfInt}{109}{subsubsection.3.58.3.186}%
-\contentsline {subsubsection}{\numberline {3.58.3.187}viscAcfOrg}{110}{subsubsection.3.58.3.187}%
-\contentsline {subsubsection}{\numberline {3.58.3.188}VMeanSqr}{110}{subsubsection.3.58.3.188}%
-\contentsline {subsubsection}{\numberline {3.58.3.189}vrms}{110}{subsubsection.3.58.3.189}%
-\contentsline {subsubsection}{\numberline {3.58.3.190}VRootMeanSqr}{110}{subsubsection.3.58.3.190}%
-\contentsline {subsubsection}{\numberline {3.58.3.191}VSqr}{110}{subsubsection.3.58.3.191}%
-\contentsline {subsubsection}{\numberline {3.58.3.192}vSum}{110}{subsubsection.3.58.3.192}%
-\contentsline {subsubsection}{\numberline {3.58.3.193}vSumX}{111}{subsubsection.3.58.3.193}%
-\contentsline {subsubsection}{\numberline {3.58.3.194}vSumY}{111}{subsubsection.3.58.3.194}%
-\contentsline {subsubsection}{\numberline {3.58.3.195}vvSum}{111}{subsubsection.3.58.3.195}%
-\contentsline {subsubsection}{\numberline {3.58.3.196}vx}{111}{subsubsection.3.58.3.196}%
-\contentsline {subsubsection}{\numberline {3.58.3.197}vy}{111}{subsubsection.3.58.3.197}%
-\contentsline {subsubsection}{\numberline {3.58.3.198}xBoundary}{111}{subsubsection.3.58.3.198}%
-\contentsline {subsubsection}{\numberline {3.58.3.199}xyz}{112}{subsubsection.3.58.3.199}%
-\contentsline {subsubsection}{\numberline {3.58.3.200}yBoundary}{112}{subsubsection.3.58.3.200}%
-\contentsline {section}{\numberline {3.59}global.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{112}{section.3.59}%
-\contentsline {section}{\numberline {3.60}source/global\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Extern.h File Reference}{114}{section.3.60}%
-\contentsline {subsection}{\numberline {3.60.1}Macro Definition Documentation}{118}{subsection.3.60.1}%
-\contentsline {subsubsection}{\numberline {3.60.1.1}NDIM}{118}{subsubsection.3.60.1.1}%
-\contentsline {subsubsection}{\numberline {3.60.1.2}SignR}{118}{subsubsection.3.60.1.2}%
-\contentsline {subsubsection}{\numberline {3.60.1.3}Sqr}{118}{subsubsection.3.60.1.3}%
-\contentsline {subsection}{\numberline {3.60.2}Typedef Documentation}{118}{subsection.3.60.2}%
-\contentsline {subsubsection}{\numberline {3.60.2.1}real}{118}{subsubsection.3.60.2.1}%
-\contentsline {subsection}{\numberline {3.60.3}Variable Documentation}{118}{subsection.3.60.3}%
-\contentsline {subsubsection}{\numberline {3.60.3.1}atom1}{118}{subsubsection.3.60.3.1}%
-\contentsline {subsubsection}{\numberline {3.60.3.2}atom2}{118}{subsubsection.3.60.3.2}%
-\contentsline {subsubsection}{\numberline {3.60.3.3}atomID}{118}{subsubsection.3.60.3.3}%
-\contentsline {subsubsection}{\numberline {3.60.3.4}atomIDInterface}{119}{subsubsection.3.60.3.4}%
-\contentsline {subsubsection}{\numberline {3.60.3.5}atomMass}{119}{subsubsection.3.60.3.5}%
-\contentsline {subsubsection}{\numberline {3.60.3.6}atomRadius}{119}{subsubsection.3.60.3.6}%
-\contentsline {subsubsection}{\numberline {3.60.3.7}atomType}{119}{subsubsection.3.60.3.7}%
-\contentsline {subsubsection}{\numberline {3.60.3.8}ax}{119}{subsubsection.3.60.3.8}%
-\contentsline {subsubsection}{\numberline {3.60.3.9}ay}{119}{subsubsection.3.60.3.9}%
-\contentsline {subsubsection}{\numberline {3.60.3.10}bond}{119}{subsubsection.3.60.3.10}%
-\contentsline {subsubsection}{\numberline {3.60.3.11}BondEnergy}{119}{subsubsection.3.60.3.11}%
-\contentsline {subsubsection}{\numberline {3.60.3.12}BondEnergyPerAtom}{119}{subsubsection.3.60.3.12}%
-\contentsline {subsubsection}{\numberline {3.60.3.13}BondID}{120}{subsubsection.3.60.3.13}%
-\contentsline {subsubsection}{\numberline {3.60.3.14}BondLength}{120}{subsubsection.3.60.3.14}%
-\contentsline {subsubsection}{\numberline {3.60.3.15}BondType}{120}{subsubsection.3.60.3.15}%
-\contentsline {subsubsection}{\numberline {3.60.3.16}cellList}{120}{subsubsection.3.60.3.16}%
-\contentsline {subsubsection}{\numberline {3.60.3.17}cells}{120}{subsubsection.3.60.3.17}%
-\contentsline {subsubsection}{\numberline {3.60.3.18}cfOrg}{120}{subsubsection.3.60.3.18}%
-\contentsline {subsubsection}{\numberline {3.60.3.19}cfVal}{120}{subsubsection.3.60.3.19}%
-\contentsline {subsubsection}{\numberline {3.60.3.20}com}{120}{subsubsection.3.60.3.20}%
-\contentsline {subsubsection}{\numberline {3.60.3.21}ComX}{120}{subsubsection.3.60.3.21}%
-\contentsline {subsubsection}{\numberline {3.60.3.22}ComX0}{121}{subsubsection.3.60.3.22}%
-\contentsline {subsubsection}{\numberline {3.60.3.23}ComXRatio}{121}{subsubsection.3.60.3.23}%
-\contentsline {subsubsection}{\numberline {3.60.3.24}ComY}{121}{subsubsection.3.60.3.24}%
-\contentsline {subsubsection}{\numberline {3.60.3.25}ComY0}{121}{subsubsection.3.60.3.25}%
-\contentsline {subsubsection}{\numberline {3.60.3.26}ComYRatio}{121}{subsubsection.3.60.3.26}%
-\contentsline {subsubsection}{\numberline {3.60.3.27}countAcfAv}{121}{subsubsection.3.60.3.27}%
-\contentsline {subsubsection}{\numberline {3.60.3.28}countCorrAv}{121}{subsubsection.3.60.3.28}%
-\contentsline {subsubsection}{\numberline {3.60.3.29}countRdf}{121}{subsubsection.3.60.3.29}%
-\contentsline {subsubsection}{\numberline {3.60.3.30}DampFlag}{122}{subsubsection.3.60.3.30}%
-\contentsline {subsubsection}{\numberline {3.60.3.31}deltaT}{122}{subsubsection.3.60.3.31}%
-\contentsline {subsubsection}{\numberline {3.60.3.32}DeltaVXij}{122}{subsubsection.3.60.3.32}%
-\contentsline {subsubsection}{\numberline {3.60.3.33}DeltaVYij}{122}{subsubsection.3.60.3.33}%
-\contentsline {subsubsection}{\numberline {3.60.3.34}DeltaX}{122}{subsubsection.3.60.3.34}%
-\contentsline {subsubsection}{\numberline {3.60.3.35}DeltaXij}{122}{subsubsection.3.60.3.35}%
-\contentsline {subsubsection}{\numberline {3.60.3.36}DeltaXijNew}{122}{subsubsection.3.60.3.36}%
-\contentsline {subsubsection}{\numberline {3.60.3.37}DeltaXijOld}{122}{subsubsection.3.60.3.37}%
-\contentsline {subsubsection}{\numberline {3.60.3.38}DeltaXijOldPair}{122}{subsubsection.3.60.3.38}%
-\contentsline {subsubsection}{\numberline {3.60.3.39}DeltaY}{123}{subsubsection.3.60.3.39}%
-\contentsline {subsubsection}{\numberline {3.60.3.40}DeltaYij}{123}{subsubsection.3.60.3.40}%
-\contentsline {subsubsection}{\numberline {3.60.3.41}DeltaYijNew}{123}{subsubsection.3.60.3.41}%
-\contentsline {subsubsection}{\numberline {3.60.3.42}DeltaYijOld}{123}{subsubsection.3.60.3.42}%
-\contentsline {subsubsection}{\numberline {3.60.3.43}DeltaYijOldPair}{123}{subsubsection.3.60.3.43}%
-\contentsline {subsubsection}{\numberline {3.60.3.44}density}{123}{subsubsection.3.60.3.44}%
-\contentsline {subsubsection}{\numberline {3.60.3.45}discDragx}{123}{subsubsection.3.60.3.45}%
-\contentsline {subsubsection}{\numberline {3.60.3.46}discDragy}{123}{subsubsection.3.60.3.46}%
-\contentsline {subsubsection}{\numberline {3.60.3.47}dnsty}{124}{subsubsection.3.60.3.47}%
-\contentsline {subsubsection}{\numberline {3.60.3.48}dump}{124}{subsubsection.3.60.3.48}%
-\contentsline {subsubsection}{\numberline {3.60.3.49}dumpPairFlag}{124}{subsubsection.3.60.3.49}%
-\contentsline {subsubsection}{\numberline {3.60.3.50}fax}{124}{subsubsection.3.60.3.50}%
-\contentsline {subsubsection}{\numberline {3.60.3.51}fay}{124}{subsubsection.3.60.3.51}%
-\contentsline {subsubsection}{\numberline {3.60.3.52}fpbond}{124}{subsubsection.3.60.3.52}%
-\contentsline {subsubsection}{\numberline {3.60.3.53}fpcom}{124}{subsubsection.3.60.3.53}%
-\contentsline {subsubsection}{\numberline {3.60.3.54}fpdnsty}{124}{subsubsection.3.60.3.54}%
-\contentsline {subsubsection}{\numberline {3.60.3.55}fpdump}{124}{subsubsection.3.60.3.55}%
-\contentsline {subsubsection}{\numberline {3.60.3.56}fpmomentum}{124}{subsubsection.3.60.3.56}%
-\contentsline {subsubsection}{\numberline {3.60.3.57}fppair}{125}{subsubsection.3.60.3.57}%
-\contentsline {subsubsection}{\numberline {3.60.3.58}fprdf}{125}{subsubsection.3.60.3.58}%
-\contentsline {subsubsection}{\numberline {3.60.3.59}fpresult}{125}{subsubsection.3.60.3.59}%
-\contentsline {subsubsection}{\numberline {3.60.3.60}fpstress}{125}{subsubsection.3.60.3.60}%
-\contentsline {subsubsection}{\numberline {3.60.3.61}fpvisc}{125}{subsubsection.3.60.3.61}%
-\contentsline {subsubsection}{\numberline {3.60.3.62}fpvrms}{125}{subsubsection.3.60.3.62}%
-\contentsline {subsubsection}{\numberline {3.60.3.63}fpxyz}{125}{subsubsection.3.60.3.63}%
-\contentsline {subsubsection}{\numberline {3.60.3.64}freezeAtomType}{125}{subsubsection.3.60.3.64}%
-\contentsline {subsubsection}{\numberline {3.60.3.65}frfAtom}{125}{subsubsection.3.60.3.65}%
-\contentsline {subsubsection}{\numberline {3.60.3.66}fuSum}{125}{subsubsection.3.60.3.66}%
-\contentsline {subsubsection}{\numberline {3.60.3.67}fvirSum}{126}{subsubsection.3.60.3.67}%
-\contentsline {subsubsection}{\numberline {3.60.3.68}fx}{126}{subsubsection.3.60.3.68}%
-\contentsline {subsubsection}{\numberline {3.60.3.69}fxByfy}{126}{subsubsection.3.60.3.69}%
-\contentsline {subsubsection}{\numberline {3.60.3.70}fy}{126}{subsubsection.3.60.3.70}%
-\contentsline {subsubsection}{\numberline {3.60.3.71}FyBylx}{126}{subsubsection.3.60.3.71}%
-\contentsline {subsubsection}{\numberline {3.60.3.72}gamman}{126}{subsubsection.3.60.3.72}%
-\contentsline {subsubsection}{\numberline {3.60.3.73}HaltCondition}{126}{subsubsection.3.60.3.73}%
-\contentsline {subsubsection}{\numberline {3.60.3.74}histRdf}{126}{subsubsection.3.60.3.74}%
-\contentsline {subsubsection}{\numberline {3.60.3.75}ImageX}{126}{subsubsection.3.60.3.75}%
-\contentsline {subsubsection}{\numberline {3.60.3.76}ImageY}{127}{subsubsection.3.60.3.76}%
-\contentsline {subsubsection}{\numberline {3.60.3.77}indexAcf}{127}{subsubsection.3.60.3.77}%
-\contentsline {subsubsection}{\numberline {3.60.3.78}indexCorr}{127}{subsubsection.3.60.3.78}%
-\contentsline {subsubsection}{\numberline {3.60.3.79}initUcell}{127}{subsubsection.3.60.3.79}%
-\contentsline {subsubsection}{\numberline {3.60.3.80}isBonded}{127}{subsubsection.3.60.3.80}%
-\contentsline {subsubsection}{\numberline {3.60.3.81}kappa}{127}{subsubsection.3.60.3.81}%
-\contentsline {subsubsection}{\numberline {3.60.3.82}kb}{127}{subsubsection.3.60.3.82}%
-\contentsline {subsubsection}{\numberline {3.60.3.83}kinEnergy}{127}{subsubsection.3.60.3.83}%
-\contentsline {subsubsection}{\numberline {3.60.3.84}Kn}{127}{subsubsection.3.60.3.84}%
-\contentsline {subsubsection}{\numberline {3.60.3.85}limitAcfAv}{128}{subsubsection.3.60.3.85}%
-\contentsline {subsubsection}{\numberline {3.60.3.86}limitCorrAv}{128}{subsubsection.3.60.3.86}%
-\contentsline {subsubsection}{\numberline {3.60.3.87}limitRdf}{128}{subsubsection.3.60.3.87}%
-\contentsline {subsubsection}{\numberline {3.60.3.88}master}{128}{subsubsection.3.60.3.88}%
-\contentsline {subsubsection}{\numberline {3.60.3.89}molID}{128}{subsubsection.3.60.3.89}%
-\contentsline {subsubsection}{\numberline {3.60.3.90}momentum}{128}{subsubsection.3.60.3.90}%
-\contentsline {subsubsection}{\numberline {3.60.3.91}moreCycles}{128}{subsubsection.3.60.3.91}%
-\contentsline {subsubsection}{\numberline {3.60.3.92}nAtom}{128}{subsubsection.3.60.3.92}%
-\contentsline {subsubsection}{\numberline {3.60.3.93}nAtomBlock}{129}{subsubsection.3.60.3.93}%
-\contentsline {subsubsection}{\numberline {3.60.3.94}nAtomInterface}{129}{subsubsection.3.60.3.94}%
-\contentsline {subsubsection}{\numberline {3.60.3.95}nAtomType}{129}{subsubsection.3.60.3.95}%
-\contentsline {subsubsection}{\numberline {3.60.3.96}nBond}{129}{subsubsection.3.60.3.96}%
-\contentsline {subsubsection}{\numberline {3.60.3.97}nBondType}{129}{subsubsection.3.60.3.97}%
-\contentsline {subsubsection}{\numberline {3.60.3.98}nBuffAcf}{129}{subsubsection.3.60.3.98}%
-\contentsline {subsubsection}{\numberline {3.60.3.99}nBuffCorr}{129}{subsubsection.3.60.3.99}%
-\contentsline {subsubsection}{\numberline {3.60.3.100}nDiscInterface}{129}{subsubsection.3.60.3.100}%
-\contentsline {subsubsection}{\numberline {3.60.3.101}nFunCorr}{130}{subsubsection.3.60.3.101}%
-\contentsline {subsubsection}{\numberline {3.60.3.102}nodeDragx}{130}{subsubsection.3.60.3.102}%
-\contentsline {subsubsection}{\numberline {3.60.3.103}nodeDragy}{130}{subsubsection.3.60.3.103}%
-\contentsline {subsubsection}{\numberline {3.60.3.104}nPairActive}{130}{subsubsection.3.60.3.104}%
-\contentsline {subsubsection}{\numberline {3.60.3.105}nPairTotal}{130}{subsubsection.3.60.3.105}%
-\contentsline {subsubsection}{\numberline {3.60.3.106}nValAcf}{130}{subsubsection.3.60.3.106}%
-\contentsline {subsubsection}{\numberline {3.60.3.107}nValCorr}{130}{subsubsection.3.60.3.107}%
-\contentsline {subsubsection}{\numberline {3.60.3.108}pair}{130}{subsubsection.3.60.3.108}%
-\contentsline {subsubsection}{\numberline {3.60.3.109}Pairatom1}{131}{subsubsection.3.60.3.109}%
-\contentsline {subsubsection}{\numberline {3.60.3.110}Pairatom2}{131}{subsubsection.3.60.3.110}%
-\contentsline {subsubsection}{\numberline {3.60.3.111}PairID}{131}{subsubsection.3.60.3.111}%
-\contentsline {subsubsection}{\numberline {3.60.3.112}PairXij}{131}{subsubsection.3.60.3.112}%
-\contentsline {subsubsection}{\numberline {3.60.3.113}PairYij}{131}{subsubsection.3.60.3.113}%
-\contentsline {subsubsection}{\numberline {3.60.3.114}potEnergy}{131}{subsubsection.3.60.3.114}%
-\contentsline {subsubsection}{\numberline {3.60.3.115}prefix}{131}{subsubsection.3.60.3.115}%
-\contentsline {subsubsection}{\numberline {3.60.3.116}pressure}{131}{subsubsection.3.60.3.116}%
-\contentsline {subsubsection}{\numberline {3.60.3.117}RadiusIJ}{132}{subsubsection.3.60.3.117}%
-\contentsline {subsubsection}{\numberline {3.60.3.118}RadiusIJInv}{132}{subsubsection.3.60.3.118}%
-\contentsline {subsubsection}{\numberline {3.60.3.119}rangeRdf}{132}{subsubsection.3.60.3.119}%
-\contentsline {subsubsection}{\numberline {3.60.3.120}rank}{132}{subsubsection.3.60.3.120}%
-\contentsline {subsubsection}{\numberline {3.60.3.121}rCut}{132}{subsubsection.3.60.3.121}%
-\contentsline {subsubsection}{\numberline {3.60.3.122}rdf}{132}{subsubsection.3.60.3.122}%
-\contentsline {subsubsection}{\numberline {3.60.3.123}region}{132}{subsubsection.3.60.3.123}%
-\contentsline {subsubsection}{\numberline {3.60.3.124}regionH}{132}{subsubsection.3.60.3.124}%
-\contentsline {subsubsection}{\numberline {3.60.3.125}result}{132}{subsubsection.3.60.3.125}%
-\contentsline {subsubsection}{\numberline {3.60.3.126}rfAtom}{133}{subsubsection.3.60.3.126}%
-\contentsline {subsubsection}{\numberline {3.60.3.127}ro}{133}{subsubsection.3.60.3.127}%
-\contentsline {subsubsection}{\numberline {3.60.3.128}rx}{133}{subsubsection.3.60.3.128}%
-\contentsline {subsubsection}{\numberline {3.60.3.129}rxUnwrap}{133}{subsubsection.3.60.3.129}%
-\contentsline {subsubsection}{\numberline {3.60.3.130}ry}{133}{subsubsection.3.60.3.130}%
-\contentsline {subsubsection}{\numberline {3.60.3.131}ryUnwrap}{133}{subsubsection.3.60.3.131}%
-\contentsline {subsubsection}{\numberline {3.60.3.132}shearDisplacement}{133}{subsubsection.3.60.3.132}%
-\contentsline {subsubsection}{\numberline {3.60.3.133}shearVelocity}{133}{subsubsection.3.60.3.133}%
-\contentsline {subsubsection}{\numberline {3.60.3.134}size}{133}{subsubsection.3.60.3.134}%
-\contentsline {subsubsection}{\numberline {3.60.3.135}sizeHistRdf}{134}{subsubsection.3.60.3.135}%
-\contentsline {subsubsection}{\numberline {3.60.3.136}sKinEnergy}{134}{subsubsection.3.60.3.136}%
-\contentsline {subsubsection}{\numberline {3.60.3.137}solver}{134}{subsubsection.3.60.3.137}%
-\contentsline {subsubsection}{\numberline {3.60.3.138}spacetimeCorr}{134}{subsubsection.3.60.3.138}%
-\contentsline {subsubsection}{\numberline {3.60.3.139}spacetimeCorrAv}{134}{subsubsection.3.60.3.139}%
-\contentsline {subsubsection}{\numberline {3.60.3.140}speed}{134}{subsubsection.3.60.3.140}%
-\contentsline {subsubsection}{\numberline {3.60.3.141}sPotEnergy}{134}{subsubsection.3.60.3.141}%
-\contentsline {subsubsection}{\numberline {3.60.3.142}sPressure}{134}{subsubsection.3.60.3.142}%
-\contentsline {subsubsection}{\numberline {3.60.3.143}SqrRadiusIJ}{135}{subsubsection.3.60.3.143}%
-\contentsline {subsubsection}{\numberline {3.60.3.144}ssKinEnergy}{135}{subsubsection.3.60.3.144}%
-\contentsline {subsubsection}{\numberline {3.60.3.145}ssPotEnergy}{135}{subsubsection.3.60.3.145}%
-\contentsline {subsubsection}{\numberline {3.60.3.146}ssPressure}{135}{subsubsection.3.60.3.146}%
-\contentsline {subsubsection}{\numberline {3.60.3.147}ssTotEnergy}{135}{subsubsection.3.60.3.147}%
-\contentsline {subsubsection}{\numberline {3.60.3.148}stepAcf}{135}{subsubsection.3.60.3.148}%
-\contentsline {subsubsection}{\numberline {3.60.3.149}stepAvg}{135}{subsubsection.3.60.3.149}%
-\contentsline {subsubsection}{\numberline {3.60.3.150}stepCorr}{135}{subsubsection.3.60.3.150}%
-\contentsline {subsubsection}{\numberline {3.60.3.151}stepCount}{136}{subsubsection.3.60.3.151}%
-\contentsline {subsubsection}{\numberline {3.60.3.152}stepDump}{136}{subsubsection.3.60.3.152}%
-\contentsline {subsubsection}{\numberline {3.60.3.153}stepEquil}{136}{subsubsection.3.60.3.153}%
-\contentsline {subsubsection}{\numberline {3.60.3.154}stepLimit}{136}{subsubsection.3.60.3.154}%
-\contentsline {subsubsection}{\numberline {3.60.3.155}stepRdf}{136}{subsubsection.3.60.3.155}%
-\contentsline {subsubsection}{\numberline {3.60.3.156}stepTraj}{136}{subsubsection.3.60.3.156}%
-\contentsline {subsubsection}{\numberline {3.60.3.157}sTotEnergy}{136}{subsubsection.3.60.3.157}%
-\contentsline {subsubsection}{\numberline {3.60.3.158}strain}{136}{subsubsection.3.60.3.158}%
-\contentsline {subsubsection}{\numberline {3.60.3.159}strainRate}{137}{subsubsection.3.60.3.159}%
-\contentsline {subsubsection}{\numberline {3.60.3.160}strech}{137}{subsubsection.3.60.3.160}%
-\contentsline {subsubsection}{\numberline {3.60.3.161}stress}{137}{subsubsection.3.60.3.161}%
-\contentsline {subsubsection}{\numberline {3.60.3.162}svirSum}{137}{subsubsection.3.60.3.162}%
-\contentsline {subsubsection}{\numberline {3.60.3.163}timeNow}{137}{subsubsection.3.60.3.163}%
-\contentsline {subsubsection}{\numberline {3.60.3.164}TotalBondEnergy}{137}{subsubsection.3.60.3.164}%
-\contentsline {subsubsection}{\numberline {3.60.3.165}TotalMass}{137}{subsubsection.3.60.3.165}%
-\contentsline {subsubsection}{\numberline {3.60.3.166}totEnergy}{137}{subsubsection.3.60.3.166}%
-\contentsline {subsubsection}{\numberline {3.60.3.167}uSum}{138}{subsubsection.3.60.3.167}%
-\contentsline {subsubsection}{\numberline {3.60.3.168}uSumPair}{138}{subsubsection.3.60.3.168}%
-\contentsline {subsubsection}{\numberline {3.60.3.169}uSumPairPerAtom}{138}{subsubsection.3.60.3.169}%
-\contentsline {subsubsection}{\numberline {3.60.3.170}virSum}{138}{subsubsection.3.60.3.170}%
-\contentsline {subsubsection}{\numberline {3.60.3.171}virSumBond}{138}{subsubsection.3.60.3.171}%
-\contentsline {subsubsection}{\numberline {3.60.3.172}virSumBondxx}{138}{subsubsection.3.60.3.172}%
-\contentsline {subsubsection}{\numberline {3.60.3.173}virSumBondxy}{138}{subsubsection.3.60.3.173}%
-\contentsline {subsubsection}{\numberline {3.60.3.174}virSumBondyy}{138}{subsubsection.3.60.3.174}%
-\contentsline {subsubsection}{\numberline {3.60.3.175}virSumPair}{139}{subsubsection.3.60.3.175}%
-\contentsline {subsubsection}{\numberline {3.60.3.176}virSumPairxx}{139}{subsubsection.3.60.3.176}%
-\contentsline {subsubsection}{\numberline {3.60.3.177}virSumPairxy}{139}{subsubsection.3.60.3.177}%
-\contentsline {subsubsection}{\numberline {3.60.3.178}virSumPairyy}{139}{subsubsection.3.60.3.178}%
-\contentsline {subsubsection}{\numberline {3.60.3.179}virSumxx}{139}{subsubsection.3.60.3.179}%
-\contentsline {subsubsection}{\numberline {3.60.3.180}virSumxy}{139}{subsubsection.3.60.3.180}%
-\contentsline {subsubsection}{\numberline {3.60.3.181}virSumyy}{139}{subsubsection.3.60.3.181}%
-\contentsline {subsubsection}{\numberline {3.60.3.182}visc}{139}{subsubsection.3.60.3.182}%
-\contentsline {subsubsection}{\numberline {3.60.3.183}viscAcf}{140}{subsubsection.3.60.3.183}%
-\contentsline {subsubsection}{\numberline {3.60.3.184}viscAcfAv}{140}{subsubsection.3.60.3.184}%
-\contentsline {subsubsection}{\numberline {3.60.3.185}viscAcfInt}{140}{subsubsection.3.60.3.185}%
-\contentsline {subsubsection}{\numberline {3.60.3.186}viscAcfOrg}{140}{subsubsection.3.60.3.186}%
-\contentsline {subsubsection}{\numberline {3.60.3.187}VMeanSqr}{140}{subsubsection.3.60.3.187}%
-\contentsline {subsubsection}{\numberline {3.60.3.188}vrms}{140}{subsubsection.3.60.3.188}%
-\contentsline {subsubsection}{\numberline {3.60.3.189}VRootMeanSqr}{140}{subsubsection.3.60.3.189}%
-\contentsline {subsubsection}{\numberline {3.60.3.190}VSqr}{140}{subsubsection.3.60.3.190}%
-\contentsline {subsubsection}{\numberline {3.60.3.191}vSum}{141}{subsubsection.3.60.3.191}%
-\contentsline {subsubsection}{\numberline {3.60.3.192}vSumX}{141}{subsubsection.3.60.3.192}%
-\contentsline {subsubsection}{\numberline {3.60.3.193}vSumY}{141}{subsubsection.3.60.3.193}%
-\contentsline {subsubsection}{\numberline {3.60.3.194}vvSum}{141}{subsubsection.3.60.3.194}%
-\contentsline {subsubsection}{\numberline {3.60.3.195}vx}{141}{subsubsection.3.60.3.195}%
-\contentsline {subsubsection}{\numberline {3.60.3.196}vy}{141}{subsubsection.3.60.3.196}%
-\contentsline {subsubsection}{\numberline {3.60.3.197}xBoundary}{141}{subsubsection.3.60.3.197}%
-\contentsline {subsubsection}{\numberline {3.60.3.198}xyz}{141}{subsubsection.3.60.3.198}%
-\contentsline {subsubsection}{\numberline {3.60.3.199}yBoundary}{142}{subsubsection.3.60.3.199}%
-\contentsline {section}{\numberline {3.61}global\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Extern.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{142}{section.3.61}%
-\contentsline {section}{\numberline {3.62}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Halt.c File Reference}{143}{section.3.62}%
-\contentsline {subsection}{\numberline {3.62.1}Function Documentation}{144}{subsection.3.62.1}%
-\contentsline {subsubsection}{\numberline {3.62.1.1}HaltConditionCheck()}{144}{subsubsection.3.62.1.1}%
-\contentsline {section}{\numberline {3.63}Halt.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{145}{section.3.63}%
-\contentsline {section}{\numberline {3.64}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Init.c File Reference}{145}{section.3.64}%
-\contentsline {subsection}{\numberline {3.64.1}Function Documentation}{146}{subsection.3.64.1}%
-\contentsline {subsubsection}{\numberline {3.64.1.1}Init()}{146}{subsubsection.3.64.1.1}%
-\contentsline {section}{\numberline {3.65}Init.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{149}{section.3.65}%
-\contentsline {section}{\numberline {3.66}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Init\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Vacf.c File Reference}{152}{section.3.66}%
-\contentsline {subsection}{\numberline {3.66.1}Function Documentation}{153}{subsection.3.66.1}%
-\contentsline {subsubsection}{\numberline {3.66.1.1}InitVacf()}{153}{subsubsection.3.66.1.1}%
-\contentsline {subsubsection}{\numberline {3.66.1.2}ZeroVacf()}{154}{subsubsection.3.66.1.2}%
-\contentsline {section}{\numberline {3.67}Init\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Vacf.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{154}{section.3.67}%
-\contentsline {section}{\numberline {3.68}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Integrate.c File Reference}{155}{section.3.68}%
-\contentsline {subsection}{\numberline {3.68.1}Function Documentation}{155}{subsection.3.68.1}%
-\contentsline {subsubsection}{\numberline {3.68.1.1}Integrate()}{155}{subsubsection.3.68.1.1}%
-\contentsline {section}{\numberline {3.69}Integrate.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{156}{section.3.69}%
-\contentsline {section}{\numberline {3.70}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Leapfrog\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Step.c File Reference}{156}{section.3.70}%
-\contentsline {subsection}{\numberline {3.70.1}Function Documentation}{157}{subsection.3.70.1}%
-\contentsline {subsubsection}{\numberline {3.70.1.1}LeapfrogStep()}{157}{subsubsection.3.70.1.1}%
-\contentsline {section}{\numberline {3.71}Leapfrog\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Step.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{158}{section.3.71}%
-\contentsline {section}{\numberline {3.72}source/main.c File Reference}{160}{section.3.72}%
-\contentsline {subsection}{\numberline {3.72.1}Macro Definition Documentation}{162}{subsection.3.72.1}%
-\contentsline {subsubsection}{\numberline {3.72.1.1}DEFINE\_GLOBALS}{162}{subsubsection.3.72.1.1}%
-\contentsline {subsection}{\numberline {3.72.2}Function Documentation}{162}{subsection.3.72.2}%
-\contentsline {subsubsection}{\numberline {3.72.2.1}AccumProps()}{162}{subsubsection.3.72.2.1}%
-\contentsline {subsubsection}{\numberline {3.72.2.2}ApplyBoundaryCond()}{162}{subsubsection.3.72.2.2}%
-\contentsline {subsubsection}{\numberline {3.72.2.3}ApplyDrivingForce()}{163}{subsubsection.3.72.2.3}%
-\contentsline {subsubsection}{\numberline {3.72.2.4}ApplyForce()}{164}{subsubsection.3.72.2.4}%
-\contentsline {subsubsection}{\numberline {3.72.2.5}ApplyLeesEdwardsBoundaryCond()}{164}{subsubsection.3.72.2.5}%
-\contentsline {subsubsection}{\numberline {3.72.2.6}ApplyShear()}{165}{subsubsection.3.72.2.6}%
-\contentsline {subsubsection}{\numberline {3.72.2.7}ApplyViscous()}{165}{subsubsection.3.72.2.7}%
-\contentsline {subsubsection}{\numberline {3.72.2.8}BrownianStep()}{165}{subsubsection.3.72.2.8}%
-\contentsline {subsubsection}{\numberline {3.72.2.9}Close()}{166}{subsubsection.3.72.2.9}%
-\contentsline {subsubsection}{\numberline {3.72.2.10}ComputeForcesCells()}{167}{subsubsection.3.72.2.10}%
-\contentsline {subsubsection}{\numberline {3.72.2.11}DisplaceAtoms()}{169}{subsubsection.3.72.2.11}%
-\contentsline {subsubsection}{\numberline {3.72.2.12}DumpBonds()}{169}{subsubsection.3.72.2.12}%
-\contentsline {subsubsection}{\numberline {3.72.2.13}DumpPairs()}{170}{subsubsection.3.72.2.13}%
-\contentsline {subsubsection}{\numberline {3.72.2.14}DumpRestart()}{171}{subsubsection.3.72.2.14}%
-\contentsline {subsubsection}{\numberline {3.72.2.15}DumpState()}{172}{subsubsection.3.72.2.15}%
-\contentsline {subsubsection}{\numberline {3.72.2.16}EvalCom()}{172}{subsubsection.3.72.2.16}%
-\contentsline {subsubsection}{\numberline {3.72.2.17}EvalProps()}{173}{subsubsection.3.72.2.17}%
-\contentsline {subsubsection}{\numberline {3.72.2.18}EvalRdf()}{174}{subsubsection.3.72.2.18}%
-\contentsline {subsubsection}{\numberline {3.72.2.19}EvalSpacetimeCorr()}{175}{subsubsection.3.72.2.19}%
-\contentsline {subsubsection}{\numberline {3.72.2.20}EvalUnwrap()}{176}{subsubsection.3.72.2.20}%
-\contentsline {subsubsection}{\numberline {3.72.2.21}EvalVacf()}{176}{subsubsection.3.72.2.21}%
-\contentsline {subsubsection}{\numberline {3.72.2.22}EvalVrms()}{177}{subsubsection.3.72.2.22}%
-\contentsline {subsubsection}{\numberline {3.72.2.23}HaltConditionCheck()}{178}{subsubsection.3.72.2.23}%
-\contentsline {subsubsection}{\numberline {3.72.2.24}Init()}{178}{subsubsection.3.72.2.24}%
-\contentsline {subsubsection}{\numberline {3.72.2.25}LeapfrogStep()}{181}{subsubsection.3.72.2.25}%
-\contentsline {subsubsection}{\numberline {3.72.2.26}main()}{181}{subsubsection.3.72.2.26}%
-\contentsline {subsubsection}{\numberline {3.72.2.27}PrintCom()}{184}{subsubsection.3.72.2.27}%
-\contentsline {subsubsection}{\numberline {3.72.2.28}PrintMomentum()}{185}{subsubsection.3.72.2.28}%
-\contentsline {subsubsection}{\numberline {3.72.2.29}PrintStress()}{185}{subsubsection.3.72.2.29}%
-\contentsline {subsubsection}{\numberline {3.72.2.30}PrintSummary()}{186}{subsubsection.3.72.2.30}%
-\contentsline {subsubsection}{\numberline {3.72.2.31}PrintVrms()}{186}{subsubsection.3.72.2.31}%
-\contentsline {subsubsection}{\numberline {3.72.2.32}SetupJob()}{187}{subsubsection.3.72.2.32}%
-\contentsline {subsubsection}{\numberline {3.72.2.33}Trajectory()}{188}{subsubsection.3.72.2.33}%
-\contentsline {subsubsection}{\numberline {3.72.2.34}VelocityVerletStep()}{188}{subsubsection.3.72.2.34}%
-\contentsline {subsection}{\numberline {3.72.3}Variable Documentation}{189}{subsection.3.72.3}%
-\contentsline {subsubsection}{\numberline {3.72.3.1}prefix}{189}{subsubsection.3.72.3.1}%
-\contentsline {section}{\numberline {3.73}main.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{189}{section.3.73}%
-\contentsline {section}{\numberline {3.74}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Print\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Com.c File Reference}{191}{section.3.74}%
-\contentsline {subsection}{\numberline {3.74.1}Function Documentation}{192}{subsection.3.74.1}%
-\contentsline {subsubsection}{\numberline {3.74.1.1}PrintCom()}{192}{subsubsection.3.74.1.1}%
-\contentsline {section}{\numberline {3.75}Print\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Com.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{193}{section.3.75}%
-\contentsline {section}{\numberline {3.76}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Print\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Momentum.c File Reference}{193}{section.3.76}%
-\contentsline {subsection}{\numberline {3.76.1}Function Documentation}{194}{subsection.3.76.1}%
-\contentsline {subsubsection}{\numberline {3.76.1.1}PrintMomentum()}{194}{subsubsection.3.76.1.1}%
-\contentsline {section}{\numberline {3.77}Print\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Momentum.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{194}{section.3.77}%
-\contentsline {section}{\numberline {3.78}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Print\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Stress.c File Reference}{194}{section.3.78}%
-\contentsline {subsection}{\numberline {3.78.1}Function Documentation}{195}{subsection.3.78.1}%
-\contentsline {subsubsection}{\numberline {3.78.1.1}PrintStress()}{195}{subsubsection.3.78.1.1}%
-\contentsline {section}{\numberline {3.79}Print\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Stress.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{195}{section.3.79}%
-\contentsline {section}{\numberline {3.80}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Print\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Summary.c File Reference}{196}{section.3.80}%
-\contentsline {subsection}{\numberline {3.80.1}Function Documentation}{196}{subsection.3.80.1}%
-\contentsline {subsubsection}{\numberline {3.80.1.1}PrintSummary()}{196}{subsubsection.3.80.1.1}%
-\contentsline {section}{\numberline {3.81}Print\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Summary.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{197}{section.3.81}%
-\contentsline {section}{\numberline {3.82}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Print\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Vacf.c File Reference}{197}{section.3.82}%
-\contentsline {subsection}{\numberline {3.82.1}Function Documentation}{198}{subsection.3.82.1}%
-\contentsline {subsubsection}{\numberline {3.82.1.1}PrintVacf()}{198}{subsubsection.3.82.1.1}%
-\contentsline {section}{\numberline {3.83}Print\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Vacf.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{198}{section.3.83}%
-\contentsline {section}{\numberline {3.84}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Print\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Vrms.c File Reference}{199}{section.3.84}%
-\contentsline {subsection}{\numberline {3.84.1}Function Documentation}{199}{subsection.3.84.1}%
-\contentsline {subsubsection}{\numberline {3.84.1.1}PrintVrms()}{199}{subsubsection.3.84.1.1}%
-\contentsline {section}{\numberline {3.85}Print\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Vrms.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{200}{section.3.85}%
-\contentsline {section}{\numberline {3.86}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Setup\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Job.c File Reference}{200}{section.3.86}%
-\contentsline {subsection}{\numberline {3.86.1}Function Documentation}{201}{subsection.3.86.1}%
-\contentsline {subsubsection}{\numberline {3.86.1.1}AccumProps()}{201}{subsubsection.3.86.1.1}%
-\contentsline {subsubsection}{\numberline {3.86.1.2}AllocArrays()}{202}{subsubsection.3.86.1.2}%
-\contentsline {subsubsection}{\numberline {3.86.1.3}InitVacf()}{203}{subsubsection.3.86.1.3}%
-\contentsline {subsubsection}{\numberline {3.86.1.4}SetupJob()}{203}{subsubsection.3.86.1.4}%
-\contentsline {section}{\numberline {3.87}Setup\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Job.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{204}{section.3.87}%
-\contentsline {section}{\numberline {3.88}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Trajectory.c File Reference}{205}{section.3.88}%
-\contentsline {subsection}{\numberline {3.88.1}Function Documentation}{205}{subsection.3.88.1}%
-\contentsline {subsubsection}{\numberline {3.88.1.1}Trajectory()}{205}{subsubsection.3.88.1.1}%
-\contentsline {section}{\numberline {3.89}Trajectory.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{206}{section.3.89}%
-\contentsline {section}{\numberline {3.90}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Velocity\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Verlet\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Step.c File Reference}{207}{section.3.90}%
-\contentsline {subsection}{\numberline {3.90.1}Function Documentation}{207}{subsection.3.90.1}%
-\contentsline {subsubsection}{\numberline {3.90.1.1}VelocityVerletStep()}{207}{subsubsection.3.90.1.1}%
-\contentsline {section}{\numberline {3.91}Velocity\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Verlet\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Step.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{208}{section.3.91}%
-\contentsline {section}{\numberline {3.92}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Zero\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Vacf.c File Reference}{209}{section.3.92}%
-\contentsline {subsection}{\numberline {3.92.1}Function Documentation}{210}{subsection.3.92.1}%
-\contentsline {subsubsection}{\numberline {3.92.1.1}ZeroVacf()}{210}{subsubsection.3.92.1.1}%
-\contentsline {section}{\numberline {3.93}Zero\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Vacf.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{210}{section.3.93}%
-\contentsline {chapter}{Index}{211}{section*.167}%
+\contentsline {chapter}{\numberline {1}Lamina\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}: A Molecular Dynamics Package}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Lamina}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Why "{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Lamina"{}?}{1}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Key Features}{1}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Interaction Potentials}{1}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Thermostats and Temperature Control}{2}{section.1.5}%
+\contentsline {section}{\numberline {1.6}Time Integration}{2}{section.1.6}%
+\contentsline {section}{\numberline {1.7}Physical Observables}{2}{section.1.7}%
+\contentsline {section}{\numberline {1.8}Output and Utilities}{2}{section.1.8}%
+\contentsline {section}{\numberline {1.9}Project Structure}{3}{section.1.9}%
+\contentsline {section}{\numberline {1.10}Installation Instructions}{3}{section.1.10}%
+\contentsline {subsection}{\numberline {1.10.1}Prerequisites}{3}{subsection.1.10.1}%
+\contentsline {subsection}{\numberline {1.10.2}Building Lamina}{3}{subsection.1.10.2}%
+\contentsline {section}{\numberline {1.11}Documentation}{4}{section.1.11}%
+\contentsline {chapter}{\numberline {2}File Index}{5}{chapter.2}%
+\contentsline {section}{\numberline {2.1}File List}{5}{section.2.1}%
+\contentsline {chapter}{\numberline {3}File Documentation}{7}{chapter.3}%
+\contentsline {section}{\numberline {3.1}README.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}md File Reference}{7}{section.3.1}%
+\contentsline {section}{\numberline {3.2}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Accum\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Props.c File Reference}{7}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Function Documentation}{8}{subsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.1.1}AccumProps()}{8}{subsubsection.3.2.1.1}%
+\contentsline {section}{\numberline {3.3}Accum\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Props.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{8}{section.3.3}%
+\contentsline {section}{\numberline {3.4}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Accum\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Vacf.c File Reference}{9}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Function Documentation}{10}{subsection.3.4.1}%
+\contentsline {subsubsection}{\numberline {3.4.1.1}AccumVacf()}{10}{subsubsection.3.4.1.1}%
+\contentsline {subsubsection}{\numberline {3.4.1.2}Integrate()}{11}{subsubsection.3.4.1.2}%
+\contentsline {subsubsection}{\numberline {3.4.1.3}PrintVacf()}{11}{subsubsection.3.4.1.3}%
+\contentsline {subsubsection}{\numberline {3.4.1.4}ZeroVacf()}{12}{subsubsection.3.4.1.4}%
+\contentsline {section}{\numberline {3.5}Accum\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Vacf.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{12}{section.3.5}%
+\contentsline {section}{\numberline {3.6}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Alloc\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Arrays.c File Reference}{13}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Function Documentation}{14}{subsection.3.6.1}%
+\contentsline {subsubsection}{\numberline {3.6.1.1}AllocArrays()}{14}{subsubsection.3.6.1.1}%
+\contentsline {section}{\numberline {3.7}Alloc\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Arrays.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{14}{section.3.7}%
+\contentsline {section}{\numberline {3.8}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Apply\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Boundary\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Cond.c File Reference}{15}{section.3.8}%
+\contentsline {subsection}{\numberline {3.8.1}Function Documentation}{16}{subsection.3.8.1}%
+\contentsline {subsubsection}{\numberline {3.8.1.1}ApplyBoundaryCond()}{16}{subsubsection.3.8.1.1}%
+\contentsline {section}{\numberline {3.9}Apply\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Boundary\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Cond.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{17}{section.3.9}%
+\contentsline {section}{\numberline {3.10}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Apply\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Driving\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Force.c File Reference}{17}{section.3.10}%
+\contentsline {subsection}{\numberline {3.10.1}Function Documentation}{18}{subsection.3.10.1}%
+\contentsline {subsubsection}{\numberline {3.10.1.1}ApplyDrivingForce()}{18}{subsubsection.3.10.1.1}%
+\contentsline {section}{\numberline {3.11}Apply\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Driving\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Force.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{19}{section.3.11}%
+\contentsline {section}{\numberline {3.12}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Apply\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Force.c File Reference}{20}{section.3.12}%
+\contentsline {subsection}{\numberline {3.12.1}Function Documentation}{20}{subsection.3.12.1}%
+\contentsline {subsubsection}{\numberline {3.12.1.1}ApplyForce()}{20}{subsubsection.3.12.1.1}%
+\contentsline {section}{\numberline {3.13}Apply\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Force.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{21}{section.3.13}%
+\contentsline {section}{\numberline {3.14}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Apply\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Lees\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Edwards\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Boundary\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Cond.c File Reference}{21}{section.3.14}%
+\contentsline {subsection}{\numberline {3.14.1}Function Documentation}{22}{subsection.3.14.1}%
+\contentsline {subsubsection}{\numberline {3.14.1.1}ApplyLeesEdwardsBoundaryCond()}{22}{subsubsection.3.14.1.1}%
+\contentsline {section}{\numberline {3.15}Apply\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Lees\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Edwards\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Boundary\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Cond.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{23}{section.3.15}%
+\contentsline {section}{\numberline {3.16}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Apply\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Shear.c File Reference}{23}{section.3.16}%
+\contentsline {subsection}{\numberline {3.16.1}Function Documentation}{24}{subsection.3.16.1}%
+\contentsline {subsubsection}{\numberline {3.16.1.1}ApplyShear()}{24}{subsubsection.3.16.1.1}%
+\contentsline {section}{\numberline {3.17}Apply\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Shear.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{24}{section.3.17}%
+\contentsline {section}{\numberline {3.18}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Apply\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Viscous.c File Reference}{25}{section.3.18}%
+\contentsline {subsection}{\numberline {3.18.1}Function Documentation}{25}{subsection.3.18.1}%
+\contentsline {subsubsection}{\numberline {3.18.1.1}ApplyViscous()}{25}{subsubsection.3.18.1.1}%
+\contentsline {section}{\numberline {3.19}Apply\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Viscous.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{26}{section.3.19}%
+\contentsline {section}{\numberline {3.20}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Brownian\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Step.c File Reference}{26}{section.3.20}%
+\contentsline {subsection}{\numberline {3.20.1}Function Documentation}{27}{subsection.3.20.1}%
+\contentsline {subsubsection}{\numberline {3.20.1.1}BrownianStep()}{27}{subsubsection.3.20.1.1}%
+\contentsline {section}{\numberline {3.21}Brownian\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Step.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{27}{section.3.21}%
+\contentsline {section}{\numberline {3.22}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Close.c File Reference}{28}{section.3.22}%
+\contentsline {subsection}{\numberline {3.22.1}Function Documentation}{29}{subsection.3.22.1}%
+\contentsline {subsubsection}{\numberline {3.22.1.1}Close()}{29}{subsubsection.3.22.1.1}%
+\contentsline {section}{\numberline {3.23}Close.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{30}{section.3.23}%
+\contentsline {section}{\numberline {3.24}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Compute\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Bond\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Force.c File Reference}{31}{section.3.24}%
+\contentsline {subsection}{\numberline {3.24.1}Function Documentation}{32}{subsection.3.24.1}%
+\contentsline {subsubsection}{\numberline {3.24.1.1}ComputeBondForce()}{32}{subsubsection.3.24.1.1}%
+\contentsline {section}{\numberline {3.25}Compute\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Bond\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Force.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{34}{section.3.25}%
+\contentsline {section}{\numberline {3.26}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Compute\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Bond\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Force.h File Reference}{36}{section.3.26}%
+\contentsline {subsection}{\numberline {3.26.1}Function Documentation}{36}{subsection.3.26.1}%
+\contentsline {subsubsection}{\numberline {3.26.1.1}ComputeBondForce()}{36}{subsubsection.3.26.1.1}%
+\contentsline {section}{\numberline {3.27}Compute\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Bond\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Force.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{38}{section.3.27}%
+\contentsline {section}{\numberline {3.28}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Compute\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Forces\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Cells.c File Reference}{38}{section.3.28}%
+\contentsline {subsection}{\numberline {3.28.1}Function Documentation}{39}{subsection.3.28.1}%
+\contentsline {subsubsection}{\numberline {3.28.1.1}ComputeForcesCells()}{39}{subsubsection.3.28.1.1}%
+\contentsline {section}{\numberline {3.29}Compute\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Forces\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Cells.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{41}{section.3.29}%
+\contentsline {section}{\numberline {3.30}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Compute\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pair\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Force.c File Reference}{43}{section.3.30}%
+\contentsline {subsection}{\numberline {3.30.1}Function Documentation}{43}{subsection.3.30.1}%
+\contentsline {subsubsection}{\numberline {3.30.1.1}ComputePairForce()}{43}{subsubsection.3.30.1.1}%
+\contentsline {section}{\numberline {3.31}Compute\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pair\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Force.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{46}{section.3.31}%
+\contentsline {section}{\numberline {3.32}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Compute\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pair\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Force.h File Reference}{48}{section.3.32}%
+\contentsline {subsection}{\numberline {3.32.1}Function Documentation}{49}{subsection.3.32.1}%
+\contentsline {subsubsection}{\numberline {3.32.1.1}ComputePairForce()}{49}{subsubsection.3.32.1.1}%
+\contentsline {section}{\numberline {3.33}Compute\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pair\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Force.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{51}{section.3.33}%
+\contentsline {section}{\numberline {3.34}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Displace\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Atoms.c File Reference}{51}{section.3.34}%
+\contentsline {subsection}{\numberline {3.34.1}Function Documentation}{52}{subsection.3.34.1}%
+\contentsline {subsubsection}{\numberline {3.34.1.1}DisplaceAtoms()}{52}{subsubsection.3.34.1.1}%
+\contentsline {section}{\numberline {3.35}Displace\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Atoms.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{53}{section.3.35}%
+\contentsline {section}{\numberline {3.36}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dump\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Bonds.c File Reference}{53}{section.3.36}%
+\contentsline {subsection}{\numberline {3.36.1}Function Documentation}{54}{subsection.3.36.1}%
+\contentsline {subsubsection}{\numberline {3.36.1.1}DumpBonds()}{54}{subsubsection.3.36.1.1}%
+\contentsline {section}{\numberline {3.37}Dump\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Bonds.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{54}{section.3.37}%
+\contentsline {section}{\numberline {3.38}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dump\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pairs.c File Reference}{55}{section.3.38}%
+\contentsline {subsection}{\numberline {3.38.1}Function Documentation}{55}{subsection.3.38.1}%
+\contentsline {subsubsection}{\numberline {3.38.1.1}DumpPairs()}{55}{subsubsection.3.38.1.1}%
+\contentsline {section}{\numberline {3.39}Dump\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pairs.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{56}{section.3.39}%
+\contentsline {section}{\numberline {3.40}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dump\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Restart.c File Reference}{57}{section.3.40}%
+\contentsline {subsection}{\numberline {3.40.1}Function Documentation}{57}{subsection.3.40.1}%
+\contentsline {subsubsection}{\numberline {3.40.1.1}DumpRestart()}{57}{subsubsection.3.40.1.1}%
+\contentsline {section}{\numberline {3.41}Dump\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Restart.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{58}{section.3.41}%
+\contentsline {section}{\numberline {3.42}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dump\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}State.c File Reference}{59}{section.3.42}%
+\contentsline {subsection}{\numberline {3.42.1}Function Documentation}{60}{subsection.3.42.1}%
+\contentsline {subsubsection}{\numberline {3.42.1.1}DumpState()}{60}{subsubsection.3.42.1.1}%
+\contentsline {section}{\numberline {3.43}Dump\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}State.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{60}{section.3.43}%
+\contentsline {section}{\numberline {3.44}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Eval\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Com.c File Reference}{61}{section.3.44}%
+\contentsline {subsection}{\numberline {3.44.1}Function Documentation}{62}{subsection.3.44.1}%
+\contentsline {subsubsection}{\numberline {3.44.1.1}EvalCom()}{62}{subsubsection.3.44.1.1}%
+\contentsline {section}{\numberline {3.45}Eval\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Com.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{62}{section.3.45}%
+\contentsline {section}{\numberline {3.46}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Eval\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Props.c File Reference}{63}{section.3.46}%
+\contentsline {subsection}{\numberline {3.46.1}Function Documentation}{64}{subsection.3.46.1}%
+\contentsline {subsubsection}{\numberline {3.46.1.1}EvalProps()}{64}{subsubsection.3.46.1.1}%
+\contentsline {section}{\numberline {3.47}Eval\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Props.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{65}{section.3.47}%
+\contentsline {section}{\numberline {3.48}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Eval\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Rdf.c File Reference}{65}{section.3.48}%
+\contentsline {subsection}{\numberline {3.48.1}Function Documentation}{66}{subsection.3.48.1}%
+\contentsline {subsubsection}{\numberline {3.48.1.1}EvalRdf()}{66}{subsubsection.3.48.1.1}%
+\contentsline {section}{\numberline {3.49}Eval\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Rdf.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{67}{section.3.49}%
+\contentsline {section}{\numberline {3.50}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Eval\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Spacetime\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Corr.c File Reference}{68}{section.3.50}%
+\contentsline {subsection}{\numberline {3.50.1}Function Documentation}{68}{subsection.3.50.1}%
+\contentsline {subsubsection}{\numberline {3.50.1.1}EvalSpacetimeCorr()}{68}{subsubsection.3.50.1.1}%
+\contentsline {section}{\numberline {3.51}Eval\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Spacetime\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Corr.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{70}{section.3.51}%
+\contentsline {section}{\numberline {3.52}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Eval\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Unwrap.c File Reference}{71}{section.3.52}%
+\contentsline {subsection}{\numberline {3.52.1}Function Documentation}{72}{subsection.3.52.1}%
+\contentsline {subsubsection}{\numberline {3.52.1.1}EvalUnwrap()}{72}{subsubsection.3.52.1.1}%
+\contentsline {section}{\numberline {3.53}Eval\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Unwrap.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{73}{section.3.53}%
+\contentsline {section}{\numberline {3.54}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Eval\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Vacf.c File Reference}{73}{section.3.54}%
+\contentsline {subsection}{\numberline {3.54.1}Function Documentation}{74}{subsection.3.54.1}%
+\contentsline {subsubsection}{\numberline {3.54.1.1}AccumVacf()}{74}{subsubsection.3.54.1.1}%
+\contentsline {subsubsection}{\numberline {3.54.1.2}EvalVacf()}{75}{subsubsection.3.54.1.2}%
+\contentsline {section}{\numberline {3.55}Eval\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Vacf.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{75}{section.3.55}%
+\contentsline {section}{\numberline {3.56}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Eval\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Vrms.c File Reference}{76}{section.3.56}%
+\contentsline {subsection}{\numberline {3.56.1}Function Documentation}{77}{subsection.3.56.1}%
+\contentsline {subsubsection}{\numberline {3.56.1.1}EvalVrms()}{77}{subsubsection.3.56.1.1}%
+\contentsline {section}{\numberline {3.57}Eval\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Vrms.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{77}{section.3.57}%
+\contentsline {section}{\numberline {3.58}source/global.h File Reference}{78}{section.3.58}%
+\contentsline {subsection}{\numberline {3.58.1}Macro Definition Documentation}{82}{subsection.3.58.1}%
+\contentsline {subsubsection}{\numberline {3.58.1.1}EXTERN}{82}{subsubsection.3.58.1.1}%
+\contentsline {subsubsection}{\numberline {3.58.1.2}NDIM}{82}{subsubsection.3.58.1.2}%
+\contentsline {subsubsection}{\numberline {3.58.1.3}SignR}{83}{subsubsection.3.58.1.3}%
+\contentsline {subsubsection}{\numberline {3.58.1.4}Sqr}{83}{subsubsection.3.58.1.4}%
+\contentsline {subsection}{\numberline {3.58.2}Typedef Documentation}{83}{subsection.3.58.2}%
+\contentsline {subsubsection}{\numberline {3.58.2.1}real}{83}{subsubsection.3.58.2.1}%
+\contentsline {subsection}{\numberline {3.58.3}Variable Documentation}{83}{subsection.3.58.3}%
+\contentsline {subsubsection}{\numberline {3.58.3.1}atom1}{83}{subsubsection.3.58.3.1}%
+\contentsline {subsubsection}{\numberline {3.58.3.2}atom2}{83}{subsubsection.3.58.3.2}%
+\contentsline {subsubsection}{\numberline {3.58.3.3}atomID}{83}{subsubsection.3.58.3.3}%
+\contentsline {subsubsection}{\numberline {3.58.3.4}atomIDInterface}{84}{subsubsection.3.58.3.4}%
+\contentsline {subsubsection}{\numberline {3.58.3.5}atomMass}{84}{subsubsection.3.58.3.5}%
+\contentsline {subsubsection}{\numberline {3.58.3.6}atomRadius}{84}{subsubsection.3.58.3.6}%
+\contentsline {subsubsection}{\numberline {3.58.3.7}atomType}{84}{subsubsection.3.58.3.7}%
+\contentsline {subsubsection}{\numberline {3.58.3.8}ax}{84}{subsubsection.3.58.3.8}%
+\contentsline {subsubsection}{\numberline {3.58.3.9}ay}{84}{subsubsection.3.58.3.9}%
+\contentsline {subsubsection}{\numberline {3.58.3.10}bond}{85}{subsubsection.3.58.3.10}%
+\contentsline {subsubsection}{\numberline {3.58.3.11}BondEnergy}{85}{subsubsection.3.58.3.11}%
+\contentsline {subsubsection}{\numberline {3.58.3.12}BondEnergyPerAtom}{85}{subsubsection.3.58.3.12}%
+\contentsline {subsubsection}{\numberline {3.58.3.13}BondID}{85}{subsubsection.3.58.3.13}%
+\contentsline {subsubsection}{\numberline {3.58.3.14}BondLength}{85}{subsubsection.3.58.3.14}%
+\contentsline {subsubsection}{\numberline {3.58.3.15}BondType}{85}{subsubsection.3.58.3.15}%
+\contentsline {subsubsection}{\numberline {3.58.3.16}cellList}{85}{subsubsection.3.58.3.16}%
+\contentsline {subsubsection}{\numberline {3.58.3.17}cells}{86}{subsubsection.3.58.3.17}%
+\contentsline {subsubsection}{\numberline {3.58.3.18}cfOrg}{86}{subsubsection.3.58.3.18}%
+\contentsline {subsubsection}{\numberline {3.58.3.19}cfVal}{86}{subsubsection.3.58.3.19}%
+\contentsline {subsubsection}{\numberline {3.58.3.20}com}{86}{subsubsection.3.58.3.20}%
+\contentsline {subsubsection}{\numberline {3.58.3.21}ComX}{86}{subsubsection.3.58.3.21}%
+\contentsline {subsubsection}{\numberline {3.58.3.22}ComX0}{86}{subsubsection.3.58.3.22}%
+\contentsline {subsubsection}{\numberline {3.58.3.23}ComXRatio}{86}{subsubsection.3.58.3.23}%
+\contentsline {subsubsection}{\numberline {3.58.3.24}ComY}{87}{subsubsection.3.58.3.24}%
+\contentsline {subsubsection}{\numberline {3.58.3.25}ComY0}{87}{subsubsection.3.58.3.25}%
+\contentsline {subsubsection}{\numberline {3.58.3.26}ComYRatio}{87}{subsubsection.3.58.3.26}%
+\contentsline {subsubsection}{\numberline {3.58.3.27}countAcfAv}{87}{subsubsection.3.58.3.27}%
+\contentsline {subsubsection}{\numberline {3.58.3.28}countCorrAv}{87}{subsubsection.3.58.3.28}%
+\contentsline {subsubsection}{\numberline {3.58.3.29}countRdf}{87}{subsubsection.3.58.3.29}%
+\contentsline {subsubsection}{\numberline {3.58.3.30}DampFlag}{88}{subsubsection.3.58.3.30}%
+\contentsline {subsubsection}{\numberline {3.58.3.31}deltaT}{88}{subsubsection.3.58.3.31}%
+\contentsline {subsubsection}{\numberline {3.58.3.32}DeltaVXij}{88}{subsubsection.3.58.3.32}%
+\contentsline {subsubsection}{\numberline {3.58.3.33}DeltaVYij}{88}{subsubsection.3.58.3.33}%
+\contentsline {subsubsection}{\numberline {3.58.3.34}DeltaX}{88}{subsubsection.3.58.3.34}%
+\contentsline {subsubsection}{\numberline {3.58.3.35}DeltaXij}{88}{subsubsection.3.58.3.35}%
+\contentsline {subsubsection}{\numberline {3.58.3.36}DeltaXijNew}{89}{subsubsection.3.58.3.36}%
+\contentsline {subsubsection}{\numberline {3.58.3.37}DeltaXijOld}{89}{subsubsection.3.58.3.37}%
+\contentsline {subsubsection}{\numberline {3.58.3.38}DeltaXijOldPair}{89}{subsubsection.3.58.3.38}%
+\contentsline {subsubsection}{\numberline {3.58.3.39}DeltaY}{89}{subsubsection.3.58.3.39}%
+\contentsline {subsubsection}{\numberline {3.58.3.40}DeltaYij}{89}{subsubsection.3.58.3.40}%
+\contentsline {subsubsection}{\numberline {3.58.3.41}DeltaYijNew}{89}{subsubsection.3.58.3.41}%
+\contentsline {subsubsection}{\numberline {3.58.3.42}DeltaYijOld}{89}{subsubsection.3.58.3.42}%
+\contentsline {subsubsection}{\numberline {3.58.3.43}DeltaYijOldPair}{90}{subsubsection.3.58.3.43}%
+\contentsline {subsubsection}{\numberline {3.58.3.44}density}{90}{subsubsection.3.58.3.44}%
+\contentsline {subsubsection}{\numberline {3.58.3.45}discDragx}{90}{subsubsection.3.58.3.45}%
+\contentsline {subsubsection}{\numberline {3.58.3.46}discDragy}{90}{subsubsection.3.58.3.46}%
+\contentsline {subsubsection}{\numberline {3.58.3.47}dnsty}{90}{subsubsection.3.58.3.47}%
+\contentsline {subsubsection}{\numberline {3.58.3.48}dump}{90}{subsubsection.3.58.3.48}%
+\contentsline {subsubsection}{\numberline {3.58.3.49}dumpPairFlag}{90}{subsubsection.3.58.3.49}%
+\contentsline {subsubsection}{\numberline {3.58.3.50}fax}{90}{subsubsection.3.58.3.50}%
+\contentsline {subsubsection}{\numberline {3.58.3.51}fay}{91}{subsubsection.3.58.3.51}%
+\contentsline {subsubsection}{\numberline {3.58.3.52}fpbond}{91}{subsubsection.3.58.3.52}%
+\contentsline {subsubsection}{\numberline {3.58.3.53}fpcom}{91}{subsubsection.3.58.3.53}%
+\contentsline {subsubsection}{\numberline {3.58.3.54}fpdnsty}{91}{subsubsection.3.58.3.54}%
+\contentsline {subsubsection}{\numberline {3.58.3.55}fpdump}{91}{subsubsection.3.58.3.55}%
+\contentsline {subsubsection}{\numberline {3.58.3.56}fpmomentum}{91}{subsubsection.3.58.3.56}%
+\contentsline {subsubsection}{\numberline {3.58.3.57}fppair}{91}{subsubsection.3.58.3.57}%
+\contentsline {subsubsection}{\numberline {3.58.3.58}fprdf}{91}{subsubsection.3.58.3.58}%
+\contentsline {subsubsection}{\numberline {3.58.3.59}fpresult}{92}{subsubsection.3.58.3.59}%
+\contentsline {subsubsection}{\numberline {3.58.3.60}fpstress}{92}{subsubsection.3.58.3.60}%
+\contentsline {subsubsection}{\numberline {3.58.3.61}fpvisc}{92}{subsubsection.3.58.3.61}%
+\contentsline {subsubsection}{\numberline {3.58.3.62}fpvrms}{92}{subsubsection.3.58.3.62}%
+\contentsline {subsubsection}{\numberline {3.58.3.63}fpxyz}{92}{subsubsection.3.58.3.63}%
+\contentsline {subsubsection}{\numberline {3.58.3.64}freezeAtomType}{92}{subsubsection.3.58.3.64}%
+\contentsline {subsubsection}{\numberline {3.58.3.65}frfAtom}{92}{subsubsection.3.58.3.65}%
+\contentsline {subsubsection}{\numberline {3.58.3.66}fuSum}{92}{subsubsection.3.58.3.66}%
+\contentsline {subsubsection}{\numberline {3.58.3.67}fvirSum}{93}{subsubsection.3.58.3.67}%
+\contentsline {subsubsection}{\numberline {3.58.3.68}fx}{93}{subsubsection.3.58.3.68}%
+\contentsline {subsubsection}{\numberline {3.58.3.69}fxByfy}{93}{subsubsection.3.58.3.69}%
+\contentsline {subsubsection}{\numberline {3.58.3.70}fy}{93}{subsubsection.3.58.3.70}%
+\contentsline {subsubsection}{\numberline {3.58.3.71}FyBylx}{93}{subsubsection.3.58.3.71}%
+\contentsline {subsubsection}{\numberline {3.58.3.72}gamman}{93}{subsubsection.3.58.3.72}%
+\contentsline {subsubsection}{\numberline {3.58.3.73}HaltCondition}{93}{subsubsection.3.58.3.73}%
+\contentsline {subsubsection}{\numberline {3.58.3.74}histRdf}{94}{subsubsection.3.58.3.74}%
+\contentsline {subsubsection}{\numberline {3.58.3.75}ImageX}{94}{subsubsection.3.58.3.75}%
+\contentsline {subsubsection}{\numberline {3.58.3.76}ImageY}{94}{subsubsection.3.58.3.76}%
+\contentsline {subsubsection}{\numberline {3.58.3.77}indexAcf}{94}{subsubsection.3.58.3.77}%
+\contentsline {subsubsection}{\numberline {3.58.3.78}indexCorr}{94}{subsubsection.3.58.3.78}%
+\contentsline {subsubsection}{\numberline {3.58.3.79}initUcell}{94}{subsubsection.3.58.3.79}%
+\contentsline {subsubsection}{\numberline {3.58.3.80}isBonded}{94}{subsubsection.3.58.3.80}%
+\contentsline {subsubsection}{\numberline {3.58.3.81}kappa}{95}{subsubsection.3.58.3.81}%
+\contentsline {subsubsection}{\numberline {3.58.3.82}kb}{95}{subsubsection.3.58.3.82}%
+\contentsline {subsubsection}{\numberline {3.58.3.83}kinEnergy}{95}{subsubsection.3.58.3.83}%
+\contentsline {subsubsection}{\numberline {3.58.3.84}Kn}{95}{subsubsection.3.58.3.84}%
+\contentsline {subsubsection}{\numberline {3.58.3.85}limitAcfAv}{95}{subsubsection.3.58.3.85}%
+\contentsline {subsubsection}{\numberline {3.58.3.86}limitCorrAv}{95}{subsubsection.3.58.3.86}%
+\contentsline {subsubsection}{\numberline {3.58.3.87}limitRdf}{96}{subsubsection.3.58.3.87}%
+\contentsline {subsubsection}{\numberline {3.58.3.88}master}{96}{subsubsection.3.58.3.88}%
+\contentsline {subsubsection}{\numberline {3.58.3.89}molID}{96}{subsubsection.3.58.3.89}%
+\contentsline {subsubsection}{\numberline {3.58.3.90}momentum}{96}{subsubsection.3.58.3.90}%
+\contentsline {subsubsection}{\numberline {3.58.3.91}moreCycles}{96}{subsubsection.3.58.3.91}%
+\contentsline {subsubsection}{\numberline {3.58.3.92}nAtom}{96}{subsubsection.3.58.3.92}%
+\contentsline {subsubsection}{\numberline {3.58.3.93}nAtomBlock}{97}{subsubsection.3.58.3.93}%
+\contentsline {subsubsection}{\numberline {3.58.3.94}nAtomInterface}{97}{subsubsection.3.58.3.94}%
+\contentsline {subsubsection}{\numberline {3.58.3.95}nAtomType}{97}{subsubsection.3.58.3.95}%
+\contentsline {subsubsection}{\numberline {3.58.3.96}nBond}{97}{subsubsection.3.58.3.96}%
+\contentsline {subsubsection}{\numberline {3.58.3.97}nBondType}{97}{subsubsection.3.58.3.97}%
+\contentsline {subsubsection}{\numberline {3.58.3.98}nBuffAcf}{97}{subsubsection.3.58.3.98}%
+\contentsline {subsubsection}{\numberline {3.58.3.99}nBuffCorr}{97}{subsubsection.3.58.3.99}%
+\contentsline {subsubsection}{\numberline {3.58.3.100}nDiscInterface}{98}{subsubsection.3.58.3.100}%
+\contentsline {subsubsection}{\numberline {3.58.3.101}nFunCorr}{98}{subsubsection.3.58.3.101}%
+\contentsline {subsubsection}{\numberline {3.58.3.102}nodeDragx}{98}{subsubsection.3.58.3.102}%
+\contentsline {subsubsection}{\numberline {3.58.3.103}nodeDragy}{98}{subsubsection.3.58.3.103}%
+\contentsline {subsubsection}{\numberline {3.58.3.104}nPairActive}{98}{subsubsection.3.58.3.104}%
+\contentsline {subsubsection}{\numberline {3.58.3.105}nPairTotal}{98}{subsubsection.3.58.3.105}%
+\contentsline {subsubsection}{\numberline {3.58.3.106}nValAcf}{99}{subsubsection.3.58.3.106}%
+\contentsline {subsubsection}{\numberline {3.58.3.107}nValCorr}{99}{subsubsection.3.58.3.107}%
+\contentsline {subsubsection}{\numberline {3.58.3.108}pair}{99}{subsubsection.3.58.3.108}%
+\contentsline {subsubsection}{\numberline {3.58.3.109}Pairatom1}{99}{subsubsection.3.58.3.109}%
+\contentsline {subsubsection}{\numberline {3.58.3.110}Pairatom2}{99}{subsubsection.3.58.3.110}%
+\contentsline {subsubsection}{\numberline {3.58.3.111}PairID}{99}{subsubsection.3.58.3.111}%
+\contentsline {subsubsection}{\numberline {3.58.3.112}PairXij}{99}{subsubsection.3.58.3.112}%
+\contentsline {subsubsection}{\numberline {3.58.3.113}PairYij}{100}{subsubsection.3.58.3.113}%
+\contentsline {subsubsection}{\numberline {3.58.3.114}potEnergy}{100}{subsubsection.3.58.3.114}%
+\contentsline {subsubsection}{\numberline {3.58.3.115}prefix}{100}{subsubsection.3.58.3.115}%
+\contentsline {subsubsection}{\numberline {3.58.3.116}pressure}{100}{subsubsection.3.58.3.116}%
+\contentsline {subsubsection}{\numberline {3.58.3.117}RadiusIJ}{100}{subsubsection.3.58.3.117}%
+\contentsline {subsubsection}{\numberline {3.58.3.118}RadiusIJInv}{100}{subsubsection.3.58.3.118}%
+\contentsline {subsubsection}{\numberline {3.58.3.119}rangeRdf}{101}{subsubsection.3.58.3.119}%
+\contentsline {subsubsection}{\numberline {3.58.3.120}rank}{101}{subsubsection.3.58.3.120}%
+\contentsline {subsubsection}{\numberline {3.58.3.121}rCut}{101}{subsubsection.3.58.3.121}%
+\contentsline {subsubsection}{\numberline {3.58.3.122}rdf}{101}{subsubsection.3.58.3.122}%
+\contentsline {subsubsection}{\numberline {3.58.3.123}region}{101}{subsubsection.3.58.3.123}%
+\contentsline {subsubsection}{\numberline {3.58.3.124}regionH}{101}{subsubsection.3.58.3.124}%
+\contentsline {subsubsection}{\numberline {3.58.3.125}result}{101}{subsubsection.3.58.3.125}%
+\contentsline {subsubsection}{\numberline {3.58.3.126}rfAtom}{102}{subsubsection.3.58.3.126}%
+\contentsline {subsubsection}{\numberline {3.58.3.127}ro}{102}{subsubsection.3.58.3.127}%
+\contentsline {subsubsection}{\numberline {3.58.3.128}rx}{102}{subsubsection.3.58.3.128}%
+\contentsline {subsubsection}{\numberline {3.58.3.129}rxUnwrap}{102}{subsubsection.3.58.3.129}%
+\contentsline {subsubsection}{\numberline {3.58.3.130}ry}{102}{subsubsection.3.58.3.130}%
+\contentsline {subsubsection}{\numberline {3.58.3.131}ryUnwrap}{102}{subsubsection.3.58.3.131}%
+\contentsline {subsubsection}{\numberline {3.58.3.132}shearDisplacement}{103}{subsubsection.3.58.3.132}%
+\contentsline {subsubsection}{\numberline {3.58.3.133}shearVelocity}{103}{subsubsection.3.58.3.133}%
+\contentsline {subsubsection}{\numberline {3.58.3.134}size}{103}{subsubsection.3.58.3.134}%
+\contentsline {subsubsection}{\numberline {3.58.3.135}sizeHistRdf}{103}{subsubsection.3.58.3.135}%
+\contentsline {subsubsection}{\numberline {3.58.3.136}sKinEnergy}{103}{subsubsection.3.58.3.136}%
+\contentsline {subsubsection}{\numberline {3.58.3.137}solver}{103}{subsubsection.3.58.3.137}%
+\contentsline {subsubsection}{\numberline {3.58.3.138}spacetimeCorr}{104}{subsubsection.3.58.3.138}%
+\contentsline {subsubsection}{\numberline {3.58.3.139}spacetimeCorrAv}{104}{subsubsection.3.58.3.139}%
+\contentsline {subsubsection}{\numberline {3.58.3.140}speed}{104}{subsubsection.3.58.3.140}%
+\contentsline {subsubsection}{\numberline {3.58.3.141}sPotEnergy}{104}{subsubsection.3.58.3.141}%
+\contentsline {subsubsection}{\numberline {3.58.3.142}sPressure}{104}{subsubsection.3.58.3.142}%
+\contentsline {subsubsection}{\numberline {3.58.3.143}SqrRadiusIJ}{104}{subsubsection.3.58.3.143}%
+\contentsline {subsubsection}{\numberline {3.58.3.144}ssKinEnergy}{105}{subsubsection.3.58.3.144}%
+\contentsline {subsubsection}{\numberline {3.58.3.145}ssPotEnergy}{105}{subsubsection.3.58.3.145}%
+\contentsline {subsubsection}{\numberline {3.58.3.146}ssPressure}{105}{subsubsection.3.58.3.146}%
+\contentsline {subsubsection}{\numberline {3.58.3.147}ssTotEnergy}{105}{subsubsection.3.58.3.147}%
+\contentsline {subsubsection}{\numberline {3.58.3.148}stepAcf}{105}{subsubsection.3.58.3.148}%
+\contentsline {subsubsection}{\numberline {3.58.3.149}stepAvg}{105}{subsubsection.3.58.3.149}%
+\contentsline {subsubsection}{\numberline {3.58.3.150}stepCorr}{106}{subsubsection.3.58.3.150}%
+\contentsline {subsubsection}{\numberline {3.58.3.151}stepCount}{106}{subsubsection.3.58.3.151}%
+\contentsline {subsubsection}{\numberline {3.58.3.152}stepDump}{106}{subsubsection.3.58.3.152}%
+\contentsline {subsubsection}{\numberline {3.58.3.153}stepEquil}{106}{subsubsection.3.58.3.153}%
+\contentsline {subsubsection}{\numberline {3.58.3.154}stepLimit}{106}{subsubsection.3.58.3.154}%
+\contentsline {subsubsection}{\numberline {3.58.3.155}stepRdf}{106}{subsubsection.3.58.3.155}%
+\contentsline {subsubsection}{\numberline {3.58.3.156}stepTraj}{107}{subsubsection.3.58.3.156}%
+\contentsline {subsubsection}{\numberline {3.58.3.157}sTotEnergy}{107}{subsubsection.3.58.3.157}%
+\contentsline {subsubsection}{\numberline {3.58.3.158}strain}{107}{subsubsection.3.58.3.158}%
+\contentsline {subsubsection}{\numberline {3.58.3.159}strainRate}{107}{subsubsection.3.58.3.159}%
+\contentsline {subsubsection}{\numberline {3.58.3.160}strech}{107}{subsubsection.3.58.3.160}%
+\contentsline {subsubsection}{\numberline {3.58.3.161}stress}{107}{subsubsection.3.58.3.161}%
+\contentsline {subsubsection}{\numberline {3.58.3.162}svirSum}{107}{subsubsection.3.58.3.162}%
+\contentsline {subsubsection}{\numberline {3.58.3.163}thermo}{108}{subsubsection.3.58.3.163}%
+\contentsline {subsubsection}{\numberline {3.58.3.164}timeNow}{108}{subsubsection.3.58.3.164}%
+\contentsline {subsubsection}{\numberline {3.58.3.165}TotalBondEnergy}{108}{subsubsection.3.58.3.165}%
+\contentsline {subsubsection}{\numberline {3.58.3.166}TotalMass}{108}{subsubsection.3.58.3.166}%
+\contentsline {subsubsection}{\numberline {3.58.3.167}totEnergy}{108}{subsubsection.3.58.3.167}%
+\contentsline {subsubsection}{\numberline {3.58.3.168}uSum}{108}{subsubsection.3.58.3.168}%
+\contentsline {subsubsection}{\numberline {3.58.3.169}uSumPair}{109}{subsubsection.3.58.3.169}%
+\contentsline {subsubsection}{\numberline {3.58.3.170}uSumPairPerAtom}{109}{subsubsection.3.58.3.170}%
+\contentsline {subsubsection}{\numberline {3.58.3.171}virSum}{109}{subsubsection.3.58.3.171}%
+\contentsline {subsubsection}{\numberline {3.58.3.172}virSumBond}{109}{subsubsection.3.58.3.172}%
+\contentsline {subsubsection}{\numberline {3.58.3.173}virSumBondxx}{109}{subsubsection.3.58.3.173}%
+\contentsline {subsubsection}{\numberline {3.58.3.174}virSumBondxy}{109}{subsubsection.3.58.3.174}%
+\contentsline {subsubsection}{\numberline {3.58.3.175}virSumBondyy}{110}{subsubsection.3.58.3.175}%
+\contentsline {subsubsection}{\numberline {3.58.3.176}virSumPair}{110}{subsubsection.3.58.3.176}%
+\contentsline {subsubsection}{\numberline {3.58.3.177}virSumPairxx}{110}{subsubsection.3.58.3.177}%
+\contentsline {subsubsection}{\numberline {3.58.3.178}virSumPairxy}{110}{subsubsection.3.58.3.178}%
+\contentsline {subsubsection}{\numberline {3.58.3.179}virSumPairyy}{110}{subsubsection.3.58.3.179}%
+\contentsline {subsubsection}{\numberline {3.58.3.180}virSumxx}{110}{subsubsection.3.58.3.180}%
+\contentsline {subsubsection}{\numberline {3.58.3.181}virSumxy}{111}{subsubsection.3.58.3.181}%
+\contentsline {subsubsection}{\numberline {3.58.3.182}virSumyy}{111}{subsubsection.3.58.3.182}%
+\contentsline {subsubsection}{\numberline {3.58.3.183}visc}{111}{subsubsection.3.58.3.183}%
+\contentsline {subsubsection}{\numberline {3.58.3.184}viscAcf}{111}{subsubsection.3.58.3.184}%
+\contentsline {subsubsection}{\numberline {3.58.3.185}viscAcfAv}{111}{subsubsection.3.58.3.185}%
+\contentsline {subsubsection}{\numberline {3.58.3.186}viscAcfInt}{111}{subsubsection.3.58.3.186}%
+\contentsline {subsubsection}{\numberline {3.58.3.187}viscAcfOrg}{112}{subsubsection.3.58.3.187}%
+\contentsline {subsubsection}{\numberline {3.58.3.188}VMeanSqr}{112}{subsubsection.3.58.3.188}%
+\contentsline {subsubsection}{\numberline {3.58.3.189}vrms}{112}{subsubsection.3.58.3.189}%
+\contentsline {subsubsection}{\numberline {3.58.3.190}VRootMeanSqr}{112}{subsubsection.3.58.3.190}%
+\contentsline {subsubsection}{\numberline {3.58.3.191}VSqr}{112}{subsubsection.3.58.3.191}%
+\contentsline {subsubsection}{\numberline {3.58.3.192}vSum}{112}{subsubsection.3.58.3.192}%
+\contentsline {subsubsection}{\numberline {3.58.3.193}vSumX}{113}{subsubsection.3.58.3.193}%
+\contentsline {subsubsection}{\numberline {3.58.3.194}vSumY}{113}{subsubsection.3.58.3.194}%
+\contentsline {subsubsection}{\numberline {3.58.3.195}vvSum}{113}{subsubsection.3.58.3.195}%
+\contentsline {subsubsection}{\numberline {3.58.3.196}vx}{113}{subsubsection.3.58.3.196}%
+\contentsline {subsubsection}{\numberline {3.58.3.197}vy}{113}{subsubsection.3.58.3.197}%
+\contentsline {subsubsection}{\numberline {3.58.3.198}xBoundary}{113}{subsubsection.3.58.3.198}%
+\contentsline {subsubsection}{\numberline {3.58.3.199}xyz}{114}{subsubsection.3.58.3.199}%
+\contentsline {subsubsection}{\numberline {3.58.3.200}yBoundary}{114}{subsubsection.3.58.3.200}%
+\contentsline {section}{\numberline {3.59}global.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{114}{section.3.59}%
+\contentsline {section}{\numberline {3.60}source/global\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Extern.h File Reference}{116}{section.3.60}%
+\contentsline {subsection}{\numberline {3.60.1}Macro Definition Documentation}{120}{subsection.3.60.1}%
+\contentsline {subsubsection}{\numberline {3.60.1.1}NDIM}{120}{subsubsection.3.60.1.1}%
+\contentsline {subsubsection}{\numberline {3.60.1.2}SignR}{120}{subsubsection.3.60.1.2}%
+\contentsline {subsubsection}{\numberline {3.60.1.3}Sqr}{120}{subsubsection.3.60.1.3}%
+\contentsline {subsection}{\numberline {3.60.2}Typedef Documentation}{120}{subsection.3.60.2}%
+\contentsline {subsubsection}{\numberline {3.60.2.1}real}{120}{subsubsection.3.60.2.1}%
+\contentsline {subsection}{\numberline {3.60.3}Variable Documentation}{120}{subsection.3.60.3}%
+\contentsline {subsubsection}{\numberline {3.60.3.1}atom1}{120}{subsubsection.3.60.3.1}%
+\contentsline {subsubsection}{\numberline {3.60.3.2}atom2}{120}{subsubsection.3.60.3.2}%
+\contentsline {subsubsection}{\numberline {3.60.3.3}atomID}{120}{subsubsection.3.60.3.3}%
+\contentsline {subsubsection}{\numberline {3.60.3.4}atomIDInterface}{121}{subsubsection.3.60.3.4}%
+\contentsline {subsubsection}{\numberline {3.60.3.5}atomMass}{121}{subsubsection.3.60.3.5}%
+\contentsline {subsubsection}{\numberline {3.60.3.6}atomRadius}{121}{subsubsection.3.60.3.6}%
+\contentsline {subsubsection}{\numberline {3.60.3.7}atomType}{121}{subsubsection.3.60.3.7}%
+\contentsline {subsubsection}{\numberline {3.60.3.8}ax}{121}{subsubsection.3.60.3.8}%
+\contentsline {subsubsection}{\numberline {3.60.3.9}ay}{121}{subsubsection.3.60.3.9}%
+\contentsline {subsubsection}{\numberline {3.60.3.10}bond}{121}{subsubsection.3.60.3.10}%
+\contentsline {subsubsection}{\numberline {3.60.3.11}BondEnergy}{121}{subsubsection.3.60.3.11}%
+\contentsline {subsubsection}{\numberline {3.60.3.12}BondEnergyPerAtom}{121}{subsubsection.3.60.3.12}%
+\contentsline {subsubsection}{\numberline {3.60.3.13}BondID}{122}{subsubsection.3.60.3.13}%
+\contentsline {subsubsection}{\numberline {3.60.3.14}BondLength}{122}{subsubsection.3.60.3.14}%
+\contentsline {subsubsection}{\numberline {3.60.3.15}BondType}{122}{subsubsection.3.60.3.15}%
+\contentsline {subsubsection}{\numberline {3.60.3.16}cellList}{122}{subsubsection.3.60.3.16}%
+\contentsline {subsubsection}{\numberline {3.60.3.17}cells}{122}{subsubsection.3.60.3.17}%
+\contentsline {subsubsection}{\numberline {3.60.3.18}cfOrg}{122}{subsubsection.3.60.3.18}%
+\contentsline {subsubsection}{\numberline {3.60.3.19}cfVal}{122}{subsubsection.3.60.3.19}%
+\contentsline {subsubsection}{\numberline {3.60.3.20}com}{122}{subsubsection.3.60.3.20}%
+\contentsline {subsubsection}{\numberline {3.60.3.21}ComX}{122}{subsubsection.3.60.3.21}%
+\contentsline {subsubsection}{\numberline {3.60.3.22}ComX0}{123}{subsubsection.3.60.3.22}%
+\contentsline {subsubsection}{\numberline {3.60.3.23}ComXRatio}{123}{subsubsection.3.60.3.23}%
+\contentsline {subsubsection}{\numberline {3.60.3.24}ComY}{123}{subsubsection.3.60.3.24}%
+\contentsline {subsubsection}{\numberline {3.60.3.25}ComY0}{123}{subsubsection.3.60.3.25}%
+\contentsline {subsubsection}{\numberline {3.60.3.26}ComYRatio}{123}{subsubsection.3.60.3.26}%
+\contentsline {subsubsection}{\numberline {3.60.3.27}countAcfAv}{123}{subsubsection.3.60.3.27}%
+\contentsline {subsubsection}{\numberline {3.60.3.28}countCorrAv}{123}{subsubsection.3.60.3.28}%
+\contentsline {subsubsection}{\numberline {3.60.3.29}countRdf}{123}{subsubsection.3.60.3.29}%
+\contentsline {subsubsection}{\numberline {3.60.3.30}DampFlag}{124}{subsubsection.3.60.3.30}%
+\contentsline {subsubsection}{\numberline {3.60.3.31}deltaT}{124}{subsubsection.3.60.3.31}%
+\contentsline {subsubsection}{\numberline {3.60.3.32}DeltaVXij}{124}{subsubsection.3.60.3.32}%
+\contentsline {subsubsection}{\numberline {3.60.3.33}DeltaVYij}{124}{subsubsection.3.60.3.33}%
+\contentsline {subsubsection}{\numberline {3.60.3.34}DeltaX}{124}{subsubsection.3.60.3.34}%
+\contentsline {subsubsection}{\numberline {3.60.3.35}DeltaXij}{124}{subsubsection.3.60.3.35}%
+\contentsline {subsubsection}{\numberline {3.60.3.36}DeltaXijNew}{124}{subsubsection.3.60.3.36}%
+\contentsline {subsubsection}{\numberline {3.60.3.37}DeltaXijOld}{124}{subsubsection.3.60.3.37}%
+\contentsline {subsubsection}{\numberline {3.60.3.38}DeltaXijOldPair}{124}{subsubsection.3.60.3.38}%
+\contentsline {subsubsection}{\numberline {3.60.3.39}DeltaY}{125}{subsubsection.3.60.3.39}%
+\contentsline {subsubsection}{\numberline {3.60.3.40}DeltaYij}{125}{subsubsection.3.60.3.40}%
+\contentsline {subsubsection}{\numberline {3.60.3.41}DeltaYijNew}{125}{subsubsection.3.60.3.41}%
+\contentsline {subsubsection}{\numberline {3.60.3.42}DeltaYijOld}{125}{subsubsection.3.60.3.42}%
+\contentsline {subsubsection}{\numberline {3.60.3.43}DeltaYijOldPair}{125}{subsubsection.3.60.3.43}%
+\contentsline {subsubsection}{\numberline {3.60.3.44}density}{125}{subsubsection.3.60.3.44}%
+\contentsline {subsubsection}{\numberline {3.60.3.45}discDragx}{125}{subsubsection.3.60.3.45}%
+\contentsline {subsubsection}{\numberline {3.60.3.46}discDragy}{125}{subsubsection.3.60.3.46}%
+\contentsline {subsubsection}{\numberline {3.60.3.47}dnsty}{126}{subsubsection.3.60.3.47}%
+\contentsline {subsubsection}{\numberline {3.60.3.48}dump}{126}{subsubsection.3.60.3.48}%
+\contentsline {subsubsection}{\numberline {3.60.3.49}dumpPairFlag}{126}{subsubsection.3.60.3.49}%
+\contentsline {subsubsection}{\numberline {3.60.3.50}fax}{126}{subsubsection.3.60.3.50}%
+\contentsline {subsubsection}{\numberline {3.60.3.51}fay}{126}{subsubsection.3.60.3.51}%
+\contentsline {subsubsection}{\numberline {3.60.3.52}fpbond}{126}{subsubsection.3.60.3.52}%
+\contentsline {subsubsection}{\numberline {3.60.3.53}fpcom}{126}{subsubsection.3.60.3.53}%
+\contentsline {subsubsection}{\numberline {3.60.3.54}fpdnsty}{126}{subsubsection.3.60.3.54}%
+\contentsline {subsubsection}{\numberline {3.60.3.55}fpdump}{126}{subsubsection.3.60.3.55}%
+\contentsline {subsubsection}{\numberline {3.60.3.56}fpmomentum}{126}{subsubsection.3.60.3.56}%
+\contentsline {subsubsection}{\numberline {3.60.3.57}fppair}{127}{subsubsection.3.60.3.57}%
+\contentsline {subsubsection}{\numberline {3.60.3.58}fprdf}{127}{subsubsection.3.60.3.58}%
+\contentsline {subsubsection}{\numberline {3.60.3.59}fpresult}{127}{subsubsection.3.60.3.59}%
+\contentsline {subsubsection}{\numberline {3.60.3.60}fpstress}{127}{subsubsection.3.60.3.60}%
+\contentsline {subsubsection}{\numberline {3.60.3.61}fpvisc}{127}{subsubsection.3.60.3.61}%
+\contentsline {subsubsection}{\numberline {3.60.3.62}fpvrms}{127}{subsubsection.3.60.3.62}%
+\contentsline {subsubsection}{\numberline {3.60.3.63}fpxyz}{127}{subsubsection.3.60.3.63}%
+\contentsline {subsubsection}{\numberline {3.60.3.64}freezeAtomType}{127}{subsubsection.3.60.3.64}%
+\contentsline {subsubsection}{\numberline {3.60.3.65}frfAtom}{127}{subsubsection.3.60.3.65}%
+\contentsline {subsubsection}{\numberline {3.60.3.66}fuSum}{127}{subsubsection.3.60.3.66}%
+\contentsline {subsubsection}{\numberline {3.60.3.67}fvirSum}{128}{subsubsection.3.60.3.67}%
+\contentsline {subsubsection}{\numberline {3.60.3.68}fx}{128}{subsubsection.3.60.3.68}%
+\contentsline {subsubsection}{\numberline {3.60.3.69}fxByfy}{128}{subsubsection.3.60.3.69}%
+\contentsline {subsubsection}{\numberline {3.60.3.70}fy}{128}{subsubsection.3.60.3.70}%
+\contentsline {subsubsection}{\numberline {3.60.3.71}FyBylx}{128}{subsubsection.3.60.3.71}%
+\contentsline {subsubsection}{\numberline {3.60.3.72}gamman}{128}{subsubsection.3.60.3.72}%
+\contentsline {subsubsection}{\numberline {3.60.3.73}HaltCondition}{128}{subsubsection.3.60.3.73}%
+\contentsline {subsubsection}{\numberline {3.60.3.74}histRdf}{128}{subsubsection.3.60.3.74}%
+\contentsline {subsubsection}{\numberline {3.60.3.75}ImageX}{128}{subsubsection.3.60.3.75}%
+\contentsline {subsubsection}{\numberline {3.60.3.76}ImageY}{129}{subsubsection.3.60.3.76}%
+\contentsline {subsubsection}{\numberline {3.60.3.77}indexAcf}{129}{subsubsection.3.60.3.77}%
+\contentsline {subsubsection}{\numberline {3.60.3.78}indexCorr}{129}{subsubsection.3.60.3.78}%
+\contentsline {subsubsection}{\numberline {3.60.3.79}initUcell}{129}{subsubsection.3.60.3.79}%
+\contentsline {subsubsection}{\numberline {3.60.3.80}isBonded}{129}{subsubsection.3.60.3.80}%
+\contentsline {subsubsection}{\numberline {3.60.3.81}kappa}{129}{subsubsection.3.60.3.81}%
+\contentsline {subsubsection}{\numberline {3.60.3.82}kb}{129}{subsubsection.3.60.3.82}%
+\contentsline {subsubsection}{\numberline {3.60.3.83}kinEnergy}{129}{subsubsection.3.60.3.83}%
+\contentsline {subsubsection}{\numberline {3.60.3.84}Kn}{129}{subsubsection.3.60.3.84}%
+\contentsline {subsubsection}{\numberline {3.60.3.85}limitAcfAv}{130}{subsubsection.3.60.3.85}%
+\contentsline {subsubsection}{\numberline {3.60.3.86}limitCorrAv}{130}{subsubsection.3.60.3.86}%
+\contentsline {subsubsection}{\numberline {3.60.3.87}limitRdf}{130}{subsubsection.3.60.3.87}%
+\contentsline {subsubsection}{\numberline {3.60.3.88}master}{130}{subsubsection.3.60.3.88}%
+\contentsline {subsubsection}{\numberline {3.60.3.89}molID}{130}{subsubsection.3.60.3.89}%
+\contentsline {subsubsection}{\numberline {3.60.3.90}momentum}{130}{subsubsection.3.60.3.90}%
+\contentsline {subsubsection}{\numberline {3.60.3.91}moreCycles}{130}{subsubsection.3.60.3.91}%
+\contentsline {subsubsection}{\numberline {3.60.3.92}nAtom}{130}{subsubsection.3.60.3.92}%
+\contentsline {subsubsection}{\numberline {3.60.3.93}nAtomBlock}{131}{subsubsection.3.60.3.93}%
+\contentsline {subsubsection}{\numberline {3.60.3.94}nAtomInterface}{131}{subsubsection.3.60.3.94}%
+\contentsline {subsubsection}{\numberline {3.60.3.95}nAtomType}{131}{subsubsection.3.60.3.95}%
+\contentsline {subsubsection}{\numberline {3.60.3.96}nBond}{131}{subsubsection.3.60.3.96}%
+\contentsline {subsubsection}{\numberline {3.60.3.97}nBondType}{131}{subsubsection.3.60.3.97}%
+\contentsline {subsubsection}{\numberline {3.60.3.98}nBuffAcf}{131}{subsubsection.3.60.3.98}%
+\contentsline {subsubsection}{\numberline {3.60.3.99}nBuffCorr}{131}{subsubsection.3.60.3.99}%
+\contentsline {subsubsection}{\numberline {3.60.3.100}nDiscInterface}{131}{subsubsection.3.60.3.100}%
+\contentsline {subsubsection}{\numberline {3.60.3.101}nFunCorr}{132}{subsubsection.3.60.3.101}%
+\contentsline {subsubsection}{\numberline {3.60.3.102}nodeDragx}{132}{subsubsection.3.60.3.102}%
+\contentsline {subsubsection}{\numberline {3.60.3.103}nodeDragy}{132}{subsubsection.3.60.3.103}%
+\contentsline {subsubsection}{\numberline {3.60.3.104}nPairActive}{132}{subsubsection.3.60.3.104}%
+\contentsline {subsubsection}{\numberline {3.60.3.105}nPairTotal}{132}{subsubsection.3.60.3.105}%
+\contentsline {subsubsection}{\numberline {3.60.3.106}nValAcf}{132}{subsubsection.3.60.3.106}%
+\contentsline {subsubsection}{\numberline {3.60.3.107}nValCorr}{132}{subsubsection.3.60.3.107}%
+\contentsline {subsubsection}{\numberline {3.60.3.108}pair}{132}{subsubsection.3.60.3.108}%
+\contentsline {subsubsection}{\numberline {3.60.3.109}Pairatom1}{133}{subsubsection.3.60.3.109}%
+\contentsline {subsubsection}{\numberline {3.60.3.110}Pairatom2}{133}{subsubsection.3.60.3.110}%
+\contentsline {subsubsection}{\numberline {3.60.3.111}PairID}{133}{subsubsection.3.60.3.111}%
+\contentsline {subsubsection}{\numberline {3.60.3.112}PairXij}{133}{subsubsection.3.60.3.112}%
+\contentsline {subsubsection}{\numberline {3.60.3.113}PairYij}{133}{subsubsection.3.60.3.113}%
+\contentsline {subsubsection}{\numberline {3.60.3.114}potEnergy}{133}{subsubsection.3.60.3.114}%
+\contentsline {subsubsection}{\numberline {3.60.3.115}prefix}{133}{subsubsection.3.60.3.115}%
+\contentsline {subsubsection}{\numberline {3.60.3.116}pressure}{133}{subsubsection.3.60.3.116}%
+\contentsline {subsubsection}{\numberline {3.60.3.117}RadiusIJ}{134}{subsubsection.3.60.3.117}%
+\contentsline {subsubsection}{\numberline {3.60.3.118}RadiusIJInv}{134}{subsubsection.3.60.3.118}%
+\contentsline {subsubsection}{\numberline {3.60.3.119}rangeRdf}{134}{subsubsection.3.60.3.119}%
+\contentsline {subsubsection}{\numberline {3.60.3.120}rank}{134}{subsubsection.3.60.3.120}%
+\contentsline {subsubsection}{\numberline {3.60.3.121}rCut}{134}{subsubsection.3.60.3.121}%
+\contentsline {subsubsection}{\numberline {3.60.3.122}rdf}{134}{subsubsection.3.60.3.122}%
+\contentsline {subsubsection}{\numberline {3.60.3.123}region}{134}{subsubsection.3.60.3.123}%
+\contentsline {subsubsection}{\numberline {3.60.3.124}regionH}{134}{subsubsection.3.60.3.124}%
+\contentsline {subsubsection}{\numberline {3.60.3.125}result}{134}{subsubsection.3.60.3.125}%
+\contentsline {subsubsection}{\numberline {3.60.3.126}rfAtom}{135}{subsubsection.3.60.3.126}%
+\contentsline {subsubsection}{\numberline {3.60.3.127}ro}{135}{subsubsection.3.60.3.127}%
+\contentsline {subsubsection}{\numberline {3.60.3.128}rx}{135}{subsubsection.3.60.3.128}%
+\contentsline {subsubsection}{\numberline {3.60.3.129}rxUnwrap}{135}{subsubsection.3.60.3.129}%
+\contentsline {subsubsection}{\numberline {3.60.3.130}ry}{135}{subsubsection.3.60.3.130}%
+\contentsline {subsubsection}{\numberline {3.60.3.131}ryUnwrap}{135}{subsubsection.3.60.3.131}%
+\contentsline {subsubsection}{\numberline {3.60.3.132}shearDisplacement}{135}{subsubsection.3.60.3.132}%
+\contentsline {subsubsection}{\numberline {3.60.3.133}shearVelocity}{135}{subsubsection.3.60.3.133}%
+\contentsline {subsubsection}{\numberline {3.60.3.134}size}{135}{subsubsection.3.60.3.134}%
+\contentsline {subsubsection}{\numberline {3.60.3.135}sizeHistRdf}{136}{subsubsection.3.60.3.135}%
+\contentsline {subsubsection}{\numberline {3.60.3.136}sKinEnergy}{136}{subsubsection.3.60.3.136}%
+\contentsline {subsubsection}{\numberline {3.60.3.137}solver}{136}{subsubsection.3.60.3.137}%
+\contentsline {subsubsection}{\numberline {3.60.3.138}spacetimeCorr}{136}{subsubsection.3.60.3.138}%
+\contentsline {subsubsection}{\numberline {3.60.3.139}spacetimeCorrAv}{136}{subsubsection.3.60.3.139}%
+\contentsline {subsubsection}{\numberline {3.60.3.140}speed}{136}{subsubsection.3.60.3.140}%
+\contentsline {subsubsection}{\numberline {3.60.3.141}sPotEnergy}{136}{subsubsection.3.60.3.141}%
+\contentsline {subsubsection}{\numberline {3.60.3.142}sPressure}{136}{subsubsection.3.60.3.142}%
+\contentsline {subsubsection}{\numberline {3.60.3.143}SqrRadiusIJ}{137}{subsubsection.3.60.3.143}%
+\contentsline {subsubsection}{\numberline {3.60.3.144}ssKinEnergy}{137}{subsubsection.3.60.3.144}%
+\contentsline {subsubsection}{\numberline {3.60.3.145}ssPotEnergy}{137}{subsubsection.3.60.3.145}%
+\contentsline {subsubsection}{\numberline {3.60.3.146}ssPressure}{137}{subsubsection.3.60.3.146}%
+\contentsline {subsubsection}{\numberline {3.60.3.147}ssTotEnergy}{137}{subsubsection.3.60.3.147}%
+\contentsline {subsubsection}{\numberline {3.60.3.148}stepAcf}{137}{subsubsection.3.60.3.148}%
+\contentsline {subsubsection}{\numberline {3.60.3.149}stepAvg}{137}{subsubsection.3.60.3.149}%
+\contentsline {subsubsection}{\numberline {3.60.3.150}stepCorr}{137}{subsubsection.3.60.3.150}%
+\contentsline {subsubsection}{\numberline {3.60.3.151}stepCount}{138}{subsubsection.3.60.3.151}%
+\contentsline {subsubsection}{\numberline {3.60.3.152}stepDump}{138}{subsubsection.3.60.3.152}%
+\contentsline {subsubsection}{\numberline {3.60.3.153}stepEquil}{138}{subsubsection.3.60.3.153}%
+\contentsline {subsubsection}{\numberline {3.60.3.154}stepLimit}{138}{subsubsection.3.60.3.154}%
+\contentsline {subsubsection}{\numberline {3.60.3.155}stepRdf}{138}{subsubsection.3.60.3.155}%
+\contentsline {subsubsection}{\numberline {3.60.3.156}stepTraj}{138}{subsubsection.3.60.3.156}%
+\contentsline {subsubsection}{\numberline {3.60.3.157}sTotEnergy}{138}{subsubsection.3.60.3.157}%
+\contentsline {subsubsection}{\numberline {3.60.3.158}strain}{138}{subsubsection.3.60.3.158}%
+\contentsline {subsubsection}{\numberline {3.60.3.159}strainRate}{139}{subsubsection.3.60.3.159}%
+\contentsline {subsubsection}{\numberline {3.60.3.160}strech}{139}{subsubsection.3.60.3.160}%
+\contentsline {subsubsection}{\numberline {3.60.3.161}stress}{139}{subsubsection.3.60.3.161}%
+\contentsline {subsubsection}{\numberline {3.60.3.162}svirSum}{139}{subsubsection.3.60.3.162}%
+\contentsline {subsubsection}{\numberline {3.60.3.163}timeNow}{139}{subsubsection.3.60.3.163}%
+\contentsline {subsubsection}{\numberline {3.60.3.164}TotalBondEnergy}{139}{subsubsection.3.60.3.164}%
+\contentsline {subsubsection}{\numberline {3.60.3.165}TotalMass}{139}{subsubsection.3.60.3.165}%
+\contentsline {subsubsection}{\numberline {3.60.3.166}totEnergy}{139}{subsubsection.3.60.3.166}%
+\contentsline {subsubsection}{\numberline {3.60.3.167}uSum}{140}{subsubsection.3.60.3.167}%
+\contentsline {subsubsection}{\numberline {3.60.3.168}uSumPair}{140}{subsubsection.3.60.3.168}%
+\contentsline {subsubsection}{\numberline {3.60.3.169}uSumPairPerAtom}{140}{subsubsection.3.60.3.169}%
+\contentsline {subsubsection}{\numberline {3.60.3.170}virSum}{140}{subsubsection.3.60.3.170}%
+\contentsline {subsubsection}{\numberline {3.60.3.171}virSumBond}{140}{subsubsection.3.60.3.171}%
+\contentsline {subsubsection}{\numberline {3.60.3.172}virSumBondxx}{140}{subsubsection.3.60.3.172}%
+\contentsline {subsubsection}{\numberline {3.60.3.173}virSumBondxy}{140}{subsubsection.3.60.3.173}%
+\contentsline {subsubsection}{\numberline {3.60.3.174}virSumBondyy}{140}{subsubsection.3.60.3.174}%
+\contentsline {subsubsection}{\numberline {3.60.3.175}virSumPair}{141}{subsubsection.3.60.3.175}%
+\contentsline {subsubsection}{\numberline {3.60.3.176}virSumPairxx}{141}{subsubsection.3.60.3.176}%
+\contentsline {subsubsection}{\numberline {3.60.3.177}virSumPairxy}{141}{subsubsection.3.60.3.177}%
+\contentsline {subsubsection}{\numberline {3.60.3.178}virSumPairyy}{141}{subsubsection.3.60.3.178}%
+\contentsline {subsubsection}{\numberline {3.60.3.179}virSumxx}{141}{subsubsection.3.60.3.179}%
+\contentsline {subsubsection}{\numberline {3.60.3.180}virSumxy}{141}{subsubsection.3.60.3.180}%
+\contentsline {subsubsection}{\numberline {3.60.3.181}virSumyy}{141}{subsubsection.3.60.3.181}%
+\contentsline {subsubsection}{\numberline {3.60.3.182}visc}{141}{subsubsection.3.60.3.182}%
+\contentsline {subsubsection}{\numberline {3.60.3.183}viscAcf}{142}{subsubsection.3.60.3.183}%
+\contentsline {subsubsection}{\numberline {3.60.3.184}viscAcfAv}{142}{subsubsection.3.60.3.184}%
+\contentsline {subsubsection}{\numberline {3.60.3.185}viscAcfInt}{142}{subsubsection.3.60.3.185}%
+\contentsline {subsubsection}{\numberline {3.60.3.186}viscAcfOrg}{142}{subsubsection.3.60.3.186}%
+\contentsline {subsubsection}{\numberline {3.60.3.187}VMeanSqr}{142}{subsubsection.3.60.3.187}%
+\contentsline {subsubsection}{\numberline {3.60.3.188}vrms}{142}{subsubsection.3.60.3.188}%
+\contentsline {subsubsection}{\numberline {3.60.3.189}VRootMeanSqr}{142}{subsubsection.3.60.3.189}%
+\contentsline {subsubsection}{\numberline {3.60.3.190}VSqr}{142}{subsubsection.3.60.3.190}%
+\contentsline {subsubsection}{\numberline {3.60.3.191}vSum}{143}{subsubsection.3.60.3.191}%
+\contentsline {subsubsection}{\numberline {3.60.3.192}vSumX}{143}{subsubsection.3.60.3.192}%
+\contentsline {subsubsection}{\numberline {3.60.3.193}vSumY}{143}{subsubsection.3.60.3.193}%
+\contentsline {subsubsection}{\numberline {3.60.3.194}vvSum}{143}{subsubsection.3.60.3.194}%
+\contentsline {subsubsection}{\numberline {3.60.3.195}vx}{143}{subsubsection.3.60.3.195}%
+\contentsline {subsubsection}{\numberline {3.60.3.196}vy}{143}{subsubsection.3.60.3.196}%
+\contentsline {subsubsection}{\numberline {3.60.3.197}xBoundary}{143}{subsubsection.3.60.3.197}%
+\contentsline {subsubsection}{\numberline {3.60.3.198}xyz}{143}{subsubsection.3.60.3.198}%
+\contentsline {subsubsection}{\numberline {3.60.3.199}yBoundary}{144}{subsubsection.3.60.3.199}%
+\contentsline {section}{\numberline {3.61}global\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Extern.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{144}{section.3.61}%
+\contentsline {section}{\numberline {3.62}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Halt.c File Reference}{145}{section.3.62}%
+\contentsline {subsection}{\numberline {3.62.1}Function Documentation}{146}{subsection.3.62.1}%
+\contentsline {subsubsection}{\numberline {3.62.1.1}HaltConditionCheck()}{146}{subsubsection.3.62.1.1}%
+\contentsline {section}{\numberline {3.63}Halt.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{147}{section.3.63}%
+\contentsline {section}{\numberline {3.64}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Init.c File Reference}{147}{section.3.64}%
+\contentsline {subsection}{\numberline {3.64.1}Function Documentation}{148}{subsection.3.64.1}%
+\contentsline {subsubsection}{\numberline {3.64.1.1}Init()}{148}{subsubsection.3.64.1.1}%
+\contentsline {section}{\numberline {3.65}Init.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{151}{section.3.65}%
+\contentsline {section}{\numberline {3.66}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Init\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Vacf.c File Reference}{154}{section.3.66}%
+\contentsline {subsection}{\numberline {3.66.1}Function Documentation}{155}{subsection.3.66.1}%
+\contentsline {subsubsection}{\numberline {3.66.1.1}InitVacf()}{155}{subsubsection.3.66.1.1}%
+\contentsline {subsubsection}{\numberline {3.66.1.2}ZeroVacf()}{156}{subsubsection.3.66.1.2}%
+\contentsline {section}{\numberline {3.67}Init\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Vacf.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{156}{section.3.67}%
+\contentsline {section}{\numberline {3.68}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Integrate.c File Reference}{157}{section.3.68}%
+\contentsline {subsection}{\numberline {3.68.1}Function Documentation}{157}{subsection.3.68.1}%
+\contentsline {subsubsection}{\numberline {3.68.1.1}Integrate()}{157}{subsubsection.3.68.1.1}%
+\contentsline {section}{\numberline {3.69}Integrate.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{158}{section.3.69}%
+\contentsline {section}{\numberline {3.70}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Leapfrog\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Step.c File Reference}{158}{section.3.70}%
+\contentsline {subsection}{\numberline {3.70.1}Function Documentation}{159}{subsection.3.70.1}%
+\contentsline {subsubsection}{\numberline {3.70.1.1}LeapfrogStep()}{159}{subsubsection.3.70.1.1}%
+\contentsline {section}{\numberline {3.71}Leapfrog\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Step.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{160}{section.3.71}%
+\contentsline {section}{\numberline {3.72}source/main.c File Reference}{162}{section.3.72}%
+\contentsline {subsection}{\numberline {3.72.1}Macro Definition Documentation}{164}{subsection.3.72.1}%
+\contentsline {subsubsection}{\numberline {3.72.1.1}DEFINE\_GLOBALS}{164}{subsubsection.3.72.1.1}%
+\contentsline {subsection}{\numberline {3.72.2}Function Documentation}{164}{subsection.3.72.2}%
+\contentsline {subsubsection}{\numberline {3.72.2.1}AccumProps()}{164}{subsubsection.3.72.2.1}%
+\contentsline {subsubsection}{\numberline {3.72.2.2}ApplyBoundaryCond()}{164}{subsubsection.3.72.2.2}%
+\contentsline {subsubsection}{\numberline {3.72.2.3}ApplyDrivingForce()}{165}{subsubsection.3.72.2.3}%
+\contentsline {subsubsection}{\numberline {3.72.2.4}ApplyForce()}{166}{subsubsection.3.72.2.4}%
+\contentsline {subsubsection}{\numberline {3.72.2.5}ApplyLeesEdwardsBoundaryCond()}{166}{subsubsection.3.72.2.5}%
+\contentsline {subsubsection}{\numberline {3.72.2.6}ApplyShear()}{167}{subsubsection.3.72.2.6}%
+\contentsline {subsubsection}{\numberline {3.72.2.7}ApplyViscous()}{167}{subsubsection.3.72.2.7}%
+\contentsline {subsubsection}{\numberline {3.72.2.8}BrownianStep()}{167}{subsubsection.3.72.2.8}%
+\contentsline {subsubsection}{\numberline {3.72.2.9}Close()}{168}{subsubsection.3.72.2.9}%
+\contentsline {subsubsection}{\numberline {3.72.2.10}ComputeForcesCells()}{169}{subsubsection.3.72.2.10}%
+\contentsline {subsubsection}{\numberline {3.72.2.11}DisplaceAtoms()}{171}{subsubsection.3.72.2.11}%
+\contentsline {subsubsection}{\numberline {3.72.2.12}DumpBonds()}{171}{subsubsection.3.72.2.12}%
+\contentsline {subsubsection}{\numberline {3.72.2.13}DumpPairs()}{172}{subsubsection.3.72.2.13}%
+\contentsline {subsubsection}{\numberline {3.72.2.14}DumpRestart()}{173}{subsubsection.3.72.2.14}%
+\contentsline {subsubsection}{\numberline {3.72.2.15}DumpState()}{174}{subsubsection.3.72.2.15}%
+\contentsline {subsubsection}{\numberline {3.72.2.16}EvalCom()}{174}{subsubsection.3.72.2.16}%
+\contentsline {subsubsection}{\numberline {3.72.2.17}EvalProps()}{175}{subsubsection.3.72.2.17}%
+\contentsline {subsubsection}{\numberline {3.72.2.18}EvalRdf()}{176}{subsubsection.3.72.2.18}%
+\contentsline {subsubsection}{\numberline {3.72.2.19}EvalSpacetimeCorr()}{177}{subsubsection.3.72.2.19}%
+\contentsline {subsubsection}{\numberline {3.72.2.20}EvalUnwrap()}{178}{subsubsection.3.72.2.20}%
+\contentsline {subsubsection}{\numberline {3.72.2.21}EvalVacf()}{178}{subsubsection.3.72.2.21}%
+\contentsline {subsubsection}{\numberline {3.72.2.22}EvalVrms()}{179}{subsubsection.3.72.2.22}%
+\contentsline {subsubsection}{\numberline {3.72.2.23}HaltConditionCheck()}{180}{subsubsection.3.72.2.23}%
+\contentsline {subsubsection}{\numberline {3.72.2.24}Init()}{180}{subsubsection.3.72.2.24}%
+\contentsline {subsubsection}{\numberline {3.72.2.25}LeapfrogStep()}{183}{subsubsection.3.72.2.25}%
+\contentsline {subsubsection}{\numberline {3.72.2.26}main()}{183}{subsubsection.3.72.2.26}%
+\contentsline {subsubsection}{\numberline {3.72.2.27}PrintCom()}{186}{subsubsection.3.72.2.27}%
+\contentsline {subsubsection}{\numberline {3.72.2.28}PrintMomentum()}{187}{subsubsection.3.72.2.28}%
+\contentsline {subsubsection}{\numberline {3.72.2.29}PrintStress()}{187}{subsubsection.3.72.2.29}%
+\contentsline {subsubsection}{\numberline {3.72.2.30}PrintSummary()}{188}{subsubsection.3.72.2.30}%
+\contentsline {subsubsection}{\numberline {3.72.2.31}PrintVrms()}{188}{subsubsection.3.72.2.31}%
+\contentsline {subsubsection}{\numberline {3.72.2.32}SetupJob()}{189}{subsubsection.3.72.2.32}%
+\contentsline {subsubsection}{\numberline {3.72.2.33}Trajectory()}{190}{subsubsection.3.72.2.33}%
+\contentsline {subsubsection}{\numberline {3.72.2.34}VelocityVerletStep()}{190}{subsubsection.3.72.2.34}%
+\contentsline {subsection}{\numberline {3.72.3}Variable Documentation}{191}{subsection.3.72.3}%
+\contentsline {subsubsection}{\numberline {3.72.3.1}prefix}{191}{subsubsection.3.72.3.1}%
+\contentsline {section}{\numberline {3.73}main.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{191}{section.3.73}%
+\contentsline {section}{\numberline {3.74}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Print\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Com.c File Reference}{193}{section.3.74}%
+\contentsline {subsection}{\numberline {3.74.1}Function Documentation}{194}{subsection.3.74.1}%
+\contentsline {subsubsection}{\numberline {3.74.1.1}PrintCom()}{194}{subsubsection.3.74.1.1}%
+\contentsline {section}{\numberline {3.75}Print\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Com.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{195}{section.3.75}%
+\contentsline {section}{\numberline {3.76}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Print\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Momentum.c File Reference}{195}{section.3.76}%
+\contentsline {subsection}{\numberline {3.76.1}Function Documentation}{196}{subsection.3.76.1}%
+\contentsline {subsubsection}{\numberline {3.76.1.1}PrintMomentum()}{196}{subsubsection.3.76.1.1}%
+\contentsline {section}{\numberline {3.77}Print\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Momentum.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{196}{section.3.77}%
+\contentsline {section}{\numberline {3.78}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Print\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Stress.c File Reference}{196}{section.3.78}%
+\contentsline {subsection}{\numberline {3.78.1}Function Documentation}{197}{subsection.3.78.1}%
+\contentsline {subsubsection}{\numberline {3.78.1.1}PrintStress()}{197}{subsubsection.3.78.1.1}%
+\contentsline {section}{\numberline {3.79}Print\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Stress.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{197}{section.3.79}%
+\contentsline {section}{\numberline {3.80}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Print\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Summary.c File Reference}{198}{section.3.80}%
+\contentsline {subsection}{\numberline {3.80.1}Function Documentation}{198}{subsection.3.80.1}%
+\contentsline {subsubsection}{\numberline {3.80.1.1}PrintSummary()}{198}{subsubsection.3.80.1.1}%
+\contentsline {section}{\numberline {3.81}Print\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Summary.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{199}{section.3.81}%
+\contentsline {section}{\numberline {3.82}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Print\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Vacf.c File Reference}{199}{section.3.82}%
+\contentsline {subsection}{\numberline {3.82.1}Function Documentation}{200}{subsection.3.82.1}%
+\contentsline {subsubsection}{\numberline {3.82.1.1}PrintVacf()}{200}{subsubsection.3.82.1.1}%
+\contentsline {section}{\numberline {3.83}Print\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Vacf.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{200}{section.3.83}%
+\contentsline {section}{\numberline {3.84}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Print\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Vrms.c File Reference}{201}{section.3.84}%
+\contentsline {subsection}{\numberline {3.84.1}Function Documentation}{201}{subsection.3.84.1}%
+\contentsline {subsubsection}{\numberline {3.84.1.1}PrintVrms()}{201}{subsubsection.3.84.1.1}%
+\contentsline {section}{\numberline {3.85}Print\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Vrms.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{202}{section.3.85}%
+\contentsline {section}{\numberline {3.86}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Setup\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Job.c File Reference}{202}{section.3.86}%
+\contentsline {subsection}{\numberline {3.86.1}Function Documentation}{203}{subsection.3.86.1}%
+\contentsline {subsubsection}{\numberline {3.86.1.1}AccumProps()}{203}{subsubsection.3.86.1.1}%
+\contentsline {subsubsection}{\numberline {3.86.1.2}AllocArrays()}{204}{subsubsection.3.86.1.2}%
+\contentsline {subsubsection}{\numberline {3.86.1.3}InitVacf()}{205}{subsubsection.3.86.1.3}%
+\contentsline {subsubsection}{\numberline {3.86.1.4}SetupJob()}{205}{subsubsection.3.86.1.4}%
+\contentsline {section}{\numberline {3.87}Setup\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Job.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{206}{section.3.87}%
+\contentsline {section}{\numberline {3.88}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Trajectory.c File Reference}{207}{section.3.88}%
+\contentsline {subsection}{\numberline {3.88.1}Function Documentation}{207}{subsection.3.88.1}%
+\contentsline {subsubsection}{\numberline {3.88.1.1}Trajectory()}{207}{subsubsection.3.88.1.1}%
+\contentsline {section}{\numberline {3.89}Trajectory.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{208}{section.3.89}%
+\contentsline {section}{\numberline {3.90}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Velocity\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Verlet\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Step.c File Reference}{209}{section.3.90}%
+\contentsline {subsection}{\numberline {3.90.1}Function Documentation}{209}{subsection.3.90.1}%
+\contentsline {subsubsection}{\numberline {3.90.1.1}VelocityVerletStep()}{209}{subsubsection.3.90.1.1}%
+\contentsline {section}{\numberline {3.91}Velocity\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Verlet\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Step.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{210}{section.3.91}%
+\contentsline {section}{\numberline {3.92}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Zero\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Vacf.c File Reference}{211}{section.3.92}%
+\contentsline {subsection}{\numberline {3.92.1}Function Documentation}{212}{subsection.3.92.1}%
+\contentsline {subsubsection}{\numberline {3.92.1.1}ZeroVacf()}{212}{subsubsection.3.92.1.1}%
+\contentsline {section}{\numberline {3.93}Zero\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Vacf.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{212}{section.3.93}%
+\contentsline {chapter}{Index}{213}{section*.167}%

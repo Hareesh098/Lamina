@@ -1,8 +1,0 @@
-<map id="source/InitVacf.c" name="source/InitVacf.c">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,133,33"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="36,157,102,184"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="68,34,60,81,60,108,65,141,60,142,54,109,54,81,63,33"/>
-<area shape="rect" id="Node000003" href="$global_8h.html" title=" " alt="" coords="70,81,143,109"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="78,32,95,66,91,68,73,35"/>
-<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="102,110,85,144,80,142,97,108"/>
-</map>
