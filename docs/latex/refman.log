@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Fedora 40) (preloaded format=pdflatex 2025.3.10)  18 MAY 2025 00:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Fedora 40) (preloaded format=pdflatex 2025.3.10)  18 MAY 2025 00:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -823,7 +823,7 @@ Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 192.
 
 Package hyperref Info: Option `unicode' set `true' on input line 192.
  <../../figures/LogoLaminaLatex.png (PNG copy)>
-<../../figures/LogoLaminaLatex.png, id=2649, 1541.76pt x 1027.84pt>
+<../../figures/LogoLaminaLatex.png, id=2596, 1541.76pt x 1027.84pt>
 File: ../../figures/LogoLaminaLatex.png Graphic file (type png)
 <use ../../figures/LogoLaminaLatex.png>
 Package pdftex.def Info: ../../figures/LogoLaminaLatex.png  used on input line 
@@ -846,8 +846,6 @@ st/fonts/enc/dvips/base/8r.enc}] [2
 
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 8.99994pt on input line 208.
-LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 6.29996pt on input line 208.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 208
 .
 
@@ -868,6 +866,8 @@ File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
 )
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 6.29996pt on input line 208.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 6.29996pt on input line 208.
  [1] [2] [3] [4]
 [5] [6] [7] [8] [9] [10] [11] [12] [13] [14] [15] [16]
 Package hyperref Info: Option `pageanchor' set `true' on input line 211.
@@ -879,47 +879,47 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 18.66588pt on input line 1.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 22.39185pt on input line 1.
-LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 12.9599pt on input line 7.
-LaTeX Font Info:    Trying to load font information for TS1+phv on input line 1
-5.
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1phv.fd
-File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
-)
-LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 15.
- [1
+) [1
 
+
+] [2
 
 ]
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 47
-.
+Chapter 2.
+(./files.tex
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 12.9599pt on input line 1.
+ [3]) [4]
+Chapter 3.
+(./README_8md.tex) (./AccumProps_8c.tex
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 3.
+
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-) [2]
-LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 10.79993pt on input line 82.
- [3]) [4]
-Chapter 2.
-(./files.tex [5
-
-]) [6]
-Chapter 3.
-(./README_8md.tex) (./AccumProps_8c.tex <./AccumProps_8c__incl.pdf>
-<AccumProps_8c__incl.pdf, id=3561, 238.8925pt x 214.8025pt>
+) <./AccumProps_8c__incl.pdf>
+<AccumProps_8c__incl.pdf, id=3467, 238.8925pt x 214.8025pt>
 File: AccumProps_8c__incl.pdf Graphic file (type pdf)
 <use AccumProps_8c__incl.pdf>
 Package pdftex.def Info: AccumProps_8c__incl.pdf  used on input line 10.
 (pdftex.def)             Requested size: 238.0pt x 213.99895pt.
+LaTeX Font Info:    Trying to load font information for TS1+phv on input line 1
+6.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1phv.fd
+File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
+)
+LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
+(Font)              scaled to size 8.99994pt on input line 16.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 10.79993pt on input line 20.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 7.19995pt on input line 25.
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <8> not available
 (Font)              Font shape `T1/pcr/m/sl' tried instead on input line 25.
- [7
+ [5
 
 ] <./AccumProps_8c_a4b4560208657b98f0dea0ba6d4413c19_icgraph.pdf>
-<AccumProps_8c_a4b4560208657b98f0dea0ba6d4413c19_icgraph.pdf, id=3661, 329.23pt
+<AccumProps_8c_a4b4560208657b98f0dea0ba6d4413c19_icgraph.pdf, id=3567, 329.23pt
  x 101.37875pt>
 File: AccumProps_8c_a4b4560208657b98f0dea0ba6d4413c19_icgraph.pdf Graphic file 
 (type pdf)
@@ -928,14 +928,14 @@ Package pdftex.def Info: AccumProps_8c_a4b4560208657b98f0dea0ba6d4413c19_icgrap
 h.pdf  used on input line 75.
 (pdftex.def)             Requested size: 328.0pt x 101.0026pt.
 )
-(./AccumProps_8c_source.tex [8]) (./AccumVacf_8c.tex <./AccumVacf_8c__incl.pdf>
-<AccumVacf_8c__incl.pdf, id=3776, 193.72375pt x 214.8025pt>
+(./AccumProps_8c_source.tex [6]) (./AccumVacf_8c.tex <./AccumVacf_8c__incl.pdf>
+<AccumVacf_8c__incl.pdf, id=3683, 193.72375pt x 214.8025pt>
 File: AccumVacf_8c__incl.pdf Graphic file (type pdf)
 <use AccumVacf_8c__incl.pdf>
 Package pdftex.def Info: AccumVacf_8c__incl.pdf  used on input line 9.
 (pdftex.def)             Requested size: 193.0pt x 214.00223pt.
-[9] <./AccumVacf_8c_ad6608c7fca41e40ae23fe93c00dc5e2c_cgraph.pdf>
-<AccumVacf_8c_ad6608c7fca41e40ae23fe93c00dc5e2c_cgraph.pdf, id=3876, 246.9225pt
+[7] <./AccumVacf_8c_ad6608c7fca41e40ae23fe93c00dc5e2c_cgraph.pdf>
+<AccumVacf_8c_ad6608c7fca41e40ae23fe93c00dc5e2c_cgraph.pdf, id=3784, 246.9225pt
  x 179.67125pt>
 File: AccumVacf_8c_ad6608c7fca41e40ae23fe93c00dc5e2c_cgraph.pdf Graphic file (t
 ype pdf)
@@ -944,7 +944,7 @@ Package pdftex.def Info: AccumVacf_8c_ad6608c7fca41e40ae23fe93c00dc5e2c_cgraph.
 pdf  used on input line 68.
 (pdftex.def)             Requested size: 246.0pt x 178.9991pt.
  <./AccumVacf_8c_ad6608c7fca41e40ae23fe93c00dc5e2c_icgraph.pdf>
-<AccumVacf_8c_ad6608c7fca41e40ae23fe93c00dc5e2c_icgraph.pdf, id=3885, 244.915pt
+<AccumVacf_8c_ad6608c7fca41e40ae23fe93c00dc5e2c_icgraph.pdf, id=3792, 244.915pt
  x 101.37875pt>
 File: AccumVacf_8c_ad6608c7fca41e40ae23fe93c00dc5e2c_icgraph.pdf Graphic file (
 type pdf)
@@ -952,8 +952,8 @@ type pdf)
 Package pdftex.def Info: AccumVacf_8c_ad6608c7fca41e40ae23fe93c00dc5e2c_icgraph
 .pdf  used on input line 75.
 (pdftex.def)             Requested size: 244.0pt x 101.0026pt.
- [10] <./AccumVacf_8c_acdda65121bd9cf7a35cb4d2e0fdb7cd9_icgraph.pdf>
-<AccumVacf_8c_acdda65121bd9cf7a35cb4d2e0fdb7cd9_icgraph.pdf, id=3927, 341.275pt
+ [8] <./AccumVacf_8c_acdda65121bd9cf7a35cb4d2e0fdb7cd9_icgraph.pdf>
+<AccumVacf_8c_acdda65121bd9cf7a35cb4d2e0fdb7cd9_icgraph.pdf, id=3834, 341.275pt
  x 101.37875pt>
 File: AccumVacf_8c_acdda65121bd9cf7a35cb4d2e0fdb7cd9_icgraph.pdf Graphic file (
 type pdf)
@@ -962,7 +962,7 @@ Package pdftex.def Info: AccumVacf_8c_acdda65121bd9cf7a35cb4d2e0fdb7cd9_icgraph
 .pdf  used on input line 108.
 (pdftex.def)             Requested size: 340.0pt x 101.00568pt.
  <./AccumVacf_8c_a9be1b8f0429ee69e28f6fb3850e8acdb_icgraph.pdf>
-<AccumVacf_8c_a9be1b8f0429ee69e28f6fb3850e8acdb_icgraph.pdf, id=3954, 341.275pt
+<AccumVacf_8c_a9be1b8f0429ee69e28f6fb3850e8acdb_icgraph.pdf, id=3861, 341.275pt
  x 101.37875pt>
 File: AccumVacf_8c_a9be1b8f0429ee69e28f6fb3850e8acdb_icgraph.pdf Graphic file (
 type pdf)
@@ -970,8 +970,8 @@ type pdf)
 Package pdftex.def Info: AccumVacf_8c_a9be1b8f0429ee69e28f6fb3850e8acdb_icgraph
 .pdf  used on input line 147.
 (pdftex.def)             Requested size: 340.0pt x 101.00568pt.
- [11] <./AccumVacf_8c_af60963b0cbbf0bed9d310797a6f9a59d_icgraph.pdf>
-<AccumVacf_8c_af60963b0cbbf0bed9d310797a6f9a59d_icgraph.pdf, id=3983, 341.275pt
+ [9] <./AccumVacf_8c_af60963b0cbbf0bed9d310797a6f9a59d_icgraph.pdf>
+<AccumVacf_8c_af60963b0cbbf0bed9d310797a6f9a59d_icgraph.pdf, id=3891, 341.275pt
  x 101.37875pt>
 File: AccumVacf_8c_af60963b0cbbf0bed9d310797a6f9a59d_icgraph.pdf Graphic file (
 type pdf)
@@ -979,20 +979,20 @@ type pdf)
 Package pdftex.def Info: AccumVacf_8c_af60963b0cbbf0bed9d310797a6f9a59d_icgraph
 .pdf  used on input line 182.
 (pdftex.def)             Requested size: 340.0pt x 101.00568pt.
-) (./AccumVacf_8c_source.tex [12]) (./AllocArrays_8c.tex <./AllocArrays_8c__inc
+) (./AccumVacf_8c_source.tex [10]) (./AllocArrays_8c.tex <./AllocArrays_8c__inc
 l.pdf>
-<AllocArrays_8c__incl.pdf, id=4040, 237.88875pt x 214.8025pt>
+<AllocArrays_8c__incl.pdf, id=3947, 237.88875pt x 214.8025pt>
 File: AllocArrays_8c__incl.pdf Graphic file (type pdf)
 <use AllocArrays_8c__incl.pdf>
 Package pdftex.def Info: AllocArrays_8c__incl.pdf  used on input line 10.
 (pdftex.def)             Requested size: 237.0pt x 214.00877pt.
- [13]
+ [11]
 Underfull \hbox (badness 1147) in paragraph at lines 64--65
 []\T1/phv/m/n/10 References [], [], [], [], [], [], [], [], [], [],
  []
 
  <./AllocArrays_8c_a0de7521b891c869e61da0348ea08f8f1_icgraph.pdf>
-<AllocArrays_8c_a0de7521b891c869e61da0348ea08f8f1_icgraph.pdf, id=4140, 324.211
+<AllocArrays_8c_a0de7521b891c869e61da0348ea08f8f1_icgraph.pdf, id=4046, 324.211
 24pt x 101.37875pt>
 File: AllocArrays_8c_a0de7521b891c869e61da0348ea08f8f1_icgraph.pdf Graphic file
  (type pdf)
@@ -1001,16 +1001,16 @@ Package pdftex.def Info: AllocArrays_8c_a0de7521b891c869e61da0348ea08f8f1_icgra
 ph.pdf  used on input line 74.
 (pdftex.def)             Requested size: 323.0pt x 101.00568pt.
 )
-(./AllocArrays_8c_source.tex [14]) (./ApplyBoundaryCond_8c.tex <./ApplyBoundary
+(./AllocArrays_8c_source.tex [12]) (./ApplyBoundaryCond_8c.tex <./ApplyBoundary
 Cond_8c__incl.pdf>
-<ApplyBoundaryCond_8c__incl.pdf, id=4218, 359.3425pt x 214.8025pt>
+<ApplyBoundaryCond_8c__incl.pdf, id=4125, 359.3425pt x 214.8025pt>
 File: ApplyBoundaryCond_8c__incl.pdf Graphic file (type pdf)
 <use ApplyBoundaryCond_8c__incl.pdf>
 Package pdftex.def Info: ApplyBoundaryCond_8c__incl.pdf  used on input line 12.
 
 (pdftex.def)             Requested size: 350.0pt x 209.23329pt.
- [15] <./ApplyBoundaryCond_8c_a5e0b9ccb6d4aee203a4de8438fc9f590_icgraph.pdf>
-<ApplyBoundaryCond_8c_a5e0b9ccb6d4aee203a4de8438fc9f590_icgraph.pdf, id=4377, 2
+ [13] <./ApplyBoundaryCond_8c_a5e0b9ccb6d4aee203a4de8438fc9f590_icgraph.pdf>
+<ApplyBoundaryCond_8c_a5e0b9ccb6d4aee203a4de8438fc9f590_icgraph.pdf, id=4285, 2
 73.02pt x 101.37875pt>
 File: ApplyBoundaryCond_8c_a5e0b9ccb6d4aee203a4de8438fc9f590_icgraph.pdf Graphi
 c file (type pdf)
@@ -1018,24 +1018,24 @@ c file (type pdf)
 Package pdftex.def Info: ApplyBoundaryCond_8c_a5e0b9ccb6d4aee203a4de8438fc9f590
 _icgraph.pdf  used on input line 87.
 (pdftex.def)             Requested size: 272.0pt x 101.00568pt.
-) (./ApplyBoundaryCond_8c_source.tex [16])
+) (./ApplyBoundaryCond_8c_source.tex [14])
 (./ApplyDrivingForce_8c.tex <./ApplyDrivingForce_8c__incl.pdf>
-<ApplyDrivingForce_8c__incl.pdf, id=4505, 254.9525pt x 214.8025pt>
+<ApplyDrivingForce_8c__incl.pdf, id=4413, 254.9525pt x 214.8025pt>
 File: ApplyDrivingForce_8c__incl.pdf Graphic file (type pdf)
 <use ApplyDrivingForce_8c__incl.pdf>
 Package pdftex.def Info: ApplyDrivingForce_8c__incl.pdf  used on input line 10.
 
 (pdftex.def)             Requested size: 254.0pt x 214.00877pt.
- [17] [18])
+ [15] [16])
 (./ApplyDrivingForce_8c_source.tex) (./ApplyForce_8c.tex <./ApplyForce_8c__incl
 .pdf>
-<ApplyForce_8c__incl.pdf, id=4650, 236.885pt x 214.8025pt>
+<ApplyForce_8c__incl.pdf, id=4558, 236.885pt x 214.8025pt>
 File: ApplyForce_8c__incl.pdf Graphic file (type pdf)
 <use ApplyForce_8c__incl.pdf>
 Package pdftex.def Info: ApplyForce_8c__incl.pdf  used on input line 10.
 (pdftex.def)             Requested size: 236.0pt x 214.00551pt.
- [19] <./ApplyForce_8c_ad6ab10f163d2a72fca0250e1aae8f09b_icgraph.pdf>
-<ApplyForce_8c_ad6ab10f163d2a72fca0250e1aae8f09b_icgraph.pdf, id=4760, 227.8512
+ [17] <./ApplyForce_8c_ad6ab10f163d2a72fca0250e1aae8f09b_icgraph.pdf>
+<ApplyForce_8c_ad6ab10f163d2a72fca0250e1aae8f09b_icgraph.pdf, id=4666, 227.8512
 6pt x 101.37875pt>
 File: ApplyForce_8c_ad6ab10f163d2a72fca0250e1aae8f09b_icgraph.pdf Graphic file 
 (type pdf)
@@ -1044,52 +1044,52 @@ Package pdftex.def Info: ApplyForce_8c_ad6ab10f163d2a72fca0250e1aae8f09b_icgrap
 h.pdf  used on input line 58.
 (pdftex.def)             Requested size: 227.0pt x 101.0026pt.
 )
-(./ApplyForce_8c_source.tex [20]) (./ApplyLeesEdwardsBoundaryCond_8c.tex <./App
+(./ApplyForce_8c_source.tex [18]) (./ApplyLeesEdwardsBoundaryCond_8c.tex <./App
 lyLeesEdwardsBoundaryCond_8c__incl.pdf>
-<ApplyLeesEdwardsBoundaryCond_8c__incl.pdf, id=4803, 274.02374pt x 227.85126pt>
+<ApplyLeesEdwardsBoundaryCond_8c__incl.pdf, id=4709, 274.02374pt x 227.85126pt>
 
 File: ApplyLeesEdwardsBoundaryCond_8c__incl.pdf Graphic file (type pdf)
 <use ApplyLeesEdwardsBoundaryCond_8c__incl.pdf>
 Package pdftex.def Info: ApplyLeesEdwardsBoundaryCond_8c__incl.pdf  used on inp
 ut line 10.
 (pdftex.def)             Requested size: 273.0pt x 227.01627pt.
- [21])
-(./ApplyLeesEdwardsBoundaryCond_8c_source.tex [22]) (./ApplyShear_8c.tex <./App
+ [19])
+(./ApplyLeesEdwardsBoundaryCond_8c_source.tex [20]) (./ApplyShear_8c.tex <./App
 lyShear_8c__incl.pdf>
-<ApplyShear_8c__incl.pdf, id=4934, 236.885pt x 214.8025pt>
+<ApplyShear_8c__incl.pdf, id=4841, 236.885pt x 214.8025pt>
 File: ApplyShear_8c__incl.pdf Graphic file (type pdf)
 <use ApplyShear_8c__incl.pdf>
 Package pdftex.def Info: ApplyShear_8c__incl.pdf  used on input line 10.
 (pdftex.def)             Requested size: 236.0pt x 214.00551pt.
- [23]) (./ApplyShear_8c_source.tex [24])
+ [21]) (./ApplyShear_8c_source.tex [22])
 (./ApplyViscous_8c.tex <./ApplyViscous_8c__incl.pdf>
-<ApplyViscous_8c__incl.pdf, id=5038, 242.9075pt x 214.8025pt>
+<ApplyViscous_8c__incl.pdf, id=4946, 242.9075pt x 214.8025pt>
 File: ApplyViscous_8c__incl.pdf Graphic file (type pdf)
 <use ApplyViscous_8c__incl.pdf>
 Package pdftex.def Info: ApplyViscous_8c__incl.pdf  used on input line 10.
 (pdftex.def)             Requested size: 242.0pt x 213.99895pt.
 )
-(./ApplyViscous_8c_source.tex [25]) (./BrownianStep_8c.tex <./BrownianStep_8c__
+(./ApplyViscous_8c_source.tex [23]) (./BrownianStep_8c.tex <./BrownianStep_8c__
 incl.pdf>
-<BrownianStep_8c__incl.pdf, id=5095, 287.0725pt x 214.8025pt>
+<BrownianStep_8c__incl.pdf, id=5001, 287.0725pt x 214.8025pt>
 File: BrownianStep_8c__incl.pdf Graphic file (type pdf)
 <use BrownianStep_8c__incl.pdf>
 Package pdftex.def Info: BrownianStep_8c__incl.pdf  used on input line 11.
 (pdftex.def)             Requested size: 286.0pt x 214.00551pt.
- [26]) (./BrownianStep_8c_source.tex [27]) (./Close_8c.tex <./Close_8c__incl.pd
+ [24]) (./BrownianStep_8c_source.tex [25]) (./Close_8c.tex <./Close_8c__incl.pd
 f>
-<Close_8c__incl.pdf, id=5276, 223.83624pt x 214.8025pt>
+<Close_8c__incl.pdf, id=5184, 223.83624pt x 214.8025pt>
 File: Close_8c__incl.pdf Graphic file (type pdf)
 <use Close_8c__incl.pdf>
 Package pdftex.def Info: Close_8c__incl.pdf  used on input line 10.
 (pdftex.def)             Requested size: 223.0pt x 214.00551pt.
- [28] [29]
+ [26] [27]
 Underfull \hbox (badness 1000) in paragraph at lines 95--96
 []\T1/phv/m/n/10 References [], [], [], [], [], [], [], [], [], [],
  []
 
  <./Close_8c_a7f7a3199c392465d0767c6506c1af5b4_icgraph.pdf>
-<Close_8c_a7f7a3199c392465d0767c6506c1af5b4_icgraph.pdf, id=5494, 200.75pt x 10
+<Close_8c_a7f7a3199c392465d0767c6506c1af5b4_icgraph.pdf, id=5401, 200.75pt x 10
 1.37875pt>
 File: Close_8c_a7f7a3199c392465d0767c6506c1af5b4_icgraph.pdf Graphic file (type
  pdf)
@@ -1098,16 +1098,16 @@ Package pdftex.def Info: Close_8c_a7f7a3199c392465d0767c6506c1af5b4_icgraph.pdf
   used on input line 105.
 (pdftex.def)             Requested size: 200.0pt x 101.00723pt.
 )
-(./Close_8c_source.tex [30]) (./ComputeBondForce_8c.tex <./ComputeBondForce_8c_
+(./Close_8c_source.tex [28]) (./ComputeBondForce_8c.tex <./ComputeBondForce_8c_
 _incl.pdf>
-<ComputeBondForce_8c__incl.pdf, id=5602, 451.6875pt x 214.8025pt>
+<ComputeBondForce_8c__incl.pdf, id=5509, 451.6875pt x 214.8025pt>
 File: ComputeBondForce_8c__incl.pdf Graphic file (type pdf)
 <use ComputeBondForce_8c__incl.pdf>
 Package pdftex.def Info: ComputeBondForce_8c__incl.pdf  used on input line 12.
 (pdftex.def)             Requested size: 350.0pt x 166.45383pt.
- [31] [32] [33] <./ComputeBondForce_8c_a3f0e4ae64582185f20eead0badd6036d_icgrap
+ [29] [30] [31] <./ComputeBondForce_8c_a3f0e4ae64582185f20eead0badd6036d_icgrap
 h.pdf>
-<ComputeBondForce_8c_a3f0e4ae64582185f20eead0badd6036d_icgraph.pdf, id=5888, 26
+<ComputeBondForce_8c_a3f0e4ae64582185f20eead0badd6036d_icgraph.pdf, id=5795, 26
 9.005pt x 101.37875pt>
 File: ComputeBondForce_8c_a3f0e4ae64582185f20eead0badd6036d_icgraph.pdf Graphic
  file (type pdf)
@@ -1115,17 +1115,17 @@ File: ComputeBondForce_8c_a3f0e4ae64582185f20eead0badd6036d_icgraph.pdf Graphic
 Package pdftex.def Info: ComputeBondForce_8c_a3f0e4ae64582185f20eead0badd6036d_
 icgraph.pdf  used on input line 167.
 (pdftex.def)             Requested size: 268.0pt x 101.00104pt.
-) (./ComputeBondForce_8c_source.tex [34] [35])
+) (./ComputeBondForce_8c_source.tex [32] [33])
 (./ComputeBondForce_8h.tex <./ComputeBondForce_8h__dep__incl.pdf>
-<ComputeBondForce_8h__dep__incl.pdf, id=6184, 339.2675pt x 158.5925pt>
+<ComputeBondForce_8h__dep__incl.pdf, id=6091, 339.2675pt x 158.5925pt>
 File: ComputeBondForce_8h__dep__incl.pdf Graphic file (type pdf)
 <use ComputeBondForce_8h__dep__incl.pdf>
 Package pdftex.def Info: ComputeBondForce_8h__dep__incl.pdf  used on input line
  7.
 (pdftex.def)             Requested size: 338.0pt x 158.00645pt.
- [36] [37] <./ComputeBondForce_8h_a3f0e4ae64582185f20eead0badd6036d_icgraph.pdf
+ [34] [35] <./ComputeBondForce_8h_a3f0e4ae64582185f20eead0badd6036d_icgraph.pdf
 >
-<ComputeBondForce_8h_a3f0e4ae64582185f20eead0badd6036d_icgraph.pdf, id=6382, 26
+<ComputeBondForce_8h_a3f0e4ae64582185f20eead0badd6036d_icgraph.pdf, id=6288, 26
 9.005pt x 101.37875pt>
 File: ComputeBondForce_8h_a3f0e4ae64582185f20eead0badd6036d_icgraph.pdf Graphic
  file (type pdf)
@@ -1136,33 +1136,33 @@ icgraph.pdf  used on input line 162.
 )
 (./ComputeBondForce_8h_source.tex) (./ComputeForcesCells_8c.tex <./ComputeForce
 sCells_8c__incl.pdf>
-<ComputeForcesCells_8c__incl.pdf, id=6392, 258.9675pt x 214.8025pt>
+<ComputeForcesCells_8c__incl.pdf, id=6298, 258.9675pt x 214.8025pt>
 File: ComputeForcesCells_8c__incl.pdf Graphic file (type pdf)
 <use ComputeForcesCells_8c__incl.pdf>
 Package pdftex.def Info: ComputeForcesCells_8c__incl.pdf  used on input line 10
 .
 (pdftex.def)             Requested size: 258.0pt x 214.0219pt.
- [38] [39] [40]
+ [36] [37] [38]
 Underfull \hbox (badness 991) in paragraph at lines 166--167
 []\T1/phv/m/n/10 References [], [], [], [], [], [], [], [], [], [], [],
  []
 
-) (./ComputeForcesCells_8c_source.tex [41] [42]) (./ComputePairForce_8c.tex <./
+) (./ComputeForcesCells_8c_source.tex [39] [40]) (./ComputePairForce_8c.tex <./
 ComputePairForce_8c__incl.pdf>
-<ComputePairForce_8c__incl.pdf, id=6874, 374.39874pt x 214.8025pt>
+<ComputePairForce_8c__incl.pdf, id=6781, 374.39874pt x 214.8025pt>
 File: ComputePairForce_8c__incl.pdf Graphic file (type pdf)
 <use ComputePairForce_8c__incl.pdf>
 Package pdftex.def Info: ComputePairForce_8c__incl.pdf  used on input line 11.
 (pdftex.def)             Requested size: 350.0pt x 200.81636pt.
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <7> not available
 (Font)              Font shape `T1/pcr/m/sl' tried instead on input line 26.
- [43] [44]
+ [41] [42]
 Underfull \hbox (badness 936) in paragraph at lines 207--208
 []\T1/phv/m/n/10 , [], [], [], [], [], [], [], [], [], [],
  []
 
  <./ComputePairForce_8c_a190822e2698bc1ad5ac920f89047f374_icgraph.pdf>
-<ComputePairForce_8c_a190822e2698bc1ad5ac920f89047f374_icgraph.pdf, id=7155, 26
+<ComputePairForce_8c_a190822e2698bc1ad5ac920f89047f374_icgraph.pdf, id=7061, 26
 1.97874pt x 101.37875pt>
 File: ComputePairForce_8c_a190822e2698bc1ad5ac920f89047f374_icgraph.pdf Graphic
  file (type pdf)
@@ -1171,21 +1171,21 @@ Package pdftex.def Info: ComputePairForce_8c_a190822e2698bc1ad5ac920f89047f374_
 icgraph.pdf  used on input line 217.
 (pdftex.def)             Requested size: 261.0pt x 101.0026pt.
 )
-(./ComputePairForce_8c_source.tex [45] [46] [47]) (./ComputePairForce_8h.tex <.
+(./ComputePairForce_8c_source.tex [43] [44] [45]) (./ComputePairForce_8h.tex <.
 /ComputePairForce_8h__dep__incl.pdf>
-<ComputePairForce_8h__dep__incl.pdf, id=7526, 331.2375pt x 158.5925pt>
+<ComputePairForce_8h__dep__incl.pdf, id=7434, 331.2375pt x 158.5925pt>
 File: ComputePairForce_8h__dep__incl.pdf Graphic file (type pdf)
 <use ComputePairForce_8h__dep__incl.pdf>
 Package pdftex.def Info: ComputePairForce_8h__dep__incl.pdf  used on input line
  7.
 (pdftex.def)             Requested size: 330.0pt x 158.00645pt.
- [48] [49] [50]
+ [46] [47] [48]
 Underfull \hbox (badness 936) in paragraph at lines 203--204
 []\T1/phv/m/n/10 , [], [], [], [], [], [], [], [], [], [],
  []
 
  <./ComputePairForce_8h_a190822e2698bc1ad5ac920f89047f374_icgraph.pdf>
-<ComputePairForce_8h_a190822e2698bc1ad5ac920f89047f374_icgraph.pdf, id=7850, 26
+<ComputePairForce_8h_a190822e2698bc1ad5ac920f89047f374_icgraph.pdf, id=7756, 26
 1.97874pt x 101.37875pt>
 File: ComputePairForce_8h_a190822e2698bc1ad5ac920f89047f374_icgraph.pdf Graphic
  file (type pdf)
@@ -1196,13 +1196,13 @@ icgraph.pdf  used on input line 213.
 )
 (./ComputePairForce_8h_source.tex) (./DisplaceAtoms_8c.tex <./DisplaceAtoms_8c_
 _incl.pdf>
-<DisplaceAtoms_8c__incl.pdf, id=7860, 246.9225pt x 214.8025pt>
+<DisplaceAtoms_8c__incl.pdf, id=7766, 246.9225pt x 214.8025pt>
 File: DisplaceAtoms_8c__incl.pdf Graphic file (type pdf)
 <use DisplaceAtoms_8c__incl.pdf>
 Package pdftex.def Info: DisplaceAtoms_8c__incl.pdf  used on input line 10.
 (pdftex.def)             Requested size: 246.0pt x 213.99895pt.
- [51] <./DisplaceAtoms_8c_a3d24280446b0ed41ab873e8325636373_icgraph.pdf>
-<DisplaceAtoms_8c_a3d24280446b0ed41ab873e8325636373_icgraph.pdf, id=7898, 246.9
+ [49] <./DisplaceAtoms_8c_a3d24280446b0ed41ab873e8325636373_icgraph.pdf>
+<DisplaceAtoms_8c_a3d24280446b0ed41ab873e8325636373_icgraph.pdf, id=7806, 246.9
 225pt x 101.37875pt>
 File: DisplaceAtoms_8c_a3d24280446b0ed41ab873e8325636373_icgraph.pdf Graphic fi
 le (type pdf)
@@ -1210,15 +1210,15 @@ le (type pdf)
 Package pdftex.def Info: DisplaceAtoms_8c_a3d24280446b0ed41ab873e8325636373_icg
 raph.pdf  used on input line 54.
 (pdftex.def)             Requested size: 246.0pt x 100.9995pt.
-) (./DisplaceAtoms_8c_source.tex [52]) (./DumpBonds_8c.tex <./DumpBonds_8c__inc
+) (./DisplaceAtoms_8c_source.tex [50]) (./DumpBonds_8c.tex <./DumpBonds_8c__inc
 l.pdf>
-<DumpBonds_8c__incl.pdf, id=7931, 199.74625pt x 214.8025pt>
+<DumpBonds_8c__incl.pdf, id=7838, 199.74625pt x 214.8025pt>
 File: DumpBonds_8c__incl.pdf Graphic file (type pdf)
 <use DumpBonds_8c__incl.pdf>
 Package pdftex.def Info: DumpBonds_8c__incl.pdf  used on input line 9.
 (pdftex.def)             Requested size: 199.0pt x 214.01205pt.
- [53] <./DumpBonds_8c_a918ba7fcfcb799caa0f61025cb71f187_icgraph.pdf>
-<DumpBonds_8c_a918ba7fcfcb799caa0f61025cb71f187_icgraph.pdf, id=8020, 232.87pt 
+ [51] <./DumpBonds_8c_a918ba7fcfcb799caa0f61025cb71f187_icgraph.pdf>
+<DumpBonds_8c_a918ba7fcfcb799caa0f61025cb71f187_icgraph.pdf, id=7928, 232.87pt 
 x 101.37875pt>
 File: DumpBonds_8c_a918ba7fcfcb799caa0f61025cb71f187_icgraph.pdf Graphic file (
 type pdf)
@@ -1227,14 +1227,14 @@ Package pdftex.def Info: DumpBonds_8c_a918ba7fcfcb799caa0f61025cb71f187_icgraph
 .pdf  used on input line 63.
 (pdftex.def)             Requested size: 232.0pt x 101.00414pt.
 )
-(./DumpBonds_8c_source.tex [54]) (./DumpPairs_8c.tex <./DumpPairs_8c__incl.pdf>
-<DumpPairs_8c__incl.pdf, id=8091, 192.72pt x 214.8025pt>
+(./DumpBonds_8c_source.tex [52]) (./DumpPairs_8c.tex <./DumpPairs_8c__incl.pdf>
+<DumpPairs_8c__incl.pdf, id=7998, 192.72pt x 214.8025pt>
 File: DumpPairs_8c__incl.pdf Graphic file (type pdf)
 <use DumpPairs_8c__incl.pdf>
 Package pdftex.def Info: DumpPairs_8c__incl.pdf  used on input line 9.
 (pdftex.def)             Requested size: 192.0pt x 213.99895pt.
-[55] <./DumpPairs_8c_a8645965b1cadcb70224588065e716c17_icgraph.pdf>
-<DumpPairs_8c_a8645965b1cadcb70224588065e716c17_icgraph.pdf, id=8169, 225.84375
+[53] <./DumpPairs_8c_a8645965b1cadcb70224588065e716c17_icgraph.pdf>
+<DumpPairs_8c_a8645965b1cadcb70224588065e716c17_icgraph.pdf, id=8075, 225.84375
 pt x 101.37875pt>
 File: DumpPairs_8c_a8645965b1cadcb70224588065e716c17_icgraph.pdf Graphic file (
 type pdf)
@@ -1243,15 +1243,15 @@ Package pdftex.def Info: DumpPairs_8c_a8645965b1cadcb70224588065e716c17_icgraph
 .pdf  used on input line 64.
 (pdftex.def)             Requested size: 225.0pt x 101.00568pt.
 )
-(./DumpPairs_8c_source.tex [56]) (./DumpRestart_8c.tex <./DumpRestart_8c__incl.
+(./DumpPairs_8c_source.tex [54]) (./DumpRestart_8c.tex <./DumpRestart_8c__incl.
 pdf>
-<DumpRestart_8c__incl.pdf, id=8245, 204.765pt x 214.8025pt>
+<DumpRestart_8c__incl.pdf, id=8151, 204.765pt x 214.8025pt>
 File: DumpRestart_8c__incl.pdf Graphic file (type pdf)
 <use DumpRestart_8c__incl.pdf>
 Package pdftex.def Info: DumpRestart_8c__incl.pdf  used on input line 9.
 (pdftex.def)             Requested size: 204.0pt x 214.01205pt.
- [57] <./DumpRestart_8c_ab0202998bd4c6de904803b310d95b2d8_icgraph.pdf>
-<DumpRestart_8c_ab0202998bd4c6de904803b310d95b2d8_icgraph.pdf, id=8327, 237.888
+ [55] <./DumpRestart_8c_ab0202998bd4c6de904803b310d95b2d8_icgraph.pdf>
+<DumpRestart_8c_ab0202998bd4c6de904803b310d95b2d8_icgraph.pdf, id=8234, 237.888
 75pt x 101.37875pt>
 File: DumpRestart_8c_ab0202998bd4c6de904803b310d95b2d8_icgraph.pdf Graphic file
  (type pdf)
@@ -1260,15 +1260,15 @@ Package pdftex.def Info: DumpRestart_8c_ab0202998bd4c6de904803b310d95b2d8_icgra
 ph.pdf  used on input line 76.
 (pdftex.def)             Requested size: 237.0pt x 101.00414pt.
 )
-(./DumpRestart_8c_source.tex [58]) (./DumpState_8c.tex <./DumpState_8c__incl.pd
+(./DumpRestart_8c_source.tex [56]) (./DumpState_8c.tex <./DumpState_8c__incl.pd
 f>
-<DumpState_8c__incl.pdf, id=8398, 194.7275pt x 214.8025pt>
+<DumpState_8c__incl.pdf, id=8305, 194.7275pt x 214.8025pt>
 File: DumpState_8c__incl.pdf Graphic file (type pdf)
 <use DumpState_8c__incl.pdf>
 Package pdftex.def Info: DumpState_8c__incl.pdf  used on input line 9.
 (pdftex.def)             Requested size: 194.0pt x 214.00877pt.
- [59] <./DumpState_8c_a65b923e31a875dd1a266c835d7187a87_icgraph.pdf>
-<DumpState_8c_a65b923e31a875dd1a266c835d7187a87_icgraph.pdf, id=8481, 228.855pt
+ [57] <./DumpState_8c_a65b923e31a875dd1a266c835d7187a87_icgraph.pdf>
+<DumpState_8c_a65b923e31a875dd1a266c835d7187a87_icgraph.pdf, id=8388, 228.855pt
  x 101.37875pt>
 File: DumpState_8c_a65b923e31a875dd1a266c835d7187a87_icgraph.pdf Graphic file (
 type pdf)
@@ -1277,15 +1277,15 @@ Package pdftex.def Info: DumpState_8c_a65b923e31a875dd1a266c835d7187a87_icgraph
 .pdf  used on input line 72.
 (pdftex.def)             Requested size: 228.0pt x 101.00414pt.
 )
-(./DumpState_8c_source.tex [60]) (./EvalCom_8c.tex <./EvalCom_8c__incl.pdf>
-<EvalCom_8c__incl.pdf, id=8533, 287.0725pt x 214.8025pt>
+(./DumpState_8c_source.tex [58]) (./EvalCom_8c.tex <./EvalCom_8c__incl.pdf>
+<EvalCom_8c__incl.pdf, id=8441, 287.0725pt x 214.8025pt>
 File: EvalCom_8c__incl.pdf Graphic file (type pdf)
 <use EvalCom_8c__incl.pdf>
 Package pdftex.def Info: EvalCom_8c__incl.pdf  used on input line 11.
 (pdftex.def)             Requested size: 286.0pt x 214.00551pt.
 
-[61] <./EvalCom_8c_a695ff3302f614ca0a896945f4a3dc709_icgraph.pdf>
-<EvalCom_8c_a695ff3302f614ca0a896945f4a3dc709_icgraph.pdf, id=8634, 216.81pt x 
+[59] <./EvalCom_8c_a695ff3302f614ca0a896945f4a3dc709_icgraph.pdf>
+<EvalCom_8c_a695ff3302f614ca0a896945f4a3dc709_icgraph.pdf, id=8540, 216.81pt x 
 101.37875pt>
 File: EvalCom_8c_a695ff3302f614ca0a896945f4a3dc709_icgraph.pdf Graphic file (ty
 pe pdf)
@@ -1294,14 +1294,14 @@ Package pdftex.def Info: EvalCom_8c_a695ff3302f614ca0a896945f4a3dc709_icgraph.p
 df  used on input line 68.
 (pdftex.def)             Requested size: 216.0pt x 101.00568pt.
 )
-(./EvalCom_8c_source.tex [62]) (./EvalProps_8c.tex <./EvalProps_8c__incl.pdf>
-<EvalProps_8c__incl.pdf, id=8710, 233.87375pt x 214.8025pt>
+(./EvalCom_8c_source.tex [60]) (./EvalProps_8c.tex <./EvalProps_8c__incl.pdf>
+<EvalProps_8c__incl.pdf, id=8616, 233.87375pt x 214.8025pt>
 File: EvalProps_8c__incl.pdf Graphic file (type pdf)
 <use EvalProps_8c__incl.pdf>
 Package pdftex.def Info: EvalProps_8c__incl.pdf  used on input line 10.
 (pdftex.def)             Requested size: 233.0pt x 214.01205pt.
 
-[63]
+[61]
 Underfull \hbox (badness 896) in paragraph at lines 81--82
 []\T1/phv/m/n/10 References [], [], [], [], [], [], [], [], [], [],
  []
@@ -1312,7 +1312,7 @@ Underfull \hbox (badness 772) in paragraph at lines 81--82
  []
 
  <./EvalProps_8c_a2d0358bac91b7e98e7a5a83a69325eed_icgraph.pdf>
-<EvalProps_8c_a2d0358bac91b7e98e7a5a83a69325eed_icgraph.pdf, id=8860, 221.82875
+<EvalProps_8c_a2d0358bac91b7e98e7a5a83a69325eed_icgraph.pdf, id=8767, 221.82875
 pt x 101.37875pt>
 File: EvalProps_8c_a2d0358bac91b7e98e7a5a83a69325eed_icgraph.pdf Graphic file (
 type pdf)
@@ -1321,30 +1321,30 @@ Package pdftex.def Info: EvalProps_8c_a2d0358bac91b7e98e7a5a83a69325eed_icgraph
 .pdf  used on input line 91.
 (pdftex.def)             Requested size: 221.0pt x 100.9995pt.
 )
-(./EvalProps_8c_source.tex [64]) (./EvalRdf_8c.tex <./EvalRdf_8c__incl.pdf>
-<EvalRdf_8c__incl.pdf, id=8954, 227.85126pt x 214.8025pt>
+(./EvalProps_8c_source.tex [62]) (./EvalRdf_8c.tex <./EvalRdf_8c__incl.pdf>
+<EvalRdf_8c__incl.pdf, id=8861, 227.85126pt x 214.8025pt>
 File: EvalRdf_8c__incl.pdf Graphic file (type pdf)
 <use EvalRdf_8c__incl.pdf>
 Package pdftex.def Info: EvalRdf_8c__incl.pdf  used on input line 10.
 (pdftex.def)             Requested size: 227.0pt x 214.00551pt.
 
-[65] [66]) (./EvalRdf_8c_source.tex [67]) (./EvalSpacetimeCorr_8c.tex <./EvalSp
+[63] [64]) (./EvalRdf_8c_source.tex [65]) (./EvalSpacetimeCorr_8c.tex <./EvalSp
 acetimeCorr_8c__incl.pdf>
-<EvalSpacetimeCorr_8c__incl.pdf, id=9226, 254.9525pt x 214.8025pt>
+<EvalSpacetimeCorr_8c__incl.pdf, id=9132, 254.9525pt x 214.8025pt>
 File: EvalSpacetimeCorr_8c__incl.pdf Graphic file (type pdf)
 <use EvalSpacetimeCorr_8c__incl.pdf>
 Package pdftex.def Info: EvalSpacetimeCorr_8c__incl.pdf  used on input line 10.
 
 (pdftex.def)             Requested size: 254.0pt x 214.00877pt.
- [68] [69]) (./EvalSpacetimeCorr_8c_source.tex
-[70]) (./EvalUnwrap_8c.tex <./EvalUnwrap_8c__incl.pdf>
-<EvalUnwrap_8c__incl.pdf, id=9523, 287.0725pt x 214.8025pt>
+ [66] [67]) (./EvalSpacetimeCorr_8c_source.tex
+[68]) (./EvalUnwrap_8c.tex <./EvalUnwrap_8c__incl.pdf>
+<EvalUnwrap_8c__incl.pdf, id=9431, 287.0725pt x 214.8025pt>
 File: EvalUnwrap_8c__incl.pdf Graphic file (type pdf)
 <use EvalUnwrap_8c__incl.pdf>
 Package pdftex.def Info: EvalUnwrap_8c__incl.pdf  used on input line 11.
 (pdftex.def)             Requested size: 286.0pt x 214.00551pt.
- [71] <./EvalUnwrap_8c_a1bd234e1132fb484a52ec59988006c08_icgraph.pdf>
-<EvalUnwrap_8c_a1bd234e1132fb484a52ec59988006c08_icgraph.pdf, id=9610, 231.8662
+ [69] <./EvalUnwrap_8c_a1bd234e1132fb484a52ec59988006c08_icgraph.pdf>
+<EvalUnwrap_8c_a1bd234e1132fb484a52ec59988006c08_icgraph.pdf, id=9517, 231.8662
 6pt x 101.37875pt>
 File: EvalUnwrap_8c_a1bd234e1132fb484a52ec59988006c08_icgraph.pdf Graphic file 
 (type pdf)
@@ -1353,14 +1353,14 @@ Package pdftex.def Info: EvalUnwrap_8c_a1bd234e1132fb484a52ec59988006c08_icgrap
 h.pdf  used on input line 55.
 (pdftex.def)             Requested size: 231.0pt x 101.0026pt.
 ) (./EvalUnwrap_8c_source.tex
-[72]) (./EvalVacf_8c.tex <./EvalVacf_8c__incl.pdf>
-<EvalVacf_8c__incl.pdf, id=9642, 186.6975pt x 214.8025pt>
+[70]) (./EvalVacf_8c.tex <./EvalVacf_8c__incl.pdf>
+<EvalVacf_8c__incl.pdf, id=9549, 186.6975pt x 214.8025pt>
 File: EvalVacf_8c__incl.pdf Graphic file (type pdf)
 <use EvalVacf_8c__incl.pdf>
 Package pdftex.def Info: EvalVacf_8c__incl.pdf  used on input line 9.
 (pdftex.def)             Requested size: 186.0pt x 214.00877pt.
- [73] <./EvalVacf_8c_ad6608c7fca41e40ae23fe93c00dc5e2c_cgraph.pdf>
-<EvalVacf_8c_ad6608c7fca41e40ae23fe93c00dc5e2c_cgraph.pdf, id=9736, 246.9225pt 
+ [71] <./EvalVacf_8c_ad6608c7fca41e40ae23fe93c00dc5e2c_cgraph.pdf>
+<EvalVacf_8c_ad6608c7fca41e40ae23fe93c00dc5e2c_cgraph.pdf, id=9642, 246.9225pt 
 x 179.67125pt>
 File: EvalVacf_8c_ad6608c7fca41e40ae23fe93c00dc5e2c_cgraph.pdf Graphic file (ty
 pe pdf)
@@ -1369,7 +1369,7 @@ Package pdftex.def Info: EvalVacf_8c_ad6608c7fca41e40ae23fe93c00dc5e2c_cgraph.p
 df  used on input line 64.
 (pdftex.def)             Requested size: 246.0pt x 178.9991pt.
  <./EvalVacf_8c_ad6608c7fca41e40ae23fe93c00dc5e2c_icgraph.pdf>
-<EvalVacf_8c_ad6608c7fca41e40ae23fe93c00dc5e2c_icgraph.pdf, id=9744, 244.915pt 
+<EvalVacf_8c_ad6608c7fca41e40ae23fe93c00dc5e2c_icgraph.pdf, id=9650, 244.915pt 
 x 101.37875pt>
 File: EvalVacf_8c_ad6608c7fca41e40ae23fe93c00dc5e2c_icgraph.pdf Graphic file (t
 ype pdf)
@@ -1377,8 +1377,8 @@ ype pdf)
 Package pdftex.def Info: EvalVacf_8c_ad6608c7fca41e40ae23fe93c00dc5e2c_icgraph.
 pdf  used on input line 71.
 (pdftex.def)             Requested size: 244.0pt x 101.0026pt.
- [74] <./EvalVacf_8c_a3c5fb8e107a2ba5ac5b27a1f67558883_cgraph.pdf>
-<EvalVacf_8c_a3c5fb8e107a2ba5ac5b27a1f67558883_cgraph.pdf, id=9790, 341.275pt x
+ [72] <./EvalVacf_8c_a3c5fb8e107a2ba5ac5b27a1f67558883_cgraph.pdf>
+<EvalVacf_8c_a3c5fb8e107a2ba5ac5b27a1f67558883_cgraph.pdf, id=9696, 341.275pt x
  179.67125pt>
 File: EvalVacf_8c_a3c5fb8e107a2ba5ac5b27a1f67558883_cgraph.pdf Graphic file (ty
 pe pdf)
@@ -1386,14 +1386,14 @@ pe pdf)
 Package pdftex.def Info: EvalVacf_8c_a3c5fb8e107a2ba5ac5b27a1f67558883_cgraph.p
 df  used on input line 117.
 (pdftex.def)             Requested size: 340.0pt x 179.01007pt.
-) (./EvalVacf_8c_source.tex [75]) (./EvalVrms_8c.tex <./EvalVrms_8c__incl.pdf>
-<EvalVrms_8c__incl.pdf, id=9845, 287.0725pt x 214.8025pt>
+) (./EvalVacf_8c_source.tex [73]) (./EvalVrms_8c.tex <./EvalVrms_8c__incl.pdf>
+<EvalVrms_8c__incl.pdf, id=9752, 287.0725pt x 214.8025pt>
 File: EvalVrms_8c__incl.pdf Graphic file (type pdf)
 <use EvalVrms_8c__incl.pdf>
 Package pdftex.def Info: EvalVrms_8c__incl.pdf  used on input line 11.
 (pdftex.def)             Requested size: 286.0pt x 214.00551pt.
- [76] <./EvalVrms_8c_a3275d07fd445af2ae869b604eee31afb_icgraph.pdf>
-<EvalVrms_8c_a3275d07fd445af2ae869b604eee31afb_icgraph.pdf, id=9914, 219.82124p
+ [74] <./EvalVrms_8c_a3275d07fd445af2ae869b604eee31afb_icgraph.pdf>
+<EvalVrms_8c_a3275d07fd445af2ae869b604eee31afb_icgraph.pdf, id=9822, 219.82124p
 t x 101.37875pt>
 File: EvalVrms_8c_a3275d07fd445af2ae869b604eee31afb_icgraph.pdf Graphic file (t
 ype pdf)
@@ -1402,24 +1402,24 @@ Package pdftex.def Info: EvalVrms_8c_a3275d07fd445af2ae869b604eee31afb_icgraph.
 pdf  used on input line 60.
 (pdftex.def)             Requested size: 219.0pt x 101.0026pt.
 )
-(./EvalVrms_8c_source.tex [77]) (./global_8h.tex <./global_8h__incl.pdf>
-<global_8h__incl.pdf, id=9981, 170.6375pt x 158.5925pt>
+(./EvalVrms_8c_source.tex [75]) (./global_8h.tex <./global_8h__incl.pdf>
+<global_8h__incl.pdf, id=9888, 170.6375pt x 158.5925pt>
 File: global_8h__incl.pdf Graphic file (type pdf)
 <use global_8h__incl.pdf>
 Package pdftex.def Info: global_8h__incl.pdf  used on input line 8.
 (pdftex.def)             Requested size: 170.0pt x 158.00888pt.
  <./global_8h__dep__incl.pdf>
-<global_8h__dep__incl.pdf, id=9989, 5812.71625pt x 170.6375pt>
+<global_8h__dep__incl.pdf, id=9896, 5812.71625pt x 170.6375pt>
 File: global_8h__dep__incl.pdf Graphic file (type pdf)
 <use global_8h__dep__incl.pdf>
 Package pdftex.def Info: global_8h__dep__incl.pdf  used on input line 15.
 (pdftex.def)             Requested size: 350.0pt x 10.27425pt.
- [78] [79] [80] [81]
+ [76] [77] [78] [79]
 Underfull \hbox (badness 2653) in paragraph at lines 462--463
 []\T1/phv/m/n/10 Referenced by [], [], [], [], [],
  []
 
-[82] [83]
+[80] [81]
 Underfull \hbox (badness 1264) in paragraph at lines 570--571
 []\T1/phv/m/n/10 Referenced by [], [], [], [], [],
  []
@@ -1434,12 +1434,12 @@ Underfull \hbox (badness 3209) in paragraph at lines 608--609
 []\T1/phv/m/n/10 , [], [], [], [], [], [],
  []
 
-[84] [85] [86]
+[82] [83] [84]
 Underfull \hbox (badness 10000) in paragraph at lines 880--881
 []\T1/phv/m/n/10 Referenced by [], [], [], [], [],
  []
 
-[87] [88] [89] [90] [91] [92] [93] [94] [95]
+[85] [86] [87] [88] [89] [90] [91] [92] [93]
 Overfull \hbox (34.709pt too wide) in paragraph at lines 1550--1551
 []\T1/phv/m/n/10 , [], [], [], [], [], [],
  []
@@ -1449,12 +1449,12 @@ Underfull \hbox (badness 3514) in paragraph at lines 1550--1551
 []\T1/phv/m/n/10 , [], [], [], [], [], [],
  []
 
-[96] [97] [98] [99] [100]
+[94] [95] [96] [97] [98]
 Underfull \hbox (badness 4595) in paragraph at lines 1946--1947
 []\T1/phv/m/n/10 , [], [], [], [], [], [],
  []
 
-[101]
+[99]
 Underfull \hbox (badness 4582) in paragraph at lines 1990--1991
 []\T1/phv/m/n/10 Referenced by [], [], [], [],
  []
@@ -1469,7 +1469,7 @@ Underfull \hbox (badness 4582) in paragraph at lines 2014--2015
 []\T1/phv/m/n/10 Referenced by [], [], [], [],
  []
 
-[102] [103] [104] [105] [106] [107] [108] [109] [110] [111] [112]
+[100] [101] [102] [103] [104] [105] [106] [107] [108] [109] [110]
 Overfull \hbox (34.60814pt too wide) in paragraph at lines 2874--2875
 []\T1/phv/m/n/10 Referenced by [], [], [], [], [], [],
  []
@@ -1479,18 +1479,18 @@ Overfull \hbox (34.60814pt too wide) in paragraph at lines 2888--2889
 []\T1/phv/m/n/10 Referenced by [], [], [], [], [], [],
  []
 
-) (./global_8h_source.tex [113] [114] [115]) (./globalExtern_8h.tex [116]
-[117] [118] [119] [120] [121] [122] [123] [124] [125] [126] [127] [128]
-[129] [130] [131] [132] [133] [134] [135] [136] [137] [138] [139] [140]
-[141] [142]) (./globalExtern_8h_source.tex [143] [144]) (./Halt_8c.tex <./Halt_
+) (./global_8h_source.tex [111] [112] [113]) (./globalExtern_8h.tex [114]
+[115] [116] [117] [118] [119] [120] [121] [122] [123] [124] [125] [126]
+[127] [128] [129] [130] [131] [132] [133] [134] [135] [136] [137] [138]
+[139] [140]) (./globalExtern_8h_source.tex [141] [142]) (./Halt_8c.tex <./Halt_
 8c__incl.pdf>
-<Halt_8c__incl.pdf, id=12891, 298.11375pt x 214.8025pt>
+<Halt_8c__incl.pdf, id=12799, 298.11375pt x 214.8025pt>
 File: Halt_8c__incl.pdf Graphic file (type pdf)
 <use Halt_8c__incl.pdf>
 Package pdftex.def Info: Halt_8c__incl.pdf  used on input line 11.
 (pdftex.def)             Requested size: 297.0pt x 214.01205pt.
- [145] <./Halt_8c_a4f7624821cdea57301448e9fcc5f0144_icgraph.pdf>
-<Halt_8c_a4f7624821cdea57301448e9fcc5f0144_icgraph.pdf, id=12972, 271.0125pt x 
+ [143] <./Halt_8c_a4f7624821cdea57301448e9fcc5f0144_icgraph.pdf>
+<Halt_8c_a4f7624821cdea57301448e9fcc5f0144_icgraph.pdf, id=12878, 271.0125pt x 
 101.37875pt>
 File: Halt_8c_a4f7624821cdea57301448e9fcc5f0144_icgraph.pdf Graphic file (type 
 pdf)
@@ -1499,15 +1499,15 @@ Package pdftex.def Info: Halt_8c_a4f7624821cdea57301448e9fcc5f0144_icgraph.pdf
  used on input line 56.
 (pdftex.def)             Requested size: 270.0pt x 101.00414pt.
 )
-(./Halt_8c_source.tex [146]) (./Init_8c.tex <./Init_8c__incl.pdf>
-<Init_8c__incl.pdf, id=12998, 426.59375pt x 214.8025pt>
+(./Halt_8c_source.tex [144]) (./Init_8c.tex <./Init_8c__incl.pdf>
+<Init_8c__incl.pdf, id=12905, 426.59375pt x 214.8025pt>
 File: Init_8c__incl.pdf Graphic file (type pdf)
 <use Init_8c__incl.pdf>
 Package pdftex.def Info: Init_8c__incl.pdf  used on input line 13.
 (pdftex.def)             Requested size: 350.0pt x 176.24734pt.
- [147]
-[148] [149] [150] <./Init_8c_a1e3b6d38df0786ccf7f938d60e386aae_icgraph.pdf>
-<Init_8c_a1e3b6d38df0786ccf7f938d60e386aae_icgraph.pdf, id=13432, 189.70876pt x
+ [145]
+[146] [147] [148] <./Init_8c_a1e3b6d38df0786ccf7f938d60e386aae_icgraph.pdf>
+<Init_8c_a1e3b6d38df0786ccf7f938d60e386aae_icgraph.pdf, id=13339, 189.70876pt x
  101.37875pt>
 File: Init_8c_a1e3b6d38df0786ccf7f938d60e386aae_icgraph.pdf Graphic file (type 
 pdf)
@@ -1516,15 +1516,15 @@ Package pdftex.def Info: Init_8c_a1e3b6d38df0786ccf7f938d60e386aae_icgraph.pdf
  used on input line 281.
 (pdftex.def)             Requested size: 189.0pt x 101.0026pt.
 )
-(./Init_8c_source.tex [151] [152] [153]) (./InitVacf_8c.tex <./InitVacf_8c__inc
+(./Init_8c_source.tex [149] [150] [151]) (./InitVacf_8c.tex <./InitVacf_8c__inc
 l.pdf>
-<InitVacf_8c__incl.pdf, id=13952, 183.68625pt x 214.8025pt>
+<InitVacf_8c__incl.pdf, id=13860, 183.68625pt x 214.8025pt>
 File: InitVacf_8c__incl.pdf Graphic file (type pdf)
 <use InitVacf_8c__incl.pdf>
 Package pdftex.def Info: InitVacf_8c__incl.pdf  used on input line 9.
 (pdftex.def)             Requested size: 183.0pt x 214.01534pt.
- [154] <./InitVacf_8c_a7c5f7c4e917de0e2ff97777973da01ee_cgraph.pdf>
-<InitVacf_8c_a7c5f7c4e917de0e2ff97777973da01ee_cgraph.pdf, id=14019, 228.855pt 
+ [152] <./InitVacf_8c_a7c5f7c4e917de0e2ff97777973da01ee_cgraph.pdf>
+<InitVacf_8c_a7c5f7c4e917de0e2ff97777973da01ee_cgraph.pdf, id=13927, 228.855pt 
 x 101.37875pt>
 File: InitVacf_8c_a7c5f7c4e917de0e2ff97777973da01ee_cgraph.pdf Graphic file (ty
 pe pdf)
@@ -1533,7 +1533,7 @@ Package pdftex.def Info: InitVacf_8c_a7c5f7c4e917de0e2ff97777973da01ee_cgraph.p
 df  used on input line 54.
 (pdftex.def)             Requested size: 228.0pt x 101.00414pt.
  <./InitVacf_8c_a7c5f7c4e917de0e2ff97777973da01ee_icgraph.pdf>
-<InitVacf_8c_a7c5f7c4e917de0e2ff97777973da01ee_icgraph.pdf, id=14027, 305.14pt 
+<InitVacf_8c_a7c5f7c4e917de0e2ff97777973da01ee_icgraph.pdf, id=13935, 305.14pt 
 x 101.37875pt>
 File: InitVacf_8c_a7c5f7c4e917de0e2ff97777973da01ee_icgraph.pdf Graphic file (t
 ype pdf)
@@ -1542,7 +1542,7 @@ Package pdftex.def Info: InitVacf_8c_a7c5f7c4e917de0e2ff97777973da01ee_icgraph.
 pdf  used on input line 61.
 (pdftex.def)             Requested size: 304.0pt x 101.00414pt.
  <./InitVacf_8c_af60963b0cbbf0bed9d310797a6f9a59d_icgraph.pdf>
-<InitVacf_8c_af60963b0cbbf0bed9d310797a6f9a59d_icgraph.pdf, id=14041, 401.5pt x
+<InitVacf_8c_af60963b0cbbf0bed9d310797a6f9a59d_icgraph.pdf, id=13949, 401.5pt x
  101.37875pt>
 File: InitVacf_8c_af60963b0cbbf0bed9d310797a6f9a59d_icgraph.pdf Graphic file (t
 ype pdf)
@@ -1550,15 +1550,15 @@ ype pdf)
 Package pdftex.def Info: InitVacf_8c_af60963b0cbbf0bed9d310797a6f9a59d_icgraph.
 pdf  used on input line 92.
 (pdftex.def)             Requested size: 350.0pt x 88.38132pt.
-) (./InitVacf_8c_source.tex [155])
+) (./InitVacf_8c_source.tex [153])
 (./Integrate_8c.tex <./Integrate_8c__incl.pdf>
-<Integrate_8c__incl.pdf, id=14071, 187.70125pt x 214.8025pt>
+<Integrate_8c__incl.pdf, id=13978, 187.70125pt x 214.8025pt>
 File: Integrate_8c__incl.pdf Graphic file (type pdf)
 <use Integrate_8c__incl.pdf>
 Package pdftex.def Info: Integrate_8c__incl.pdf  used on input line 9.
 (pdftex.def)             Requested size: 187.0pt x 214.01205pt.
- [156] <./Integrate_8c_a8d31c83bd377974025524c86b20425b2_icgraph.pdf>
-<Integrate_8c_a8d31c83bd377974025524c86b20425b2_icgraph.pdf, id=14119, 341.275p
+ [154] <./Integrate_8c_a8d31c83bd377974025524c86b20425b2_icgraph.pdf>
+<Integrate_8c_a8d31c83bd377974025524c86b20425b2_icgraph.pdf, id=14027, 341.275p
 t x 101.37875pt>
 File: Integrate_8c_a8d31c83bd377974025524c86b20425b2_icgraph.pdf Graphic file (
 type pdf)
@@ -1566,22 +1566,22 @@ type pdf)
 Package pdftex.def Info: Integrate_8c_a8d31c83bd377974025524c86b20425b2_icgraph
 .pdf  used on input line 50.
 (pdftex.def)             Requested size: 340.0pt x 101.00568pt.
-) (./Integrate_8c_source.tex [157])
+) (./Integrate_8c_source.tex [155])
 (./LeapfrogStep_8c.tex <./LeapfrogStep_8c__incl.pdf>
-<LeapfrogStep_8c__incl.pdf, id=14142, 499.8675pt x 214.8025pt>
+<LeapfrogStep_8c__incl.pdf, id=14048, 499.8675pt x 214.8025pt>
 File: LeapfrogStep_8c__incl.pdf Graphic file (type pdf)
 <use LeapfrogStep_8c__incl.pdf>
 Package pdftex.def Info: LeapfrogStep_8c__incl.pdf  used on input line 13.
 (pdftex.def)             Requested size: 350.0pt x 150.4066pt.
- [158] [159])
-(./LeapfrogStep_8c_source.tex [160] [161]) (./main_8c.tex <./main_8c__incl.pdf>
-<main_8c__incl.pdf, id=14598, 771.88374pt x 214.8025pt>
+ [156] [157])
+(./LeapfrogStep_8c_source.tex [158] [159]) (./main_8c.tex <./main_8c__incl.pdf>
+<main_8c__incl.pdf, id=14505, 771.88374pt x 214.8025pt>
 File: main_8c__incl.pdf Graphic file (type pdf)
 <use main_8c__incl.pdf>
 Package pdftex.def Info: main_8c__incl.pdf  used on input line 16.
 (pdftex.def)             Requested size: 350.0pt x 97.39769pt.
-[162] [163] [164] <./main_8c_a5e0b9ccb6d4aee203a4de8438fc9f590_icgraph.pdf>
-<main_8c_a5e0b9ccb6d4aee203a4de8438fc9f590_icgraph.pdf, id=14944, 273.02pt x 10
+[160] [161] [162] <./main_8c_a5e0b9ccb6d4aee203a4de8438fc9f590_icgraph.pdf>
+<main_8c_a5e0b9ccb6d4aee203a4de8438fc9f590_icgraph.pdf, id=14851, 273.02pt x 10
 1.37875pt>
 File: main_8c_a5e0b9ccb6d4aee203a4de8438fc9f590_icgraph.pdf Graphic file (type 
 pdf)
@@ -1590,8 +1590,8 @@ Package pdftex.def Info: main_8c_a5e0b9ccb6d4aee203a4de8438fc9f590_icgraph.pdf
  used on input line 222.
 (pdftex.def)             Requested size: 272.0pt x 101.00568pt.
 
-[165] <./main_8c_ad6ab10f163d2a72fca0250e1aae8f09b_icgraph.pdf>
-<main_8c_ad6ab10f163d2a72fca0250e1aae8f09b_icgraph.pdf, id=15015, 227.85126pt x
+[163] <./main_8c_ad6ab10f163d2a72fca0250e1aae8f09b_icgraph.pdf>
+<main_8c_ad6ab10f163d2a72fca0250e1aae8f09b_icgraph.pdf, id=14923, 227.85126pt x
  101.37875pt>
 File: main_8c_ad6ab10f163d2a72fca0250e1aae8f09b_icgraph.pdf Graphic file (type 
 pdf)
@@ -1599,14 +1599,14 @@ pdf)
 Package pdftex.def Info: main_8c_ad6ab10f163d2a72fca0250e1aae8f09b_icgraph.pdf 
  used on input line 321.
 (pdftex.def)             Requested size: 227.0pt x 101.0026pt.
- [166] [167]
-[168]
+ [164] [165]
+[166]
 Underfull \hbox (badness 1000) in paragraph at lines 553--554
 []\T1/phv/m/n/10 References [], [], [], [], [], [], [], [], [], [],
  []
 
  <./main_8c_a7f7a3199c392465d0767c6506c1af5b4_icgraph.pdf>
-<main_8c_a7f7a3199c392465d0767c6506c1af5b4_icgraph.pdf, id=15266, 200.75pt x 10
+<main_8c_a7f7a3199c392465d0767c6506c1af5b4_icgraph.pdf, id=15173, 200.75pt x 10
 1.37875pt>
 File: main_8c_a7f7a3199c392465d0767c6506c1af5b4_icgraph.pdf Graphic file (type 
 pdf)
@@ -1614,13 +1614,13 @@ pdf)
 Package pdftex.def Info: main_8c_a7f7a3199c392465d0767c6506c1af5b4_icgraph.pdf 
  used on input line 563.
 (pdftex.def)             Requested size: 200.0pt x 101.00723pt.
- [169] [170]
+ [167] [168]
 Underfull \hbox (badness 991) in paragraph at lines 711--712
 []\T1/phv/m/n/10 References [], [], [], [], [], [], [], [], [], [], [],
  []
 
  <./main_8c_a3d24280446b0ed41ab873e8325636373_icgraph.pdf>
-<main_8c_a3d24280446b0ed41ab873e8325636373_icgraph.pdf, id=15449, 246.9225pt x 
+<main_8c_a3d24280446b0ed41ab873e8325636373_icgraph.pdf, id=15355, 246.9225pt x 
 101.37875pt>
 File: main_8c_a3d24280446b0ed41ab873e8325636373_icgraph.pdf Graphic file (type 
 pdf)
@@ -1628,8 +1628,8 @@ pdf)
 Package pdftex.def Info: main_8c_a3d24280446b0ed41ab873e8325636373_icgraph.pdf 
  used on input line 746.
 (pdftex.def)             Requested size: 246.0pt x 100.9995pt.
- [171] <./main_8c_a918ba7fcfcb799caa0f61025cb71f187_icgraph.pdf>
-<main_8c_a918ba7fcfcb799caa0f61025cb71f187_icgraph.pdf, id=15505, 232.87pt x 10
+ [169] <./main_8c_a918ba7fcfcb799caa0f61025cb71f187_icgraph.pdf>
+<main_8c_a918ba7fcfcb799caa0f61025cb71f187_icgraph.pdf, id=15413, 232.87pt x 10
 1.37875pt>
 File: main_8c_a918ba7fcfcb799caa0f61025cb71f187_icgraph.pdf Graphic file (type 
 pdf)
@@ -1638,7 +1638,7 @@ Package pdftex.def Info: main_8c_a918ba7fcfcb799caa0f61025cb71f187_icgraph.pdf
  used on input line 792.
 (pdftex.def)             Requested size: 232.0pt x 101.00414pt.
  <./main_8c_a8645965b1cadcb70224588065e716c17_icgraph.pdf>
-<main_8c_a8645965b1cadcb70224588065e716c17_icgraph.pdf, id=15551, 225.84375pt x
+<main_8c_a8645965b1cadcb70224588065e716c17_icgraph.pdf, id=15459, 225.84375pt x
  101.37875pt>
 File: main_8c_a8645965b1cadcb70224588065e716c17_icgraph.pdf Graphic file (type 
 pdf)
@@ -1646,8 +1646,8 @@ pdf)
 Package pdftex.def Info: main_8c_a8645965b1cadcb70224588065e716c17_icgraph.pdf 
  used on input line 839.
 (pdftex.def)             Requested size: 225.0pt x 101.00568pt.
- [172] <./main_8c_ab0202998bd4c6de904803b310d95b2d8_icgraph.pdf>
-<main_8c_ab0202998bd4c6de904803b310d95b2d8_icgraph.pdf, id=15614, 237.88875pt x
+ [170] <./main_8c_ab0202998bd4c6de904803b310d95b2d8_icgraph.pdf>
+<main_8c_ab0202998bd4c6de904803b310d95b2d8_icgraph.pdf, id=15521, 237.88875pt x
  101.37875pt>
 File: main_8c_ab0202998bd4c6de904803b310d95b2d8_icgraph.pdf Graphic file (type 
 pdf)
@@ -1655,8 +1655,8 @@ pdf)
 Package pdftex.def Info: main_8c_ab0202998bd4c6de904803b310d95b2d8_icgraph.pdf 
  used on input line 898.
 (pdftex.def)             Requested size: 237.0pt x 101.00414pt.
- [173] <./main_8c_a65b923e31a875dd1a266c835d7187a87_icgraph.pdf>
-<main_8c_a65b923e31a875dd1a266c835d7187a87_icgraph.pdf, id=15665, 228.855pt x 1
+ [171] <./main_8c_a65b923e31a875dd1a266c835d7187a87_icgraph.pdf>
+<main_8c_a65b923e31a875dd1a266c835d7187a87_icgraph.pdf, id=15572, 228.855pt x 1
 01.37875pt>
 File: main_8c_a65b923e31a875dd1a266c835d7187a87_icgraph.pdf Graphic file (type 
 pdf)
@@ -1665,8 +1665,8 @@ Package pdftex.def Info: main_8c_a65b923e31a875dd1a266c835d7187a87_icgraph.pdf
  used on input line 953.
 (pdftex.def)             Requested size: 228.0pt x 101.00414pt.
 
-[174] <./main_8c_a695ff3302f614ca0a896945f4a3dc709_icgraph.pdf>
-<main_8c_a695ff3302f614ca0a896945f4a3dc709_icgraph.pdf, id=15728, 216.81pt x 10
+[172] <./main_8c_a695ff3302f614ca0a896945f4a3dc709_icgraph.pdf>
+<main_8c_a695ff3302f614ca0a896945f4a3dc709_icgraph.pdf, id=15635, 216.81pt x 10
 1.37875pt>
 File: main_8c_a695ff3302f614ca0a896945f4a3dc709_icgraph.pdf Graphic file (type 
 pdf)
@@ -1684,8 +1684,8 @@ Underfull \hbox (badness 772) in paragraph at lines 1065--1066
 []\T1/phv/m/n/10 , [], [], [], [], [], [], [],
  []
 
-[175] <./main_8c_a2d0358bac91b7e98e7a5a83a69325eed_icgraph.pdf>
-<main_8c_a2d0358bac91b7e98e7a5a83a69325eed_icgraph.pdf, id=15840, 221.82875pt x
+[173] <./main_8c_a2d0358bac91b7e98e7a5a83a69325eed_icgraph.pdf>
+<main_8c_a2d0358bac91b7e98e7a5a83a69325eed_icgraph.pdf, id=15746, 221.82875pt x
  101.37875pt>
 File: main_8c_a2d0358bac91b7e98e7a5a83a69325eed_icgraph.pdf Graphic file (type 
 pdf)
@@ -1693,8 +1693,8 @@ pdf)
 Package pdftex.def Info: main_8c_a2d0358bac91b7e98e7a5a83a69325eed_icgraph.pdf 
  used on input line 1075.
 (pdftex.def)             Requested size: 221.0pt x 100.9995pt.
- [176] [177] <./main_8c_a1bd234e1132fb484a52ec59988006c08_icgraph.pdf>
-<main_8c_a1bd234e1132fb484a52ec59988006c08_icgraph.pdf, id=16038, 231.86626pt x
+ [174] [175] <./main_8c_a1bd234e1132fb484a52ec59988006c08_icgraph.pdf>
+<main_8c_a1bd234e1132fb484a52ec59988006c08_icgraph.pdf, id=15946, 231.86626pt x
  101.37875pt>
 File: main_8c_a1bd234e1132fb484a52ec59988006c08_icgraph.pdf Graphic file (type 
 pdf)
@@ -1702,8 +1702,8 @@ pdf)
 Package pdftex.def Info: main_8c_a1bd234e1132fb484a52ec59988006c08_icgraph.pdf 
  used on input line 1289.
 (pdftex.def)             Requested size: 231.0pt x 101.0026pt.
- [178] <./main_8c_a3c5fb8e107a2ba5ac5b27a1f67558883_cgraph.pdf>
-<main_8c_a3c5fb8e107a2ba5ac5b27a1f67558883_cgraph.pdf, id=16084, 341.275pt x 17
+ [176] <./main_8c_a3c5fb8e107a2ba5ac5b27a1f67558883_cgraph.pdf>
+<main_8c_a3c5fb8e107a2ba5ac5b27a1f67558883_cgraph.pdf, id=15991, 341.275pt x 17
 9.67125pt>
 File: main_8c_a3c5fb8e107a2ba5ac5b27a1f67558883_cgraph.pdf Graphic file (type p
 df)
@@ -1712,7 +1712,7 @@ Package pdftex.def Info: main_8c_a3c5fb8e107a2ba5ac5b27a1f67558883_cgraph.pdf
 used on input line 1335.
 (pdftex.def)             Requested size: 340.0pt x 179.01007pt.
  <./main_8c_a3275d07fd445af2ae869b604eee31afb_icgraph.pdf>
-<main_8c_a3275d07fd445af2ae869b604eee31afb_icgraph.pdf, id=16116, 219.82124pt x
+<main_8c_a3275d07fd445af2ae869b604eee31afb_icgraph.pdf, id=16023, 219.82124pt x
  101.37875pt>
 File: main_8c_a3275d07fd445af2ae869b604eee31afb_icgraph.pdf Graphic file (type 
 pdf)
@@ -1720,8 +1720,8 @@ pdf)
 Package pdftex.def Info: main_8c_a3275d07fd445af2ae869b604eee31afb_icgraph.pdf 
  used on input line 1376.
 (pdftex.def)             Requested size: 219.0pt x 101.0026pt.
- [179] <./main_8c_a4f7624821cdea57301448e9fcc5f0144_icgraph.pdf>
-<main_8c_a4f7624821cdea57301448e9fcc5f0144_icgraph.pdf, id=16141, 271.0125pt x 
+ [177] <./main_8c_a4f7624821cdea57301448e9fcc5f0144_icgraph.pdf>
+<main_8c_a4f7624821cdea57301448e9fcc5f0144_icgraph.pdf, id=16048, 271.0125pt x 
 101.37875pt>
 File: main_8c_a4f7624821cdea57301448e9fcc5f0144_icgraph.pdf Graphic file (type 
 pdf)
@@ -1729,8 +1729,8 @@ pdf)
 Package pdftex.def Info: main_8c_a4f7624821cdea57301448e9fcc5f0144_icgraph.pdf 
  used on input line 1413.
 (pdftex.def)             Requested size: 270.0pt x 101.00414pt.
- [180] [181] [182] <./main_8c_a1e3b6d38df0786ccf7f938d60e386aae_icgraph.pdf>
-<main_8c_a1e3b6d38df0786ccf7f938d60e386aae_icgraph.pdf, id=16532, 189.70876pt x
+ [178] [179] [180] <./main_8c_a1e3b6d38df0786ccf7f938d60e386aae_icgraph.pdf>
+<main_8c_a1e3b6d38df0786ccf7f938d60e386aae_icgraph.pdf, id=16439, 189.70876pt x
  101.37875pt>
 File: main_8c_a1e3b6d38df0786ccf7f938d60e386aae_icgraph.pdf Graphic file (type 
 pdf)
@@ -1739,8 +1739,8 @@ Package pdftex.def Info: main_8c_a1e3b6d38df0786ccf7f938d60e386aae_icgraph.pdf
  used on input line 1673.
 (pdftex.def)             Requested size: 189.0pt x 101.0026pt.
 
-[183] [184] <./main_8c_a3c04138a5bfe5d72780bb7e82a18e627_cgraph.pdf>
-<main_8c_a3c04138a5bfe5d72780bb7e82a18e627_cgraph.pdf, id=16696, 480.79625pt x 
+[181] [182] <./main_8c_a3c04138a5bfe5d72780bb7e82a18e627_cgraph.pdf>
+<main_8c_a3c04138a5bfe5d72780bb7e82a18e627_cgraph.pdf, id=16603, 480.79625pt x 
 923.45pt>
 File: main_8c_a3c04138a5bfe5d72780bb7e82a18e627_cgraph.pdf Graphic file (type p
 df)
@@ -1748,9 +1748,9 @@ df)
 Package pdftex.def Info: main_8c_a3c04138a5bfe5d72780bb7e82a18e627_cgraph.pdf  
 used on input line 1836.
 (pdftex.def)             Requested size: 286.35976pt x 550.0pt.
- [185]
-[186] <./main_8c_ac4099b32a5f955706439e3e8736be84f_icgraph.pdf>
-<main_8c_ac4099b32a5f955706439e3e8736be84f_icgraph.pdf, id=16727, 218.8175pt x 
+ [183]
+[184] <./main_8c_ac4099b32a5f955706439e3e8736be84f_icgraph.pdf>
+<main_8c_ac4099b32a5f955706439e3e8736be84f_icgraph.pdf, id=16635, 218.8175pt x 
 101.37875pt>
 File: main_8c_ac4099b32a5f955706439e3e8736be84f_icgraph.pdf Graphic file (type 
 pdf)
@@ -1759,7 +1759,7 @@ Package pdftex.def Info: main_8c_ac4099b32a5f955706439e3e8736be84f_icgraph.pdf
  used on input line 1869.
 (pdftex.def)             Requested size: 218.0pt x 101.00104pt.
  <./main_8c_a88e586d610cefdd8d3b676b9a35ceebd_icgraph.pdf>
-<main_8c_a88e586d610cefdd8d3b676b9a35ceebd_icgraph.pdf, id=16785, 243.91125pt x
+<main_8c_a88e586d610cefdd8d3b676b9a35ceebd_icgraph.pdf, id=16693, 243.91125pt x
  101.37875pt>
 File: main_8c_a88e586d610cefdd8d3b676b9a35ceebd_icgraph.pdf Graphic file (type 
 pdf)
@@ -1767,8 +1767,8 @@ pdf)
 Package pdftex.def Info: main_8c_a88e586d610cefdd8d3b676b9a35ceebd_icgraph.pdf 
  used on input line 1947.
 (pdftex.def)             Requested size: 243.0pt x 101.00104pt.
- [187] <./main_8c_ae8c08b7a0eaa4515cfb245baebdf4751_icgraph.pdf>
-<main_8c_ae8c08b7a0eaa4515cfb245baebdf4751_icgraph.pdf, id=16813, 221.82875pt x
+ [185] <./main_8c_ae8c08b7a0eaa4515cfb245baebdf4751_icgraph.pdf>
+<main_8c_ae8c08b7a0eaa4515cfb245baebdf4751_icgraph.pdf, id=16719, 221.82875pt x
  101.37875pt>
 File: main_8c_ae8c08b7a0eaa4515cfb245baebdf4751_icgraph.pdf Graphic file (type 
 pdf)
@@ -1776,8 +1776,8 @@ pdf)
 Package pdftex.def Info: main_8c_ae8c08b7a0eaa4515cfb245baebdf4751_icgraph.pdf 
  used on input line 1980.
 (pdftex.def)             Requested size: 221.0pt x 100.9995pt.
- [188] <./main_8c_a9110280655b1015bb1d792845e028775_cgraph.pdf>
-<main_8c_a9110280655b1015bb1d792845e028775_cgraph.pdf, id=16857, 347.2975pt x 1
+ [186] <./main_8c_a9110280655b1015bb1d792845e028775_cgraph.pdf>
+<main_8c_a9110280655b1015bb1d792845e028775_cgraph.pdf, id=16764, 347.2975pt x 1
 79.67125pt>
 File: main_8c_a9110280655b1015bb1d792845e028775_cgraph.pdf Graphic file (type p
 df)
@@ -1786,7 +1786,7 @@ Package pdftex.def Info: main_8c_a9110280655b1015bb1d792845e028775_cgraph.pdf
 used on input line 2027.
 (pdftex.def)             Requested size: 346.0pt x 179.00732pt.
  <./main_8c_a9110280655b1015bb1d792845e028775_icgraph.pdf>
-<main_8c_a9110280655b1015bb1d792845e028775_icgraph.pdf, id=16866, 216.81pt x 10
+<main_8c_a9110280655b1015bb1d792845e028775_icgraph.pdf, id=16772, 216.81pt x 10
 1.37875pt>
 File: main_8c_a9110280655b1015bb1d792845e028775_icgraph.pdf Graphic file (type 
 pdf)
@@ -1794,8 +1794,8 @@ pdf)
 Package pdftex.def Info: main_8c_a9110280655b1015bb1d792845e028775_icgraph.pdf 
  used on input line 2034.
 (pdftex.def)             Requested size: 216.0pt x 101.00568pt.
- [189] <./main_8c_a0d23960762e61f857c04368fa85438af_icgraph.pdf>
-<main_8c_a0d23960762e61f857c04368fa85438af_icgraph.pdf, id=16929, 221.82875pt x
+ [187] <./main_8c_a0d23960762e61f857c04368fa85438af_icgraph.pdf>
+<main_8c_a0d23960762e61f857c04368fa85438af_icgraph.pdf, id=16836, 221.82875pt x
  101.37875pt>
 File: main_8c_a0d23960762e61f857c04368fa85438af_icgraph.pdf Graphic file (type 
 pdf)
@@ -1803,8 +1803,8 @@ pdf)
 Package pdftex.def Info: main_8c_a0d23960762e61f857c04368fa85438af_icgraph.pdf 
  used on input line 2079.
 (pdftex.def)             Requested size: 221.0pt x 100.9995pt.
- [190] <./main_8c_a2a17e5b6b292eb6e59d1da1d0b499e27_icgraph.pdf>
-<main_8c_a2a17e5b6b292eb6e59d1da1d0b499e27_icgraph.pdf, id=17007, 262.9825pt x 
+ [188] <./main_8c_a2a17e5b6b292eb6e59d1da1d0b499e27_icgraph.pdf>
+<main_8c_a2a17e5b6b292eb6e59d1da1d0b499e27_icgraph.pdf, id=16914, 262.9825pt x 
 101.37875pt>
 File: main_8c_a2a17e5b6b292eb6e59d1da1d0b499e27_icgraph.pdf Graphic file (type 
 pdf)
@@ -1812,15 +1812,15 @@ pdf)
 Package pdftex.def Info: main_8c_a2a17e5b6b292eb6e59d1da1d0b499e27_icgraph.pdf 
  used on input line 2139.
 (pdftex.def)             Requested size: 262.0pt x 101.00414pt.
-) (./main_8c_source.tex [191] [192])
+) (./main_8c_source.tex [189] [190])
 (./PrintCom_8c.tex <./PrintCom_8c__incl.pdf>
-<PrintCom_8c__incl.pdf, id=17282, 287.0725pt x 214.8025pt>
+<PrintCom_8c__incl.pdf, id=17190, 287.0725pt x 214.8025pt>
 File: PrintCom_8c__incl.pdf Graphic file (type pdf)
 <use PrintCom_8c__incl.pdf>
 Package pdftex.def Info: PrintCom_8c__incl.pdf  used on input line 11.
 (pdftex.def)             Requested size: 286.0pt x 214.00551pt.
- [193] <./PrintCom_8c_ac4099b32a5f955706439e3e8736be84f_icgraph.pdf>
-<PrintCom_8c_ac4099b32a5f955706439e3e8736be84f_icgraph.pdf, id=17380, 218.8175p
+ [191] <./PrintCom_8c_ac4099b32a5f955706439e3e8736be84f_icgraph.pdf>
+<PrintCom_8c_ac4099b32a5f955706439e3e8736be84f_icgraph.pdf, id=17286, 218.8175p
 t x 101.37875pt>
 File: PrintCom_8c_ac4099b32a5f955706439e3e8736be84f_icgraph.pdf Graphic file (t
 ype pdf)
@@ -1828,30 +1828,30 @@ ype pdf)
 Package pdftex.def Info: PrintCom_8c_ac4099b32a5f955706439e3e8736be84f_icgraph.
 pdf  used on input line 52.
 (pdftex.def)             Requested size: 218.0pt x 101.00104pt.
-) (./PrintCom_8c_source.tex [194])
+) (./PrintCom_8c_source.tex [192])
 (./PrintMomentum_8c.tex <./PrintMomentum_8c__incl.pdf>
-<PrintMomentum_8c__incl.pdf, id=17406, 218.8175pt x 214.8025pt>
+<PrintMomentum_8c__incl.pdf, id=17312, 218.8175pt x 214.8025pt>
 File: PrintMomentum_8c__incl.pdf Graphic file (type pdf)
 <use PrintMomentum_8c__incl.pdf>
 Package pdftex.def Info: PrintMomentum_8c__incl.pdf  used on input line 9.
 (pdftex.def)             Requested size: 218.0pt x 214.00223pt.
- [195])
+ [193])
 (./PrintMomentum_8c_source.tex) (./PrintStress_8c.tex <./PrintStress_8c__incl.p
 df>
-<PrintStress_8c__incl.pdf, id=17477, 192.72pt x 214.8025pt>
+<PrintStress_8c__incl.pdf, id=17384, 192.72pt x 214.8025pt>
 File: PrintStress_8c__incl.pdf Graphic file (type pdf)
 <use PrintStress_8c__incl.pdf>
 Package pdftex.def Info: PrintStress_8c__incl.pdf  used on input line 9.
 (pdftex.def)             Requested size: 192.0pt x 213.99895pt.
- [196]) (./PrintStress_8c_source.tex [197]) (./PrintSummary_8c.tex <./PrintSumm
+ [194]) (./PrintStress_8c_source.tex [195]) (./PrintSummary_8c.tex <./PrintSumm
 ary_8c__incl.pdf>
-<PrintSummary_8c__incl.pdf, id=17567, 208.78pt x 214.8025pt>
+<PrintSummary_8c__incl.pdf, id=17474, 208.78pt x 214.8025pt>
 File: PrintSummary_8c__incl.pdf Graphic file (type pdf)
 <use PrintSummary_8c__incl.pdf>
 Package pdftex.def Info: PrintSummary_8c__incl.pdf  used on input line 9.
 (pdftex.def)             Requested size: 208.0pt x 214.01205pt.
  <./PrintSummary_8c_a88e586d610cefdd8d3b676b9a35ceebd_icgraph.pdf>
-<PrintSummary_8c_a88e586d610cefdd8d3b676b9a35ceebd_icgraph.pdf, id=17600, 243.9
+<PrintSummary_8c_a88e586d610cefdd8d3b676b9a35ceebd_icgraph.pdf, id=17507, 243.9
 1125pt x 101.37875pt>
 File: PrintSummary_8c_a88e586d610cefdd8d3b676b9a35ceebd_icgraph.pdf Graphic fil
 e (type pdf)
@@ -1859,15 +1859,15 @@ e (type pdf)
 Package pdftex.def Info: PrintSummary_8c_a88e586d610cefdd8d3b676b9a35ceebd_icgr
 aph.pdf  used on input line 51.
 (pdftex.def)             Requested size: 243.0pt x 101.00104pt.
-) (./PrintSummary_8c_source.tex [198]) (./PrintVacf_8c.tex <./PrintVacf_8c__inc
+) (./PrintSummary_8c_source.tex [196]) (./PrintVacf_8c.tex <./PrintVacf_8c__inc
 l.pdf>
-<PrintVacf_8c__incl.pdf, id=17643, 187.70125pt x 214.8025pt>
+<PrintVacf_8c__incl.pdf, id=17550, 187.70125pt x 214.8025pt>
 File: PrintVacf_8c__incl.pdf Graphic file (type pdf)
 <use PrintVacf_8c__incl.pdf>
 Package pdftex.def Info: PrintVacf_8c__incl.pdf  used on input line 9.
 (pdftex.def)             Requested size: 187.0pt x 214.01205pt.
- [199] <./PrintVacf_8c_a9be1b8f0429ee69e28f6fb3850e8acdb_icgraph.pdf>
-<PrintVacf_8c_a9be1b8f0429ee69e28f6fb3850e8acdb_icgraph.pdf, id=17687, 341.275p
+ [197] <./PrintVacf_8c_a9be1b8f0429ee69e28f6fb3850e8acdb_icgraph.pdf>
+<PrintVacf_8c_a9be1b8f0429ee69e28f6fb3850e8acdb_icgraph.pdf, id=17593, 341.275p
 t x 101.37875pt>
 File: PrintVacf_8c_a9be1b8f0429ee69e28f6fb3850e8acdb_icgraph.pdf Graphic file (
 type pdf)
@@ -1875,15 +1875,15 @@ type pdf)
 Package pdftex.def Info: PrintVacf_8c_a9be1b8f0429ee69e28f6fb3850e8acdb_icgraph
 .pdf  used on input line 56.
 (pdftex.def)             Requested size: 340.0pt x 101.00568pt.
-) (./PrintVacf_8c_source.tex [200]) (./PrintVrms_8c.tex <./PrintVrms_8c__incl.p
+) (./PrintVacf_8c_source.tex [198]) (./PrintVrms_8c.tex <./PrintVrms_8c__incl.p
 df>
-<PrintVrms_8c__incl.pdf, id=17740, 287.0725pt x 214.8025pt>
+<PrintVrms_8c__incl.pdf, id=17646, 287.0725pt x 214.8025pt>
 File: PrintVrms_8c__incl.pdf Graphic file (type pdf)
 <use PrintVrms_8c__incl.pdf>
 Package pdftex.def Info: PrintVrms_8c__incl.pdf  used on input line 11.
 (pdftex.def)             Requested size: 286.0pt x 214.00551pt.
  <./PrintVrms_8c_ae8c08b7a0eaa4515cfb245baebdf4751_icgraph.pdf>
-<PrintVrms_8c_ae8c08b7a0eaa4515cfb245baebdf4751_icgraph.pdf, id=17759, 221.8287
+<PrintVrms_8c_ae8c08b7a0eaa4515cfb245baebdf4751_icgraph.pdf, id=17666, 221.8287
 5pt x 101.37875pt>
 File: PrintVrms_8c_ae8c08b7a0eaa4515cfb245baebdf4751_icgraph.pdf Graphic file (
 type pdf)
@@ -1892,15 +1892,15 @@ Package pdftex.def Info: PrintVrms_8c_ae8c08b7a0eaa4515cfb245baebdf4751_icgraph
 .pdf  used on input line 52.
 (pdftex.def)             Requested size: 221.0pt x 100.9995pt.
 )
-(./PrintVrms_8c_source.tex [201]) (./SetupJob_8c.tex <./SetupJob_8c__incl.pdf>
-<SetupJob_8c__incl.pdf, id=17796, 187.70125pt x 214.8025pt>
+(./PrintVrms_8c_source.tex [199]) (./SetupJob_8c.tex <./SetupJob_8c__incl.pdf>
+<SetupJob_8c__incl.pdf, id=17703, 187.70125pt x 214.8025pt>
 File: SetupJob_8c__incl.pdf Graphic file (type pdf)
 <use SetupJob_8c__incl.pdf>
 Package pdftex.def Info: SetupJob_8c__incl.pdf  used on input line 9.
 (pdftex.def)             Requested size: 187.0pt x 214.01205pt.
 
-[202] [203] <./SetupJob_8c_a4b4560208657b98f0dea0ba6d4413c19_icgraph.pdf>
-<SetupJob_8c_a4b4560208657b98f0dea0ba6d4413c19_icgraph.pdf, id=17935, 329.23pt 
+[200] [201] <./SetupJob_8c_a4b4560208657b98f0dea0ba6d4413c19_icgraph.pdf>
+<SetupJob_8c_a4b4560208657b98f0dea0ba6d4413c19_icgraph.pdf, id=17842, 329.23pt 
 x 101.37875pt>
 File: SetupJob_8c_a4b4560208657b98f0dea0ba6d4413c19_icgraph.pdf Graphic file (t
 ype pdf)
@@ -1914,7 +1914,7 @@ Underfull \hbox (badness 1147) in paragraph at lines 126--127
  []
 
  <./SetupJob_8c_a0de7521b891c869e61da0348ea08f8f1_icgraph.pdf>
-<SetupJob_8c_a0de7521b891c869e61da0348ea08f8f1_icgraph.pdf, id=17993, 324.21124
+<SetupJob_8c_a0de7521b891c869e61da0348ea08f8f1_icgraph.pdf, id=17900, 324.21124
 pt x 101.37875pt>
 File: SetupJob_8c_a0de7521b891c869e61da0348ea08f8f1_icgraph.pdf Graphic file (t
 ype pdf)
@@ -1922,8 +1922,8 @@ ype pdf)
 Package pdftex.def Info: SetupJob_8c_a0de7521b891c869e61da0348ea08f8f1_icgraph.
 pdf  used on input line 136.
 (pdftex.def)             Requested size: 323.0pt x 101.00568pt.
- [204] <./SetupJob_8c_a7c5f7c4e917de0e2ff97777973da01ee_cgraph.pdf>
-<SetupJob_8c_a7c5f7c4e917de0e2ff97777973da01ee_cgraph.pdf, id=18021, 228.855pt 
+ [202] <./SetupJob_8c_a7c5f7c4e917de0e2ff97777973da01ee_cgraph.pdf>
+<SetupJob_8c_a7c5f7c4e917de0e2ff97777973da01ee_cgraph.pdf, id=17928, 228.855pt 
 x 101.37875pt>
 File: SetupJob_8c_a7c5f7c4e917de0e2ff97777973da01ee_cgraph.pdf Graphic file (ty
 pe pdf)
@@ -1932,7 +1932,7 @@ Package pdftex.def Info: SetupJob_8c_a7c5f7c4e917de0e2ff97777973da01ee_cgraph.p
 df  used on input line 171.
 (pdftex.def)             Requested size: 228.0pt x 101.00414pt.
  <./SetupJob_8c_a7c5f7c4e917de0e2ff97777973da01ee_icgraph.pdf>
-<SetupJob_8c_a7c5f7c4e917de0e2ff97777973da01ee_icgraph.pdf, id=18029, 305.14pt 
+<SetupJob_8c_a7c5f7c4e917de0e2ff97777973da01ee_icgraph.pdf, id=17936, 305.14pt 
 x 101.37875pt>
 File: SetupJob_8c_a7c5f7c4e917de0e2ff97777973da01ee_icgraph.pdf Graphic file (t
 ype pdf)
@@ -1941,7 +1941,7 @@ Package pdftex.def Info: SetupJob_8c_a7c5f7c4e917de0e2ff97777973da01ee_icgraph.
 pdf  used on input line 178.
 (pdftex.def)             Requested size: 304.0pt x 101.00414pt.
  <./SetupJob_8c_a9110280655b1015bb1d792845e028775_cgraph.pdf>
-<SetupJob_8c_a9110280655b1015bb1d792845e028775_cgraph.pdf, id=18064, 347.2975pt
+<SetupJob_8c_a9110280655b1015bb1d792845e028775_cgraph.pdf, id=17971, 347.2975pt
  x 179.67125pt>
 File: SetupJob_8c_a9110280655b1015bb1d792845e028775_cgraph.pdf Graphic file (ty
 pe pdf)
@@ -1949,8 +1949,8 @@ pe pdf)
 Package pdftex.def Info: SetupJob_8c_a9110280655b1015bb1d792845e028775_cgraph.p
 df  used on input line 225.
 (pdftex.def)             Requested size: 346.0pt x 179.00732pt.
- [205] <./SetupJob_8c_a9110280655b1015bb1d792845e028775_icgraph.pdf>
-<SetupJob_8c_a9110280655b1015bb1d792845e028775_icgraph.pdf, id=18080, 216.81pt 
+ [203] <./SetupJob_8c_a9110280655b1015bb1d792845e028775_icgraph.pdf>
+<SetupJob_8c_a9110280655b1015bb1d792845e028775_icgraph.pdf, id=17987, 216.81pt 
 x 101.37875pt>
 File: SetupJob_8c_a9110280655b1015bb1d792845e028775_icgraph.pdf Graphic file (t
 ype pdf)
@@ -1958,15 +1958,15 @@ ype pdf)
 Package pdftex.def Info: SetupJob_8c_a9110280655b1015bb1d792845e028775_icgraph.
 pdf  used on input line 232.
 (pdftex.def)             Requested size: 216.0pt x 101.00568pt.
-) (./SetupJob_8c_source.tex [206]) (./Trajectory_8c.tex <./Trajectory_8c__incl.
+) (./SetupJob_8c_source.tex [204]) (./Trajectory_8c.tex <./Trajectory_8c__incl.
 pdf>
-<Trajectory_8c__incl.pdf, id=18135, 189.70876pt x 214.8025pt>
+<Trajectory_8c__incl.pdf, id=18041, 189.70876pt x 214.8025pt>
 File: Trajectory_8c__incl.pdf Graphic file (type pdf)
 <use Trajectory_8c__incl.pdf>
 Package pdftex.def Info: Trajectory_8c__incl.pdf  used on input line 9.
 (pdftex.def)             Requested size: 189.0pt x 214.00551pt.
- [207] <./Trajectory_8c_a0d23960762e61f857c04368fa85438af_icgraph.pdf>
-<Trajectory_8c_a0d23960762e61f857c04368fa85438af_icgraph.pdf, id=18221, 221.828
+ [205] <./Trajectory_8c_a0d23960762e61f857c04368fa85438af_icgraph.pdf>
+<Trajectory_8c_a0d23960762e61f857c04368fa85438af_icgraph.pdf, id=18128, 221.828
 75pt x 101.37875pt>
 File: Trajectory_8c_a0d23960762e61f857c04368fa85438af_icgraph.pdf Graphic file 
 (type pdf)
@@ -1974,16 +1974,16 @@ File: Trajectory_8c_a0d23960762e61f857c04368fa85438af_icgraph.pdf Graphic file
 Package pdftex.def Info: Trajectory_8c_a0d23960762e61f857c04368fa85438af_icgrap
 h.pdf  used on input line 62.
 (pdftex.def)             Requested size: 221.0pt x 100.9995pt.
-) (./Trajectory_8c_source.tex [208]) (./VelocityVerletStep_8c.tex <./VelocityVe
+) (./Trajectory_8c_source.tex [206]) (./VelocityVerletStep_8c.tex <./VelocityVe
 rletStep_8c__incl.pdf>
-<VelocityVerletStep_8c__incl.pdf, id=18301, 253.94875pt x 214.8025pt>
+<VelocityVerletStep_8c__incl.pdf, id=18208, 253.94875pt x 214.8025pt>
 File: VelocityVerletStep_8c__incl.pdf Graphic file (type pdf)
 <use VelocityVerletStep_8c__incl.pdf>
 Package pdftex.def Info: VelocityVerletStep_8c__incl.pdf  used on input line 10
 .
 (pdftex.def)             Requested size: 253.0pt x 214.00877pt.
- [209] <./VelocityVerletStep_8c_a2a17e5b6b292eb6e59d1da1d0b499e27_icgraph.pdf>
-<VelocityVerletStep_8c_a2a17e5b6b292eb6e59d1da1d0b499e27_icgraph.pdf, id=18387,
+ [207] <./VelocityVerletStep_8c_a2a17e5b6b292eb6e59d1da1d0b499e27_icgraph.pdf>
+<VelocityVerletStep_8c_a2a17e5b6b292eb6e59d1da1d0b499e27_icgraph.pdf, id=18294,
  262.9825pt x 101.37875pt>
 File: VelocityVerletStep_8c_a2a17e5b6b292eb6e59d1da1d0b499e27_icgraph.pdf Graph
 ic file (type pdf)
@@ -1991,15 +1991,15 @@ ic file (type pdf)
 Package pdftex.def Info: VelocityVerletStep_8c_a2a17e5b6b292eb6e59d1da1d0b499e2
 7_icgraph.pdf  used on input line 78.
 (pdftex.def)             Requested size: 262.0pt x 101.00414pt.
-) (./VelocityVerletStep_8c_source.tex [210])
+) (./VelocityVerletStep_8c_source.tex [208])
 (./ZeroVacf_8c.tex <./ZeroVacf_8c__incl.pdf>
-<ZeroVacf_8c__incl.pdf, id=18478, 187.70125pt x 214.8025pt>
+<ZeroVacf_8c__incl.pdf, id=18385, 187.70125pt x 214.8025pt>
 File: ZeroVacf_8c__incl.pdf Graphic file (type pdf)
 <use ZeroVacf_8c__incl.pdf>
 Package pdftex.def Info: ZeroVacf_8c__incl.pdf  used on input line 9.
 (pdftex.def)             Requested size: 187.0pt x 214.01205pt.
- [211] <./ZeroVacf_8c_af60963b0cbbf0bed9d310797a6f9a59d_icgraph.pdf>
-<ZeroVacf_8c_af60963b0cbbf0bed9d310797a6f9a59d_icgraph.pdf, id=18535, 418.56375
+ [209] <./ZeroVacf_8c_af60963b0cbbf0bed9d310797a6f9a59d_icgraph.pdf>
+<ZeroVacf_8c_af60963b0cbbf0bed9d310797a6f9a59d_icgraph.pdf, id=18441, 418.56375
 pt x 140.525pt>
 File: ZeroVacf_8c_af60963b0cbbf0bed9d310797a6f9a59d_icgraph.pdf Graphic file (t
 ype pdf)
@@ -2007,28 +2007,28 @@ ype pdf)
 Package pdftex.def Info: ZeroVacf_8c_af60963b0cbbf0bed9d310797a6f9a59d_icgraph.
 pdf  used on input line 52.
 (pdftex.def)             Requested size: 350.0pt x 117.50412pt.
-) (./ZeroVacf_8c_source.tex) [212]
+) (./ZeroVacf_8c_source.tex) [210]
 (./refman.ind
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 22.39185pt on input line 1.
- [213
+ [211
 
 
 
-] [214] [215] [216] [217] [218] [219] [220] [221] [222]
-[223] [224]) (./refman.aux)
+] [212] [213] [214] [215] [216] [217] [218] [219] [220]
+[221] [222]) (./refman.aux)
 Package rerunfilecheck Info: File `refman.out' has not changed.
-(rerunfilecheck)             Checksum: D3172B2FCE5017A45BF93CB0649F42DD;119872.
+(rerunfilecheck)             Checksum: B35AF24FA0E0EDF4210B1A8C6F013587;117449.
 
  ) 
 Here is how much of TeX's memory you used:
- 25309 strings out of 477950
- 517489 string characters out of 5838494
- 1879388 words of memory out of 6000000
- 40253 multiletter control sequences out of 15000+600000
+ 25250 strings out of 477950
+ 516574 string characters out of 5838494
+ 1880388 words of memory out of 6000000
+ 40224 multiletter control sequences out of 15000+600000
  554333 words of font info for 91 fonts, out of 8000000 for 9000
  34 hyphenation exceptions out of 8191
- 101i,16n,117p,6143b,723s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 101i,16n,117p,6143b,710s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texli
@@ -2037,10 +2037,10 @@ f-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
 rw/courier/ucrro8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/
 uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on refman.pdf (242 pages, 2486427 bytes).
+Output written on refman.pdf (240 pages, 2477455 bytes).
 PDF statistics:
- 20746 PDF objects out of 22161 (max. 8388607)
- 19916 compressed objects within 200 object streams
- 4724 named destinations out of 5155 (max. 500000)
- 5840 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 20646 PDF objects out of 22161 (max. 8388607)
+ 19819 compressed objects within 199 object streams
+ 4694 named destinations out of 5155 (max. 500000)
+ 5736 words of extra memory for PDF output out of 10000 (max. 10000000)
 

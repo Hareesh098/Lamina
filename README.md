@@ -1,7 +1,9 @@
 \mainpage Lamina: A Molecular Dynamics Package
+
 <p align="center">
-  <img src="./figures/LogoLaminaHTML.png" alt="Lamina Logo" width="300"/>
+  <img src="./figures/LogoLaminaLatex.png" alt="Lamina Logo" width="300"/>
 </p>
+
 Welcome to the Lamina documentation!
 # Lamina
 **Lamina** is a modular 2D molecular dynamics simulation package designed for simulating hybrid soft solids, including 
