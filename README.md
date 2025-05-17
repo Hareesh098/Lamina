@@ -36,34 +36,28 @@ explore the complexity of emergent phenomena in 2D materials and soft matter sys
 - Configurational temperature evaluation and control
 
 # Time Integration
-<pre>
-Leap-Frog integrator
-Velocity-Verlet integrator
-Langevin (stochastic) integrator
-Brownian (overdamped) interator
-</pre>
+- Leap-Frog integrator
+- Velocity-Verlet integrator
+- Langevin (stochastic) integrator
+- Brownian (overdamped) interator
 
 # Physical Observables
-<pre>
-Radial Distribution Function (RDF)
-Velocity Autocorrelation Function (VACF)
-Root-Mean-Square Velocity (VRMS)
-Stress tensor and momentum
-Center-of-mass motion
-Space-time correlation functions
-</pre>
+- Radial Distribution Function (RDF)
+- Velocity Autocorrelation Function (VACF)
+- Root-Mean-Square Velocity (VRMS)
+- Stress tensor and momentum
+- Center-of-mass motion
+- Space-time correlation functions
 
 # Output and Utilities
-The output files are saved at the ../output folder. So you have a make a directory ../ location from where you are running the code.
-<pre>
-Command to run ./main prefix
-Structured output files (`.xyz`, `.bond`, `.pair`, `.com`, `.result`)
-Restart and resume capability (`.restart` and `.state` files)
-Clean separation of source code, unit tests, and output
-Support for Lees–Edwards boundary conditions (sheared systems)
-Configurable halting conditions (based on VRMS or custom metric)
-Modular design for easy extension of potentials and features
-</pre>
+- The output files are saved at the ../output folder. So you have a make a directory ../ location from where you are running the code.
+- Command to run ./main prefix
+- Structured output files (`.xyz`, `.bond`, `.pair`, `.com`, `.result`)
+- Restart and resume capability (`.restart` and `.state` files)
+- Clean separation of source code, unit tests, and output
+- Support for Lees–Edwards boundary conditions (sheared systems)
+- Configurable halting conditions (based on VRMS or custom metric)
+- Modular design for easy extension of potentials and features
 
 # Project Structure
 <pre>
