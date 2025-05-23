@@ -77,30 +77,31 @@ dynamic behaviors in simple geometry, this code explores the complexity of emerg
 
 ```plaintext
 Lamina/
-  ├── source/                  # C source files; avoid placing README.md here to prevent extra pages
-  │     ├── main.c             # Main driver
-  │     ├── *.c, *.h           # Modular source files
-  ├── unittest/                # Unit test suite (planned or implemented)
-  │     ├── test_*.c           # Individual test cases
-  ├── output/                  # Runtime output files
-  ├── prepros/                 # Preprocessing scripts/tools (.sh, .py, etc.)
-  ├── postpros/                # Postprocessing scripts/tools (.sh, .py, etc.)
-  ├── doxygen/                 # Doxygen configuration and auxiliary files
-  │     ├── Doxyfile           # Doxygen config file
-  │     ├── header.tex         # Custom LaTeX header for docs
-  │     └── extra_stylesheet.css # Optional CSS for HTML styling
-  ├── figures/                 # Figures, logos, icons used in docs/code
-  │     └── LogoLaminaLatex.png # Project logo for documentation
-  ├── docs/                    # Generated documentation (HTML, LaTeX, PDFs)
-  │     ├── html/              # Doxygen-generated HTML docs
-  │     ├── latex/             # Doxygen-generated LaTeX sources
-  │     └── refman.pdf         # Generated PDF manual
-  ├── Makefile                 # Build system for manual Make builds
-  ├── CMakeLists.txt           # CMake build system configuration
-  ├── README.md                # This main documentation file
-  └── .github/                 # GitHub configuration directory
-        └── workflows/         # GitHub Actions workflows for CI/CD
-            └── ci.yml         # CI workflow file
+  |-- source/                  # C source files; avoid placing README.md here to prevent extra pages
+  |     |-- main.c             # Main driver
+  |     |-- *.c, *.h           # Modular source files
+  |-- unittest/                # Unit test suite (planned or implemented)
+  |     |-- test_*.c           # Individual test cases
+  |-- output/                  # Runtime output files
+  |-- prepros/                 # Preprocessing scripts/tools (.sh, .py, etc.)
+  |-- postpros/                # Postprocessing scripts/tools (.sh, .py, etc.)
+  |-- doxygen/                 # Doxygen configuration and auxiliary files
+  |     |-- Doxyfile           # Doxygen config file
+  |     |-- header.tex         # Custom LaTeX header for docs
+  |     \-- extra_stylesheet.css # Optional CSS for HTML styling
+  |-- figures/                 # Figures, logos, icons used in docs/code
+  |     \-- LogoLaminaLatex.png # Project logo for documentation
+  |-- docs/                    # Generated documentation (HTML, LaTeX, PDFs)
+  |     |-- html/              # Doxygen-generated HTML docs
+  |     |-- latex/             # Doxygen-generated LaTeX sources
+  |     \-- refman.pdf         # Generated PDF manual
+  |-- Makefile                 # Build system for manual Make builds
+  |-- CMakeLists.txt           # CMake build system configuration
+  |-- README.md                # This main documentation file
+  \-- .github/                 # GitHub configuration directory
+        \-- workflows/         # GitHub Actions workflows for CI/CD
+            \-- ci.yml         # CI workflow file
+|--generate-docs.sh  #To genrate the html and latex documents 
 ```
 
 ---

@@ -1,1400 +1,1399 @@
 \begin{theindex}
 
   \item {AccumProps}
-    \subitem {AccumProps.c}, \hyperpage{8}
-    \subitem {main.c}, \hyperpage{164}
-    \subitem {SetupJob.c}, \hyperpage{203}
+    \subitem {AccumProps.c}, \hyperpage{7}
+    \subitem {main.c}, \hyperpage{138}
+    \subitem {SetupJob.c}, \hyperpage{174}
   \item {AccumProps.c}
-    \subitem {AccumProps}, \hyperpage{8}
+    \subitem {AccumProps}, \hyperpage{7}
   \item {AccumVacf}
-    \subitem {AccumVacf.c}, \hyperpage{10}
-    \subitem {EvalVacf.c}, \hyperpage{74}
+    \subitem {AccumVacf.c}, \hyperpage{9}
+    \subitem {EvalVacf.c}, \hyperpage{69}
   \item {AccumVacf.c}
-    \subitem {AccumVacf}, \hyperpage{10}
-    \subitem {Integrate}, \hyperpage{11}
+    \subitem {AccumVacf}, \hyperpage{9}
+    \subitem {Integrate}, \hyperpage{10}
     \subitem {PrintVacf}, \hyperpage{11}
-    \subitem {ZeroVacf}, \hyperpage{12}
+    \subitem {ZeroVacf}, \hyperpage{11}
   \item {AllocArrays}
-    \subitem {AllocArrays.c}, \hyperpage{14}
-    \subitem {SetupJob.c}, \hyperpage{204}
+    \subitem {AllocArrays.c}, \hyperpage{13}
+    \subitem {SetupJob.c}, \hyperpage{175}
   \item {AllocArrays.c}
-    \subitem {AllocArrays}, \hyperpage{14}
+    \subitem {AllocArrays}, \hyperpage{13}
   \item {ApplyBoundaryCond}
-    \subitem {ApplyBoundaryCond.c}, \hyperpage{16}
-    \subitem {main.c}, \hyperpage{164}
+    \subitem {ApplyBoundaryCond.c}, \hyperpage{15}
+    \subitem {main.c}, \hyperpage{138}
   \item {ApplyBoundaryCond.c}
-    \subitem {ApplyBoundaryCond}, \hyperpage{16}
+    \subitem {ApplyBoundaryCond}, \hyperpage{15}
   \item {ApplyDrivingForce}
-    \subitem {ApplyDrivingForce.c}, \hyperpage{18}
-    \subitem {main.c}, \hyperpage{165}
+    \subitem {ApplyDrivingForce.c}, \hyperpage{17}
+    \subitem {main.c}, \hyperpage{139}
   \item {ApplyDrivingForce.c}
-    \subitem {ApplyDrivingForce}, \hyperpage{18}
+    \subitem {ApplyDrivingForce}, \hyperpage{17}
   \item {ApplyForce}
-    \subitem {ApplyForce.c}, \hyperpage{20}
-    \subitem {main.c}, \hyperpage{166}
+    \subitem {ApplyForce.c}, \hyperpage{19}
+    \subitem {main.c}, \hyperpage{140}
   \item {ApplyForce.c}
-    \subitem {ApplyForce}, \hyperpage{20}
+    \subitem {ApplyForce}, \hyperpage{19}
   \item {ApplyLeesEdwardsBoundaryCond}
-    \subitem {ApplyLeesEdwardsBoundaryCond.c}, \hyperpage{22}
-    \subitem {main.c}, \hyperpage{166}
+    \subitem {ApplyLeesEdwardsBoundaryCond.c}, \hyperpage{21}
+    \subitem {main.c}, \hyperpage{140}
   \item {ApplyLeesEdwardsBoundaryCond.c}
-    \subitem {ApplyLeesEdwardsBoundaryCond}, \hyperpage{22}
+    \subitem {ApplyLeesEdwardsBoundaryCond}, \hyperpage{21}
   \item {ApplyShear}
-    \subitem {ApplyShear.c}, \hyperpage{24}
-    \subitem {main.c}, \hyperpage{167}
+    \subitem {ApplyShear.c}, \hyperpage{23}
+    \subitem {main.c}, \hyperpage{141}
   \item {ApplyShear.c}
-    \subitem {ApplyShear}, \hyperpage{24}
+    \subitem {ApplyShear}, \hyperpage{23}
   \item {ApplyViscous}
-    \subitem {ApplyViscous.c}, \hyperpage{25}
-    \subitem {main.c}, \hyperpage{167}
+    \subitem {ApplyViscous.c}, \hyperpage{24}
+    \subitem {main.c}, \hyperpage{141}
   \item {ApplyViscous.c}
-    \subitem {ApplyViscous}, \hyperpage{25}
+    \subitem {ApplyViscous}, \hyperpage{24}
   \item {atom1}
-    \subitem {global.h}, \hyperpage{83}
-    \subitem {globalExtern.h}, \hyperpage{120}
+    \subitem {global.h}, \hyperpage{78}
+    \subitem {globalExtern.h}, \hyperpage{103}
   \item {atom2}
-    \subitem {global.h}, \hyperpage{83}
-    \subitem {globalExtern.h}, \hyperpage{120}
+    \subitem {global.h}, \hyperpage{78}
+    \subitem {globalExtern.h}, \hyperpage{103}
   \item {atomID}
-    \subitem {global.h}, \hyperpage{83}
-    \subitem {globalExtern.h}, \hyperpage{120}
+    \subitem {global.h}, \hyperpage{79}
+    \subitem {globalExtern.h}, \hyperpage{104}
   \item {atomIDInterface}
-    \subitem {global.h}, \hyperpage{83}
-    \subitem {globalExtern.h}, \hyperpage{120}
+    \subitem {global.h}, \hyperpage{79}
+    \subitem {globalExtern.h}, \hyperpage{104}
   \item {atomMass}
-    \subitem {global.h}, \hyperpage{84}
-    \subitem {globalExtern.h}, \hyperpage{121}
+    \subitem {global.h}, \hyperpage{79}
+    \subitem {globalExtern.h}, \hyperpage{104}
   \item {atomRadius}
-    \subitem {global.h}, \hyperpage{84}
-    \subitem {globalExtern.h}, \hyperpage{121}
+    \subitem {global.h}, \hyperpage{79}
+    \subitem {globalExtern.h}, \hyperpage{104}
   \item {atomType}
-    \subitem {global.h}, \hyperpage{84}
-    \subitem {globalExtern.h}, \hyperpage{121}
+    \subitem {global.h}, \hyperpage{79}
+    \subitem {globalExtern.h}, \hyperpage{104}
   \item {ax}
-    \subitem {global.h}, \hyperpage{84}
-    \subitem {globalExtern.h}, \hyperpage{121}
+    \subitem {global.h}, \hyperpage{79}
+    \subitem {globalExtern.h}, \hyperpage{104}
   \item {ay}
-    \subitem {global.h}, \hyperpage{84}
-    \subitem {globalExtern.h}, \hyperpage{121}
+    \subitem {global.h}, \hyperpage{79}
+    \subitem {globalExtern.h}, \hyperpage{104}
 
   \indexspace
 
   \item {bond}
-    \subitem {global.h}, \hyperpage{84}
-    \subitem {globalExtern.h}, \hyperpage{121}
+    \subitem {global.h}, \hyperpage{79}
+    \subitem {globalExtern.h}, \hyperpage{104}
   \item {BondEnergy}
-    \subitem {global.h}, \hyperpage{85}
-    \subitem {globalExtern.h}, \hyperpage{121}
+    \subitem {global.h}, \hyperpage{79}
+    \subitem {globalExtern.h}, \hyperpage{104}
   \item {BondEnergyPerAtom}
-    \subitem {global.h}, \hyperpage{85}
-    \subitem {globalExtern.h}, \hyperpage{121}
+    \subitem {global.h}, \hyperpage{79}
+    \subitem {globalExtern.h}, \hyperpage{104}
   \item {BondID}
-    \subitem {global.h}, \hyperpage{85}
-    \subitem {globalExtern.h}, \hyperpage{121}
+    \subitem {global.h}, \hyperpage{80}
+    \subitem {globalExtern.h}, \hyperpage{104}
   \item {BondLength}
-    \subitem {global.h}, \hyperpage{85}
-    \subitem {globalExtern.h}, \hyperpage{122}
+    \subitem {global.h}, \hyperpage{80}
+    \subitem {globalExtern.h}, \hyperpage{104}
   \item {BondType}
-    \subitem {global.h}, \hyperpage{85}
-    \subitem {globalExtern.h}, \hyperpage{122}
+    \subitem {global.h}, \hyperpage{80}
+    \subitem {globalExtern.h}, \hyperpage{104}
   \item {BrownianStep}
-    \subitem {BrownianStep.c}, \hyperpage{27}
-    \subitem {main.c}, \hyperpage{167}
+    \subitem {BrownianStep.c}, \hyperpage{25}
+    \subitem {main.c}, \hyperpage{141}
   \item {BrownianStep.c}
-    \subitem {BrownianStep}, \hyperpage{27}
+    \subitem {BrownianStep}, \hyperpage{25}
 
   \indexspace
 
   \item {cellList}
-    \subitem {global.h}, \hyperpage{85}
-    \subitem {globalExtern.h}, \hyperpage{122}
+    \subitem {global.h}, \hyperpage{80}
+    \subitem {globalExtern.h}, \hyperpage{104}
   \item {cells}
-    \subitem {global.h}, \hyperpage{85}
-    \subitem {globalExtern.h}, \hyperpage{122}
+    \subitem {global.h}, \hyperpage{80}
+    \subitem {globalExtern.h}, \hyperpage{105}
   \item {cfOrg}
-    \subitem {global.h}, \hyperpage{86}
-    \subitem {globalExtern.h}, \hyperpage{122}
+    \subitem {global.h}, \hyperpage{80}
+    \subitem {globalExtern.h}, \hyperpage{105}
   \item {cfVal}
-    \subitem {global.h}, \hyperpage{86}
-    \subitem {globalExtern.h}, \hyperpage{122}
+    \subitem {global.h}, \hyperpage{80}
+    \subitem {globalExtern.h}, \hyperpage{105}
   \item {Close}
-    \subitem {Close.c}, \hyperpage{29}
-    \subitem {main.c}, \hyperpage{168}
+    \subitem {Close.c}, \hyperpage{27}
+    \subitem {main.c}, \hyperpage{142}
   \item {Close.c}
-    \subitem {Close}, \hyperpage{29}
+    \subitem {Close}, \hyperpage{27}
   \item {com}
-    \subitem {global.h}, \hyperpage{86}
-    \subitem {globalExtern.h}, \hyperpage{122}
+    \subitem {global.h}, \hyperpage{80}
+    \subitem {globalExtern.h}, \hyperpage{105}
   \item {ComputeBondForce}
-    \subitem {ComputeBondForce.c}, \hyperpage{32}
-    \subitem {ComputeBondForce.h}, \hyperpage{36}
+    \subitem {ComputeBondForce.c}, \hyperpage{30}
+    \subitem {ComputeBondForce.h}, \hyperpage{34}
   \item {ComputeBondForce.c}
-    \subitem {ComputeBondForce}, \hyperpage{32}
+    \subitem {ComputeBondForce}, \hyperpage{30}
   \item {ComputeBondForce.h}
-    \subitem {ComputeBondForce}, \hyperpage{36}
+    \subitem {ComputeBondForce}, \hyperpage{34}
   \item {ComputeForcesCells}
-    \subitem {ComputeForcesCells.c}, \hyperpage{39}
-    \subitem {main.c}, \hyperpage{169}
+    \subitem {ComputeForcesCells.c}, \hyperpage{36}
+    \subitem {main.c}, \hyperpage{143}
   \item {ComputeForcesCells.c}
-    \subitem {ComputeForcesCells}, \hyperpage{39}
+    \subitem {ComputeForcesCells}, \hyperpage{36}
   \item {ComputePairForce}
-    \subitem {ComputePairForce.c}, \hyperpage{43}
-    \subitem {ComputePairForce.h}, \hyperpage{49}
+    \subitem {ComputePairForce.c}, \hyperpage{41}
+    \subitem {ComputePairForce.h}, \hyperpage{46}
   \item {ComputePairForce.c}
-    \subitem {ComputePairForce}, \hyperpage{43}
+    \subitem {ComputePairForce}, \hyperpage{41}
   \item {ComputePairForce.h}
-    \subitem {ComputePairForce}, \hyperpage{49}
+    \subitem {ComputePairForce}, \hyperpage{46}
   \item {ComX}
-    \subitem {global.h}, \hyperpage{86}
-    \subitem {globalExtern.h}, \hyperpage{122}
+    \subitem {global.h}, \hyperpage{80}
+    \subitem {globalExtern.h}, \hyperpage{105}
   \item {ComX0}
-    \subitem {global.h}, \hyperpage{86}
-    \subitem {globalExtern.h}, \hyperpage{122}
+    \subitem {global.h}, \hyperpage{80}
+    \subitem {globalExtern.h}, \hyperpage{105}
   \item {ComXRatio}
-    \subitem {global.h}, \hyperpage{86}
-    \subitem {globalExtern.h}, \hyperpage{123}
+    \subitem {global.h}, \hyperpage{80}
+    \subitem {globalExtern.h}, \hyperpage{105}
   \item {ComY}
-    \subitem {global.h}, \hyperpage{86}
-    \subitem {globalExtern.h}, \hyperpage{123}
+    \subitem {global.h}, \hyperpage{81}
+    \subitem {globalExtern.h}, \hyperpage{105}
   \item {ComY0}
-    \subitem {global.h}, \hyperpage{87}
-    \subitem {globalExtern.h}, \hyperpage{123}
+    \subitem {global.h}, \hyperpage{81}
+    \subitem {globalExtern.h}, \hyperpage{105}
   \item {ComYRatio}
-    \subitem {global.h}, \hyperpage{87}
-    \subitem {globalExtern.h}, \hyperpage{123}
+    \subitem {global.h}, \hyperpage{81}
+    \subitem {globalExtern.h}, \hyperpage{105}
   \item {countAcfAv}
-    \subitem {global.h}, \hyperpage{87}
-    \subitem {globalExtern.h}, \hyperpage{123}
+    \subitem {global.h}, \hyperpage{81}
+    \subitem {globalExtern.h}, \hyperpage{105}
   \item {countCorrAv}
-    \subitem {global.h}, \hyperpage{87}
-    \subitem {globalExtern.h}, \hyperpage{123}
+    \subitem {global.h}, \hyperpage{81}
+    \subitem {globalExtern.h}, \hyperpage{105}
   \item {countRdf}
-    \subitem {global.h}, \hyperpage{87}
-    \subitem {globalExtern.h}, \hyperpage{123}
+    \subitem {global.h}, \hyperpage{81}
+    \subitem {globalExtern.h}, \hyperpage{105}
 
   \indexspace
 
   \item {DampFlag}
-    \subitem {global.h}, \hyperpage{87}
-    \subitem {globalExtern.h}, \hyperpage{123}
+    \subitem {global.h}, \hyperpage{81}
+    \subitem {globalExtern.h}, \hyperpage{106}
   \item {DEFINE\_GLOBALS}
-    \subitem {main.c}, \hyperpage{164}
+    \subitem {main.c}, \hyperpage{138}
   \item {deltaT}
-    \subitem {global.h}, \hyperpage{88}
-    \subitem {globalExtern.h}, \hyperpage{124}
+    \subitem {global.h}, \hyperpage{81}
+    \subitem {globalExtern.h}, \hyperpage{106}
   \item {DeltaVXij}
-    \subitem {global.h}, \hyperpage{88}
-    \subitem {globalExtern.h}, \hyperpage{124}
+    \subitem {global.h}, \hyperpage{81}
+    \subitem {globalExtern.h}, \hyperpage{106}
   \item {DeltaVYij}
-    \subitem {global.h}, \hyperpage{88}
-    \subitem {globalExtern.h}, \hyperpage{124}
+    \subitem {global.h}, \hyperpage{81}
+    \subitem {globalExtern.h}, \hyperpage{106}
   \item {DeltaX}
-    \subitem {global.h}, \hyperpage{88}
-    \subitem {globalExtern.h}, \hyperpage{124}
+    \subitem {global.h}, \hyperpage{82}
+    \subitem {globalExtern.h}, \hyperpage{106}
   \item {DeltaXij}
-    \subitem {global.h}, \hyperpage{88}
-    \subitem {globalExtern.h}, \hyperpage{124}
+    \subitem {global.h}, \hyperpage{82}
+    \subitem {globalExtern.h}, \hyperpage{106}
   \item {DeltaXijNew}
-    \subitem {global.h}, \hyperpage{88}
-    \subitem {globalExtern.h}, \hyperpage{124}
+    \subitem {global.h}, \hyperpage{82}
+    \subitem {globalExtern.h}, \hyperpage{106}
   \item {DeltaXijOld}
-    \subitem {global.h}, \hyperpage{89}
-    \subitem {globalExtern.h}, \hyperpage{124}
+    \subitem {global.h}, \hyperpage{82}
+    \subitem {globalExtern.h}, \hyperpage{106}
   \item {DeltaXijOldPair}
-    \subitem {global.h}, \hyperpage{89}
-    \subitem {globalExtern.h}, \hyperpage{124}
+    \subitem {global.h}, \hyperpage{82}
+    \subitem {globalExtern.h}, \hyperpage{106}
   \item {DeltaY}
-    \subitem {global.h}, \hyperpage{89}
-    \subitem {globalExtern.h}, \hyperpage{124}
+    \subitem {global.h}, \hyperpage{82}
+    \subitem {globalExtern.h}, \hyperpage{106}
   \item {DeltaYij}
-    \subitem {global.h}, \hyperpage{89}
-    \subitem {globalExtern.h}, \hyperpage{125}
+    \subitem {global.h}, \hyperpage{82}
+    \subitem {globalExtern.h}, \hyperpage{106}
   \item {DeltaYijNew}
-    \subitem {global.h}, \hyperpage{89}
-    \subitem {globalExtern.h}, \hyperpage{125}
+    \subitem {global.h}, \hyperpage{82}
+    \subitem {globalExtern.h}, \hyperpage{106}
   \item {DeltaYijOld}
-    \subitem {global.h}, \hyperpage{89}
-    \subitem {globalExtern.h}, \hyperpage{125}
+    \subitem {global.h}, \hyperpage{82}
+    \subitem {globalExtern.h}, \hyperpage{106}
   \item {DeltaYijOldPair}
-    \subitem {global.h}, \hyperpage{89}
-    \subitem {globalExtern.h}, \hyperpage{125}
+    \subitem {global.h}, \hyperpage{82}
+    \subitem {globalExtern.h}, \hyperpage{107}
   \item {density}
-    \subitem {global.h}, \hyperpage{90}
-    \subitem {globalExtern.h}, \hyperpage{125}
+    \subitem {global.h}, \hyperpage{82}
+    \subitem {globalExtern.h}, \hyperpage{107}
   \item {discDragx}
-    \subitem {global.h}, \hyperpage{90}
-    \subitem {globalExtern.h}, \hyperpage{125}
+    \subitem {global.h}, \hyperpage{83}
+    \subitem {globalExtern.h}, \hyperpage{107}
   \item {discDragy}
-    \subitem {global.h}, \hyperpage{90}
-    \subitem {globalExtern.h}, \hyperpage{125}
+    \subitem {global.h}, \hyperpage{83}
+    \subitem {globalExtern.h}, \hyperpage{107}
   \item {DisplaceAtoms}
-    \subitem {DisplaceAtoms.c}, \hyperpage{52}
-    \subitem {main.c}, \hyperpage{171}
+    \subitem {DisplaceAtoms.c}, \hyperpage{49}
+    \subitem {main.c}, \hyperpage{144}
   \item {DisplaceAtoms.c}
-    \subitem {DisplaceAtoms}, \hyperpage{52}
+    \subitem {DisplaceAtoms}, \hyperpage{49}
   \item {dnsty}
-    \subitem {global.h}, \hyperpage{90}
-    \subitem {globalExtern.h}, \hyperpage{125}
+    \subitem {global.h}, \hyperpage{83}
+    \subitem {globalExtern.h}, \hyperpage{107}
   \item {dump}
-    \subitem {global.h}, \hyperpage{90}
-    \subitem {globalExtern.h}, \hyperpage{126}
+    \subitem {global.h}, \hyperpage{83}
+    \subitem {globalExtern.h}, \hyperpage{107}
   \item {DumpBonds}
-    \subitem {DumpBonds.c}, \hyperpage{54}
-    \subitem {main.c}, \hyperpage{171}
+    \subitem {DumpBonds.c}, \hyperpage{50}
+    \subitem {main.c}, \hyperpage{145}
   \item {DumpBonds.c}
-    \subitem {DumpBonds}, \hyperpage{54}
+    \subitem {DumpBonds}, \hyperpage{50}
   \item {dumpPairFlag}
-    \subitem {global.h}, \hyperpage{90}
-    \subitem {globalExtern.h}, \hyperpage{126}
+    \subitem {global.h}, \hyperpage{83}
+    \subitem {globalExtern.h}, \hyperpage{107}
   \item {DumpPairs}
-    \subitem {DumpPairs.c}, \hyperpage{55}
-    \subitem {main.c}, \hyperpage{172}
+    \subitem {DumpPairs.c}, \hyperpage{52}
+    \subitem {main.c}, \hyperpage{145}
   \item {DumpPairs.c}
-    \subitem {DumpPairs}, \hyperpage{55}
+    \subitem {DumpPairs}, \hyperpage{52}
   \item {DumpRestart}
-    \subitem {DumpRestart.c}, \hyperpage{57}
-    \subitem {main.c}, \hyperpage{173}
+    \subitem {DumpRestart.c}, \hyperpage{54}
+    \subitem {main.c}, \hyperpage{146}
   \item {DumpRestart.c}
-    \subitem {DumpRestart}, \hyperpage{57}
+    \subitem {DumpRestart}, \hyperpage{54}
   \item {DumpState}
-    \subitem {DumpState.c}, \hyperpage{60}
-    \subitem {main.c}, \hyperpage{173}
+    \subitem {DumpState.c}, \hyperpage{56}
+    \subitem {main.c}, \hyperpage{147}
   \item {DumpState.c}
-    \subitem {DumpState}, \hyperpage{60}
+    \subitem {DumpState}, \hyperpage{56}
 
   \indexspace
 
   \item {EvalCom}
-    \subitem {EvalCom.c}, \hyperpage{62}
-    \subitem {main.c}, \hyperpage{174}
+    \subitem {EvalCom.c}, \hyperpage{58}
+    \subitem {main.c}, \hyperpage{147}
   \item {EvalCom.c}
-    \subitem {EvalCom}, \hyperpage{62}
+    \subitem {EvalCom}, \hyperpage{58}
   \item {EvalProps}
-    \subitem {EvalProps.c}, \hyperpage{64}
-    \subitem {main.c}, \hyperpage{175}
+    \subitem {EvalProps.c}, \hyperpage{60}
+    \subitem {main.c}, \hyperpage{148}
   \item {EvalProps.c}
-    \subitem {EvalProps}, \hyperpage{64}
+    \subitem {EvalProps}, \hyperpage{60}
   \item {EvalRdf}
-    \subitem {EvalRdf.c}, \hyperpage{66}
-    \subitem {main.c}, \hyperpage{176}
+    \subitem {EvalRdf.c}, \hyperpage{62}
+    \subitem {main.c}, \hyperpage{149}
   \item {EvalRdf.c}
-    \subitem {EvalRdf}, \hyperpage{66}
+    \subitem {EvalRdf}, \hyperpage{62}
   \item {EvalSpacetimeCorr}
-    \subitem {EvalSpacetimeCorr.c}, \hyperpage{68}
-    \subitem {main.c}, \hyperpage{176}
+    \subitem {EvalSpacetimeCorr.c}, \hyperpage{64}
+    \subitem {main.c}, \hyperpage{149}
   \item {EvalSpacetimeCorr.c}
-    \subitem {EvalSpacetimeCorr}, \hyperpage{68}
+    \subitem {EvalSpacetimeCorr}, \hyperpage{64}
   \item {EvalUnwrap}
-    \subitem {EvalUnwrap.c}, \hyperpage{72}
-    \subitem {main.c}, \hyperpage{178}
+    \subitem {EvalUnwrap.c}, \hyperpage{68}
+    \subitem {main.c}, \hyperpage{151}
   \item {EvalUnwrap.c}
-    \subitem {EvalUnwrap}, \hyperpage{72}
+    \subitem {EvalUnwrap}, \hyperpage{68}
   \item {EvalVacf}
-    \subitem {EvalVacf.c}, \hyperpage{74}
-    \subitem {main.c}, \hyperpage{178}
+    \subitem {EvalVacf.c}, \hyperpage{70}
+    \subitem {main.c}, \hyperpage{151}
   \item {EvalVacf.c}
-    \subitem {AccumVacf}, \hyperpage{74}
-    \subitem {EvalVacf}, \hyperpage{74}
+    \subitem {AccumVacf}, \hyperpage{69}
+    \subitem {EvalVacf}, \hyperpage{70}
   \item {EvalVrms}
-    \subitem {EvalVrms.c}, \hyperpage{77}
-    \subitem {main.c}, \hyperpage{179}
+    \subitem {EvalVrms.c}, \hyperpage{72}
+    \subitem {main.c}, \hyperpage{152}
   \item {EvalVrms.c}
-    \subitem {EvalVrms}, \hyperpage{77}
+    \subitem {EvalVrms}, \hyperpage{72}
   \item {EXTERN}
-    \subitem {global.h}, \hyperpage{82}
+    \subitem {global.h}, \hyperpage{78}
 
   \indexspace
 
   \item {fax}
-    \subitem {global.h}, \hyperpage{90}
-    \subitem {globalExtern.h}, \hyperpage{126}
+    \subitem {global.h}, \hyperpage{83}
+    \subitem {globalExtern.h}, \hyperpage{107}
   \item {fay}
-    \subitem {global.h}, \hyperpage{90}
-    \subitem {globalExtern.h}, \hyperpage{126}
+    \subitem {global.h}, \hyperpage{83}
+    \subitem {globalExtern.h}, \hyperpage{107}
   \item {fpbond}
-    \subitem {global.h}, \hyperpage{91}
-    \subitem {globalExtern.h}, \hyperpage{126}
+    \subitem {global.h}, \hyperpage{83}
+    \subitem {globalExtern.h}, \hyperpage{107}
   \item {fpcom}
-    \subitem {global.h}, \hyperpage{91}
-    \subitem {globalExtern.h}, \hyperpage{126}
+    \subitem {global.h}, \hyperpage{83}
+    \subitem {globalExtern.h}, \hyperpage{107}
   \item {fpdnsty}
-    \subitem {global.h}, \hyperpage{91}
-    \subitem {globalExtern.h}, \hyperpage{126}
+    \subitem {global.h}, \hyperpage{83}
+    \subitem {globalExtern.h}, \hyperpage{107}
   \item {fpdump}
-    \subitem {global.h}, \hyperpage{91}
-    \subitem {globalExtern.h}, \hyperpage{126}
+    \subitem {global.h}, \hyperpage{83}
+    \subitem {globalExtern.h}, \hyperpage{107}
   \item {fpmomentum}
-    \subitem {global.h}, \hyperpage{91}
-    \subitem {globalExtern.h}, \hyperpage{126}
+    \subitem {global.h}, \hyperpage{83}
+    \subitem {globalExtern.h}, \hyperpage{107}
   \item {fppair}
-    \subitem {global.h}, \hyperpage{91}
-    \subitem {globalExtern.h}, \hyperpage{126}
+    \subitem {global.h}, \hyperpage{84}
+    \subitem {globalExtern.h}, \hyperpage{108}
   \item {fprdf}
-    \subitem {global.h}, \hyperpage{91}
-    \subitem {globalExtern.h}, \hyperpage{127}
+    \subitem {global.h}, \hyperpage{84}
+    \subitem {globalExtern.h}, \hyperpage{108}
   \item {fpresult}
-    \subitem {global.h}, \hyperpage{91}
-    \subitem {globalExtern.h}, \hyperpage{127}
+    \subitem {global.h}, \hyperpage{84}
+    \subitem {globalExtern.h}, \hyperpage{108}
   \item {fpstress}
-    \subitem {global.h}, \hyperpage{92}
-    \subitem {globalExtern.h}, \hyperpage{127}
+    \subitem {global.h}, \hyperpage{84}
+    \subitem {globalExtern.h}, \hyperpage{108}
   \item {fpvisc}
-    \subitem {global.h}, \hyperpage{92}
-    \subitem {globalExtern.h}, \hyperpage{127}
+    \subitem {global.h}, \hyperpage{84}
+    \subitem {globalExtern.h}, \hyperpage{108}
   \item {fpvrms}
-    \subitem {global.h}, \hyperpage{92}
-    \subitem {globalExtern.h}, \hyperpage{127}
+    \subitem {global.h}, \hyperpage{84}
+    \subitem {globalExtern.h}, \hyperpage{108}
   \item {fpxyz}
-    \subitem {global.h}, \hyperpage{92}
-    \subitem {globalExtern.h}, \hyperpage{127}
+    \subitem {global.h}, \hyperpage{84}
+    \subitem {globalExtern.h}, \hyperpage{108}
   \item {freezeAtomType}
-    \subitem {global.h}, \hyperpage{92}
-    \subitem {globalExtern.h}, \hyperpage{127}
+    \subitem {global.h}, \hyperpage{84}
+    \subitem {globalExtern.h}, \hyperpage{108}
   \item {frfAtom}
-    \subitem {global.h}, \hyperpage{92}
-    \subitem {globalExtern.h}, \hyperpage{127}
+    \subitem {global.h}, \hyperpage{84}
+    \subitem {globalExtern.h}, \hyperpage{108}
   \item {fuSum}
-    \subitem {global.h}, \hyperpage{92}
-    \subitem {globalExtern.h}, \hyperpage{127}
+    \subitem {global.h}, \hyperpage{84}
+    \subitem {globalExtern.h}, \hyperpage{108}
   \item {fvirSum}
-    \subitem {global.h}, \hyperpage{92}
-    \subitem {globalExtern.h}, \hyperpage{127}
+    \subitem {global.h}, \hyperpage{84}
+    \subitem {globalExtern.h}, \hyperpage{108}
   \item {fx}
-    \subitem {global.h}, \hyperpage{93}
-    \subitem {globalExtern.h}, \hyperpage{128}
+    \subitem {global.h}, \hyperpage{84}
+    \subitem {globalExtern.h}, \hyperpage{108}
   \item {fxByfy}
-    \subitem {global.h}, \hyperpage{93}
-    \subitem {globalExtern.h}, \hyperpage{128}
+    \subitem {global.h}, \hyperpage{85}
+    \subitem {globalExtern.h}, \hyperpage{108}
   \item {fy}
-    \subitem {global.h}, \hyperpage{93}
-    \subitem {globalExtern.h}, \hyperpage{128}
+    \subitem {global.h}, \hyperpage{85}
+    \subitem {globalExtern.h}, \hyperpage{108}
   \item {FyBylx}
-    \subitem {global.h}, \hyperpage{93}
-    \subitem {globalExtern.h}, \hyperpage{128}
+    \subitem {global.h}, \hyperpage{85}
+    \subitem {globalExtern.h}, \hyperpage{109}
 
   \indexspace
 
   \item {gamman}
-    \subitem {global.h}, \hyperpage{93}
-    \subitem {globalExtern.h}, \hyperpage{128}
+    \subitem {global.h}, \hyperpage{85}
+    \subitem {globalExtern.h}, \hyperpage{109}
   \item {global.h}
-    \subitem {atom1}, \hyperpage{83}
-    \subitem {atom2}, \hyperpage{83}
-    \subitem {atomID}, \hyperpage{83}
-    \subitem {atomIDInterface}, \hyperpage{83}
-    \subitem {atomMass}, \hyperpage{84}
-    \subitem {atomRadius}, \hyperpage{84}
-    \subitem {atomType}, \hyperpage{84}
-    \subitem {ax}, \hyperpage{84}
-    \subitem {ay}, \hyperpage{84}
-    \subitem {bond}, \hyperpage{84}
-    \subitem {BondEnergy}, \hyperpage{85}
-    \subitem {BondEnergyPerAtom}, \hyperpage{85}
-    \subitem {BondID}, \hyperpage{85}
-    \subitem {BondLength}, \hyperpage{85}
-    \subitem {BondType}, \hyperpage{85}
-    \subitem {cellList}, \hyperpage{85}
-    \subitem {cells}, \hyperpage{85}
-    \subitem {cfOrg}, \hyperpage{86}
-    \subitem {cfVal}, \hyperpage{86}
-    \subitem {com}, \hyperpage{86}
-    \subitem {ComX}, \hyperpage{86}
-    \subitem {ComX0}, \hyperpage{86}
-    \subitem {ComXRatio}, \hyperpage{86}
-    \subitem {ComY}, \hyperpage{86}
-    \subitem {ComY0}, \hyperpage{87}
-    \subitem {ComYRatio}, \hyperpage{87}
-    \subitem {countAcfAv}, \hyperpage{87}
-    \subitem {countCorrAv}, \hyperpage{87}
-    \subitem {countRdf}, \hyperpage{87}
-    \subitem {DampFlag}, \hyperpage{87}
-    \subitem {deltaT}, \hyperpage{88}
-    \subitem {DeltaVXij}, \hyperpage{88}
-    \subitem {DeltaVYij}, \hyperpage{88}
-    \subitem {DeltaX}, \hyperpage{88}
-    \subitem {DeltaXij}, \hyperpage{88}
-    \subitem {DeltaXijNew}, \hyperpage{88}
-    \subitem {DeltaXijOld}, \hyperpage{89}
-    \subitem {DeltaXijOldPair}, \hyperpage{89}
-    \subitem {DeltaY}, \hyperpage{89}
-    \subitem {DeltaYij}, \hyperpage{89}
-    \subitem {DeltaYijNew}, \hyperpage{89}
-    \subitem {DeltaYijOld}, \hyperpage{89}
-    \subitem {DeltaYijOldPair}, \hyperpage{89}
-    \subitem {density}, \hyperpage{90}
-    \subitem {discDragx}, \hyperpage{90}
-    \subitem {discDragy}, \hyperpage{90}
-    \subitem {dnsty}, \hyperpage{90}
-    \subitem {dump}, \hyperpage{90}
-    \subitem {dumpPairFlag}, \hyperpage{90}
-    \subitem {EXTERN}, \hyperpage{82}
-    \subitem {fax}, \hyperpage{90}
-    \subitem {fay}, \hyperpage{90}
-    \subitem {fpbond}, \hyperpage{91}
-    \subitem {fpcom}, \hyperpage{91}
-    \subitem {fpdnsty}, \hyperpage{91}
-    \subitem {fpdump}, \hyperpage{91}
-    \subitem {fpmomentum}, \hyperpage{91}
-    \subitem {fppair}, \hyperpage{91}
-    \subitem {fprdf}, \hyperpage{91}
-    \subitem {fpresult}, \hyperpage{91}
-    \subitem {fpstress}, \hyperpage{92}
-    \subitem {fpvisc}, \hyperpage{92}
-    \subitem {fpvrms}, \hyperpage{92}
-    \subitem {fpxyz}, \hyperpage{92}
-    \subitem {freezeAtomType}, \hyperpage{92}
-    \subitem {frfAtom}, \hyperpage{92}
-    \subitem {fuSum}, \hyperpage{92}
-    \subitem {fvirSum}, \hyperpage{92}
-    \subitem {fx}, \hyperpage{93}
-    \subitem {fxByfy}, \hyperpage{93}
-    \subitem {fy}, \hyperpage{93}
-    \subitem {FyBylx}, \hyperpage{93}
-    \subitem {gamman}, \hyperpage{93}
-    \subitem {HaltCondition}, \hyperpage{93}
-    \subitem {histRdf}, \hyperpage{93}
-    \subitem {ImageX}, \hyperpage{94}
-    \subitem {ImageY}, \hyperpage{94}
-    \subitem {indexAcf}, \hyperpage{94}
-    \subitem {indexCorr}, \hyperpage{94}
-    \subitem {initUcell}, \hyperpage{94}
-    \subitem {isBonded}, \hyperpage{94}
-    \subitem {kappa}, \hyperpage{94}
-    \subitem {kb}, \hyperpage{95}
-    \subitem {kinEnergy}, \hyperpage{95}
-    \subitem {Kn}, \hyperpage{95}
-    \subitem {limitAcfAv}, \hyperpage{95}
-    \subitem {limitCorrAv}, \hyperpage{95}
-    \subitem {limitRdf}, \hyperpage{95}
-    \subitem {master}, \hyperpage{96}
-    \subitem {molID}, \hyperpage{96}
-    \subitem {momentum}, \hyperpage{96}
-    \subitem {moreCycles}, \hyperpage{96}
-    \subitem {nAtom}, \hyperpage{96}
-    \subitem {nAtomBlock}, \hyperpage{96}
-    \subitem {nAtomInterface}, \hyperpage{97}
-    \subitem {nAtomType}, \hyperpage{97}
-    \subitem {nBond}, \hyperpage{97}
-    \subitem {nBondType}, \hyperpage{97}
-    \subitem {nBuffAcf}, \hyperpage{97}
-    \subitem {nBuffCorr}, \hyperpage{97}
-    \subitem {NDIM}, \hyperpage{82}
-    \subitem {nDiscInterface}, \hyperpage{97}
-    \subitem {nFunCorr}, \hyperpage{98}
-    \subitem {nodeDragx}, \hyperpage{98}
-    \subitem {nodeDragy}, \hyperpage{98}
-    \subitem {nPairActive}, \hyperpage{98}
-    \subitem {nPairTotal}, \hyperpage{98}
-    \subitem {nValAcf}, \hyperpage{98}
-    \subitem {nValCorr}, \hyperpage{99}
-    \subitem {pair}, \hyperpage{99}
-    \subitem {Pairatom1}, \hyperpage{99}
-    \subitem {Pairatom2}, \hyperpage{99}
-    \subitem {PairID}, \hyperpage{99}
-    \subitem {PairXij}, \hyperpage{99}
-    \subitem {PairYij}, \hyperpage{99}
-    \subitem {potEnergy}, \hyperpage{100}
-    \subitem {prefix}, \hyperpage{100}
-    \subitem {pressure}, \hyperpage{100}
-    \subitem {RadiusIJ}, \hyperpage{100}
-    \subitem {RadiusIJInv}, \hyperpage{100}
-    \subitem {rangeRdf}, \hyperpage{100}
-    \subitem {rank}, \hyperpage{101}
-    \subitem {rCut}, \hyperpage{101}
-    \subitem {rdf}, \hyperpage{101}
-    \subitem {real}, \hyperpage{83}
-    \subitem {region}, \hyperpage{101}
-    \subitem {regionH}, \hyperpage{101}
-    \subitem {result}, \hyperpage{101}
-    \subitem {rfAtom}, \hyperpage{101}
-    \subitem {ro}, \hyperpage{102}
-    \subitem {rx}, \hyperpage{102}
-    \subitem {rxUnwrap}, \hyperpage{102}
-    \subitem {ry}, \hyperpage{102}
-    \subitem {ryUnwrap}, \hyperpage{102}
-    \subitem {shearDisplacement}, \hyperpage{102}
-    \subitem {shearVelocity}, \hyperpage{103}
-    \subitem {SignR}, \hyperpage{82}
-    \subitem {size}, \hyperpage{103}
-    \subitem {sizeHistRdf}, \hyperpage{103}
-    \subitem {sKinEnergy}, \hyperpage{103}
-    \subitem {solver}, \hyperpage{103}
-    \subitem {spacetimeCorr}, \hyperpage{103}
-    \subitem {spacetimeCorrAv}, \hyperpage{104}
-    \subitem {speed}, \hyperpage{104}
-    \subitem {sPotEnergy}, \hyperpage{104}
-    \subitem {sPressure}, \hyperpage{104}
-    \subitem {Sqr}, \hyperpage{83}
-    \subitem {SqrRadiusIJ}, \hyperpage{104}
-    \subitem {ssKinEnergy}, \hyperpage{104}
-    \subitem {ssPotEnergy}, \hyperpage{105}
-    \subitem {ssPressure}, \hyperpage{105}
-    \subitem {ssTotEnergy}, \hyperpage{105}
-    \subitem {stepAcf}, \hyperpage{105}
-    \subitem {stepAvg}, \hyperpage{105}
-    \subitem {stepCorr}, \hyperpage{105}
-    \subitem {stepCount}, \hyperpage{106}
-    \subitem {stepDump}, \hyperpage{106}
-    \subitem {stepEquil}, \hyperpage{106}
-    \subitem {stepLimit}, \hyperpage{106}
-    \subitem {stepRdf}, \hyperpage{106}
-    \subitem {stepTraj}, \hyperpage{106}
-    \subitem {sTotEnergy}, \hyperpage{107}
-    \subitem {strain}, \hyperpage{107}
-    \subitem {strainRate}, \hyperpage{107}
-    \subitem {strech}, \hyperpage{107}
-    \subitem {stress}, \hyperpage{107}
-    \subitem {svirSum}, \hyperpage{107}
-    \subitem {thermo}, \hyperpage{107}
-    \subitem {timeNow}, \hyperpage{108}
-    \subitem {TotalBondEnergy}, \hyperpage{108}
-    \subitem {TotalMass}, \hyperpage{108}
-    \subitem {totEnergy}, \hyperpage{108}
-    \subitem {uSum}, \hyperpage{108}
-    \subitem {uSumPair}, \hyperpage{108}
-    \subitem {uSumPairPerAtom}, \hyperpage{109}
-    \subitem {virSum}, \hyperpage{109}
-    \subitem {virSumBond}, \hyperpage{109}
-    \subitem {virSumBondxx}, \hyperpage{109}
-    \subitem {virSumBondxy}, \hyperpage{109}
-    \subitem {virSumBondyy}, \hyperpage{109}
-    \subitem {virSumPair}, \hyperpage{110}
-    \subitem {virSumPairxx}, \hyperpage{110}
-    \subitem {virSumPairxy}, \hyperpage{110}
-    \subitem {virSumPairyy}, \hyperpage{110}
-    \subitem {virSumxx}, \hyperpage{110}
-    \subitem {virSumxy}, \hyperpage{110}
-    \subitem {virSumyy}, \hyperpage{111}
-    \subitem {visc}, \hyperpage{111}
-    \subitem {viscAcf}, \hyperpage{111}
-    \subitem {viscAcfAv}, \hyperpage{111}
-    \subitem {viscAcfInt}, \hyperpage{111}
-    \subitem {viscAcfOrg}, \hyperpage{111}
-    \subitem {VMeanSqr}, \hyperpage{112}
-    \subitem {vrms}, \hyperpage{112}
-    \subitem {VRootMeanSqr}, \hyperpage{112}
-    \subitem {VSqr}, \hyperpage{112}
-    \subitem {vSum}, \hyperpage{112}
-    \subitem {vSumX}, \hyperpage{112}
-    \subitem {vSumY}, \hyperpage{113}
-    \subitem {vvSum}, \hyperpage{113}
-    \subitem {vx}, \hyperpage{113}
-    \subitem {vy}, \hyperpage{113}
-    \subitem {xBoundary}, \hyperpage{113}
-    \subitem {xyz}, \hyperpage{113}
-    \subitem {yBoundary}, \hyperpage{114}
+    \subitem {atom1}, \hyperpage{78}
+    \subitem {atom2}, \hyperpage{78}
+    \subitem {atomID}, \hyperpage{79}
+    \subitem {atomIDInterface}, \hyperpage{79}
+    \subitem {atomMass}, \hyperpage{79}
+    \subitem {atomRadius}, \hyperpage{79}
+    \subitem {atomType}, \hyperpage{79}
+    \subitem {ax}, \hyperpage{79}
+    \subitem {ay}, \hyperpage{79}
+    \subitem {bond}, \hyperpage{79}
+    \subitem {BondEnergy}, \hyperpage{79}
+    \subitem {BondEnergyPerAtom}, \hyperpage{79}
+    \subitem {BondID}, \hyperpage{80}
+    \subitem {BondLength}, \hyperpage{80}
+    \subitem {BondType}, \hyperpage{80}
+    \subitem {cellList}, \hyperpage{80}
+    \subitem {cells}, \hyperpage{80}
+    \subitem {cfOrg}, \hyperpage{80}
+    \subitem {cfVal}, \hyperpage{80}
+    \subitem {com}, \hyperpage{80}
+    \subitem {ComX}, \hyperpage{80}
+    \subitem {ComX0}, \hyperpage{80}
+    \subitem {ComXRatio}, \hyperpage{80}
+    \subitem {ComY}, \hyperpage{81}
+    \subitem {ComY0}, \hyperpage{81}
+    \subitem {ComYRatio}, \hyperpage{81}
+    \subitem {countAcfAv}, \hyperpage{81}
+    \subitem {countCorrAv}, \hyperpage{81}
+    \subitem {countRdf}, \hyperpage{81}
+    \subitem {DampFlag}, \hyperpage{81}
+    \subitem {deltaT}, \hyperpage{81}
+    \subitem {DeltaVXij}, \hyperpage{81}
+    \subitem {DeltaVYij}, \hyperpage{81}
+    \subitem {DeltaX}, \hyperpage{82}
+    \subitem {DeltaXij}, \hyperpage{82}
+    \subitem {DeltaXijNew}, \hyperpage{82}
+    \subitem {DeltaXijOld}, \hyperpage{82}
+    \subitem {DeltaXijOldPair}, \hyperpage{82}
+    \subitem {DeltaY}, \hyperpage{82}
+    \subitem {DeltaYij}, \hyperpage{82}
+    \subitem {DeltaYijNew}, \hyperpage{82}
+    \subitem {DeltaYijOld}, \hyperpage{82}
+    \subitem {DeltaYijOldPair}, \hyperpage{82}
+    \subitem {density}, \hyperpage{82}
+    \subitem {discDragx}, \hyperpage{83}
+    \subitem {discDragy}, \hyperpage{83}
+    \subitem {dnsty}, \hyperpage{83}
+    \subitem {dump}, \hyperpage{83}
+    \subitem {dumpPairFlag}, \hyperpage{83}
+    \subitem {EXTERN}, \hyperpage{78}
+    \subitem {fax}, \hyperpage{83}
+    \subitem {fay}, \hyperpage{83}
+    \subitem {fpbond}, \hyperpage{83}
+    \subitem {fpcom}, \hyperpage{83}
+    \subitem {fpdnsty}, \hyperpage{83}
+    \subitem {fpdump}, \hyperpage{83}
+    \subitem {fpmomentum}, \hyperpage{83}
+    \subitem {fppair}, \hyperpage{84}
+    \subitem {fprdf}, \hyperpage{84}
+    \subitem {fpresult}, \hyperpage{84}
+    \subitem {fpstress}, \hyperpage{84}
+    \subitem {fpvisc}, \hyperpage{84}
+    \subitem {fpvrms}, \hyperpage{84}
+    \subitem {fpxyz}, \hyperpage{84}
+    \subitem {freezeAtomType}, \hyperpage{84}
+    \subitem {frfAtom}, \hyperpage{84}
+    \subitem {fuSum}, \hyperpage{84}
+    \subitem {fvirSum}, \hyperpage{84}
+    \subitem {fx}, \hyperpage{84}
+    \subitem {fxByfy}, \hyperpage{85}
+    \subitem {fy}, \hyperpage{85}
+    \subitem {FyBylx}, \hyperpage{85}
+    \subitem {gamman}, \hyperpage{85}
+    \subitem {HaltCondition}, \hyperpage{85}
+    \subitem {histRdf}, \hyperpage{85}
+    \subitem {ImageX}, \hyperpage{85}
+    \subitem {ImageY}, \hyperpage{85}
+    \subitem {indexAcf}, \hyperpage{85}
+    \subitem {indexCorr}, \hyperpage{85}
+    \subitem {initUcell}, \hyperpage{85}
+    \subitem {isBonded}, \hyperpage{86}
+    \subitem {kappa}, \hyperpage{86}
+    \subitem {kb}, \hyperpage{86}
+    \subitem {kinEnergy}, \hyperpage{86}
+    \subitem {Kn}, \hyperpage{86}
+    \subitem {limitAcfAv}, \hyperpage{86}
+    \subitem {limitCorrAv}, \hyperpage{86}
+    \subitem {limitRdf}, \hyperpage{86}
+    \subitem {master}, \hyperpage{86}
+    \subitem {molID}, \hyperpage{86}
+    \subitem {momentum}, \hyperpage{86}
+    \subitem {moreCycles}, \hyperpage{87}
+    \subitem {nAtom}, \hyperpage{87}
+    \subitem {nAtomBlock}, \hyperpage{87}
+    \subitem {nAtomInterface}, \hyperpage{87}
+    \subitem {nAtomType}, \hyperpage{87}
+    \subitem {nBond}, \hyperpage{87}
+    \subitem {nBondType}, \hyperpage{87}
+    \subitem {nBuffAcf}, \hyperpage{87}
+    \subitem {nBuffCorr}, \hyperpage{87}
+    \subitem {NDIM}, \hyperpage{78}
+    \subitem {nDiscInterface}, \hyperpage{87}
+    \subitem {nFunCorr}, \hyperpage{88}
+    \subitem {nodeDragx}, \hyperpage{88}
+    \subitem {nodeDragy}, \hyperpage{88}
+    \subitem {nPairActive}, \hyperpage{88}
+    \subitem {nPairTotal}, \hyperpage{88}
+    \subitem {nValAcf}, \hyperpage{88}
+    \subitem {nValCorr}, \hyperpage{88}
+    \subitem {pair}, \hyperpage{88}
+    \subitem {Pairatom1}, \hyperpage{88}
+    \subitem {Pairatom2}, \hyperpage{88}
+    \subitem {PairID}, \hyperpage{89}
+    \subitem {PairXij}, \hyperpage{89}
+    \subitem {PairYij}, \hyperpage{89}
+    \subitem {potEnergy}, \hyperpage{89}
+    \subitem {prefix}, \hyperpage{89}
+    \subitem {pressure}, \hyperpage{89}
+    \subitem {RadiusIJ}, \hyperpage{89}
+    \subitem {RadiusIJInv}, \hyperpage{89}
+    \subitem {rangeRdf}, \hyperpage{89}
+    \subitem {rank}, \hyperpage{89}
+    \subitem {rCut}, \hyperpage{89}
+    \subitem {rdf}, \hyperpage{90}
+    \subitem {real}, \hyperpage{78}
+    \subitem {region}, \hyperpage{90}
+    \subitem {regionH}, \hyperpage{90}
+    \subitem {result}, \hyperpage{90}
+    \subitem {rfAtom}, \hyperpage{90}
+    \subitem {ro}, \hyperpage{90}
+    \subitem {rx}, \hyperpage{90}
+    \subitem {rxUnwrap}, \hyperpage{90}
+    \subitem {ry}, \hyperpage{90}
+    \subitem {ryUnwrap}, \hyperpage{90}
+    \subitem {shearDisplacement}, \hyperpage{91}
+    \subitem {shearVelocity}, \hyperpage{91}
+    \subitem {SignR}, \hyperpage{78}
+    \subitem {size}, \hyperpage{91}
+    \subitem {sizeHistRdf}, \hyperpage{91}
+    \subitem {sKinEnergy}, \hyperpage{91}
+    \subitem {solver}, \hyperpage{91}
+    \subitem {spacetimeCorr}, \hyperpage{91}
+    \subitem {spacetimeCorrAv}, \hyperpage{91}
+    \subitem {speed}, \hyperpage{91}
+    \subitem {sPotEnergy}, \hyperpage{91}
+    \subitem {sPressure}, \hyperpage{92}
+    \subitem {Sqr}, \hyperpage{78}
+    \subitem {SqrRadiusIJ}, \hyperpage{92}
+    \subitem {ssKinEnergy}, \hyperpage{92}
+    \subitem {ssPotEnergy}, \hyperpage{92}
+    \subitem {ssPressure}, \hyperpage{92}
+    \subitem {ssTotEnergy}, \hyperpage{92}
+    \subitem {stepAcf}, \hyperpage{92}
+    \subitem {stepAvg}, \hyperpage{92}
+    \subitem {stepCorr}, \hyperpage{92}
+    \subitem {stepCount}, \hyperpage{92}
+    \subitem {stepDump}, \hyperpage{93}
+    \subitem {stepEquil}, \hyperpage{93}
+    \subitem {stepLimit}, \hyperpage{93}
+    \subitem {stepRdf}, \hyperpage{93}
+    \subitem {stepTraj}, \hyperpage{93}
+    \subitem {sTotEnergy}, \hyperpage{93}
+    \subitem {strain}, \hyperpage{93}
+    \subitem {strainRate}, \hyperpage{93}
+    \subitem {strech}, \hyperpage{93}
+    \subitem {stress}, \hyperpage{93}
+    \subitem {svirSum}, \hyperpage{94}
+    \subitem {thermo}, \hyperpage{94}
+    \subitem {timeNow}, \hyperpage{94}
+    \subitem {TotalBondEnergy}, \hyperpage{94}
+    \subitem {TotalMass}, \hyperpage{94}
+    \subitem {totEnergy}, \hyperpage{94}
+    \subitem {uSum}, \hyperpage{94}
+    \subitem {uSumPair}, \hyperpage{94}
+    \subitem {uSumPairPerAtom}, \hyperpage{94}
+    \subitem {virSum}, \hyperpage{94}
+    \subitem {virSumBond}, \hyperpage{94}
+    \subitem {virSumBondxx}, \hyperpage{95}
+    \subitem {virSumBondxy}, \hyperpage{95}
+    \subitem {virSumBondyy}, \hyperpage{95}
+    \subitem {virSumPair}, \hyperpage{95}
+    \subitem {virSumPairxx}, \hyperpage{95}
+    \subitem {virSumPairxy}, \hyperpage{95}
+    \subitem {virSumPairyy}, \hyperpage{95}
+    \subitem {virSumxx}, \hyperpage{95}
+    \subitem {virSumxy}, \hyperpage{95}
+    \subitem {virSumyy}, \hyperpage{95}
+    \subitem {visc}, \hyperpage{96}
+    \subitem {viscAcf}, \hyperpage{96}
+    \subitem {viscAcfAv}, \hyperpage{96}
+    \subitem {viscAcfInt}, \hyperpage{96}
+    \subitem {viscAcfOrg}, \hyperpage{96}
+    \subitem {VMeanSqr}, \hyperpage{96}
+    \subitem {vrms}, \hyperpage{96}
+    \subitem {VRootMeanSqr}, \hyperpage{96}
+    \subitem {VSqr}, \hyperpage{96}
+    \subitem {vSum}, \hyperpage{96}
+    \subitem {vSumX}, \hyperpage{96}
+    \subitem {vSumY}, \hyperpage{97}
+    \subitem {vvSum}, \hyperpage{97}
+    \subitem {vx}, \hyperpage{97}
+    \subitem {vy}, \hyperpage{97}
+    \subitem {xBoundary}, \hyperpage{97}
+    \subitem {xyz}, \hyperpage{97}
+    \subitem {yBoundary}, \hyperpage{97}
   \item {globalExtern.h}
-    \subitem {atom1}, \hyperpage{120}
-    \subitem {atom2}, \hyperpage{120}
-    \subitem {atomID}, \hyperpage{120}
-    \subitem {atomIDInterface}, \hyperpage{120}
-    \subitem {atomMass}, \hyperpage{121}
-    \subitem {atomRadius}, \hyperpage{121}
-    \subitem {atomType}, \hyperpage{121}
-    \subitem {ax}, \hyperpage{121}
-    \subitem {ay}, \hyperpage{121}
-    \subitem {bond}, \hyperpage{121}
-    \subitem {BondEnergy}, \hyperpage{121}
-    \subitem {BondEnergyPerAtom}, \hyperpage{121}
-    \subitem {BondID}, \hyperpage{121}
-    \subitem {BondLength}, \hyperpage{122}
-    \subitem {BondType}, \hyperpage{122}
-    \subitem {cellList}, \hyperpage{122}
-    \subitem {cells}, \hyperpage{122}
-    \subitem {cfOrg}, \hyperpage{122}
-    \subitem {cfVal}, \hyperpage{122}
-    \subitem {com}, \hyperpage{122}
-    \subitem {ComX}, \hyperpage{122}
-    \subitem {ComX0}, \hyperpage{122}
-    \subitem {ComXRatio}, \hyperpage{123}
-    \subitem {ComY}, \hyperpage{123}
-    \subitem {ComY0}, \hyperpage{123}
-    \subitem {ComYRatio}, \hyperpage{123}
-    \subitem {countAcfAv}, \hyperpage{123}
-    \subitem {countCorrAv}, \hyperpage{123}
-    \subitem {countRdf}, \hyperpage{123}
-    \subitem {DampFlag}, \hyperpage{123}
-    \subitem {deltaT}, \hyperpage{124}
-    \subitem {DeltaVXij}, \hyperpage{124}
-    \subitem {DeltaVYij}, \hyperpage{124}
-    \subitem {DeltaX}, \hyperpage{124}
-    \subitem {DeltaXij}, \hyperpage{124}
-    \subitem {DeltaXijNew}, \hyperpage{124}
-    \subitem {DeltaXijOld}, \hyperpage{124}
-    \subitem {DeltaXijOldPair}, \hyperpage{124}
-    \subitem {DeltaY}, \hyperpage{124}
-    \subitem {DeltaYij}, \hyperpage{125}
-    \subitem {DeltaYijNew}, \hyperpage{125}
-    \subitem {DeltaYijOld}, \hyperpage{125}
-    \subitem {DeltaYijOldPair}, \hyperpage{125}
-    \subitem {density}, \hyperpage{125}
-    \subitem {discDragx}, \hyperpage{125}
-    \subitem {discDragy}, \hyperpage{125}
-    \subitem {dnsty}, \hyperpage{125}
-    \subitem {dump}, \hyperpage{126}
-    \subitem {dumpPairFlag}, \hyperpage{126}
-    \subitem {fax}, \hyperpage{126}
-    \subitem {fay}, \hyperpage{126}
-    \subitem {fpbond}, \hyperpage{126}
-    \subitem {fpcom}, \hyperpage{126}
-    \subitem {fpdnsty}, \hyperpage{126}
-    \subitem {fpdump}, \hyperpage{126}
-    \subitem {fpmomentum}, \hyperpage{126}
-    \subitem {fppair}, \hyperpage{126}
-    \subitem {fprdf}, \hyperpage{127}
-    \subitem {fpresult}, \hyperpage{127}
-    \subitem {fpstress}, \hyperpage{127}
-    \subitem {fpvisc}, \hyperpage{127}
-    \subitem {fpvrms}, \hyperpage{127}
-    \subitem {fpxyz}, \hyperpage{127}
-    \subitem {freezeAtomType}, \hyperpage{127}
-    \subitem {frfAtom}, \hyperpage{127}
-    \subitem {fuSum}, \hyperpage{127}
-    \subitem {fvirSum}, \hyperpage{127}
-    \subitem {fx}, \hyperpage{128}
-    \subitem {fxByfy}, \hyperpage{128}
-    \subitem {fy}, \hyperpage{128}
-    \subitem {FyBylx}, \hyperpage{128}
-    \subitem {gamman}, \hyperpage{128}
-    \subitem {HaltCondition}, \hyperpage{128}
-    \subitem {histRdf}, \hyperpage{128}
-    \subitem {ImageX}, \hyperpage{128}
-    \subitem {ImageY}, \hyperpage{128}
-    \subitem {indexAcf}, \hyperpage{129}
-    \subitem {indexCorr}, \hyperpage{129}
-    \subitem {initUcell}, \hyperpage{129}
-    \subitem {isBonded}, \hyperpage{129}
-    \subitem {kappa}, \hyperpage{129}
-    \subitem {kb}, \hyperpage{129}
-    \subitem {kinEnergy}, \hyperpage{129}
-    \subitem {Kn}, \hyperpage{129}
-    \subitem {limitAcfAv}, \hyperpage{129}
-    \subitem {limitCorrAv}, \hyperpage{130}
-    \subitem {limitRdf}, \hyperpage{130}
-    \subitem {master}, \hyperpage{130}
-    \subitem {molID}, \hyperpage{130}
-    \subitem {momentum}, \hyperpage{130}
-    \subitem {moreCycles}, \hyperpage{130}
-    \subitem {nAtom}, \hyperpage{130}
-    \subitem {nAtomBlock}, \hyperpage{130}
-    \subitem {nAtomInterface}, \hyperpage{131}
-    \subitem {nAtomType}, \hyperpage{131}
-    \subitem {nBond}, \hyperpage{131}
-    \subitem {nBondType}, \hyperpage{131}
-    \subitem {nBuffAcf}, \hyperpage{131}
-    \subitem {nBuffCorr}, \hyperpage{131}
-    \subitem {NDIM}, \hyperpage{120}
-    \subitem {nDiscInterface}, \hyperpage{131}
-    \subitem {nFunCorr}, \hyperpage{131}
-    \subitem {nodeDragx}, \hyperpage{132}
-    \subitem {nodeDragy}, \hyperpage{132}
-    \subitem {nPairActive}, \hyperpage{132}
-    \subitem {nPairTotal}, \hyperpage{132}
-    \subitem {nValAcf}, \hyperpage{132}
-    \subitem {nValCorr}, \hyperpage{132}
-    \subitem {pair}, \hyperpage{132}
-    \subitem {Pairatom1}, \hyperpage{132}
-    \subitem {Pairatom2}, \hyperpage{133}
-    \subitem {PairID}, \hyperpage{133}
-    \subitem {PairXij}, \hyperpage{133}
-    \subitem {PairYij}, \hyperpage{133}
-    \subitem {potEnergy}, \hyperpage{133}
-    \subitem {prefix}, \hyperpage{133}
-    \subitem {pressure}, \hyperpage{133}
-    \subitem {RadiusIJ}, \hyperpage{133}
-    \subitem {RadiusIJInv}, \hyperpage{134}
-    \subitem {rangeRdf}, \hyperpage{134}
-    \subitem {rank}, \hyperpage{134}
-    \subitem {rCut}, \hyperpage{134}
-    \subitem {rdf}, \hyperpage{134}
-    \subitem {real}, \hyperpage{120}
-    \subitem {region}, \hyperpage{134}
-    \subitem {regionH}, \hyperpage{134}
-    \subitem {result}, \hyperpage{134}
-    \subitem {rfAtom}, \hyperpage{134}
-    \subitem {ro}, \hyperpage{135}
-    \subitem {rx}, \hyperpage{135}
-    \subitem {rxUnwrap}, \hyperpage{135}
-    \subitem {ry}, \hyperpage{135}
-    \subitem {ryUnwrap}, \hyperpage{135}
-    \subitem {shearDisplacement}, \hyperpage{135}
-    \subitem {shearVelocity}, \hyperpage{135}
-    \subitem {SignR}, \hyperpage{120}
-    \subitem {size}, \hyperpage{135}
-    \subitem {sizeHistRdf}, \hyperpage{135}
-    \subitem {sKinEnergy}, \hyperpage{136}
-    \subitem {solver}, \hyperpage{136}
-    \subitem {spacetimeCorr}, \hyperpage{136}
-    \subitem {spacetimeCorrAv}, \hyperpage{136}
-    \subitem {speed}, \hyperpage{136}
-    \subitem {sPotEnergy}, \hyperpage{136}
-    \subitem {sPressure}, \hyperpage{136}
-    \subitem {Sqr}, \hyperpage{120}
-    \subitem {SqrRadiusIJ}, \hyperpage{136}
-    \subitem {ssKinEnergy}, \hyperpage{137}
-    \subitem {ssPotEnergy}, \hyperpage{137}
-    \subitem {ssPressure}, \hyperpage{137}
-    \subitem {ssTotEnergy}, \hyperpage{137}
-    \subitem {stepAcf}, \hyperpage{137}
-    \subitem {stepAvg}, \hyperpage{137}
-    \subitem {stepCorr}, \hyperpage{137}
-    \subitem {stepCount}, \hyperpage{137}
-    \subitem {stepDump}, \hyperpage{138}
-    \subitem {stepEquil}, \hyperpage{138}
-    \subitem {stepLimit}, \hyperpage{138}
-    \subitem {stepRdf}, \hyperpage{138}
-    \subitem {stepTraj}, \hyperpage{138}
-    \subitem {sTotEnergy}, \hyperpage{138}
-    \subitem {strain}, \hyperpage{138}
-    \subitem {strainRate}, \hyperpage{138}
-    \subitem {strech}, \hyperpage{139}
-    \subitem {stress}, \hyperpage{139}
-    \subitem {svirSum}, \hyperpage{139}
-    \subitem {timeNow}, \hyperpage{139}
-    \subitem {TotalBondEnergy}, \hyperpage{139}
-    \subitem {TotalMass}, \hyperpage{139}
-    \subitem {totEnergy}, \hyperpage{139}
-    \subitem {uSum}, \hyperpage{139}
-    \subitem {uSumPair}, \hyperpage{140}
-    \subitem {uSumPairPerAtom}, \hyperpage{140}
-    \subitem {virSum}, \hyperpage{140}
-    \subitem {virSumBond}, \hyperpage{140}
-    \subitem {virSumBondxx}, \hyperpage{140}
-    \subitem {virSumBondxy}, \hyperpage{140}
-    \subitem {virSumBondyy}, \hyperpage{140}
-    \subitem {virSumPair}, \hyperpage{140}
-    \subitem {virSumPairxx}, \hyperpage{141}
-    \subitem {virSumPairxy}, \hyperpage{141}
-    \subitem {virSumPairyy}, \hyperpage{141}
-    \subitem {virSumxx}, \hyperpage{141}
-    \subitem {virSumxy}, \hyperpage{141}
-    \subitem {virSumyy}, \hyperpage{141}
-    \subitem {visc}, \hyperpage{141}
-    \subitem {viscAcf}, \hyperpage{141}
-    \subitem {viscAcfAv}, \hyperpage{142}
-    \subitem {viscAcfInt}, \hyperpage{142}
-    \subitem {viscAcfOrg}, \hyperpage{142}
-    \subitem {VMeanSqr}, \hyperpage{142}
-    \subitem {vrms}, \hyperpage{142}
-    \subitem {VRootMeanSqr}, \hyperpage{142}
-    \subitem {VSqr}, \hyperpage{142}
-    \subitem {vSum}, \hyperpage{142}
-    \subitem {vSumX}, \hyperpage{143}
-    \subitem {vSumY}, \hyperpage{143}
-    \subitem {vvSum}, \hyperpage{143}
-    \subitem {vx}, \hyperpage{143}
-    \subitem {vy}, \hyperpage{143}
-    \subitem {xBoundary}, \hyperpage{143}
-    \subitem {xyz}, \hyperpage{143}
-    \subitem {yBoundary}, \hyperpage{143}
+    \subitem {atom1}, \hyperpage{103}
+    \subitem {atom2}, \hyperpage{103}
+    \subitem {atomID}, \hyperpage{104}
+    \subitem {atomIDInterface}, \hyperpage{104}
+    \subitem {atomMass}, \hyperpage{104}
+    \subitem {atomRadius}, \hyperpage{104}
+    \subitem {atomType}, \hyperpage{104}
+    \subitem {ax}, \hyperpage{104}
+    \subitem {ay}, \hyperpage{104}
+    \subitem {bond}, \hyperpage{104}
+    \subitem {BondEnergy}, \hyperpage{104}
+    \subitem {BondEnergyPerAtom}, \hyperpage{104}
+    \subitem {BondID}, \hyperpage{104}
+    \subitem {BondLength}, \hyperpage{104}
+    \subitem {BondType}, \hyperpage{104}
+    \subitem {cellList}, \hyperpage{104}
+    \subitem {cells}, \hyperpage{105}
+    \subitem {cfOrg}, \hyperpage{105}
+    \subitem {cfVal}, \hyperpage{105}
+    \subitem {com}, \hyperpage{105}
+    \subitem {ComX}, \hyperpage{105}
+    \subitem {ComX0}, \hyperpage{105}
+    \subitem {ComXRatio}, \hyperpage{105}
+    \subitem {ComY}, \hyperpage{105}
+    \subitem {ComY0}, \hyperpage{105}
+    \subitem {ComYRatio}, \hyperpage{105}
+    \subitem {countAcfAv}, \hyperpage{105}
+    \subitem {countCorrAv}, \hyperpage{105}
+    \subitem {countRdf}, \hyperpage{105}
+    \subitem {DampFlag}, \hyperpage{106}
+    \subitem {deltaT}, \hyperpage{106}
+    \subitem {DeltaVXij}, \hyperpage{106}
+    \subitem {DeltaVYij}, \hyperpage{106}
+    \subitem {DeltaX}, \hyperpage{106}
+    \subitem {DeltaXij}, \hyperpage{106}
+    \subitem {DeltaXijNew}, \hyperpage{106}
+    \subitem {DeltaXijOld}, \hyperpage{106}
+    \subitem {DeltaXijOldPair}, \hyperpage{106}
+    \subitem {DeltaY}, \hyperpage{106}
+    \subitem {DeltaYij}, \hyperpage{106}
+    \subitem {DeltaYijNew}, \hyperpage{106}
+    \subitem {DeltaYijOld}, \hyperpage{106}
+    \subitem {DeltaYijOldPair}, \hyperpage{107}
+    \subitem {density}, \hyperpage{107}
+    \subitem {discDragx}, \hyperpage{107}
+    \subitem {discDragy}, \hyperpage{107}
+    \subitem {dnsty}, \hyperpage{107}
+    \subitem {dump}, \hyperpage{107}
+    \subitem {dumpPairFlag}, \hyperpage{107}
+    \subitem {fax}, \hyperpage{107}
+    \subitem {fay}, \hyperpage{107}
+    \subitem {fpbond}, \hyperpage{107}
+    \subitem {fpcom}, \hyperpage{107}
+    \subitem {fpdnsty}, \hyperpage{107}
+    \subitem {fpdump}, \hyperpage{107}
+    \subitem {fpmomentum}, \hyperpage{107}
+    \subitem {fppair}, \hyperpage{108}
+    \subitem {fprdf}, \hyperpage{108}
+    \subitem {fpresult}, \hyperpage{108}
+    \subitem {fpstress}, \hyperpage{108}
+    \subitem {fpvisc}, \hyperpage{108}
+    \subitem {fpvrms}, \hyperpage{108}
+    \subitem {fpxyz}, \hyperpage{108}
+    \subitem {freezeAtomType}, \hyperpage{108}
+    \subitem {frfAtom}, \hyperpage{108}
+    \subitem {fuSum}, \hyperpage{108}
+    \subitem {fvirSum}, \hyperpage{108}
+    \subitem {fx}, \hyperpage{108}
+    \subitem {fxByfy}, \hyperpage{108}
+    \subitem {fy}, \hyperpage{108}
+    \subitem {FyBylx}, \hyperpage{109}
+    \subitem {gamman}, \hyperpage{109}
+    \subitem {HaltCondition}, \hyperpage{109}
+    \subitem {histRdf}, \hyperpage{109}
+    \subitem {ImageX}, \hyperpage{109}
+    \subitem {ImageY}, \hyperpage{109}
+    \subitem {indexAcf}, \hyperpage{109}
+    \subitem {indexCorr}, \hyperpage{109}
+    \subitem {initUcell}, \hyperpage{109}
+    \subitem {isBonded}, \hyperpage{109}
+    \subitem {kappa}, \hyperpage{109}
+    \subitem {kb}, \hyperpage{109}
+    \subitem {kinEnergy}, \hyperpage{109}
+    \subitem {Kn}, \hyperpage{109}
+    \subitem {limitAcfAv}, \hyperpage{110}
+    \subitem {limitCorrAv}, \hyperpage{110}
+    \subitem {limitRdf}, \hyperpage{110}
+    \subitem {master}, \hyperpage{110}
+    \subitem {molID}, \hyperpage{110}
+    \subitem {momentum}, \hyperpage{110}
+    \subitem {moreCycles}, \hyperpage{110}
+    \subitem {nAtom}, \hyperpage{110}
+    \subitem {nAtomBlock}, \hyperpage{110}
+    \subitem {nAtomInterface}, \hyperpage{110}
+    \subitem {nAtomType}, \hyperpage{110}
+    \subitem {nBond}, \hyperpage{110}
+    \subitem {nBondType}, \hyperpage{110}
+    \subitem {nBuffAcf}, \hyperpage{111}
+    \subitem {nBuffCorr}, \hyperpage{111}
+    \subitem {NDIM}, \hyperpage{103}
+    \subitem {nDiscInterface}, \hyperpage{111}
+    \subitem {nFunCorr}, \hyperpage{111}
+    \subitem {nodeDragx}, \hyperpage{111}
+    \subitem {nodeDragy}, \hyperpage{111}
+    \subitem {nPairActive}, \hyperpage{111}
+    \subitem {nPairTotal}, \hyperpage{111}
+    \subitem {nValAcf}, \hyperpage{111}
+    \subitem {nValCorr}, \hyperpage{111}
+    \subitem {pair}, \hyperpage{111}
+    \subitem {Pairatom1}, \hyperpage{111}
+    \subitem {Pairatom2}, \hyperpage{111}
+    \subitem {PairID}, \hyperpage{112}
+    \subitem {PairXij}, \hyperpage{112}
+    \subitem {PairYij}, \hyperpage{112}
+    \subitem {potEnergy}, \hyperpage{112}
+    \subitem {prefix}, \hyperpage{112}
+    \subitem {pressure}, \hyperpage{112}
+    \subitem {RadiusIJ}, \hyperpage{112}
+    \subitem {RadiusIJInv}, \hyperpage{112}
+    \subitem {rangeRdf}, \hyperpage{112}
+    \subitem {rank}, \hyperpage{112}
+    \subitem {rCut}, \hyperpage{112}
+    \subitem {rdf}, \hyperpage{112}
+    \subitem {real}, \hyperpage{103}
+    \subitem {region}, \hyperpage{112}
+    \subitem {regionH}, \hyperpage{113}
+    \subitem {result}, \hyperpage{113}
+    \subitem {rfAtom}, \hyperpage{113}
+    \subitem {ro}, \hyperpage{113}
+    \subitem {rx}, \hyperpage{113}
+    \subitem {rxUnwrap}, \hyperpage{113}
+    \subitem {ry}, \hyperpage{113}
+    \subitem {ryUnwrap}, \hyperpage{113}
+    \subitem {shearDisplacement}, \hyperpage{113}
+    \subitem {shearVelocity}, \hyperpage{113}
+    \subitem {SignR}, \hyperpage{103}
+    \subitem {size}, \hyperpage{113}
+    \subitem {sizeHistRdf}, \hyperpage{113}
+    \subitem {sKinEnergy}, \hyperpage{113}
+    \subitem {solver}, \hyperpage{114}
+    \subitem {spacetimeCorr}, \hyperpage{114}
+    \subitem {spacetimeCorrAv}, \hyperpage{114}
+    \subitem {speed}, \hyperpage{114}
+    \subitem {sPotEnergy}, \hyperpage{114}
+    \subitem {sPressure}, \hyperpage{114}
+    \subitem {Sqr}, \hyperpage{103}
+    \subitem {SqrRadiusIJ}, \hyperpage{114}
+    \subitem {ssKinEnergy}, \hyperpage{114}
+    \subitem {ssPotEnergy}, \hyperpage{114}
+    \subitem {ssPressure}, \hyperpage{114}
+    \subitem {ssTotEnergy}, \hyperpage{114}
+    \subitem {stepAcf}, \hyperpage{114}
+    \subitem {stepAvg}, \hyperpage{115}
+    \subitem {stepCorr}, \hyperpage{115}
+    \subitem {stepCount}, \hyperpage{115}
+    \subitem {stepDump}, \hyperpage{115}
+    \subitem {stepEquil}, \hyperpage{115}
+    \subitem {stepLimit}, \hyperpage{115}
+    \subitem {stepRdf}, \hyperpage{115}
+    \subitem {stepTraj}, \hyperpage{115}
+    \subitem {sTotEnergy}, \hyperpage{115}
+    \subitem {strain}, \hyperpage{115}
+    \subitem {strainRate}, \hyperpage{115}
+    \subitem {strech}, \hyperpage{115}
+    \subitem {stress}, \hyperpage{116}
+    \subitem {svirSum}, \hyperpage{116}
+    \subitem {timeNow}, \hyperpage{116}
+    \subitem {TotalBondEnergy}, \hyperpage{116}
+    \subitem {TotalMass}, \hyperpage{116}
+    \subitem {totEnergy}, \hyperpage{116}
+    \subitem {uSum}, \hyperpage{116}
+    \subitem {uSumPair}, \hyperpage{116}
+    \subitem {uSumPairPerAtom}, \hyperpage{116}
+    \subitem {virSum}, \hyperpage{116}
+    \subitem {virSumBond}, \hyperpage{116}
+    \subitem {virSumBondxx}, \hyperpage{116}
+    \subitem {virSumBondxy}, \hyperpage{116}
+    \subitem {virSumBondyy}, \hyperpage{117}
+    \subitem {virSumPair}, \hyperpage{117}
+    \subitem {virSumPairxx}, \hyperpage{117}
+    \subitem {virSumPairxy}, \hyperpage{117}
+    \subitem {virSumPairyy}, \hyperpage{117}
+    \subitem {virSumxx}, \hyperpage{117}
+    \subitem {virSumxy}, \hyperpage{117}
+    \subitem {virSumyy}, \hyperpage{117}
+    \subitem {visc}, \hyperpage{117}
+    \subitem {viscAcf}, \hyperpage{117}
+    \subitem {viscAcfAv}, \hyperpage{117}
+    \subitem {viscAcfInt}, \hyperpage{117}
+    \subitem {viscAcfOrg}, \hyperpage{118}
+    \subitem {VMeanSqr}, \hyperpage{118}
+    \subitem {vrms}, \hyperpage{118}
+    \subitem {VRootMeanSqr}, \hyperpage{118}
+    \subitem {VSqr}, \hyperpage{118}
+    \subitem {vSum}, \hyperpage{118}
+    \subitem {vSumX}, \hyperpage{118}
+    \subitem {vSumY}, \hyperpage{118}
+    \subitem {vvSum}, \hyperpage{118}
+    \subitem {vx}, \hyperpage{118}
+    \subitem {vy}, \hyperpage{118}
+    \subitem {xBoundary}, \hyperpage{118}
+    \subitem {xyz}, \hyperpage{118}
+    \subitem {yBoundary}, \hyperpage{119}
 
   \indexspace
 
   \item {Halt.c}
-    \subitem {HaltConditionCheck}, \hyperpage{146}
+    \subitem {HaltConditionCheck}, \hyperpage{121}
   \item {HaltCondition}
-    \subitem {global.h}, \hyperpage{93}
-    \subitem {globalExtern.h}, \hyperpage{128}
+    \subitem {global.h}, \hyperpage{85}
+    \subitem {globalExtern.h}, \hyperpage{109}
   \item {HaltConditionCheck}
-    \subitem {Halt.c}, \hyperpage{146}
-    \subitem {main.c}, \hyperpage{179}
+    \subitem {Halt.c}, \hyperpage{121}
+    \subitem {main.c}, \hyperpage{152}
   \item {histRdf}
-    \subitem {global.h}, \hyperpage{93}
-    \subitem {globalExtern.h}, \hyperpage{128}
+    \subitem {global.h}, \hyperpage{85}
+    \subitem {globalExtern.h}, \hyperpage{109}
 
   \indexspace
 
   \item {ImageX}
-    \subitem {global.h}, \hyperpage{94}
-    \subitem {globalExtern.h}, \hyperpage{128}
+    \subitem {global.h}, \hyperpage{85}
+    \subitem {globalExtern.h}, \hyperpage{109}
   \item {ImageY}
-    \subitem {global.h}, \hyperpage{94}
-    \subitem {globalExtern.h}, \hyperpage{128}
+    \subitem {global.h}, \hyperpage{85}
+    \subitem {globalExtern.h}, \hyperpage{109}
   \item {indexAcf}
-    \subitem {global.h}, \hyperpage{94}
-    \subitem {globalExtern.h}, \hyperpage{129}
+    \subitem {global.h}, \hyperpage{85}
+    \subitem {globalExtern.h}, \hyperpage{109}
   \item {indexCorr}
-    \subitem {global.h}, \hyperpage{94}
-    \subitem {globalExtern.h}, \hyperpage{129}
+    \subitem {global.h}, \hyperpage{85}
+    \subitem {globalExtern.h}, \hyperpage{109}
   \item {Init}
-    \subitem {Init.c}, \hyperpage{148}
-    \subitem {main.c}, \hyperpage{180}
+    \subitem {Init.c}, \hyperpage{123}
+    \subitem {main.c}, \hyperpage{153}
   \item {Init.c}
-    \subitem {Init}, \hyperpage{148}
+    \subitem {Init}, \hyperpage{123}
   \item {initUcell}
-    \subitem {global.h}, \hyperpage{94}
-    \subitem {globalExtern.h}, \hyperpage{129}
+    \subitem {global.h}, \hyperpage{85}
+    \subitem {globalExtern.h}, \hyperpage{109}
   \item {InitVacf}
-    \subitem {InitVacf.c}, \hyperpage{155}
-    \subitem {SetupJob.c}, \hyperpage{204}
+    \subitem {InitVacf.c}, \hyperpage{129}
+    \subitem {SetupJob.c}, \hyperpage{175}
   \item {InitVacf.c}
-    \subitem {InitVacf}, \hyperpage{155}
-    \subitem {ZeroVacf}, \hyperpage{155}
+    \subitem {InitVacf}, \hyperpage{129}
+    \subitem {ZeroVacf}, \hyperpage{130}
   \item {Integrate}
-    \subitem {AccumVacf.c}, \hyperpage{11}
-    \subitem {Integrate.c}, \hyperpage{157}
+    \subitem {AccumVacf.c}, \hyperpage{10}
+    \subitem {Integrate.c}, \hyperpage{131}
   \item {Integrate.c}
-    \subitem {Integrate}, \hyperpage{157}
+    \subitem {Integrate}, \hyperpage{131}
   \item {isBonded}
-    \subitem {global.h}, \hyperpage{94}
-    \subitem {globalExtern.h}, \hyperpage{129}
+    \subitem {global.h}, \hyperpage{86}
+    \subitem {globalExtern.h}, \hyperpage{109}
 
   \indexspace
 
   \item {kappa}
-    \subitem {global.h}, \hyperpage{94}
-    \subitem {globalExtern.h}, \hyperpage{129}
+    \subitem {global.h}, \hyperpage{86}
+    \subitem {globalExtern.h}, \hyperpage{109}
   \item {kb}
-    \subitem {global.h}, \hyperpage{95}
-    \subitem {globalExtern.h}, \hyperpage{129}
+    \subitem {global.h}, \hyperpage{86}
+    \subitem {globalExtern.h}, \hyperpage{109}
   \item {kinEnergy}
-    \subitem {global.h}, \hyperpage{95}
-    \subitem {globalExtern.h}, \hyperpage{129}
+    \subitem {global.h}, \hyperpage{86}
+    \subitem {globalExtern.h}, \hyperpage{109}
   \item {Kn}
-    \subitem {global.h}, \hyperpage{95}
-    \subitem {globalExtern.h}, \hyperpage{129}
+    \subitem {global.h}, \hyperpage{86}
+    \subitem {globalExtern.h}, \hyperpage{109}
 
   \indexspace
 
   \item {Lamina: A Molecular Dynamics Package}, \hyperpage{1}
   \item {LeapfrogStep}
-    \subitem {LeapfrogStep.c}, \hyperpage{159}
-    \subitem {main.c}, \hyperpage{183}
+    \subitem {LeapfrogStep.c}, \hyperpage{133}
+    \subitem {main.c}, \hyperpage{156}
   \item {LeapfrogStep.c}
-    \subitem {LeapfrogStep}, \hyperpage{159}
+    \subitem {LeapfrogStep}, \hyperpage{133}
   \item {limitAcfAv}
-    \subitem {global.h}, \hyperpage{95}
-    \subitem {globalExtern.h}, \hyperpage{129}
+    \subitem {global.h}, \hyperpage{86}
+    \subitem {globalExtern.h}, \hyperpage{110}
   \item {limitCorrAv}
-    \subitem {global.h}, \hyperpage{95}
-    \subitem {globalExtern.h}, \hyperpage{130}
+    \subitem {global.h}, \hyperpage{86}
+    \subitem {globalExtern.h}, \hyperpage{110}
   \item {limitRdf}
-    \subitem {global.h}, \hyperpage{95}
-    \subitem {globalExtern.h}, \hyperpage{130}
+    \subitem {global.h}, \hyperpage{86}
+    \subitem {globalExtern.h}, \hyperpage{110}
 
   \indexspace
 
   \item {main}
-    \subitem {main.c}, \hyperpage{183}
+    \subitem {main.c}, \hyperpage{156}
   \item {main.c}
-    \subitem {AccumProps}, \hyperpage{164}
-    \subitem {ApplyBoundaryCond}, \hyperpage{164}
-    \subitem {ApplyDrivingForce}, \hyperpage{165}
-    \subitem {ApplyForce}, \hyperpage{166}
-    \subitem {ApplyLeesEdwardsBoundaryCond}, \hyperpage{166}
-    \subitem {ApplyShear}, \hyperpage{167}
-    \subitem {ApplyViscous}, \hyperpage{167}
-    \subitem {BrownianStep}, \hyperpage{167}
-    \subitem {Close}, \hyperpage{168}
-    \subitem {ComputeForcesCells}, \hyperpage{169}
-    \subitem {DEFINE\_GLOBALS}, \hyperpage{164}
-    \subitem {DisplaceAtoms}, \hyperpage{171}
-    \subitem {DumpBonds}, \hyperpage{171}
-    \subitem {DumpPairs}, \hyperpage{172}
-    \subitem {DumpRestart}, \hyperpage{173}
-    \subitem {DumpState}, \hyperpage{173}
-    \subitem {EvalCom}, \hyperpage{174}
-    \subitem {EvalProps}, \hyperpage{175}
-    \subitem {EvalRdf}, \hyperpage{176}
-    \subitem {EvalSpacetimeCorr}, \hyperpage{176}
-    \subitem {EvalUnwrap}, \hyperpage{178}
-    \subitem {EvalVacf}, \hyperpage{178}
-    \subitem {EvalVrms}, \hyperpage{179}
-    \subitem {HaltConditionCheck}, \hyperpage{179}
-    \subitem {Init}, \hyperpage{180}
-    \subitem {LeapfrogStep}, \hyperpage{183}
-    \subitem {main}, \hyperpage{183}
-    \subitem {prefix}, \hyperpage{191}
-    \subitem {PrintCom}, \hyperpage{186}
-    \subitem {PrintMomentum}, \hyperpage{187}
-    \subitem {PrintStress}, \hyperpage{187}
-    \subitem {PrintSummary}, \hyperpage{187}
-    \subitem {PrintVrms}, \hyperpage{188}
-    \subitem {SetupJob}, \hyperpage{188}
-    \subitem {Trajectory}, \hyperpage{189}
-    \subitem {VelocityVerletStep}, \hyperpage{190}
+    \subitem {AccumProps}, \hyperpage{138}
+    \subitem {ApplyBoundaryCond}, \hyperpage{138}
+    \subitem {ApplyDrivingForce}, \hyperpage{139}
+    \subitem {ApplyForce}, \hyperpage{140}
+    \subitem {ApplyLeesEdwardsBoundaryCond}, \hyperpage{140}
+    \subitem {ApplyShear}, \hyperpage{141}
+    \subitem {ApplyViscous}, \hyperpage{141}
+    \subitem {BrownianStep}, \hyperpage{141}
+    \subitem {Close}, \hyperpage{142}
+    \subitem {ComputeForcesCells}, \hyperpage{143}
+    \subitem {DEFINE\_GLOBALS}, \hyperpage{138}
+    \subitem {DisplaceAtoms}, \hyperpage{144}
+    \subitem {DumpBonds}, \hyperpage{145}
+    \subitem {DumpPairs}, \hyperpage{145}
+    \subitem {DumpRestart}, \hyperpage{146}
+    \subitem {DumpState}, \hyperpage{147}
+    \subitem {EvalCom}, \hyperpage{147}
+    \subitem {EvalProps}, \hyperpage{148}
+    \subitem {EvalRdf}, \hyperpage{149}
+    \subitem {EvalSpacetimeCorr}, \hyperpage{149}
+    \subitem {EvalUnwrap}, \hyperpage{151}
+    \subitem {EvalVacf}, \hyperpage{151}
+    \subitem {EvalVrms}, \hyperpage{152}
+    \subitem {HaltConditionCheck}, \hyperpage{152}
+    \subitem {Init}, \hyperpage{153}
+    \subitem {LeapfrogStep}, \hyperpage{156}
+    \subitem {main}, \hyperpage{156}
+    \subitem {prefix}, \hyperpage{163}
+    \subitem {PrintCom}, \hyperpage{159}
+    \subitem {PrintMomentum}, \hyperpage{160}
+    \subitem {PrintStress}, \hyperpage{160}
+    \subitem {PrintSummary}, \hyperpage{160}
+    \subitem {PrintVrms}, \hyperpage{160}
+    \subitem {SetupJob}, \hyperpage{161}
+    \subitem {Trajectory}, \hyperpage{162}
+    \subitem {VelocityVerletStep}, \hyperpage{162}
   \item {master}
-    \subitem {global.h}, \hyperpage{96}
-    \subitem {globalExtern.h}, \hyperpage{130}
+    \subitem {global.h}, \hyperpage{86}
+    \subitem {globalExtern.h}, \hyperpage{110}
   \item {molID}
-    \subitem {global.h}, \hyperpage{96}
-    \subitem {globalExtern.h}, \hyperpage{130}
+    \subitem {global.h}, \hyperpage{86}
+    \subitem {globalExtern.h}, \hyperpage{110}
   \item {momentum}
-    \subitem {global.h}, \hyperpage{96}
-    \subitem {globalExtern.h}, \hyperpage{130}
+    \subitem {global.h}, \hyperpage{86}
+    \subitem {globalExtern.h}, \hyperpage{110}
   \item {moreCycles}
-    \subitem {global.h}, \hyperpage{96}
-    \subitem {globalExtern.h}, \hyperpage{130}
+    \subitem {global.h}, \hyperpage{87}
+    \subitem {globalExtern.h}, \hyperpage{110}
 
   \indexspace
 
   \item {nAtom}
-    \subitem {global.h}, \hyperpage{96}
-    \subitem {globalExtern.h}, \hyperpage{130}
+    \subitem {global.h}, \hyperpage{87}
+    \subitem {globalExtern.h}, \hyperpage{110}
   \item {nAtomBlock}
-    \subitem {global.h}, \hyperpage{96}
-    \subitem {globalExtern.h}, \hyperpage{130}
+    \subitem {global.h}, \hyperpage{87}
+    \subitem {globalExtern.h}, \hyperpage{110}
   \item {nAtomInterface}
-    \subitem {global.h}, \hyperpage{97}
-    \subitem {globalExtern.h}, \hyperpage{131}
+    \subitem {global.h}, \hyperpage{87}
+    \subitem {globalExtern.h}, \hyperpage{110}
   \item {nAtomType}
-    \subitem {global.h}, \hyperpage{97}
-    \subitem {globalExtern.h}, \hyperpage{131}
+    \subitem {global.h}, \hyperpage{87}
+    \subitem {globalExtern.h}, \hyperpage{110}
   \item {nBond}
-    \subitem {global.h}, \hyperpage{97}
-    \subitem {globalExtern.h}, \hyperpage{131}
+    \subitem {global.h}, \hyperpage{87}
+    \subitem {globalExtern.h}, \hyperpage{110}
   \item {nBondType}
-    \subitem {global.h}, \hyperpage{97}
-    \subitem {globalExtern.h}, \hyperpage{131}
+    \subitem {global.h}, \hyperpage{87}
+    \subitem {globalExtern.h}, \hyperpage{110}
   \item {nBuffAcf}
-    \subitem {global.h}, \hyperpage{97}
-    \subitem {globalExtern.h}, \hyperpage{131}
+    \subitem {global.h}, \hyperpage{87}
+    \subitem {globalExtern.h}, \hyperpage{111}
   \item {nBuffCorr}
-    \subitem {global.h}, \hyperpage{97}
-    \subitem {globalExtern.h}, \hyperpage{131}
+    \subitem {global.h}, \hyperpage{87}
+    \subitem {globalExtern.h}, \hyperpage{111}
   \item {NDIM}
-    \subitem {global.h}, \hyperpage{82}
-    \subitem {globalExtern.h}, \hyperpage{120}
+    \subitem {global.h}, \hyperpage{78}
+    \subitem {globalExtern.h}, \hyperpage{103}
   \item {nDiscInterface}
-    \subitem {global.h}, \hyperpage{97}
-    \subitem {globalExtern.h}, \hyperpage{131}
+    \subitem {global.h}, \hyperpage{87}
+    \subitem {globalExtern.h}, \hyperpage{111}
   \item {nFunCorr}
-    \subitem {global.h}, \hyperpage{98}
-    \subitem {globalExtern.h}, \hyperpage{131}
+    \subitem {global.h}, \hyperpage{88}
+    \subitem {globalExtern.h}, \hyperpage{111}
   \item {nodeDragx}
-    \subitem {global.h}, \hyperpage{98}
-    \subitem {globalExtern.h}, \hyperpage{132}
+    \subitem {global.h}, \hyperpage{88}
+    \subitem {globalExtern.h}, \hyperpage{111}
   \item {nodeDragy}
-    \subitem {global.h}, \hyperpage{98}
-    \subitem {globalExtern.h}, \hyperpage{132}
+    \subitem {global.h}, \hyperpage{88}
+    \subitem {globalExtern.h}, \hyperpage{111}
   \item {nPairActive}
-    \subitem {global.h}, \hyperpage{98}
-    \subitem {globalExtern.h}, \hyperpage{132}
+    \subitem {global.h}, \hyperpage{88}
+    \subitem {globalExtern.h}, \hyperpage{111}
   \item {nPairTotal}
-    \subitem {global.h}, \hyperpage{98}
-    \subitem {globalExtern.h}, \hyperpage{132}
+    \subitem {global.h}, \hyperpage{88}
+    \subitem {globalExtern.h}, \hyperpage{111}
   \item {nValAcf}
-    \subitem {global.h}, \hyperpage{98}
-    \subitem {globalExtern.h}, \hyperpage{132}
+    \subitem {global.h}, \hyperpage{88}
+    \subitem {globalExtern.h}, \hyperpage{111}
   \item {nValCorr}
-    \subitem {global.h}, \hyperpage{99}
-    \subitem {globalExtern.h}, \hyperpage{132}
+    \subitem {global.h}, \hyperpage{88}
+    \subitem {globalExtern.h}, \hyperpage{111}
 
   \indexspace
 
   \item {pair}
-    \subitem {global.h}, \hyperpage{99}
-    \subitem {globalExtern.h}, \hyperpage{132}
+    \subitem {global.h}, \hyperpage{88}
+    \subitem {globalExtern.h}, \hyperpage{111}
   \item {Pairatom1}
-    \subitem {global.h}, \hyperpage{99}
-    \subitem {globalExtern.h}, \hyperpage{132}
+    \subitem {global.h}, \hyperpage{88}
+    \subitem {globalExtern.h}, \hyperpage{111}
   \item {Pairatom2}
-    \subitem {global.h}, \hyperpage{99}
-    \subitem {globalExtern.h}, \hyperpage{133}
+    \subitem {global.h}, \hyperpage{88}
+    \subitem {globalExtern.h}, \hyperpage{111}
   \item {PairID}
-    \subitem {global.h}, \hyperpage{99}
-    \subitem {globalExtern.h}, \hyperpage{133}
+    \subitem {global.h}, \hyperpage{89}
+    \subitem {globalExtern.h}, \hyperpage{112}
   \item {PairXij}
-    \subitem {global.h}, \hyperpage{99}
-    \subitem {globalExtern.h}, \hyperpage{133}
+    \subitem {global.h}, \hyperpage{89}
+    \subitem {globalExtern.h}, \hyperpage{112}
   \item {PairYij}
-    \subitem {global.h}, \hyperpage{99}
-    \subitem {globalExtern.h}, \hyperpage{133}
+    \subitem {global.h}, \hyperpage{89}
+    \subitem {globalExtern.h}, \hyperpage{112}
   \item {potEnergy}
-    \subitem {global.h}, \hyperpage{100}
-    \subitem {globalExtern.h}, \hyperpage{133}
+    \subitem {global.h}, \hyperpage{89}
+    \subitem {globalExtern.h}, \hyperpage{112}
   \item {prefix}
-    \subitem {global.h}, \hyperpage{100}
-    \subitem {globalExtern.h}, \hyperpage{133}
-    \subitem {main.c}, \hyperpage{191}
+    \subitem {global.h}, \hyperpage{89}
+    \subitem {globalExtern.h}, \hyperpage{112}
+    \subitem {main.c}, \hyperpage{163}
   \item {pressure}
-    \subitem {global.h}, \hyperpage{100}
-    \subitem {globalExtern.h}, \hyperpage{133}
+    \subitem {global.h}, \hyperpage{89}
+    \subitem {globalExtern.h}, \hyperpage{112}
   \item {PrintCom}
-    \subitem {main.c}, \hyperpage{186}
-    \subitem {PrintCom.c}, \hyperpage{194}
+    \subitem {main.c}, \hyperpage{159}
+    \subitem {PrintCom.c}, \hyperpage{166}
   \item {PrintCom.c}
-    \subitem {PrintCom}, \hyperpage{194}
+    \subitem {PrintCom}, \hyperpage{166}
   \item {PrintMomentum}
-    \subitem {main.c}, \hyperpage{187}
-    \subitem {PrintMomentum.c}, \hyperpage{196}
+    \subitem {main.c}, \hyperpage{160}
+    \subitem {PrintMomentum.c}, \hyperpage{167}
   \item {PrintMomentum.c}
-    \subitem {PrintMomentum}, \hyperpage{196}
+    \subitem {PrintMomentum}, \hyperpage{167}
   \item {PrintStress}
-    \subitem {main.c}, \hyperpage{187}
-    \subitem {PrintStress.c}, \hyperpage{197}
+    \subitem {main.c}, \hyperpage{160}
+    \subitem {PrintStress.c}, \hyperpage{168}
   \item {PrintStress.c}
-    \subitem {PrintStress}, \hyperpage{197}
+    \subitem {PrintStress}, \hyperpage{168}
   \item {PrintSummary}
-    \subitem {main.c}, \hyperpage{187}
-    \subitem {PrintSummary.c}, \hyperpage{198}
+    \subitem {main.c}, \hyperpage{160}
+    \subitem {PrintSummary.c}, \hyperpage{170}
   \item {PrintSummary.c}
-    \subitem {PrintSummary}, \hyperpage{198}
+    \subitem {PrintSummary}, \hyperpage{170}
   \item {PrintVacf}
     \subitem {AccumVacf.c}, \hyperpage{11}
-    \subitem {PrintVacf.c}, \hyperpage{200}
+    \subitem {PrintVacf.c}, \hyperpage{171}
   \item {PrintVacf.c}
-    \subitem {PrintVacf}, \hyperpage{200}
+    \subitem {PrintVacf}, \hyperpage{171}
   \item {PrintVrms}
-    \subitem {main.c}, \hyperpage{188}
-    \subitem {PrintVrms.c}, \hyperpage{201}
+    \subitem {main.c}, \hyperpage{160}
+    \subitem {PrintVrms.c}, \hyperpage{173}
   \item {PrintVrms.c}
-    \subitem {PrintVrms}, \hyperpage{201}
+    \subitem {PrintVrms}, \hyperpage{173}
 
   \indexspace
 
   \item {RadiusIJ}
-    \subitem {global.h}, \hyperpage{100}
-    \subitem {globalExtern.h}, \hyperpage{133}
+    \subitem {global.h}, \hyperpage{89}
+    \subitem {globalExtern.h}, \hyperpage{112}
   \item {RadiusIJInv}
-    \subitem {global.h}, \hyperpage{100}
-    \subitem {globalExtern.h}, \hyperpage{134}
+    \subitem {global.h}, \hyperpage{89}
+    \subitem {globalExtern.h}, \hyperpage{112}
   \item {rangeRdf}
-    \subitem {global.h}, \hyperpage{100}
-    \subitem {globalExtern.h}, \hyperpage{134}
+    \subitem {global.h}, \hyperpage{89}
+    \subitem {globalExtern.h}, \hyperpage{112}
   \item {rank}
-    \subitem {global.h}, \hyperpage{101}
-    \subitem {globalExtern.h}, \hyperpage{134}
+    \subitem {global.h}, \hyperpage{89}
+    \subitem {globalExtern.h}, \hyperpage{112}
   \item {rCut}
-    \subitem {global.h}, \hyperpage{101}
-    \subitem {globalExtern.h}, \hyperpage{134}
+    \subitem {global.h}, \hyperpage{89}
+    \subitem {globalExtern.h}, \hyperpage{112}
   \item {rdf}
-    \subitem {global.h}, \hyperpage{101}
-    \subitem {globalExtern.h}, \hyperpage{134}
+    \subitem {global.h}, \hyperpage{90}
+    \subitem {globalExtern.h}, \hyperpage{112}
   \item {README.md}, \hyperpage{7}
   \item {real}
-    \subitem {global.h}, \hyperpage{83}
-    \subitem {globalExtern.h}, \hyperpage{120}
+    \subitem {global.h}, \hyperpage{78}
+    \subitem {globalExtern.h}, \hyperpage{103}
   \item {region}
-    \subitem {global.h}, \hyperpage{101}
-    \subitem {globalExtern.h}, \hyperpage{134}
+    \subitem {global.h}, \hyperpage{90}
+    \subitem {globalExtern.h}, \hyperpage{112}
   \item {regionH}
-    \subitem {global.h}, \hyperpage{101}
-    \subitem {globalExtern.h}, \hyperpage{134}
+    \subitem {global.h}, \hyperpage{90}
+    \subitem {globalExtern.h}, \hyperpage{113}
   \item {result}
-    \subitem {global.h}, \hyperpage{101}
-    \subitem {globalExtern.h}, \hyperpage{134}
+    \subitem {global.h}, \hyperpage{90}
+    \subitem {globalExtern.h}, \hyperpage{113}
   \item {rfAtom}
-    \subitem {global.h}, \hyperpage{101}
-    \subitem {globalExtern.h}, \hyperpage{134}
+    \subitem {global.h}, \hyperpage{90}
+    \subitem {globalExtern.h}, \hyperpage{113}
   \item {ro}
-    \subitem {global.h}, \hyperpage{102}
-    \subitem {globalExtern.h}, \hyperpage{135}
+    \subitem {global.h}, \hyperpage{90}
+    \subitem {globalExtern.h}, \hyperpage{113}
   \item {rx}
-    \subitem {global.h}, \hyperpage{102}
-    \subitem {globalExtern.h}, \hyperpage{135}
+    \subitem {global.h}, \hyperpage{90}
+    \subitem {globalExtern.h}, \hyperpage{113}
   \item {rxUnwrap}
-    \subitem {global.h}, \hyperpage{102}
-    \subitem {globalExtern.h}, \hyperpage{135}
+    \subitem {global.h}, \hyperpage{90}
+    \subitem {globalExtern.h}, \hyperpage{113}
   \item {ry}
-    \subitem {global.h}, \hyperpage{102}
-    \subitem {globalExtern.h}, \hyperpage{135}
+    \subitem {global.h}, \hyperpage{90}
+    \subitem {globalExtern.h}, \hyperpage{113}
   \item {ryUnwrap}
-    \subitem {global.h}, \hyperpage{102}
-    \subitem {globalExtern.h}, \hyperpage{135}
+    \subitem {global.h}, \hyperpage{90}
+    \subitem {globalExtern.h}, \hyperpage{113}
 
   \indexspace
 
   \item {SetupJob}
-    \subitem {main.c}, \hyperpage{188}
-    \subitem {SetupJob.c}, \hyperpage{205}
+    \subitem {main.c}, \hyperpage{161}
+    \subitem {SetupJob.c}, \hyperpage{176}
   \item {SetupJob.c}
-    \subitem {AccumProps}, \hyperpage{203}
-    \subitem {AllocArrays}, \hyperpage{204}
-    \subitem {InitVacf}, \hyperpage{204}
-    \subitem {SetupJob}, \hyperpage{205}
+    \subitem {AccumProps}, \hyperpage{174}
+    \subitem {AllocArrays}, \hyperpage{175}
+    \subitem {InitVacf}, \hyperpage{175}
+    \subitem {SetupJob}, \hyperpage{176}
   \item {shearDisplacement}
-    \subitem {global.h}, \hyperpage{102}
-    \subitem {globalExtern.h}, \hyperpage{135}
+    \subitem {global.h}, \hyperpage{91}
+    \subitem {globalExtern.h}, \hyperpage{113}
   \item {shearVelocity}
-    \subitem {global.h}, \hyperpage{103}
-    \subitem {globalExtern.h}, \hyperpage{135}
+    \subitem {global.h}, \hyperpage{91}
+    \subitem {globalExtern.h}, \hyperpage{113}
   \item {SignR}
-    \subitem {global.h}, \hyperpage{82}
-    \subitem {globalExtern.h}, \hyperpage{120}
+    \subitem {global.h}, \hyperpage{78}
+    \subitem {globalExtern.h}, \hyperpage{103}
   \item {size}
-    \subitem {global.h}, \hyperpage{103}
-    \subitem {globalExtern.h}, \hyperpage{135}
+    \subitem {global.h}, \hyperpage{91}
+    \subitem {globalExtern.h}, \hyperpage{113}
   \item {sizeHistRdf}
-    \subitem {global.h}, \hyperpage{103}
-    \subitem {globalExtern.h}, \hyperpage{135}
+    \subitem {global.h}, \hyperpage{91}
+    \subitem {globalExtern.h}, \hyperpage{113}
   \item {sKinEnergy}
-    \subitem {global.h}, \hyperpage{103}
-    \subitem {globalExtern.h}, \hyperpage{136}
+    \subitem {global.h}, \hyperpage{91}
+    \subitem {globalExtern.h}, \hyperpage{113}
   \item {solver}
-    \subitem {global.h}, \hyperpage{103}
-    \subitem {globalExtern.h}, \hyperpage{136}
+    \subitem {global.h}, \hyperpage{91}
+    \subitem {globalExtern.h}, \hyperpage{114}
   \item {source/AccumProps.c}, \hyperpage{7, 8}
   \item {source/AccumVacf.c}, \hyperpage{9}, \hyperpage{12}
-  \item {source/AllocArrays.c}, \hyperpage{13, 14}
-  \item {source/ApplyBoundaryCond.c}, \hyperpage{15}, \hyperpage{17}
-  \item {source/ApplyDrivingForce.c}, \hyperpage{17}, \hyperpage{19}
-  \item {source/ApplyForce.c}, \hyperpage{20, 21}
-  \item {source/ApplyLeesEdwardsBoundaryCond.c}, \hyperpage{21}, 
-		\hyperpage{23}
-  \item {source/ApplyShear.c}, \hyperpage{23, 24}
-  \item {source/ApplyViscous.c}, \hyperpage{25, 26}
-  \item {source/BrownianStep.c}, \hyperpage{26, 27}
-  \item {source/Close.c}, \hyperpage{28}, \hyperpage{30}
-  \item {source/ComputeBondForce.c}, \hyperpage{31}, \hyperpage{34}
-  \item {source/ComputeBondForce.h}, \hyperpage{36}, \hyperpage{38}
-  \item {source/ComputeForcesCells.c}, \hyperpage{38}, \hyperpage{41}
-  \item {source/ComputePairForce.c}, \hyperpage{43}, \hyperpage{46}
-  \item {source/ComputePairForce.h}, \hyperpage{48}, \hyperpage{51}
-  \item {source/DisplaceAtoms.c}, \hyperpage{51}, \hyperpage{53}
-  \item {source/DumpBonds.c}, \hyperpage{53, 54}
-  \item {source/DumpPairs.c}, \hyperpage{55, 56}
-  \item {source/DumpRestart.c}, \hyperpage{57, 58}
-  \item {source/DumpState.c}, \hyperpage{59, 60}
-  \item {source/EvalCom.c}, \hyperpage{61, 62}
-  \item {source/EvalProps.c}, \hyperpage{63}, \hyperpage{65}
-  \item {source/EvalRdf.c}, \hyperpage{65}, \hyperpage{67}
-  \item {source/EvalSpacetimeCorr.c}, \hyperpage{68}, \hyperpage{70}
-  \item {source/EvalUnwrap.c}, \hyperpage{71}, \hyperpage{73}
-  \item {source/EvalVacf.c}, \hyperpage{73}, \hyperpage{75}
-  \item {source/EvalVrms.c}, \hyperpage{76, 77}
-  \item {source/global.h}, \hyperpage{78}, \hyperpage{114}
-  \item {source/globalExtern.h}, \hyperpage{116}, \hyperpage{144}
-  \item {source/Halt.c}, \hyperpage{145}, \hyperpage{147}
-  \item {source/Init.c}, \hyperpage{147}, \hyperpage{151}
-  \item {source/InitVacf.c}, \hyperpage{154}, \hyperpage{156}
-  \item {source/Integrate.c}, \hyperpage{157, 158}
-  \item {source/LeapfrogStep.c}, \hyperpage{158}, \hyperpage{160}
-  \item {source/main.c}, \hyperpage{162}, \hyperpage{191}
-  \item {source/PrintCom.c}, \hyperpage{193}, \hyperpage{195}
-  \item {source/PrintMomentum.c}, \hyperpage{195, 196}
-  \item {source/PrintStress.c}, \hyperpage{196, 197}
-  \item {source/PrintSummary.c}, \hyperpage{198, 199}
-  \item {source/PrintVacf.c}, \hyperpage{199, 200}
-  \item {source/PrintVrms.c}, \hyperpage{201, 202}
-  \item {source/SetupJob.c}, \hyperpage{202}, \hyperpage{206}
-  \item {source/Trajectory.c}, \hyperpage{207, 208}
-  \item {source/VelocityVerletStep.c}, \hyperpage{209, 210}
-  \item {source/ZeroVacf.c}, \hyperpage{211, 212}
+  \item {source/AllocArrays.c}, \hyperpage{12}, \hyperpage{14}
+  \item {source/ApplyBoundaryCond.c}, \hyperpage{14}, \hyperpage{16}
+  \item {source/ApplyDrivingForce.c}, \hyperpage{17, 18}
+  \item {source/ApplyForce.c}, \hyperpage{19, 20}
+  \item {source/ApplyLeesEdwardsBoundaryCond.c}, \hyperpage{20, 21}
+  \item {source/ApplyShear.c}, \hyperpage{22, 23}
+  \item {source/ApplyViscous.c}, \hyperpage{23, 24}
+  \item {source/BrownianStep.c}, \hyperpage{25, 26}
+  \item {source/Close.c}, \hyperpage{27, 28}
+  \item {source/ComputeBondForce.c}, \hyperpage{29}, \hyperpage{32}
+  \item {source/ComputeBondForce.h}, \hyperpage{34}, \hyperpage{36}
+  \item {source/ComputeForcesCells.c}, \hyperpage{36}, \hyperpage{38}
+  \item {source/ComputePairForce.c}, \hyperpage{40}, \hyperpage{43}
+  \item {source/ComputePairForce.h}, \hyperpage{46}, \hyperpage{48}
+  \item {source/DisplaceAtoms.c}, \hyperpage{49}
+  \item {source/DumpBonds.c}, \hyperpage{50, 51}
+  \item {source/DumpPairs.c}, \hyperpage{52, 53}
+  \item {source/DumpRestart.c}, \hyperpage{53}, \hyperpage{55}
+  \item {source/DumpState.c}, \hyperpage{56, 57}
+  \item {source/EvalCom.c}, \hyperpage{57}, \hyperpage{59}
+  \item {source/EvalProps.c}, \hyperpage{59}, \hyperpage{61}
+  \item {source/EvalRdf.c}, \hyperpage{62, 63}
+  \item {source/EvalSpacetimeCorr.c}, \hyperpage{64}, \hyperpage{66}
+  \item {source/EvalUnwrap.c}, \hyperpage{67, 68}
+  \item {source/EvalVacf.c}, \hyperpage{69}, \hyperpage{71}
+  \item {source/EvalVrms.c}, \hyperpage{72, 73}
+  \item {source/global.h}, \hyperpage{74}, \hyperpage{97}
+  \item {source/globalExtern.h}, \hyperpage{99}, \hyperpage{119}
+  \item {source/Halt.c}, \hyperpage{120, 121}
+  \item {source/Init.c}, \hyperpage{122}, \hyperpage{126}
+  \item {source/InitVacf.c}, \hyperpage{129, 130}
+  \item {source/Integrate.c}, \hyperpage{131, 132}
+  \item {source/LeapfrogStep.c}, \hyperpage{132}, \hyperpage{135}
+  \item {source/main.c}, \hyperpage{137}, \hyperpage{163}
+  \item {source/PrintCom.c}, \hyperpage{165, 166}
+  \item {source/PrintMomentum.c}, \hyperpage{167, 168}
+  \item {source/PrintStress.c}, \hyperpage{168, 169}
+  \item {source/PrintSummary.c}, \hyperpage{169, 170}
+  \item {source/PrintVacf.c}, \hyperpage{170, 171}
+  \item {source/PrintVrms.c}, \hyperpage{172, 173}
+  \item {source/SetupJob.c}, \hyperpage{173}, \hyperpage{177}
+  \item {source/Trajectory.c}, \hyperpage{178, 179}
+  \item {source/VelocityVerletStep.c}, \hyperpage{179}, \hyperpage{181}
+  \item {source/ZeroVacf.c}, \hyperpage{182}
   \item {spacetimeCorr}
-    \subitem {global.h}, \hyperpage{103}
-    \subitem {globalExtern.h}, \hyperpage{136}
+    \subitem {global.h}, \hyperpage{91}
+    \subitem {globalExtern.h}, \hyperpage{114}
   \item {spacetimeCorrAv}
-    \subitem {global.h}, \hyperpage{104}
-    \subitem {globalExtern.h}, \hyperpage{136}
+    \subitem {global.h}, \hyperpage{91}
+    \subitem {globalExtern.h}, \hyperpage{114}
   \item {speed}
-    \subitem {global.h}, \hyperpage{104}
-    \subitem {globalExtern.h}, \hyperpage{136}
+    \subitem {global.h}, \hyperpage{91}
+    \subitem {globalExtern.h}, \hyperpage{114}
   \item {sPotEnergy}
-    \subitem {global.h}, \hyperpage{104}
-    \subitem {globalExtern.h}, \hyperpage{136}
+    \subitem {global.h}, \hyperpage{91}
+    \subitem {globalExtern.h}, \hyperpage{114}
   \item {sPressure}
-    \subitem {global.h}, \hyperpage{104}
-    \subitem {globalExtern.h}, \hyperpage{136}
+    \subitem {global.h}, \hyperpage{92}
+    \subitem {globalExtern.h}, \hyperpage{114}
   \item {Sqr}
-    \subitem {global.h}, \hyperpage{83}
-    \subitem {globalExtern.h}, \hyperpage{120}
+    \subitem {global.h}, \hyperpage{78}
+    \subitem {globalExtern.h}, \hyperpage{103}
   \item {SqrRadiusIJ}
-    \subitem {global.h}, \hyperpage{104}
-    \subitem {globalExtern.h}, \hyperpage{136}
+    \subitem {global.h}, \hyperpage{92}
+    \subitem {globalExtern.h}, \hyperpage{114}
   \item {ssKinEnergy}
-    \subitem {global.h}, \hyperpage{104}
-    \subitem {globalExtern.h}, \hyperpage{137}
+    \subitem {global.h}, \hyperpage{92}
+    \subitem {globalExtern.h}, \hyperpage{114}
   \item {ssPotEnergy}
-    \subitem {global.h}, \hyperpage{105}
-    \subitem {globalExtern.h}, \hyperpage{137}
+    \subitem {global.h}, \hyperpage{92}
+    \subitem {globalExtern.h}, \hyperpage{114}
   \item {ssPressure}
-    \subitem {global.h}, \hyperpage{105}
-    \subitem {globalExtern.h}, \hyperpage{137}
+    \subitem {global.h}, \hyperpage{92}
+    \subitem {globalExtern.h}, \hyperpage{114}
   \item {ssTotEnergy}
-    \subitem {global.h}, \hyperpage{105}
-    \subitem {globalExtern.h}, \hyperpage{137}
+    \subitem {global.h}, \hyperpage{92}
+    \subitem {globalExtern.h}, \hyperpage{114}
   \item {stepAcf}
-    \subitem {global.h}, \hyperpage{105}
-    \subitem {globalExtern.h}, \hyperpage{137}
+    \subitem {global.h}, \hyperpage{92}
+    \subitem {globalExtern.h}, \hyperpage{114}
   \item {stepAvg}
-    \subitem {global.h}, \hyperpage{105}
-    \subitem {globalExtern.h}, \hyperpage{137}
+    \subitem {global.h}, \hyperpage{92}
+    \subitem {globalExtern.h}, \hyperpage{115}
   \item {stepCorr}
-    \subitem {global.h}, \hyperpage{105}
-    \subitem {globalExtern.h}, \hyperpage{137}
+    \subitem {global.h}, \hyperpage{92}
+    \subitem {globalExtern.h}, \hyperpage{115}
   \item {stepCount}
-    \subitem {global.h}, \hyperpage{106}
-    \subitem {globalExtern.h}, \hyperpage{137}
+    \subitem {global.h}, \hyperpage{92}
+    \subitem {globalExtern.h}, \hyperpage{115}
   \item {stepDump}
-    \subitem {global.h}, \hyperpage{106}
-    \subitem {globalExtern.h}, \hyperpage{138}
+    \subitem {global.h}, \hyperpage{93}
+    \subitem {globalExtern.h}, \hyperpage{115}
   \item {stepEquil}
-    \subitem {global.h}, \hyperpage{106}
-    \subitem {globalExtern.h}, \hyperpage{138}
+    \subitem {global.h}, \hyperpage{93}
+    \subitem {globalExtern.h}, \hyperpage{115}
   \item {stepLimit}
-    \subitem {global.h}, \hyperpage{106}
-    \subitem {globalExtern.h}, \hyperpage{138}
+    \subitem {global.h}, \hyperpage{93}
+    \subitem {globalExtern.h}, \hyperpage{115}
   \item {stepRdf}
-    \subitem {global.h}, \hyperpage{106}
-    \subitem {globalExtern.h}, \hyperpage{138}
+    \subitem {global.h}, \hyperpage{93}
+    \subitem {globalExtern.h}, \hyperpage{115}
   \item {stepTraj}
-    \subitem {global.h}, \hyperpage{106}
-    \subitem {globalExtern.h}, \hyperpage{138}
+    \subitem {global.h}, \hyperpage{93}
+    \subitem {globalExtern.h}, \hyperpage{115}
   \item {sTotEnergy}
-    \subitem {global.h}, \hyperpage{107}
-    \subitem {globalExtern.h}, \hyperpage{138}
+    \subitem {global.h}, \hyperpage{93}
+    \subitem {globalExtern.h}, \hyperpage{115}
   \item {strain}
-    \subitem {global.h}, \hyperpage{107}
-    \subitem {globalExtern.h}, \hyperpage{138}
+    \subitem {global.h}, \hyperpage{93}
+    \subitem {globalExtern.h}, \hyperpage{115}
   \item {strainRate}
-    \subitem {global.h}, \hyperpage{107}
-    \subitem {globalExtern.h}, \hyperpage{138}
+    \subitem {global.h}, \hyperpage{93}
+    \subitem {globalExtern.h}, \hyperpage{115}
   \item {strech}
-    \subitem {global.h}, \hyperpage{107}
-    \subitem {globalExtern.h}, \hyperpage{139}
+    \subitem {global.h}, \hyperpage{93}
+    \subitem {globalExtern.h}, \hyperpage{115}
   \item {stress}
-    \subitem {global.h}, \hyperpage{107}
-    \subitem {globalExtern.h}, \hyperpage{139}
+    \subitem {global.h}, \hyperpage{93}
+    \subitem {globalExtern.h}, \hyperpage{116}
   \item {svirSum}
-    \subitem {global.h}, \hyperpage{107}
-    \subitem {globalExtern.h}, \hyperpage{139}
+    \subitem {global.h}, \hyperpage{94}
+    \subitem {globalExtern.h}, \hyperpage{116}
 
   \indexspace
 
   \item {thermo}
-    \subitem {global.h}, \hyperpage{107}
+    \subitem {global.h}, \hyperpage{94}
   \item {timeNow}
-    \subitem {global.h}, \hyperpage{108}
-    \subitem {globalExtern.h}, \hyperpage{139}
+    \subitem {global.h}, \hyperpage{94}
+    \subitem {globalExtern.h}, \hyperpage{116}
   \item {TotalBondEnergy}
-    \subitem {global.h}, \hyperpage{108}
-    \subitem {globalExtern.h}, \hyperpage{139}
+    \subitem {global.h}, \hyperpage{94}
+    \subitem {globalExtern.h}, \hyperpage{116}
   \item {TotalMass}
-    \subitem {global.h}, \hyperpage{108}
-    \subitem {globalExtern.h}, \hyperpage{139}
+    \subitem {global.h}, \hyperpage{94}
+    \subitem {globalExtern.h}, \hyperpage{116}
   \item {totEnergy}
-    \subitem {global.h}, \hyperpage{108}
-    \subitem {globalExtern.h}, \hyperpage{139}
+    \subitem {global.h}, \hyperpage{94}
+    \subitem {globalExtern.h}, \hyperpage{116}
   \item {Trajectory}
-    \subitem {main.c}, \hyperpage{189}
-    \subitem {Trajectory.c}, \hyperpage{207}
+    \subitem {main.c}, \hyperpage{162}
+    \subitem {Trajectory.c}, \hyperpage{178}
   \item {Trajectory.c}
-    \subitem {Trajectory}, \hyperpage{207}
+    \subitem {Trajectory}, \hyperpage{178}
 
   \indexspace
 
   \item {uSum}
-    \subitem {global.h}, \hyperpage{108}
-    \subitem {globalExtern.h}, \hyperpage{139}
+    \subitem {global.h}, \hyperpage{94}
+    \subitem {globalExtern.h}, \hyperpage{116}
   \item {uSumPair}
-    \subitem {global.h}, \hyperpage{108}
-    \subitem {globalExtern.h}, \hyperpage{140}
+    \subitem {global.h}, \hyperpage{94}
+    \subitem {globalExtern.h}, \hyperpage{116}
   \item {uSumPairPerAtom}
-    \subitem {global.h}, \hyperpage{109}
-    \subitem {globalExtern.h}, \hyperpage{140}
+    \subitem {global.h}, \hyperpage{94}
+    \subitem {globalExtern.h}, \hyperpage{116}
 
   \indexspace
 
   \item {VelocityVerletStep}
-    \subitem {main.c}, \hyperpage{190}
-    \subitem {VelocityVerletStep.c}, \hyperpage{209}
+    \subitem {main.c}, \hyperpage{162}
+    \subitem {VelocityVerletStep.c}, \hyperpage{180}
   \item {VelocityVerletStep.c}
-    \subitem {VelocityVerletStep}, \hyperpage{209}
+    \subitem {VelocityVerletStep}, \hyperpage{180}
   \item {virSum}
-    \subitem {global.h}, \hyperpage{109}
-    \subitem {globalExtern.h}, \hyperpage{140}
+    \subitem {global.h}, \hyperpage{94}
+    \subitem {globalExtern.h}, \hyperpage{116}
   \item {virSumBond}
-    \subitem {global.h}, \hyperpage{109}
-    \subitem {globalExtern.h}, \hyperpage{140}
+    \subitem {global.h}, \hyperpage{94}
+    \subitem {globalExtern.h}, \hyperpage{116}
   \item {virSumBondxx}
-    \subitem {global.h}, \hyperpage{109}
-    \subitem {globalExtern.h}, \hyperpage{140}
+    \subitem {global.h}, \hyperpage{95}
+    \subitem {globalExtern.h}, \hyperpage{116}
   \item {virSumBondxy}
-    \subitem {global.h}, \hyperpage{109}
-    \subitem {globalExtern.h}, \hyperpage{140}
+    \subitem {global.h}, \hyperpage{95}
+    \subitem {globalExtern.h}, \hyperpage{116}
   \item {virSumBondyy}
-    \subitem {global.h}, \hyperpage{109}
-    \subitem {globalExtern.h}, \hyperpage{140}
+    \subitem {global.h}, \hyperpage{95}
+    \subitem {globalExtern.h}, \hyperpage{117}
   \item {virSumPair}
-    \subitem {global.h}, \hyperpage{110}
-    \subitem {globalExtern.h}, \hyperpage{140}
+    \subitem {global.h}, \hyperpage{95}
+    \subitem {globalExtern.h}, \hyperpage{117}
   \item {virSumPairxx}
-    \subitem {global.h}, \hyperpage{110}
-    \subitem {globalExtern.h}, \hyperpage{141}
+    \subitem {global.h}, \hyperpage{95}
+    \subitem {globalExtern.h}, \hyperpage{117}
   \item {virSumPairxy}
-    \subitem {global.h}, \hyperpage{110}
-    \subitem {globalExtern.h}, \hyperpage{141}
+    \subitem {global.h}, \hyperpage{95}
+    \subitem {globalExtern.h}, \hyperpage{117}
   \item {virSumPairyy}
-    \subitem {global.h}, \hyperpage{110}
-    \subitem {globalExtern.h}, \hyperpage{141}
+    \subitem {global.h}, \hyperpage{95}
+    \subitem {globalExtern.h}, \hyperpage{117}
   \item {virSumxx}
-    \subitem {global.h}, \hyperpage{110}
-    \subitem {globalExtern.h}, \hyperpage{141}
+    \subitem {global.h}, \hyperpage{95}
+    \subitem {globalExtern.h}, \hyperpage{117}
   \item {virSumxy}
-    \subitem {global.h}, \hyperpage{110}
-    \subitem {globalExtern.h}, \hyperpage{141}
+    \subitem {global.h}, \hyperpage{95}
+    \subitem {globalExtern.h}, \hyperpage{117}
   \item {virSumyy}
-    \subitem {global.h}, \hyperpage{111}
-    \subitem {globalExtern.h}, \hyperpage{141}
+    \subitem {global.h}, \hyperpage{95}
+    \subitem {globalExtern.h}, \hyperpage{117}
   \item {visc}
-    \subitem {global.h}, \hyperpage{111}
-    \subitem {globalExtern.h}, \hyperpage{141}
+    \subitem {global.h}, \hyperpage{96}
+    \subitem {globalExtern.h}, \hyperpage{117}
   \item {viscAcf}
-    \subitem {global.h}, \hyperpage{111}
-    \subitem {globalExtern.h}, \hyperpage{141}
+    \subitem {global.h}, \hyperpage{96}
+    \subitem {globalExtern.h}, \hyperpage{117}
   \item {viscAcfAv}
-    \subitem {global.h}, \hyperpage{111}
-    \subitem {globalExtern.h}, \hyperpage{142}
+    \subitem {global.h}, \hyperpage{96}
+    \subitem {globalExtern.h}, \hyperpage{117}
   \item {viscAcfInt}
-    \subitem {global.h}, \hyperpage{111}
-    \subitem {globalExtern.h}, \hyperpage{142}
+    \subitem {global.h}, \hyperpage{96}
+    \subitem {globalExtern.h}, \hyperpage{117}
   \item {viscAcfOrg}
-    \subitem {global.h}, \hyperpage{111}
-    \subitem {globalExtern.h}, \hyperpage{142}
+    \subitem {global.h}, \hyperpage{96}
+    \subitem {globalExtern.h}, \hyperpage{118}
   \item {VMeanSqr}
-    \subitem {global.h}, \hyperpage{112}
-    \subitem {globalExtern.h}, \hyperpage{142}
+    \subitem {global.h}, \hyperpage{96}
+    \subitem {globalExtern.h}, \hyperpage{118}
   \item {vrms}
-    \subitem {global.h}, \hyperpage{112}
-    \subitem {globalExtern.h}, \hyperpage{142}
+    \subitem {global.h}, \hyperpage{96}
+    \subitem {globalExtern.h}, \hyperpage{118}
   \item {VRootMeanSqr}
-    \subitem {global.h}, \hyperpage{112}
-    \subitem {globalExtern.h}, \hyperpage{142}
+    \subitem {global.h}, \hyperpage{96}
+    \subitem {globalExtern.h}, \hyperpage{118}
   \item {VSqr}
-    \subitem {global.h}, \hyperpage{112}
-    \subitem {globalExtern.h}, \hyperpage{142}
+    \subitem {global.h}, \hyperpage{96}
+    \subitem {globalExtern.h}, \hyperpage{118}
   \item {vSum}
-    \subitem {global.h}, \hyperpage{112}
-    \subitem {globalExtern.h}, \hyperpage{142}
+    \subitem {global.h}, \hyperpage{96}
+    \subitem {globalExtern.h}, \hyperpage{118}
   \item {vSumX}
-    \subitem {global.h}, \hyperpage{112}
-    \subitem {globalExtern.h}, \hyperpage{143}
+    \subitem {global.h}, \hyperpage{96}
+    \subitem {globalExtern.h}, \hyperpage{118}
   \item {vSumY}
-    \subitem {global.h}, \hyperpage{113}
-    \subitem {globalExtern.h}, \hyperpage{143}
+    \subitem {global.h}, \hyperpage{97}
+    \subitem {globalExtern.h}, \hyperpage{118}
   \item {vvSum}
-    \subitem {global.h}, \hyperpage{113}
-    \subitem {globalExtern.h}, \hyperpage{143}
+    \subitem {global.h}, \hyperpage{97}
+    \subitem {globalExtern.h}, \hyperpage{118}
   \item {vx}
-    \subitem {global.h}, \hyperpage{113}
-    \subitem {globalExtern.h}, \hyperpage{143}
+    \subitem {global.h}, \hyperpage{97}
+    \subitem {globalExtern.h}, \hyperpage{118}
   \item {vy}
-    \subitem {global.h}, \hyperpage{113}
-    \subitem {globalExtern.h}, \hyperpage{143}
+    \subitem {global.h}, \hyperpage{97}
+    \subitem {globalExtern.h}, \hyperpage{118}
 
   \indexspace
 
   \item {xBoundary}
-    \subitem {global.h}, \hyperpage{113}
-    \subitem {globalExtern.h}, \hyperpage{143}
+    \subitem {global.h}, \hyperpage{97}
+    \subitem {globalExtern.h}, \hyperpage{118}
   \item {xyz}
-    \subitem {global.h}, \hyperpage{113}
-    \subitem {globalExtern.h}, \hyperpage{143}
+    \subitem {global.h}, \hyperpage{97}
+    \subitem {globalExtern.h}, \hyperpage{118}
 
   \indexspace
 
   \item {yBoundary}
-    \subitem {global.h}, \hyperpage{114}
-    \subitem {globalExtern.h}, \hyperpage{143}
+    \subitem {global.h}, \hyperpage{97}
+    \subitem {globalExtern.h}, \hyperpage{119}
 
   \indexspace
 
   \item {ZeroVacf}
-    \subitem {AccumVacf.c}, \hyperpage{12}
-    \subitem {InitVacf.c}, \hyperpage{155}
-    \subitem {ZeroVacf.c}, \hyperpage{212}
+    \subitem {AccumVacf.c}, \hyperpage{11}
+    \subitem {InitVacf.c}, \hyperpage{130}
+    \subitem {ZeroVacf.c}, \hyperpage{182}
   \item {ZeroVacf.c}
-    \subitem {ZeroVacf}, \hyperpage{212}
+    \subitem {ZeroVacf}, \hyperpage{182}
 
 \end{theindex}

@@ -1,36 +1,49 @@
 \chapter{Lamina\+: A Molecular Dynamics Package}
 \hypertarget{index}{}\label{index}\index{Lamina: A Molecular Dynamics Package@{Lamina: A Molecular Dynamics Package}}
-
+\label{index_md_README}%
+\Hypertarget{index_md_README}%
+ 
 
  
 
-Welcome to the Lamina documentation! \hypertarget{index_autotoc_md0}{}\doxysection{\texorpdfstring{Lamina}{Lamina}}\label{index_autotoc_md0}
-{\bfseries{Lamina}} is a modular 2D molecular dynamics simulation package designed for simulating hybrid soft solids, including spring networks and finite-\/size discs. {\bfseries{Lamina}} is a modular and extensible molecular dynamics (MD) simulation package written in C, designed to model a wide variety of soft and condensed matter systems. It supports time evolution using robust integrators and a range of thermostats, with accurate force evaluations for bonded and non-\/bonded interactions. Originally built for 2D simulations of bonded systems, {\bfseries{Lamina}} has grown to support broader research goals including active matter, granular solids, and complex fluids.\hypertarget{index_autotoc_md1}{}\doxysection{\texorpdfstring{Why "{}\+Lamina"{}?}{Why "{}\+Lamina"{}?}}\label{index_autotoc_md1}
-The word {\bfseries{Lamina}} comes from Latin, meaning "{}a thin layer"{}, "{}a plate"{}, or "{}a sheet"{}. In nature and science, laminae often refer to structural elements that are flat and extended in two dimensions for example, leaves, thin metal sheets, or tissue membranes.
+Welcome to the {\bfseries{Lamina}} documentation!
 
-This name reflects both the {\bfseries{two-\/dimensional}} (2D) nature of the simulations and the types of materials {\bfseries{Lamina}} is built to study; {\bfseries{liquids}}, {\bfseries{soft solids}}, and {\bfseries{networked structures}} confined to thin sheets or layers. Just as natural laminae exhibit rich structural and dynamic behaviors in a seemingly simple geometry, this code is designed to explore the complexity of emergent phenomena in 2D materials and soft matter systems.\hypertarget{index_autotoc_md2}{}\doxysection{\texorpdfstring{Key Features}{Key Features}}\label{index_autotoc_md2}
-\hypertarget{index_autotoc_md3}{}\doxysection{\texorpdfstring{Interaction Potentials}{Interaction Potentials}}\label{index_autotoc_md3}
+\DoxyHorRuler{0}
+\hypertarget{index_autotoc_md2}{}\doxysection{\texorpdfstring{Overview}{Overview}}\label{index_autotoc_md2}
+{\bfseries{Lamina}} is a modular 2D molecular dynamics (MD) simulation package designed for simulating hybrid soft solids, including spring networks and finite-\/size discs. Written in C, it models a wide variety of soft and condensed matter systems. It supports robust time evolution integrators and a range of thermostats, providing accurate force evaluations for bonded and non-\/bonded interactions.
+
+Originally developed for 2D bonded systems, {\bfseries{Lamina}} now supports broader research goals including active matter, granular solids, and complex fluids.
+
+\DoxyHorRuler{0}
+\hypertarget{index_autotoc_md4}{}\doxysection{\texorpdfstring{Why "{}\+Lamina"{}?}{Why "{}\+Lamina"{}?}}\label{index_autotoc_md4}
+The word {\bfseries{Lamina}} comes from Latin, meaning "{}a thin layer"{}, "{}a plate"{}, or "{}a sheet"{}. In nature and science, laminae often refer to flat, two-\/dimensional structural elements such as leaves, thin metal sheets, or tissue membranes.
+
+This name reflects both the {\bfseries{two-\/dimensional (2D)}} nature of the simulations and the types of materials {\bfseries{Lamina}} is built to study\+: {\bfseries{liquids}}, {\bfseries{soft solids}}, and {\bfseries{networked structures}} confined to thin sheets or layers. Just as natural laminae exhibit rich structural and dynamic behaviors in simple geometry, this code explores the complexity of emergent phenomena in 2D soft matter systems.
+
+\DoxyHorRuler{0}
+\hypertarget{index_autotoc_md6}{}\doxysection{\texorpdfstring{Key Features}{Key Features}}\label{index_autotoc_md6}
+\hypertarget{index_autotoc_md7}{}\doxysubsection{\texorpdfstring{Interaction Potentials}{Interaction Potentials}}\label{index_autotoc_md7}
 
 \begin{DoxyItemize}
 \item Yukawa potential (screened Coulomb interactions)
 \item Lennard-\/\+Jones potential (standard 12-\/6)
 \item Harmonic bond potential (elastic network models)
 \item Hookean granular contact potential (for soft granular matter)
-\end{DoxyItemize}\hypertarget{index_autotoc_md4}{}\doxysection{\texorpdfstring{Thermostats and Temperature Control}{Thermostats and Temperature Control}}\label{index_autotoc_md4}
+\end{DoxyItemize}\hypertarget{index_autotoc_md8}{}\doxysubsection{\texorpdfstring{Thermostats and Temperature Control}{Thermostats and Temperature Control}}\label{index_autotoc_md8}
 
 \begin{DoxyItemize}
 \item Gaussian thermostat
 \item Nose-\/\+Hoover thermostat
 \item Langevin thermostat
 \item Configurational temperature evaluation and control
-\end{DoxyItemize}\hypertarget{index_autotoc_md5}{}\doxysection{\texorpdfstring{Time Integration}{Time Integration}}\label{index_autotoc_md5}
+\end{DoxyItemize}\hypertarget{index_autotoc_md9}{}\doxysubsection{\texorpdfstring{Time Integration}{Time Integration}}\label{index_autotoc_md9}
 
 \begin{DoxyItemize}
 \item Leap-\/\+Frog integrator
 \item Velocity-\/\+Verlet integrator
 \item Langevin (stochastic) integrator
-\item Brownian (overdamped) interator
-\end{DoxyItemize}\hypertarget{index_autotoc_md6}{}\doxysection{\texorpdfstring{Physical Observables}{Physical Observables}}\label{index_autotoc_md6}
+\item Brownian (overdamped) integrator
+\end{DoxyItemize}\hypertarget{index_autotoc_md10}{}\doxysubsection{\texorpdfstring{Physical Observables}{Physical Observables}}\label{index_autotoc_md10}
 
 \begin{DoxyItemize}
 \item Radial Distribution Function (RDF)
@@ -39,82 +52,206 @@ This name reflects both the {\bfseries{two-\/dimensional}} (2D) nature of the si
 \item Stress tensor and momentum
 \item Center-\/of-\/mass motion
 \item Space-\/time correlation functions
-\end{DoxyItemize}\hypertarget{index_autotoc_md7}{}\doxysection{\texorpdfstring{Output and Utilities}{Output and Utilities}}\label{index_autotoc_md7}
+\end{DoxyItemize}\hypertarget{index_autotoc_md11}{}\doxysubsection{\texorpdfstring{Output and Utilities}{Output and Utilities}}\label{index_autotoc_md11}
 
 \begin{DoxyItemize}
-\item The output files are saved at the ../output folder. So you have a make a directory ../ location from where you are running the code.
-\item Command to run ./main prefix
-\item Structured output files ({\ttfamily .xyz}, {\ttfamily .bond}, {\ttfamily .pair}, {\ttfamily .com}, {\ttfamily .result})
-\item Restart and resume capability ({\ttfamily .restart} and {\ttfamily .state} files)
-\item Clean separation of source code, unit tests, and output
+\item Output files saved to {\ttfamily ../output} folder — ensure this directory exists relative to where you run the code
+\item Run the simulation with\+: ~\newline
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{./main\ prefix}
+
+\end{DoxyCode}
+
+\item Structured output files\+: {\ttfamily .xyz}, {\ttfamily .bond}, {\ttfamily .pair}, {\ttfamily .com}, {\ttfamily .result}
+\item Restart and resume capability\+: {\ttfamily .restart} and {\ttfamily .state} files
+\item Clear separation of source code, unit tests, and output
 \item Support for Lees–\+Edwards boundary conditions (sheared systems)
-\item Configurable halting conditions (based on VRMS or custom metric)
+\item Configurable halting conditions based on VRMS or custom metrics
 \item Modular design for easy extension of potentials and features
-\end{DoxyItemize}\hypertarget{index_autotoc_md8}{}\doxysection{\texorpdfstring{Project Structure}{Project Structure}}\label{index_autotoc_md8}
+\end{DoxyItemize}
+
+\DoxyHorRuler{0}
+\hypertarget{index_autotoc_md13}{}\doxysection{\texorpdfstring{Project Structure}{Project Structure}}\label{index_autotoc_md13}
 
 \begin{DoxyCode}{0}
 \DoxyCodeLine{Lamina/}
-\DoxyCodeLine{\ \ |-\/\ source/\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \#\ All\ C\ source\ files;\ avoid\ placing\ README.md\ here\ to\ prevent\ extra\ related\ pages}
-\DoxyCodeLine{\ \ \ \ \ \ |-\/\ main.c\ \ \ \ \ \ \ \ \ \ \ \ \ \#\ Main\ driver}
-\DoxyCodeLine{\ \ \ \ \ \ |-\/\ *.c,\ *.h\ \ \ \ \ \ \ \ \ \ \ \#\ Modular\ source\ files}
-\DoxyCodeLine{\ \ |-\/\ unittest/\ \ \ \ \ \ \ \ \ \ \ \ \ \ \#\ Unit\ test\ suite\ (planned\ or\ implemented)}
-\DoxyCodeLine{\ \ \ \ \ \ |-\/\ test\_*.c\ \ \ \ \ \ \ \ \ \ \ \#\ Individual\ test\ cases}
-\DoxyCodeLine{\ \ |-\/\ output/\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \#\ All\ runtime\ output\ files\ will\ be\ saved\ here}
-\DoxyCodeLine{\ \ |-\/\ prepros/\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \#\ Preprocessing\ scripts\ or\ tools}
-\DoxyCodeLine{\ \ \ \ \ \ |-\/\ *.sh,\ *.py\ \ \ \ \ \ \ \ \ \#\ Example\ preprocessing\ scripts\ (shell,\ python,\ etc.)}
-\DoxyCodeLine{\ \ |-\/\ postpros/\ \ \ \ \ \ \ \ \ \ \ \ \ \ \#\ Postprocessing\ scripts\ or\ tools}
-\DoxyCodeLine{\ \ \ \ \ \ |-\/\ *.sh,\ *.py\ \ \ \ \ \ \ \ \ \#\ Example\ postprocessing\ scripts\ (shell,\ python,\ etc.)}
-\DoxyCodeLine{\ \ |-\/\ doxygen/\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \#\ Doxygen\ configuration\ and\ auxiliary\ files}
-\DoxyCodeLine{\ \ \ \ \ \ |-\/\ Doxyfile\ \ \ \ \ \ \ \ \ \ \ \#\ Doxygen\ config\ file}
-\DoxyCodeLine{\ \ \ \ \ \ |-\/\ header.tex\ \ \ \ \ \ \ \ \ \#\ Custom\ LaTeX\ header\ for\ documentation}
-\DoxyCodeLine{\ \ \ \ \ \ |-\/\ extra\_stylesheet.css\ \#\ Optional\ CSS\ to\ customize\ HTML\ output\ (e.g.,\ hide\ Related\ Pages\ tab)}
-\DoxyCodeLine{\ \ |-\/\ figures/\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \#\ All\ figures,\ logos,\ icons\ used\ in\ docs\ and\ code}
-\DoxyCodeLine{\ \ \ \ \ \ |-\/\ LogoLaminaHTML.png\ \#\ Project\ logo\ used\ in\ HTML\ and\ LaTeX\ docs}
-\DoxyCodeLine{\ \ |-\/\ docs/\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \#\ Generated\ documentation\ output\ (HTML,\ LaTeX,\ PDFs)}
-\DoxyCodeLine{\ \ \ \ \ \ |-\/\ html/\ \ \ \ \ \ \ \ \ \ \ \ \ \ \#\ Doxygen-\/generated\ HTML\ documentation}
-\DoxyCodeLine{\ \ \ \ \ \ |-\/\ latex/\ \ \ \ \ \ \ \ \ \ \ \ \ \#\ Doxygen-\/generated\ LaTeX\ source\ files}
-\DoxyCodeLine{\ \ \ \ \ \ |-\/\ refman.pdf\ \ \ \ \ \ \ \ \ \#\ Generated\ PDF\ documentation\ (from\ LaTeX)}
-\DoxyCodeLine{\ \ |-\/\ Makefile\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \#\ Build\ system}
-\DoxyCodeLine{\ \ |-\/\ README.md\ \ \ \ \ \ \ \ \ \ \ \ \ \ \#\ Main\ project\ documentation\ (used\ as\ main\ page\ in\ Doxygen)}
+\DoxyCodeLine{\ \ |-\/-\/\ source/\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \#\ C\ source\ files;\ avoid\ placing\ README.md\ here\ to\ prevent\ extra\ pages}
+\DoxyCodeLine{\ \ |\ \ \ \ \ |-\/-\/\ main.c\ \ \ \ \ \ \ \ \ \ \ \ \ \#\ Main\ driver}
+\DoxyCodeLine{\ \ |\ \ \ \ \ |-\/-\/\ *.c,\ *.h\ \ \ \ \ \ \ \ \ \ \ \#\ Modular\ source\ files}
+\DoxyCodeLine{\ \ |-\/-\/\ unittest/\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \#\ Unit\ test\ suite\ (planned\ or\ implemented)}
+\DoxyCodeLine{\ \ |\ \ \ \ \ |-\/-\/\ test\_*.c\ \ \ \ \ \ \ \ \ \ \ \#\ Individual\ test\ cases}
+\DoxyCodeLine{\ \ |-\/-\/\ output/\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \#\ Runtime\ output\ files}
+\DoxyCodeLine{\ \ |-\/-\/\ prepros/\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \#\ Preprocessing\ scripts/tools\ (.sh,\ .py,\ etc.)}
+\DoxyCodeLine{\ \ |-\/-\/\ postpros/\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \#\ Postprocessing\ scripts/tools\ (.sh,\ .py,\ etc.)}
+\DoxyCodeLine{\ \ |-\/-\/\ doxygen/\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \#\ Doxygen\ configuration\ and\ auxiliary\ files}
+\DoxyCodeLine{\ \ |\ \ \ \ \ |-\/-\/\ Doxyfile\ \ \ \ \ \ \ \ \ \ \ \#\ Doxygen\ config\ file}
+\DoxyCodeLine{\ \ |\ \ \ \ \ |-\/-\/\ header.tex\ \ \ \ \ \ \ \ \ \#\ Custom\ LaTeX\ header\ for\ docs}
+\DoxyCodeLine{\ \ |\ \ \ \ \ \(\backslash\)-\/-\/\ extra\_stylesheet.css\ \#\ Optional\ CSS\ for\ HTML\ styling}
+\DoxyCodeLine{\ \ |-\/-\/\ figures/\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \#\ Figures,\ logos,\ icons\ used\ in\ docs/code}
+\DoxyCodeLine{\ \ |\ \ \ \ \ \(\backslash\)-\/-\/\ LogoLaminaLatex.png\ \#\ Project\ logo\ for\ documentation}
+\DoxyCodeLine{\ \ |-\/-\/\ docs/\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \#\ Generated\ documentation\ (HTML,\ LaTeX,\ PDFs)}
+\DoxyCodeLine{\ \ |\ \ \ \ \ |-\/-\/\ html/\ \ \ \ \ \ \ \ \ \ \ \ \ \ \#\ Doxygen-\/generated\ HTML\ docs}
+\DoxyCodeLine{\ \ |\ \ \ \ \ |-\/-\/\ latex/\ \ \ \ \ \ \ \ \ \ \ \ \ \#\ Doxygen-\/generated\ LaTeX\ sources}
+\DoxyCodeLine{\ \ |\ \ \ \ \ \(\backslash\)-\/-\/\ refman.pdf\ \ \ \ \ \ \ \ \ \#\ Generated\ PDF\ manual}
+\DoxyCodeLine{\ \ |-\/-\/\ Makefile\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \#\ Build\ system\ for\ manual\ Make\ builds}
+\DoxyCodeLine{\ \ |-\/-\/\ CMakeLists.txt\ \ \ \ \ \ \ \ \ \ \ \#\ CMake\ build\ system\ configuration}
+\DoxyCodeLine{\ \ |-\/-\/\ README.md\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \#\ This\ main\ documentation\ file}
+\DoxyCodeLine{\ \ \(\backslash\)-\/-\/\ .github/\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \#\ GitHub\ configuration\ directory}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \(\backslash\)-\/-\/\ workflows/\ \ \ \ \ \ \ \ \ \#\ GitHub\ Actions\ workflows\ for\ CI/CD}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)-\/-\/\ ci.yml\ \ \ \ \ \ \ \ \ \#\ CI\ workflow\ file}
+\DoxyCodeLine{|-\/-\/generate-\/docs.sh\ \ \#To\ genrate\ the\ html\ and\ latex\ document\ }
 
 \end{DoxyCode}
-\hypertarget{index_autotoc_md9}{}\doxysection{\texorpdfstring{Installation Instructions}{Installation Instructions}}\label{index_autotoc_md9}
-\hypertarget{index_autotoc_md10}{}\doxysubsection{\texorpdfstring{Prerequisites}{Prerequisites}}\label{index_autotoc_md10}
+
+
+\DoxyHorRuler{0}
+\hypertarget{index_autotoc_md15}{}\doxysection{\texorpdfstring{Installation Instructions}{Installation Instructions}}\label{index_autotoc_md15}
+\hypertarget{index_autotoc_md16}{}\doxysubsection{\texorpdfstring{Prerequisites}{Prerequisites}}\label{index_autotoc_md16}
 
 \begin{DoxyEnumerate}
-\item {\bfseries{GCC compiler}} ~\newline
- Ensure that {\ttfamily gcc} is installed for compiling C code. You can install it using\+:
+\item {\bfseries{GCC Compiler}} ~\newline
+ Install {\ttfamily gcc} to compile C code\+:
 \begin{DoxyItemize}
-\item {\bfseries{Ubuntu/\+Debian}}\+: ~\newline
- {\ttfamily sudo apt-\/get install build-\/essential}
-\item {\bfseries{Fedora/\+Cent\+OS}}\+: ~\newline
- {\ttfamily sudo dnf install gcc}
-\item {\bfseries{mac\+OS}} (via Homebrew)\+: ~\newline
- {\ttfamily brew install gcc}
+\item Ubuntu/\+Debian\+: ~\newline
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{sudo\ apt-\/get\ install\ build-\/essential}
+
+\end{DoxyCode}
+
+\item Fedora/\+Cent\+OS\+: ~\newline
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{sudo\ dnf\ install\ gcc}
+
+\end{DoxyCode}
+
+\item mac\+OS (via Homebrew)\+: ~\newline
+ {\ttfamily bash brew install gcc }
 \end{DoxyItemize}
-\item {\bfseries{MPICH}} ~\newline
- Ensure you have the {\bfseries{MPICH}} library installed for MPI-\/based operations. This is required for parallel computation.
+\item {\bfseries{MPICH (MPI Library)}} ~\newline
+ Required for parallel computations\+:
 \begin{DoxyItemize}
-\item {\bfseries{Ubuntu/\+Debian}}\+: ~\newline
- {\ttfamily sudo apt-\/get install libmpich-\/dev}
-\item {\bfseries{Fedora/\+Cent\+OS}}\+: ~\newline
- {\ttfamily sudo dnf install mpich}
-\item {\bfseries{mac\+OS}}\+: ~\newline
- {\ttfamily brew install mpich}
+\item Ubuntu/\+Debian\+: ~\newline
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{sudo\ apt-\/get\ install\ libmpich-\/dev}
+
+\end{DoxyCode}
+
+\item Fedora/\+Cent\+OS\+: ~\newline
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{sudo\ dnf\ install\ mpich}
+
+\end{DoxyCode}
+
+\item mac\+OS\+: ~\newline
+ {\ttfamily bash brew install mpich }
 \end{DoxyItemize}
-\end{DoxyEnumerate}\hypertarget{index_autotoc_md11}{}\doxysubsection{\texorpdfstring{Building Lamina}{Building Lamina}}\label{index_autotoc_md11}
+\item {\bfseries{CMake (Recommended for modern builds)}} ~\newline
+ Install {\ttfamily cmake} to build with the CMake system\+:
+\begin{DoxyItemize}
+\item Ubuntu/\+Debian\+: ~\newline
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{sudo\ apt-\/get\ install\ cmake}
 
-\begin{DoxyEnumerate}
-\item {\bfseries{Clone the Repository}}
+\end{DoxyCode}
 
-If you haven\textquotesingle{}t cloned the repository yet, use the following command to clone it from Git\+Hub\+:
+\item Fedora/\+Cent\+OS\+: ~\newline
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{sudo\ dnf\ install\ cmake}
 
-{\ttfamily git clone git@github.\+com\+:Hareesh098/\+Lamina.\+git}
-\end{DoxyEnumerate}\hypertarget{index_autotoc_md12}{}\doxysection{\texorpdfstring{Documentation}{Documentation}}\label{index_autotoc_md12}
+\end{DoxyCode}
+
+\item mac\+OS\+: ~\newline
+ {\ttfamily bash brew install cmake }
+\end{DoxyItemize}
+\end{DoxyEnumerate}
+
+\DoxyHorRuler{0}
+\hypertarget{index_autotoc_md18}{}\doxysection{\texorpdfstring{Building Lamina}{Building Lamina}}\label{index_autotoc_md18}
+You can build Lamina either using the traditional Makefile or the CMake build system.\hypertarget{index_autotoc_md19}{}\doxysubsection{\texorpdfstring{Using Makefile}{Using Makefile}}\label{index_autotoc_md19}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{cd\ Lamina/source}
+\DoxyCodeLine{make\ clean}
+\DoxyCodeLine{make\ }
+
+\end{DoxyCode}
+
+
+To build and run unit tests\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{cd\ ../unittest}
+\DoxyCodeLine{make\ clean}
+\DoxyCodeLine{make\ all}
+\DoxyCodeLine{make\ run}
+
+\end{DoxyCode}
+
+
+\DoxyHorRuler{0}
+\hypertarget{index_autotoc_md21}{}\doxysubsection{\texorpdfstring{Using CMake (Recommended)}{Using CMake (Recommended)}}\label{index_autotoc_md21}
+This builds the project in a clean isolated directory and manages dependencies automatically.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{cd\ Lamina}
+\DoxyCodeLine{mkdir\ -\/p\ build}
+\DoxyCodeLine{cd\ build}
+\DoxyCodeLine{cmake\ ..}
+\DoxyCodeLine{make\ -\/j\$(nproc)}
+
+\end{DoxyCode}
+
+
+To run unit tests (assuming they are built in {\ttfamily unittest} and {\ttfamily mpirun} is used)\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{cd\ ../unittest}
+\DoxyCodeLine{make\ clean}
+\DoxyCodeLine{make\ all}
+\DoxyCodeLine{make\ run}
+
+\end{DoxyCode}
+
+
+\DoxyHorRuler{0}
+\hypertarget{index_autotoc_md23}{}\doxysection{\texorpdfstring{Continuous Integration (CI) with Git\+Hub Actions}{Continuous Integration (CI) with Git\+Hub Actions}}\label{index_autotoc_md23}
+The project includes a Git\+Hub Actions workflow ({\ttfamily .github/workflows/ci.\+yml}) that automates building and testing on Ubuntu runners with MPI installed.
+
+The workflow performs the following\+:
+
+
+\begin{DoxyItemize}
+\item Checks out the latest code on push or pull requests to the {\ttfamily main} branch.
+\item Installs build dependencies including {\ttfamily build-\/essential}, {\ttfamily cmake}, {\ttfamily mpich}, and MPI development libraries.
+\item Configures and builds Lamina using CMake in the {\ttfamily build} directory.
+\item Runs the unit tests in parallel using MPI.
+\end{DoxyItemize}
+
+You can view the build status and logs on the {\bfseries{Actions}} tab of the Git\+Hub repository.
+
+\DoxyHorRuler{0}
+\hypertarget{index_autotoc_md25}{}\doxysection{\texorpdfstring{Documentation}{Documentation}}\label{index_autotoc_md25}
 
 \begin{DoxyItemize}
 \item Browse full \href{https://hareesh098.github.io/Lamina/}{\texttt{ HTML documentation}}
 \item Download \href{https://github.com/Hareesh098/Lamina/blob/main/docs/latex/refman.pdf}{\texttt{ Source code PDF manual}}
 \item User manual \href{https://github.com/Hareesh098/Lamina/blob/main/docs/README.pdf}{\texttt{ Physics PDF manual}}
-\item This documentation was generated using \href{https://www.doxygen.nl/}{\texttt{ Doxygen 1.\+10.\+0}} to ensure transparency and ease of review 
+\item Documentation generated with \href{https://www.doxygen.nl/}{\texttt{ Doxygen 1.\+10.\+0}}
 \end{DoxyItemize}
+
+\DoxyHorRuler{0}
+
+
+Thank you for your interest in {\bfseries{Lamina}}! Contributions and feedback are welcome. ~\newline
+ Please check the repository for the latest updates and contact information.\hypertarget{index_autotoc_md27}{}\doxysection{\texorpdfstring{Adding a Build Status Badge}{Adding a Build Status Badge}}\label{index_autotoc_md27}
+\href{https://github.com/Hareesh098/Lamina/actions/workflows/ci.yml}{\texttt{ }} 

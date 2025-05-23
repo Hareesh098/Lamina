@@ -9,11 +9,12 @@ var searchData=
   ['initucell_6',['initUcell',['../global_8h.html#a4e22d05d6f5e517ce5b32c05dee192cf',1,'initUcell:&#160;global.h'],['../globalExtern_8h.html#a4e22d05d6f5e517ce5b32c05dee192cf',1,'initUcell:&#160;globalExtern.h']]],
   ['initvacf_7',['InitVacf',['../InitVacf_8c.html#a7c5f7c4e917de0e2ff97777973da01ee',1,'InitVacf():&#160;InitVacf.c'],['../SetupJob_8c.html#a7c5f7c4e917de0e2ff97777973da01ee',1,'InitVacf():&#160;InitVacf.c']]],
   ['initvacf_2ec_8',['InitVacf.c',['../InitVacf_8c.html',1,'']]],
-  ['installation_20instructions_9',['Installation Instructions',['../index.html#autotoc_md9',1,'']]],
-  ['instructions_10',['Installation Instructions',['../index.html#autotoc_md9',1,'']]],
+  ['installation_20instructions_9',['Installation Instructions',['../index.html#autotoc_md15',1,'']]],
+  ['instructions_10',['Installation Instructions',['../index.html#autotoc_md15',1,'']]],
   ['integrate_11',['Integrate',['../AccumVacf_8c.html#acdda65121bd9cf7a35cb4d2e0fdb7cd9',1,'Integrate(double *, int):&#160;Integrate.c'],['../Integrate_8c.html#a8d31c83bd377974025524c86b20425b2',1,'Integrate(double *f, int nf):&#160;Integrate.c']]],
   ['integrate_2ec_12',['Integrate.c',['../Integrate_8c.html',1,'']]],
-  ['integration_13',['Time Integration',['../index.html#autotoc_md5',1,'']]],
-  ['interaction_20potentials_14',['Interaction Potentials',['../index.html#autotoc_md3',1,'']]],
-  ['isbonded_15',['isBonded',['../global_8h.html#a5b5269315eb08e6cec78e54252171ef0',1,'isBonded:&#160;global.h'],['../globalExtern_8h.html#a5b5269315eb08e6cec78e54252171ef0',1,'isBonded:&#160;globalExtern.h']]]
+  ['integration_13',['Time Integration',['../index.html#autotoc_md9',1,'']]],
+  ['integration_20ci_20with_20github_20actions_14',['Continuous Integration (CI) with GitHub Actions',['../index.html#autotoc_md23',1,'']]],
+  ['interaction_20potentials_15',['Interaction Potentials',['../index.html#autotoc_md7',1,'']]],
+  ['isbonded_16',['isBonded',['../global_8h.html#a5b5269315eb08e6cec78e54252171ef0',1,'isBonded:&#160;global.h'],['../globalExtern_8h.html#a5b5269315eb08e6cec78e54252171ef0',1,'isBonded:&#160;globalExtern.h']]]
 ];
