@@ -101,7 +101,7 @@ Lamina/
   \-- .github/                 # GitHub configuration directory
         \-- workflows/         # GitHub Actions workflows for CI/CD
             \-- ci.yml         # CI workflow file
-|--generate-docs.sh            #To genrate the html and latex documents 
+|--generate-docs.sh            # To genrate the html and latex documents 
 ```
 
 ---
@@ -124,7 +124,7 @@ Lamina/
    - macOS (via Homebrew):  
      ```bash
      brew install gcc
-     ```
+     ```CI Build Status
 
 2. **MPICH (MPI Library)**  
    Required for parallel computations:
