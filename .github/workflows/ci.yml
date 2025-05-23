@@ -23,12 +23,13 @@ jobs:
       run: |
         cd source
         make clean
-        make all
-
+        make
+        ./main test
+        
     - name: Build and run unit tests with MPI
       run: |
         cd unittest
         make clean
-        make all
-        mpirun -np 4 ./run_tests  # replace `run_tests` with your test executable
+        make run
+        
 
