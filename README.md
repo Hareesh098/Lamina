@@ -233,6 +233,6 @@ You can view the build status and logs on the **Actions** tab of the GitHub repo
 Thank you for your interest in **Lamina**! Contributions and feedback are welcome.  
 Please check the repository for the latest updates and contact information.
 
-#Adding a Build Status Badge
+# Adding a Build Status Badge
 [![CI Build Status](https://github.com/Hareesh098/Lamina/actions/workflows/ci.yml/badge.svg)](https://github.com/Hareesh098/Lamina/actions/workflows/ci.yml)
 
