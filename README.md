@@ -168,7 +168,7 @@ You can build Lamina either using the traditional Makefile or the CMake build sy
 ```bash
 cd Lamina/source
 make clean
-make all
+make 
 ```
 
 To build and run unit tests:
@@ -177,7 +177,7 @@ To build and run unit tests:
 cd ../unittest
 make clean
 make all
-mpirun -np 4 ./run_tests  # Adjust executable name and number of MPI processes as needed
+make run
 ```
 
 ---
@@ -200,7 +200,7 @@ To run unit tests (assuming they are built in `unittest` and `mpirun` is used):
 cd ../unittest
 make clean
 make all
-mpirun -np 4 ./run_tests
+make run
 ```
 
 ---
@@ -218,6 +218,7 @@ The workflow performs the following:
 
 You can view the build status and logs on the **Actions** tab of the GitHub repository.
 
+
 ---
 
 ## Documentation
@@ -231,3 +232,7 @@ You can view the build status and logs on the **Actions** tab of the GitHub repo
 
 Thank you for your interest in **Lamina**! Contributions and feedback are welcome.  
 Please check the repository for the latest updates and contact information.
+
+#Adding a Build Status Badge
+[![CI Build Status](https://github.com/Hareesh098/Lamina/actions/workflows/ci.yml/badge.svg)](https://github.com/Hareesh098/Lamina/actions/workflows/ci.yml)
+
