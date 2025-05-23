@@ -1,0 +1,515 @@
+\documentclass[a4paper,10pt]{article}
+% Main body packages
+\usepackage{amssymb,amsmath}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{xcolor,soul}
+\usepackage{hyperref}
+
+% Geometry
+\usepackage{geometry} 
+\geometry{a4paper,top=10mm,bottom=12.5mm,left=11mm,right=11mm}
+
+% Itemize by number
+\usepackage{etaremune}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta}
+
+%Wrap figure
+\usepackage{graphicx}
+\usepackage{wrapfig}
+
+%For caption
+\usepackage{caption}
+\captionsetup{font={small,sf}}  % 'small' is optional, you can remove it if you want the default size
+\renewcommand{\figurename}{Fig.} %To change the caption start from Figure to Fig.
+
+% Bibliography setup
+\usepackage{multicol} %For multicolom reference list 
+\usepackage[backend=biber,style=numeric,sorting=none,giveninits=true,sortcites=true,style=numeric-comp]{biblatex}
+\addbibresource{Lamina.bib}  
+
+\setlength\bibitemsep{0pt}  
+\setlength\bibnamesep{0pt}  
+\setlength\bibparsep{-5pt}
+
+% Remove unnecessary fields in bibliography entries
+\AtEveryBibitem{
+  \ifentrytype{article}{
+    \clearfield{title}  
+    \clearfield{doi}    
+    \clearfield{issn}   
+    \clearfield{url}    
+    \clearfield{month}  
+  }{}
+  \ifentrytype{inproceedings}{
+    \clearfield{title}  
+    \clearfield{doi}    
+    \clearfield{issn}   
+    \clearfield{url}    
+    \clearfield{month}  
+  }{}
+  \ifentrytype{misc}{
+    \clearfield{title}  
+    \clearfield{doi}    
+    \clearfield{issn}   
+    \clearfield{url}    
+    \clearfield{month}  
+  }{}
+}
+
+% Custom format for bibliography entries
+\DeclareFieldFormat[article]{volume}{\mkbibbold{#1}}  
+\DeclareFieldFormat[article]{pages}{#1}  
+\DeclareFieldFormat[article]{year}{\mkbibparens{#1}}  
+
+\DeclareBibliographyDriver{article}{%
+  \printnames{author}  
+  \newunit\newblock
+  \printfield{journaltitle}  
+  \setunit*{\addspace}  
+  \printfield{volume}  
+  \setunit*{\addcomma\addspace}  
+  \printfield{pages}  
+  \setunit*{\addcomma\addspace}  
+  \printfield{year}  
+}
+
+% Further customizations to make the author names "F. Lastname"
+\DeclareNameAlias{default}{family-given}  
+\renewbibmacro{in:}{}
+\setlength\bibitemsep{0.5em}  
+\setlength\bibhang{0pt}  
+
+%\AtBeginBibliography{\small}  
+\AtBeginBibliography{\small\sffamily}
+
+
+% Header
+\usepackage{fancyhdr}
+%Footer
+\usepackage{lastpage}
+%Colored table
+\usepackage{colortbl}
+
+%Decrease the font size of section headings and the space after and before section title
+\usepackage{titlesec}
+\titleformat*{\section}{\normalsize\bfseries}
+\titleformat*{\subsection}{\normalsize\bfseries}
+\titleformat*{\subsubsection}{\normalsize\bfseries}
+% Adjust spacing before subsection headings
+\titlespacing*{\section}{8pt}{8pt}{\parskip}
+\titlespacing*{\subsection}{8pt}{8pt}{\parskip}
+\titlespacing*{\subsubsection}{8pt}{8pt}{\parskip}
+%To remove space before and after the figure
+\setlength{\intextsep}{0pt}
+%To remove space before and after the paragraph
+%\setlength{\parskip}{-10pt}  
+% Remove titles in bibliography entries
+% Redefine bibliography punctuation and formatting
+% Title
+\title{\vspace{-1.0cm}{\large{\textbf{\textcolor{Mahogany}{Lamina} - A 2D Molecular Dynamics Simulator}\\
+\textbf{Harish Charan, {\sf Durham University, Durham, UK}}}}%
+\thanks{\textsf{Email: \textcolor{Blue}{charan.harish@gmail.com, harish.charan@durham.ac.uk}}}
+\thanks{\textsf{\textcolor{Mahogany}{\today}}}%
+}
+\date{} % Leave date empty since it's included in footnote
+
+%--------------Page style for header and footer--------------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Set up footer to show page numbers in the format '1 of X'
+\cfoot{\thepage\ of \pageref{LastPage}}
+
+% Apply page style to the first page
+\fancypagestyle{plain}{
+    \fancyhf{}
+    \cfoot{\thepage\ of \pageref{LastPage}}  % Footer on the first page
+    \renewcommand{\headrulewidth}{0pt}  % No header rule on the first page
+    \renewcommand{\footrulewidth}{0pt}  % No footer rule on the first page
+}
+
+\begin{document}
+
+\maketitle
+
+\section*{Description}
+
+\textbf{Lamina} is a modular and extensible molecular dynamics (MD) simulation package written in C, designed to model 
+a wide variety of soft and condensed matter systems. It supports time evolution using robust integrators and a range of 
+thermostats, with accurate force evaluations for bonded and non-bonded interactions. Originally built for 2D simulations 
+of bonded systems, \textbf{Lamina} has grown to support broader research goals including active matter, granular solids, 
+and complex fluids.
+
+\section*{Why ``Lamina''?}
+
+The word \textit{Lamina} comes from Latin, meaning ``a thin layer", ``a plate", or ``a sheet". In nature and science, 
+laminae often refer to structural elements that are flat and extended in two dimensions, such as leaves, thin metal 
+sheets, or tissue membranes.
+
+This name reflects both the \textbf{two-dimensional} (2D) nature of the simulations and the types of materials 
+\textbf{Lamina} is built to study: \textbf{liquids}, \textbf{soft solids}, and \textbf{networked structures} confined to 
+thin sheets or layers. Just as natural laminae exhibit rich structural and dynamic behaviors in a seemingly simple 
+geometry, this code is designed to explore the complexity of emergent phenomena in 2D materials and soft matter systems.
+
+\section*{Input File Format}
+
+The input file must follow a strict format to ensure proper parsing and simulation setup. It begins with a header section 
+that defines global parameters:
+
+\begin{itemize}
+  \item \texttt{timeNow}: Current simulation time.
+  \item \texttt{nAtom}, \texttt{nBond}: Number of atoms and bonds in the system.
+  \item \texttt{nAtomType}, \texttt{nBondType}: Number of atom and bond types.
+  \item \texttt{region[1]}, \texttt{region[2]}: Dimensions of the simulation region in the \(x\) and \(y\) directions.
+\end{itemize}
+
+This is followed by an \texttt{Atoms} section, which begins with a comment line indicating the data columns. Each 
+subsequent line describes one atom with the format:
+\begin{center}
+\texttt{atomID molID atomType atomRadius rx ry vx vy}
+\end{center}
+
+Then comes the \texttt{Bonds} section, also starting with a comment line indicating column labels. Each bond is 
+specified as:
+\begin{center}
+\texttt{BondID BondType atom1ID atom2ID kb ro}
+\end{center}
+
+\noindent The input file should contain no extra lines or formatting inconsistencies, as the parser expects this exact 
+structure.
+
+\subsection*{Example Input File}
+
+\begin{verbatim}
+timeNow 0
+nAtom 4
+nBond 2
+nAtomType 2
+nBondType 1
+region[1] 20
+region[2] 10
+Atoms #atomID molID atomType atomRadius rx ry vx vy 
+1 1 2 0.0 -1.0 0.0 -1.0 0.0
+2 1 2 0.0  1.0 0.0 0.0 0.0
+3 2 3 0.6  3.0 0.0 0.0 0.0
+4 2 3 0.5  4.0 0.0 0.0 0.0
+Bonds #BondID BondType atom1ID atom2ID kb ro
+1 1 1 2 1.00 2.1
+2 1 2 3 1.00 2.1
+\end{verbatim}
+\section*{Key Features}
+\subsection*{Interaction Potentials}
+\begin{itemize}
+\item \textbf{Yukawa potential}: (Screened Coulomb interactions).\\
+The Yukawa interaction potential used in the simulation is defined as:
+\[
+V(r) = A \cdot \frac{1}{r} \exp\left(-\kappa r\right),
+\]
+where \( A \) is the interaction strength and \( \kappa \) is the screening parameter. Both parameters are user-defined 
+and must be specified in the input file. This form captures screened interactions, making it suitable for modeling 
+effective forces in systems such as colloids, dusty plasmas, and other soft matter systems with short-range repulsion.
+\item \textbf{Lennard-Jones potential}: Standard 12-6 potential for atomic interactions
+The Lennard-Jones (LJ) potential is also supported in the simulation and is commonly used to model van der Waals 
+interactions between neutral atoms or molecules. It is given by the standard 12-6 form:
+
+\[
+V(r) = 4\epsilon \left[ \left(\frac{\sigma}{r}\right)^{12} - \left(\frac{\sigma}{r}\right)^6 \right],
+\]
+
+where \( \epsilon \) determines the depth of the potential well (interaction strength), and \( \sigma \) is the finite 
+distance at which the inter-particle potential is zero. Both \( \epsilon \) and \( \sigma \) must be specified in the 
+input file. The LJ potential captures both the short-range repulsion and long-range attraction typical of atomic 
+interactions.
+\item \textbf{Harmonic bond potential}: For elastic network models
+The simulation uses a harmonic bond potential to model interactions between bonded particles, typically used in elastic 
+network models. The potential is defined as:
+
+\[
+V(r) = \frac{1}{2}k_b (r - r_0)^2,
+\]
+
+where \( k_b \) is the bond stiffness and \( r_0 \) is the equilibrium bond length. Both parameters must be specified in 
+the input file for each bond.
+
+Additionally, the behavior of the force calculation can be modified using the \texttt{normFlag} parameter. If 
+\texttt{normFlag} is set to 1 (enabled), the bond interaction is normalized by the equilibrium bond length \( r_0 \), 
+and the potential takes the form:
+
+\[
+V(r) = \frac{1}{2}k_b r_0 \left( \frac{r - r_0}{r_0} \right)^2.
+\]
+
+This normalization effectively scales the interaction strength relative to its rest configuration, which is particularly 
+useful for modeling systems where relative deformation plays a more critical role than absolute displacement. If 
+\texttt{normFlag} is set to 0 (disabled), the unnormalized standard form is used.
+
+
+
+\item \textbf{Hookean granular contact potential}: For simulating soft granular matter
+The simulation supports a Hookean granular contact potential, widely used to model repulsive interactions in soft granular 
+matter. The potential is given by:
+
+\[
+V(r) = \frac{1}{2}k_n \delta^2,
+\]
+
+where \( k_n \) is the contact stiffness and \( \delta = R_i + R_j - r \) is the overlap between two interacting discs 
+with radii \( R_i \) and \( R_j \), separated by a distance \( r \). The potential is active only when \( \delta > 0 \), 
+i.e., when the particles are in contact.
+
+If the normalization flag is enabled (\texttt{normFlag} = 1), the interaction is scaled by the sum of the radii 
+\( R_{ij} = R_i + R_j \), and the potential becomes:
+
+\[
+V(r) = \frac{1}{2} k_n R_{ij} \left(\frac{\delta}{R_{ij}}\right)^2.
+\]
+
+This normalization is useful when simulating polydisperse systems, ensuring that the interaction strength appropriately 
+accounts for particle size and maintains consistent physical behavior across different contact pairs.
+
+
+\end{itemize}
+\subsection*{Time Integration}
+\begin{itemize}
+\item \textbf{Leap-Frog integrator}
+The Leap-Frog integrator is a cornerstone of Molecular Dynamics simulations, renowned for its efficiency and good energy conservation properties. It is a second-order accurate, explicit, and symplectic algorithm used to numerically solve Newton's equations of motion. The method's name arises from the way it updates positions and velocities at interleaved time steps. This staggering ensures that velocities at time $t + \frac{\delta t}{2}$ depend on positions at time $t$, and positions at time $t + \delta t$ depend on velocities at time $t + \frac{\delta t}{2}$, effectively "leaping" over each other in time. A key advantage of the Leap-Frog integrator is that it requires only one force evaluation per time step, contributing to its computational efficiency while maintaining reasonable accuracy for many simulation scenarios. [cite: 26]
+
+\subsection*{Equations of the Leap-Frog Integrator}
+
+The standard formulation of the Leap-Frog integrator involves the following update equations:
+
+\begin{align}
+v_{i}\left(t + \frac{\delta t}{2}\right) &= v_{i}(t) + \frac{\delta t}{2} \frac{F_{i}(t)}{m_{i}} \\
+r_{i}(t + \delta t) &= r_{i}(t) + v_{i}\left(t + \frac{\delta t}{2}\right) \delta t \\
+v_{i}(t + \delta t) &= v_{i}\left(t + \frac{\delta t}{2}\right) + \frac{\delta t}{2} \frac{F_{i}(t + \delta t)}{m_{i}}
+\end{align}
+
+where:
+\begin{itemize}
+    \item $r_{i}(t)$ is the position of particle $i$ at time $t$.
+    \item $v_{i}(t)$ is the velocity of particle $i$ at time $t$.
+    \item $F_{i}(t)$ is the force acting on particle $i$ at time $t$.
+    \item $m_{i}$ is the mass of particle $i$.
+    \item $\delta t$ is the time step.
+\end{itemize}
+
+The algorithm proceeds by first updating the velocities by half a time step based on the forces at the current time. Then, the positions are updated by a full time step using these half-step velocities. Finally, the velocities are updated by another half time step using the forces at the new time.
+
+\item \textbf{Velocity-Verlet integrator}
+We begin by briefly describe the velocity Verlet algorithm, which allows us to integrate the Newton equations of motion, 
+characteristic of the NVE ensemble, namely
+
+$$m_{i}\frac{d^{2}r_{i}}{dt^{2}}=-\sum_{j\ne i}\nabla_{i}U(|r_{i}-r_{j}|)$$
+
+In Eq. 1 $m_{i}$ is the mass of particle i, $r_{i}=(x_{i},y_{i},z_{i})$ is the position of particle
+i in 3-dimensional space, $\nabla_{i}=(\frac{\partial}{\partial x_{i}},\frac{\partial}{\partial y_{i}},\frac{\partial}{\partial z_{i}})$, 
+while U denotes the potential energy. The most used algorithm used in practice to integrate Eq. 1 is the velocity Verlet 
+algorithm, whose steps are implemented as follows:
+
+$$\begin{matrix}r_{i}(t+\delta t)&=&r_{i}(t)+v_{i}(t)\delta t+\frac{f_{i}(t)}{2m_{i}}\delta t^{2}\end{matrix}$$
+$$v_{i}(t+\delta t/2)=v_{i}(t)+\frac{\delta t}{2}\frac{f_{i}(t)}{m_{i}}$$
+$$f_{i}(t+\delta t)=f_{i}(r_{i}(t+\delta t))$$
+$$v_{i}(t+\delta t)=v_{i}(t+\delta t/2)+\frac{\delta t}{2}\frac{f_{i}(t+\delta t)}{m_{i}}$$
+
+where $r_{i},$ $v_{i}$ and $f_{i}$ denote the position of the i-th particle, its velocity, and the force it is 
+subjected to.  As there are no dissipative forces, the energy is conserved within this algorithm. 
+
+In practice, the following, equivalent, version of the velocity Verlet is probably the most used: 
+$$v_{i}(t+\delta t/2)=v_{i}(t)+\frac{\delta t}{2}\frac{f_{i}(t)}{m_{i}}$$
+$$r_{i}(t+\delta t)=r_{i}(t)+v_{i}(t+\delta t/2)\delta t$$
+$$f_{i}(t+\delta t)=f_{i}(r_{i}(t+\delta t))$$
+$$\begin{matrix}v_{i}(t+\delta t)&=&v_{i}(t+\delta t/2)+\frac{\delta t}{2}\frac{f_{i}(t+\delta t)}{m_{i}}\end{matrix}$$
+
+As a simple exercise, you should convince yourself that the two versions in Eq. 2 and Eq. 3 are equivalent.
+
+\subsection*{Thermostats and Temperature Control}
+\begin{itemize}
+\item \textbf{Gaussian thermostat}
+The choice of thermostats and barostats depends on whether the final states prepared are true ensembles or not.
+A Gaussian thermostat be used in Lamina. This thermostat is based on the Gauss's principle of least constraint 
+and results in an isokinetic ensemble. In the limit of large number of degrees of freedom a Gaussian thermostat produces 
+the correct canonical ensemble. The Gaussian thermostat can be build into the Leap-Frog integrator. Because the Gaussian 
+thermostat controls the temperature by the constraint method it gets very close to the desired temperature, and the 
+temperature constraint is only preserved to the accuracy of numerical integration. This can be very useful if one is 
+simulating very large systems. We give here a very simple formulation of the Gaussian thermostat for a system of $N$ 
+particles.
+\begin{equation}
+\frac{1}{2}\sum_{i=1}^{N} \dot{r}_i^2 = N E_k.
+\end{equation}
+Where $N$ and $E_k$ are the number of particles and the kinetic energy, respectively. Then the constrained equation of 
+motion is
+\begin{equation}
+\dot{r}_i = F_i + \alpha \dot{r}_i
+\end{equation}
+and since $\dot{E}_k = 0$ or equivalently the value of the Lagrange multiplier $\alpha$ is
+\begin{equation}
+\alpha = -\frac{\sum_{i}^{N_i} F_i \cdot \dot{r_i}}{\sum_{i}^{N_i} \dot{r_i}^2}.
+\end{equation}
+The isothermal version of the Leap-Frog integrator is then readily seen to be
+\begin{equation}
+\dot{r}_i(t + \Delta t/2) = (1 + \alpha \Delta t) \dot{r}_i(t - \Delta t/2) + \Delta t (1 + \alpha \Delta t / 2) F_i(t)
+\end{equation}
+\begin{equation}
+r_i(t + \Delta t) = r_i(t) + \dot{r}_i(t + \Delta t/2) \Delta t
+\end{equation}
+Note: The only (or one) drawback of Gaussian thermostats is that it can not change the temperature of system dynamically during 
+the run. It just keeps the temperature constant. So, if we ``start'' the simulation by thermalizing our system in 
+canonical ensemble in NVT run using Gaussian thermostat, we MUST set the initial velocities of the particles in the 
+initial configuration input file.
+\item \textbf{Kinetic Nos\'e-Hoover thermostat}
+The Nose-Hoover thermostat provides a way to simulate a system which
+is (asymptotically, i.e. at large times) in the NVT ensemble. 
+The idea is
+to introduce a fictitious dynamical variable, whose physical meaning is that
+of a friction, (, which slows down or accelerates particles until the temperature
+(measured through the kinetic energy and the equipartition function, see below)
+is equal to the desired value. The equations of motions (in 3D) are:
+
+$$m_{i}\frac{d^{2}r_{i}}{dt^{2}}=f_{i}-\zeta m_{i}v_{i}$$
+$$\frac{d\zeta(t)}{dt}=\frac{1}{Q}[\sum_{i=1}^{N}m_{i}\frac{v_{i}^{2}}{2}-\frac{3N+1}{2}k_{B}T]$$
+
+where Q in Eq. 5 determines the relaxation of the dynamics of the friction,
+$\zeta(t)$ while T denotes the target temperature. It can be seen that in steady
+state, where $\frac{d\zeta}{dt}=0,$ the kinetic energy is given by $\frac{3}{2}(N+1)k_{B}T$ as required
+by equipartition (there is a factor of $3N+1$ instead of 3N as there is one  more
+degree of freedom, (). It is important to note that the temperature is therefore
+not fixed, rather it tends to the target value.
+
+The equations of motion of the Nose-Hoover thermostat can be implemented
+by a small modification of the velocity Verlet algorithm an option is given
+below. The first four steps in the modified discretisation algorithm are:
+
+$$\begin{matrix}r_{i}(t+\delta t)&=&r_{i}(t)+v_{i}(t)\delta t+(\frac{f_{i}(t)}{m_{i}}-\zeta(t)v_{i}(t))\frac{\delta t^{2}}{2}\end{matrix}$$
+$$\begin{matrix}v_{i}(t+\delta t/2)&=&v_{i}(t)+\frac{\delta t}{2}(\frac{f_{i}(t)}{m_{i}}-\zeta(t)v_{i}(t)\end{matrix})$$
+$$\begin{matrix}f_{i}(t+\delta t)&=&f_{i}(r_{i}(t+\delta t)\end{matrix})$$
+
+$$\zeta(t+\delta t/2) = \zeta(t)+\frac{\delta t}{2Q}\left[\sum_{i=1}^{N}m_{i}\frac{v_{i}(t)^{2}}{2}-\frac{3N+1}{2}k_{B}T\right]$$
+
+To match the two-step character of the velocity Verlet algorithm, note that also
+$\zeta(t)$ is first updated at time $t+\delta t/2.$ The final steps of the Nose-Hoover-Verlet
+algorithm are:
+
+$$\zeta(t+\delta t) = \zeta(t+\delta t)+\frac{\delta t}{2Q}\left[\sum_{i=1}^{N}m_{i}\frac{v_{i}(t+\delta t)^{2}}{2}-\frac{3N+1}{2}k_{B}T\right]$$
+$$\textbf{v}_i(t+\delta t) = \frac{\left[\textbf{v}_i(t+\frac{\delta t}{2}) + \frac{\delta t}{2}\frac{\textbf{f}_{i}(t + \delta t)}{m_{i}}\right]}{1+\frac{\delta t}{2}\zeta(t+\delta t)}$$
+where the last equation is slightly more complicated than its counterpart in the NVE velocity Verlet algorithm, because 
+the dissipative force over mass term, $\zeta \textbf{v}$, is computed at time t + $\delta t$.
+
+\item \textbf{Configurational Nos\'e-Hoover thermostat}
+\item \textbf{Langevin thermostat}
+\end{itemize}
+\item \textbf{Brownian (overdamped) dynamics}
+\end{itemize}
+
+\subsection*{Physical Observables}
+\begin{itemize}
+    \item \textbf{Radial Distribution Function (RDF)}
+    \item \textbf{Velocity Autocorrelation Function (VACF)}
+    \item \textbf{Root-Mean-Square Velocity (VRMS)}
+    \item \textbf{Stress tensor and momentum}
+    \item \textbf{Center-of-mass motion}
+    \item \textbf{Space-time correlation functions}
+\end{itemize}
+
+\subsection*{Output and Utilities}
+The output files are saved in the \texttt{../output} folder. Ensure that you create this directory from where you run 
+the program.
+
+\begin{itemize}
+    \item Structured output files: \texttt{.xyz}, \texttt{.bond}, \texttt{.pair}, \texttt{.com}, \texttt{.result}
+    \item Restart and resume capability with \texttt{.restart} and \texttt{.state} files
+    \item Clean separation of source code, unit tests, and output
+    \item Support for Lees-Edwards boundary conditions for sheared systems
+    \item Configurable halting conditions (based on VRMS or custom metrics)
+    \item Modular design for easy extension of potentials and features
+\end{itemize}
+
+\section*{Installation Instructions}
+
+\subsection*{Prerequisites}
+
+1. \textbf{GCC} compiler: Ensure that \texttt{gcc} is installed for compiling C code. You can install it using:
+
+   \begin{itemize}
+      \item \textbf{Ubuntu/Debian}: \texttt{sudo apt-get install build-essential}
+      \item \textbf{Fedora/CentOS}: \texttt{sudo dnf install gcc}
+      \item \textbf{macOS} (via Homebrew): \texttt{brew install gcc}
+   \end{itemize}
+
+2. \textbf{MPICH}: Ensure you have the \textbf{MPICH} library installed for MPI-based operations. This is required for 
+parallel computation.
+
+   \begin{itemize}
+      \item \textbf{Ubuntu/Debian}: \texttt{sudo apt-get install libmpich-dev}
+      \item \textbf{Fedora/CentOS}: \texttt{sudo dnf install mpich}
+      \item \textbf{macOS}: \texttt{brew install mpich}
+   \end{itemize}
+
+\subsection*{Building Lamina}
+
+\begin{enumerate}
+    \item \textbf{Clone the Repository}
+    
+    If you haven't cloned the repository yet, use the following command to clone it from GitHub:
+    
+    \begin{verbatim}
+    git clone https://github.com/your-username/Lamina.git
+    \end{verbatim}
+    
+    \item \textbf{Navigate to the Project Directory}
+    
+    Change into the \texttt{Lamina} project directory:
+    
+    \begin{verbatim}
+    cd Lamina
+    \end{verbatim}
+    
+    \item \textbf{Edit the Makefile (Optional)}
+    
+    If needed, edit the \texttt{Makefile} to adjust the paths to your \textbf{MPICH} installation or any other custom settings. The current \texttt{Makefile} expects the following:
+    
+    \begin{itemize}
+        \item \textbf{MPICH} headers: \texttt{/usr/include/mpich-3.2-x86\_64/} (edit \texttt{INCLUDE} variable if different)
+        \item \textbf{MPICH} libraries: Linked via \texttt{LIBS = -lm}
+    \end{itemize}
+    
+    If your \textbf{MPICH} installation differs, adjust the paths as needed.
+    
+    \item \textbf{Build the Executable}
+    
+    Run the \texttt{make} command to build the executable:
+    
+    \begin{verbatim}
+    make
+    \end{verbatim}
+    
+    This will compile the source files and generate the \texttt{main} executable. If the build is successful, the output will indicate that the executable has been created.
+    
+    \item \textbf{Clean the Build (Optional)}
+    
+    If you want to remove the compiled objects and the \texttt{main} executable, you can run:
+    
+    \begin{verbatim}
+    make clean
+    \end{verbatim}
+\end{enumerate}
+
+\subsection*{Running Lamina}
+
+After successfully compiling \textbf{Lamina}, you can run the simulation as follows:
+
+\begin{verbatim}
+./main <output_prefix>
+\end{verbatim}
+
+Where \texttt{<output\_prefix>} is a string that will be used to create output files in the \texttt{output/} directory (e.g., \texttt{./main simulation\_run}).
+
+\section*{License}
+
+Lamina is open-source software, and you are welcome to modify and distribute it under the terms of the MIT License.
+
+\end{document}
+
