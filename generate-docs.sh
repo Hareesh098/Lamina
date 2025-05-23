@@ -6,6 +6,7 @@ doxygen Doxyfile
 cd ../
 cd docs
 pdflatex README.tex
+pdflatex README.tex
 mv html/* .
 cd latex
 make
