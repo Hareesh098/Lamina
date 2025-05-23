@@ -67,4 +67,3 @@ target_link_libraries(lamina ${MPI_LIBRARIES} gsl gslcblas m)
 # Add MPI compile definitions and flags
 target_compile_definitions(lamina PRIVATE MPI)
 target_include_directories(lamina PRIVATE ${MPI_INCLUDE_PATH})
-
