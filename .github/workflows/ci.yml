@@ -1,4 +1,4 @@
-name: CI Build and Test with MPI
+name: CI Build and MPI Test with CMake
 
 on:
   push:
@@ -11,26 +11,29 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
+    - uses: actions/checkout@v3
 
     - name: Install dependencies
       run: |
         sudo apt-get update
-        sudo apt-get install -y build-essential mpich libmpich-dev
-        sudo apt-get install libgsl-dev
+        sudo apt-get install -y build-essential cmake mpich libmpich-dev libgsl-dev
 
-    - name: Build source code
+    - name: Configure with CMake
       run: |
-        cd source
-        make clean
-        make
-        ./main test
-        
-    - name: Build and run unit tests with MPI
+        mkdir build
+        cd build
+        cmake ..
+
+    - name: Build
+      run: |
+        cd build
+        make 
+
+    - name: Run tests
       run: |
         cd unittest
         make clean
+        make all
         make run
         
 

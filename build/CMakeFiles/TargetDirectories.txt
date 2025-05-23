@@ -1,0 +1,3 @@
+/home/hcharan/GitHub/Lamina/build/CMakeFiles/lamina.dir
+/home/hcharan/GitHub/Lamina/build/CMakeFiles/edit_cache.dir
+/home/hcharan/GitHub/Lamina/build/CMakeFiles/rebuild_cache.dir
