@@ -101,7 +101,7 @@ Lamina/
   \-- .github/                 # GitHub configuration directory
         \-- workflows/         # GitHub Actions workflows for CI/CD
             \-- ci.yml         # CI workflow file
-|--generate-docs.sh  #To genrate the html and latex documents 
+|--generate-docs.sh            #To genrate the html and latex documents 
 ```
 
 ---
