@@ -7,6 +7,7 @@ set(CMAKE_C_STANDARD_REQUIRED ON)
 
 # Find MPI package (must be installed on your system)
 find_package(MPI REQUIRED)
+find_package(OpenMP REQUIRED)
 include_directories(${MPI_INCLUDE_PATH})
 
 # Include additional include directories if needed
@@ -62,7 +63,7 @@ set(SOURCES
 add_executable(lamina ${SOURCES})
 
 # Link MPI libraries
-target_link_libraries(lamina ${MPI_LIBRARIES} gsl gslcblas m)
+target_link_libraries(lamina ${MPI_LIBRARIES} gsl gslcblas m OpenMP::OpenMP_C)
 
 # Add MPI compile definitions and flags
 target_compile_definitions(lamina PRIVATE MPI)
