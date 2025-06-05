@@ -126,7 +126,7 @@ Lamina/
      brew install gcc
      ```CI Build Status
 
-2. **MPICH (MPI Library)**  
+2. **MPICH (MPI Library)**
    Required for parallel computations:
 
    - Ubuntu/Debian:  
@@ -139,10 +139,26 @@ Lamina/
      ```
    - macOS:  
      ```bash
-     brew install mpich
+    brew install mpich
+    ```
+
+3. **OpenMP**
+   Required for multi-threaded bond force calculations:
+
+   - Ubuntu/Debian:
+     ```bash
+     sudo apt-get install libomp-dev
+     ```
+   - Fedora/CentOS:
+     ```bash
+     sudo dnf install libgomp
+     ```
+   - macOS:
+     ```bash
+     brew install libomp
      ```
 
-3. **CMake (Recommended for modern builds)**  
+4. **CMake (Recommended for modern builds)**
    Install `cmake` to build with the CMake system:
 
    - Ubuntu/Debian:  

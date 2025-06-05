@@ -23,27 +23,30 @@
 #include<stdio.h>
 #include<math.h>
 #include<stdlib.h>
+#include<omp.h>
 #include"global.h"
 
 void ComputeBondForce(){
   int n;
-  double dr[NDIM+1], r, rr, ri, roi;
-  double uVal, fcVal;
-
-  uVal = 0.0; TotalBondEnergy = 0.0;
+  TotalBondEnergy = 0.0;
   virSumBond = 0.0; virSumBondxx = 0.0; virSumBondyy = 0.0; virSumBondxy = 0.0;
 
-  double vr[NDIM+1], fdVal, rri;
- 
+
+  #pragma omp parallel for
   for(n = 1 ; n <= nAtom ; n ++){
    nodeDragx[n] = 0.0;
    nodeDragy[n] = 0.0;
   } //Important change made on 03Apr2025. Mention it in GitHub
 
-  int atom1ID, atom2ID;
-   
+
+  #pragma omp parallel for reduction(+:TotalBondEnergy,virSumBond,virSumBondxx,virSumBondyy,virSumBondxy)
   for(n=1; n<=nBond; n++){
-   rr = 0.0; rri = 0.0; fcVal = 0.0;  fdVal = 0.0; strech = 0.0;
+   int atom1ID, atom2ID;
+   double dr[NDIM+1], r, rr, ri, roi;
+   double uVal, fcVal;
+   double vr[NDIM+1], fdVal, rri;
+   double strech_local;
+   rr = 0.0; rri = 0.0; fcVal = 0.0;  fdVal = 0.0; strech_local = 0.0;
    atom1ID = atom1[n];
    atom2ID = atom2[n];
    
@@ -69,9 +72,9 @@ void ComputeBondForce(){
    rri = 1.0/rr;
    ri = 1.0/r;
    roi = 1.0/ro[n];
-   strech = (r * roi - 1.0);
-   uVal = 0.5 * kb[n] * ro[n] * Sqr(strech);
-   fcVal = -kb[n] * strech * ri; //F = -Grad U
+   strech_local = (r * roi - 1.0);
+   uVal = 0.5 * kb[n] * ro[n] * Sqr(strech_local);
+   fcVal = -kb[n] * strech_local * ri; //F = -Grad U
    
    vr[1] = vx[atom1ID] - vx[atom2ID];
    vr[2] = vy[atom1ID] - vy[atom2ID];
@@ -79,58 +82,82 @@ void ComputeBondForce(){
    
    //DampFlag = 1. LAMMPS version
    if(DampFlag == 1){
+   #pragma omp atomic write
    nodeDragx[atom1ID] =  fdVal * dr[1];  //node-node drag  //Important change made on 03Apr2025. Mention it in GitHub
-   nodeDragy[atom1ID] =  fdVal * dr[2];  //node-node drag  //Adding the drag forces is wrong. Only add the 
-   nodeDragx[atom2ID] =  -fdVal * dr[1];  //node-node drag //total force 
+   #pragma omp atomic write
+   nodeDragy[atom1ID] =  fdVal * dr[2];  //node-node drag  //Adding the drag forces is wrong. Only add the
+   #pragma omp atomic write
+   nodeDragx[atom2ID] =  -fdVal * dr[1];  //node-node drag //total force
+   #pragma omp atomic write
    nodeDragy[atom2ID] =  -fdVal * dr[2];  //node-node drag
-      
+
+   #pragma omp atomic
    ax[atom1ID] +=  (fcVal + fdVal) * dr[1];
+   #pragma omp atomic
    ay[atom1ID] +=  (fcVal + fdVal) * dr[2];
+   #pragma omp atomic
    ax[atom2ID] += -(fcVal + fdVal) * dr[1];
+   #pragma omp atomic
    ay[atom2ID] += -(fcVal + fdVal) * dr[2];
    }
    
    //DampFlag = 2. Suzanne notes version
    else if(DampFlag == 2){
+   #pragma omp atomic write
    nodeDragx[atom1ID] =  -gamman * vr[1];  //node-node drag
+   #pragma omp atomic write
    nodeDragy[atom1ID] =  -gamman * vr[2]; //node-node drag
+   #pragma omp atomic write
    nodeDragx[atom2ID] =  -(-gamman * vr[1]);  //node-node drag
+   #pragma omp atomic write
    nodeDragy[atom2ID] =  -(-gamman * vr[2]);  //node-node drag
-      
+
+   #pragma omp atomic
    ax[atom1ID] +=  (fcVal * dr[1] - gamman * vr[1]);
+   #pragma omp atomic
    ay[atom1ID] +=  (fcVal * dr[2] - gamman * vr[2]);
+   #pragma omp atomic
    ax[atom2ID] += -(fcVal * dr[1] - gamman * vr[1]);
+   #pragma omp atomic
    ay[atom2ID] += -(fcVal * dr[2] - gamman * vr[2]);
    }
 
    //DampFlag = 3. Suzanne PRL, 130, 178203 (2023) version
    else if(DampFlag == 3){
-    DeltaXijNew = dr[1];
-    DeltaYijNew = dr[2];
+    double DeltaXijNew_local = dr[1];
+    double DeltaYijNew_local = dr[2];
 
     if(stepCount == 0) {  // First timestep
-     DeltaXijOld[n] = DeltaXijNew;
-     DeltaYijOld[n] = DeltaYijNew;
-    }
+     DeltaXijOld[n] = DeltaXijNew_local;
+     DeltaYijOld[n] = DeltaYijNew_local;
+   }
 
-    DeltaXij = DeltaXijNew - DeltaXijOld[n];
-    DeltaYij = DeltaYijNew - DeltaYijOld[n];
-    DeltaVXij = DeltaXij / deltaT;
-    DeltaVYij = DeltaYij / deltaT;
+    double DeltaXij_local = DeltaXijNew_local - DeltaXijOld[n];
+    double DeltaYij_local = DeltaYijNew_local - DeltaYijOld[n];
+    double DeltaVXij_local = DeltaXij_local / deltaT;
+    double DeltaVYij_local = DeltaYij_local / deltaT;
    
     // Now update for the next timestep
-    DeltaXijOld[n] = DeltaXijNew;
-    DeltaYijOld[n] = DeltaYijNew;
+    DeltaXijOld[n] = DeltaXijNew_local;
+    DeltaYijOld[n] = DeltaYijNew_local;
 
-    nodeDragx[atom1ID] =  -gamman * DeltaVXij;  //node-node drag
-    nodeDragy[atom1ID] =  -gamman * DeltaVYij; //node-node drag
-    nodeDragx[atom2ID] =  -(-gamman * DeltaVXij);  //node-node drag
-    nodeDragy[atom2ID] =  -(-gamman * DeltaVYij);  //node-node drag
-      
-    ax[atom1ID] +=  (fcVal * dr[1] - gamman * DeltaVXij);
-    ay[atom1ID] +=  (fcVal * dr[2] - gamman * DeltaVYij);
-    ax[atom2ID] += -(fcVal * dr[1] - gamman * DeltaVXij);
-    ay[atom2ID] += -(fcVal * dr[2] - gamman * DeltaVYij);
+    #pragma omp atomic write
+    nodeDragx[atom1ID] =  -gamman * DeltaVXij_local;  //node-node drag
+    #pragma omp atomic write
+    nodeDragy[atom1ID] =  -gamman * DeltaVYij_local; //node-node drag
+    #pragma omp atomic write
+    nodeDragx[atom2ID] =  -(-gamman * DeltaVXij_local);  //node-node drag
+    #pragma omp atomic write
+    nodeDragy[atom2ID] =  -(-gamman * DeltaVYij_local);  //node-node drag
+
+    #pragma omp atomic
+    ax[atom1ID] +=  (fcVal * dr[1] - gamman * DeltaVXij_local);
+    #pragma omp atomic
+    ay[atom1ID] +=  (fcVal * dr[2] - gamman * DeltaVYij_local);
+    #pragma omp atomic
+    ax[atom2ID] += -(fcVal * dr[1] - gamman * DeltaVXij_local);
+    #pragma omp atomic
+    ay[atom2ID] += -(fcVal * dr[2] - gamman * DeltaVYij_local);
    }
 
 

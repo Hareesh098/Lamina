@@ -1,6 +1,6 @@
-CC      = gcc -O3 -pg -Wall -Wextra 
+CC      = gcc -O3 -pg -Wall -Wextra -fopenmp
 INCLUDE = -I/opt/mpich4.3.0/include/ 
-LFLAG   = -lm -lgsl -lgslcblas 
+LFLAG   = -lm -lgsl -lgslcblas -fopenmp
 OBJECTS   = AccumProps.o AllocArrays.o ApplyBoundaryCond.o Close.o   \
           ComputeForcesCells.o EvalProps.o Init.o LeapfrogStep.o   BrownianStep.o   \
           main.o PrintSummary.o SetupJob.o Trajectory.o           \
