@@ -19,11 +19,11 @@ void \mbox{\hyperlink{ApplyForce_8c_ad6ab10f163d2a72fca0250e1aae8f09b}{Apply\+Fo
 
 
 \doxysubsection{Function Documentation}
-\Hypertarget{ApplyForce_8c_ad6ab10f163d2a72fca0250e1aae8f09b}\label{ApplyForce_8c_ad6ab10f163d2a72fca0250e1aae8f09b} 
-\index{ApplyForce.c@{ApplyForce.c}!ApplyForce@{ApplyForce}}
+\Hypertarget{ApplyForce_8c_ad6ab10f163d2a72fca0250e1aae8f09b}\index{ApplyForce.c@{ApplyForce.c}!ApplyForce@{ApplyForce}}
 \index{ApplyForce@{ApplyForce}!ApplyForce.c@{ApplyForce.c}}
 \doxysubsubsection{\texorpdfstring{ApplyForce()}{ApplyForce()}}
-{\footnotesize\ttfamily void Apply\+Force (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{ApplyForce_8c_ad6ab10f163d2a72fca0250e1aae8f09b} 
+void Apply\+Force (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
 
 
@@ -35,22 +35,24 @@ Definition at line \mbox{\hyperlink{ApplyForce_8c_source_l00025}{25}} of file \m
 \DoxyCodeLine{00026\ \ \textcolor{keywordtype}{int}\ n;}
 \DoxyCodeLine{00027\ \ \textcolor{keywordtype}{double}\ lx;}
 \DoxyCodeLine{00028\ \ lx\ =\ \mbox{\hyperlink{global_8h_adc110418e2efa5f31a9aa7c137471a2f}{regionH}}[1];\ \ }
-\DoxyCodeLine{00029\ \ \mbox{\hyperlink{global_8h_a03c4ce20c7e4b8c6d60a20b833be69fe}{fy}}\ =\ \ (\mbox{\hyperlink{global_8h_a1c9da98c7c3b53aded35c3be14fb2aee}{FyBylx}}\ *\ lx)/\mbox{\hyperlink{global_8h_a1fc19b1274901ec0290f04ae9900f8b4}{nAtomBlock}};}
-\DoxyCodeLine{00030\ \ \mbox{\hyperlink{global_8h_aa7e88347476ef454086e7c3cd9865460}{fx}}\ =\ \ \mbox{\hyperlink{global_8h_adac56247d9cc80325fa1045fdf18ce33}{fxByfy}}\ *\ \mbox{\hyperlink{global_8h_a03c4ce20c7e4b8c6d60a20b833be69fe}{fy}};}
-\DoxyCodeLine{00031\ \ \textcolor{keywordflow}{for}(n\ =\ 1;\ n\ <=\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}};\ n\ ++)\{}
-\DoxyCodeLine{00032\ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{global_8h_a65f3cbf0ee8813aae06be044d6c568ad}{molID}}[n]\ ==\ 2)\{}
-\DoxyCodeLine{00033\ \ \ \mbox{\hyperlink{global_8h_a82d645cda6bea6506c7b5f4f7453986c}{ax}}[n]\ +=\ \mbox{\hyperlink{global_8h_aa7e88347476ef454086e7c3cd9865460}{fx}};\ }
-\DoxyCodeLine{00034\ \ \ \mbox{\hyperlink{global_8h_a68c7afda02d0f26c1987a4eee13928f2}{ay}}[n]\ -\/=\ \mbox{\hyperlink{global_8h_a03c4ce20c7e4b8c6d60a20b833be69fe}{fy}};}
-\DoxyCodeLine{00035\ \}\ \}\ \}}
+\DoxyCodeLine{00029\ \ \mbox{\hyperlink{global_8h_a8c0c6b3891446b796d312e114f055f72}{fyExtern}}\ =\ \ (\mbox{\hyperlink{global_8h_a1c9da98c7c3b53aded35c3be14fb2aee}{FyBylx}}\ *\ lx)/\mbox{\hyperlink{global_8h_a1fc19b1274901ec0290f04ae9900f8b4}{nAtomBlock}};}
+\DoxyCodeLine{00030\ \ \mbox{\hyperlink{global_8h_adce9f719cfc399dc341cf90a459d4154}{fxExtern}}\ =\ \ \mbox{\hyperlink{global_8h_adac56247d9cc80325fa1045fdf18ce33}{fxByfy}}\ *\ \mbox{\hyperlink{global_8h_a8c0c6b3891446b796d312e114f055f72}{fyExtern}};}
+\DoxyCodeLine{00031\ \ \mbox{\hyperlink{global_8h_af3214cd66a361a1bc7f8ad9e168bed9b}{forceSumxExtern}}\ =\ \mbox{\hyperlink{global_8h_adce9f719cfc399dc341cf90a459d4154}{fxExtern}}*\mbox{\hyperlink{global_8h_a1fc19b1274901ec0290f04ae9900f8b4}{nAtomBlock}};\ \ \mbox{\hyperlink{global_8h_ac7ea211438e84563f9d2a9db7446bc7f}{forceSumyExtern}}\ =\ \mbox{\hyperlink{global_8h_a8c0c6b3891446b796d312e114f055f72}{fyExtern}}*\mbox{\hyperlink{global_8h_a1fc19b1274901ec0290f04ae9900f8b4}{nAtomBlock}};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \textcolor{keywordflow}{for}(n\ =\ 1;\ n\ <=\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}};\ n\ ++)\{}
+\DoxyCodeLine{00034\ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{global_8h_a65f3cbf0ee8813aae06be044d6c568ad}{molID}}[n]\ ==\ 2)\{}
+\DoxyCodeLine{00035\ \ \ \mbox{\hyperlink{global_8h_af5a0b3a6e5601702b2c661dc34d046a2}{fx}}[n]\ +=\ \mbox{\hyperlink{global_8h_adce9f719cfc399dc341cf90a459d4154}{fxExtern}};\ }
+\DoxyCodeLine{00036\ \ \ \mbox{\hyperlink{global_8h_a869b2e7f75a6f2407d4a91d6f16c99ce}{fy}}[n]\ -\/=\ \mbox{\hyperlink{global_8h_a8c0c6b3891446b796d312e114f055f72}{fyExtern}};}
+\DoxyCodeLine{00037\ \}\ \}\ \}}
 
 \end{DoxyCode}
 
 
-References \mbox{\hyperlink{global_8h_source_l00017}{ax}}, \mbox{\hyperlink{global_8h_source_l00017}{ay}}, \mbox{\hyperlink{global_8h_aa7e88347476ef454086e7c3cd9865460}{fx}}, \mbox{\hyperlink{global_8h_source_l00052}{fx\+Byfy}}, \mbox{\hyperlink{global_8h_source_l00052}{fy}}, \mbox{\hyperlink{global_8h_source_l00052}{Fy\+Bylx}}, \mbox{\hyperlink{global_8h_a65f3cbf0ee8813aae06be044d6c568ad}{mol\+ID}}, \mbox{\hyperlink{global_8h_source_l00024}{n\+Atom}}, \mbox{\hyperlink{global_8h_source_l00049}{n\+Atom\+Block}}, and \mbox{\hyperlink{global_8h_source_l00020}{regionH}}.
+References \mbox{\hyperlink{global_8h_source_l00053}{force\+Sumx\+Extern}}, \mbox{\hyperlink{global_8h_source_l00053}{force\+Sumy\+Extern}}, \mbox{\hyperlink{global_8h_source_l00017}{fx}}, \mbox{\hyperlink{global_8h_source_l00053}{fx\+Byfy}}, \mbox{\hyperlink{global_8h_adce9f719cfc399dc341cf90a459d4154}{fx\+Extern}}, \mbox{\hyperlink{global_8h_source_l00017}{fy}}, \mbox{\hyperlink{global_8h_source_l00053}{Fy\+Bylx}}, \mbox{\hyperlink{global_8h_source_l00053}{fy\+Extern}}, \mbox{\hyperlink{global_8h_a65f3cbf0ee8813aae06be044d6c568ad}{mol\+ID}}, \mbox{\hyperlink{global_8h_source_l00024}{n\+Atom}}, \mbox{\hyperlink{global_8h_source_l00076}{n\+Atom\+Block}}, and \mbox{\hyperlink{global_8h_source_l00020}{regionH}}.
 
 
 
-Referenced by \mbox{\hyperlink{main_8c_source_l00051}{main()}}.
+Referenced by \mbox{\hyperlink{main_8c_source_l00043}{main()}}.
 
 Here is the caller graph for this function\+:
 \nopagebreak

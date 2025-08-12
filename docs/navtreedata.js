@@ -26,6 +26,14 @@ var NAVTREE =
 [
   [ "Lemina", "index.html", [
     [ "Lamina: A Molecular Dynamics Package", "index.html", "index" ],
+    [ "Classes", "annotated.html", [
+      [ "Class List", "annotated.html", "annotated_dup" ],
+      [ "Class Index", "classes.html", null ],
+      [ "Class Members", "functions.html", [
+        [ "All", "functions.html", null ],
+        [ "Variables", "functions_vars.html", null ]
+      ] ]
+    ] ],
     [ "Files", "files.html", [
       [ "File List", "files.html", "files_dup" ],
       [ "File Members", "globals.html", [
@@ -42,9 +50,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "AccumProps_8c.html",
-"globalExtern_8h.html#a7fec425f50f8c2d24862faef8284b520",
-"global_8h.html#ab715ebf9f35659a111ee6c5eedc360af"
+"global_8h.html#a73e0501e577e426f4f07748c31c94d8f"
 ];
 
-var SYNCONMSG = 'click to disable panel synchronisation';
-var SYNCOFFMSG = 'click to enable panel synchronisation';
+var SYNCONMSG = 'click to disable panel synchronization';
+var SYNCOFFMSG = 'click to enable panel synchronization';

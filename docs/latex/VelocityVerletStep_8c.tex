@@ -19,11 +19,11 @@ void \mbox{\hyperlink{VelocityVerletStep_8c_a2a17e5b6b292eb6e59d1da1d0b499e27}{V
 
 
 \doxysubsection{Function Documentation}
-\Hypertarget{VelocityVerletStep_8c_a2a17e5b6b292eb6e59d1da1d0b499e27}\label{VelocityVerletStep_8c_a2a17e5b6b292eb6e59d1da1d0b499e27} 
-\index{VelocityVerletStep.c@{VelocityVerletStep.c}!VelocityVerletStep@{VelocityVerletStep}}
+\Hypertarget{VelocityVerletStep_8c_a2a17e5b6b292eb6e59d1da1d0b499e27}\index{VelocityVerletStep.c@{VelocityVerletStep.c}!VelocityVerletStep@{VelocityVerletStep}}
 \index{VelocityVerletStep@{VelocityVerletStep}!VelocityVerletStep.c@{VelocityVerletStep.c}}
 \doxysubsubsection{\texorpdfstring{VelocityVerletStep()}{VelocityVerletStep()}}
-{\footnotesize\ttfamily void Velocity\+Verlet\+Step (\begin{DoxyParamCaption}\item[{int}]{icode }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{VelocityVerletStep_8c_a2a17e5b6b292eb6e59d1da1d0b499e27} 
+void Velocity\+Verlet\+Step (\begin{DoxyParamCaption}\item[{int}]{icode}{}\end{DoxyParamCaption})}
 
 
 
@@ -33,44 +33,50 @@ Definition at line \mbox{\hyperlink{VelocityVerletStep_8c_source_l00026}{26}} of
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
 \DoxyCodeLine{00027\ \textcolor{keywordtype}{int}\ n;}
-\DoxyCodeLine{00028\ \ \textcolor{keywordflow}{if}(icode\ ==\ 1)\{}
-\DoxyCodeLine{00029\ \ \textcolor{keywordflow}{for}\ (n=\ 1;\ n\ <=\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}};\ n++)\ \{}
-\DoxyCodeLine{00030\ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{global_8h_ad2f384e523b15b13c82e3d6db95b402e}{atomType}}[n]\ !=\ \mbox{\hyperlink{global_8h_a79490e320593cb02fb16b7add1213072}{freezeAtomType}})\{}
-\DoxyCodeLine{00031\ \ \ \mbox{\hyperlink{global_8h_a6cbb00abd724a75be2c6424c84d18654}{vx}}[n]\ +=\ \mbox{\hyperlink{global_8h_a82d645cda6bea6506c7b5f4f7453986c}{ax}}[n]\ *\ 0.5\ *\ \mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}};\ }
-\DoxyCodeLine{00032\ \ \ \mbox{\hyperlink{global_8h_ad78254f6802793cc12b197889e6ea80d}{vy}}[n]\ +=\ \mbox{\hyperlink{global_8h_a68c7afda02d0f26c1987a4eee13928f2}{ay}}[n]\ *\ 0.5\ *\ \mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}};}
-\DoxyCodeLine{00033\ \ \ \mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}[n]\ +=\ \mbox{\hyperlink{global_8h_a6cbb00abd724a75be2c6424c84d18654}{vx}}[n]\ *\ \mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}};\ }
-\DoxyCodeLine{00034\ \ \ \mbox{\hyperlink{global_8h_af88ff31a9ae85beb713bd0c42815f1de}{ry}}[n]\ +=\ \mbox{\hyperlink{global_8h_ad78254f6802793cc12b197889e6ea80d}{vy}}[n]\ *\ \mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}};}
-\DoxyCodeLine{00035\ \ \ \}\ }
-\DoxyCodeLine{00036\ \ \ \textcolor{comment}{//Calculating\ the\ image\ flags\ here}}
-\DoxyCodeLine{00037\ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}[n]\ >=\ \mbox{\hyperlink{global_8h_adc110418e2efa5f31a9aa7c137471a2f}{regionH}}[1])\ \{}
-\DoxyCodeLine{00038\ \ \ \ \mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}[n]\ -\/=\ \mbox{\hyperlink{global_8h_a43c4f708b8d633b069355a121d6adbdc}{region}}[1];}
-\DoxyCodeLine{00039\ \ \ \ \mbox{\hyperlink{global_8h_a6cd103d74f5d525b4cae3e7af552be20}{ImageX}}[n]++;}
-\DoxyCodeLine{00040\ \ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}[n]\ <\ -\/\mbox{\hyperlink{global_8h_adc110418e2efa5f31a9aa7c137471a2f}{regionH}}[1])\ \{}
-\DoxyCodeLine{00041\ \ \ \ \mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}[n]\ +=\ \mbox{\hyperlink{global_8h_a43c4f708b8d633b069355a121d6adbdc}{region}}[1];}
-\DoxyCodeLine{00042\ \ \ \mbox{\hyperlink{global_8h_a6cd103d74f5d525b4cae3e7af552be20}{ImageX}}[n]-\/-\/;}
-\DoxyCodeLine{00043\ \ \ \}}
-\DoxyCodeLine{00044\ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{global_8h_af88ff31a9ae85beb713bd0c42815f1de}{ry}}[n]\ >=\ \mbox{\hyperlink{global_8h_adc110418e2efa5f31a9aa7c137471a2f}{regionH}}[2])\ \{}
-\DoxyCodeLine{00045\ \ \ \ \mbox{\hyperlink{global_8h_af88ff31a9ae85beb713bd0c42815f1de}{ry}}[n]\ -\/=\ \mbox{\hyperlink{global_8h_a43c4f708b8d633b069355a121d6adbdc}{region}}[2];}
-\DoxyCodeLine{00046\ \ \ \ \mbox{\hyperlink{global_8h_a6d63f20edcbc2cb983c7267d9d0690a8}{ImageY}}[n]++;}
-\DoxyCodeLine{00047\ \ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{global_8h_af88ff31a9ae85beb713bd0c42815f1de}{ry}}[n]\ <\ -\/\mbox{\hyperlink{global_8h_adc110418e2efa5f31a9aa7c137471a2f}{regionH}}[2])\ \{}
-\DoxyCodeLine{00048\ \ \ \ \mbox{\hyperlink{global_8h_af88ff31a9ae85beb713bd0c42815f1de}{ry}}[n]\ +=\ \mbox{\hyperlink{global_8h_a43c4f708b8d633b069355a121d6adbdc}{region}}[2];}
-\DoxyCodeLine{00049\ \ \ \ \mbox{\hyperlink{global_8h_a6d63f20edcbc2cb983c7267d9d0690a8}{ImageY}}[n]-\/-\/;}
-\DoxyCodeLine{00050\ \ \ \ \}\ \}\ \}}
-\DoxyCodeLine{00051\ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}(icode\ ==\ 2)\{}
-\DoxyCodeLine{00052\ \ \ \textcolor{keywordflow}{for}(n\ =\ 1;\ n\ <=\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}};\ n++)\ \{}
-\DoxyCodeLine{00053\ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{global_8h_ad2f384e523b15b13c82e3d6db95b402e}{atomType}}[n]\ !=\ \mbox{\hyperlink{global_8h_a79490e320593cb02fb16b7add1213072}{freezeAtomType}})\{}
-\DoxyCodeLine{00054\ \ \ \ \mbox{\hyperlink{global_8h_a6cbb00abd724a75be2c6424c84d18654}{vx}}[n]\ +=\ \mbox{\hyperlink{global_8h_a82d645cda6bea6506c7b5f4f7453986c}{ax}}[n]\ *\ 0.5\ *\ \mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}};\ }
-\DoxyCodeLine{00055\ \ \ \ \mbox{\hyperlink{global_8h_ad78254f6802793cc12b197889e6ea80d}{vy}}[n]\ +=\ \mbox{\hyperlink{global_8h_a68c7afda02d0f26c1987a4eee13928f2}{ay}}[n]\ *\ 0.5\ *\ \mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}};}
-\DoxyCodeLine{00056\ \}\ \}\ \}\ \}}
+\DoxyCodeLine{00028\ \textcolor{keywordtype}{double}\ atomMassi;}
+\DoxyCodeLine{00029\ \ \ \ }
+\DoxyCodeLine{00030\ \ \textcolor{keywordflow}{if}(icode\ ==\ 1)\{}
+\DoxyCodeLine{00031\ \ \textcolor{keywordflow}{for}\ (n=\ 1;\ n\ <=\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}};\ n++)\ \{}
+\DoxyCodeLine{00032\ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{global_8h_ad2f384e523b15b13c82e3d6db95b402e}{atomType}}[n]\ !=\ \mbox{\hyperlink{global_8h_a79490e320593cb02fb16b7add1213072}{freezeAtomType}})\{}
+\DoxyCodeLine{00033\ \ \ atomMassi\ =\ 1./\mbox{\hyperlink{global_8h_a1b28db247f294d5c24571ca1a942c4a4}{atomMass}}[n];}
+\DoxyCodeLine{00034\ \ \ \mbox{\hyperlink{global_8h_a82d645cda6bea6506c7b5f4f7453986c}{ax}}[n]\ =\ \mbox{\hyperlink{global_8h_af5a0b3a6e5601702b2c661dc34d046a2}{fx}}[n]\ *\ atomMassi;\ \ \ \ \mbox{\hyperlink{global_8h_a68c7afda02d0f26c1987a4eee13928f2}{ay}}[n]\ =\ \mbox{\hyperlink{global_8h_a869b2e7f75a6f2407d4a91d6f16c99ce}{fy}}[n]\ *\ atomMassi;\ \ \ \ }
+\DoxyCodeLine{00035\ \ \ \mbox{\hyperlink{global_8h_a6cbb00abd724a75be2c6424c84d18654}{vx}}[n]\ +=\ \mbox{\hyperlink{global_8h_a82d645cda6bea6506c7b5f4f7453986c}{ax}}[n]\ *\ 0.5\ *\ \mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}};\ }
+\DoxyCodeLine{00036\ \ \ \mbox{\hyperlink{global_8h_ad78254f6802793cc12b197889e6ea80d}{vy}}[n]\ +=\ \mbox{\hyperlink{global_8h_a68c7afda02d0f26c1987a4eee13928f2}{ay}}[n]\ *\ 0.5\ *\ \mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}};}
+\DoxyCodeLine{00037\ \ \ \mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}[n]\ +=\ \mbox{\hyperlink{global_8h_a6cbb00abd724a75be2c6424c84d18654}{vx}}[n]\ *\ \mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}};\ }
+\DoxyCodeLine{00038\ \ \ \mbox{\hyperlink{global_8h_af88ff31a9ae85beb713bd0c42815f1de}{ry}}[n]\ +=\ \mbox{\hyperlink{global_8h_ad78254f6802793cc12b197889e6ea80d}{vy}}[n]\ *\ \mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}};}
+\DoxyCodeLine{00039\ \ \ \}\ }
+\DoxyCodeLine{00040\ \ \ \textcolor{comment}{//Calculating\ the\ image\ flags\ here}}
+\DoxyCodeLine{00041\ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}[n]\ >=\ \mbox{\hyperlink{global_8h_adc110418e2efa5f31a9aa7c137471a2f}{regionH}}[1])\ \{}
+\DoxyCodeLine{00042\ \ \ \ \mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}[n]\ -\/=\ \mbox{\hyperlink{global_8h_a43c4f708b8d633b069355a121d6adbdc}{region}}[1];}
+\DoxyCodeLine{00043\ \ \ \ \mbox{\hyperlink{global_8h_a6cd103d74f5d525b4cae3e7af552be20}{ImageX}}[n]++;}
+\DoxyCodeLine{00044\ \ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}[n]\ <\ -\/\mbox{\hyperlink{global_8h_adc110418e2efa5f31a9aa7c137471a2f}{regionH}}[1])\ \{}
+\DoxyCodeLine{00045\ \ \ \ \mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}[n]\ +=\ \mbox{\hyperlink{global_8h_a43c4f708b8d633b069355a121d6adbdc}{region}}[1];}
+\DoxyCodeLine{00046\ \ \ \mbox{\hyperlink{global_8h_a6cd103d74f5d525b4cae3e7af552be20}{ImageX}}[n]-\/-\/;}
+\DoxyCodeLine{00047\ \ \ \}}
+\DoxyCodeLine{00048\ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{global_8h_af88ff31a9ae85beb713bd0c42815f1de}{ry}}[n]\ >=\ \mbox{\hyperlink{global_8h_adc110418e2efa5f31a9aa7c137471a2f}{regionH}}[2])\ \{}
+\DoxyCodeLine{00049\ \ \ \ \mbox{\hyperlink{global_8h_af88ff31a9ae85beb713bd0c42815f1de}{ry}}[n]\ -\/=\ \mbox{\hyperlink{global_8h_a43c4f708b8d633b069355a121d6adbdc}{region}}[2];}
+\DoxyCodeLine{00050\ \ \ \ \mbox{\hyperlink{global_8h_a6d63f20edcbc2cb983c7267d9d0690a8}{ImageY}}[n]++;}
+\DoxyCodeLine{00051\ \ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{global_8h_af88ff31a9ae85beb713bd0c42815f1de}{ry}}[n]\ <\ -\/\mbox{\hyperlink{global_8h_adc110418e2efa5f31a9aa7c137471a2f}{regionH}}[2])\ \{}
+\DoxyCodeLine{00052\ \ \ \ \mbox{\hyperlink{global_8h_af88ff31a9ae85beb713bd0c42815f1de}{ry}}[n]\ +=\ \mbox{\hyperlink{global_8h_a43c4f708b8d633b069355a121d6adbdc}{region}}[2];}
+\DoxyCodeLine{00053\ \ \ \ \mbox{\hyperlink{global_8h_a6d63f20edcbc2cb983c7267d9d0690a8}{ImageY}}[n]-\/-\/;}
+\DoxyCodeLine{00054\ \ \ \ \}\ \}\ \}}
+\DoxyCodeLine{00055\ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}(icode\ ==\ 2)\{}
+\DoxyCodeLine{00056\ \ \ \textcolor{keywordflow}{for}(n\ =\ 1;\ n\ <=\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}};\ n++)\ \{}
+\DoxyCodeLine{00057\ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{global_8h_ad2f384e523b15b13c82e3d6db95b402e}{atomType}}[n]\ !=\ \mbox{\hyperlink{global_8h_a79490e320593cb02fb16b7add1213072}{freezeAtomType}})\{}
+\DoxyCodeLine{00058\ \ \ \ atomMassi\ =\ 1./\mbox{\hyperlink{global_8h_a1b28db247f294d5c24571ca1a942c4a4}{atomMass}}[n];}
+\DoxyCodeLine{00059\ \ \ \ \mbox{\hyperlink{global_8h_a82d645cda6bea6506c7b5f4f7453986c}{ax}}[n]\ =\ \mbox{\hyperlink{global_8h_af5a0b3a6e5601702b2c661dc34d046a2}{fx}}[n]\ *\ atomMassi;\ \ \ \ \mbox{\hyperlink{global_8h_a68c7afda02d0f26c1987a4eee13928f2}{ay}}[n]\ =\ \mbox{\hyperlink{global_8h_a869b2e7f75a6f2407d4a91d6f16c99ce}{fy}}[n]\ *\ atomMassi;\ \ \ \ }
+\DoxyCodeLine{00060\ \ \ \ \mbox{\hyperlink{global_8h_a6cbb00abd724a75be2c6424c84d18654}{vx}}[n]\ +=\ \mbox{\hyperlink{global_8h_a82d645cda6bea6506c7b5f4f7453986c}{ax}}[n]\ *\ 0.5\ *\ \mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}};\ }
+\DoxyCodeLine{00061\ \ \ \ \mbox{\hyperlink{global_8h_ad78254f6802793cc12b197889e6ea80d}{vy}}[n]\ +=\ \mbox{\hyperlink{global_8h_a68c7afda02d0f26c1987a4eee13928f2}{ay}}[n]\ *\ 0.5\ *\ \mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}};}
+\DoxyCodeLine{00062\ \}\ \}\ \}\ \}}
 
 \end{DoxyCode}
 
 
-References \mbox{\hyperlink{global_8h_ad2f384e523b15b13c82e3d6db95b402e}{atom\+Type}}, \mbox{\hyperlink{global_8h_source_l00017}{ax}}, \mbox{\hyperlink{global_8h_source_l00017}{ay}}, \mbox{\hyperlink{global_8h_source_l00020}{deltaT}}, \mbox{\hyperlink{global_8h_a79490e320593cb02fb16b7add1213072}{freeze\+Atom\+Type}}, \mbox{\hyperlink{global_8h_a6cd103d74f5d525b4cae3e7af552be20}{ImageX}}, \mbox{\hyperlink{global_8h_source_l00047}{ImageY}}, \mbox{\hyperlink{global_8h_source_l00024}{n\+Atom}}, \mbox{\hyperlink{global_8h_a43c4f708b8d633b069355a121d6adbdc}{region}}, \mbox{\hyperlink{global_8h_source_l00020}{regionH}}, \mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}, \mbox{\hyperlink{global_8h_source_l00017}{ry}}, \mbox{\hyperlink{global_8h_source_l00017}{vx}}, and \mbox{\hyperlink{global_8h_source_l00017}{vy}}.
+References \mbox{\hyperlink{global_8h_a1b28db247f294d5c24571ca1a942c4a4}{atom\+Mass}}, \mbox{\hyperlink{global_8h_ad2f384e523b15b13c82e3d6db95b402e}{atom\+Type}}, \mbox{\hyperlink{global_8h_source_l00017}{ax}}, \mbox{\hyperlink{global_8h_source_l00017}{ay}}, \mbox{\hyperlink{global_8h_source_l00020}{deltaT}}, \mbox{\hyperlink{global_8h_a79490e320593cb02fb16b7add1213072}{freeze\+Atom\+Type}}, \mbox{\hyperlink{global_8h_source_l00017}{fx}}, \mbox{\hyperlink{global_8h_source_l00017}{fy}}, \mbox{\hyperlink{global_8h_a6cd103d74f5d525b4cae3e7af552be20}{ImageX}}, \mbox{\hyperlink{global_8h_source_l00050}{ImageY}}, \mbox{\hyperlink{global_8h_source_l00024}{n\+Atom}}, \mbox{\hyperlink{global_8h_a43c4f708b8d633b069355a121d6adbdc}{region}}, \mbox{\hyperlink{global_8h_source_l00020}{regionH}}, \mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}, \mbox{\hyperlink{global_8h_source_l00017}{ry}}, \mbox{\hyperlink{global_8h_source_l00017}{vx}}, and \mbox{\hyperlink{global_8h_source_l00017}{vy}}.
 
 
 
-Referenced by \mbox{\hyperlink{main_8c_source_l00051}{main()}}.
+Referenced by \mbox{\hyperlink{main_8c_source_l00043}{main()}}.
 
 Here is the caller graph for this function\+:
 \nopagebreak

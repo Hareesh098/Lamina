@@ -24,10 +24,14 @@
 #include <stdbool.h>
 #include "global.h" 
 
-bool HaltConditionCheck(double value, int stepCount) {
+bool HaltConditionCheck(double value) {
   
   if(value <= HaltCondition && value != 0) {
-  fprintf(fpresult, "Halt condition met at step = %d with Vrms = %.10f\n", stepCount, value);
+  printf("Halt condition met at step = %d with Vrms = %.16f\n", stepCount, value);
+  fprintf(fpresult, "Halt condition met at step = %d with Vrms = %.16f\n", stepCount, value);
+  fprintf(fpresult, "Final thermodynamic values:\n");
+  fprintf(fpresult, "%0.4lf\t%0.16lf\t%0.16lf\t%0.16lf\t%0.16lf\t%0.16lf\t%0.16lf\t%0.16lf\t%0.16lf\n", 
+  timeNow, vSum, potEnergy, kinEnergy, totEnergy, uSumPairPerAtom, BondEnergyPerAtom, pressure, virSum);
   return true;       // Signal that the halt condition is met
   }
  return false; // Halt condition not met

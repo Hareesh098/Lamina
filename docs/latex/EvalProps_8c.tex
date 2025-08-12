@@ -19,11 +19,11 @@ void \mbox{\hyperlink{EvalProps_8c_a2d0358bac91b7e98e7a5a83a69325eed}{Eval\+Prop
 
 
 \doxysubsection{Function Documentation}
-\Hypertarget{EvalProps_8c_a2d0358bac91b7e98e7a5a83a69325eed}\label{EvalProps_8c_a2d0358bac91b7e98e7a5a83a69325eed} 
-\index{EvalProps.c@{EvalProps.c}!EvalProps@{EvalProps}}
+\Hypertarget{EvalProps_8c_a2d0358bac91b7e98e7a5a83a69325eed}\index{EvalProps.c@{EvalProps.c}!EvalProps@{EvalProps}}
 \index{EvalProps@{EvalProps}!EvalProps.c@{EvalProps.c}}
 \doxysubsubsection{\texorpdfstring{EvalProps()}{EvalProps()}}
-{\footnotesize\ttfamily void Eval\+Props (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{EvalProps_8c_a2d0358bac91b7e98e7a5a83a69325eed} 
+void Eval\+Props (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
 
 
@@ -32,58 +32,61 @@ Definition at line \mbox{\hyperlink{EvalProps_8c_source_l00026}{26}} of file \mb
 
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00027\ \ \mbox{\hyperlink{global_8h_a11d147c64891830c9e79b3315b1b2e21}{real}}\ v,\ vv;}
-\DoxyCodeLine{00028\ \ \mbox{\hyperlink{global_8h_abdbf03f447f8b0adbae4c15974dac45f}{virSum}}\ =\ 0.0;}
-\DoxyCodeLine{00029\ \ \mbox{\hyperlink{global_8h_adccf176eee31c1ae7a4521f8a42e19ae}{vSumX}}\ =\ 0.0;\ \mbox{\hyperlink{global_8h_a74f7573f7c599b600da92918019291a5}{vSumY}}\ =\ 0.0;\ \mbox{\hyperlink{global_8h_a68c26a0c6b002f1da36c4be599ca5149}{vSum}}\ =\ 0.0;\ }
-\DoxyCodeLine{00030\ \ \mbox{\hyperlink{global_8h_a5a69ba53b920022cc82acded08812d9c}{vvSum}}\ =\ 0.;}
-\DoxyCodeLine{00031\ \ \textcolor{keywordtype}{int}\ n;}
-\DoxyCodeLine{00032\ }
-\DoxyCodeLine{00033\ \ \textcolor{keywordflow}{for}\ (n\ =\ 1;\ n\ <=\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}};\ n++)\ \{}
-\DoxyCodeLine{00034\ \ \ vv\ =\ 0.;}
-\DoxyCodeLine{00035\ \ \ \textcolor{comment}{//\ Initialize\ v\ with\ a\ default\ value\ to\ avoid\ "{}uninitialized"{}\ warning.}}
-\DoxyCodeLine{00036\ \ \ v\ =\ 0.0;}
-\DoxyCodeLine{00037\ \ \ \textcolor{comment}{//\ X\ direction\ velocity}}
-\DoxyCodeLine{00038\ \ \ \textcolor{keywordflow}{if}\ (strcmp(\mbox{\hyperlink{global_8h_ab8efd087a2de9e165fa9330d99beecc5}{solver}},\ \textcolor{stringliteral}{"{}Verlet"{}})\ ==\ 0)\ \{}
-\DoxyCodeLine{00039\ \ \ \ \ v\ =\ \mbox{\hyperlink{global_8h_a6cbb00abd724a75be2c6424c84d18654}{vx}}[n];}
-\DoxyCodeLine{00040\ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (strcmp(\mbox{\hyperlink{global_8h_ab8efd087a2de9e165fa9330d99beecc5}{solver}},\ \textcolor{stringliteral}{"{}LeapFrog"{}})\ ==\ 0)\ \{}
-\DoxyCodeLine{00041\ \ \ \ \ v\ =\ \mbox{\hyperlink{global_8h_a6cbb00abd724a75be2c6424c84d18654}{vx}}[n]\ -\/\ 0.5\ *\ \mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}}\ *\ \mbox{\hyperlink{global_8h_a82d645cda6bea6506c7b5f4f7453986c}{ax}}[n];}
-\DoxyCodeLine{00042\ \ \ \}}
-\DoxyCodeLine{00043\ \ \ \ \mbox{\hyperlink{global_8h_a68c26a0c6b002f1da36c4be599ca5149}{vSum}}\ +=\ v;}
-\DoxyCodeLine{00044\ \ \ \ vv\ +=\ \mbox{\hyperlink{global_8h_a88aaaec93066182aaf8cf3e0f8a676e2}{Sqr}}(v);}
-\DoxyCodeLine{00045\ \ \ \ \mbox{\hyperlink{global_8h_adccf176eee31c1ae7a4521f8a42e19ae}{vSumX}}\ +=\ v;\ }
-\DoxyCodeLine{00046\ \ \ \ \textcolor{comment}{//\ Y\ direction\ velocity}}
-\DoxyCodeLine{00047\ \ \ \ \textcolor{keywordflow}{if}\ (strcmp(\mbox{\hyperlink{global_8h_ab8efd087a2de9e165fa9330d99beecc5}{solver}},\ \textcolor{stringliteral}{"{}Verlet"{}})\ ==\ 0)\ \{}
-\DoxyCodeLine{00048\ \ \ \ v\ =\ \mbox{\hyperlink{global_8h_ad78254f6802793cc12b197889e6ea80d}{vy}}[n];}
-\DoxyCodeLine{00049\ \ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (strcmp(\mbox{\hyperlink{global_8h_ab8efd087a2de9e165fa9330d99beecc5}{solver}},\ \textcolor{stringliteral}{"{}LeapFrog"{}})\ ==\ 0)\ \{}
-\DoxyCodeLine{00050\ \ \ \ v\ =\ \mbox{\hyperlink{global_8h_ad78254f6802793cc12b197889e6ea80d}{vy}}[n]\ -\/\ 0.5\ *\ \mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}}\ *\ \mbox{\hyperlink{global_8h_a68c7afda02d0f26c1987a4eee13928f2}{ay}}[n];}
-\DoxyCodeLine{00051\ \ \ \ \}}
-\DoxyCodeLine{00052\ \ \ \ \mbox{\hyperlink{global_8h_a68c26a0c6b002f1da36c4be599ca5149}{vSum}}\ +=\ v;}
-\DoxyCodeLine{00053\ \ \ \ \mbox{\hyperlink{global_8h_a74f7573f7c599b600da92918019291a5}{vSumY}}\ +=\ v;}
-\DoxyCodeLine{00054\ \ \ \ vv\ +=\ \mbox{\hyperlink{global_8h_a88aaaec93066182aaf8cf3e0f8a676e2}{Sqr}}(v);}
-\DoxyCodeLine{00055\ \ \ \ \mbox{\hyperlink{global_8h_a5a69ba53b920022cc82acded08812d9c}{vvSum}}\ +=\ vv;}
-\DoxyCodeLine{00056\ \ \ \}}
-\DoxyCodeLine{00057\ }
-\DoxyCodeLine{00058\ \ \ \mbox{\hyperlink{global_8h_a445d936de68f213385df5c284ea1d81d}{kinEnergy}}\ =\ 0.5\ *\ \mbox{\hyperlink{global_8h_a5a69ba53b920022cc82acded08812d9c}{vvSum}}\ /\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}}\ ;}
-\DoxyCodeLine{00059\ \ \ \mbox{\hyperlink{global_8h_a35bf08d49aa04729a9f7dd23a464a826}{uSumPairPerAtom}}\ =\ \mbox{\hyperlink{global_8h_a9b7d6fb2c7936c1e648c8af3260beb25}{uSumPair}}\ /\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}}\ ;}
-\DoxyCodeLine{00060\ \ \ \mbox{\hyperlink{global_8h_aa53f052764d0986e9691ee3e941682d9}{BondEnergyPerAtom}}\ =\ \mbox{\hyperlink{global_8h_ace1b0540bf5b0561f14c46f5aa8d3d17}{TotalBondEnergy}}\ /\ (0.5*\mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}});\ \textcolor{comment}{//Factor\ of\ 0.5\ since\ each\ atom\ has\ one\ half\ the\ bond\ energy}}
-\DoxyCodeLine{00061\ \ \ \mbox{\hyperlink{global_8h_abd758be497a95843d6cbb071a9f99581}{potEnergy}}\ =\ \mbox{\hyperlink{global_8h_a35bf08d49aa04729a9f7dd23a464a826}{uSumPairPerAtom}}\ +\ \ \mbox{\hyperlink{global_8h_aa53f052764d0986e9691ee3e941682d9}{BondEnergyPerAtom}}\ ;}
-\DoxyCodeLine{00062\ \ \ \mbox{\hyperlink{global_8h_a025720826b3728fd77ab18384b7369bf}{totEnergy}}\ =\ \mbox{\hyperlink{global_8h_a445d936de68f213385df5c284ea1d81d}{kinEnergy}}\ +\ \mbox{\hyperlink{global_8h_abd758be497a95843d6cbb071a9f99581}{potEnergy}};}
-\DoxyCodeLine{00063\ \ \ \mbox{\hyperlink{global_8h_ad41df8a242cc872c157a7328617f4957}{virSumxx}}\ =\ \mbox{\hyperlink{global_8h_a4ca279a3a01228351fec03dd3c051389}{virSumPairxx}}\ \ +\ \mbox{\hyperlink{global_8h_ab86ba14519d191322a45fa6f760b16f8}{virSumBondxx}}\ ;}
-\DoxyCodeLine{00064\ \ \ \mbox{\hyperlink{global_8h_a1fc6778eedb1b18ef5b97d198eee67e9}{virSumyy}}\ =\ \mbox{\hyperlink{global_8h_a1e26755e037e321d30f5a5a128140e2d}{virSumPairyy}}\ \ +\ \mbox{\hyperlink{global_8h_aee51ff7fe82a7228ea1348855cf89915}{virSumBondyy}}\ ;}
-\DoxyCodeLine{00065\ \ \ \mbox{\hyperlink{global_8h_a486d537e9ff9b9bc9b3a538768d282b0}{virSumxy}}\ =\ \mbox{\hyperlink{global_8h_af5252e908f208e8efbc603a117c51cb7}{virSumPairxy}}\ \ +\ \mbox{\hyperlink{global_8h_a6669a78293d832c3b0c074886e6ecd19}{virSumBondxy}}\ ;}
-\DoxyCodeLine{00066\ \ \ \mbox{\hyperlink{global_8h_abdbf03f447f8b0adbae4c15974dac45f}{virSum}}\ =\ \mbox{\hyperlink{global_8h_a217147ba7e53c5aa91861295fd29acab}{virSumPair}}\ +\ \mbox{\hyperlink{global_8h_a08413ab34f5604e910f1dbdc021a3c5f}{virSumBond}};}
-\DoxyCodeLine{00067\ \ \ \mbox{\hyperlink{global_8h_aee1c5d07ac79c5c036195858afe33405}{pressure}}\ =\ \mbox{\hyperlink{global_8h_a6f8c052f8417728038991f7f2826d38d}{density}}\ *\ (\mbox{\hyperlink{global_8h_a5a69ba53b920022cc82acded08812d9c}{vvSum}}\ +\ \mbox{\hyperlink{global_8h_abdbf03f447f8b0adbae4c15974dac45f}{virSum}})\ /\ (\mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}}\ *\ \mbox{\hyperlink{global_8h_a2b1fd2d28c6a7d4a3f7027cc1b6466f3}{NDIM}});}
-\DoxyCodeLine{00068\ }
-\DoxyCodeLine{00069\ \}}
+\DoxyCodeLine{00027\ \ \textcolor{keywordtype}{double}\ v;}
+\DoxyCodeLine{00028\ \ \textcolor{keywordtype}{int}\ n;}
+\DoxyCodeLine{00029\ \ \textcolor{keywordtype}{double}\ atomMassn;}
+\DoxyCodeLine{00030\ \ \textcolor{keywordtype}{double}\ KineEnrXSum,\ KineEnrYSum;}
+\DoxyCodeLine{00031\ \ \mbox{\hyperlink{global_8h_abdbf03f447f8b0adbae4c15974dac45f}{virSum}}\ =\ 0.0;}
+\DoxyCodeLine{00032\ \ \mbox{\hyperlink{global_8h_adccf176eee31c1ae7a4521f8a42e19ae}{vSumX}}\ =\ 0.0;\ \mbox{\hyperlink{global_8h_a74f7573f7c599b600da92918019291a5}{vSumY}}\ =\ 0.0;\ \mbox{\hyperlink{global_8h_a68c26a0c6b002f1da36c4be599ca5149}{vSum}}\ =\ 0.0;\ \mbox{\hyperlink{global_8h_a5a69ba53b920022cc82acded08812d9c}{vvSum}}\ =\ 0.0;}
+\DoxyCodeLine{00033\ \ KineEnrXSum\ =\ 0.0;\ KineEnrYSum\ =\ 0.0;}
+\DoxyCodeLine{00034\ \ }
+\DoxyCodeLine{00035\ \ \textcolor{keywordflow}{for}\ (n\ =\ 1;\ n\ <=\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}};\ n++)\ \{}
+\DoxyCodeLine{00036\ \ \ \textcolor{comment}{//\ Initialize\ v\ with\ a\ default\ value\ to\ avoid\ "{}uninitialized"{}\ warning.}}
+\DoxyCodeLine{00037\ \ \ v\ =\ 0.0;}
+\DoxyCodeLine{00038\ \ \ atomMassn\ =\ \mbox{\hyperlink{global_8h_a1b28db247f294d5c24571ca1a942c4a4}{atomMass}}[n];}
+\DoxyCodeLine{00039\ \ \ \textcolor{comment}{//\ X\ direction\ velocity}}
+\DoxyCodeLine{00040\ \ \ \textcolor{keywordflow}{if}\ (strcmp(\mbox{\hyperlink{global_8h_ab8efd087a2de9e165fa9330d99beecc5}{solver}},\ \textcolor{stringliteral}{"{}Verlet"{}})\ ==\ 0)\ \{}
+\DoxyCodeLine{00041\ \ \ \ \ v\ =\ \mbox{\hyperlink{global_8h_a6cbb00abd724a75be2c6424c84d18654}{vx}}[n];}
+\DoxyCodeLine{00042\ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (strcmp(\mbox{\hyperlink{global_8h_ab8efd087a2de9e165fa9330d99beecc5}{solver}},\ \textcolor{stringliteral}{"{}LeapFrog"{}})\ ==\ 0)\ \{}
+\DoxyCodeLine{00043\ \ \ \ \ v\ =\ \mbox{\hyperlink{global_8h_a6cbb00abd724a75be2c6424c84d18654}{vx}}[n]\ -\/\ 0.5\ *\ \mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}}\ *\ \mbox{\hyperlink{global_8h_a82d645cda6bea6506c7b5f4f7453986c}{ax}}[n];}
+\DoxyCodeLine{00044\ \ \ \}}
+\DoxyCodeLine{00045\ \ \ \ \mbox{\hyperlink{global_8h_a68c26a0c6b002f1da36c4be599ca5149}{vSum}}\ +=\ v;}
+\DoxyCodeLine{00046\ \ \ \ \mbox{\hyperlink{global_8h_a5a69ba53b920022cc82acded08812d9c}{vvSum}}\ +=\ \mbox{\hyperlink{global_8h_a88aaaec93066182aaf8cf3e0f8a676e2}{Sqr}}(v);}
+\DoxyCodeLine{00047\ \ \ \ KineEnrXSum\ +=\ 0.5\ *\ atomMassn\ *\ \mbox{\hyperlink{global_8h_a88aaaec93066182aaf8cf3e0f8a676e2}{Sqr}}(v);}
+\DoxyCodeLine{00048\ \ \ \ \mbox{\hyperlink{global_8h_adccf176eee31c1ae7a4521f8a42e19ae}{vSumX}}\ +=\ v;\ }
+\DoxyCodeLine{00049\ \ \ \ \textcolor{comment}{//\ Y\ direction\ velocity}}
+\DoxyCodeLine{00050\ \ \ \ \textcolor{keywordflow}{if}\ (strcmp(\mbox{\hyperlink{global_8h_ab8efd087a2de9e165fa9330d99beecc5}{solver}},\ \textcolor{stringliteral}{"{}Verlet"{}})\ ==\ 0)\ \{}
+\DoxyCodeLine{00051\ \ \ \ v\ =\ \mbox{\hyperlink{global_8h_ad78254f6802793cc12b197889e6ea80d}{vy}}[n];}
+\DoxyCodeLine{00052\ \ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (strcmp(\mbox{\hyperlink{global_8h_ab8efd087a2de9e165fa9330d99beecc5}{solver}},\ \textcolor{stringliteral}{"{}LeapFrog"{}})\ ==\ 0)\ \{}
+\DoxyCodeLine{00053\ \ \ \ v\ =\ \mbox{\hyperlink{global_8h_ad78254f6802793cc12b197889e6ea80d}{vy}}[n]\ -\/\ 0.5\ *\ \mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}}\ *\ \mbox{\hyperlink{global_8h_a68c7afda02d0f26c1987a4eee13928f2}{ay}}[n];}
+\DoxyCodeLine{00054\ \ \ \ \}}
+\DoxyCodeLine{00055\ \ \ \ \mbox{\hyperlink{global_8h_a68c26a0c6b002f1da36c4be599ca5149}{vSum}}\ +=\ v;}
+\DoxyCodeLine{00056\ \ \ \ \mbox{\hyperlink{global_8h_a74f7573f7c599b600da92918019291a5}{vSumY}}\ +=\ v;}
+\DoxyCodeLine{00057\ \ \ \ \mbox{\hyperlink{global_8h_a5a69ba53b920022cc82acded08812d9c}{vvSum}}\ +=\ \mbox{\hyperlink{global_8h_a88aaaec93066182aaf8cf3e0f8a676e2}{Sqr}}(v);}
+\DoxyCodeLine{00058\ \ \ \ KineEnrYSum\ +=\ 0.5\ *\ atomMassn\ *\ \mbox{\hyperlink{global_8h_a88aaaec93066182aaf8cf3e0f8a676e2}{Sqr}}(v);}
+\DoxyCodeLine{00059\ \ \ \}}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \ \ \mbox{\hyperlink{global_8h_a445d936de68f213385df5c284ea1d81d}{kinEnergy}}\ =\ (KineEnrXSum\ +\ KineEnrYSum)\ /\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}}\ ;}
+\DoxyCodeLine{00062\ \ \ \mbox{\hyperlink{global_8h_a35bf08d49aa04729a9f7dd23a464a826}{uSumPairPerAtom}}\ =\ \mbox{\hyperlink{global_8h_a9b7d6fb2c7936c1e648c8af3260beb25}{uSumPair}}\ /\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}}\ ;}
+\DoxyCodeLine{00063\ \ \ \mbox{\hyperlink{global_8h_aa53f052764d0986e9691ee3e941682d9}{BondEnergyPerAtom}}\ =\ \mbox{\hyperlink{global_8h_ace1b0540bf5b0561f14c46f5aa8d3d17}{TotalBondEnergy}}\ /\ (0.5*\mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}});\ \textcolor{comment}{//Factor\ of\ 0.5\ since\ each\ atom\ has\ one\ half\ the\ bond\ energy}}
+\DoxyCodeLine{00064\ \ \ \mbox{\hyperlink{global_8h_abd758be497a95843d6cbb071a9f99581}{potEnergy}}\ =\ \mbox{\hyperlink{global_8h_a35bf08d49aa04729a9f7dd23a464a826}{uSumPairPerAtom}}\ +\ \ \mbox{\hyperlink{global_8h_aa53f052764d0986e9691ee3e941682d9}{BondEnergyPerAtom}}\ ;}
+\DoxyCodeLine{00065\ \ \ \mbox{\hyperlink{global_8h_a025720826b3728fd77ab18384b7369bf}{totEnergy}}\ =\ \mbox{\hyperlink{global_8h_a445d936de68f213385df5c284ea1d81d}{kinEnergy}}\ +\ \mbox{\hyperlink{global_8h_abd758be497a95843d6cbb071a9f99581}{potEnergy}};}
+\DoxyCodeLine{00066\ \ \ \mbox{\hyperlink{global_8h_ad41df8a242cc872c157a7328617f4957}{virSumxx}}\ =\ \mbox{\hyperlink{global_8h_a4ca279a3a01228351fec03dd3c051389}{virSumPairxx}}\ \ +\ \mbox{\hyperlink{global_8h_ab86ba14519d191322a45fa6f760b16f8}{virSumBondxx}}\ ;}
+\DoxyCodeLine{00067\ \ \ \mbox{\hyperlink{global_8h_a1fc6778eedb1b18ef5b97d198eee67e9}{virSumyy}}\ =\ \mbox{\hyperlink{global_8h_a1e26755e037e321d30f5a5a128140e2d}{virSumPairyy}}\ \ +\ \mbox{\hyperlink{global_8h_aee51ff7fe82a7228ea1348855cf89915}{virSumBondyy}}\ ;}
+\DoxyCodeLine{00068\ \ \ \mbox{\hyperlink{global_8h_a486d537e9ff9b9bc9b3a538768d282b0}{virSumxy}}\ =\ \mbox{\hyperlink{global_8h_af5252e908f208e8efbc603a117c51cb7}{virSumPairxy}}\ \ +\ \mbox{\hyperlink{global_8h_a6669a78293d832c3b0c074886e6ecd19}{virSumBondxy}}\ ;}
+\DoxyCodeLine{00069\ \ \ \mbox{\hyperlink{global_8h_abdbf03f447f8b0adbae4c15974dac45f}{virSum}}\ =\ \mbox{\hyperlink{global_8h_a217147ba7e53c5aa91861295fd29acab}{virSumPair}}\ +\ \mbox{\hyperlink{global_8h_a08413ab34f5604e910f1dbdc021a3c5f}{virSumBond}};}
+\DoxyCodeLine{00070\ \ \ \mbox{\hyperlink{global_8h_aee1c5d07ac79c5c036195858afe33405}{pressure}}\ =\ \mbox{\hyperlink{global_8h_a6f8c052f8417728038991f7f2826d38d}{density}}\ *\ (\mbox{\hyperlink{global_8h_a5a69ba53b920022cc82acded08812d9c}{vvSum}}\ +\ \mbox{\hyperlink{global_8h_abdbf03f447f8b0adbae4c15974dac45f}{virSum}})\ /\ (\mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}}\ *\ \mbox{\hyperlink{global_8h_a2b1fd2d28c6a7d4a3f7027cc1b6466f3}{NDIM}});}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ \}}
 
 \end{DoxyCode}
 
 
-References \mbox{\hyperlink{global_8h_source_l00017}{ax}}, \mbox{\hyperlink{global_8h_source_l00017}{ay}}, \mbox{\hyperlink{global_8h_source_l00038}{Bond\+Energy\+Per\+Atom}}, \mbox{\hyperlink{global_8h_source_l00020}{deltaT}}, \mbox{\hyperlink{global_8h_source_l00021}{density}}, \mbox{\hyperlink{global_8h_source_l00020}{kin\+Energy}}, \mbox{\hyperlink{global_8h_source_l00024}{n\+Atom}}, \mbox{\hyperlink{global_8h_source_l00013}{NDIM}}, \mbox{\hyperlink{global_8h_source_l00020}{pot\+Energy}}, \mbox{\hyperlink{global_8h_source_l00021}{pressure}}, \mbox{\hyperlink{global_8h_ab8efd087a2de9e165fa9330d99beecc5}{solver}}, \mbox{\hyperlink{global_8h_source_l00014}{Sqr}}, \mbox{\hyperlink{global_8h_ace1b0540bf5b0561f14c46f5aa8d3d17}{Total\+Bond\+Energy}}, \mbox{\hyperlink{global_8h_source_l00020}{tot\+Energy}}, \mbox{\hyperlink{global_8h_a9b7d6fb2c7936c1e648c8af3260beb25}{u\+Sum\+Pair}}, \mbox{\hyperlink{global_8h_source_l00083}{u\+Sum\+Pair\+Per\+Atom}}, \mbox{\hyperlink{global_8h_source_l00021}{vir\+Sum}}, \mbox{\hyperlink{global_8h_a08413ab34f5604e910f1dbdc021a3c5f}{vir\+Sum\+Bond}}, \mbox{\hyperlink{global_8h_source_l00084}{vir\+Sum\+Bondxx}}, \mbox{\hyperlink{global_8h_source_l00084}{vir\+Sum\+Bondxy}}, \mbox{\hyperlink{global_8h_source_l00084}{vir\+Sum\+Bondyy}}, \mbox{\hyperlink{global_8h_source_l00083}{vir\+Sum\+Pair}}, \mbox{\hyperlink{global_8h_source_l00083}{vir\+Sum\+Pairxx}}, \mbox{\hyperlink{global_8h_source_l00083}{vir\+Sum\+Pairxy}}, \mbox{\hyperlink{global_8h_source_l00083}{vir\+Sum\+Pairyy}}, \mbox{\hyperlink{global_8h_ad41df8a242cc872c157a7328617f4957}{vir\+Sumxx}}, \mbox{\hyperlink{global_8h_source_l00085}{vir\+Sumxy}}, \mbox{\hyperlink{global_8h_source_l00085}{vir\+Sumyy}}, \mbox{\hyperlink{global_8h_source_l00021}{v\+Sum}}, \mbox{\hyperlink{global_8h_source_l00021}{v\+SumX}}, \mbox{\hyperlink{global_8h_source_l00021}{v\+SumY}}, \mbox{\hyperlink{global_8h_source_l00021}{vv\+Sum}}, \mbox{\hyperlink{global_8h_source_l00017}{vx}}, and \mbox{\hyperlink{global_8h_source_l00017}{vy}}.
+References \mbox{\hyperlink{global_8h_a1b28db247f294d5c24571ca1a942c4a4}{atom\+Mass}}, \mbox{\hyperlink{global_8h_source_l00017}{ax}}, \mbox{\hyperlink{global_8h_source_l00017}{ay}}, \mbox{\hyperlink{global_8h_source_l00040}{Bond\+Energy\+Per\+Atom}}, \mbox{\hyperlink{global_8h_source_l00020}{deltaT}}, \mbox{\hyperlink{global_8h_source_l00020}{density}}, \mbox{\hyperlink{global_8h_source_l00020}{kin\+Energy}}, \mbox{\hyperlink{global_8h_source_l00024}{n\+Atom}}, \mbox{\hyperlink{global_8h_source_l00013}{NDIM}}, \mbox{\hyperlink{global_8h_source_l00020}{pot\+Energy}}, \mbox{\hyperlink{global_8h_source_l00021}{pressure}}, \mbox{\hyperlink{global_8h_ab8efd087a2de9e165fa9330d99beecc5}{solver}}, \mbox{\hyperlink{global_8h_source_l00014}{Sqr}}, \mbox{\hyperlink{global_8h_ace1b0540bf5b0561f14c46f5aa8d3d17}{Total\+Bond\+Energy}}, \mbox{\hyperlink{global_8h_source_l00020}{tot\+Energy}}, \mbox{\hyperlink{global_8h_a9b7d6fb2c7936c1e648c8af3260beb25}{u\+Sum\+Pair}}, \mbox{\hyperlink{global_8h_source_l00088}{u\+Sum\+Pair\+Per\+Atom}}, \mbox{\hyperlink{global_8h_source_l00021}{vir\+Sum}}, \mbox{\hyperlink{global_8h_a08413ab34f5604e910f1dbdc021a3c5f}{vir\+Sum\+Bond}}, \mbox{\hyperlink{global_8h_source_l00089}{vir\+Sum\+Bondxx}}, \mbox{\hyperlink{global_8h_source_l00089}{vir\+Sum\+Bondxy}}, \mbox{\hyperlink{global_8h_source_l00089}{vir\+Sum\+Bondyy}}, \mbox{\hyperlink{global_8h_source_l00088}{vir\+Sum\+Pair}}, \mbox{\hyperlink{global_8h_source_l00088}{vir\+Sum\+Pairxx}}, \mbox{\hyperlink{global_8h_source_l00088}{vir\+Sum\+Pairxy}}, \mbox{\hyperlink{global_8h_source_l00088}{vir\+Sum\+Pairyy}}, \mbox{\hyperlink{global_8h_ad41df8a242cc872c157a7328617f4957}{vir\+Sumxx}}, \mbox{\hyperlink{global_8h_source_l00090}{vir\+Sumxy}}, \mbox{\hyperlink{global_8h_source_l00090}{vir\+Sumyy}}, \mbox{\hyperlink{global_8h_source_l00021}{v\+Sum}}, \mbox{\hyperlink{global_8h_source_l00021}{v\+SumX}}, \mbox{\hyperlink{global_8h_source_l00021}{v\+SumY}}, \mbox{\hyperlink{global_8h_source_l00021}{vv\+Sum}}, \mbox{\hyperlink{global_8h_source_l00017}{vx}}, and \mbox{\hyperlink{global_8h_source_l00017}{vy}}.
 
 
 
-Referenced by \mbox{\hyperlink{main_8c_source_l00051}{main()}}.
+Referenced by \mbox{\hyperlink{main_8c_source_l00043}{main()}}.
 
 Here is the caller graph for this function\+:
 \nopagebreak

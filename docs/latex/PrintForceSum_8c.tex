@@ -1,0 +1,92 @@
+\doxysection{source/\+Print\+Force\+Sum.c File Reference}
+\hypertarget{PrintForceSum_8c}{}\label{PrintForceSum_8c}\index{source/PrintForceSum.c@{source/PrintForceSum.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include "{}global.\+h"{}}\newline
+Include dependency graph for Print\+Force\+Sum.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=286pt]{PrintForceSum_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{PrintForceSum_8c_a3bd430d86d1230829eb92d3a7e8b0553}{Print\+Force\+Sum}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{PrintForceSum_8c_a3bd430d86d1230829eb92d3a7e8b0553}\index{PrintForceSum.c@{PrintForceSum.c}!PrintForceSum@{PrintForceSum}}
+\index{PrintForceSum@{PrintForceSum}!PrintForceSum.c@{PrintForceSum.c}}
+\doxysubsubsection{\texorpdfstring{PrintForceSum()}{PrintForceSum()}}
+{\footnotesize\ttfamily \label{PrintForceSum_8c_a3bd430d86d1230829eb92d3a7e8b0553} 
+void Print\+Force\+Sum (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{PrintForceSum_8c_source_l00028}{28}} of file \mbox{\hyperlink{PrintForceSum_8c_source}{Print\+Force\+Sum.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00029\ \ \textcolor{keywordtype}{int}\ n;}
+\DoxyCodeLine{00030\ \ \textcolor{keywordtype}{double}\ forceSumxAtomType1,\ forceSumxAtomType2,\ forceSumxAtomType3,\ forceSumxAtomType4,\ forceSumxAtomType5;}
+\DoxyCodeLine{00031\ \ \textcolor{keywordtype}{double}\ forceSumyAtomType1,\ forceSumyAtomType2,\ forceSumyAtomType3,\ forceSumyAtomType4,\ forceSumyAtomType5;}
+\DoxyCodeLine{00032\ \ }
+\DoxyCodeLine{00033\ \ forceSumxAtomType1\ =\ 0.0;\ \ forceSumyAtomType1\ =\ 0.0;\ }
+\DoxyCodeLine{00034\ \ forceSumxAtomType2\ =\ 0.0;\ \ forceSumyAtomType2\ =\ 0.0;\ }
+\DoxyCodeLine{00035\ \ forceSumxAtomType3\ =\ 0.0;\ \ forceSumyAtomType3\ =\ 0.0;\ }
+\DoxyCodeLine{00036\ \ forceSumxAtomType4\ =\ 0.0;\ \ forceSumyAtomType4\ =\ 0.0;\ }
+\DoxyCodeLine{00037\ \ forceSumxAtomType5\ =\ 0.0;\ \ forceSumyAtomType5\ =\ 0.0;\ }
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \ \textcolor{keywordflow}{for}(n\ =\ 1;\ n\ <=\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}};\ n++)\{}
+\DoxyCodeLine{00041\ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{global_8h_ad2f384e523b15b13c82e3d6db95b402e}{atomType}}[n]\ ==\ 1)\{}
+\DoxyCodeLine{00042\ \ \ forceSumxAtomType1\ +=\ \mbox{\hyperlink{global_8h_af5a0b3a6e5601702b2c661dc34d046a2}{fx}}[n];}
+\DoxyCodeLine{00043\ \ \ forceSumyAtomType1\ \ +=\ \mbox{\hyperlink{global_8h_a869b2e7f75a6f2407d4a91d6f16c99ce}{fy}}[n];}
+\DoxyCodeLine{00044\ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}(\mbox{\hyperlink{global_8h_ad2f384e523b15b13c82e3d6db95b402e}{atomType}}[n]\ ==\ 2)\{}
+\DoxyCodeLine{00045\ \ \ forceSumxAtomType2\ +=\ \mbox{\hyperlink{global_8h_af5a0b3a6e5601702b2c661dc34d046a2}{fx}}[n];}
+\DoxyCodeLine{00046\ \ \ forceSumyAtomType2\ \ +=\ \mbox{\hyperlink{global_8h_a869b2e7f75a6f2407d4a91d6f16c99ce}{fy}}[n];}
+\DoxyCodeLine{00047\ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}(\mbox{\hyperlink{global_8h_ad2f384e523b15b13c82e3d6db95b402e}{atomType}}[n]\ ==\ 3)\{}
+\DoxyCodeLine{00048\ \ \ forceSumxAtomType3\ +=\ \mbox{\hyperlink{global_8h_af5a0b3a6e5601702b2c661dc34d046a2}{fx}}[n];}
+\DoxyCodeLine{00049\ \ \ forceSumyAtomType3\ \ +=\ \mbox{\hyperlink{global_8h_a869b2e7f75a6f2407d4a91d6f16c99ce}{fy}}[n];}
+\DoxyCodeLine{00050\ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}(\mbox{\hyperlink{global_8h_ad2f384e523b15b13c82e3d6db95b402e}{atomType}}[n]\ ==\ 4)\{}
+\DoxyCodeLine{00051\ \ \ forceSumxAtomType4\ +=\ \mbox{\hyperlink{global_8h_af5a0b3a6e5601702b2c661dc34d046a2}{fx}}[n];}
+\DoxyCodeLine{00052\ \ \ forceSumyAtomType4\ +=\ \mbox{\hyperlink{global_8h_a869b2e7f75a6f2407d4a91d6f16c99ce}{fy}}[n];}
+\DoxyCodeLine{00053\ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}(\mbox{\hyperlink{global_8h_ad2f384e523b15b13c82e3d6db95b402e}{atomType}}[n]\ ==\ 5)\{}
+\DoxyCodeLine{00054\ \ \ forceSumxAtomType5\ +=\ \mbox{\hyperlink{global_8h_af5a0b3a6e5601702b2c661dc34d046a2}{fx}}[n];}
+\DoxyCodeLine{00055\ \ \ forceSumyAtomType5\ +=\ \mbox{\hyperlink{global_8h_a869b2e7f75a6f2407d4a91d6f16c99ce}{fy}}[n];}
+\DoxyCodeLine{00056\ \ \ \}}
+\DoxyCodeLine{00057\ \ \}\ }
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \ fprintf(\mbox{\hyperlink{global_8h_a798c09f6e5bdfdaab8c8a303144eeeb6}{fpforce}},\ \textcolor{stringliteral}{"{}\%0.4lf\(\backslash\)t\%0.16lf\(\backslash\)t\%0.16lf\(\backslash\)t\%0.16lf\(\backslash\)t\%0.16lf\(\backslash\)t\%0.16f\(\backslash\)t\%0.16lf\(\backslash\)t\%0.16lf\(\backslash\)t\%0.16lf\(\backslash\)t\%0.16lf\(\backslash\)t\%0.16lf\(\backslash\)t\%0.16f\(\backslash\)t\%0.16f\(\backslash\)n"{}},\ \mbox{\hyperlink{global_8h_abb2aee8c6108dd86a8da33115d249d71}{timeNow}},\ }
+\DoxyCodeLine{00060\ \ forceSumxAtomType1,\ forceSumyAtomType1,\ }
+\DoxyCodeLine{00061\ \ forceSumxAtomType2,\ forceSumyAtomType2,\ }
+\DoxyCodeLine{00062\ \ forceSumxAtomType3,\ forceSumyAtomType3,\ }
+\DoxyCodeLine{00063\ \ forceSumxAtomType4,\ forceSumyAtomType4,\ }
+\DoxyCodeLine{00064\ \ forceSumxAtomType5,\ forceSumyAtomType5,\ }
+\DoxyCodeLine{00065\ \ \mbox{\hyperlink{global_8h_af3214cd66a361a1bc7f8ad9e168bed9b}{forceSumxExtern}},\ \mbox{\hyperlink{global_8h_ac7ea211438e84563f9d2a9db7446bc7f}{forceSumyExtern}});}
+\DoxyCodeLine{00066\ \ fflush(\mbox{\hyperlink{global_8h_a798c09f6e5bdfdaab8c8a303144eeeb6}{fpforce}});}
+\DoxyCodeLine{00067\ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{global_8h_ad2f384e523b15b13c82e3d6db95b402e}{atom\+Type}}, \mbox{\hyperlink{global_8h_source_l00053}{force\+Sumx\+Extern}}, \mbox{\hyperlink{global_8h_source_l00053}{force\+Sumy\+Extern}}, \mbox{\hyperlink{global_8h_a798c09f6e5bdfdaab8c8a303144eeeb6}{fpforce}}, \mbox{\hyperlink{global_8h_source_l00017}{fx}}, \mbox{\hyperlink{global_8h_source_l00017}{fy}}, \mbox{\hyperlink{global_8h_source_l00024}{n\+Atom}}, and \mbox{\hyperlink{global_8h_source_l00020}{time\+Now}}.
+
+
+
+Referenced by \mbox{\hyperlink{main_8c_source_l00043}{main()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=243pt]{PrintForceSum_8c_a3bd430d86d1230829eb92d3a7e8b0553_icgraph}
+\end{center}
+\end{figure}

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['setupjob_0',['SetupJob',['../main_8c.html#a9110280655b1015bb1d792845e028775',1,'SetupJob():&#160;SetupJob.c'],['../SetupJob_8c.html#a9110280655b1015bb1d792845e028775',1,'SetupJob():&#160;SetupJob.c']]]
+  ['readbinaryrestart_0',['ReadBinaryRestart',['../Init_8c.html#a9e39462da5da9af196498346d14e1686',1,'ReadBinaryRestart(const char *filename):&#160;ReadRestartBinary.c'],['../ReadRestartBinary_8c.html#a9e39462da5da9af196498346d14e1686',1,'ReadBinaryRestart(const char *filename):&#160;ReadRestartBinary.c']]]
 ];

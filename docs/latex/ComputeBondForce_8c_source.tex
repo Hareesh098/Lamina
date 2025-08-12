@@ -45,12 +45,12 @@
 \DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00041}00041\ \ \ \}\ \textcolor{comment}{//Important\ change\ made\ on\ 03Apr2025.\ Mention\ it\ in\ GitHub}}
 \DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00042}00042\ }
 \DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00043}00043\ \ \ \textcolor{keywordtype}{int}\ atom1ID,\ atom2ID;}
-\DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00044}00044\ \ \ \ }
+\DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00044}00044\ }
 \DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00045}00045\ \ \ \textcolor{keywordflow}{for}(n=1;\ n<=\mbox{\hyperlink{global_8h_a89d3bca785c9af9c4a154dc6642add4d}{nBond}};\ n++)\{}
 \DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00046}00046\ \ \ \ rr\ =\ 0.0;\ rri\ =\ 0.0;\ fcVal\ =\ 0.0;\ \ fdVal\ =\ 0.0;\ \mbox{\hyperlink{global_8h_ab13bb637cb4ef7ef1f7aafad19bb8558}{strech}}\ =\ 0.0;}
 \DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00047}00047\ \ \ \ atom1ID\ =\ \mbox{\hyperlink{global_8h_a7ef9937bc3aea03091e40e733df7353e}{atom1}}[n];}
 \DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00048}00048\ \ \ \ atom2ID\ =\ \mbox{\hyperlink{global_8h_a28d9ba88ad3c8e8b5cc5608b2cc0b0b5}{atom2}}[n];}
-\DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00049}00049\ \ \ \ }
+\DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00049}00049\ }
 \DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00050}00050\ \ \ \ dr[1]\ =\ \mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}[atom1ID]\ -\/\ \mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}[atom2ID];}
 \DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00051}00051\ \ \ \ \textcolor{keywordflow}{if}(dr[1]\ >=\ \mbox{\hyperlink{global_8h_adc110418e2efa5f31a9aa7c137471a2f}{regionH}}[1])\ }
 \DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00052}00052\ \ \ \ \ dr[1]\ -\/=\ \mbox{\hyperlink{global_8h_a43c4f708b8d633b069355a121d6adbdc}{region}}[1];}
@@ -67,7 +67,7 @@
 \DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00063}00063\ \ \ \ \ \textcolor{keywordflow}{if}(dr[1]\ >=\ \mbox{\hyperlink{global_8h_adc110418e2efa5f31a9aa7c137471a2f}{regionH}}[1])\ dr[1]\ -\/=\ \mbox{\hyperlink{global_8h_a43c4f708b8d633b069355a121d6adbdc}{region}}[1];}
 \DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00064}00064\ \ \ \ dr[2]\ +=\ \mbox{\hyperlink{global_8h_a43c4f708b8d633b069355a121d6adbdc}{region}}[2];}
 \DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00065}00065\ \ \ \}}
-\DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00066}00066\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00066}00066\ \ \ \ }
 \DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00067}00067\ \ \ \ rr\ =\ \mbox{\hyperlink{global_8h_a88aaaec93066182aaf8cf3e0f8a676e2}{Sqr}}(dr[1])\ +\ \mbox{\hyperlink{global_8h_a88aaaec93066182aaf8cf3e0f8a676e2}{Sqr}}(dr[2]);}
 \DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00068}00068\ \ \ \ r\ =\ sqrt(rr);}
 \DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00069}00069\ \ \ \ rri\ =\ 1.0/rr;}
@@ -85,13 +85,13 @@
 \DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00081}00081\ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{global_8h_a9a92b6a568b5731eafbca7a35ba6a5af}{DampFlag}}\ ==\ 1)\{}
 \DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00082}00082\ \ \ \ \mbox{\hyperlink{global_8h_ae25566f54b864b50af8b06ce249b07bd}{nodeDragx}}[atom1ID]\ =\ \ fdVal\ *\ dr[1];\ \ \textcolor{comment}{//node-\/node\ drag\ \ //Important\ change\ made\ on\ 03Apr2025.\ Mention\ it\ in\ GitHub}}
 \DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00083}00083\ \ \ \ \mbox{\hyperlink{global_8h_aae007ab0860d0d27bf49ce1e74831a71}{nodeDragy}}[atom1ID]\ =\ \ fdVal\ *\ dr[2];\ \ \textcolor{comment}{//node-\/node\ drag\ \ //Adding\ the\ drag\ forces\ is\ wrong.\ Only\ add\ the\ }}
-\DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00084}00084\ \ \ \ \mbox{\hyperlink{global_8h_ae25566f54b864b50af8b06ce249b07bd}{nodeDragx}}[atom2ID]\ =\ \ -\/fdVal\ *\ dr[1];\ \ \textcolor{comment}{//node-\/node\ drag\ //total\ force\ }}
-\DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00085}00085\ \ \ \ \mbox{\hyperlink{global_8h_aae007ab0860d0d27bf49ce1e74831a71}{nodeDragy}}[atom2ID]\ =\ \ -\/fdVal\ *\ dr[2];\ \ \textcolor{comment}{//node-\/node\ drag}}
+\DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00084}00084\ \ \ \ \mbox{\hyperlink{global_8h_ae25566f54b864b50af8b06ce249b07bd}{nodeDragx}}[atom2ID]\ =\ -\/fdVal\ *\ dr[1];\ \ \textcolor{comment}{//node-\/node\ drag\ //total\ force\ }}
+\DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00085}00085\ \ \ \ \mbox{\hyperlink{global_8h_aae007ab0860d0d27bf49ce1e74831a71}{nodeDragy}}[atom2ID]\ =\ -\/fdVal\ *\ dr[2];\ \ \textcolor{comment}{//node-\/node\ drag}}
 \DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00086}00086\ \ \ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00087}00087\ \ \ \ \mbox{\hyperlink{global_8h_a82d645cda6bea6506c7b5f4f7453986c}{ax}}[atom1ID]\ +=\ \ (fcVal\ +\ fdVal)\ *\ dr[1];}
-\DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00088}00088\ \ \ \ \mbox{\hyperlink{global_8h_a68c7afda02d0f26c1987a4eee13928f2}{ay}}[atom1ID]\ +=\ \ (fcVal\ +\ fdVal)\ *\ dr[2];}
-\DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00089}00089\ \ \ \ \mbox{\hyperlink{global_8h_a82d645cda6bea6506c7b5f4f7453986c}{ax}}[atom2ID]\ +=\ -\/(fcVal\ +\ fdVal)\ *\ dr[1];}
-\DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00090}00090\ \ \ \ \mbox{\hyperlink{global_8h_a68c7afda02d0f26c1987a4eee13928f2}{ay}}[atom2ID]\ +=\ -\/(fcVal\ +\ fdVal)\ *\ dr[2];}
+\DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00087}00087\ \ \ \ \mbox{\hyperlink{global_8h_af5a0b3a6e5601702b2c661dc34d046a2}{fx}}[atom1ID]\ +=\ \ (fcVal\ +\ fdVal)\ *\ dr[1];}
+\DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00088}00088\ \ \ \ \mbox{\hyperlink{global_8h_a869b2e7f75a6f2407d4a91d6f16c99ce}{fy}}[atom1ID]\ +=\ \ (fcVal\ +\ fdVal)\ *\ dr[2];}
+\DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00089}00089\ \ \ \ \mbox{\hyperlink{global_8h_af5a0b3a6e5601702b2c661dc34d046a2}{fx}}[atom2ID]\ +=\ -\/(fcVal\ +\ fdVal)\ *\ dr[1];}
+\DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00090}00090\ \ \ \ \mbox{\hyperlink{global_8h_a869b2e7f75a6f2407d4a91d6f16c99ce}{fy}}[atom2ID]\ +=\ -\/(fcVal\ +\ fdVal)\ *\ dr[2];}
 \DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00091}00091\ \ \ \ \}}
 \DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00092}00092\ \ \ \ }
 \DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00093}00093\ \ \ \ \textcolor{comment}{//DampFlag\ =\ 2.\ Suzanne\ notes\ version}}
@@ -101,51 +101,21 @@
 \DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00097}00097\ \ \ \ \mbox{\hyperlink{global_8h_ae25566f54b864b50af8b06ce249b07bd}{nodeDragx}}[atom2ID]\ =\ \ -\/(-\/\mbox{\hyperlink{global_8h_a51f4f35562e6b66ea8bd3dfd6d710fcb}{gamman}}\ *\ vr[1]);\ \ \textcolor{comment}{//node-\/node\ drag}}
 \DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00098}00098\ \ \ \ \mbox{\hyperlink{global_8h_aae007ab0860d0d27bf49ce1e74831a71}{nodeDragy}}[atom2ID]\ =\ \ -\/(-\/\mbox{\hyperlink{global_8h_a51f4f35562e6b66ea8bd3dfd6d710fcb}{gamman}}\ *\ vr[2]);\ \ \textcolor{comment}{//node-\/node\ drag}}
 \DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00099}00099\ \ \ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00100}00100\ \ \ \ \mbox{\hyperlink{global_8h_a82d645cda6bea6506c7b5f4f7453986c}{ax}}[atom1ID]\ +=\ \ (fcVal\ *\ dr[1]\ -\/\ \mbox{\hyperlink{global_8h_a51f4f35562e6b66ea8bd3dfd6d710fcb}{gamman}}\ *\ vr[1]);}
-\DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00101}00101\ \ \ \ \mbox{\hyperlink{global_8h_a68c7afda02d0f26c1987a4eee13928f2}{ay}}[atom1ID]\ +=\ \ (fcVal\ *\ dr[2]\ -\/\ \mbox{\hyperlink{global_8h_a51f4f35562e6b66ea8bd3dfd6d710fcb}{gamman}}\ *\ vr[2]);}
-\DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00102}00102\ \ \ \ \mbox{\hyperlink{global_8h_a82d645cda6bea6506c7b5f4f7453986c}{ax}}[atom2ID]\ +=\ -\/(fcVal\ *\ dr[1]\ -\/\ \mbox{\hyperlink{global_8h_a51f4f35562e6b66ea8bd3dfd6d710fcb}{gamman}}\ *\ vr[1]);}
-\DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00103}00103\ \ \ \ \mbox{\hyperlink{global_8h_a68c7afda02d0f26c1987a4eee13928f2}{ay}}[atom2ID]\ +=\ -\/(fcVal\ *\ dr[2]\ -\/\ \mbox{\hyperlink{global_8h_a51f4f35562e6b66ea8bd3dfd6d710fcb}{gamman}}\ *\ vr[2]);}
+\DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00100}00100\ \ \ \ \mbox{\hyperlink{global_8h_af5a0b3a6e5601702b2c661dc34d046a2}{fx}}[atom1ID]\ +=\ (fcVal\ *\ dr[1]\ -\/\ \mbox{\hyperlink{global_8h_a51f4f35562e6b66ea8bd3dfd6d710fcb}{gamman}}\ *\ vr[1]);}
+\DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00101}00101\ \ \ \ \mbox{\hyperlink{global_8h_a869b2e7f75a6f2407d4a91d6f16c99ce}{fy}}[atom1ID]\ +=\ (fcVal\ *\ dr[2]\ -\/\ \mbox{\hyperlink{global_8h_a51f4f35562e6b66ea8bd3dfd6d710fcb}{gamman}}\ *\ vr[2]);}
+\DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00102}00102\ \ \ \ \mbox{\hyperlink{global_8h_af5a0b3a6e5601702b2c661dc34d046a2}{fx}}[atom2ID]\ +=\ -\/(fcVal\ *\ dr[1]\ -\/\ \mbox{\hyperlink{global_8h_a51f4f35562e6b66ea8bd3dfd6d710fcb}{gamman}}\ *\ vr[1]);}
+\DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00103}00103\ \ \ \ \mbox{\hyperlink{global_8h_a869b2e7f75a6f2407d4a91d6f16c99ce}{fy}}[atom2ID]\ +=\ -\/(fcVal\ *\ dr[2]\ -\/\ \mbox{\hyperlink{global_8h_a51f4f35562e6b66ea8bd3dfd6d710fcb}{gamman}}\ *\ vr[2]);}
 \DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00104}00104\ \ \ \ \}}
 \DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00105}00105\ }
-\DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00106}00106\ \ \ \ \textcolor{comment}{//DampFlag\ =\ 3.\ Suzanne\ PRL,\ 130,\ 178203\ (2023)\ version}}
-\DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00107}00107\ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}(\mbox{\hyperlink{global_8h_a9a92b6a568b5731eafbca7a35ba6a5af}{DampFlag}}\ ==\ 3)\{}
-\DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00108}00108\ \ \ \ \ \mbox{\hyperlink{global_8h_ac4c6c1f393acf5acc5e6ee10f6ccdebd}{DeltaXijNew}}\ =\ dr[1];}
-\DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00109}00109\ \ \ \ \ \mbox{\hyperlink{global_8h_a1032bfee85174813d449cc4228640ceb}{DeltaYijNew}}\ =\ dr[2];}
-\DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00110}00110\ }
-\DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00111}00111\ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{global_8h_ac208e38a6cf3eecfb9d1522e950ed956}{stepCount}}\ ==\ 0)\ \{\ \ \textcolor{comment}{//\ First\ timestep}}
-\DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00112}00112\ \ \ \ \ \ \mbox{\hyperlink{global_8h_a3e518d20c70a4d8bdfef3d5c3fd23d66}{DeltaXijOld}}[n]\ =\ \mbox{\hyperlink{global_8h_ac4c6c1f393acf5acc5e6ee10f6ccdebd}{DeltaXijNew}};}
-\DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00113}00113\ \ \ \ \ \ \mbox{\hyperlink{global_8h_a334598bd0223e5efe70f8feda0da36d1}{DeltaYijOld}}[n]\ =\ \mbox{\hyperlink{global_8h_a1032bfee85174813d449cc4228640ceb}{DeltaYijNew}};}
-\DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00114}00114\ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00115}00115\ }
-\DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00116}00116\ \ \ \ \ \mbox{\hyperlink{global_8h_ade840f3e8a16814d98ce1ee084509132}{DeltaXij}}\ =\ \mbox{\hyperlink{global_8h_ac4c6c1f393acf5acc5e6ee10f6ccdebd}{DeltaXijNew}}\ -\/\ \mbox{\hyperlink{global_8h_a3e518d20c70a4d8bdfef3d5c3fd23d66}{DeltaXijOld}}[n];}
-\DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00117}00117\ \ \ \ \ \mbox{\hyperlink{global_8h_a9d2167980f32999a2bb47164a7b4c262}{DeltaYij}}\ =\ \mbox{\hyperlink{global_8h_a1032bfee85174813d449cc4228640ceb}{DeltaYijNew}}\ -\/\ \mbox{\hyperlink{global_8h_a334598bd0223e5efe70f8feda0da36d1}{DeltaYijOld}}[n];}
-\DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00118}00118\ \ \ \ \ \mbox{\hyperlink{global_8h_aa6a5fa6a69a47d82e8fe8bd08479ece2}{DeltaVXij}}\ =\ \mbox{\hyperlink{global_8h_ade840f3e8a16814d98ce1ee084509132}{DeltaXij}}\ /\ \mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}};}
-\DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00119}00119\ \ \ \ \ \mbox{\hyperlink{global_8h_ae556efd449ff8e37c1c54fb1ae561a14}{DeltaVYij}}\ =\ \mbox{\hyperlink{global_8h_a9d2167980f32999a2bb47164a7b4c262}{DeltaYij}}\ /\ \mbox{\hyperlink{global_8h_a7c0541254dac7a3f117d27b2122e9378}{deltaT}};}
-\DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00120}00120\ \ \ \ }
-\DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00121}00121\ \ \ \ \ \textcolor{comment}{//\ Now\ update\ for\ the\ next\ timestep}}
-\DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00122}00122\ \ \ \ \ \mbox{\hyperlink{global_8h_a3e518d20c70a4d8bdfef3d5c3fd23d66}{DeltaXijOld}}[n]\ =\ \mbox{\hyperlink{global_8h_ac4c6c1f393acf5acc5e6ee10f6ccdebd}{DeltaXijNew}};}
-\DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00123}00123\ \ \ \ \ \mbox{\hyperlink{global_8h_a334598bd0223e5efe70f8feda0da36d1}{DeltaYijOld}}[n]\ =\ \mbox{\hyperlink{global_8h_a1032bfee85174813d449cc4228640ceb}{DeltaYijNew}};}
-\DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00124}00124\ }
-\DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00125}00125\ \ \ \ \ \mbox{\hyperlink{global_8h_ae25566f54b864b50af8b06ce249b07bd}{nodeDragx}}[atom1ID]\ =\ \ -\/\mbox{\hyperlink{global_8h_a51f4f35562e6b66ea8bd3dfd6d710fcb}{gamman}}\ *\ \mbox{\hyperlink{global_8h_aa6a5fa6a69a47d82e8fe8bd08479ece2}{DeltaVXij}};\ \ \textcolor{comment}{//node-\/node\ drag}}
-\DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00126}00126\ \ \ \ \ \mbox{\hyperlink{global_8h_aae007ab0860d0d27bf49ce1e74831a71}{nodeDragy}}[atom1ID]\ =\ \ -\/\mbox{\hyperlink{global_8h_a51f4f35562e6b66ea8bd3dfd6d710fcb}{gamman}}\ *\ \mbox{\hyperlink{global_8h_ae556efd449ff8e37c1c54fb1ae561a14}{DeltaVYij}};\ \textcolor{comment}{//node-\/node\ drag}}
-\DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00127}00127\ \ \ \ \ \mbox{\hyperlink{global_8h_ae25566f54b864b50af8b06ce249b07bd}{nodeDragx}}[atom2ID]\ =\ \ -\/(-\/\mbox{\hyperlink{global_8h_a51f4f35562e6b66ea8bd3dfd6d710fcb}{gamman}}\ *\ \mbox{\hyperlink{global_8h_aa6a5fa6a69a47d82e8fe8bd08479ece2}{DeltaVXij}});\ \ \textcolor{comment}{//node-\/node\ drag}}
-\DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00128}00128\ \ \ \ \ \mbox{\hyperlink{global_8h_aae007ab0860d0d27bf49ce1e74831a71}{nodeDragy}}[atom2ID]\ =\ \ -\/(-\/\mbox{\hyperlink{global_8h_a51f4f35562e6b66ea8bd3dfd6d710fcb}{gamman}}\ *\ \mbox{\hyperlink{global_8h_ae556efd449ff8e37c1c54fb1ae561a14}{DeltaVYij}});\ \ \textcolor{comment}{//node-\/node\ drag}}
-\DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00129}00129\ \ \ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00130}00130\ \ \ \ \ \mbox{\hyperlink{global_8h_a82d645cda6bea6506c7b5f4f7453986c}{ax}}[atom1ID]\ +=\ \ (fcVal\ *\ dr[1]\ -\/\ \mbox{\hyperlink{global_8h_a51f4f35562e6b66ea8bd3dfd6d710fcb}{gamman}}\ *\ \mbox{\hyperlink{global_8h_aa6a5fa6a69a47d82e8fe8bd08479ece2}{DeltaVXij}});}
-\DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00131}00131\ \ \ \ \ \mbox{\hyperlink{global_8h_a68c7afda02d0f26c1987a4eee13928f2}{ay}}[atom1ID]\ +=\ \ (fcVal\ *\ dr[2]\ -\/\ \mbox{\hyperlink{global_8h_a51f4f35562e6b66ea8bd3dfd6d710fcb}{gamman}}\ *\ \mbox{\hyperlink{global_8h_ae556efd449ff8e37c1c54fb1ae561a14}{DeltaVYij}});}
-\DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00132}00132\ \ \ \ \ \mbox{\hyperlink{global_8h_a82d645cda6bea6506c7b5f4f7453986c}{ax}}[atom2ID]\ +=\ -\/(fcVal\ *\ dr[1]\ -\/\ \mbox{\hyperlink{global_8h_a51f4f35562e6b66ea8bd3dfd6d710fcb}{gamman}}\ *\ \mbox{\hyperlink{global_8h_aa6a5fa6a69a47d82e8fe8bd08479ece2}{DeltaVXij}});}
-\DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00133}00133\ \ \ \ \ \mbox{\hyperlink{global_8h_a68c7afda02d0f26c1987a4eee13928f2}{ay}}[atom2ID]\ +=\ -\/(fcVal\ *\ dr[2]\ -\/\ \mbox{\hyperlink{global_8h_a51f4f35562e6b66ea8bd3dfd6d710fcb}{gamman}}\ *\ \mbox{\hyperlink{global_8h_ae556efd449ff8e37c1c54fb1ae561a14}{DeltaVYij}});}
-\DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00134}00134\ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00135}00135\ }
-\DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00136}00136\ }
-\DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00137}00137\ \ \ \ \mbox{\hyperlink{global_8h_a78926ce24b541f8bdc741a75815eecf2}{BondLength}}[n]\ =\ r;}
-\DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00138}00138\ \ \ \ \mbox{\hyperlink{global_8h_a8d2c058f09cdaa1bc8c848a33e0fd745}{BondEnergy}}[n]\ =\ uVal;\ \textcolor{comment}{//No\ 0.5\ factor\ since\ it\ is\ the\ energy\ of\ the\ bond}}
-\DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00139}00139\ \ \ \ \mbox{\hyperlink{global_8h_ace1b0540bf5b0561f14c46f5aa8d3d17}{TotalBondEnergy}}\ \ \ +=\ \ \mbox{\hyperlink{global_8h_a8d2c058f09cdaa1bc8c848a33e0fd745}{BondEnergy}}[n];\ }
-\DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00140}00140\ }
-\DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00141}00141\ \ \ \ \mbox{\hyperlink{global_8h_a08413ab34f5604e910f1dbdc021a3c5f}{virSumBond}}\ +=\ \ \ 0.5\ *\ (fcVal\ +\ fdVal)\ *\ rr;}
-\DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00142}00142\ \ \ \ \mbox{\hyperlink{global_8h_ab86ba14519d191322a45fa6f760b16f8}{virSumBondxx}}\ +=\ 0.5\ *\ (fcVal\ +\ fdVal)\ *\ dr[1]\ *\ dr[1];}
-\DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00143}00143\ \ \ \ \mbox{\hyperlink{global_8h_aee51ff7fe82a7228ea1348855cf89915}{virSumBondyy}}\ +=\ 0.5\ *\ (fcVal\ +\ fdVal)\ *\ dr[2]\ *\ dr[2];}
-\DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00144}00144\ \ \ \ \mbox{\hyperlink{global_8h_a6669a78293d832c3b0c074886e6ecd19}{virSumBondxy}}\ +=\ 0.5\ *\ (fcVal\ +\ fdVal)\ *\ dr[1]\ *\ dr[2];}
-\DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00145}00145\ \}\ \}}
+\DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00106}00106\ \ \ \ \mbox{\hyperlink{global_8h_a78926ce24b541f8bdc741a75815eecf2}{BondLength}}[n]\ =\ r;}
+\DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00107}00107\ \ \ \ \mbox{\hyperlink{global_8h_a8d2c058f09cdaa1bc8c848a33e0fd745}{BondEnergy}}[n]\ =\ uVal;\ \textcolor{comment}{//No\ 0.5\ factor\ since\ it\ is\ the\ energy\ of\ the\ bond}}
+\DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00108}00108\ \ \ \ \mbox{\hyperlink{global_8h_ace1b0540bf5b0561f14c46f5aa8d3d17}{TotalBondEnergy}}\ \ \ +=\ \ \mbox{\hyperlink{global_8h_a8d2c058f09cdaa1bc8c848a33e0fd745}{BondEnergy}}[n];\ }
+\DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00109}00109\ }
+\DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00110}00110\ \ \ \ \textcolor{comment}{//Virial\ and\ pressure\ are\ defnined\ as\ per\ dampFlag\ =\ 1}}
+\DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00111}00111\ \ \ \ \mbox{\hyperlink{global_8h_a08413ab34f5604e910f1dbdc021a3c5f}{virSumBond}}\ +=\ \ \ 0.5\ *\ (fcVal\ +\ fdVal)\ *\ rr;\ }
+\DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00112}00112\ \ \ \ \mbox{\hyperlink{global_8h_ab86ba14519d191322a45fa6f760b16f8}{virSumBondxx}}\ +=\ (fcVal\ +\ fdVal)\ *\ dr[1]\ *\ dr[1];\ \textcolor{comment}{//Virial\ term\ is\ just\ r\ *\ f}}
+\DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00113}00113\ \ \ \ \mbox{\hyperlink{global_8h_aee51ff7fe82a7228ea1348855cf89915}{virSumBondyy}}\ +=\ (fcVal\ +\ fdVal)\ *\ dr[2]\ *\ dr[2];}
+\DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00114}00114\ \ \ \ \mbox{\hyperlink{global_8h_a6669a78293d832c3b0c074886e6ecd19}{virSumBondxy}}\ +=\ (fcVal\ +\ fdVal)\ *\ dr[1]\ *\ dr[2];}
+\DoxyCodeLine{\Hypertarget{ComputeBondForce_8c_source_l00115}00115\ \}\ \}}
 
 \end{DoxyCode}

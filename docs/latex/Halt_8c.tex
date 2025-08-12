@@ -15,16 +15,16 @@ Include dependency graph for Halt.\+c\+:
 \doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-bool \mbox{\hyperlink{Halt_8c_a4f7624821cdea57301448e9fcc5f0144}{Halt\+Condition\+Check}} (double value, int \mbox{\hyperlink{global_8h_ac208e38a6cf3eecfb9d1522e950ed956}{step\+Count}})
+bool \mbox{\hyperlink{Halt_8c_af8476d7b942bca59d822d67a3ca031cb}{Halt\+Condition\+Check}} (double value)
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Function Documentation}
-\Hypertarget{Halt_8c_a4f7624821cdea57301448e9fcc5f0144}\label{Halt_8c_a4f7624821cdea57301448e9fcc5f0144} 
-\index{Halt.c@{Halt.c}!HaltConditionCheck@{HaltConditionCheck}}
+\Hypertarget{Halt_8c_af8476d7b942bca59d822d67a3ca031cb}\index{Halt.c@{Halt.c}!HaltConditionCheck@{HaltConditionCheck}}
 \index{HaltConditionCheck@{HaltConditionCheck}!Halt.c@{Halt.c}}
 \doxysubsubsection{\texorpdfstring{HaltConditionCheck()}{HaltConditionCheck()}}
-{\footnotesize\ttfamily bool Halt\+Condition\+Check (\begin{DoxyParamCaption}\item[{double}]{value,  }\item[{int}]{step\+Count }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{Halt_8c_af8476d7b942bca59d822d67a3ca031cb} 
+bool Halt\+Condition\+Check (\begin{DoxyParamCaption}\item[{double}]{value}{}\end{DoxyParamCaption})}
 
 
 
@@ -32,29 +32,33 @@ Definition at line \mbox{\hyperlink{Halt_8c_source_l00027}{27}} of file \mbox{\h
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
 \DoxyCodeLine{00028\ \ \ }
 \DoxyCodeLine{00029\ \ \ \textcolor{keywordflow}{if}(value\ <=\ \mbox{\hyperlink{global_8h_a7e88ba96b6e106ede84dde66931a3ffa}{HaltCondition}}\ \&\&\ value\ !=\ 0)\ \{}
-\DoxyCodeLine{00030\ \ \ fprintf(\mbox{\hyperlink{global_8h_a7a7a3c24c505afb28c4eb95a627e3f5b}{fpresult}},\ \textcolor{stringliteral}{"{}Halt\ condition\ met\ at\ step\ =\ \%d\ with\ Vrms\ =\ \%.10f\(\backslash\)n"{}},\ \mbox{\hyperlink{global_8h_ac208e38a6cf3eecfb9d1522e950ed956}{stepCount}},\ value);}
-\DoxyCodeLine{00031\ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};\ \ \ \ \ \ \ \textcolor{comment}{//\ Signal\ that\ the\ halt\ condition\ is\ met}}
-\DoxyCodeLine{00032\ \ \ \}}
-\DoxyCodeLine{00033\ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};\ \textcolor{comment}{//\ Halt\ condition\ not\ met}}
-\DoxyCodeLine{00034\ \}}
+\DoxyCodeLine{00030\ \ \ printf(\textcolor{stringliteral}{"{}Halt\ condition\ met\ at\ step\ =\ \%d\ with\ Vrms\ =\ \%.16f\(\backslash\)n"{}},\ \mbox{\hyperlink{global_8h_ac208e38a6cf3eecfb9d1522e950ed956}{stepCount}},\ value);}
+\DoxyCodeLine{00031\ \ \ fprintf(\mbox{\hyperlink{global_8h_a7a7a3c24c505afb28c4eb95a627e3f5b}{fpresult}},\ \textcolor{stringliteral}{"{}Halt\ condition\ met\ at\ step\ =\ \%d\ with\ Vrms\ =\ \%.16f\(\backslash\)n"{}},\ \mbox{\hyperlink{global_8h_ac208e38a6cf3eecfb9d1522e950ed956}{stepCount}},\ value);}
+\DoxyCodeLine{00032\ \ \ fprintf(\mbox{\hyperlink{global_8h_a7a7a3c24c505afb28c4eb95a627e3f5b}{fpresult}},\ \textcolor{stringliteral}{"{}Final\ thermodynamic\ values:\(\backslash\)n"{}});}
+\DoxyCodeLine{00033\ \ \ fprintf(\mbox{\hyperlink{global_8h_a7a7a3c24c505afb28c4eb95a627e3f5b}{fpresult}},\ \textcolor{stringliteral}{"{}\%0.4lf\(\backslash\)t\%0.16lf\(\backslash\)t\%0.16lf\(\backslash\)t\%0.16lf\(\backslash\)t\%0.16lf\(\backslash\)t\%0.16lf\(\backslash\)t\%0.16lf\(\backslash\)t\%0.16lf\(\backslash\)t\%0.16lf\(\backslash\)n"{}},\ }
+\DoxyCodeLine{00034\ \ \ \mbox{\hyperlink{global_8h_abb2aee8c6108dd86a8da33115d249d71}{timeNow}},\ \mbox{\hyperlink{global_8h_a68c26a0c6b002f1da36c4be599ca5149}{vSum}},\ \mbox{\hyperlink{global_8h_abd758be497a95843d6cbb071a9f99581}{potEnergy}},\ \mbox{\hyperlink{global_8h_a445d936de68f213385df5c284ea1d81d}{kinEnergy}},\ \mbox{\hyperlink{global_8h_a025720826b3728fd77ab18384b7369bf}{totEnergy}},\ \mbox{\hyperlink{global_8h_a35bf08d49aa04729a9f7dd23a464a826}{uSumPairPerAtom}},\ \mbox{\hyperlink{global_8h_aa53f052764d0986e9691ee3e941682d9}{BondEnergyPerAtom}},\ \mbox{\hyperlink{global_8h_aee1c5d07ac79c5c036195858afe33405}{pressure}},\ \mbox{\hyperlink{global_8h_abdbf03f447f8b0adbae4c15974dac45f}{virSum}});}
+\DoxyCodeLine{00035\ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};\ \ \ \ \ \ \ \textcolor{comment}{//\ Signal\ that\ the\ halt\ condition\ is\ met}}
+\DoxyCodeLine{00036\ \ \ \}}
+\DoxyCodeLine{00037\ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};\ \textcolor{comment}{//\ Halt\ condition\ not\ met}}
+\DoxyCodeLine{00038\ \}}
 
 \end{DoxyCode}
 
 
-References \mbox{\hyperlink{global_8h_a7a7a3c24c505afb28c4eb95a627e3f5b}{fpresult}}, \mbox{\hyperlink{global_8h_a7e88ba96b6e106ede84dde66931a3ffa}{Halt\+Condition}}, and \mbox{\hyperlink{global_8h_source_l00024}{step\+Count}}.
+References \mbox{\hyperlink{global_8h_source_l00040}{Bond\+Energy\+Per\+Atom}}, \mbox{\hyperlink{global_8h_a7a7a3c24c505afb28c4eb95a627e3f5b}{fpresult}}, \mbox{\hyperlink{global_8h_a7e88ba96b6e106ede84dde66931a3ffa}{Halt\+Condition}}, \mbox{\hyperlink{global_8h_source_l00020}{kin\+Energy}}, \mbox{\hyperlink{global_8h_source_l00020}{pot\+Energy}}, \mbox{\hyperlink{global_8h_source_l00021}{pressure}}, \mbox{\hyperlink{global_8h_source_l00024}{step\+Count}}, \mbox{\hyperlink{global_8h_source_l00020}{time\+Now}}, \mbox{\hyperlink{global_8h_source_l00020}{tot\+Energy}}, \mbox{\hyperlink{global_8h_source_l00088}{u\+Sum\+Pair\+Per\+Atom}}, \mbox{\hyperlink{global_8h_source_l00021}{vir\+Sum}}, and \mbox{\hyperlink{global_8h_source_l00021}{v\+Sum}}.
 
 
 
-Referenced by \mbox{\hyperlink{main_8c_source_l00051}{main()}}.
+Referenced by \mbox{\hyperlink{main_8c_source_l00043}{main()}}.
 
 Here is the caller graph for this function\+:
 \nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=270pt]{Halt_8c_a4f7624821cdea57301448e9fcc5f0144_icgraph}
+\includegraphics[width=270pt]{Halt_8c_af8476d7b942bca59d822d67a3ca031cb_icgraph}
 \end{center}
 \end{figure}

@@ -24,6 +24,7 @@
 
 void AllocArrays(){
  int n;
+ 
  // SPACETIME CORRELATIONS
  cfOrg = (double **) malloc ((nBuffCorr+1)*sizeof(double *));
  for (n = 0; n <= nBuffCorr; n++)
@@ -34,9 +35,10 @@ void AllocArrays(){
  
  spacetimeCorr = (double **) malloc ((nBuffCorr+1)*sizeof(double));
  for (n = 0; n <= nBuffCorr; n++)
- spacetimeCorr[n] = (double *) malloc ((nFunCorr*nValCorr+1)*sizeof(double));
+  spacetimeCorr[n] = (double *) malloc ((nFunCorr*nValCorr+1)*sizeof(double));
  
  spacetimeCorrAv = (double *) malloc ((nFunCorr*nValCorr+1)*sizeof(double));
+ 
  // VISCOSITY
  indexAcf = (double *)malloc((nBuffAcf+1)*sizeof(double));
  viscAcf = (double **)malloc((nBuffAcf+1)*sizeof(double *));

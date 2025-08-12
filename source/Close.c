@@ -21,14 +21,10 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include"global.h"
+
 void Close(){
   int n;
-  free(rx);
-  free(ry);
-  free(vx);
-  free(vy);
-  free(ax);
-  free(ay);
+  free(rx); free(ry); free(vx); free(vy); free(ax); free(ay); free(fx); free(fy);
   free(fax);
   free(fay);
   free(cellList);
@@ -41,29 +37,16 @@ void Close(){
   free(atomIDInterface);
   free(PairID); free(Pairatom1); free(Pairatom2); 
   free(PairXij); free(PairYij);
-
-  free(DeltaXijOld);
-  free(DeltaYijOld);
-
   free(molID);
   
   for (n = 0; n <= nAtom; n++) {
    free(isBonded[n]);
    }
-   free(isBonded);
-
-
-  
-  for(n = 0; n <= nAtom; n++) {
-   free(DeltaXijOldPair[n]);
-   free(DeltaYijOldPair[n]);
-   }
-    free(DeltaXijOldPair);
-    free(DeltaYijOldPair);
+  free(isBonded);
 
   for (n = 0; n <= nBuffCorr; n++){
-    free(cfOrg[n]);
-    free(spacetimeCorr[n]);
+  free(cfOrg[n]);
+  free(spacetimeCorr[n]);
   }
   free(cfOrg);
   free(spacetimeCorr);
@@ -75,7 +58,7 @@ void Close(){
   free(viscAcfOrg);
   free(viscAcfAv);
   for(n = 0 ; n <= nBuffAcf ; n ++)
-    free(viscAcf[n]);
+   free(viscAcf[n]);
   free(viscAcf);
 
-}
+ }

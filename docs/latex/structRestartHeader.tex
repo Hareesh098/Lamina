@@ -1,0 +1,495 @@
+\doxysection{Restart\+Header Struct Reference}
+\hypertarget{structRestartHeader}{}\label{structRestartHeader}\index{RestartHeader@{RestartHeader}}
+
+
+Collaboration diagram for Restart\+Header\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=176pt]{structRestartHeader__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+char \mbox{\hyperlink{structRestartHeader_a399a39e8f4b804c94d7ede3abdfc5736}{magic}} \mbox{[}8\mbox{]}
+\item 
+double \mbox{\hyperlink{structRestartHeader_a12c6d02305f1ed18a9d5be34bbddc045}{version}}
+\item 
+double \mbox{\hyperlink{structRestartHeader_af0fa20949c5de4400309d0ad1cff2d1a}{time\+Now}}
+\item 
+int \mbox{\hyperlink{structRestartHeader_a78d62cca8e27bcbfb85c9e6f5aca9a6e}{n\+Atom}}
+\item 
+int \mbox{\hyperlink{structRestartHeader_a9c836a2f4a30a78a2fee4a042f5a990c}{n\+Bond}}
+\item 
+int \mbox{\hyperlink{structRestartHeader_a07e764d8fab5d1643cc4a2aabd5bdfd4}{n\+Atom\+Type}}
+\item 
+int \mbox{\hyperlink{structRestartHeader_ac779a600b14d3e399bba4903ede61a38}{n\+Bond\+Type}}
+\item 
+double \mbox{\hyperlink{structRestartHeader_a282da612f11f6f328aa877e601ecca8c}{regionX}}
+\item 
+double \mbox{\hyperlink{structRestartHeader_a0cf69cb3bb41364e2da95b538a2ba684}{regionY}}
+\item 
+int \mbox{\hyperlink{structRestartHeader_a9793988033d764bbbf99966de7a7252c}{n\+Atom\+Interface}}
+\item 
+int \mbox{\hyperlink{structRestartHeader_ac2d8a39af2983b423490f0b318cc0712}{n\+Atom\+Block}}
+\item 
+int \mbox{\hyperlink{structRestartHeader_ab6ecb1c3ddc1d988c1fd224d3102effc}{n\+Disc\+Interface}}
+\item 
+double \mbox{\hyperlink{structRestartHeader_a4db86691ee794396edd8065fd25bbcba}{big\+Diameter}}
+\item 
+double \mbox{\hyperlink{structRestartHeader_a777bccd096ec89df0804a1ddc7412598}{Interface\+Width}}
+\item 
+int \mbox{\hyperlink{structRestartHeader_a9180060cada00fd967358937354a392d}{n\+Pair\+Active}}
+\item 
+int \mbox{\hyperlink{structRestartHeader_a44f4b51bc7c876b4b059e908e607a847}{n\+Pair\+Total}}
+\item 
+double \mbox{\hyperlink{structRestartHeader_a54499a3d8c48df3c2affb8e64bc6da41}{u\+Sum\+Pair}}
+\item 
+double \mbox{\hyperlink{structRestartHeader_a3223326b5ba7d8ec1c48cd692e34f530}{vir\+Sum\+Pair}}
+\item 
+double \mbox{\hyperlink{structRestartHeader_aeab5c6b6863708bb3dd3618a50f07cf1}{vir\+Sum\+Pairxx}}
+\item 
+double \mbox{\hyperlink{structRestartHeader_a6b355f5c6f978b16e171ecae1739b8fc}{vir\+Sum\+Pairyy}}
+\item 
+double \mbox{\hyperlink{structRestartHeader_a286cd2b833af2438380392120c86eefa}{vir\+Sum\+Pairxy}}
+\item 
+double \mbox{\hyperlink{structRestartHeader_aed5c6ac747e36695d2939f8f2804a270}{Total\+Bond\+Energy}}
+\item 
+double \mbox{\hyperlink{structRestartHeader_ad8d9a2d82bf6b77a1b8b70f05d24d3d5}{vir\+Sum\+Bond}}
+\item 
+double \mbox{\hyperlink{structRestartHeader_a69ebc6ffa558288b6e30b5989bc465da}{vir\+Sum\+Bondxx}}
+\item 
+double \mbox{\hyperlink{structRestartHeader_a0aa54b7a50268f319d918f86f2be020b}{vir\+Sum\+Bondyy}}
+\item 
+double \mbox{\hyperlink{structRestartHeader_ae8dfea6dc54ed083b804e44a0cc57723}{vir\+Sum\+Bondxy}}
+\item 
+int \mbox{\hyperlink{structRestartHeader_adae780876d405933169d4bb3bd9a7d59}{step\+Count}}
+\item 
+double \mbox{\hyperlink{structRestartHeader_a8cac6a70702829d9fdb23fd66eaaf887}{force\+Sumx\+Extern}}
+\item 
+double \mbox{\hyperlink{structRestartHeader_ad11d6ee51d60265793cf188a87232473}{force\+Sumy\+Extern}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{ReadRestartBinary_8c_source_l00027}{27}} of file \mbox{\hyperlink{ReadRestartBinary_8c_source}{Read\+Restart\+Binary.\+c}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{structRestartHeader_a4db86691ee794396edd8065fd25bbcba}\index{RestartHeader@{RestartHeader}!bigDiameter@{bigDiameter}}
+\index{bigDiameter@{bigDiameter}!RestartHeader@{RestartHeader}}
+\doxysubsubsection{\texorpdfstring{bigDiameter}{bigDiameter}}
+{\footnotesize\ttfamily \label{structRestartHeader_a4db86691ee794396edd8065fd25bbcba} 
+double Restart\+Header\+::big\+Diameter}
+
+
+
+Definition at line \mbox{\hyperlink{ReadRestartBinary_8c_source_l00040}{40}} of file \mbox{\hyperlink{ReadRestartBinary_8c_source}{Read\+Restart\+Binary.\+c}}.
+
+
+
+Referenced by \mbox{\hyperlink{ReadRestartBinary_8c_source_l00059}{Read\+Binary\+Restart()}}.
+
+\Hypertarget{structRestartHeader_a8cac6a70702829d9fdb23fd66eaaf887}\index{RestartHeader@{RestartHeader}!forceSumxExtern@{forceSumxExtern}}
+\index{forceSumxExtern@{forceSumxExtern}!RestartHeader@{RestartHeader}}
+\doxysubsubsection{\texorpdfstring{forceSumxExtern}{forceSumxExtern}}
+{\footnotesize\ttfamily \label{structRestartHeader_a8cac6a70702829d9fdb23fd66eaaf887} 
+double Restart\+Header\+::force\+Sumx\+Extern}
+
+
+
+Definition at line \mbox{\hyperlink{ReadRestartBinary_8c_source_l00055}{55}} of file \mbox{\hyperlink{ReadRestartBinary_8c_source}{Read\+Restart\+Binary.\+c}}.
+
+
+
+Referenced by \mbox{\hyperlink{ReadRestartBinary_8c_source_l00059}{Read\+Binary\+Restart()}}.
+
+\Hypertarget{structRestartHeader_ad11d6ee51d60265793cf188a87232473}\index{RestartHeader@{RestartHeader}!forceSumyExtern@{forceSumyExtern}}
+\index{forceSumyExtern@{forceSumyExtern}!RestartHeader@{RestartHeader}}
+\doxysubsubsection{\texorpdfstring{forceSumyExtern}{forceSumyExtern}}
+{\footnotesize\ttfamily \label{structRestartHeader_ad11d6ee51d60265793cf188a87232473} 
+double Restart\+Header\+::force\+Sumy\+Extern}
+
+
+
+Definition at line \mbox{\hyperlink{ReadRestartBinary_8c_source_l00056}{56}} of file \mbox{\hyperlink{ReadRestartBinary_8c_source}{Read\+Restart\+Binary.\+c}}.
+
+
+
+Referenced by \mbox{\hyperlink{ReadRestartBinary_8c_source_l00059}{Read\+Binary\+Restart()}}.
+
+\Hypertarget{structRestartHeader_a777bccd096ec89df0804a1ddc7412598}\index{RestartHeader@{RestartHeader}!InterfaceWidth@{InterfaceWidth}}
+\index{InterfaceWidth@{InterfaceWidth}!RestartHeader@{RestartHeader}}
+\doxysubsubsection{\texorpdfstring{InterfaceWidth}{InterfaceWidth}}
+{\footnotesize\ttfamily \label{structRestartHeader_a777bccd096ec89df0804a1ddc7412598} 
+double Restart\+Header\+::\+Interface\+Width}
+
+
+
+Definition at line \mbox{\hyperlink{ReadRestartBinary_8c_source_l00041}{41}} of file \mbox{\hyperlink{ReadRestartBinary_8c_source}{Read\+Restart\+Binary.\+c}}.
+
+
+
+Referenced by \mbox{\hyperlink{ReadRestartBinary_8c_source_l00059}{Read\+Binary\+Restart()}}.
+
+\Hypertarget{structRestartHeader_a399a39e8f4b804c94d7ede3abdfc5736}\index{RestartHeader@{RestartHeader}!magic@{magic}}
+\index{magic@{magic}!RestartHeader@{RestartHeader}}
+\doxysubsubsection{\texorpdfstring{magic}{magic}}
+{\footnotesize\ttfamily \label{structRestartHeader_a399a39e8f4b804c94d7ede3abdfc5736} 
+char Restart\+Header\+::magic}
+
+
+
+Definition at line \mbox{\hyperlink{ReadRestartBinary_8c_source_l00028}{28}} of file \mbox{\hyperlink{ReadRestartBinary_8c_source}{Read\+Restart\+Binary.\+c}}.
+
+
+
+Referenced by \mbox{\hyperlink{ReadRestartBinary_8c_source_l00059}{Read\+Binary\+Restart()}}.
+
+\Hypertarget{structRestartHeader_a78d62cca8e27bcbfb85c9e6f5aca9a6e}\index{RestartHeader@{RestartHeader}!nAtom@{nAtom}}
+\index{nAtom@{nAtom}!RestartHeader@{RestartHeader}}
+\doxysubsubsection{\texorpdfstring{nAtom}{nAtom}}
+{\footnotesize\ttfamily \label{structRestartHeader_a78d62cca8e27bcbfb85c9e6f5aca9a6e} 
+int Restart\+Header\+::n\+Atom}
+
+
+
+Definition at line \mbox{\hyperlink{ReadRestartBinary_8c_source_l00031}{31}} of file \mbox{\hyperlink{ReadRestartBinary_8c_source}{Read\+Restart\+Binary.\+c}}.
+
+
+
+Referenced by \mbox{\hyperlink{ReadRestartBinary_8c_source_l00059}{Read\+Binary\+Restart()}}.
+
+\Hypertarget{structRestartHeader_ac2d8a39af2983b423490f0b318cc0712}\index{RestartHeader@{RestartHeader}!nAtomBlock@{nAtomBlock}}
+\index{nAtomBlock@{nAtomBlock}!RestartHeader@{RestartHeader}}
+\doxysubsubsection{\texorpdfstring{nAtomBlock}{nAtomBlock}}
+{\footnotesize\ttfamily \label{structRestartHeader_ac2d8a39af2983b423490f0b318cc0712} 
+int Restart\+Header\+::n\+Atom\+Block}
+
+
+
+Definition at line \mbox{\hyperlink{ReadRestartBinary_8c_source_l00038}{38}} of file \mbox{\hyperlink{ReadRestartBinary_8c_source}{Read\+Restart\+Binary.\+c}}.
+
+
+
+Referenced by \mbox{\hyperlink{ReadRestartBinary_8c_source_l00059}{Read\+Binary\+Restart()}}.
+
+\Hypertarget{structRestartHeader_a9793988033d764bbbf99966de7a7252c}\index{RestartHeader@{RestartHeader}!nAtomInterface@{nAtomInterface}}
+\index{nAtomInterface@{nAtomInterface}!RestartHeader@{RestartHeader}}
+\doxysubsubsection{\texorpdfstring{nAtomInterface}{nAtomInterface}}
+{\footnotesize\ttfamily \label{structRestartHeader_a9793988033d764bbbf99966de7a7252c} 
+int Restart\+Header\+::n\+Atom\+Interface}
+
+
+
+Definition at line \mbox{\hyperlink{ReadRestartBinary_8c_source_l00037}{37}} of file \mbox{\hyperlink{ReadRestartBinary_8c_source}{Read\+Restart\+Binary.\+c}}.
+
+
+
+Referenced by \mbox{\hyperlink{ReadRestartBinary_8c_source_l00059}{Read\+Binary\+Restart()}}.
+
+\Hypertarget{structRestartHeader_a07e764d8fab5d1643cc4a2aabd5bdfd4}\index{RestartHeader@{RestartHeader}!nAtomType@{nAtomType}}
+\index{nAtomType@{nAtomType}!RestartHeader@{RestartHeader}}
+\doxysubsubsection{\texorpdfstring{nAtomType}{nAtomType}}
+{\footnotesize\ttfamily \label{structRestartHeader_a07e764d8fab5d1643cc4a2aabd5bdfd4} 
+int Restart\+Header\+::n\+Atom\+Type}
+
+
+
+Definition at line \mbox{\hyperlink{ReadRestartBinary_8c_source_l00033}{33}} of file \mbox{\hyperlink{ReadRestartBinary_8c_source}{Read\+Restart\+Binary.\+c}}.
+
+
+
+Referenced by \mbox{\hyperlink{ReadRestartBinary_8c_source_l00059}{Read\+Binary\+Restart()}}.
+
+\Hypertarget{structRestartHeader_a9c836a2f4a30a78a2fee4a042f5a990c}\index{RestartHeader@{RestartHeader}!nBond@{nBond}}
+\index{nBond@{nBond}!RestartHeader@{RestartHeader}}
+\doxysubsubsection{\texorpdfstring{nBond}{nBond}}
+{\footnotesize\ttfamily \label{structRestartHeader_a9c836a2f4a30a78a2fee4a042f5a990c} 
+int Restart\+Header\+::n\+Bond}
+
+
+
+Definition at line \mbox{\hyperlink{ReadRestartBinary_8c_source_l00032}{32}} of file \mbox{\hyperlink{ReadRestartBinary_8c_source}{Read\+Restart\+Binary.\+c}}.
+
+
+
+Referenced by \mbox{\hyperlink{ReadRestartBinary_8c_source_l00059}{Read\+Binary\+Restart()}}.
+
+\Hypertarget{structRestartHeader_ac779a600b14d3e399bba4903ede61a38}\index{RestartHeader@{RestartHeader}!nBondType@{nBondType}}
+\index{nBondType@{nBondType}!RestartHeader@{RestartHeader}}
+\doxysubsubsection{\texorpdfstring{nBondType}{nBondType}}
+{\footnotesize\ttfamily \label{structRestartHeader_ac779a600b14d3e399bba4903ede61a38} 
+int Restart\+Header\+::n\+Bond\+Type}
+
+
+
+Definition at line \mbox{\hyperlink{ReadRestartBinary_8c_source_l00034}{34}} of file \mbox{\hyperlink{ReadRestartBinary_8c_source}{Read\+Restart\+Binary.\+c}}.
+
+
+
+Referenced by \mbox{\hyperlink{ReadRestartBinary_8c_source_l00059}{Read\+Binary\+Restart()}}.
+
+\Hypertarget{structRestartHeader_ab6ecb1c3ddc1d988c1fd224d3102effc}\index{RestartHeader@{RestartHeader}!nDiscInterface@{nDiscInterface}}
+\index{nDiscInterface@{nDiscInterface}!RestartHeader@{RestartHeader}}
+\doxysubsubsection{\texorpdfstring{nDiscInterface}{nDiscInterface}}
+{\footnotesize\ttfamily \label{structRestartHeader_ab6ecb1c3ddc1d988c1fd224d3102effc} 
+int Restart\+Header\+::n\+Disc\+Interface}
+
+
+
+Definition at line \mbox{\hyperlink{ReadRestartBinary_8c_source_l00039}{39}} of file \mbox{\hyperlink{ReadRestartBinary_8c_source}{Read\+Restart\+Binary.\+c}}.
+
+
+
+Referenced by \mbox{\hyperlink{ReadRestartBinary_8c_source_l00059}{Read\+Binary\+Restart()}}.
+
+\Hypertarget{structRestartHeader_a9180060cada00fd967358937354a392d}\index{RestartHeader@{RestartHeader}!nPairActive@{nPairActive}}
+\index{nPairActive@{nPairActive}!RestartHeader@{RestartHeader}}
+\doxysubsubsection{\texorpdfstring{nPairActive}{nPairActive}}
+{\footnotesize\ttfamily \label{structRestartHeader_a9180060cada00fd967358937354a392d} 
+int Restart\+Header\+::n\+Pair\+Active}
+
+
+
+Definition at line \mbox{\hyperlink{ReadRestartBinary_8c_source_l00042}{42}} of file \mbox{\hyperlink{ReadRestartBinary_8c_source}{Read\+Restart\+Binary.\+c}}.
+
+
+
+Referenced by \mbox{\hyperlink{ReadRestartBinary_8c_source_l00059}{Read\+Binary\+Restart()}}.
+
+\Hypertarget{structRestartHeader_a44f4b51bc7c876b4b059e908e607a847}\index{RestartHeader@{RestartHeader}!nPairTotal@{nPairTotal}}
+\index{nPairTotal@{nPairTotal}!RestartHeader@{RestartHeader}}
+\doxysubsubsection{\texorpdfstring{nPairTotal}{nPairTotal}}
+{\footnotesize\ttfamily \label{structRestartHeader_a44f4b51bc7c876b4b059e908e607a847} 
+int Restart\+Header\+::n\+Pair\+Total}
+
+
+
+Definition at line \mbox{\hyperlink{ReadRestartBinary_8c_source_l00043}{43}} of file \mbox{\hyperlink{ReadRestartBinary_8c_source}{Read\+Restart\+Binary.\+c}}.
+
+
+
+Referenced by \mbox{\hyperlink{ReadRestartBinary_8c_source_l00059}{Read\+Binary\+Restart()}}.
+
+\Hypertarget{structRestartHeader_a282da612f11f6f328aa877e601ecca8c}\index{RestartHeader@{RestartHeader}!regionX@{regionX}}
+\index{regionX@{regionX}!RestartHeader@{RestartHeader}}
+\doxysubsubsection{\texorpdfstring{regionX}{regionX}}
+{\footnotesize\ttfamily \label{structRestartHeader_a282da612f11f6f328aa877e601ecca8c} 
+double Restart\+Header\+::regionX}
+
+
+
+Definition at line \mbox{\hyperlink{ReadRestartBinary_8c_source_l00035}{35}} of file \mbox{\hyperlink{ReadRestartBinary_8c_source}{Read\+Restart\+Binary.\+c}}.
+
+
+
+Referenced by \mbox{\hyperlink{ReadRestartBinary_8c_source_l00059}{Read\+Binary\+Restart()}}.
+
+\Hypertarget{structRestartHeader_a0cf69cb3bb41364e2da95b538a2ba684}\index{RestartHeader@{RestartHeader}!regionY@{regionY}}
+\index{regionY@{regionY}!RestartHeader@{RestartHeader}}
+\doxysubsubsection{\texorpdfstring{regionY}{regionY}}
+{\footnotesize\ttfamily \label{structRestartHeader_a0cf69cb3bb41364e2da95b538a2ba684} 
+double Restart\+Header\+::regionY}
+
+
+
+Definition at line \mbox{\hyperlink{ReadRestartBinary_8c_source_l00036}{36}} of file \mbox{\hyperlink{ReadRestartBinary_8c_source}{Read\+Restart\+Binary.\+c}}.
+
+
+
+Referenced by \mbox{\hyperlink{ReadRestartBinary_8c_source_l00059}{Read\+Binary\+Restart()}}.
+
+\Hypertarget{structRestartHeader_adae780876d405933169d4bb3bd9a7d59}\index{RestartHeader@{RestartHeader}!stepCount@{stepCount}}
+\index{stepCount@{stepCount}!RestartHeader@{RestartHeader}}
+\doxysubsubsection{\texorpdfstring{stepCount}{stepCount}}
+{\footnotesize\ttfamily \label{structRestartHeader_adae780876d405933169d4bb3bd9a7d59} 
+int Restart\+Header\+::step\+Count}
+
+
+
+Definition at line \mbox{\hyperlink{ReadRestartBinary_8c_source_l00054}{54}} of file \mbox{\hyperlink{ReadRestartBinary_8c_source}{Read\+Restart\+Binary.\+c}}.
+
+
+
+Referenced by \mbox{\hyperlink{ReadRestartBinary_8c_source_l00059}{Read\+Binary\+Restart()}}.
+
+\Hypertarget{structRestartHeader_af0fa20949c5de4400309d0ad1cff2d1a}\index{RestartHeader@{RestartHeader}!timeNow@{timeNow}}
+\index{timeNow@{timeNow}!RestartHeader@{RestartHeader}}
+\doxysubsubsection{\texorpdfstring{timeNow}{timeNow}}
+{\footnotesize\ttfamily \label{structRestartHeader_af0fa20949c5de4400309d0ad1cff2d1a} 
+double Restart\+Header\+::time\+Now}
+
+
+
+Definition at line \mbox{\hyperlink{ReadRestartBinary_8c_source_l00030}{30}} of file \mbox{\hyperlink{ReadRestartBinary_8c_source}{Read\+Restart\+Binary.\+c}}.
+
+
+
+Referenced by \mbox{\hyperlink{ReadRestartBinary_8c_source_l00059}{Read\+Binary\+Restart()}}.
+
+\Hypertarget{structRestartHeader_aed5c6ac747e36695d2939f8f2804a270}\index{RestartHeader@{RestartHeader}!TotalBondEnergy@{TotalBondEnergy}}
+\index{TotalBondEnergy@{TotalBondEnergy}!RestartHeader@{RestartHeader}}
+\doxysubsubsection{\texorpdfstring{TotalBondEnergy}{TotalBondEnergy}}
+{\footnotesize\ttfamily \label{structRestartHeader_aed5c6ac747e36695d2939f8f2804a270} 
+double Restart\+Header\+::\+Total\+Bond\+Energy}
+
+
+
+Definition at line \mbox{\hyperlink{ReadRestartBinary_8c_source_l00049}{49}} of file \mbox{\hyperlink{ReadRestartBinary_8c_source}{Read\+Restart\+Binary.\+c}}.
+
+
+
+Referenced by \mbox{\hyperlink{ReadRestartBinary_8c_source_l00059}{Read\+Binary\+Restart()}}.
+
+\Hypertarget{structRestartHeader_a54499a3d8c48df3c2affb8e64bc6da41}\index{RestartHeader@{RestartHeader}!uSumPair@{uSumPair}}
+\index{uSumPair@{uSumPair}!RestartHeader@{RestartHeader}}
+\doxysubsubsection{\texorpdfstring{uSumPair}{uSumPair}}
+{\footnotesize\ttfamily \label{structRestartHeader_a54499a3d8c48df3c2affb8e64bc6da41} 
+double Restart\+Header\+::u\+Sum\+Pair}
+
+
+
+Definition at line \mbox{\hyperlink{ReadRestartBinary_8c_source_l00044}{44}} of file \mbox{\hyperlink{ReadRestartBinary_8c_source}{Read\+Restart\+Binary.\+c}}.
+
+
+
+Referenced by \mbox{\hyperlink{ReadRestartBinary_8c_source_l00059}{Read\+Binary\+Restart()}}.
+
+\Hypertarget{structRestartHeader_a12c6d02305f1ed18a9d5be34bbddc045}\index{RestartHeader@{RestartHeader}!version@{version}}
+\index{version@{version}!RestartHeader@{RestartHeader}}
+\doxysubsubsection{\texorpdfstring{version}{version}}
+{\footnotesize\ttfamily \label{structRestartHeader_a12c6d02305f1ed18a9d5be34bbddc045} 
+double Restart\+Header\+::version}
+
+
+
+Definition at line \mbox{\hyperlink{ReadRestartBinary_8c_source_l00029}{29}} of file \mbox{\hyperlink{ReadRestartBinary_8c_source}{Read\+Restart\+Binary.\+c}}.
+
+
+
+Referenced by \mbox{\hyperlink{ReadRestartBinary_8c_source_l00059}{Read\+Binary\+Restart()}}.
+
+\Hypertarget{structRestartHeader_ad8d9a2d82bf6b77a1b8b70f05d24d3d5}\index{RestartHeader@{RestartHeader}!virSumBond@{virSumBond}}
+\index{virSumBond@{virSumBond}!RestartHeader@{RestartHeader}}
+\doxysubsubsection{\texorpdfstring{virSumBond}{virSumBond}}
+{\footnotesize\ttfamily \label{structRestartHeader_ad8d9a2d82bf6b77a1b8b70f05d24d3d5} 
+double Restart\+Header\+::vir\+Sum\+Bond}
+
+
+
+Definition at line \mbox{\hyperlink{ReadRestartBinary_8c_source_l00050}{50}} of file \mbox{\hyperlink{ReadRestartBinary_8c_source}{Read\+Restart\+Binary.\+c}}.
+
+
+
+Referenced by \mbox{\hyperlink{ReadRestartBinary_8c_source_l00059}{Read\+Binary\+Restart()}}.
+
+\Hypertarget{structRestartHeader_a69ebc6ffa558288b6e30b5989bc465da}\index{RestartHeader@{RestartHeader}!virSumBondxx@{virSumBondxx}}
+\index{virSumBondxx@{virSumBondxx}!RestartHeader@{RestartHeader}}
+\doxysubsubsection{\texorpdfstring{virSumBondxx}{virSumBondxx}}
+{\footnotesize\ttfamily \label{structRestartHeader_a69ebc6ffa558288b6e30b5989bc465da} 
+double Restart\+Header\+::vir\+Sum\+Bondxx}
+
+
+
+Definition at line \mbox{\hyperlink{ReadRestartBinary_8c_source_l00051}{51}} of file \mbox{\hyperlink{ReadRestartBinary_8c_source}{Read\+Restart\+Binary.\+c}}.
+
+
+
+Referenced by \mbox{\hyperlink{ReadRestartBinary_8c_source_l00059}{Read\+Binary\+Restart()}}.
+
+\Hypertarget{structRestartHeader_ae8dfea6dc54ed083b804e44a0cc57723}\index{RestartHeader@{RestartHeader}!virSumBondxy@{virSumBondxy}}
+\index{virSumBondxy@{virSumBondxy}!RestartHeader@{RestartHeader}}
+\doxysubsubsection{\texorpdfstring{virSumBondxy}{virSumBondxy}}
+{\footnotesize\ttfamily \label{structRestartHeader_ae8dfea6dc54ed083b804e44a0cc57723} 
+double Restart\+Header\+::vir\+Sum\+Bondxy}
+
+
+
+Definition at line \mbox{\hyperlink{ReadRestartBinary_8c_source_l00053}{53}} of file \mbox{\hyperlink{ReadRestartBinary_8c_source}{Read\+Restart\+Binary.\+c}}.
+
+
+
+Referenced by \mbox{\hyperlink{ReadRestartBinary_8c_source_l00059}{Read\+Binary\+Restart()}}.
+
+\Hypertarget{structRestartHeader_a0aa54b7a50268f319d918f86f2be020b}\index{RestartHeader@{RestartHeader}!virSumBondyy@{virSumBondyy}}
+\index{virSumBondyy@{virSumBondyy}!RestartHeader@{RestartHeader}}
+\doxysubsubsection{\texorpdfstring{virSumBondyy}{virSumBondyy}}
+{\footnotesize\ttfamily \label{structRestartHeader_a0aa54b7a50268f319d918f86f2be020b} 
+double Restart\+Header\+::vir\+Sum\+Bondyy}
+
+
+
+Definition at line \mbox{\hyperlink{ReadRestartBinary_8c_source_l00052}{52}} of file \mbox{\hyperlink{ReadRestartBinary_8c_source}{Read\+Restart\+Binary.\+c}}.
+
+
+
+Referenced by \mbox{\hyperlink{ReadRestartBinary_8c_source_l00059}{Read\+Binary\+Restart()}}.
+
+\Hypertarget{structRestartHeader_a3223326b5ba7d8ec1c48cd692e34f530}\index{RestartHeader@{RestartHeader}!virSumPair@{virSumPair}}
+\index{virSumPair@{virSumPair}!RestartHeader@{RestartHeader}}
+\doxysubsubsection{\texorpdfstring{virSumPair}{virSumPair}}
+{\footnotesize\ttfamily \label{structRestartHeader_a3223326b5ba7d8ec1c48cd692e34f530} 
+double Restart\+Header\+::vir\+Sum\+Pair}
+
+
+
+Definition at line \mbox{\hyperlink{ReadRestartBinary_8c_source_l00045}{45}} of file \mbox{\hyperlink{ReadRestartBinary_8c_source}{Read\+Restart\+Binary.\+c}}.
+
+
+
+Referenced by \mbox{\hyperlink{ReadRestartBinary_8c_source_l00059}{Read\+Binary\+Restart()}}.
+
+\Hypertarget{structRestartHeader_aeab5c6b6863708bb3dd3618a50f07cf1}\index{RestartHeader@{RestartHeader}!virSumPairxx@{virSumPairxx}}
+\index{virSumPairxx@{virSumPairxx}!RestartHeader@{RestartHeader}}
+\doxysubsubsection{\texorpdfstring{virSumPairxx}{virSumPairxx}}
+{\footnotesize\ttfamily \label{structRestartHeader_aeab5c6b6863708bb3dd3618a50f07cf1} 
+double Restart\+Header\+::vir\+Sum\+Pairxx}
+
+
+
+Definition at line \mbox{\hyperlink{ReadRestartBinary_8c_source_l00046}{46}} of file \mbox{\hyperlink{ReadRestartBinary_8c_source}{Read\+Restart\+Binary.\+c}}.
+
+
+
+Referenced by \mbox{\hyperlink{ReadRestartBinary_8c_source_l00059}{Read\+Binary\+Restart()}}.
+
+\Hypertarget{structRestartHeader_a286cd2b833af2438380392120c86eefa}\index{RestartHeader@{RestartHeader}!virSumPairxy@{virSumPairxy}}
+\index{virSumPairxy@{virSumPairxy}!RestartHeader@{RestartHeader}}
+\doxysubsubsection{\texorpdfstring{virSumPairxy}{virSumPairxy}}
+{\footnotesize\ttfamily \label{structRestartHeader_a286cd2b833af2438380392120c86eefa} 
+double Restart\+Header\+::vir\+Sum\+Pairxy}
+
+
+
+Definition at line \mbox{\hyperlink{ReadRestartBinary_8c_source_l00048}{48}} of file \mbox{\hyperlink{ReadRestartBinary_8c_source}{Read\+Restart\+Binary.\+c}}.
+
+
+
+Referenced by \mbox{\hyperlink{ReadRestartBinary_8c_source_l00059}{Read\+Binary\+Restart()}}.
+
+\Hypertarget{structRestartHeader_a6b355f5c6f978b16e171ecae1739b8fc}\index{RestartHeader@{RestartHeader}!virSumPairyy@{virSumPairyy}}
+\index{virSumPairyy@{virSumPairyy}!RestartHeader@{RestartHeader}}
+\doxysubsubsection{\texorpdfstring{virSumPairyy}{virSumPairyy}}
+{\footnotesize\ttfamily \label{structRestartHeader_a6b355f5c6f978b16e171ecae1739b8fc} 
+double Restart\+Header\+::vir\+Sum\+Pairyy}
+
+
+
+Definition at line \mbox{\hyperlink{ReadRestartBinary_8c_source_l00047}{47}} of file \mbox{\hyperlink{ReadRestartBinary_8c_source}{Read\+Restart\+Binary.\+c}}.
+
+
+
+Referenced by \mbox{\hyperlink{ReadRestartBinary_8c_source_l00059}{Read\+Binary\+Restart()}}.
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+source/\mbox{\hyperlink{ReadRestartBinary_8c}{Read\+Restart\+Binary.\+c}}\item 
+source/\mbox{\hyperlink{WriteRestartBinary_8c}{Write\+Restart\+Binary.\+c}}\end{DoxyCompactItemize}

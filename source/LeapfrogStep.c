@@ -146,7 +146,6 @@ for(i = 1 ; i <= nAtom; i ++){
   double scale = 1. + nu*deltaT/2.;
   double scale_v = 2./scale - 1.;
   double scale_f = deltaT/scale;
-  int n;
   for(n = 1 ; n <= nAtom ; n ++){
       vx[n] = scale_v*vx[n] + scale_f*(ax[n] + var*gsl_ran_gaussian(rnd,1));
       rx[n] += deltaT * vx[n];

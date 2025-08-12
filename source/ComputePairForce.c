@@ -31,8 +31,8 @@ uVal = 0.0;  uSumPair = 0.0 ;
 virSumPair = 0.0; virSumPairxx = 0.0; virSumPairyy = 0.0; virSumPairxy = 0.0;
 
 for(n = 1 ; n <= nAtom ; n ++){
- ax[n] = 0.0;
- ay[n] = 0.0;
+ fx[n] = 0.0;
+ fy[n] = 0.0;
  discDragx[n] = 0.0;
  discDragy[n] = 0.0;
 }
@@ -44,20 +44,21 @@ for(n = 1; n <= nPairTotal; n ++){
  PairYij[n] = 0.0; 
 }
 
-
-Kn = 1.0;
 double vr[NDIM+1], fdVal, rri;
 nPairActive = 0;
 double meff;
 meff = 0.0;
 int atomIDi, atomIDj;
+double atomiMass, atomjMass;
+
 //int processThisPair = 1;
 
 for(i=1;i<=nAtomInterface;i++){
  for(j=i+1;j<=nAtomInterface;j++){
   atomIDi = atomIDInterface[i];
   atomIDj = atomIDInterface[j];
-  if (isBonded[atomIDi][atomIDj] == 0) { //To exclude pair interaction between bonded atoms 
+  
+  if (isBonded[atomIDi][atomIDj] == 0) { //To have pair interaction between nonbonded atoms only
   rr = 0.0; rri = 0.0; fcVal = 0.0;  fdVal = 0.0; strech = 0.0;
   RadiusIJ = 0.0;
   
@@ -108,7 +109,9 @@ for(i=1;i<=nAtomInterface;i++){
    
    //DampFlag = 1
    if(DampFlag == 1){
-   meff = (atomMass[atomIDi]*atomMass[atomIDj])/(atomMass[atomIDi] + atomMass[atomIDj]);
+   atomiMass = atomMass[atomIDi];
+   atomjMass = atomMass[atomIDj];
+   meff = (atomiMass * atomjMass)/(atomiMass + atomjMass);
    fdVal = -gamman * meff * (vr[1]*dr[1] + vr[2]*dr[2]) * rri; //disc-disc drag
 
    discDragx[atomIDi] =  fdVal * dr[1]; //disc-disc drag
@@ -120,10 +123,10 @@ for(i=1;i<=nAtomInterface;i++){
    discDragy[nPairActive] = discDragy[atomIDi];
    
  
-   ax[atomIDi] += (fcVal + fdVal) * dr[1];
-   ay[atomIDi] += (fcVal + fdVal) * dr[2];
-   ax[atomIDj] += -(fcVal + fdVal) * dr[1];
-   ay[atomIDj] += -(fcVal + fdVal) * dr[2];
+   fx[atomIDi] +=  (fcVal + fdVal) * dr[1];
+   fy[atomIDi] +=  (fcVal + fdVal) * dr[2];
+   fx[atomIDj] += -(fcVal + fdVal) * dr[1];
+   fy[atomIDj] += -(fcVal + fdVal) * dr[2];
   }
 
   //DampFlag = 2
@@ -136,59 +139,19 @@ for(i=1;i<=nAtomInterface;i++){
    discDragx[nPairActive] = discDragx[atomIDi];
    discDragy[nPairActive] = discDragy[atomIDi];
    
-
-   ax[atomIDi] +=  (fcVal * dr[1] - gamman * vr[1]);
-   ay[atomIDi] +=  (fcVal * dr[2] - gamman * vr[2]);
-   ax[atomIDj] += -(fcVal * dr[1] - gamman * vr[1]);
-   ay[atomIDj] += -(fcVal * dr[2] - gamman * vr[2]);
-  }
-  
-  //DampFlag = 3. Suzanne PRL, 130, 178203 (2023) version 
-  else if(DampFlag == 3){
-  //Track compression velocity
-  DeltaXijNew = dr[1];
-  DeltaYijNew = dr[2];
-  if(stepCount == 0) { // Initialization step
-   DeltaXijOldPair[atomIDi][atomIDj] = DeltaXijNew;
-   DeltaYijOldPair[atomIDi][atomIDj] = DeltaYijNew;
-   }
-
-   DeltaXij = DeltaXijNew - DeltaXijOldPair[atomIDi][atomIDj];
-   DeltaYij = DeltaYijNew - DeltaYijOldPair[atomIDi][atomIDj];
-   DeltaVXij = DeltaXij / deltaT;
-   DeltaVYij = DeltaYij / deltaT;
-   
-   // Update history for next step
-   DeltaXijOldPair[atomIDi][atomIDj] = DeltaXijNew;
-   DeltaYijOldPair[atomIDi][atomIDj] = DeltaYijNew;
-     
-   discDragx[atomIDi] =  -gamman * DeltaVXij; //disc-disc drag
-   discDragy[atomIDi] =  -gamman * DeltaVYij; //disc-disc drag
-   discDragx[atomIDj] = -(-gamman * DeltaVXij); //disc-disc drag
-   discDragy[atomIDj] = -(-gamman * DeltaVYij); //disc-disc drag
-   
-   discDragx[nPairActive] = discDragx[atomIDi];
-   discDragy[nPairActive] = discDragy[atomIDi];
-
-   ax[atomIDi] +=  (fcVal * dr[1] - gamman * DeltaVXij);
-   ay[atomIDi] +=  (fcVal * dr[2] - gamman * DeltaVYij);
-   ax[atomIDj] += -(fcVal * dr[1] - gamman * DeltaVXij);
-   ay[atomIDj] += -(fcVal * dr[2] - gamman * DeltaVYij);
+   fx[atomIDi] +=  (fcVal * dr[1] - gamman * vr[1]);
+   fy[atomIDi] +=  (fcVal * dr[2] - gamman * vr[2]);
+   fx[atomIDj] += -(fcVal * dr[1] - gamman * vr[1]);
+   fy[atomIDj] += -(fcVal * dr[2] - gamman * vr[2]);
   }
 
   //In the following, for stress/virial term (fcVal + fdVal) is used since the total pair force = Hookean Interaction + relative velocity drag
   uSumPair +=  0.5 * uVal;
-  virSumPair += 0.5 * (fcVal + fdVal) * rr; 
-  virSumPairxx += 0.5 * (fcVal + fdVal) * dr[1] * dr[1];
-  virSumPairyy += 0.5 * (fcVal + fdVal) * dr[2] * dr[2];
-  virSumPairxy += 0.5 * (fcVal + fdVal) * dr[1] * dr[2];
+  virSumPair += (fcVal + fdVal) * rr; 
+  virSumPairxx += (fcVal + fdVal) * dr[1] * dr[1];
+  virSumPairyy += (fcVal + fdVal) * dr[2] * dr[2];
+  virSumPairxy += (fcVal + fdVal) * dr[1] * dr[2];
     }
-  else { //Resetting the distance between two discs when they are not in contact 
-   DeltaXijOldPair[atomIDi][atomIDj] = 0.0;
-   DeltaYijOldPair[atomIDi][atomIDj] = 0.0;
-   DeltaXijOldPair[atomIDj][atomIDi] = 0.0;
-   DeltaYijOldPair[atomIDj][atomIDi] = 0.0;
-    } 
    }
   }
  }

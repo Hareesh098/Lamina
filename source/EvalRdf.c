@@ -59,7 +59,6 @@ void EvalRdf(){
       histRdf[n] *= normFac/(n-0.5);
     // PRINT THE RADIAL DISTRIBUTION DATA ON TO DISK FILE
     real rBin;
-    int n;
     fprintf(fprdf,"rdf @ timeNow %lf\n", timeNow);
     for(n = 1 ; n <= sizeHistRdf ; n ++){
       rBin = (n - 0.5)*rangeRdf/sizeHistRdf;

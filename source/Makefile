@@ -1,16 +1,16 @@
-CC      = gcc -O3 -pg -Wall -Wextra 
-INCLUDE = -I/opt/mpich4.3.0/include/ 
+CC	= gcc -O3 -pg -Wall -Wextra -Wshadow
+INCLUDE =  #-I/usr/include/mpich-x86_64/
 LFLAG   = -lm -lgsl -lgslcblas 
-OBJECTS   = AccumProps.o AllocArrays.o ApplyBoundaryCond.o Close.o   \
-          ComputeForcesCells.o EvalProps.o Init.o LeapfrogStep.o   BrownianStep.o   \
-          main.o PrintSummary.o SetupJob.o Trajectory.o           \
-          EvalSpacetimeCorr.o EvalVacf.o AccumVacf.o InitVacf.o      \
-          ZeroVacf.o PrintVacf.o Integrate.o DumpState.o EvalRdf.o PrintVrms.o ComputeBondForce.o \
-          DumpBonds.o VelocityVerletStep.o ApplyForce.o     ApplyDrivingForce.o\
-          ApplyShear.o ApplyLeesEdwardsBoundaryCond.o PrintStress.o ComputePairForce.o PrintMomentum.o \
-          DisplaceAtoms.o DumpRestart.o Halt.o EvalCom.o PrintCom.o EvalVrms.o EvalUnwrap.o DumpPairs.o \
-          ApplyViscous.o
-
+OBJECTS	= AccumProps.o AllocArrays.o ApplyBoundaryCond.o Close.o    \
+	  ComputeForcesCells.o EvalProps.o Init.o BrownianStep.o  \
+  	  main.o PrintSummary.o SetupJob.o Trajectory.o 	    \
+	  EvalSpacetimeCorr.o EvalVacf.o AccumVacf.o InitVacf.o     \
+	  ZeroVacf.o PrintVacf.o Integrate.o DumpState.o EvalRdf.o PrintVrms.o ComputeBondForce.o \
+	  DumpBonds.o VelocityVerletStep.o ApplyForce.o	ApplyDrivingForce.o\
+	  ApplyShear.o ApplyLeesEdwardsBoundaryCond.o PrintStress.o ComputePairForce.o PrintMomentum.o \
+	  DisplaceAtoms.o DumpRestart.o Halt.o EvalCom.o PrintCom.o EvalVrms.o EvalUnwrap.o DumpPairs.o \
+	  ApplyViscous.o WriteRestartBinary.o ReadRestartBinary.o PrintForceSum.o LeapfrogStep.o 
+	  
 
 main:	$(OBJECTS)
 	$(CC) -o main $(OBJECTS) $(LFLAG)

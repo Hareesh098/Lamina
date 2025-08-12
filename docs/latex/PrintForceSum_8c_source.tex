@@ -1,0 +1,76 @@
+\doxysection{Print\+Force\+Sum.\+c}
+\hypertarget{PrintForceSum_8c_source}{}\label{PrintForceSum_8c_source}\index{source/PrintForceSum.c@{source/PrintForceSum.c}}
+\mbox{\hyperlink{PrintForceSum_8c}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{PrintForceSum_8c_source_l00001}00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{PrintForceSum_8c_source_l00002}00002\ \textcolor{comment}{\ *\ This\ file\ is\ part\ of\ Lamina.}}
+\DoxyCodeLine{\Hypertarget{PrintForceSum_8c_source_l00003}00003\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{\Hypertarget{PrintForceSum_8c_source_l00004}00004\ \textcolor{comment}{\ *\ Lamina\ is\ free\ software:\ you\ can\ redistribute\ it\ and/or\ modify}}
+\DoxyCodeLine{\Hypertarget{PrintForceSum_8c_source_l00005}00005\ \textcolor{comment}{\ *\ it\ under\ the\ terms\ of\ the\ GNU\ General\ Public\ License\ as\ published\ by}}
+\DoxyCodeLine{\Hypertarget{PrintForceSum_8c_source_l00006}00006\ \textcolor{comment}{\ *\ the\ Free\ Software\ Foundation,\ either\ version\ 3\ of\ the\ License,\ or}}
+\DoxyCodeLine{\Hypertarget{PrintForceSum_8c_source_l00007}00007\ \textcolor{comment}{\ *\ (at\ your\ option)\ any\ later\ version.}}
+\DoxyCodeLine{\Hypertarget{PrintForceSum_8c_source_l00008}00008\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{\Hypertarget{PrintForceSum_8c_source_l00009}00009\ \textcolor{comment}{\ *\ Lamina\ is\ distributed\ in\ the\ hope\ that\ it\ will\ be\ useful,}}
+\DoxyCodeLine{\Hypertarget{PrintForceSum_8c_source_l00010}00010\ \textcolor{comment}{\ *\ but\ WITHOUT\ ANY\ WARRANTY;\ without\ even\ the\ implied\ warranty\ of}}
+\DoxyCodeLine{\Hypertarget{PrintForceSum_8c_source_l00011}00011\ \textcolor{comment}{\ *\ MERCHANTABILITY\ or\ FITNESS\ FOR\ A\ PARTICULAR\ PURPOSE.\ See\ the}}
+\DoxyCodeLine{\Hypertarget{PrintForceSum_8c_source_l00012}00012\ \textcolor{comment}{\ *\ GNU\ General\ Public\ License\ for\ more\ details.}}
+\DoxyCodeLine{\Hypertarget{PrintForceSum_8c_source_l00013}00013\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{\Hypertarget{PrintForceSum_8c_source_l00014}00014\ \textcolor{comment}{\ *\ You\ should\ have\ received\ a\ copy\ of\ the\ GNU\ General\ Public\ License}}
+\DoxyCodeLine{\Hypertarget{PrintForceSum_8c_source_l00015}00015\ \textcolor{comment}{\ *\ along\ with\ Lamina.\ If\ not,\ see\ <https://www.gnu.org/licenses/>.}}
+\DoxyCodeLine{\Hypertarget{PrintForceSum_8c_source_l00016}00016\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{PrintForceSum_8c_source_l00017}00017\ \textcolor{comment}{\ Copyright\ (C)\ 2025\ Harish\ Charan,\ University\ of\ Durham,\ UK}}
+\DoxyCodeLine{\Hypertarget{PrintForceSum_8c_source_l00018}00018\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{PrintForceSum_8c_source_l00019}00019\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{\Hypertarget{PrintForceSum_8c_source_l00020}00020\ }
+\DoxyCodeLine{\Hypertarget{PrintForceSum_8c_source_l00021}00021\ }
+\DoxyCodeLine{\Hypertarget{PrintForceSum_8c_source_l00022}00022\ }
+\DoxyCodeLine{\Hypertarget{PrintForceSum_8c_source_l00023}00023\ \textcolor{preprocessor}{\#include<stdio.h>}}
+\DoxyCodeLine{\Hypertarget{PrintForceSum_8c_source_l00024}00024\ \textcolor{preprocessor}{\#include<stdlib.h>}}
+\DoxyCodeLine{\Hypertarget{PrintForceSum_8c_source_l00025}00025\ \textcolor{preprocessor}{\#include<math.h>}}
+\DoxyCodeLine{\Hypertarget{PrintForceSum_8c_source_l00026}00026\ \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{global_8h}{global.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{PrintForceSum_8c_source_l00027}00027\ }
+\DoxyCodeLine{\Hypertarget{PrintForceSum_8c_source_l00028}\mbox{\hyperlink{main_8c_a3bd430d86d1230829eb92d3a7e8b0553}{00028}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{PrintForceSum_8c_a3bd430d86d1230829eb92d3a7e8b0553}{PrintForceSum}}()\{}
+\DoxyCodeLine{\Hypertarget{PrintForceSum_8c_source_l00029}00029\ \ \textcolor{keywordtype}{int}\ n;}
+\DoxyCodeLine{\Hypertarget{PrintForceSum_8c_source_l00030}00030\ \ \textcolor{keywordtype}{double}\ forceSumxAtomType1,\ forceSumxAtomType2,\ forceSumxAtomType3,\ forceSumxAtomType4,\ forceSumxAtomType5;}
+\DoxyCodeLine{\Hypertarget{PrintForceSum_8c_source_l00031}00031\ \ \textcolor{keywordtype}{double}\ forceSumyAtomType1,\ forceSumyAtomType2,\ forceSumyAtomType3,\ forceSumyAtomType4,\ forceSumyAtomType5;}
+\DoxyCodeLine{\Hypertarget{PrintForceSum_8c_source_l00032}00032\ \ }
+\DoxyCodeLine{\Hypertarget{PrintForceSum_8c_source_l00033}00033\ \ forceSumxAtomType1\ =\ 0.0;\ \ forceSumyAtomType1\ =\ 0.0;\ }
+\DoxyCodeLine{\Hypertarget{PrintForceSum_8c_source_l00034}00034\ \ forceSumxAtomType2\ =\ 0.0;\ \ forceSumyAtomType2\ =\ 0.0;\ }
+\DoxyCodeLine{\Hypertarget{PrintForceSum_8c_source_l00035}00035\ \ forceSumxAtomType3\ =\ 0.0;\ \ forceSumyAtomType3\ =\ 0.0;\ }
+\DoxyCodeLine{\Hypertarget{PrintForceSum_8c_source_l00036}00036\ \ forceSumxAtomType4\ =\ 0.0;\ \ forceSumyAtomType4\ =\ 0.0;\ }
+\DoxyCodeLine{\Hypertarget{PrintForceSum_8c_source_l00037}00037\ \ forceSumxAtomType5\ =\ 0.0;\ \ forceSumyAtomType5\ =\ 0.0;\ }
+\DoxyCodeLine{\Hypertarget{PrintForceSum_8c_source_l00038}00038\ }
+\DoxyCodeLine{\Hypertarget{PrintForceSum_8c_source_l00039}00039\ }
+\DoxyCodeLine{\Hypertarget{PrintForceSum_8c_source_l00040}00040\ \ \textcolor{keywordflow}{for}(n\ =\ 1;\ n\ <=\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}};\ n++)\{}
+\DoxyCodeLine{\Hypertarget{PrintForceSum_8c_source_l00041}00041\ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{global_8h_ad2f384e523b15b13c82e3d6db95b402e}{atomType}}[n]\ ==\ 1)\{}
+\DoxyCodeLine{\Hypertarget{PrintForceSum_8c_source_l00042}00042\ \ \ forceSumxAtomType1\ +=\ \mbox{\hyperlink{global_8h_af5a0b3a6e5601702b2c661dc34d046a2}{fx}}[n];}
+\DoxyCodeLine{\Hypertarget{PrintForceSum_8c_source_l00043}00043\ \ \ forceSumyAtomType1\ \ +=\ \mbox{\hyperlink{global_8h_a869b2e7f75a6f2407d4a91d6f16c99ce}{fy}}[n];}
+\DoxyCodeLine{\Hypertarget{PrintForceSum_8c_source_l00044}00044\ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}(\mbox{\hyperlink{global_8h_ad2f384e523b15b13c82e3d6db95b402e}{atomType}}[n]\ ==\ 2)\{}
+\DoxyCodeLine{\Hypertarget{PrintForceSum_8c_source_l00045}00045\ \ \ forceSumxAtomType2\ +=\ \mbox{\hyperlink{global_8h_af5a0b3a6e5601702b2c661dc34d046a2}{fx}}[n];}
+\DoxyCodeLine{\Hypertarget{PrintForceSum_8c_source_l00046}00046\ \ \ forceSumyAtomType2\ \ +=\ \mbox{\hyperlink{global_8h_a869b2e7f75a6f2407d4a91d6f16c99ce}{fy}}[n];}
+\DoxyCodeLine{\Hypertarget{PrintForceSum_8c_source_l00047}00047\ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}(\mbox{\hyperlink{global_8h_ad2f384e523b15b13c82e3d6db95b402e}{atomType}}[n]\ ==\ 3)\{}
+\DoxyCodeLine{\Hypertarget{PrintForceSum_8c_source_l00048}00048\ \ \ forceSumxAtomType3\ +=\ \mbox{\hyperlink{global_8h_af5a0b3a6e5601702b2c661dc34d046a2}{fx}}[n];}
+\DoxyCodeLine{\Hypertarget{PrintForceSum_8c_source_l00049}00049\ \ \ forceSumyAtomType3\ \ +=\ \mbox{\hyperlink{global_8h_a869b2e7f75a6f2407d4a91d6f16c99ce}{fy}}[n];}
+\DoxyCodeLine{\Hypertarget{PrintForceSum_8c_source_l00050}00050\ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}(\mbox{\hyperlink{global_8h_ad2f384e523b15b13c82e3d6db95b402e}{atomType}}[n]\ ==\ 4)\{}
+\DoxyCodeLine{\Hypertarget{PrintForceSum_8c_source_l00051}00051\ \ \ forceSumxAtomType4\ +=\ \mbox{\hyperlink{global_8h_af5a0b3a6e5601702b2c661dc34d046a2}{fx}}[n];}
+\DoxyCodeLine{\Hypertarget{PrintForceSum_8c_source_l00052}00052\ \ \ forceSumyAtomType4\ +=\ \mbox{\hyperlink{global_8h_a869b2e7f75a6f2407d4a91d6f16c99ce}{fy}}[n];}
+\DoxyCodeLine{\Hypertarget{PrintForceSum_8c_source_l00053}00053\ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}(\mbox{\hyperlink{global_8h_ad2f384e523b15b13c82e3d6db95b402e}{atomType}}[n]\ ==\ 5)\{}
+\DoxyCodeLine{\Hypertarget{PrintForceSum_8c_source_l00054}00054\ \ \ forceSumxAtomType5\ +=\ \mbox{\hyperlink{global_8h_af5a0b3a6e5601702b2c661dc34d046a2}{fx}}[n];}
+\DoxyCodeLine{\Hypertarget{PrintForceSum_8c_source_l00055}00055\ \ \ forceSumyAtomType5\ +=\ \mbox{\hyperlink{global_8h_a869b2e7f75a6f2407d4a91d6f16c99ce}{fy}}[n];}
+\DoxyCodeLine{\Hypertarget{PrintForceSum_8c_source_l00056}00056\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{PrintForceSum_8c_source_l00057}00057\ \ \}\ }
+\DoxyCodeLine{\Hypertarget{PrintForceSum_8c_source_l00058}00058\ }
+\DoxyCodeLine{\Hypertarget{PrintForceSum_8c_source_l00059}00059\ \ fprintf(\mbox{\hyperlink{global_8h_a798c09f6e5bdfdaab8c8a303144eeeb6}{fpforce}},\ \textcolor{stringliteral}{"{}\%0.4lf\(\backslash\)t\%0.16lf\(\backslash\)t\%0.16lf\(\backslash\)t\%0.16lf\(\backslash\)t\%0.16lf\(\backslash\)t\%0.16f\(\backslash\)t\%0.16lf\(\backslash\)t\%0.16lf\(\backslash\)t\%0.16lf\(\backslash\)t\%0.16lf\(\backslash\)t\%0.16lf\(\backslash\)t\%0.16f\(\backslash\)t\%0.16f\(\backslash\)n"{}},\ \mbox{\hyperlink{global_8h_abb2aee8c6108dd86a8da33115d249d71}{timeNow}},\ }
+\DoxyCodeLine{\Hypertarget{PrintForceSum_8c_source_l00060}00060\ \ forceSumxAtomType1,\ forceSumyAtomType1,\ }
+\DoxyCodeLine{\Hypertarget{PrintForceSum_8c_source_l00061}00061\ \ forceSumxAtomType2,\ forceSumyAtomType2,\ }
+\DoxyCodeLine{\Hypertarget{PrintForceSum_8c_source_l00062}00062\ \ forceSumxAtomType3,\ forceSumyAtomType3,\ }
+\DoxyCodeLine{\Hypertarget{PrintForceSum_8c_source_l00063}00063\ \ forceSumxAtomType4,\ forceSumyAtomType4,\ }
+\DoxyCodeLine{\Hypertarget{PrintForceSum_8c_source_l00064}00064\ \ forceSumxAtomType5,\ forceSumyAtomType5,\ }
+\DoxyCodeLine{\Hypertarget{PrintForceSum_8c_source_l00065}00065\ \ \mbox{\hyperlink{global_8h_af3214cd66a361a1bc7f8ad9e168bed9b}{forceSumxExtern}},\ \mbox{\hyperlink{global_8h_ac7ea211438e84563f9d2a9db7446bc7f}{forceSumyExtern}});}
+\DoxyCodeLine{\Hypertarget{PrintForceSum_8c_source_l00066}00066\ \ fflush(\mbox{\hyperlink{global_8h_a798c09f6e5bdfdaab8c8a303144eeeb6}{fpforce}});}
+\DoxyCodeLine{\Hypertarget{PrintForceSum_8c_source_l00067}00067\ \ \}}
+\DoxyCodeLine{\Hypertarget{PrintForceSum_8c_source_l00068}00068\ \ \ }
+\DoxyCodeLine{\Hypertarget{PrintForceSum_8c_source_l00069}00069\ \ \ }
+\DoxyCodeLine{\Hypertarget{PrintForceSum_8c_source_l00070}00070\ \ \ }
+
+\end{DoxyCode}

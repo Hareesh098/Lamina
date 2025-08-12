@@ -19,11 +19,11 @@ void \mbox{\hyperlink{EvalRdf_8c_a0f6a37eae25af2ac2cea4396f44555f5}{Eval\+Rdf}} 
 
 
 \doxysubsection{Function Documentation}
-\Hypertarget{EvalRdf_8c_a0f6a37eae25af2ac2cea4396f44555f5}\label{EvalRdf_8c_a0f6a37eae25af2ac2cea4396f44555f5} 
-\index{EvalRdf.c@{EvalRdf.c}!EvalRdf@{EvalRdf}}
+\Hypertarget{EvalRdf_8c_a0f6a37eae25af2ac2cea4396f44555f5}\index{EvalRdf.c@{EvalRdf.c}!EvalRdf@{EvalRdf}}
 \index{EvalRdf@{EvalRdf}!EvalRdf.c@{EvalRdf.c}}
 \doxysubsubsection{\texorpdfstring{EvalRdf()}{EvalRdf()}}
-{\footnotesize\ttfamily void Eval\+Rdf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{EvalRdf_8c_a0f6a37eae25af2ac2cea4396f44555f5} 
+void Eval\+Rdf (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
 
 
@@ -67,18 +67,17 @@ Definition at line \mbox{\hyperlink{EvalRdf_8c_source_l00026}{26}} of file \mbox
 \DoxyCodeLine{00059\ \ \ \ \ \ \ \mbox{\hyperlink{global_8h_a8b70419767ded4d857709915fdbd0fc7}{histRdf}}[n]\ *=\ normFac/(n-\/0.5);}
 \DoxyCodeLine{00060\ \ \ \ \ \textcolor{comment}{//\ PRINT\ THE\ RADIAL\ DISTRIBUTION\ DATA\ ON\ TO\ DISK\ FILE}}
 \DoxyCodeLine{00061\ \ \ \ \ \mbox{\hyperlink{global_8h_a11d147c64891830c9e79b3315b1b2e21}{real}}\ rBin;}
-\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keywordtype}{int}\ n;}
-\DoxyCodeLine{00063\ \ \ \ \ fprintf(\mbox{\hyperlink{global_8h_a9b0f0d7032e5e928e03460aef4b3a508}{fprdf}},\textcolor{stringliteral}{"{}rdf\ @\ timeNow\ \%lf\(\backslash\)n"{}},\ \mbox{\hyperlink{global_8h_abb2aee8c6108dd86a8da33115d249d71}{timeNow}});}
-\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordflow}{for}(n\ =\ 1\ ;\ n\ <=\ \mbox{\hyperlink{global_8h_abe8258aaf81de052c6452b8b739c5c73}{sizeHistRdf}}\ ;\ n\ ++)\{}
-\DoxyCodeLine{00065\ \ \ \ \ \ \ rBin\ =\ (n\ -\/\ 0.5)*\mbox{\hyperlink{global_8h_acdf103f0d5ee27e3fd16ce65e5704490}{rangeRdf}}/\mbox{\hyperlink{global_8h_abe8258aaf81de052c6452b8b739c5c73}{sizeHistRdf}};}
-\DoxyCodeLine{00066\ \ \ \ \ \ \ fprintf(\mbox{\hyperlink{global_8h_a9b0f0d7032e5e928e03460aef4b3a508}{fprdf}},\ \textcolor{stringliteral}{"{}\%lf\ \%lf\(\backslash\)n"{}},\ rBin,\ \mbox{\hyperlink{global_8h_a8b70419767ded4d857709915fdbd0fc7}{histRdf}}[n]);}
-\DoxyCodeLine{00067\ \ \ \ \ \}}
-\DoxyCodeLine{00068\ \ \ \}}
-\DoxyCodeLine{00069\ }
-\DoxyCodeLine{00070\ \}}
+\DoxyCodeLine{00062\ \ \ \ \ fprintf(\mbox{\hyperlink{global_8h_a9b0f0d7032e5e928e03460aef4b3a508}{fprdf}},\textcolor{stringliteral}{"{}rdf\ @\ timeNow\ \%lf\(\backslash\)n"{}},\ \mbox{\hyperlink{global_8h_abb2aee8c6108dd86a8da33115d249d71}{timeNow}});}
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordflow}{for}(n\ =\ 1\ ;\ n\ <=\ \mbox{\hyperlink{global_8h_abe8258aaf81de052c6452b8b739c5c73}{sizeHistRdf}}\ ;\ n\ ++)\{}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ rBin\ =\ (n\ -\/\ 0.5)*\mbox{\hyperlink{global_8h_acdf103f0d5ee27e3fd16ce65e5704490}{rangeRdf}}/\mbox{\hyperlink{global_8h_abe8258aaf81de052c6452b8b739c5c73}{sizeHistRdf}};}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ fprintf(\mbox{\hyperlink{global_8h_a9b0f0d7032e5e928e03460aef4b3a508}{fprdf}},\ \textcolor{stringliteral}{"{}\%lf\ \%lf\(\backslash\)n"{}},\ rBin,\ \mbox{\hyperlink{global_8h_a8b70419767ded4d857709915fdbd0fc7}{histRdf}}[n]);}
+\DoxyCodeLine{00066\ \ \ \ \ \}}
+\DoxyCodeLine{00067\ \ \ \}}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ \}}
 
 \end{DoxyCode}
 
 
-References \mbox{\hyperlink{global_8h_a2ffa882c939ed143f77d2d23a389145a}{count\+Rdf}}, \mbox{\hyperlink{global_8h_a9b0f0d7032e5e928e03460aef4b3a508}{fprdf}}, \mbox{\hyperlink{global_8h_a8b70419767ded4d857709915fdbd0fc7}{hist\+Rdf}}, \mbox{\hyperlink{global_8h_source_l00099}{limit\+Rdf}}, \mbox{\hyperlink{global_8h_source_l00024}{n\+Atom}}, \mbox{\hyperlink{global_8h_source_l00013}{NDIM}}, \mbox{\hyperlink{global_8h_source_l00098}{range\+Rdf}}, \mbox{\hyperlink{global_8h_a43c4f708b8d633b069355a121d6adbdc}{region}}, \mbox{\hyperlink{global_8h_source_l00020}{regionH}}, \mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}, \mbox{\hyperlink{global_8h_source_l00017}{ry}}, \mbox{\hyperlink{global_8h_source_l00015}{SignR}}, \mbox{\hyperlink{global_8h_source_l00099}{size\+Hist\+Rdf}}, \mbox{\hyperlink{global_8h_source_l00014}{Sqr}}, and \mbox{\hyperlink{global_8h_source_l00020}{time\+Now}}.
+References \mbox{\hyperlink{global_8h_a2ffa882c939ed143f77d2d23a389145a}{count\+Rdf}}, \mbox{\hyperlink{global_8h_a9b0f0d7032e5e928e03460aef4b3a508}{fprdf}}, \mbox{\hyperlink{global_8h_a8b70419767ded4d857709915fdbd0fc7}{hist\+Rdf}}, \mbox{\hyperlink{global_8h_source_l00104}{limit\+Rdf}}, \mbox{\hyperlink{global_8h_source_l00024}{n\+Atom}}, \mbox{\hyperlink{global_8h_source_l00013}{NDIM}}, \mbox{\hyperlink{global_8h_source_l00103}{range\+Rdf}}, \mbox{\hyperlink{global_8h_a43c4f708b8d633b069355a121d6adbdc}{region}}, \mbox{\hyperlink{global_8h_source_l00020}{regionH}}, \mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}, \mbox{\hyperlink{global_8h_source_l00017}{ry}}, \mbox{\hyperlink{global_8h_source_l00015}{SignR}}, \mbox{\hyperlink{global_8h_source_l00104}{size\+Hist\+Rdf}}, \mbox{\hyperlink{global_8h_source_l00014}{Sqr}}, and \mbox{\hyperlink{global_8h_source_l00020}{time\+Now}}.
 

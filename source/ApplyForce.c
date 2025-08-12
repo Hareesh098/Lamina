@@ -26,10 +26,12 @@ void ApplyForce(){
  int n;
  double lx;
  lx = regionH[1];  
- fy =  (FyBylx * lx)/nAtomBlock;
- fx =  fxByfy * fy;
+ fyExtern =  (FyBylx * lx)/nAtomBlock;
+ fxExtern =  fxByfy * fyExtern;
+ forceSumxExtern = fxExtern*nAtomBlock;  forceSumyExtern = fyExtern*nAtomBlock;
+
  for(n = 1; n <= nAtom; n ++){
  if(molID[n] == 2){
-  ax[n] += fx; 
-  ay[n] -= fy;
+  fx[n] += fxExtern; 
+  fy[n] -= fyExtern;
 } } }

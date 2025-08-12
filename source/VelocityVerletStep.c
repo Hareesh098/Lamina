@@ -25,9 +25,13 @@
 
 void VelocityVerletStep(int icode){
 int n;
+double atomMassi;
+   
  if(icode == 1){
  for (n= 1; n <= nAtom; n++) {
   if(atomType[n] != freezeAtomType){
+  atomMassi = 1./atomMass[n];
+  ax[n] = fx[n] * atomMassi;    ay[n] = fy[n] * atomMassi;    
   vx[n] += ax[n] * 0.5 * deltaT; 
   vy[n] += ay[n] * 0.5 * deltaT;
   rx[n] += vx[n] * deltaT; 
@@ -51,6 +55,8 @@ int n;
   else if(icode == 2){
   for(n = 1; n <= nAtom; n++) {
   if(atomType[n] != freezeAtomType){
+   atomMassi = 1./atomMass[n];
+   ax[n] = fx[n] * atomMassi;    ay[n] = fy[n] * atomMassi;    
    vx[n] += ax[n] * 0.5 * deltaT; 
    vy[n] += ay[n] * 0.5 * deltaT;
 } } } }

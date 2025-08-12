@@ -24,16 +24,18 @@
 #include "global.h"
 
 void EvalProps() {
- real v, vv;
- virSum = 0.0;
- vSumX = 0.0; vSumY = 0.0; vSum = 0.0; 
- vvSum = 0.;
+ double v;
  int n;
-
+ double atomMassn;
+ double KineEnrXSum, KineEnrYSum;
+ virSum = 0.0;
+ vSumX = 0.0; vSumY = 0.0; vSum = 0.0; vvSum = 0.0;
+ KineEnrXSum = 0.0; KineEnrYSum = 0.0;
+ 
  for (n = 1; n <= nAtom; n++) {
-  vv = 0.;
   // Initialize v with a default value to avoid "uninitialized" warning.
   v = 0.0;
+  atomMassn = atomMass[n];
   // X direction velocity
   if (strcmp(solver, "Verlet") == 0) {
     v = vx[n];
@@ -41,7 +43,8 @@ void EvalProps() {
     v = vx[n] - 0.5 * deltaT * ax[n];
   }
    vSum += v;
-   vv += Sqr(v);
+   vvSum += Sqr(v);
+   KineEnrXSum += 0.5 * atomMassn * Sqr(v);
    vSumX += v; 
    // Y direction velocity
    if (strcmp(solver, "Verlet") == 0) {
@@ -51,11 +54,11 @@ void EvalProps() {
    }
    vSum += v;
    vSumY += v;
-   vv += Sqr(v);
-   vvSum += vv;
+   vvSum += Sqr(v);
+   KineEnrYSum += 0.5 * atomMassn * Sqr(v);
   }
 
-  kinEnergy = 0.5 * vvSum / nAtom ;
+  kinEnergy = (KineEnrXSum + KineEnrYSum) / nAtom ;
   uSumPairPerAtom = uSumPair / nAtom ;
   BondEnergyPerAtom = TotalBondEnergy / (0.5*nAtom); //Factor of 0.5 since each atom has one half the bond energy
   potEnergy = uSumPairPerAtom +  BondEnergyPerAtom ;

@@ -1,0 +1,150 @@
+\doxysection{Write\+Restart\+Binary.\+c}
+\hypertarget{WriteRestartBinary_8c_source}{}\label{WriteRestartBinary_8c_source}\index{source/WriteRestartBinary.c@{source/WriteRestartBinary.c}}
+\mbox{\hyperlink{WriteRestartBinary_8c}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00001}00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00002}00002\ \textcolor{comment}{\ *\ This\ file\ is\ part\ of\ Lamina.}}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00003}00003\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00004}00004\ \textcolor{comment}{\ *\ Lamina\ is\ free\ software:\ you\ can\ redistribute\ it\ and/or\ modify}}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00005}00005\ \textcolor{comment}{\ *\ it\ under\ the\ terms\ of\ the\ GNU\ General\ Public\ License\ as\ published\ by}}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00006}00006\ \textcolor{comment}{\ *\ the\ Free\ Software\ Foundation,\ either\ version\ 3\ of\ the\ License,\ or}}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00007}00007\ \textcolor{comment}{\ *\ (at\ your\ option)\ any\ later\ version.}}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00008}00008\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00009}00009\ \textcolor{comment}{\ *\ Lamina\ is\ distributed\ in\ the\ hope\ that\ it\ will\ be\ useful,}}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00010}00010\ \textcolor{comment}{\ *\ but\ WITHOUT\ ANY\ WARRANTY;\ without\ even\ the\ implied\ warranty\ of}}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00011}00011\ \textcolor{comment}{\ *\ MERCHANTABILITY\ or\ FITNESS\ FOR\ A\ PARTICULAR\ PURPOSE.\ See\ the}}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00012}00012\ \textcolor{comment}{\ *\ GNU\ General\ Public\ License\ for\ more\ details.}}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00013}00013\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00014}00014\ \textcolor{comment}{\ *\ You\ should\ have\ received\ a\ copy\ of\ the\ GNU\ General\ Public\ License}}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00015}00015\ \textcolor{comment}{\ *\ along\ with\ Lamina.\ If\ not,\ see\ <https://www.gnu.org/licenses/>.}}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00016}00016\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00017}00017\ \textcolor{comment}{\ Copyright\ (C)\ 2025\ Harish\ Charan,\ University\ of\ Durham,\ UK}}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00018}00018\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00019}00019\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00020}00020\ }
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00021}00021\ }
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00022}00022\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00023}00023\ \textcolor{preprocessor}{\#include\ <stdlib.h>}}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00024}00024\ \textcolor{preprocessor}{\#include\ <string.h>}}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00025}00025\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{global_8h}{global.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00026}00026\ }
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00027}00027\ \textcolor{comment}{//\ Header\ struct\ must\ match\ that\ of\ WriteRestartBinary}}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00028}00028\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00029}00029\ \ \textcolor{keywordtype}{char}\ magic[8];\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ "{}LAMINA\(\backslash\)0"{}}}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00030}00030\ \ \textcolor{keywordtype}{double}\ version;}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00031}00031\ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{global_8h_abb2aee8c6108dd86a8da33115d249d71}{timeNow}};}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00032}00032\ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}};}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00033}00033\ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{global_8h_a89d3bca785c9af9c4a154dc6642add4d}{nBond}};}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00034}00034\ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{global_8h_a43448c32d3aae360f080f3805a73f08f}{nAtomType}};}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00035}00035\ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{global_8h_a3afc68b43647936871af06d6b5d1d5db}{nBondType}};}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00036}00036\ \ \textcolor{keywordtype}{double}\ regionX;\ \ \ \textcolor{comment}{//\ =\ region[1]}}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00037}00037\ \ \textcolor{keywordtype}{double}\ regionY;\ \ \ \textcolor{comment}{//\ =\ region[2]}}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00038}00038\ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{global_8h_a7360a2db25507a0148bcee894745b855}{nAtomInterface}};}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00039}00039\ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{global_8h_a1fc19b1274901ec0290f04ae9900f8b4}{nAtomBlock}};}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00040}00040\ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{global_8h_a1a9704697a32d001f71d2a212562bd79}{nDiscInterface}};}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00041}00041\ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{global_8h_a8db1d257e64403a93bd447fbb78261a5}{bigDiameter}};}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00042}00042\ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{global_8h_a438a81f2d0c485545a708423e1cb80ed}{InterfaceWidth}};}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00043}00043\ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{global_8h_a4d261d7bf27ba6bb03927a2daa310746}{nPairActive}};}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00044}00044\ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{global_8h_a23366336aec87861b8d8423b619cd5fe}{nPairTotal}};}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00045}00045\ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{global_8h_a9b7d6fb2c7936c1e648c8af3260beb25}{uSumPair}};}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00046}00046\ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{global_8h_a217147ba7e53c5aa91861295fd29acab}{virSumPair}};}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00047}00047\ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{global_8h_a4ca279a3a01228351fec03dd3c051389}{virSumPairxx}};}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00048}00048\ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{global_8h_a1e26755e037e321d30f5a5a128140e2d}{virSumPairyy}};}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00049}00049\ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{global_8h_af5252e908f208e8efbc603a117c51cb7}{virSumPairxy}};}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00050}00050\ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{global_8h_ace1b0540bf5b0561f14c46f5aa8d3d17}{TotalBondEnergy}};}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00051}00051\ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{global_8h_a08413ab34f5604e910f1dbdc021a3c5f}{virSumBond}};}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00052}00052\ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{global_8h_ab86ba14519d191322a45fa6f760b16f8}{virSumBondxx}};}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00053}00053\ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{global_8h_aee51ff7fe82a7228ea1348855cf89915}{virSumBondyy}};}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00054}00054\ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{global_8h_a6669a78293d832c3b0c074886e6ecd19}{virSumBondxy}};}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00055}00055\ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{global_8h_ac208e38a6cf3eecfb9d1522e950ed956}{stepCount}};}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00056}00056\ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{global_8h_af3214cd66a361a1bc7f8ad9e168bed9b}{forceSumxExtern}};\ }
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00057}00057\ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{global_8h_ac7ea211438e84563f9d2a9db7446bc7f}{forceSumyExtern}};}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00058}00058\ \}\ \mbox{\hyperlink{structRestartHeader}{RestartHeader}};}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00059}00059\ }
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00060}\mbox{\hyperlink{main_8c_a5f2aa15cb948635678e57b46cf7f2b7f}{00060}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{WriteRestartBinary_8c_a5f2aa15cb948635678e57b46cf7f2b7f}{WriteBinaryRestart}}()\ \{}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00061}00061\ \ \mbox{\hyperlink{structRestartHeader}{RestartHeader}}\ hdr\ =\ \{}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00062}00062\ \ .magic\ =\ \textcolor{stringliteral}{"{}LAMINA"{}},}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00063}00063\ \ .version\ =\ 1.0,}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00064}00064\ \ .timeNow\ =\ \mbox{\hyperlink{global_8h_abb2aee8c6108dd86a8da33115d249d71}{timeNow}},}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00065}00065\ \ .nAtom\ =\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}},}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00066}00066\ \ .nBond\ =\ \mbox{\hyperlink{global_8h_a89d3bca785c9af9c4a154dc6642add4d}{nBond}},}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00067}00067\ \ .nAtomType\ =\ \mbox{\hyperlink{global_8h_a43448c32d3aae360f080f3805a73f08f}{nAtomType}},}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00068}00068\ \ .nBondType\ =\ \mbox{\hyperlink{global_8h_a3afc68b43647936871af06d6b5d1d5db}{nBondType}},}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00069}00069\ \ .regionX\ =\ \mbox{\hyperlink{global_8h_a43c4f708b8d633b069355a121d6adbdc}{region}}[1],}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00070}00070\ \ .regionY\ =\ \mbox{\hyperlink{global_8h_a43c4f708b8d633b069355a121d6adbdc}{region}}[2],}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00071}00071\ \ .nAtomInterface\ =\ \mbox{\hyperlink{global_8h_a7360a2db25507a0148bcee894745b855}{nAtomInterface}},}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00072}00072\ \ .nAtomBlock\ =\ \mbox{\hyperlink{global_8h_a1fc19b1274901ec0290f04ae9900f8b4}{nAtomBlock}},}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00073}00073\ \ .nDiscInterface\ =\ \mbox{\hyperlink{global_8h_a1a9704697a32d001f71d2a212562bd79}{nDiscInterface}},}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00074}00074\ \ .bigDiameter\ =\ \mbox{\hyperlink{global_8h_a8db1d257e64403a93bd447fbb78261a5}{bigDiameter}},}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00075}00075\ \ .InterfaceWidth\ =\ \mbox{\hyperlink{global_8h_a438a81f2d0c485545a708423e1cb80ed}{InterfaceWidth}},}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00076}00076\ \ .nPairActive\ =\ \mbox{\hyperlink{global_8h_a4d261d7bf27ba6bb03927a2daa310746}{nPairActive}},}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00077}00077\ \ .nPairTotal\ =\ \mbox{\hyperlink{global_8h_a23366336aec87861b8d8423b619cd5fe}{nPairTotal}},}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00078}00078\ \ .uSumPair\ =\ \mbox{\hyperlink{global_8h_a9b7d6fb2c7936c1e648c8af3260beb25}{uSumPair}},}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00079}00079\ \ .virSumPair\ =\ \mbox{\hyperlink{global_8h_a217147ba7e53c5aa91861295fd29acab}{virSumPair}},}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00080}00080\ \ .virSumPairxx\ =\ \mbox{\hyperlink{global_8h_a4ca279a3a01228351fec03dd3c051389}{virSumPairxx}},}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00081}00081\ \ .virSumPairyy\ =\ \mbox{\hyperlink{global_8h_a1e26755e037e321d30f5a5a128140e2d}{virSumPairyy}},}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00082}00082\ \ .virSumPairxy\ =\ \mbox{\hyperlink{global_8h_af5252e908f208e8efbc603a117c51cb7}{virSumPairxy}},}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00083}00083\ \ .TotalBondEnergy\ =\ \mbox{\hyperlink{global_8h_ace1b0540bf5b0561f14c46f5aa8d3d17}{TotalBondEnergy}},}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00084}00084\ \ .virSumBond\ =\ \mbox{\hyperlink{global_8h_a08413ab34f5604e910f1dbdc021a3c5f}{virSumBond}},}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00085}00085\ \ .virSumBondxx\ =\ \mbox{\hyperlink{global_8h_ab86ba14519d191322a45fa6f760b16f8}{virSumBondxx}},}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00086}00086\ \ .virSumBondyy\ =\ \mbox{\hyperlink{global_8h_aee51ff7fe82a7228ea1348855cf89915}{virSumBondyy}},}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00087}00087\ \ .virSumBondxy\ =\ \mbox{\hyperlink{global_8h_a6669a78293d832c3b0c074886e6ecd19}{virSumBondxy}},}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00088}00088\ \ .stepCount\ =\ \mbox{\hyperlink{global_8h_ac208e38a6cf3eecfb9d1522e950ed956}{stepCount}},}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00089}00089\ \ .forceSumxExtern\ =\ \mbox{\hyperlink{global_8h_af3214cd66a361a1bc7f8ad9e168bed9b}{forceSumxExtern}},\ }
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00090}00090\ \ .forceSumyExtern\ =\ \mbox{\hyperlink{global_8h_ac7ea211438e84563f9d2a9db7446bc7f}{forceSumyExtern}}}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00091}00091\ \ \};}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00092}00092\ }
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00093}00093\ \ \textcolor{keywordtype}{char}\ DUMP[256];}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00094}00094\ \ FILE\ *fp;}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00095}00095\ \ sprintf(DUMP,\ \textcolor{stringliteral}{"{}\%s.bin"{}},\ \mbox{\hyperlink{global_8h_ad2849cf781a4db22cc1b31eaaee50a4f}{prefix}});\ \ \textcolor{comment}{//\ Produces\ e.g.\ "{}../output/test.bin"{}}}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00096}00096\ \ fp\ =\ fopen(DUMP,\ \textcolor{stringliteral}{"{}wb"{}});}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00097}00097\ \ \textcolor{keywordflow}{if}\ (!fp)\ \{}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00098}00098\ \ fprintf(stderr,\ \textcolor{stringliteral}{"{}Error\ opening\ binary\ restart\ file\ \%s\ for\ writing\(\backslash\)n"{}},\ DUMP);}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00099}00099\ \ exit(EXIT\_FAILURE);}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00100}00100\ \ \}}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00101}00101\ \ }
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00102}00102\ \ \textcolor{comment}{//Here\ we\ are\ writing\ the\ data\ to\ binary\ file}}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00103}00103\ \ fwrite(\&hdr,\ \textcolor{keyword}{sizeof}(\mbox{\hyperlink{structRestartHeader}{RestartHeader}}),\ 1,\ fp);}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00104}00104\ \ fwrite(\&\mbox{\hyperlink{global_8h_af2e16c834f37dce5699222281ce6e302}{atomID}}[1],\ \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{int}),\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}},\ fp);\ }
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00105}00105\ \ fwrite(\&\mbox{\hyperlink{global_8h_a65f3cbf0ee8813aae06be044d6c568ad}{molID}}[1],\ \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{int}),\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}},\ fp);\ }
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00106}00106\ \ fwrite(\&\mbox{\hyperlink{global_8h_ad2f384e523b15b13c82e3d6db95b402e}{atomType}}[1],\ \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{int}),\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}},\ fp);\ }
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00107}00107\ \ fwrite(\&\mbox{\hyperlink{global_8h_ab715ebf9f35659a111ee6c5eedc360af}{atomRadius}}[1],\ \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{double}),\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}},\ fp);\ }
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00108}00108\ \ fwrite(\&\mbox{\hyperlink{global_8h_a7fec425f50f8c2d24862faef8284b520}{rx}}[1],\ \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{double}),\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}},\ fp);\ }
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00109}00109\ \ fwrite(\&\mbox{\hyperlink{global_8h_af88ff31a9ae85beb713bd0c42815f1de}{ry}}[1],\ \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{double}),\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}},\ fp);\ }
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00110}00110\ \ fwrite(\&\mbox{\hyperlink{global_8h_a6cbb00abd724a75be2c6424c84d18654}{vx}}[1],\ \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{double}),\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}},\ fp);\ }
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00111}00111\ \ fwrite(\&\mbox{\hyperlink{global_8h_ad78254f6802793cc12b197889e6ea80d}{vy}}[1],\ \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{double}),\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}},\ fp);\ }
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00112}00112\ \ fwrite(\&\mbox{\hyperlink{global_8h_a82d645cda6bea6506c7b5f4f7453986c}{ax}}[1],\ \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{double}),\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}},\ fp);\ }
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00113}00113\ \ fwrite(\&\mbox{\hyperlink{global_8h_a68c7afda02d0f26c1987a4eee13928f2}{ay}}[1],\ \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{double}),\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}},\ fp);\ }
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00114}00114\ \ fwrite(\&\mbox{\hyperlink{global_8h_af5a0b3a6e5601702b2c661dc34d046a2}{fx}}[1],\ \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{double}),\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}},\ fp);\ }
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00115}00115\ \ fwrite(\&\mbox{\hyperlink{global_8h_a869b2e7f75a6f2407d4a91d6f16c99ce}{fy}}[1],\ \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{double}),\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}},\ fp);\ }
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00116}00116\ \ fwrite(\&\mbox{\hyperlink{global_8h_a1b28db247f294d5c24571ca1a942c4a4}{atomMass}}[1],\ \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{double}),\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}},\ fp);}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00117}00117\ \ fwrite(\&\mbox{\hyperlink{global_8h_ad1ad82db5042c5e6dcdf44dee00362fe}{discDragx}}[1],\ \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{double}),\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}},\ fp);}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00118}00118\ \ fwrite(\&\mbox{\hyperlink{global_8h_a1a2663b70d9ea62a68fa250cc5e3e6c2}{discDragy}}[1],\ \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{double}),\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}},\ fp);}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00119}00119\ \ fwrite(\&\mbox{\hyperlink{global_8h_a7bc962983a9db9deeab76d600db384c7}{atomIDInterface}}[1],\ \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{int}),\ \mbox{\hyperlink{global_8h_a7360a2db25507a0148bcee894745b855}{nAtomInterface}},\ fp);\ }
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00120}00120\ \ }
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00121}00121\ \ fwrite(\&\mbox{\hyperlink{global_8h_a15d105ee1521b15d76eeb63ac4351f6f}{BondID}}[1],\ \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{int}),\ \mbox{\hyperlink{global_8h_a89d3bca785c9af9c4a154dc6642add4d}{nBond}},\ fp);}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00122}00122\ \ fwrite(\&\mbox{\hyperlink{global_8h_a389f660313ee3764aaaa6997121a5400}{BondType}}[1],\ \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{int}),\ \mbox{\hyperlink{global_8h_a89d3bca785c9af9c4a154dc6642add4d}{nBond}},\ fp);}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00123}00123\ \ fwrite(\&\mbox{\hyperlink{global_8h_a7ef9937bc3aea03091e40e733df7353e}{atom1}}[1],\ \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{int}),\ \mbox{\hyperlink{global_8h_a89d3bca785c9af9c4a154dc6642add4d}{nBond}},\ fp);}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00124}00124\ \ fwrite(\&\mbox{\hyperlink{global_8h_a28d9ba88ad3c8e8b5cc5608b2cc0b0b5}{atom2}}[1],\ \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{int}),\ \mbox{\hyperlink{global_8h_a89d3bca785c9af9c4a154dc6642add4d}{nBond}},\ fp);}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00125}00125\ \ fwrite(\&\mbox{\hyperlink{global_8h_a8e6dc750ca456d701cdae21325c99048}{kb}}[1],\ \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{double}),\ \mbox{\hyperlink{global_8h_a89d3bca785c9af9c4a154dc6642add4d}{nBond}},\ fp);}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00126}00126\ \ fwrite(\&\mbox{\hyperlink{global_8h_a78581c34377eab92a44bc4d30fabed1c}{ro}}[1],\ \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{double}),\ \mbox{\hyperlink{global_8h_a89d3bca785c9af9c4a154dc6642add4d}{nBond}},\ fp);\ }
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00127}00127\ \ fwrite(\&\mbox{\hyperlink{global_8h_a8d2c058f09cdaa1bc8c848a33e0fd745}{BondEnergy}}[1],\ \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{double}),\ \mbox{\hyperlink{global_8h_a89d3bca785c9af9c4a154dc6642add4d}{nBond}},\ fp);}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00128}00128\ \ fwrite(\&\mbox{\hyperlink{global_8h_a78926ce24b541f8bdc741a75815eecf2}{BondLength}}[1],\ \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{double}),\ \mbox{\hyperlink{global_8h_a89d3bca785c9af9c4a154dc6642add4d}{nBond}},\ fp);\ \ \ \ }
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00129}00129\ \ fwrite(\&\mbox{\hyperlink{global_8h_ae25566f54b864b50af8b06ce249b07bd}{nodeDragx}}[1],\ \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{double}),\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}},\ fp);}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00130}00130\ \ fwrite(\&\mbox{\hyperlink{global_8h_aae007ab0860d0d27bf49ce1e74831a71}{nodeDragy}}[1],\ \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{double}),\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}},\ fp);}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00131}00131\ \ fwrite(\&\mbox{\hyperlink{global_8h_ad81015466d6c894db2f9cad4faecae1c}{rxUnwrap}}[1],\ \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{double}),\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}},\ fp);}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00132}00132\ \ fwrite(\&\mbox{\hyperlink{global_8h_aadd2df0c0919493607803cd89389b31a}{ryUnwrap}}[1],\ \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{double}),\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}},\ fp);}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00133}00133\ \ fwrite(\&\mbox{\hyperlink{global_8h_a6cd103d74f5d525b4cae3e7af552be20}{ImageX}}[1],\ \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{int}),\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}},\ fp);\ }
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00134}00134\ \ fwrite(\&\mbox{\hyperlink{global_8h_a6d63f20edcbc2cb983c7267d9d0690a8}{ImageY}}[1],\ \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{int}),\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}},\ fp);\ }
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00135}00135\ }
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00136}00136\ \ fwrite(\&\mbox{\hyperlink{global_8h_a9e5cacd45bb1c19404215981554b9e65}{PairID}}[1],\ \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{int}),\ \mbox{\hyperlink{global_8h_a4d261d7bf27ba6bb03927a2daa310746}{nPairActive}},\ fp);}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00137}00137\ \ fwrite(\&\mbox{\hyperlink{global_8h_af8215c4cb752839765c6629bb7e808a3}{Pairatom1}}[1],\ \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{int}),\ \mbox{\hyperlink{global_8h_a4d261d7bf27ba6bb03927a2daa310746}{nPairActive}},\ fp);}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00138}00138\ \ fwrite(\&\mbox{\hyperlink{global_8h_abd0063c6618301e17cc7ef9be8058081}{Pairatom2}}[1],\ \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{int}),\ \mbox{\hyperlink{global_8h_a4d261d7bf27ba6bb03927a2daa310746}{nPairActive}},\ fp);}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00139}00139\ \ fwrite(\&\mbox{\hyperlink{global_8h_aa463dae6fdaca32114f15f2f670075c7}{PairXij}}[1],\ \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{double}),\ \mbox{\hyperlink{global_8h_a4d261d7bf27ba6bb03927a2daa310746}{nPairActive}},\ fp);}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00140}00140\ \ fwrite(\&\mbox{\hyperlink{global_8h_ad17d42dcb59c5c4c54dec23afc5c8fcf}{PairYij}}[1],\ \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{double}),\ \mbox{\hyperlink{global_8h_a4d261d7bf27ba6bb03927a2daa310746}{nPairActive}},\ fp);}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00141}00141\ }
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00142}00142\ \ fclose(fp);}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00143}00143\ \}}
+\DoxyCodeLine{\Hypertarget{WriteRestartBinary_8c_source_l00144}00144\ }
+
+\end{DoxyCode}

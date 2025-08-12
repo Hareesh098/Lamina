@@ -2,13 +2,34 @@
 \hypertarget{PrintSummary_8c_source}{}\label{PrintSummary_8c_source}\index{source/PrintSummary.c@{source/PrintSummary.c}}
 \mbox{\hyperlink{PrintSummary_8c}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
-\DoxyCodeLine{\Hypertarget{PrintSummary_8c_source_l00001}00001\ \textcolor{preprocessor}{\#include<stdio.h>}}
-\DoxyCodeLine{\Hypertarget{PrintSummary_8c_source_l00002}00002\ \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{global_8h}{global.h}}"{}}}
-\DoxyCodeLine{\Hypertarget{PrintSummary_8c_source_l00003}00003\ }
-\DoxyCodeLine{\Hypertarget{PrintSummary_8c_source_l00004}\mbox{\hyperlink{main_8c_a88e586d610cefdd8d3b676b9a35ceebd}{00004}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{PrintSummary_8c_a88e586d610cefdd8d3b676b9a35ceebd}{PrintSummary}}()\{}
-\DoxyCodeLine{\Hypertarget{PrintSummary_8c_source_l00005}00005\ \ fprintf(\mbox{\hyperlink{global_8h_a7a7a3c24c505afb28c4eb95a627e3f5b}{fpresult}},\ \textcolor{stringliteral}{"{}\%0.4lf\(\backslash\)t\%0.16lf\(\backslash\)t\%0.16lf\(\backslash\)t\%0.16lf\(\backslash\)t\%0.16lf\(\backslash\)t\%0.16lf\(\backslash\)t\%0.16lf\(\backslash\)t\%0.16lf\(\backslash\)t\%0.16lf\(\backslash\)n"{}},\ }
-\DoxyCodeLine{\Hypertarget{PrintSummary_8c_source_l00006}00006\ \ \ \mbox{\hyperlink{global_8h_abb2aee8c6108dd86a8da33115d249d71}{timeNow}},\ \mbox{\hyperlink{global_8h_a68c26a0c6b002f1da36c4be599ca5149}{vSum}},\ \mbox{\hyperlink{global_8h_abd758be497a95843d6cbb071a9f99581}{potEnergy}},\ \mbox{\hyperlink{global_8h_a445d936de68f213385df5c284ea1d81d}{kinEnergy}},\ \mbox{\hyperlink{global_8h_a025720826b3728fd77ab18384b7369bf}{totEnergy}},\ \mbox{\hyperlink{global_8h_a35bf08d49aa04729a9f7dd23a464a826}{uSumPairPerAtom}},\ \mbox{\hyperlink{global_8h_aa53f052764d0986e9691ee3e941682d9}{BondEnergyPerAtom}},\ \mbox{\hyperlink{global_8h_aee1c5d07ac79c5c036195858afe33405}{pressure}},\ \mbox{\hyperlink{global_8h_abdbf03f447f8b0adbae4c15974dac45f}{virSum}});}
-\DoxyCodeLine{\Hypertarget{PrintSummary_8c_source_l00007}00007\ \ \ fflush(\mbox{\hyperlink{global_8h_a7a7a3c24c505afb28c4eb95a627e3f5b}{fpresult}});}
-\DoxyCodeLine{\Hypertarget{PrintSummary_8c_source_l00008}00008\ \}}
+\DoxyCodeLine{\Hypertarget{PrintSummary_8c_source_l00001}00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{PrintSummary_8c_source_l00002}00002\ \textcolor{comment}{\ *\ This\ file\ is\ part\ of\ Lamina.}}
+\DoxyCodeLine{\Hypertarget{PrintSummary_8c_source_l00003}00003\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{\Hypertarget{PrintSummary_8c_source_l00004}00004\ \textcolor{comment}{\ *\ Lamina\ is\ free\ software:\ you\ can\ redistribute\ it\ and/or\ modify}}
+\DoxyCodeLine{\Hypertarget{PrintSummary_8c_source_l00005}00005\ \textcolor{comment}{\ *\ it\ under\ the\ terms\ of\ the\ GNU\ General\ Public\ License\ as\ published\ by}}
+\DoxyCodeLine{\Hypertarget{PrintSummary_8c_source_l00006}00006\ \textcolor{comment}{\ *\ the\ Free\ Software\ Foundation,\ either\ version\ 3\ of\ the\ License,\ or}}
+\DoxyCodeLine{\Hypertarget{PrintSummary_8c_source_l00007}00007\ \textcolor{comment}{\ *\ (at\ your\ option)\ any\ later\ version.}}
+\DoxyCodeLine{\Hypertarget{PrintSummary_8c_source_l00008}00008\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{\Hypertarget{PrintSummary_8c_source_l00009}00009\ \textcolor{comment}{\ *\ Lamina\ is\ distributed\ in\ the\ hope\ that\ it\ will\ be\ useful,}}
+\DoxyCodeLine{\Hypertarget{PrintSummary_8c_source_l00010}00010\ \textcolor{comment}{\ *\ but\ WITHOUT\ ANY\ WARRANTY;\ without\ even\ the\ implied\ warranty\ of}}
+\DoxyCodeLine{\Hypertarget{PrintSummary_8c_source_l00011}00011\ \textcolor{comment}{\ *\ MERCHANTABILITY\ or\ FITNESS\ FOR\ A\ PARTICULAR\ PURPOSE.\ See\ the}}
+\DoxyCodeLine{\Hypertarget{PrintSummary_8c_source_l00012}00012\ \textcolor{comment}{\ *\ GNU\ General\ Public\ License\ for\ more\ details.}}
+\DoxyCodeLine{\Hypertarget{PrintSummary_8c_source_l00013}00013\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{\Hypertarget{PrintSummary_8c_source_l00014}00014\ \textcolor{comment}{\ *\ You\ should\ have\ received\ a\ copy\ of\ the\ GNU\ General\ Public\ License}}
+\DoxyCodeLine{\Hypertarget{PrintSummary_8c_source_l00015}00015\ \textcolor{comment}{\ *\ along\ with\ Lamina.\ If\ not,\ see\ <https://www.gnu.org/licenses/>.}}
+\DoxyCodeLine{\Hypertarget{PrintSummary_8c_source_l00016}00016\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{PrintSummary_8c_source_l00017}00017\ \textcolor{comment}{\ Copyright\ (C)\ 2025\ Harish\ Charan,\ University\ of\ Durham,\ UK}}
+\DoxyCodeLine{\Hypertarget{PrintSummary_8c_source_l00018}00018\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{PrintSummary_8c_source_l00019}00019\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{\Hypertarget{PrintSummary_8c_source_l00020}00020\ }
+\DoxyCodeLine{\Hypertarget{PrintSummary_8c_source_l00021}00021\ }
+\DoxyCodeLine{\Hypertarget{PrintSummary_8c_source_l00022}00022\ \textcolor{preprocessor}{\#include<stdio.h>}}
+\DoxyCodeLine{\Hypertarget{PrintSummary_8c_source_l00023}00023\ \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{global_8h}{global.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{PrintSummary_8c_source_l00024}00024\ }
+\DoxyCodeLine{\Hypertarget{PrintSummary_8c_source_l00025}\mbox{\hyperlink{main_8c_a88e586d610cefdd8d3b676b9a35ceebd}{00025}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{PrintSummary_8c_a88e586d610cefdd8d3b676b9a35ceebd}{PrintSummary}}()\{}
+\DoxyCodeLine{\Hypertarget{PrintSummary_8c_source_l00026}00026\ \ fprintf(\mbox{\hyperlink{global_8h_a7a7a3c24c505afb28c4eb95a627e3f5b}{fpresult}},\ \textcolor{stringliteral}{"{}\%0.4lf\(\backslash\)t\%0.16lf\(\backslash\)t\%0.16lf\(\backslash\)t\%0.16lf\(\backslash\)t\%0.16lf\(\backslash\)t\%0.16lf\(\backslash\)t\%0.16lf\(\backslash\)t\%0.16lf\(\backslash\)t\%0.16lf\(\backslash\)n"{}},\ }
+\DoxyCodeLine{\Hypertarget{PrintSummary_8c_source_l00027}00027\ \ \ \mbox{\hyperlink{global_8h_abb2aee8c6108dd86a8da33115d249d71}{timeNow}},\ \mbox{\hyperlink{global_8h_a68c26a0c6b002f1da36c4be599ca5149}{vSum}},\ \mbox{\hyperlink{global_8h_abd758be497a95843d6cbb071a9f99581}{potEnergy}},\ \mbox{\hyperlink{global_8h_a445d936de68f213385df5c284ea1d81d}{kinEnergy}},\ \mbox{\hyperlink{global_8h_a025720826b3728fd77ab18384b7369bf}{totEnergy}},\ \mbox{\hyperlink{global_8h_a35bf08d49aa04729a9f7dd23a464a826}{uSumPairPerAtom}},\ \mbox{\hyperlink{global_8h_aa53f052764d0986e9691ee3e941682d9}{BondEnergyPerAtom}},\ \mbox{\hyperlink{global_8h_aee1c5d07ac79c5c036195858afe33405}{pressure}},\ \mbox{\hyperlink{global_8h_abdbf03f447f8b0adbae4c15974dac45f}{virSum}});}
+\DoxyCodeLine{\Hypertarget{PrintSummary_8c_source_l00028}00028\ \ \ fflush(\mbox{\hyperlink{global_8h_a7a7a3c24c505afb28c4eb95a627e3f5b}{fpresult}});}
+\DoxyCodeLine{\Hypertarget{PrintSummary_8c_source_l00029}00029\ \}}
 
 \end{DoxyCode}

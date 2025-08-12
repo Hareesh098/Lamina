@@ -26,17 +26,26 @@
 #include <time.h>
 #include"global.h"
 
-void Init(){
-  char dummy[128];
-  char inputConfig[128];
-  FILE *fp;
-  fp = fopen("input-data","r");
-  fscanf(fp, "%s %s", dummy, inputConfig);
+void ReadBinaryRestart(const char *filename);
+
+void Init() {
+ char dummy[128];
+
+ // Always read input parameters
+ FILE *fp = fopen("input-data", "r");
+ if(!fp) {
+  perror("input-data");
+  exit(EXIT_FAILURE);
+ }
+  
+  fscanf(fp, "%s %s", mode, inputConfig);  // config type + filename
   fscanf(fp, "%s %s", dummy, solver);
   fscanf(fp, "%s %s %s", dummy, xBoundary, yBoundary);
   fscanf(fp, "%s %d",  dummy, &DampFlag);
   fscanf(fp, "%s %d",  dummy, &freezeAtomType);
   fscanf(fp, "%s %lf", dummy, &rCut);
+  fscanf(fp, "%s %lf", dummy, &Kn);
+  fscanf(fp, "%s %lf", dummy, &mass);
   fscanf(fp, "%s %lf", dummy, &gamman); 
   fscanf(fp, "%s %lf", dummy, &kappa);
   fscanf(fp, "%s %lf", dummy, &deltaT);
@@ -64,23 +73,49 @@ void Init(){
   fscanf(fp, "%s %d",  dummy, &limitRdf);
   fscanf(fp, "%s %d",  dummy, &sizeHistRdf);
   fscanf(fp, "%s %d",  dummy, &stepRdf);
- 
   fclose(fp);
+  
+  int useBinaryRestart = 0;
+  if(strcmp(mode, "read_restart") == 0) {
+   useBinaryRestart = 1;
+  } else if (strcmp(mode, "read_data") != 0) {
+   fprintf(stderr, "ERROR: First line of input-data must be 'read_data' or 'read_restart'\n");
+   exit(0);
+  }
+    
+  //Conditionally read binary config
+  if(useBinaryRestart) {
+   ReadBinaryRestart(inputConfig);  // uses global prefix + config file
+   printf(">>> Binary restart loaded from %s <<<\n", inputConfig);
+   printf(">>> Restarting simulation from time = %.8lf <<<\n", timeNow);
+   return; //Exiting from Init() from here 
+  }
+  
   FILE *fpSTATE;
   if((fpSTATE = fopen(inputConfig,"r"))==NULL){
   printf("Error occurred: Could not open STATE file\n Exiting now..\n");
   exit(0);
   }
 
-  fscanf(fpSTATE, "%s %lf", dummy, &timeNow);
+  if(fscanf(fpSTATE, "%s %lf", dummy, &timeNow) != 2 || strcmp(dummy, "timeNow") != 0) {
+   fprintf(stderr, "ERROR [%s:%d:%s]: Expected 'timeNow <value>' as the first line in the config file.\n",
+   __FILE__, __LINE__, __func__);
+   exit(EXIT_FAILURE);
+  }
+
+  if(timeNow == 0.0) {
+   printf(">>> Running from time = 0.0: Beginning of the simulation\n");
+   stepCount = 0;
+  } 
+  
   fscanf(fpSTATE, "%s %d",  dummy, &nAtom);
   fscanf(fpSTATE, "%s %d",  dummy, &nBond);
   fscanf(fpSTATE, "%s %d",  dummy, &nAtomType);
   fscanf(fpSTATE, "%s %d",  dummy, &nBondType);
   fscanf(fpSTATE, "%s %lf", dummy, &region[1]);
   fscanf(fpSTATE, "%s %lf", dummy, &region[2]);
-
-  region[2] *= 1.5; //Remove this when put on GitHub
+  
+  if(timeNow == 0.0)  region[2] *= 1.5; //Remove this when put on GitHub
 
   density = nAtom/(region[1]*region[2]); 
   cells[1] = region[1] / rCut;
@@ -101,6 +136,8 @@ void Init(){
   vy = (double*)malloc((nAtom + 1) * sizeof(double));
   ax = (double*)malloc((nAtom + 1) * sizeof(double));
   ay = (double*)malloc((nAtom + 1) * sizeof(double));
+  fx = (double*)malloc((nAtom + 1) * sizeof(double));
+  fy = (double*)malloc((nAtom + 1) * sizeof(double));
   fax = (double*)malloc((nAtom + 1) * sizeof(double));
   fay = (double*)malloc((nAtom + 1) * sizeof(double));
   atomID = (int*)malloc((nAtom+1) * sizeof(int));
@@ -108,34 +145,28 @@ void Init(){
   atomRadius = (double*)malloc((nAtom + 1) * sizeof(double));
   atomMass = (double*)malloc((nAtom + 1) * sizeof(double));
   speed = (double*)malloc((nAtom + 1) * sizeof(double));
-  atom1 = (int*)malloc((nBond+1)*sizeof(int));
-  atom2 = (int*)malloc((nBond+1)*sizeof(int)); 
+  discDragx = (double*)malloc((nAtom + 1) * sizeof(double)); 
+  discDragy = (double*)malloc((nAtom + 1) * sizeof(double)); 
+  molID = (int*)malloc((nAtom+1) * sizeof(int));
+    
   BondID = (int*)malloc((nBond+1)*sizeof(int));
   BondType = (int*)malloc((nBond+1)*sizeof(int));
+  atom1 = (int*)malloc((nBond+1)*sizeof(int));
+  atom2 = (int*)malloc((nBond+1)*sizeof(int)); 
   kb = (double*)malloc((nBond+1)*sizeof(double));
   ro = (double*)malloc((nBond+1)*sizeof(double));
   BondEnergy = (double*)malloc((nBond+1)*sizeof(double));
   BondLength =(double*)malloc((nBond+1)*sizeof(double));
-  discDragx = (double*)malloc((nAtom + 1) * sizeof(double)); 
-  discDragy = (double*)malloc((nAtom + 1) * sizeof(double)); 
   nodeDragx = (double*)malloc((nAtom + 1) * sizeof(double));
   nodeDragy = (double*)malloc((nAtom + 1) * sizeof(double));
-  ImageX = (int*)malloc((nAtom+1) * sizeof(int));
-  ImageY = (int*)malloc((nAtom+1) * sizeof(int));
   rxUnwrap = (double*)malloc((nAtom + 1) * sizeof(double));
   ryUnwrap = (double*)malloc((nAtom + 1) * sizeof(double));
-  DeltaXijOld = (double*)malloc((nBond+1)*sizeof(double));
-  DeltaYijOld = (double*)malloc((nBond+1)*sizeof(double));
-  DeltaXijOldPair = (double**)malloc((nAtom+1) * sizeof(double*));
-  DeltaYijOldPair = (double**)malloc((nAtom+1) * sizeof(double*));
-  for(int n = 0; n <= nAtom; n++) {
-   DeltaXijOldPair[n] = (double*)malloc((nAtom+1) * sizeof(double));
-   DeltaYijOldPair[n] = (double*)malloc((nAtom+1) * sizeof(double));
-  }
-  molID = (int*)malloc((nAtom+1) * sizeof(int));
+  ImageX = (int*)malloc((nAtom+1) * sizeof(int));
+  ImageY = (int*)malloc((nAtom+1) * sizeof(int));
+
 
   for(n = 1; n <= nAtom; n ++){
-   atomMass[n] = 1.0;
+   atomMass[n] = mass;
   }
  
   fscanf(fpSTATE, "%s\n", dummy);
@@ -166,15 +197,10 @@ void Init(){
     isBonded[j][i] = 1; // symmetric
 }
 
- //For thermostate, update in final version
-thermo = 'C';
- 
- 
  // List the interface atoms
  nAtomInterface = 0;
  nAtomBlock = 0;
  nDiscInterface = 0;
- double InterfaceWidth, bigDiameter;
  bigDiameter = 2.8;
  InterfaceWidth = 5.0 * bigDiameter;
 
@@ -189,15 +215,27 @@ thermo = 'C';
   nDiscInterface++;
   } } 
 
-   atomIDInterface =  (int*)malloc((nAtomInterface+1)*sizeof(int));
   
+  int BondPairInteract;
+  BondPairInteract = 0;
   int m;
-  m = 1;
-  for(n=1; n<=nAtom; n++){
-   if(fabs(ry[n]) < InterfaceWidth){
-   atomIDInterface[m] = atomID[n]; 
-   m++; 
-   } }
+  if(BondPairInteract == 1){
+   atomIDInterface =  (int *)malloc((nAtomInterface+1)*sizeof(int));
+   m = 1;
+   for(n=1; n<=nAtom; n++){
+    if(fabs(ry[n]) < InterfaceWidth){
+    atomIDInterface[m] = atomID[n]; 
+    m++; 
+  } } }
+  else if(BondPairInteract == 0){
+   nAtomInterface = nDiscInterface;
+   atomIDInterface =  (int *)malloc((nAtomInterface+1)*sizeof(int));
+   m = 1;
+   for(n=1; n<=nAtom; n++){
+    if(atomRadius[n] != 0.0){
+    atomIDInterface[m] = atomID[n]; 
+    m++; 
+  } } }
 
   nPairTotal = 0.5 * nAtomInterface * (nAtomInterface-1);
   PairID = (int*)malloc((nPairTotal+1) * sizeof(int));
@@ -206,41 +244,43 @@ thermo = 'C';
   PairXij = (double*)malloc((nPairTotal+1) * sizeof(double));
   PairYij = (double*)malloc((nPairTotal+1) * sizeof(double));
   
-    fprintf(fpresult, "------------------------------------\n");
-    fprintf(fpresult, "-------PARAMETERS-----------\n");
-    fprintf(fpresult, "------------------------------------\n");
-    fprintf(fpresult, "nAtom\t\t\t%d\n",  nAtom);
-    fprintf(fpresult, "nBond\t\t\t%d\n",  nBond);
-    fprintf(fpresult, "nAtomBlock\t\t%d\n",  nAtomBlock);
-    fprintf(fpresult, "nAtomInterface\t%d\n",  nAtomInterface);
-    fprintf(fpresult, "nDiscInterface\t\t%d\n",  nDiscInterface);
-    fprintf(fpresult, "gamman\t\t\t%0.6g\n", gamman);
-    fprintf(fpresult, "strain\t\t\t%0.6g\n", strain);
-    fprintf(fpresult, "strainRate\t\t%0.6g\n", strainRate);
-    fprintf(fpresult, "FyBylx\t\t\t%0.6g\n", FyBylx);
-    fprintf(fpresult, "fxByfy\t\t\t%0.6g\n", fxByfy);
-    fprintf(fpresult, "DeltaY\t\t\t%0.6g\n", DeltaY);
-    fprintf(fpresult, "DeltaX\t\t\t%0.6g\n", DeltaX);
-    fprintf(fpresult, "HaltCondition\t\t%0.6g\n", HaltCondition);
-    fprintf(fpresult, "kappa\t\t\t%g\n", kappa);
-    fprintf(fpresult, "density\t\t\t%g\n", density);
-    fprintf(fpresult, "rCut\t\t\t\t%g\n", rCut);
-    fprintf(fpresult, "deltaT\t\t\t%g\n", deltaT);
-    fprintf(fpresult, "stepEquil\t\t\t%d\n",  stepEquil);
-    fprintf(fpresult, "stepLimit\t\t\t%d\n",  stepLimit);
-    fprintf(fpresult, "region[1]\t\t\t%0.16lf\n", region[1]);
-    fprintf(fpresult, "region[2]\t\t\t%0.16lf\n", region[2]);
-    fprintf(fpresult, "cells[1]\t\t\t%d\n",  cells[1]);
-    fprintf(fpresult, "cells[2]\t\t\t%d\n",  cells[2]);
-    fprintf(fpresult, "solver\t\t\t%s\n",  solver);
-    fprintf(fpresult, "boundary\t\t\t%s %s\n", xBoundary, yBoundary);
-    fprintf(fpresult, "DampFlag\t\t%d\n",  DampFlag);
- 
-  
-    fprintf(fpresult, "------------------------------------\n");
-    fprintf(fpresult, "#TimeNow TotalMomentum PotEngyPerAtom KinEngyPerAtom TotEngyPerAtom PairEnergyPerAtom BondEnergyPerAtom  Press VirialSum\n");
-    fprintf(fpvrms, "#timeNow\tVrms \n");
-    fprintf(fpcom, "#timeNow\tComX\tComY\n");
+  fprintf(fpresult, "------------------------------------\n");
+  fprintf(fpresult, "-------PARAMETERS-----------\n");
+  fprintf(fpresult, "------------------------------------\n");
+  fprintf(fpresult, "nAtom\t\t\t%d\n",  nAtom);
+  fprintf(fpresult, "nBond\t\t\t%d\n",  nBond);
+  fprintf(fpresult, "nAtomType\t\t%d\n", nAtomType);
+  fprintf(fpresult, "nBondType\t\t%d\n",  nBondType);
+  fprintf(fpresult, "nAtomBlock\t\t%d\n",  nAtomBlock);
+  fprintf(fpresult, "nAtomInterface\t\t%d\n",  nAtomInterface);
+  fprintf(fpresult, "nDiscInterface\t\t%d\n",  nDiscInterface);
+  fprintf(fpresult, "mass\t\t\t%0.6g\n", mass);
+  fprintf(fpresult, "gamman\t\t\t%0.6g\n", gamman);
+  fprintf(fpresult, "strain\t\t\t%0.6g\n", strain);
+  fprintf(fpresult, "strainRate\t\t%0.6g\n", strainRate);
+  fprintf(fpresult, "FyBylx\t\t\t%0.6g\n", FyBylx);
+  fprintf(fpresult, "fxByfy\t\t\t%0.6g\n", fxByfy);
+  fprintf(fpresult, "DeltaY\t\t\t%0.6g\n", DeltaY);
+  fprintf(fpresult, "DeltaX\t\t\t%0.6g\n", DeltaX);
+  fprintf(fpresult, "HaltCondition\t\t%0.6g\n", HaltCondition);
+  fprintf(fpresult, "kappa\t\t\t%g\n", kappa);
+  fprintf(fpresult, "density\t\t\t%g\n", density);
+  fprintf(fpresult, "rCut\t\t\t%g\n", rCut);
+  fprintf(fpresult, "deltaT\t\t\t%g\n", deltaT);
+  fprintf(fpresult, "stepEquil\t\t%d\n",  stepEquil);
+  fprintf(fpresult, "stepLimit\t\t%d\n",  stepLimit);
+  fprintf(fpresult, "region[1]\t\t%0.16lf\n", region[1]);
+  fprintf(fpresult, "region[2]\t\t%0.16lf\n", region[2]);
+  fprintf(fpresult, "cells[1]\t\t%d\n",  cells[1]);
+  fprintf(fpresult, "cells[2]\t\t%d\n",  cells[2]);
+  fprintf(fpresult, "solver\t\t\t%s\n",  solver);
+  fprintf(fpresult, "boundary\t\t%s %s\n", xBoundary, yBoundary);
+  fprintf(fpresult, "DampFlag\t\t%d\n",  DampFlag);
+  fprintf(fpresult, "------------------------------------\n");
+  fprintf(fpresult, "#TimeNow TotalMomentum PotEngyPerAtom KinEngyPerAtom TotEngyPerAtom PairEnergyPerAtom BondEnergyPerAtom  Press VirialSum\n");
+  fprintf(fpvrms, "#timeNow\tVrms \n");
+  fprintf(fpcom, "#timeNow\tComX\tComY\n");
+  fprintf(fpforce, "#timeNow\tforceSumxAtomType1\tforceSumyAtomType1\tforceSumxAtomType2\tforceSumyAtomType2\tforceSumxAtomType3\tforceSumyAtomType3\tforceSumxAtomType4\tforceSumyAtomType4\tforceSumxAtomType5\tforceSumyAtomType5\tforceSumxExtern\tforceSumyExtern\n");
 
 /* //Uncomment the following as per your acquirement
     fprintf(fpstress, "strain           %lf\n", strain);

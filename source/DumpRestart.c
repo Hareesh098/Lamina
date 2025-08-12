@@ -37,8 +37,8 @@ void DumpRestart() {
   fprintf(fpDUMP, "nBond %d\n", nBond);
   fprintf(fpDUMP, "nAtomType %d\n", nAtomType);
   fprintf(fpDUMP, "nBondType %d\n", nBondType);
-  fprintf(fpDUMP, "region[1] %0.14lf\n", region[1]);
-  fprintf(fpDUMP, "region[2] %0.14lf\n", region[2]);
+  fprintf(fpDUMP, "region[1] %0.16lf\n", region[1]);
+  fprintf(fpDUMP, "region[2] %0.16lf\n", region[2]);
 
   int n; 
   fprintf(fpDUMP, "Atoms\n");

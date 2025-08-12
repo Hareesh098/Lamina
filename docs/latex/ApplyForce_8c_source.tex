@@ -30,12 +30,14 @@
 \DoxyCodeLine{\Hypertarget{ApplyForce_8c_source_l00026}00026\ \ \textcolor{keywordtype}{int}\ n;}
 \DoxyCodeLine{\Hypertarget{ApplyForce_8c_source_l00027}00027\ \ \textcolor{keywordtype}{double}\ lx;}
 \DoxyCodeLine{\Hypertarget{ApplyForce_8c_source_l00028}00028\ \ lx\ =\ \mbox{\hyperlink{global_8h_adc110418e2efa5f31a9aa7c137471a2f}{regionH}}[1];\ \ }
-\DoxyCodeLine{\Hypertarget{ApplyForce_8c_source_l00029}00029\ \ \mbox{\hyperlink{global_8h_a03c4ce20c7e4b8c6d60a20b833be69fe}{fy}}\ =\ \ (\mbox{\hyperlink{global_8h_a1c9da98c7c3b53aded35c3be14fb2aee}{FyBylx}}\ *\ lx)/\mbox{\hyperlink{global_8h_a1fc19b1274901ec0290f04ae9900f8b4}{nAtomBlock}};}
-\DoxyCodeLine{\Hypertarget{ApplyForce_8c_source_l00030}00030\ \ \mbox{\hyperlink{global_8h_aa7e88347476ef454086e7c3cd9865460}{fx}}\ =\ \ \mbox{\hyperlink{global_8h_adac56247d9cc80325fa1045fdf18ce33}{fxByfy}}\ *\ \mbox{\hyperlink{global_8h_a03c4ce20c7e4b8c6d60a20b833be69fe}{fy}};}
-\DoxyCodeLine{\Hypertarget{ApplyForce_8c_source_l00031}00031\ \ \textcolor{keywordflow}{for}(n\ =\ 1;\ n\ <=\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}};\ n\ ++)\{}
-\DoxyCodeLine{\Hypertarget{ApplyForce_8c_source_l00032}00032\ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{global_8h_a65f3cbf0ee8813aae06be044d6c568ad}{molID}}[n]\ ==\ 2)\{}
-\DoxyCodeLine{\Hypertarget{ApplyForce_8c_source_l00033}00033\ \ \ \mbox{\hyperlink{global_8h_a82d645cda6bea6506c7b5f4f7453986c}{ax}}[n]\ +=\ \mbox{\hyperlink{global_8h_aa7e88347476ef454086e7c3cd9865460}{fx}};\ }
-\DoxyCodeLine{\Hypertarget{ApplyForce_8c_source_l00034}00034\ \ \ \mbox{\hyperlink{global_8h_a68c7afda02d0f26c1987a4eee13928f2}{ay}}[n]\ -\/=\ \mbox{\hyperlink{global_8h_a03c4ce20c7e4b8c6d60a20b833be69fe}{fy}};}
-\DoxyCodeLine{\Hypertarget{ApplyForce_8c_source_l00035}00035\ \}\ \}\ \}}
+\DoxyCodeLine{\Hypertarget{ApplyForce_8c_source_l00029}00029\ \ \mbox{\hyperlink{global_8h_a8c0c6b3891446b796d312e114f055f72}{fyExtern}}\ =\ \ (\mbox{\hyperlink{global_8h_a1c9da98c7c3b53aded35c3be14fb2aee}{FyBylx}}\ *\ lx)/\mbox{\hyperlink{global_8h_a1fc19b1274901ec0290f04ae9900f8b4}{nAtomBlock}};}
+\DoxyCodeLine{\Hypertarget{ApplyForce_8c_source_l00030}00030\ \ \mbox{\hyperlink{global_8h_adce9f719cfc399dc341cf90a459d4154}{fxExtern}}\ =\ \ \mbox{\hyperlink{global_8h_adac56247d9cc80325fa1045fdf18ce33}{fxByfy}}\ *\ \mbox{\hyperlink{global_8h_a8c0c6b3891446b796d312e114f055f72}{fyExtern}};}
+\DoxyCodeLine{\Hypertarget{ApplyForce_8c_source_l00031}00031\ \ \mbox{\hyperlink{global_8h_af3214cd66a361a1bc7f8ad9e168bed9b}{forceSumxExtern}}\ =\ \mbox{\hyperlink{global_8h_adce9f719cfc399dc341cf90a459d4154}{fxExtern}}*\mbox{\hyperlink{global_8h_a1fc19b1274901ec0290f04ae9900f8b4}{nAtomBlock}};\ \ \mbox{\hyperlink{global_8h_ac7ea211438e84563f9d2a9db7446bc7f}{forceSumyExtern}}\ =\ \mbox{\hyperlink{global_8h_a8c0c6b3891446b796d312e114f055f72}{fyExtern}}*\mbox{\hyperlink{global_8h_a1fc19b1274901ec0290f04ae9900f8b4}{nAtomBlock}};}
+\DoxyCodeLine{\Hypertarget{ApplyForce_8c_source_l00032}00032\ }
+\DoxyCodeLine{\Hypertarget{ApplyForce_8c_source_l00033}00033\ \ \textcolor{keywordflow}{for}(n\ =\ 1;\ n\ <=\ \mbox{\hyperlink{global_8h_a0da8aaf36196f726e7d87c2883adc00d}{nAtom}};\ n\ ++)\{}
+\DoxyCodeLine{\Hypertarget{ApplyForce_8c_source_l00034}00034\ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{global_8h_a65f3cbf0ee8813aae06be044d6c568ad}{molID}}[n]\ ==\ 2)\{}
+\DoxyCodeLine{\Hypertarget{ApplyForce_8c_source_l00035}00035\ \ \ \mbox{\hyperlink{global_8h_af5a0b3a6e5601702b2c661dc34d046a2}{fx}}[n]\ +=\ \mbox{\hyperlink{global_8h_adce9f719cfc399dc341cf90a459d4154}{fxExtern}};\ }
+\DoxyCodeLine{\Hypertarget{ApplyForce_8c_source_l00036}00036\ \ \ \mbox{\hyperlink{global_8h_a869b2e7f75a6f2407d4a91d6f16c99ce}{fy}}[n]\ -\/=\ \mbox{\hyperlink{global_8h_a8c0c6b3891446b796d312e114f055f72}{fyExtern}};}
+\DoxyCodeLine{\Hypertarget{ApplyForce_8c_source_l00037}00037\ \}\ \}\ \}}
 
 \end{DoxyCode}
