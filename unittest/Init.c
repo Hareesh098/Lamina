@@ -65,14 +65,6 @@ void Init(){
   ImageY = (int*)malloc((nAtom+1) * sizeof(int));
   rxUnwrap = (double*)malloc((nAtom + 1) * sizeof(double));
   ryUnwrap = (double*)malloc((nAtom + 1) * sizeof(double));
-  DeltaXijOld = (double*)malloc((nBond+1)*sizeof(double));
-  DeltaYijOld = (double*)malloc((nBond+1)*sizeof(double));
-  DeltaXijOldPair = (double**)malloc((nAtom+1) * sizeof(double*));
-  DeltaYijOldPair = (double**)malloc((nAtom+1) * sizeof(double*));
-  for(int n = 0; n <= nAtom; n++) {
-   DeltaXijOldPair[n] = (double*)malloc((nAtom+1) * sizeof(double));
-   DeltaYijOldPair[n] = (double*)malloc((nAtom+1) * sizeof(double));
-  }
   molID = (int*)malloc((nAtom+1) * sizeof(int));
 
 
