@@ -29,10 +29,10 @@ extern const double TOL;
 void TestComputeBondForce(void) {
  ComputeBondForce();
 
- assert_double_within(0.8181818181818181, ax[1], TOL);
- assert_double_within(0.0, ay[1], TOL);
- assert_double_within(-0.8181818181818181, ax[2], TOL);
- assert_double_within(0.0, ay[2], TOL);
+ assert_double_within(0.8181818181818181, fx[1], TOL);
+ assert_double_within(0.0, fy[1], TOL);
+ assert_double_within(-0.8181818181818181, fx[2], TOL);
+ assert_double_within(0.0, fy[2], TOL);
 
  assert_double_within(0.3681818181818181, BondEnergy[1], TOL);
  assert_double_within(2.0, BondLength[1], TOL);

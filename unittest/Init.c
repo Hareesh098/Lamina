@@ -24,13 +24,14 @@
 #include<string.h>
 #include<stdlib.h>
 #include <time.h>
-#include"global.h"
+#include "../source/global.h"
 
 void Init(){
  nAtom = 4;
  nBond = 1;
- gamman = 0.0;
+ gamman = 1.0;
  DampFlag = 1;
+ Kn = 1.0;
  region[1] = region[2] =   20.0;
  regionH[1] = regionH[2] = 10.0;
  shearDisplacement = 0.0;
@@ -40,6 +41,8 @@ void Init(){
   ry = (double*)malloc((nAtom + 1) * sizeof(double));
   vx = (double*)malloc((nAtom + 1) * sizeof(double));
   vy = (double*)malloc((nAtom + 1) * sizeof(double));
+  fx = (double*)malloc((nAtom + 1) * sizeof(double));
+  fy = (double*)malloc((nAtom + 1) * sizeof(double));
   ax = (double*)malloc((nAtom + 1) * sizeof(double));
   ay = (double*)malloc((nAtom + 1) * sizeof(double));
   fax = (double*)malloc((nAtom + 1) * sizeof(double));
@@ -104,8 +107,9 @@ void Init(){
  atom2[1] = 2;
  kb[1] = 1.0;
  ro[1] = 1.1;
-
- //2D-List of bonded atoms. This is used to remove pair interaction
+ int n;
+ 
+  //2D-List of bonded atoms. This is used to remove pair interaction
  //calculation for the bonded atoms
    isBonded = (int**)malloc((nAtom + 1) * sizeof(int*));
   for (int i = 0; i <= nAtom; i++) {
@@ -115,7 +119,7 @@ void Init(){
     }
   }
   
-  for (int n = 1; n <= nBond; n++) {
+  for (n = 1; n <= nBond; n++) {
     int i = atom1[n];
     int j = atom2[n];
     isBonded[i][j] = 1;
@@ -126,11 +130,10 @@ void Init(){
  nAtomInterface = 0;
  nAtomBlock = 0;
  nDiscInterface = 0;
- double InterfaceWidth, bigDiameter;
- bigDiameter = 2.0;
- InterfaceWidth = 2.0 * bigDiameter;
+ bigDiameter = 2.8;
+ InterfaceWidth = 5.0 * bigDiameter;
 
- for(int n = 1; n <= nAtom; n++){
+ for(n = 1; n <= nAtom; n++){
   if(fabs(ry[n]) < InterfaceWidth){
   nAtomInterface++;
   }
@@ -141,15 +144,27 @@ void Init(){
   nDiscInterface++;
   } } 
 
-   atomIDInterface =  (int*)malloc((nAtomInterface+1)*sizeof(int));
   
+  int BondPairInteract;
+  BondPairInteract = 0;
   int m;
-  m = 1;
-  for(int n=1; n<=nAtom; n++){
-   if(fabs(ry[n]) < InterfaceWidth){
-   atomIDInterface[m] = atomID[n]; 
-   m++; 
-   } }
+  if(BondPairInteract == 1){
+   atomIDInterface =  (int *)malloc((nAtomInterface+1)*sizeof(int));
+   m = 1;
+   for(n=1; n<=nAtom; n++){
+    if(fabs(ry[n]) < InterfaceWidth){
+    atomIDInterface[m] = atomID[n]; 
+    m++; 
+  } } }
+  else if(BondPairInteract == 0){
+   nAtomInterface = nDiscInterface;
+   atomIDInterface =  (int *)malloc((nAtomInterface+1)*sizeof(int));
+   m = 1;
+   for(n=1; n<=nAtom; n++){
+    if(atomRadius[n] != 0.0){
+    atomIDInterface[m] = atomID[n]; 
+    m++; 
+  } } }
 
   nPairTotal = 0.5 * nAtomInterface * (nAtomInterface-1);
   PairID = (int*)malloc((nPairTotal+1) * sizeof(int));
@@ -157,7 +172,7 @@ void Init(){
   Pairatom2 = (int*)malloc((nPairTotal+1) * sizeof(int));
   PairXij = (double*)malloc((nPairTotal+1) * sizeof(double));
   PairYij = (double*)malloc((nPairTotal+1) * sizeof(double));
-  
+   
 
 
 }

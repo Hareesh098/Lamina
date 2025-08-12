@@ -29,10 +29,10 @@ extern const double TOL;
 void TestComputePairForce(int normFlag){
  ComputePairForce(1);
 
- assert_double_within(0.0, ax[3], TOL);
- assert_double_within(-0.05, ay[3], TOL);
- assert_double_within(0.0, ax[4], TOL);
- assert_double_within(0.05, ay[4], TOL);
+ assert_double_within(0.0, fx[3], TOL);
+ assert_double_within(-0.05, fy[3], TOL);
+ assert_double_within(0.0, fx[4], TOL);
+ assert_double_within(0.05, fy[4], TOL);
 
  assert_double_within(0.0025/2, uSumPair, TOL);
 
