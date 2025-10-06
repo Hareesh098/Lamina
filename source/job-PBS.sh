@@ -1,28 +1,30 @@
 #!/bin/bash
-##################################################################
-# Set a job name. This will allow you to identify your job in PBS. 
-#PBS -N TEST-1
-# Request that regular output and terminal output go to same file
-#PBS  -j oe
-# Request no. of nodes
-#PBS -l nodes=8:ppn=4
-# Request to run for specified hrs:min:secs
-#PBS -l walltime=30:00:00
-#PBS -me
+#PBS -N MyCode
+#PBS -l select=1:ncpus=1:mem=300mb
+#PBS -l walltime=100:00:00
+#PBS -j oe
+#PBS -o MyCode_$PBS_JOBID.out
+#PBS -q queue_name   # <-- optional: use your site's queue name
 
-# The following is the body of the script. By default, PBS scripts 
-# execute in your home directory, not the directory from which 
-# they were submitted. The following line places you in the 
-# directory from which the job was submitted.
-cd $PBS_O_WORKDIR
-echo $PBS_O_WORKDIR
-export MPI_FETCHOP_OFF=1
+# Move to the directory where qsub was invoked
+cd "$PBS_O_WORKDIR" || exit 1
 
-# Run the job here
-PREFIX=test
-mpiexec -n 32 ./main $PREFIX
-cd $PBS_O_WORKDIR/../output
-tar -cjvf $PREFIX.tar.bz2 $PREFIX.*
-mv $PREFIX.tar.bz2 $PBS_O_HOME/WORKS/.
-rm -rf $PREFIX.*
+PREFIX=test #Outout file names
+./main "$PREFIX"
+#mpiexec -n 32 ./main $PREFIX 
+
+#Compresse the output data 
+if [ -d ../output ]; then
+  cd ../output
+
+  # Create archive inside output/
+  tar -cjvf "${PREFIX}.tar.bz2" "${PREFIX}".* 2>/dev/null || true
+
+  # Remove everything starting with PREFIX.* except the tarball itself
+  find . -maxdepth 1 -type f -name "${PREFIX}.*" ! -name "${PREFIX}.tar.bz2" -delete
+else
+  echo "Warning: output/ directory not found — skipping compression step."
+fi
+
+exit 0
 

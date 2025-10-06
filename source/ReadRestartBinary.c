@@ -22,6 +22,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include"global.h"
+#include "version.h"
 
 // Must match RestartHeader definition in WriteBinaryRestart
 typedef struct {
@@ -110,7 +111,6 @@ void ReadBinaryRestart(const char *filename) {
   cellList = (int *)malloc((nAtom + cells[1] * cells[2] + 1) * sizeof(int));
   
   printf("Running from restart file:\n");
-  printf("Running: %s, version: %0.3lf\n", hdr.magic, hdr.version);
   printf("timeNow: %lf\n", timeNow);
   printf("stepCount: %d\n", stepCount);  
 
@@ -207,6 +207,28 @@ void ReadBinaryRestart(const char *filename) {
    isBonded[j][i] = 1; // symmetric
 }
 
+   // Defining the external forces
+   double lx = regionH[1];
+   if (FyBylx != 0 && gravField != 0) {
+    fprintf(stderr, "Error: Both FyBylx and gravField cannot be nonzero simultaneously.\n");
+    exit(EXIT_FAILURE);
+   }
+   if(FyBylx != 0) {
+    // Case 1: External force defined via FyBylx
+    fyExtern = (FyBylx * lx) / nAtomBlock;
+   }
+   else if (gravField != 0) {
+   // Case 2: External force defined via gravField
+    fyExtern  = mass * gravField;
+    fxExtern  = fxByfy * fyExtern;
+    FyBylx    = (fyExtern * nAtomBlock) / lx;
+   } 
+   else {
+    // Case 3: No external force provided
+    fyExtern = 0.0;
+    fxExtern = 0.0;
+  }
+
   fprintf(fpresult, "------------------------------------\n");
   fprintf(fpresult, "-------PARAMETERS-----------\n");
   fprintf(fpresult, "------------------------------------\n");
@@ -217,15 +239,16 @@ void ReadBinaryRestart(const char *filename) {
   fprintf(fpresult, "nAtomBlock\t\t%d\n",  nAtomBlock);
   fprintf(fpresult, "nAtomInterface\t\t%d\n",  nAtomInterface);
   fprintf(fpresult, "nDiscInterface\t\t%d\n",  nDiscInterface);
-  fprintf(fpresult, "mass\t\t\t%0.6g\n", mass);
-  fprintf(fpresult, "gamman\t\t\t%0.6g\n", gamman);
-  fprintf(fpresult, "strain\t\t\t%0.6g\n", strain);
-  fprintf(fpresult, "strainRate\t\t%0.6g\n", strainRate);
-  fprintf(fpresult, "FyBylx\t\t\t%0.6g\n", FyBylx);
-  fprintf(fpresult, "fxByfy\t\t\t%0.6g\n", fxByfy);
-  fprintf(fpresult, "DeltaY\t\t\t%0.6g\n", DeltaY);
-  fprintf(fpresult, "DeltaX\t\t\t%0.6g\n", DeltaX);
-  fprintf(fpresult, "HaltCondition\t\t%0.6g\n", HaltCondition);
+  fprintf(fpresult, "mass\t\t\t%0.16g\n", mass);
+  fprintf(fpresult, "gamman\t\t\t%0.16g\n", gamman);
+  fprintf(fpresult, "strain\t\t\t%0.16g\n", strain);
+  fprintf(fpresult, "strainRate\t\t%0.16g\n", strainRate);
+  fprintf(fpresult, "gravField\t\t%0.16g\n", gravField);
+  fprintf(fpresult, "FyBylx\t\t\t%0.16g\n", FyBylx);
+  fprintf(fpresult, "fxByfy\t\t\t%0.16g\n", fxByfy);
+  fprintf(fpresult, "DeltaY\t\t\t%0.16g\n", DeltaY);
+  fprintf(fpresult, "DeltaX\t\t\t%0.16g\n", DeltaX);
+  fprintf(fpresult, "HaltCondition\t\t%0.16g\n", HaltCondition);
   fprintf(fpresult, "kappa\t\t\t%g\n", kappa);
   fprintf(fpresult, "density\t\t\t%g\n", density);
   fprintf(fpresult, "rCut\t\t\t%g\n", rCut);

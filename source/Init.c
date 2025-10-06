@@ -50,6 +50,7 @@ void Init() {
   fscanf(fp, "%s %lf", dummy, &kappa);
   fscanf(fp, "%s %lf", dummy, &deltaT);
   fscanf(fp, "%s %lf", dummy, &strain);
+  fscanf(fp, "%s %lf", dummy, &gravField);
   fscanf(fp, "%s %lf", dummy, &FyBylx);
   fscanf(fp, "%s %lf", dummy, &fxByfy);
   fscanf(fp, "%s %lf", dummy, &DeltaY);
@@ -104,7 +105,7 @@ void Init() {
   }
 
   if(timeNow == 0.0) {
-   printf(">>> Running from time = 0.0: Beginning of the simulation\n");
+   printf(">>> Running from time = 0.0: Beginning of the simulation <<<\n");
    stepCount = 0;
   } 
   
@@ -237,6 +238,28 @@ void Init() {
     m++; 
   } } }
 
+   // Defining the external forces
+   double lx = regionH[1];
+   if (FyBylx != 0 && gravField != 0) {
+    fprintf(stderr, "Error: Both FyBylx and gravField cannot be nonzero simultaneously.\n");
+    exit(EXIT_FAILURE);
+   }
+   if(FyBylx != 0) {
+    // Case 1: External force defined via FyBylx
+    fyExtern = (FyBylx * lx) / nAtomBlock;
+   }
+   else if (gravField != 0) {
+   // Case 2: External force defined via gravField
+    fyExtern  = mass * gravField;
+    fxExtern  = fxByfy * fyExtern;
+    FyBylx    = (fyExtern * nAtomBlock) / lx;
+   } 
+   else {
+    // Case 3: No external force provided
+    fyExtern = 0.0;
+    fxExtern = 0.0;
+  }
+
   nPairTotal = 0.5 * nAtomInterface * (nAtomInterface-1);
   PairID = (int*)malloc((nPairTotal+1) * sizeof(int));
   Pairatom1 = (int*)malloc((nPairTotal+1) * sizeof(int));
@@ -254,15 +277,16 @@ void Init() {
   fprintf(fpresult, "nAtomBlock\t\t%d\n",  nAtomBlock);
   fprintf(fpresult, "nAtomInterface\t\t%d\n",  nAtomInterface);
   fprintf(fpresult, "nDiscInterface\t\t%d\n",  nDiscInterface);
-  fprintf(fpresult, "mass\t\t\t%0.6g\n", mass);
-  fprintf(fpresult, "gamman\t\t\t%0.6g\n", gamman);
-  fprintf(fpresult, "strain\t\t\t%0.6g\n", strain);
-  fprintf(fpresult, "strainRate\t\t%0.6g\n", strainRate);
-  fprintf(fpresult, "FyBylx\t\t\t%0.6g\n", FyBylx);
-  fprintf(fpresult, "fxByfy\t\t\t%0.6g\n", fxByfy);
-  fprintf(fpresult, "DeltaY\t\t\t%0.6g\n", DeltaY);
-  fprintf(fpresult, "DeltaX\t\t\t%0.6g\n", DeltaX);
-  fprintf(fpresult, "HaltCondition\t\t%0.6g\n", HaltCondition);
+  fprintf(fpresult, "mass\t\t\t%0.16g\n", mass);
+  fprintf(fpresult, "gamman\t\t\t%0.16g\n", gamman);
+  fprintf(fpresult, "strain\t\t\t%0.16g\n", strain);
+  fprintf(fpresult, "strainRate\t\t%0.16g\n", strainRate);
+  fprintf(fpresult, "gravField\t\t%0.16g\n", gravField);
+  fprintf(fpresult, "FyBylx\t\t\t%0.16g\n", FyBylx);
+  fprintf(fpresult, "fxByfy\t\t\t%0.16g\n", fxByfy);
+  fprintf(fpresult, "DeltaY\t\t\t%0.16g\n", DeltaY);
+  fprintf(fpresult, "DeltaX\t\t\t%0.16g\n", DeltaX);
+  fprintf(fpresult, "HaltCondition\t\t%0.16g\n", HaltCondition);
   fprintf(fpresult, "kappa\t\t\t%g\n", kappa);
   fprintf(fpresult, "density\t\t\t%g\n", density);
   fprintf(fpresult, "rCut\t\t\t%g\n", rCut);

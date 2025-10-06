@@ -53,6 +53,7 @@ EXTERN double Kn;
 EXTERN double fxExtern, fyExtern, FyBylx, fxByfy, forceSumxExtern, forceSumyExtern;
 EXTERN int    DampFlag;
 EXTERN double strech;
+EXTERN double gravField;
 
 //For reading the inputfile name
 EXTERN char mode[64], inputConfig[128];

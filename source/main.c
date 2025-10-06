@@ -8,6 +8,7 @@
 #include "global.h"
 #include "ComputeBondForce.h"
 #include "ComputePairForce.h"
+#include "version.h"
 
 
 char *prefix = NULL;  // Definition of prefix
@@ -41,6 +42,9 @@ void WriteBinaryRestart();
 void PrintForceSum();
 
 int main(int argc, char **argv) {
+ printf("%s %s\n", LAMINA_NAME, LAMINA_VERSION_STR);
+ printf("Build: %s %s using %s\n", LAMINA_BUILD_DATE, LAMINA_BUILD_TIME, LAMINA_COMPILER);
+
  time_t t1 = 0, t2;
  if (argc < 2) {
  fprintf(stderr, "Usage: %s <output_prefix>\n", argv[0]);
@@ -113,13 +117,14 @@ int main(int argc, char **argv) {
    }
 
 //Here starts the main loop of the program 
-  while(moreCycles){
-   if(stepLimit == 0){
-   printf("Error occured: stepLimit must be > 0\n");
-   printf("Exiting now ...\n");
-   exit(0);
-   }
-
+  if (stepLimit <= 0) {
+   fprintf(stderr, "Error: stepLimit must be > 0\n");
+   exit(EXIT_FAILURE);
+  }
+  const int stepStart  = stepCount;               // could be 0 (fresh) or from restart
+  const int targetStep = stepStart + stepLimit;   // run exactly stepLimit steps
+  
+  while (stepCount < targetStep) {
    stepCount ++;
    timeNow += deltaT ; //stepCount * deltaT; //for adaptive step size: timeNow += deltaT
 
@@ -156,16 +161,17 @@ int main(int argc, char **argv) {
     WriteBinaryRestart();
     break;  // Exit the loop when the halt condition is met
     }
-    
-    moreCycles ++;
-    if(moreCycles >= stepLimit)
-    moreCycles = 0;
   }
 
 
   t2 = time(NULL);
   fprintf(fpresult, "#Execution time %lf secs\n", difftime(t2,t1));
   fprintf(fpresult, "#Execution speed %lf steps per secs\n", stepLimit/difftime(t2,t1));
+  fprintf(fpresult, "------------------------------------\n");
+  fprintf(fpresult, "Lamina %s  (git %s)\n", LAMINA_VERSION_STR, GIT_COMMIT_HASH);
+  fprintf(fpresult, "Built on %s %s with %s\n", LAMINA_BUILD_DATE, LAMINA_BUILD_TIME, LAMINA_COMPILER);
+  fprintf(fpresult, "------------------------------------\n");
+  
   printf(">>> Simulation run completed <<<\n");
   printf(">>> Execution time %lf secs <<<\n", difftime(t2,t1));
   printf(">>> Execution speed %lf steps per secs <<< \n", stepLimit/difftime(t2,t1));

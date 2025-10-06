@@ -23,6 +23,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "global.h"
+#include "version.h"
 
 // Header struct must match that of WriteRestartBinary
 typedef struct {
@@ -60,7 +61,7 @@ typedef struct {
 void WriteBinaryRestart() {
  RestartHeader hdr = {
  .magic = "LAMINA",
- .version = 1.0,
+ .version = LAMINA_VERSION_MAJOR + 0.001 * LAMINA_VERSION_MINOR,
  .timeNow = timeNow,
  .nAtom = nAtom,
  .nBond = nBond,
