@@ -2,45 +2,27 @@
 ##################################################################
 # Set a job name. This will allow you to identify your job in PBS. 
 #PBS -N TEST-1
-##################################################################
-
-##################################################################
 # Request that regular output and terminal output go to same file
 #PBS  -j oe
-##################################################################
-
-##################################################################
 # Request no. of nodes
 #PBS -l nodes=8:ppn=4
-##################################################################
-
-##################################################################
 # Request to run for specified hrs:min:secs
 #PBS -l walltime=30:00:00
-##################################################################
-
-
 #PBS -me
 
-##################################################################
 # The following is the body of the script. By default, PBS scripts 
 # execute in your home directory, not the directory from which 
 # they were submitted. The following line places you in the 
 # directory from which the job was submitted.
 cd $PBS_O_WORKDIR
 echo $PBS_O_WORKDIR
-##################################################################
-
-
 export MPI_FETCHOP_OFF=1
 
-##################################################################
 # Run the job here
-PREFIX=k-0.5-g-25-alpha-7-Vo-3.5-L-40-delta-0.05
+PREFIX=test
 mpiexec -n 32 ./main $PREFIX
 cd $PBS_O_WORKDIR/../output
 tar -cjvf $PREFIX.tar.bz2 $PREFIX.*
 mv $PREFIX.tar.bz2 $PBS_O_HOME/WORKS/.
 rm -rf $PREFIX.*
-##################################################################
 
