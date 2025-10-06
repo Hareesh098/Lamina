@@ -24,10 +24,6 @@
 
 void ApplyForce(){
  int n;
- double lx;
- lx = regionH[1];  
- fyExtern =  (FyBylx * lx)/nAtomBlock;
- fxExtern =  fxByfy * fyExtern;
  forceSumxExtern = fxExtern*nAtomBlock;  forceSumyExtern = fyExtern*nAtomBlock;
 
  for(n = 1; n <= nAtom; n ++){
