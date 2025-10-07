@@ -1,1 +1,29 @@
 *.o
+
+# Keep the output directory structure, ignore its contents
+/output/*
+!/output/.gitkeep
+
+# Ignore generated run artifacts anywhere
+*.bin
+*.STATE
+*.Restart
+*.xyz
+*.result
+*.vrms
+*.bond
+*.pair
+*.com
+*.force
+*.tar.*
+gmon.out
+
+# If examples create their own output folders, keep them but ignore contents
+examples/**/output/*
+!examples/**/output/.gitkeep
+
+/source/main
+/source/*.o
+*.o
+*.a
+*.so
